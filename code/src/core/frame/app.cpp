@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <../include/core/frame/app.hpp>
+#include <core/frame/app.hpp>
 #include <iostream>
 #include <ranges>
 #include <SDL3_ttf/SDL_ttf.h>
@@ -14,6 +14,9 @@ namespace dao {
                 render();
                 window->update();
                 m_runWindowNum += window->isRunning();
+                if (SDL_GetKeyboardFocus() == window->getSDLWindow()) {
+                    const bool *key = SDL_GetKeyboardState(nullptr);
+                }
             }
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
@@ -30,14 +33,15 @@ namespace dao {
                 }
 
                 auto wid = SDL_GetWindowID(focus);
-                m_windows[wid]->handleMessage(event);
+                m_windows[wid]->handleInputEvent(event);
             }
         }
         SDL_Quit();
     }
 
-    Window &App::createWindow(const uint32 width, const uint32 height) {
-        auto nowWindow = std::make_unique<Window>(width, height);
+    Window &App::createWindow(uint32 width, uint32 height,
+                              bool resizable, bool transparent, bool onTop, bool borderless) {
+        auto nowWindow = std::make_unique<Window>(width, height, resizable, transparent, onTop, borderless);
         const uint32 windowId = nowWindow->getId();
         m_windows[windowId] = std::move(nowWindow);
         return *m_windows[windowId];
@@ -47,7 +51,7 @@ namespace dao {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
         }
-        SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI,"1");
+        SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, "1");
         if (!TTF_Init()) {
             SDL_Log("1TTF_Init failed: %s", SDL_GetError());
         }

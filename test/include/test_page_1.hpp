@@ -1,13 +1,12 @@
 //
 // Created by donghao on 25-12-19.
 //
-#ifndef TEST_PAGE_1_HPP
-#define TEST_PAGE_1_HPP
+#pragma once
 #include "component/input/input_box.hpp"
 #include "component/input/input_box_style.hpp"
 #include "interface/page.hpp"
-#include "../../code/include/component/button/simple_texture_button_style.hpp"
-#include "../../code/include/component/button/simple_button.hpp"
+#include "component/button/simple_texture_button_style.hpp"
+#include "component/button/simple_button.hpp"
 #include "interface/general_page.hpp"
 using namespace dao;
 
@@ -36,22 +35,18 @@ public:
     void close() override {
     }
 
-    /// @brief 获取加载图集
     [[nodiscard]] std::vector<uint32> getRegisterTexture() const override {
         return {};
     }
 
-    /// @brief 更新
     void update() override {
         m_vertexBatch.clearDrawBatches();
         m_style.writeToBatch(m_vertexBatch);
         inputBoxStyle.writeToBatch(m_vertexBatch);
     }
 
-    /// @brief 处理消息
-    void handleMessage(const SDL_Event &event) override {
+    void handleInputEvent(const SDL_Event &event) override {
         m_button.handleEvent(event);
         inputBox.handleEvent(event);
     }
 };
-#endif //TEST_PAGE_1_HPP

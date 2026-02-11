@@ -8,7 +8,7 @@
 
 namespace dao {
     /// @brief 页面接口
-    /// @details 提供了所有页面的接口，所有页面都应继承这个类
+    /// @details 提供了所有页面的接口，所有页面最底层都应继承这个类
     class Page {
     public:
         virtual ~Page() = default;
@@ -24,7 +24,7 @@ namespace dao {
         virtual void update() = 0;
 
         /// @brief 处理消息
-        virtual void handleMessage(const SDL_Event &event) = 0;
+        virtual void handleInputEvent(const SDL_Event &event) = 0;
 
         [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
 
@@ -32,6 +32,7 @@ namespace dao {
 
         virtual PageCmdQueue &getEvent() = 0;
 
+        /// @brief 获取页面标题
         [[nodiscard]] virtual const std::string &getTitle() const = 0;
     };
 }

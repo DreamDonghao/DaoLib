@@ -4,7 +4,7 @@
 #ifndef TEXT_HPP
 #define TEXT_HPP
 #include <SDL3/SDL_pixels.h>
-#include "../tool/better_stl.hpp"
+#include "core/tool/better_stl.hpp"
 #include "color_rgb.hpp"
 
 namespace dao {

@@ -16,6 +16,12 @@
   }, {
     "name" : "utfcpp",
     "version>=" : "4.0.6"
+  }, {
+    "name" : "cpp-httplib",
+    "version>=" : "0.28.0"
+  }, {
+    "name" : "nlohmann-json",
+    "version>=" : "3.12.0#1"
   } ],
   "overrides" : [ ]
 }

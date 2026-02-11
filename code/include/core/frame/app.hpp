@@ -10,6 +10,9 @@ namespace dao {
     /// @details 用来管理整个应用程序
     class App final {
     public:
+        App(const App &) = delete;            // 禁止拷贝
+        App &operator=(const App &) = delete; // 禁止拷贝
+        App &operator=(App &&) = default;     // 支持移动
         ~App() {
             TTF_Quit();
             SDL_Quit();
@@ -26,8 +29,14 @@ namespace dao {
         /// @brief 创建窗口
         /// @param width 窗口默认宽度
         /// @param height 窗口默认高度
+        /// @param resizable 可重新设置大小
+        /// @param transparent 支持透明
+        /// @param onTop 置顶
+        /// @param borderless 无边框
         /// @returns 窗口对象的引用
-        Window &createWindow(uint32 width, uint32 height);
+        Window &createWindow(uint32 width, uint32 height,
+                             bool resizable = false, bool transparent = false, bool onTop = false,
+                             bool borderless = false);
 
         /// @brief 获取窗口
         /// @param windowId 窗口 id

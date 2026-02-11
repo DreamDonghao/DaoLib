@@ -2,8 +2,8 @@
 // Created by donghao on 25-12-8.
 //
 #include <span>
-#include <../include/core/frame/vertex_batch_builder.hpp>
-#include "../../../include/core/basic_drawing_elements/atlas_region.hpp"
+#include <core/frame/vertex_batch_builder.hpp>
+#include "core/basic_drawing_elements/atlas_region.hpp"
 #include <print>
 
 namespace dao {

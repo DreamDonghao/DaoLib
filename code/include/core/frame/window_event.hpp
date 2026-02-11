@@ -1,20 +1,21 @@
 //
 // Created by donghao on 25-12-19.
 //
-#ifndef WINDOW_EVENT_HPP
-#define WINDOW_EVENT_HPP
+#pragma once
 #include <any>
 #include <queue>
+#include <string>
 
 namespace dao {
-
+    /// @brief 页面命令类型
     enum class PageCmdType {
-        switchPage,
+        switchPage, ///< 切换页面
     };
 
+    /// @brief 页面命令
     struct PageCmd {
-        PageCmdType type;
-        std::any data;
+        PageCmdType type; ///< 页面命令类型
+        std::any data;    ///< 数据
     };
 
     class PageCmdQueue {
@@ -24,7 +25,7 @@ namespace dao {
         PageCmdQueue(const PageCmdQueue &) = delete;
 
         void addSwitchPage(const std::string &title) {
-            m_events.push({PageCmdType::switchPage, title});
+            m_events.push(PageCmd{PageCmdType::switchPage, std::any{title}});
         }
 
         [[nodiscard]] bool isPresenceMessage() const {
@@ -41,4 +42,3 @@ namespace dao {
         std::queue<PageCmd> m_events;
     };
 }
-#endif //WINDOW_EVENT_HPP

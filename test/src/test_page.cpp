@@ -27,9 +27,10 @@ void TestPage::update() {
     }
 }
 
-void TestPage::handleMessage(const SDL_Event &event) {
+void TestPage::handleInputEvent(const SDL_Event &event) {
     button.handleEvent(event);
 }
+
 
 const std::vector<dao::AtlasDrawBatch> &TestPage::getDrawBatches() const {
     return m_vertexBatch.getDrawBatches();

@@ -52,6 +52,13 @@ namespace dao {
             }
         }
 
+        void moveXY(const float32 x, const float32 y) {
+            for (uint32 i = 0; i < N; ++i) {
+                m_vertices[i].position.x += x;
+                m_vertices[i].position.y += y;
+            }
+        }
+
         /// @brief 获取顶点
         std::span<const SDL_Vertex> getVertices() const {
             return m_vertices;

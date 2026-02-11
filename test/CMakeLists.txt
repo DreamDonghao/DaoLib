@@ -17,11 +17,7 @@ target_link_libraries(dao_test PRIVATE SDL3::SDL3)
 
 find_package(SDL3_ttf CONFIG REQUIRED)
 target_link_libraries(dao_test PRIVATE SDL3_ttf::SDL3_ttf)
-if (MSVC)
-    target_compile_options(dao_test PRIVATE "/constexpr:steps200000000")
-endif ()
 
-# 资源复制
 add_custom_command(
         TARGET dao_test POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_directory

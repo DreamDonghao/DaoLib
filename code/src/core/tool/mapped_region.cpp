@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <../include/core/tool/mapped_region.hpp>
+#include <core/tool/mapped_region.hpp>
 
 namespace dao {
     MappedRegion::MappedRegion(const float leftA, const float upA, const float rightA, const float downA,

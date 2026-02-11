@@ -6,9 +6,9 @@
 #include <core/frame/vertex_batch_builder.hpp>
 #include <string>
 #include <texture_id.hpp>
-#include "../../code/include/component/button/simple_button.hpp"
+#include "component/button/simple_button.hpp"
 #include "component/rectangle.hpp"
-#include "../../code/include/component/button/simple_text_button_style.hpp"
+#include "component/button/simple_text_button_style.hpp"
 #include "interface/page.hpp"
 
 class TestPage final : public dao::Page {
@@ -40,7 +40,7 @@ public:
 
     void update() override;
 
-    void handleMessage(const SDL_Event &event) override;
+    void handleInputEvent(const SDL_Event &event) override;
 
     dao::PageCmdQueue &getEvent() override { return m_windowEvent; };
 

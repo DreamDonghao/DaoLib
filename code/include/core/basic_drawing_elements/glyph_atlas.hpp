@@ -110,7 +110,6 @@ namespace dao {
         TTF_Font *m_font{nullptr};
         SDL_Surface *m_atlasSurface{nullptr};
         Cursor m_cursor{0, 0, 0};
-
         bool m_isUpdated{false};
     };
 }

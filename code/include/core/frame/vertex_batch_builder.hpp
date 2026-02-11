@@ -51,13 +51,13 @@ namespace dao {
         /// @param qudaCount 目标矩形数量
         static void resetQudaIndices(size_t qudaCount);
 
-        /// @brief 添加绘制元素到批处理
+        /// @brief 添加纹理到批处理
         void addToBatch(const AtlasTexture &texture);
 
         /// @brief 添加绘制元素到批处理
         void addToBatch(std::span<const SDL_Vertex> v, std::span<const int32> indices);
 
-        /// @brief 添加绘制元素到批处理
+        /// @brief 添加文本到批处理
         void addToBatch(const Text &text);
 
         /// @brief 清理要绘制的纹理图集

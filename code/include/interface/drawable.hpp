@@ -3,7 +3,7 @@
 //
 #ifndef DRAWABLE_HPP
 #define DRAWABLE_HPP
-#include "../core/frame/vertex_batch_builder.hpp"
+#include "core/frame/vertex_batch_builder.hpp"
 
 namespace dao {
     /// @brief 可绘制对象接口

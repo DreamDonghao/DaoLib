@@ -17,15 +17,20 @@ namespace dao {
         };
 
     public:
-        /// @param width 窗口宽度
-        /// @param height 窗口高度
-        Window(int width, int height);
+        /// @param width 窗口默认宽度
+        /// @param height 窗口默认高度
+        /// @param resizable 可重新设置大小
+        /// @param transparent 支持透明
+        /// @param onTop 置顶
+        /// @param borderless 无边框
+        Window(uint32 width, uint32 height,
+            bool resizable = false,bool transparent = false,bool onTop = false,bool borderless = false);
 
         ~Window();
 
         /// @brief 添加页面
         /// @param page 要添加页面的unique_ptr指针
-        Window &addPage(std::unique_ptr<Page> page);
+        Window &addPage(std::unique_ptr<Page> &&page);
 
         /// @brief 加载纹理图集
         void registerTexture(const uint32 &textureId);
@@ -37,7 +42,10 @@ namespace dao {
         void update();
 
         /// @brief 处理消息
-        void handleMessage(const SDL_Event &event);
+        void handleInputEvent(const SDL_Event &event);
+
+        /// @brief 处理输入按键状态
+        //void handleInputState(const bool* keyboardState);
 
         /// @brief 窗口关闭请求
         void requestClose();
@@ -47,6 +55,10 @@ namespace dao {
 
         /// @brief 渲染
         void render();
+
+        [[nodiscard]]const SDL_Window *getSDLWindow() const {
+            return m_window;
+        }
 
     private:
         uint32 m_id;           ///< ID

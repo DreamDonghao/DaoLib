@@ -10,8 +10,15 @@
 #include <chrono>
 
 namespace dao {
-    Window::Window(const int width, const int height) {
-        m_window = SDL_CreateWindow("", width, height,SDL_WINDOW_RESIZABLE);
+    Window::Window(const uint32 width, const uint32 height,
+        const bool resizable, const bool transparent, const bool onTop, const bool borderless) {
+        SDL_WindowFlags flags = 0;
+        if (resizable)flags |= SDL_WINDOW_RESIZABLE;
+        if (transparent)flags |= SDL_WINDOW_TRANSPARENT;
+        if (onTop)flags |= SDL_WINDOW_ALWAYS_ON_TOP;
+        if (borderless)flags |= SDL_WINDOW_BORDERLESS;
+        m_window = SDL_CreateWindow("", static_cast<int>(width), static_cast<int>(height), flags);
+
         m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
         SDL_SetRenderVSync(m_renderer, 0);
         m_id = SDL_GetWindowID(m_window);
@@ -30,8 +37,9 @@ namespace dao {
         SDL_Quit();
     }
 
-    Window &Window::addPage(std::unique_ptr<Page> page) {
+    Window &Window::addPage(std::unique_ptr<Page> &&page) {
         const std::string title = page->getTitle();
+        detectionError(!m_pages.contains(title), std::string("重复页面:") + title);
         for (auto textureId: page->getRegisterTexture()) {
             registerTexture(textureId);
         }
@@ -39,6 +47,7 @@ namespace dao {
             m_nowPageTitle = title;
         }
         m_pages[title] = std::move(page);
+        m_pages[title]->init();
         m_atlasTextures[1] = SDL_CreateTextureFromSurface(
             m_renderer, &m_pages[title]->getGlyphAtlas().getAtlasSurface());
         return *this;
@@ -51,7 +60,8 @@ namespace dao {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
             SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
-            detectionError(m_atlasTextures[atlasId], std::string("图集加载失败") + texturePath);
+            detectionError(m_atlasTextures[atlasId],
+                           std::string("纹理图集加载失败") + SDL_GetError() + ":" + texturePath);
         }
     }
 
@@ -78,9 +88,13 @@ namespace dao {
         }
     }
 
-    void Window::handleMessage(const SDL_Event &event) {
-        m_pages[m_nowPageTitle]->handleMessage(event);
+    void Window::handleInputEvent(const SDL_Event &event) {
+        m_pages[m_nowPageTitle]->handleInputEvent(event);
     }
+
+    // void Window::handleInputState(const bool *keyboardState) {
+    //     m_pages[m_nowPageTitle]->handleInputState(keyboardState);
+    // }
 
     void Window::requestClose() {
         m_running = false;
@@ -101,6 +115,8 @@ namespace dao {
     }
 
     void Window::switchPage(std::string title) {
+        detectionError(m_pages.contains(title),
+                       std::string("不存在的页面") + m_nowPageTitle + "->" + title);
         m_pages[m_nowPageTitle]->close();
         m_nowPageTitle = std::move(title);
         m_pages[m_nowPageTitle]->init();

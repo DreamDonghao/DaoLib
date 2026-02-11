@@ -2,6 +2,11 @@
 /cmake-build*
 /out
 /.vs
+/build
 /tool/.idea
 /doxygen_output
 CMakeSettings.json
+/examples/ voracious_snake/.idea
+/examples/ voracious_snake/cmake-build-debug/
+/examples/ voracious_snake/cmake-build-release/
+/examples
