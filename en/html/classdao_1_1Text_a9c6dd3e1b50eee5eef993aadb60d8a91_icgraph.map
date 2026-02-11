@@ -1,6 +1,6 @@
 <map id="dao::Text::getX" name="dao::Text::getX">
 <area shape="rect" id="Node000001" title=" " alt="" coords="483,45,601,70"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加绘制元素到批处理" alt="" coords="256,37,435,77"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="256,37,435,77"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,60,435,60,435,55,469,55"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1InputBoxStyle.html#a324744201bc2d8226e29452d0785a44d" title="写入批处理" alt="" coords="34,5,179,45"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,46,179,38,180,32,242,41"/>

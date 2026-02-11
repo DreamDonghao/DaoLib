@@ -1,10 +1,11 @@
 var classdao_1_1Window =
 [
-    [ "Window", "classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6", null ],
+    [ "Window", "classdao_1_1Window.html#a1dddfea67d02776367a0b73898e1fcd9", null ],
     [ "~Window", "classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3", null ],
-    [ "addPage", "classdao_1_1Window.html#a97e0d3deeacba542a4021699d9255b33", null ],
+    [ "addPage", "classdao_1_1Window.html#abe737d4b0ff1d4ade1c4df0b82ec4bb6", null ],
     [ "getId", "classdao_1_1Window.html#a073ba8cbf4be105904f1b6bd1c79033a", null ],
-    [ "handleMessage", "classdao_1_1Window.html#abd2d8a69e820b4505d45dd8f8341da55", null ],
+    [ "getSDLWindow", "classdao_1_1Window.html#a98c43811ce3cbc6fbe93688ddafb228b", null ],
+    [ "handleInputEvent", "classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed", null ],
     [ "isRunning", "classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb", null ],
     [ "registerTexture", "classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a", null ],
     [ "render", "classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10", null ],

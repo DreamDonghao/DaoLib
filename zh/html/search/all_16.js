@@ -1,16 +1,17 @@
 var searchData=
 [
   ['r_0',['r',['../structdao_1_1ColorRGBA.html#af00a453541e710652e6fdc6ddd64881c',1,'dao::ColorRGBA']]],
-  ['ratio_1',['ratio',['../namespacedao.html#a222caaab97ef07015c9238be7d24285c',1,'dao']]],
-  ['rectangle_2',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao::Rectangle'],['../classdao_1_1Rectangle.html#afdb783feff29bb4cb2b6e4e223871888',1,'dao::Rectangle::Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)'],['../classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9',1,'dao::Rectangle::Rectangle(const BoundingBox box, const ColorRGBA color)']]],
-  ['rectangle_2ehpp_3',['rectangle.hpp',['../rectangle_8hpp.html',1,'']]],
-  ['regions_4',['regions',['../namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e',1,'dao']]],
-  ['registerglyph_5',['registerGlyph',['../classdao_1_1GlyphAtlas.html#ad2278fe1fea3d93f5d9318182e10f238',1,'dao::GlyphAtlas']]],
-  ['registertexture_6',['registerTexture',['../classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a',1,'dao::Window']]],
-  ['render_7',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
-  ['request_8',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['requestclose_9',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
-  ['resetqudaindices_10',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
-  ['rgbnorm_11',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
-  ['run_12',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
+  ['randomint_1',['randomInt',['../namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711',1,'dao']]],
+  ['ratio_2',['ratio',['../namespacedao.html#a078b59340e1d170ed6e6f1ec51806337',1,'dao']]],
+  ['rectangle_3',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao::Rectangle'],['../classdao_1_1Rectangle.html#afdb783feff29bb4cb2b6e4e223871888',1,'dao::Rectangle::Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)'],['../classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9',1,'dao::Rectangle::Rectangle(const BoundingBox box, const ColorRGBA color)']]],
+  ['rectangle_2ehpp_4',['rectangle.hpp',['../rectangle_8hpp.html',1,'']]],
+  ['regions_5',['regions',['../namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e',1,'dao']]],
+  ['registerglyph_6',['registerGlyph',['../classdao_1_1GlyphAtlas.html#ad2278fe1fea3d93f5d9318182e10f238',1,'dao::GlyphAtlas']]],
+  ['registertexture_7',['registerTexture',['../classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a',1,'dao::Window']]],
+  ['render_8',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
+  ['request_9',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
+  ['requestclose_10',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
+  ['resetqudaindices_11',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
+  ['rgbnorm_12',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
+  ['run_13',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
 ];

@@ -7,7 +7,7 @@ var classdao_1_1Page =
     [ "getGlyphAtlas", "classdao_1_1Page.html#a2e2ba0bcd05ef75790b48406656e755d", null ],
     [ "getRegisterTexture", "classdao_1_1Page.html#aaec3b13b96ce664ccc388648a6f6b6d6", null ],
     [ "getTitle", "classdao_1_1Page.html#a22d8ff31f8b52df2b69f7c726183ba70", null ],
-    [ "handleMessage", "classdao_1_1Page.html#a86d1618491f0a50aff550680f957ae99", null ],
+    [ "handleInputEvent", "classdao_1_1Page.html#a747c78b366ac47b41d18659d1b863bd6", null ],
     [ "init", "classdao_1_1Page.html#a9f42866fb33b05271618e0be64e5cfac", null ],
     [ "update", "classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0", null ]
 ];

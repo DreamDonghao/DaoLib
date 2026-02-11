@@ -1,5 +1,5 @@
 <map id="dao::GeneralPage" name="dao::GeneralPage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,299,159,484"/>
+<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="5,299,167,604"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1Page.html" title="页面接口" alt="" coords="5,5,167,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,264,89,299,83,299,83,264"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,265,89,298,83,298,83,265"/>
 </map>

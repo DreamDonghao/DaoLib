@@ -1,6 +1,6 @@
 <map id="dao::InputBoxStyle::writeToBatch" name="dao::InputBoxStyle::writeToBatch">
 <area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,179,151,219"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加绘制元素到批处理" alt="" coords="213,47,391,87"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="213,47,391,87"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,177,141,138,197,98,214,90,216,95,200,103,144,142,101,181"/>
 <area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a3c3924b780e16af37e536a3269287907" title=" " alt="" coords="199,112,405,137"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,177,198,147,229,138,231,143,200,153,124,182"/>

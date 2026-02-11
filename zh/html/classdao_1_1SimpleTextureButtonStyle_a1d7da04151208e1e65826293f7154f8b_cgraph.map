@@ -1,6 +1,6 @@
 <map id="dao::SimpleTextureButtonStyle::writeToBatch" name="dao::SimpleTextureButtonStyle::writeToBatch">
 <area shape="rect" id="Node000001" title="加入绘制批处理" alt="" coords="5,83,196,123"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加绘制元素到批处理" alt="" coords="244,26,423,66"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="244,26,423,66"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,81,238,67,239,72,183,86"/>
 <area shape="rect" id="Node000005" href="$classdao_1_1Button.html#a9a4f38eac038cfb94d792ee4190f6245" title="获取当前状态" alt="" coords="250,91,417,116"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="196,101,236,101,236,106,196,106"/>

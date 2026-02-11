@@ -1,5 +1,5 @@
 <map id="dao::VertexBatchBuilder::addToBatch" name="dao::VertexBatchBuilder::addToBatch">
-<area shape="rect" id="Node000001" title="添加绘制元素到批处理" alt="" coords="244,5,423,45"/>
+<area shape="rect" id="Node000001" title="添加纹理到批处理" alt="" coords="244,5,423,45"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="5,5,196,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
 </map>

@@ -14,5 +14,6 @@ var searchData=
   ['merge_11',['7. Merge',['../join.html#autotoc_md14',1,'']]],
   ['mode_12',['Mode',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04',1,'dao::SwitchDeleter']]],
   ['movehorizontal_13',['moveHorizontal',['../classdao_1_1BoundingBox.html#a107bd14e4cd668e76f6504b2a95bf2ca',1,'dao::BoundingBox']]],
-  ['movevertical_14',['moveVertical',['../classdao_1_1BoundingBox.html#a98872e7e5383212333f9ba31b6bb3de5',1,'dao::BoundingBox']]]
+  ['movevertical_14',['moveVertical',['../classdao_1_1BoundingBox.html#a98872e7e5383212333f9ba31b6bb3de5',1,'dao::BoundingBox']]],
+  ['movexy_15',['moveXY',['../classdao_1_1Geometry.html#aaedebda415f14c3cee55ab4ab2221eef',1,'dao::Geometry']]]
 ];

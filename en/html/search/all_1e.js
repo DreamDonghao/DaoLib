@@ -1,5 +1,5 @@
 var searchData=
 [
   ['y_0',['y',['../structdao_1_1GeometryVertex.html#a21c761d03a90cb237bf11da57820ed49',1,'dao::GeometryVertex']]],
-  ['your_20own_20application_20using_20daoui_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
+  ['your_20own_20application_20using_20daoui_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;developed using DaoUI&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
 ];

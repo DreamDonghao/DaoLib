@@ -1,7 +1,5 @@
 <map id="dao::BoundingBox::getTop" name="dao::BoundingBox::getTop">
-<area shape="rect" id="Node000001" title="获取上边界坐标" alt="" coords="255,31,445,56"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406" title="处理消息，更新状态" alt="" coords="5,5,207,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,35,207,31,207,26,241,29"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9" title=" " alt="" coords="10,55,202,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,57,202,61,202,55,241,51"/>
+<area shape="rect" id="Node000001" title="获取上边界坐标" alt="" coords="245,5,436,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9" title=" " alt="" coords="5,5,197,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,21,198,21,198,15,231,15"/>
 </map>

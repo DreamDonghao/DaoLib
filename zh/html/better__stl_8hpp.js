@@ -15,6 +15,8 @@ var better__stl_8hpp =
     [ "dao::makeManage", "namespacedao.html#ac45f69004e30262d01cf3851e336eef6", null ],
     [ "dao::makeObserver", "namespacedao.html#afeed7b027b4850f4e688ae60c50e7807", null ],
     [ "dao::pop_utf8", "namespacedao.html#a5b2e8328a9c7561d0aa8b676b2243dee", null ],
-    [ "dao::ratio", "namespacedao.html#a222caaab97ef07015c9238be7d24285c", null ],
-    [ "dao::sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ]
+    [ "dao::randomInt", "namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711", null ],
+    [ "dao::ratio", "namespacedao.html#a078b59340e1d170ed6e6f1ec51806337", null ],
+    [ "dao::sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ],
+    [ "dao::utf8ToUtf32", "namespacedao.html#ab6af3908a5961209e84d06b4e07b30f9", null ]
 ];

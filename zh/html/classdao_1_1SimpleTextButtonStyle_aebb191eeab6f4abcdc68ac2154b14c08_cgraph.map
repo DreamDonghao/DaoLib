@@ -1,6 +1,6 @@
 <map id="dao::SimpleTextButtonStyle::writeToBatch" name="dao::SimpleTextButtonStyle::writeToBatch">
 <area shape="rect" id="Node000001" title="加入绘制批处理" alt="" coords="5,77,208,117"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加绘制元素到批处理" alt="" coords="256,47,435,87"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="256,47,435,87"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,82,242,77,243,83,208,87"/>
 <area shape="rect" id="Node000006" href="$classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354" title=" " alt="" coords="265,112,425,137"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="208,106,252,111,251,116,208,111"/>
