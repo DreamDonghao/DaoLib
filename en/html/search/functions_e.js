@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['text_0',['Text',['../classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d',1,'dao::Text::Text()=default'],['../classdao_1_1Text.html#a1ef33c1e3ca367358e26a2d9f66d80b1',1,'dao::Text::Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const ColorRGBA color)']]]
+  ['update_0',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()'],['../classdao_1_1GeneralPage.html#aae2c10901d3f992a94342e9c9d630f58',1,'dao::GeneralPage::update()']]],
+  ['utf8toutf32_1',['utf8ToUtf32',['../namespacedao.html#ab6af3908a5961209e84d06b4e07b30f9',1,'dao']]]
 ];

@@ -103,9 +103,9 @@ Inheritance diagram for dao::Page:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Page__inherit__graph.png" border="0" usemap="#adao_1_1Page_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1Page_inherit__map" id="adao_1_1Page_inherit__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,167,251"/>
-<area shape="rect" href="classdao_1_1GeneralPage.html" title="通用页面接口" alt="" coords="5,299,167,604"/>
-<area shape="poly" title=" " alt="" coords="89,265,89,298,83,298,83,265"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
+<area shape="rect" href="classdao_1_1GeneralPage.html" title="通用页面接口" alt="" coords="5,299,181,604"/>
+<area shape="poly" title=" " alt="" coords="96,265,96,298,91,298,91,265"/>
 </map>
 </div>
 <div class="dynheader">
@@ -113,7 +113,7 @@ Collaboration diagram for dao::Page:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Page__coll__graph.png" border="0" usemap="#adao_1_1Page_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Page_coll__map" id="adao_1_1Page_coll__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,167,251"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -130,7 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a747c78b366ac47b41d18659d1b863bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息  <br /></td></tr>
 <tr class="memitem:afa41322cc43ea42f95ac06237bdfa622" id="r_afa41322cc43ea42f95ac06237bdfa622"><td class="memItemLeft">virtual const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afa41322cc43ea42f95ac06237bdfa622">getDrawBatches</a> () const =0</td></tr>
 <tr class="memitem:a2e2ba0bcd05ef75790b48406656e755d" id="r_a2e2ba0bcd05ef75790b48406656e755d"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2e2ba0bcd05ef75790b48406656e755d">getGlyphAtlas</a> ()=0</td></tr>
-<tr class="memitem:a81f2dfa527b97df1d3f7b4d5538aeda3" id="r_a81f2dfa527b97df1d3f7b4d5538aeda3"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1PageCmdQueue.html">PageCmdQueue</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a81f2dfa527b97df1d3f7b4d5538aeda3">getEvent</a> ()=0</td></tr>
+<tr class="memitem:a2c0341df72814f338b2a85bbd1041f92" id="r_a2c0341df72814f338b2a85bbd1041f92"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1WindowController.html">WindowController</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2c0341df72814f338b2a85bbd1041f92">getWindowController</a> ()=0</td></tr>
+<tr class="memdesc:a2c0341df72814f338b2a85bbd1041f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口控制器  <br /></td></tr>
 <tr class="memitem:a22d8ff31f8b52df2b69f7c726183ba70" id="r_a22d8ff31f8b52df2b69f7c726183ba70"><td class="memItemLeft">virtual const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a22d8ff31f8b52df2b69f7c726183ba70">getTitle</a> () const =0</td></tr>
 <tr class="memdesc:a22d8ff31f8b52df2b69f7c726183ba70"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
 </table>
@@ -220,33 +221,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a81f2dfa527b97df1d3f7b4d5538aeda3" name="a81f2dfa527b97df1d3f7b4d5538aeda3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f2dfa527b97df1d3f7b4d5538aeda3">&#9670;&#160;</a></span>getEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classdao_1_1PageCmdQueue.html">PageCmdQueue</a> &amp; dao::Page::getEvent </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a33480618acb858d6208851b188178234">dao::GeneralPage</a>.</p>
-
-</div>
-</div>
 <a id="a2e2ba0bcd05ef75790b48406656e755d" name="a2e2ba0bcd05ef75790b48406656e755d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e2ba0bcd05ef75790b48406656e755d">&#9670;&#160;</a></span>getGlyphAtlas()</h2>
 
@@ -329,6 +303,35 @@ Public Member Functions</h2></td></tr>
 <p>获取页面标题 </p>
 
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a08d10956d4f4a2c1479bc7a622920924">dao::GeneralPage</a>.</p>
+
+</div>
+</div>
+<a id="a2c0341df72814f338b2a85bbd1041f92" name="a2c0341df72814f338b2a85bbd1041f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0341df72814f338b2a85bbd1041f92">&#9670;&#160;</a></span>getWindowController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classdao_1_1WindowController.html">WindowController</a> &amp; dao::Page::getWindowController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取窗口控制器 </p>
+
+<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a180e5fea30e52d692c2d7cab168fe4b2">dao::GeneralPage</a>.</p>
 
 </div>
 </div>

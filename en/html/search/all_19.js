@@ -4,5 +4,6 @@ var searchData=
   ['text_2ehpp_1',['text.hpp',['../text_8hpp.html',1,'']]],
   ['the_20opening_20of_20daoui_2',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot; title=&quot;Participate in DaoUI Development&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
   ['the_20repository_3',['the Repository',['../join.html#autotoc_md2',1,'1. Fork the Repository'],['../join.html#autotoc_md4',1,'2. Clone the Repository']]],
-  ['type_4',['type',['../structdao_1_1PageCmd.html#a8827f7d8e6fe28ad3d820803fb9f07b7',1,'dao::PageCmd']]]
+  ['to_5fu32_4',['to_u32',['../namespacedao.html#a4ca7a84f1f77f350bdff582218fb2f10',1,'dao']]],
+  ['type_5',['type',['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand']]]
 ];

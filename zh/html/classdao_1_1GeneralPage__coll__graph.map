@@ -1,9 +1,9 @@
 <map id="dao::GeneralPage" name="dao::GeneralPage">
-<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="193,341,355,607"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Page.html" title="页面接口" alt="" coords="5,15,167,261"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,271,202,340,197,342,159,274"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1PageCmdQueue.html" title=" " alt="" coords="191,65,357,211"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,211,277,325,271,325,271,211"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1VertexBatchBuilder.html" title="顶点批处理构建器" alt="" coords="382,5,563,271"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="396,272,363,328,359,325,392,270"/>
+<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="199,341,375,607"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Page.html" title="页面接口" alt="" coords="5,15,181,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,271,213,340,208,342,168,274"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1WindowController.html" title="窗口控制器" alt="" coords="205,45,368,231"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,231,289,325,284,325,284,231"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1VertexBatchBuilder.html" title="顶点批处理构建器" alt="" coords="392,5,573,271"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,272,448,319,421,359,388,395,384,391,417,355,443,316,462,270"/>
 </map>

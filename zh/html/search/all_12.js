@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['m_5fevent_0',['m_event',['../classdao_1_1GeneralPage.html#a0072a686d6d44ef8d2c18acce22aeced',1,'dao::GeneralPage']]],
-  ['m_5ftitle_1',['m_title',['../classdao_1_1GeneralPage.html#a3b8b422a1aa59a0fd33c29c6de576daa',1,'dao::GeneralPage']]],
-  ['m_5fvertexbatch_2',['m_vertexBatch',['../classdao_1_1GeneralPage.html#aba31cd2d4eb91a7ce0d88b75cd81d9ae',1,'dao::GeneralPage']]],
+  ['m_5ftitle_0',['m_title',['../classdao_1_1GeneralPage.html#a3b8b422a1aa59a0fd33c29c6de576daa',1,'dao::GeneralPage']]],
+  ['m_5fvertexbatch_1',['m_vertexBatch',['../classdao_1_1GeneralPage.html#aba31cd2d4eb91a7ce0d88b75cd81d9ae',1,'dao::GeneralPage']]],
+  ['m_5fwindowcontroller_2',['m_windowController',['../classdao_1_1GeneralPage.html#a60df426e6fcb4f3eb4c153d58aca15a6',1,'dao::GeneralPage']]],
   ['main_5fpage_2emd_3',['main_page.md',['../main__page_8md.html',1,'']]],
   ['makemanage_4',['makeManage',['../namespacedao.html#ac45f69004e30262d01cf3851e336eef6',1,'dao']]],
   ['makeobserver_5',['makeObserver',['../namespacedao.html#afeed7b027b4850f4e688ae60c50e7807',1,'dao']]],

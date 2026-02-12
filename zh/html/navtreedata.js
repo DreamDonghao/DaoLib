@@ -71,8 +71,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdao_1_1SimpleButton.html",
-"simple__button_8hpp_source.html"
+"classdao_1_1SimpleButton.html#a974e6e6e657c363550f5578edd3a0114",
+"namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

@@ -2,7 +2,7 @@ var searchData=
 [
   ['indices_0',['indices',['../structdao_1_1AtlasDrawBatch.html#ac3efeab6996d695fe441c338ad6ae3f8',1,'dao::AtlasDrawBatch']]],
   ['indicescount_1',['indicesCount',['../structdao_1_1AtlasDrawBatch.html#a0aeb26a8aa991891fd20d42094484780',1,'dao::AtlasDrawBatch']]],
-  ['init_2',['init',['../classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7',1,'dao::GeneralPage::init()'],['../classdao_1_1Page.html#a9f42866fb33b05271618e0be64e5cfac',1,'dao::Page::init()']]],
+  ['init_2',['init',['../classdao_1_1Page.html#a9f42866fb33b05271618e0be64e5cfac',1,'dao::Page::init()'],['../classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7',1,'dao::GeneralPage::init()']]],
   ['input_3',['Input',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5',1,'dao']]],
   ['input_5fbox_2ehpp_4',['input_box.hpp',['../input__box_8hpp.html',1,'']]],
   ['input_5fbox_5fstyle_2ehpp_5',['input_box_style.hpp',['../input__box__style_8hpp.html',1,'']]],
@@ -17,8 +17,7 @@ var searchData=
   ['isenable_14',['isEnable',['../classdao_1_1SimpleButton.html#a60694f0c52906c8efda2aae008cd875b',1,'dao::SimpleButton::isEnable()'],['../classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354',1,'dao::Button::isEnable()']]],
   ['isinboundingbox_15',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a471a206bb57544106eef5458dd234962',1,'dao::BoundingBox']]],
   ['isintersects_16',['isIntersects',['../classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b',1,'dao::BoundingBox']]],
-  ['ispresencemessage_17',['isPresenceMessage',['../classdao_1_1PageCmdQueue.html#af99dd1fe6f9350b5e449ccf0a8163d70',1,'dao::PageCmdQueue']]],
-  ['isrunning_18',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
-  ['isupdated_19',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
-  ['isvalid_20',['isValid',['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox']]]
+  ['isrunning_17',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
+  ['isupdated_18',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
+  ['isvalid_19',['isValid',['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox']]]
 ];

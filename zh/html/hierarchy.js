@@ -25,10 +25,10 @@ var hierarchy =
     [ "dao::Page", "classdao_1_1Page.html", [
       [ "dao::GeneralPage", "classdao_1_1GeneralPage.html", null ]
     ] ],
-    [ "dao::PageCmd", "structdao_1_1PageCmd.html", null ],
-    [ "dao::PageCmdQueue", "classdao_1_1PageCmdQueue.html", null ],
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],
     [ "dao::Text", "classdao_1_1Text.html", null ],
     [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
-    [ "dao::Window", "classdao_1_1Window.html", null ]
+    [ "dao::Window", "classdao_1_1Window.html", null ],
+    [ "dao::WindowCommand", "structdao_1_1WindowCommand.html", null ],
+    [ "dao::WindowController", "classdao_1_1WindowController.html", null ]
 ];

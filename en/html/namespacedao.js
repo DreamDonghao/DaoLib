@@ -6,9 +6,10 @@ var namespacedao =
     [ "VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", "classdao_1_1VertexBatchBuilder" ],
     [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
     [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
-    [ "PageCmd", "structdao_1_1PageCmd.html", "structdao_1_1PageCmd" ],
-    [ "PageCmdQueue", "classdao_1_1PageCmdQueue.html", "classdao_1_1PageCmdQueue" ],
+    [ "WindowCommand", "structdao_1_1WindowCommand.html", "structdao_1_1WindowCommand" ],
+    [ "WindowController", "classdao_1_1WindowController.html", "classdao_1_1WindowController" ],
     [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
+    [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
     [ "BoundingBox", "classdao_1_1BoundingBox.html", "classdao_1_1BoundingBox" ],
     [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
     [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
@@ -26,7 +27,6 @@ var namespacedao =
     [ "ButtonStyle", "classdao_1_1ButtonStyle.html", "classdao_1_1ButtonStyle" ],
     [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
     [ "GeneralPage", "classdao_1_1GeneralPage.html", "classdao_1_1GeneralPage" ],
-    [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
     [ "float32", "namespacedao.html#a53bfa14bead57e705fd16fda854521bb", null ],
     [ "hash_map", "namespacedao.html#a0ad639e9f8555dbf881042e9de05d81f", null ],
     [ "int16", "namespacedao.html#ae0da2a436ea11170c46cc9313cbc8aaa", null ],
@@ -48,9 +48,14 @@ var namespacedao =
       [ "Normal", "namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "Input", "namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5", null ]
     ] ],
-    [ "PageCmdType", "namespacedao.html#ae58c462a7b87e9c66a85fc8dd97bf48d", [
-      [ "switchPage", "namespacedao.html#ae58c462a7b87e9c66a85fc8dd97bf48da56a9fd4612e12750073016d9bc7c6cc4", null ]
+    [ "WindowCommandType", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67", [
+      [ "switchPage", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4", null ],
+      [ "setClickThrough", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de", null ],
+      [ "setPosition", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804", null ],
+      [ "setSize", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f", null ]
     ] ],
+    [ "currentDateTime", "namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994", null ],
+    [ "DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ],
     [ "detectionError", "namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8", null ],
     [ "getAtlasRegion", "namespacedao.html#a12373994fd1651320a5895a7299d1dd9", null ],
     [ "hexByteToU8", "namespacedao.html#a3decb5fab6d89a778cfca92971d8f8e7", null ],
@@ -58,10 +63,10 @@ var namespacedao =
     [ "makeManage", "namespacedao.html#ac45f69004e30262d01cf3851e336eef6", null ],
     [ "makeObserver", "namespacedao.html#afeed7b027b4850f4e688ae60c50e7807", null ],
     [ "makeVertices", "namespacedao.html#a72edcc6fbb3034d72283f64a9df0288b", null ],
-    [ "pop_utf8", "namespacedao.html#a5b2e8328a9c7561d0aa8b676b2243dee", null ],
     [ "randomInt", "namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711", null ],
     [ "ratio", "namespacedao.html#a078b59340e1d170ed6e6f1ec51806337", null ],
     [ "sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ],
+    [ "to_u32", "namespacedao.html#a4ca7a84f1f77f350bdff582218fb2f10", null ],
     [ "utf8ToUtf32", "namespacedao.html#ab6af3908a5961209e84d06b4e07b30f9", null ],
     [ "regions", "namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e", null ],
     [ "rgbNorm", "namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0", null ]

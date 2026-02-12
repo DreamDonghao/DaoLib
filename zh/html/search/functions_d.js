@@ -1,22 +1,5 @@
 var searchData=
 [
-  ['set_0',['set',['../classdao_1_1BoundingBox.html#a9dd1dc9331a7277dccc08a74a31b4f0e',1,'dao::BoundingBox']]],
-  ['setcolor_1',['setColor',['../classdao_1_1Text.html#abb108bc32247bbc2f372e0e6e410624e',1,'dao::Text']]],
-  ['setcontent_2',['setContent',['../classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9',1,'dao::Text']]],
-  ['setdown_3',['setDown',['../classdao_1_1BoundingBox.html#add5d58c61a90c33969fe50428902e46c',1,'dao::BoundingBox']]],
-  ['setfontsize_4',['setFontSize',['../classdao_1_1Text.html#aa0e0726f3981908a981546bf78e0ca26',1,'dao::Text']]],
-  ['setleft_5',['setLeft',['../classdao_1_1BoundingBox.html#af3b3eca55875d1be3ff884d84560b84b',1,'dao::BoundingBox']]],
-  ['setmode_6',['setMode',['../classdao_1_1SwitchDeleter.html#ac6ce024bcbf0ebf1a2d3216c0b9fc65b',1,'dao::SwitchDeleter']]],
-  ['setposition_7',['setPosition',['../classdao_1_1Rectangle.html#a09454618c87fbce8917dbfac3c6de18b',1,'dao::Rectangle']]],
-  ['setright_8',['setRight',['../classdao_1_1BoundingBox.html#af21ff407d200dae6bf10683cf2338570',1,'dao::BoundingBox']]],
-  ['setstatus_9',['setStatus',['../classdao_1_1SimpleButton.html#aefd4a618b8982823212c59352cd7aedf',1,'dao::SimpleButton']]],
-  ['settext_10',['setText',['../classdao_1_1SimpleTextButtonStyle.html#a7107b8f54c4cfc4da6b0cab59f823602',1,'dao::SimpleTextButtonStyle']]],
-  ['setup_11',['setUp',['../classdao_1_1BoundingBox.html#acaccf53cc548817536a25483c05f514a',1,'dao::BoundingBox']]],
-  ['setx_12',['setX',['../classdao_1_1Text.html#ad3449df93fc2d437fc86e2aa5da130ba',1,'dao::Text']]],
-  ['sety_13',['setY',['../classdao_1_1Text.html#a1fbdf40c58d9f3af3ef6aca577cccd61',1,'dao::Text']]],
-  ['simplebutton_14',['SimpleButton',['../classdao_1_1SimpleButton.html#afadb96b5f50e26ed06546b2263da4ed9',1,'dao::SimpleButton::SimpleButton()'],['../classdao_1_1SimpleButton.html#a14872b42b5fc41a96efdfbc477f49c13',1,'dao::SimpleButton::SimpleButton(const float32 x, const float32 y, const float32 width, const float32 height, std::move_only_function&lt; void()&gt; onClick, const ButtonStatus buttonStatus=dao::ButtonStatus::Normal)'],['../classdao_1_1SimpleButton.html#ae8a6aca6f7a156aab860e1a8605d5233',1,'dao::SimpleButton::SimpleButton(const SimpleButton &amp;)=delete'],['../classdao_1_1SimpleButton.html#aa0e7244bdffb21433e3841e43ff0d505',1,'dao::SimpleButton::SimpleButton(SimpleButton &amp;&amp;other) noexcept']]],
-  ['simpletextbuttonstyle_15',['SimpleTextButtonStyle',['../classdao_1_1SimpleTextButtonStyle.html#a2b52154d78b66b290a6796320a6aa643',1,'dao::SimpleTextButtonStyle::SimpleTextButtonStyle()'],['../classdao_1_1SimpleTextButtonStyle.html#ad38aeb488811e7542634cdcf2621482a',1,'dao::SimpleTextButtonStyle::SimpleTextButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h, const std::u32string &amp;text, const float32 textSize, const ColorRGBA textColor, Button *button)'],['../classdao_1_1SimpleTextButtonStyle.html#a6e15768e8e4e16656757476a90b8a849',1,'dao::SimpleTextButtonStyle::SimpleTextButtonStyle(const SimpleTextButtonStyle &amp;other) noexcept'],['../classdao_1_1SimpleTextButtonStyle.html#a8f86213d9fa6b3231cc0cae485440a29',1,'dao::SimpleTextButtonStyle::SimpleTextButtonStyle(SimpleTextButtonStyle &amp;&amp;other) noexcept']]],
-  ['simpletexturebuttonstyle_16',['SimpleTextureButtonStyle',['../classdao_1_1SimpleTextureButtonStyle.html#a458fc9651483a6e7af9ee1f47c6a5c4b',1,'dao::SimpleTextureButtonStyle::SimpleTextureButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h, const uint32 atnId, const uint32 athId, const uint32 atpId, Button *button)'],['../classdao_1_1SimpleTextureButtonStyle.html#ac796fe1739c445a786e4f7e58afeacb8',1,'dao::SimpleTextureButtonStyle::SimpleTextureButtonStyle(SimpleButton &amp;button, const uint32 atnId, const uint32 athId, const uint32 atpId)']]],
-  ['sort_17',['sort',['../namespacedao.html#a02af220658c49a0b7ac198977f450e7f',1,'dao']]],
-  ['switchdeleter_18',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html#af2039b61545c1250d4364617fcf8bc03',1,'dao::SwitchDeleter']]]
+  ['text_0',['Text',['../classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d',1,'dao::Text::Text()=default'],['../classdao_1_1Text.html#a1ef33c1e3ca367358e26a2d9f66d80b1',1,'dao::Text::Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const ColorRGBA color)']]],
+  ['to_5fu32_1',['to_u32',['../namespacedao.html#a4ca7a84f1f77f350bdff582218fb2f10',1,'dao']]]
 ];

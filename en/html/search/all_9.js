@@ -1,7 +1,7 @@
 var searchData=
 [
   ['b_0',['b',['../structdao_1_1ColorRGBA.html#a794d11a2a43e39a9d650071d50377c47',1,'dao::ColorRGBA']]],
-  ['batchregisterglyph_1',['batchRegisterGlyph',['../classdao_1_1GlyphAtlas.html#abdbf3abfc793ce25bcfc6e42f03a81f0',1,'dao::GlyphAtlas']]],
+  ['batchregisterglyph_1',['batchRegisterGlyph',['../classdao_1_1GlyphAtlas.html#af4c29f18a6dc4d416222c70a940d2024',1,'dao::GlyphAtlas']]],
   ['better_5fstl_2ehpp_2',['better_stl.hpp',['../better__stl_8hpp.html',1,'']]],
   ['bindbutton_3',['bindButton',['../classdao_1_1SimpleTextButtonStyle.html#a9cced42b3569cac35c2ec9fbcc12e498',1,'dao::SimpleTextButtonStyle::bindButton()'],['../classdao_1_1SimpleTextureButtonStyle.html#a7655f2794d0f071d12b7f13698a4a4b5',1,'dao::SimpleTextureButtonStyle::bindButton()'],['../classdao_1_1ButtonStyle.html#a3266455b01179fc21b9f39119d8afadc',1,'dao::ButtonStyle::bindButton()']]],
   ['bounding_5fbox_2ecpp_4',['bounding_box.cpp',['../bounding__box_8cpp.html',1,'']]],

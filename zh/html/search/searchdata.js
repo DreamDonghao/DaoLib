@@ -4,10 +4,10 @@ var indexSectionsWithContent =
   1: "abcdgimprstvw",
   2: "d",
   3: "abcdgijmprstuvw",
-  4: "abcdeghimnoprstuvw~",
+  4: "abcdeghimnorstuvw~",
   5: "abcdgimnrtvxy",
   6: "fhiu",
-  7: "bimp",
+  7: "bimw",
   8: "dhimnops",
   9: "12345678bdfjpru仓使克列创参合审开提的编行项"
 };

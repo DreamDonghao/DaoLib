@@ -7,9 +7,10 @@ var annotated_dup =
       [ "VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", "classdao_1_1VertexBatchBuilder" ],
       [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
       [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
-      [ "PageCmd", "structdao_1_1PageCmd.html", "structdao_1_1PageCmd" ],
-      [ "PageCmdQueue", "classdao_1_1PageCmdQueue.html", "classdao_1_1PageCmdQueue" ],
+      [ "WindowCommand", "structdao_1_1WindowCommand.html", "structdao_1_1WindowCommand" ],
+      [ "WindowController", "classdao_1_1WindowController.html", "classdao_1_1WindowController" ],
       [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
+      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
       [ "BoundingBox", "classdao_1_1BoundingBox.html", "classdao_1_1BoundingBox" ],
       [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
       [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
@@ -26,7 +27,6 @@ var annotated_dup =
       [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
       [ "ButtonStyle", "classdao_1_1ButtonStyle.html", "classdao_1_1ButtonStyle" ],
       [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
-      [ "GeneralPage", "classdao_1_1GeneralPage.html", "classdao_1_1GeneralPage" ],
-      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ]
+      [ "GeneralPage", "classdao_1_1GeneralPage.html", "classdao_1_1GeneralPage" ]
     ] ]
 ];
