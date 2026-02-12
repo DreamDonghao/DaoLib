@@ -19,8 +19,9 @@ class TestPage final : public dao::Page {
     dao::Rectangle rectangle3{0, 200, 200, 100, {0, 0, 255, 1.0f}};
     dao::SimpleButton button{
         200, 200, 100, 100,
-        [this]() {
-            m_windowEvent.addSwitchPage("testPage1");
+        [this] {
+            m_windowEvent.switchPage("testPage1");
+            m_windowEvent.setClickThrough(true);
         }
     };
     dao::SimpleTextButtonStyle buttonStyle{
@@ -30,10 +31,13 @@ class TestPage final : public dao::Page {
 public:
     void init() override {
     }
-    void close() override {}
+
+    void close() override {
+    }
+
     TestPage() = default;
 
-    explicit TestPage(std::string title): m_title(std::move(title)) {
+    explicit TestPage(std::string title) : m_title(std::move(title)) {
     }
 
     [[nodiscard]] std::vector<dao::uint32> getRegisterTexture() const override;
@@ -42,7 +46,7 @@ public:
 
     void handleInputEvent(const SDL_Event &event) override;
 
-    dao::PageCmdQueue &getEvent() override { return m_windowEvent; };
+    dao::WindowController &getWindowController() override { return m_windowEvent; };
 
     [[nodiscard]] const std::vector<dao::AtlasDrawBatch> &getDrawBatches() const override;
 
@@ -54,7 +58,7 @@ public:
 
 private:
     std::string m_title{"testPage"};
-    dao::PageCmdQueue m_windowEvent;
+    dao::WindowController m_windowEvent;
     dao::VertexBatchBuilder m_vertexBatch{"zh-cn.ttf", 64, 1024};
 };
 

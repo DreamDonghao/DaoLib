@@ -38,8 +38,8 @@ namespace dao {
             return m_vertexBatch.getGlyphAtlas();
         }
 
-        PageCmdQueue &getEvent() override {
-            return m_event;
+        WindowController &getWindowController() override {
+            return m_windowController;
         }
 
         [[nodiscard]] const std::string &getTitle() const override {
@@ -48,7 +48,7 @@ namespace dao {
 
     protected:
         std::string m_title;
-        PageCmdQueue m_event;
+        WindowController m_windowController; ///< 窗口控制器
         VertexBatchBuilder m_vertexBatch{"zh-cn.ttf", 64, 1024};
     };
 }

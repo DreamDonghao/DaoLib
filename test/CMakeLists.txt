@@ -9,6 +9,8 @@ add_executable(dao_test
         src/atlas_region.cpp
         src/test_page.cpp
 )
+find_package(cpr CONFIG REQUIRED)
+target_link_libraries(dao_test PRIVATE cpr::cpr)
 
 target_link_libraries(dao_test PRIVATE dao)
 

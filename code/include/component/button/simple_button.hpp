@@ -12,7 +12,7 @@ namespace dao {
     public:
         ~SimpleButton() override = default;
 
-        SimpleButton(): SimpleButton(0.0f, 0.0f, 0.0f, 0.0f, []() {
+        SimpleButton(): SimpleButton(0.0f, 0.0f, 0.0f, 0.0f, [] {
         }) {
         }
 

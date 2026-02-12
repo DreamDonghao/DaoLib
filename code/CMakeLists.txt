@@ -7,6 +7,7 @@ add_library(dao
         src/core/frame/window.cpp
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
+        src/core/frame/window_command.cpp
 )
 
 find_package(SDL3 CONFIG REQUIRED)

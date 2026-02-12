@@ -74,7 +74,7 @@ namespace dao {
 
         /// @brief 批量加载字形
         /// @details 将一批文字的字形编码添加到字形图集中
-        void batchRegisterGlyph(std::string_view chars) {
+        void batchRegisterGlyph(const std::string_view chars) {
             for (auto &ch: chars) {
                 registerGlyph(ch);
             }

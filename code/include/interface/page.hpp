@@ -4,7 +4,7 @@
 #ifndef PAGE_HPP
 #define PAGE_HPP
 #include <core/frame/vertex_batch_builder.hpp>
-#include <core/frame/window_event.hpp>
+#include <core/frame/window_command.hpp>
 
 namespace dao {
     /// @brief 页面接口
@@ -30,7 +30,8 @@ namespace dao {
 
         virtual GlyphAtlas &getGlyphAtlas() = 0;
 
-        virtual PageCmdQueue &getEvent() = 0;
+        /// @brief 获取窗口控制器
+        virtual WindowController &getWindowController() = 0;
 
         /// @brief 获取页面标题
         [[nodiscard]] virtual const std::string &getTitle() const = 0;

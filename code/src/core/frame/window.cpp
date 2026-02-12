@@ -2,16 +2,15 @@
 // Created by donghao on 25-12-6.
 //
 #include <core/frame/window.hpp>
-#include <core/frame/window_event.hpp>
+#include <core/frame/window_command.hpp>
 #include <core/basic_drawing_elements/atlas_region.hpp>
 #include <SDL3_image/SDL_image.h>
-#include <print>
 #include <utility>
 #include <chrono>
 
 namespace dao {
     Window::Window(const uint32 width, const uint32 height,
-        const bool resizable, const bool transparent, const bool onTop, const bool borderless) {
+                   const bool resizable, const bool transparent, const bool onTop, const bool borderless) {
         SDL_WindowFlags flags = 0;
         if (resizable)flags |= SDL_WINDOW_RESIZABLE;
         if (transparent)flags |= SDL_WINDOW_TRANSPARENT;
@@ -77,24 +76,12 @@ namespace dao {
             m_pages[m_nowPageTitle]->getGlyphAtlas().clearUpdateFlag();
         }
 
-        if (m_pages[m_nowPageTitle]->getEvent().isPresenceMessage()) {
-            switch (const auto event = m_pages[m_nowPageTitle]->getEvent().popEvent(); event.type) {
-                case PageCmdType::switchPage:
-                    switchPage(std::any_cast<std::string>(event.data));
-                    break;
-                default:
-                    break;
-            }
-        }
+        executeCommand();
     }
 
     void Window::handleInputEvent(const SDL_Event &event) {
         m_pages[m_nowPageTitle]->handleInputEvent(event);
     }
-
-    // void Window::handleInputState(const bool *keyboardState) {
-    //     m_pages[m_nowPageTitle]->handleInputState(keyboardState);
-    // }
 
     void Window::requestClose() {
         m_running = false;
@@ -114,6 +101,10 @@ namespace dao {
         SDL_RenderPresent(m_renderer);
     }
 
+    void Window::executeCommand() {
+        m_pages[m_nowPageTitle]->getWindowController().executeCommand(*this);
+    }
+
     void Window::switchPage(std::string title) {
         detectionError(m_pages.contains(title),
                        std::string("不存在的页面") + m_nowPageTitle + "->" + title);
@@ -124,4 +115,81 @@ namespace dao {
             m_renderer, &m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface()
         );
     }
+
+    void Window::setPosition(const uint32 x, const uint32 y) const {
+        SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
+    }
+    void Window::setSize(const uint32 width, const uint32 height) const {
+        SDL_SetWindowSize(m_window, static_cast<int>(width), static_cast<int>(height));
+    }
 }
+
+
+#ifdef _WIN32
+#include <Windows.h>
+
+void dao::Window::setClickThrough(const bool enable) const {
+    if (!m_window) return;
+    const SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
+    const auto hwnd = static_cast<HWND>(SDL_GetPointerProperty(
+        props,SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr
+    ));
+    if (!hwnd) {
+        DAO_ERROR_LOG("HWND 获取失败");
+        return;
+    }
+
+    LONG_PTR exStyle = GetWindowLongPtr(hwnd, GWL_EXSTYLE);
+    if (enable) {
+        exStyle |= WS_EX_TRANSPARENT;
+        exStyle |= WS_EX_LAYERED;
+    } else {
+        exStyle &= ~WS_EX_TRANSPARENT;
+        exStyle &= ~WS_EX_LAYERED;
+    }
+    SetWindowLongPtr(hwnd, GWL_EXSTYLE, exStyle);
+
+    SetWindowPos(hwnd, nullptr, 0, 0, 0, 0,
+                 SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
+}
+
+#elifdef __linux__
+#include <X11/Xlib.h>
+#include <X11/extensions/shape.h>
+
+void Window::setClickThrough(bool enable) {
+    SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
+    Display *display = (Display *) SDL_GetPointerProperty(
+        props,
+        SDL_PROP_WINDOW_X11_DISPLAY_POINTER,
+        NULL
+    );
+    Window xwindow = (Window) SDL_GetNumberProperty(
+        props,
+        SDL_PROP_WINDOW_X11_WINDOW_NUMBER,
+        0
+    );
+    if (!display || !xwindow) return;
+    if (enable) {
+        XShapeCombineMask(display, xwindow, ShapeInput, 0, 0, None, ShapeSet);
+    } else {
+        XShapeCombineMask(display, xwindow, ShapeInput, 0, 0, None, ShapeInvert);
+    }
+    XFlush(display);
+}
+#elifdef __APPLE__
+#import <Cocoa/Cocoa.h>
+void Window::setClickThrough(bool enable) {
+    SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
+    NSWindow *nsWindow = (__bridge
+    NSWindow *
+    )
+    SDL_GetPointerProperty(
+        props,
+        SDL_PROP_WINDOW_COCOA_WINDOW_POINTER,
+        NULL
+    );
+    if (!nsWindow) return;
+    [nsWindow setIgnoresMouseEvents: enable];
+}
+#endif

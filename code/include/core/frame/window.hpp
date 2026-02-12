@@ -24,7 +24,7 @@ namespace dao {
         /// @param onTop 置顶
         /// @param borderless 无边框
         Window(uint32 width, uint32 height,
-            bool resizable = false,bool transparent = false,bool onTop = false,bool borderless = false);
+               bool resizable = false, bool transparent = false, bool onTop = false, bool borderless = false);
 
         ~Window();
 
@@ -44,9 +44,6 @@ namespace dao {
         /// @brief 处理消息
         void handleInputEvent(const SDL_Event &event);
 
-        /// @brief 处理输入按键状态
-        //void handleInputState(const bool* keyboardState);
-
         /// @brief 窗口关闭请求
         void requestClose();
 
@@ -56,10 +53,18 @@ namespace dao {
         /// @brief 渲染
         void render();
 
-        [[nodiscard]]const SDL_Window *getSDLWindow() const {
+        [[nodiscard]] const SDL_Window *getSDLWindow() const {
             return m_window;
         }
 
+        /// @brief 切换页面
+        void switchPage(std::string title);
+
+        void setPosition(uint32 x, uint32 y) const;
+
+        void setSize(uint32 width, uint32 height) const;
+
+        void setClickThrough(bool enable) const;
     private:
         uint32 m_id;           ///< ID
         bool m_running = true; ///< 是否正在运行
@@ -69,7 +74,8 @@ namespace dao {
         std::string m_nowPageTitle;
         hash_map<std::string, std::unique_ptr<Page> > m_pages;
 
-        void switchPage(std::string title);
+        /// @brie 执行窗口控制器的命令
+        void executeCommand();
     };
 }
 #endif //WINDOW_HPP

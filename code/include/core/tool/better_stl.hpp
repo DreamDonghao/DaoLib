@@ -5,9 +5,12 @@
 #define BETTER_STL_HPP
 #include <cstdint>
 #include <algorithm>
+#include <chrono>
+#include <codecvt>
 #include <iostream>
 #include <memory>
 #include <random>
+#include <source_location>
 #include <unordered_map>
 #include <utf8cpp/utf8/checked.h>
 
@@ -43,19 +46,40 @@ namespace dao {
         }
     }
 
-    inline void pop_utf8(std::string &input) {
-        std::u32string u32;
-        utf8::utf8to32(input.begin(), input.end(), std::back_inserter(u32));
-        if (!u32.empty()) {
-            u32.pop_back();
-        }
-        std::string out;
-        utf8::utf32to8(u32.begin(), u32.end(), std::back_inserter(out));
-        input = std::move(out);
+
+    inline std::string currentDateTime() {
+        using namespace std::chrono;
+
+        const auto now = system_clock::now();
+
+        // 转换到中国时区
+        const zoned_time china_time{ "Asia/Shanghai", now };
+
+        const auto sec = floor<seconds>(china_time.get_local_time());
+        const auto ms =
+            duration_cast<milliseconds>(china_time.get_local_time() - sec).count();
+
+        return std::format("{:%Y-%m-%d %H:%M:%S}.{:03}", sec, ms);
     }
 
 
-    inline std::u32string utf8ToUtf32(const std::string& utf8Str) {
+
+    inline void DAO_ERROR_LOG(const std::string &msg,
+                              const std::source_location &loc = std::source_location::current()) {
+        std::cerr << "出错[ERROR]" << currentDateTime() << ":\n"
+                << msg << "\n"
+                << "文件[File]: " << loc.file_name() << "\n"
+                << "行数[Line]: " << loc.line() << "\n"
+                << "函数[Function]: " << loc.function_name() << "\n\n";
+    }
+
+    inline std::u32string to_u32(const std::string& s) {
+        std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> conv;
+        return conv.from_bytes(s);
+    }
+
+
+    inline std::u32string utf8ToUtf32(const std::string &utf8Str) {
         std::u32string utf32Str;
 
         for (size_t i = 0; i < utf8Str.size();) {
@@ -67,16 +91,16 @@ namespace dao {
                 i += 1;
             } else if ((c & 0xE0) == 0xC0) {
                 // 双字节 UTF-8
-                codepoint = ((c & 0x1F) << 6) | (utf8Str[i+1] & 0x3F);
+                codepoint = (c & 0x1F) << 6 | utf8Str[i + 1] & 0x3F;
                 i += 2;
             } else if ((c & 0xF0) == 0xE0) {
                 // 三字节 UTF-8
-                codepoint = ((c & 0x0F) << 12) | ((utf8Str[i+1] & 0x3F) << 6) | (utf8Str[i+2] & 0x3F);
+                codepoint = ((c & 0x0F) << 12) | ((utf8Str[i + 1] & 0x3F) << 6) | (utf8Str[i + 2] & 0x3F);
                 i += 3;
             } else if ((c & 0xF8) == 0xF0) {
                 // 四字节 UTF-8
-                codepoint = ((c & 0x07) << 18) | ((utf8Str[i+1] & 0x3F) << 12) |
-                           ((utf8Str[i+2] & 0x3F) << 6) | (utf8Str[i+3] & 0x3F);
+                codepoint = ((c & 0x07) << 18) | ((utf8Str[i + 1] & 0x3F) << 12) |
+                            ((utf8Str[i + 2] & 0x3F) << 6) | (utf8Str[i + 3] & 0x3F);
                 i += 4;
             }
 

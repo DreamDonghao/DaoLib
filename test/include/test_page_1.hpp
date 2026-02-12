@@ -21,8 +21,8 @@ public:
 
     TestPage1()
         : GeneralPage("testPage1"),
-          m_button(100, 100, 300, 200, [this]() {
-              m_event.addSwitchPage("testPage");
+          m_button(100, 100, 300, 200, [this] {
+              m_windowController.switchPage("testPage");
           }),
           m_style(m_button, 2, 3, 3),
           inputBox(500, 500, 300, 100),
