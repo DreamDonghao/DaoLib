@@ -8,9 +8,6 @@
 CMakeSettings.json
 /go_tool/.idea
 /go_tool/build
-/examples/ voracious_snake/.idea
-/examples/ voracious_snake/cmake-build-debug/
-/examples/ voracious_snake/cmake-build-release/
 /examples
 /cli_tool/build
 /cli_tool/.idea
