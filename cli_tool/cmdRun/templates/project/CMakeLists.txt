@@ -5,7 +5,7 @@ project({{.ProjectName}} LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(dao REQUIRED PATHS "C:/Users/donghao/Documents/GitHub/Dao/build/install")
+find_package(dao REQUIRED PATHS "{{.InstallPath}}")
 
 add_executable(${PROJECT_NAME}
         assets/textures/config/atlas_region.cpp

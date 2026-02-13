@@ -2,37 +2,132 @@
 
 [中文](README.zh.md) | [English](README.md)
 
-This is a cross platform C++GUI program development framework that can be used to develop GUI programs and applications such as games.
+A cross-platform C++ GUI development framework for building desktop applications, utility software, 2D games, and other visual programs.
+
+---
+
+📘 Documentation and Tutorials:  
+https://dreamdonghao.github.io/DaoUI/en/html
+
+Through this documentation, you can learn how to use DaoUI, understand its design philosophy, and participate in project development.
+
+---
+
+## Project Introduction
+
+DaoUI is a cross-platform GUI library built with C++, aiming to provide a lightweight, high-performance application development solution with a low learning curve.
+
+The framework is built on SDL3, supports hardware acceleration, and all rendering is accomplished through vertex batching. When used appropriately, it delivers excellent performance, making it suitable not only for desktop application development but also for 2D games or other real-time visualization projects.
+
+DaoUI is not positioned as a full-fledged game engine, nor does it provide a vast array of pre-built controls like Qt. Currently, it offers the following core capabilities:
+
+- Texture management
+- Geometric shape rendering
+- Basic interactive components
+- Page and window structure support
+
+The design philosophy is: provide only the essential underlying capabilities, allowing developers greater freedom to build their own UI or systems.
+
+With basic C++ experience, you can get started in a relatively short time. Commonly used components are under continuous development.
+
+Whether you're a beginner or an experienced developer, you are welcome to participate in the development and improvement of DaoUI for practice, learning, and building projects.
+
+---
+
+## Usage Instructions
+
+Before you begin, ensure that **CMake** and **vcpkg** are installed on your system and accessible from the command line.
+
+### 1. Download and Preparation
+
+Download the compressed package for your platform from the project's Releases page and extract it to a **stable, infrequently moved** directory.
+
+The **`dao`** executable in the package is the project's command-line tool. All subsequent project builds and resource processing will depend on it.
+It is recommended to add this directory to your system's PATH environment variable for convenient use from any location.
 
 ------
 
-You can click on this link to learn how to use DaoUI and participate in its development
+### 2. Installing dao
 
-[ https://dreamdonghao.github.io/DaoUI/en/html]( https://dreamdonghao.github.io/DaoUI/en/html)
+Execute:
 
-## Introduction
+```bash
+dao install [buildType] [vcpkgCmakePath]
+```
 
-DaoUI is a cross platform C++GUI library developed in C++, 
-allowing you to quickly develop desktop applications using DaoUI.
+Parameter explanation:
 
-DaoUI is developed based on SDL3 and can be accelerated by hardware.
-All content is drawn in batches using vertex arrays,
-which has good performance when used properly. 
-Therefore, it can also be used for game development.
-However, as DaoUI is not a professional game engine, 
-there may be higher requirements in terms of program optimization.
-You can use DaoUI to create your 2D games or other visual applications.
+- `[buildType]`: Build type
+  Options:
+    - `All`
+    - `Debug`
+    - `Release`
+    - `MinSizeRel`
+    - `RelWithDebInfo`
+- `[vcpkgCmakePath]`: Path to `vcpkg.cmake`, for example:
 
-DaoUI does not have as many components for developers to use as Qt does,
-but only provides basic content such as textures, geometric shapes,
-buttons, etc. Therefore, DaoUI has an extremely low learning cost,
-and as long as you have experience using C++,
-you can get started in a very short time.
-And various commonly used components are currently under development.
+```bash
+dao install All ~/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
 
-You can boldly participate in the development of DaoUI,
-whether you are a student without any development experience or interested in programming, 
-you can use this project to increase your development experience.
+Successful completion of the command indicates a successful installation.
 
-You may wonder why there is still a need to write a duplicate when there are already many existing libraries.
-Perhaps it's out of interest.
+------
+
+### 3. Creating a Project
+
+Create a new project using the following command:
+
+```bash
+dao create project [projectName]
+```
+
+Example:
+
+```bash
+dao create project hello_dao
+```
+
+The generated project structure is as follows:
+
+```
+hello_dao
+│   CMakeLists.txt
+│   main.cpp
+│   vcpkg.json
+│
+├───assets
+│   ├───textures
+│   │   ├───atlas
+│   │   ├───config
+│   │   ├───inc
+│   │   └───input_images
+│   └───ttf
+│
+└───pages
+        hello_dao_page.cpp
+        hello_dao_page.hpp
+```
+
+------
+
+### 4. Packaging Image Resources
+
+If you need to use image resources:
+
+1. Place the images into the `assets/textures/input_images` directory.
+2. Execute the following command in the project's root directory:
+
+```bash
+dao texture pack
+```
+
+This command will automatically complete the atlas packaging and generate the related files.
+
+------
+
+### 5. More Documentation
+
+For complete project documentation and advanced usage, please visit:
+
+https://dreamdonghao.github.io/DaoUI/en/html
