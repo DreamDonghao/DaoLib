@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"embed"
 	"io/fs"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -46,10 +47,19 @@ func CreateProject(projectName string) error {
 			return err
 		}
 
+		exePath, _ := os.Executable()
+		exeDir := filepath.Dir(exePath)
+		
+		installPath, err := os.ReadFile(filepath.Join(exeDir, "install_path"))
+		if err != nil {
+			log.Fatal(err)
+		}
+
 		// 如果是文本文件，替换占位符
 		if isTextFile(path, data) {
 			content := string(data)
 			content = strings.ReplaceAll(content, "{{.ProjectName}}", projectName)
+			content = strings.ReplaceAll(content, "{{.InstallPath}}", string(installPath))
 			data = []byte(content)
 		}
 

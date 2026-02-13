@@ -2,6 +2,7 @@ package main
 
 import (
 	"dao/cmdRun"
+	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -9,6 +10,32 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use: "dao",
+}
+
+var installCmd = &cobra.Command{
+	Use:   "install [buildType] [vcpkgCmakePath]",
+	Short: "安装 dao",
+	Args:  cobra.ExactArgs(2),
+	RunE: func(cmd *cobra.Command, args []string) error {
+		buildType := args[0]
+		vcpkgCmakePath := args[1]
+		valid := map[string]bool{
+			"All": true, "Debug": true, "Release": true, "MinSizeRel": true, "RelWithDebInfo": true,
+		}
+		if !valid[buildType] {
+			return fmt.Errorf("无效构建类型: %s (可选:All, Debug, Release, MinSizeRel, RelWithDebInfo)\n", buildType)
+		}
+		if buildType == "All" {
+			for typeName := range valid {
+				if typeName != "All" {
+					cmdRun.Install(typeName, vcpkgCmakePath)
+				}
+			}
+		} else {
+			cmdRun.Install(buildType, vcpkgCmakePath)
+		}
+		return nil
+	},
 }
 
 var createCmd = &cobra.Command{
@@ -24,7 +51,10 @@ var createProjectCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		projectName := args[0]
-		cmdRun.CreateProject(projectName)
+		err := cmdRun.CreateProject(projectName)
+		if err != nil {
+			return
+		}
 	},
 }
 
@@ -46,6 +76,7 @@ var packCmd = &cobra.Command{
 }
 
 func init() {
+	rootCmd.AddCommand(installCmd)
 	rootCmd.AddCommand(createCmd)
 	createCmd.AddCommand(createProjectCmd)
 
