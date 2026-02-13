@@ -1,12 +1,18 @@
 /.idea
 /cmake-build*
+/test_old
 /out
 /.vs
 /build
 /tool/.idea
 /doxygen_output
 CMakeSettings.json
+/go_tool/.idea
+/go_tool/build
 /examples/ voracious_snake/.idea
 /examples/ voracious_snake/cmake-build-debug/
 /examples/ voracious_snake/cmake-build-release/
 /examples
+/cli_tool/build
+/tool
+/cli_tool/.idea

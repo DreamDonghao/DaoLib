@@ -29,6 +29,10 @@ namespace dao {
         GlyphAtlas(const std::string_view &ttfPath, const float32 glyphSize, const int32 atlasSize)
             : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
               m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {
+            if(!m_font) {
+                const std::string errorMsg(ttfPath);
+                DAO_ERROR_LOG("字体文件加载失败:"+errorMsg);
+            }
             SDL_FillSurfaceRect(
                 m_atlasSurface, nullptr,
                 SDL_MapRGBA(

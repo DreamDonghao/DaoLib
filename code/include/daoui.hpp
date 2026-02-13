@@ -5,7 +5,6 @@
 #define DAOUI_HPP
 #include <core/frame/app.hpp>
 #include <core/frame/window.hpp>
-#include <core/frame/window_event.hpp>
 #include <interface/general_page.hpp>
 #include <interface/button.hpp>
 #include <component/button/simple_button.hpp>

@@ -49,7 +49,7 @@ namespace dao {
     protected:
         std::string m_title;
         WindowController m_windowController; ///< 窗口控制器
-        VertexBatchBuilder m_vertexBatch{"zh-cn.ttf", 64, 1024};
+        VertexBatchBuilder m_vertexBatch{"./assets/ttf/zh-cn.ttf", 64, 1024};
     };
 }
 #endif //GENERAL_PAGE_HPP

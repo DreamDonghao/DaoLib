@@ -44,6 +44,7 @@ namespace dao {
         }
         if (m_pages.empty()) {
             m_nowPageTitle = title;
+            setTitle(m_nowPageTitle);
         }
         m_pages[title] = std::move(page);
         m_pages[title]->init();
@@ -58,9 +59,11 @@ namespace dao {
         if (const uint32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
+            if (!m_atlasTextures[atlasId]) {
+                DAO_ERROR_LOG("纹理图集加载失败:"+std::string(texturePath));
+            }
             SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
-            detectionError(m_atlasTextures[atlasId],
-                           std::string("纹理图集加载失败") + SDL_GetError() + ":" + texturePath);
+
         }
     }
 
@@ -110,6 +113,7 @@ namespace dao {
                        std::string("不存在的页面") + m_nowPageTitle + "->" + title);
         m_pages[m_nowPageTitle]->close();
         m_nowPageTitle = std::move(title);
+        setTitle(m_nowPageTitle);
         m_pages[m_nowPageTitle]->init();
         m_atlasTextures[1] = SDL_CreateTextureFromSurface(
             m_renderer, &m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface()
@@ -119,8 +123,13 @@ namespace dao {
     void Window::setPosition(const uint32 x, const uint32 y) const {
         SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
     }
+
     void Window::setSize(const uint32 width, const uint32 height) const {
         SDL_SetWindowSize(m_window, static_cast<int>(width), static_cast<int>(height));
+    }
+
+    void Window::setTitle(const std::string &title) const {
+        SDL_SetWindowTitle(m_window, title.c_str());
     }
 }
 

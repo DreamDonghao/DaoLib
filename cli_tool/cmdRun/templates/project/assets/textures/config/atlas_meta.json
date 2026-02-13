@@ -1,0 +1,13 @@
+{
+  "images": {
+    "image": {
+      "atlas_file": "atlas_0002.png",
+      "atlas_id": 2,
+      "bottom": 48,
+      "left": 0,
+      "right": 48,
+      "top": 0
+    }
+  },
+  "sequence_frames": {}
+}

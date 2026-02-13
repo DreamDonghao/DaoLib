@@ -1,4 +1,6 @@
-include_directories(include)
+target_include_directories(dao
+        include
+)
 
 add_library(dao
         src/core/basic_drawing_elements/atlas_texture.cpp

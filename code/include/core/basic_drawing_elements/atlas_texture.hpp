@@ -6,6 +6,8 @@
 #include "core/tool/mapped_region.hpp"
 
 namespace dao {
+    using TextureID = uint32;
+
     /// @brief 图集纹理
     /// @details 表示纹理图集中的一个纹理区域
     /// 本类型本身不持有实际纹理数据，只保存纹理名称的枚举值

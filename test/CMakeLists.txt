@@ -1,28 +1,37 @@
-include_directories(
-        ../code/include
-        ../tool/example/inc
-        include
+cmake_minimum_required(VERSION 3.31)
+
+project(test LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(dao REQUIRED PATHS "../build/install")
+
+add_executable(${PROJECT_NAME}
+        assets/textures/config/atlas_region.cpp
+        main.cpp
+        pages/hello_dao_page.cpp
 )
 
-add_executable(dao_test
-        src/main.cpp
-        src/atlas_region.cpp
-        src/test_page.cpp
+# 本地 include
+target_include_directories(${PROJECT_NAME} PRIVATE
+        assets/textures/inc
+        pages
 )
-find_package(cpr CONFIG REQUIRED)
-target_link_libraries(dao_test PRIVATE cpr::cpr)
 
-target_link_libraries(dao_test PRIVATE dao)
+# 链接 dao
+target_link_libraries(${PROJECT_NAME} PRIVATE dao::dao)
 
-find_package(SDL3 CONFIG REQUIRED)
-target_link_libraries(dao_test PRIVATE SDL3::SDL3)
-
-find_package(SDL3_ttf CONFIG REQUIRED)
-target_link_libraries(dao_test PRIVATE SDL3_ttf::SDL3_ttf)
-
+# 先把所有需要的目录全部建好
 add_custom_command(
-        TARGET dao_test POST_BUILD
+        TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/assets/ttf"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/assets/textures"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/assets/textures/atlas"
         COMMAND ${CMAKE_COMMAND} -E copy_directory
-        ${CMAKE_SOURCE_DIR}/tool/example/atlas
-        ${CMAKE_CURRENT_BINARY_DIR}/
+        "${CMAKE_SOURCE_DIR}/assets/ttf"
+        "${CMAKE_BINARY_DIR}/assets/ttf"
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_SOURCE_DIR}/assets/textures/atlas"
+        "${CMAKE_BINARY_DIR}/assets/textures/atlas"
 )
