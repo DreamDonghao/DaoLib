@@ -11,7 +11,11 @@ var searchData=
   ['render_8',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
   ['request_9',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
   ['requestclose_10',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
-  ['resetqudaindices_11',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
-  ['rgbnorm_12',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
-  ['run_13',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
+  ['reset_11',['reset',['../classdao_1_1TickTimer.html#ab2a607659a93d2ee9b6c6477566d5078',1,'dao::TickTimer']]],
+  ['resetqudaindices_12',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
+  ['rgbnorm_13',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
+  ['ring_5fvector_2ehpp_14',['ring_vector.hpp',['../ring__vector_8hpp.html',1,'']]],
+  ['ringvector_15',['RingVector',['../classdao_1_1RingVector.html',1,'dao::RingVector&lt; Type &gt;'],['../classdao_1_1RingVector.html#a38432003aae0b7b7cd7dde56a3c9cba4',1,'dao::RingVector::RingVector()']]],
+  ['ringvector_3c_20dao_3a_3aatlastexture_20_3e_16',['RingVector&lt; dao::AtlasTexture &gt;',['../classdao_1_1RingVector.html',1,'dao']]],
+  ['run_17',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
 ];

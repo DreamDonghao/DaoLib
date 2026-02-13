@@ -7,5 +7,6 @@ var searchData=
   ['pressed_4',['Pressed',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040',1,'dao']]],
   ['process_5',['Development Process',['../join.html#autotoc_md0',1,'']]],
   ['project_20dependencies_6',['Project Dependencies',['../join.html#autotoc_md18',1,'']]],
-  ['pull_20request_7',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]]
+  ['pull_20request_7',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
+  ['push_5fback_8',['push_back',['../classdao_1_1RingVector.html#a08827cd0c873cb3c7b0c644f464aec80',1,'dao::RingVector::push_back(const Type &amp;value)'],['../classdao_1_1RingVector.html#affb5511e61ad5ade84b86f43b3c942b2',1,'dao::RingVector::push_back(Type &amp;&amp;value)']]]
 ];

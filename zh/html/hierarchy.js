@@ -10,6 +10,7 @@ var hierarchy =
     ] ],
     [ "dao::ColorRGBA", "structdao_1_1ColorRGBA.html", null ],
     [ "dao::Drawable", "classdao_1_1Drawable.html", [
+      [ "dao::AnimatedSprite", "classdao_1_1AnimatedSprite.html", null ],
       [ "dao::ButtonStyle", "classdao_1_1ButtonStyle.html", [
         [ "dao::SimpleTextButtonStyle", "classdao_1_1SimpleTextButtonStyle.html", null ],
         [ "dao::SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", null ]
@@ -25,8 +26,10 @@ var hierarchy =
     [ "dao::Page", "classdao_1_1Page.html", [
       [ "dao::GeneralPage", "classdao_1_1GeneralPage.html", null ]
     ] ],
+    [ "dao::RingVector&lt; Type &gt;", "classdao_1_1RingVector.html", null ],
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],
     [ "dao::Text", "classdao_1_1Text.html", null ],
+    [ "dao::TickTimer", "classdao_1_1TickTimer.html", null ],
     [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
     [ "dao::Window", "classdao_1_1Window.html", null ],
     [ "dao::WindowCommand", "structdao_1_1WindowCommand.html", null ],

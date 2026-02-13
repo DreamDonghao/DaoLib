@@ -3,5 +3,6 @@ var searchData=
   ['page_0',['Page',['../classdao_1_1Page.html',1,'dao']]],
   ['page_2ehpp_1',['page.hpp',['../page_8hpp.html',1,'']]],
   ['pressed_2',['Pressed',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040',1,'dao']]],
-  ['pull_20request_3',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
+  ['pull_20request_3',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
+  ['push_5fback_4',['push_back',['../classdao_1_1RingVector.html#a08827cd0c873cb3c7b0c644f464aec80',1,'dao::RingVector::push_back(const Type &amp;value)'],['../classdao_1_1RingVector.html#affb5511e61ad5ade84b86f43b3c942b2',1,'dao::RingVector::push_back(Type &amp;&amp;value)']]]
 ];
