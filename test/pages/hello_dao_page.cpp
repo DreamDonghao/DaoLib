@@ -1,4 +1,5 @@
 #include "hello_dao_page.hpp"
+using namespace dao;
 
 std::vector<uint32> HelloDaoPage::getRegisterTexture() const {
     return {texture::image};
@@ -11,9 +12,7 @@ void HelloDaoPage::close() {
 }
 
 void HelloDaoPage::update() {
-    m_vertexBatch.clearDrawBatches();
-    m_vertexBatch.addToBatch(text);
-    m_vertexBatch.addToBatch(img);
+    addToBatch(image);
 }
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {

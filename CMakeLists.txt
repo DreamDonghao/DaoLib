@@ -1,3 +1,5 @@
 cmake_minimum_required(VERSION 3.31)
 project(dao LANGUAGES CXX VERSION 0.0.1)
 add_subdirectory(code)
+project(test)
+add_subdirectory(test)

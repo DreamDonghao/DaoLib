@@ -7,6 +7,8 @@
 #include <utility>
 
 namespace dao {
+    template<typename T> concept BatchWritable = requires(T t, VertexBatchBuilder &b) { t.writeToBatch(b); };
+
     /// @brief 通用页面接口
     /// @details 提供的一个继承自 Page 的通用页面接口，实现了一些页面通常应该具备的功能
     class GeneralPage : public Page {
@@ -46,9 +48,17 @@ namespace dao {
             return m_title;
         }
 
+
+        template<BatchWritable... Args>
+        void addToBatch(Args &&... args) {
+            m_vertexBatch.clearDrawBatches();
+            (args.writeToBatch(m_vertexBatch), ...);
+        }
+
     protected:
-        std::string m_title;
         WindowController m_windowController; ///< 窗口控制器
+    private:
+        std::string m_title;
         VertexBatchBuilder m_vertexBatch{"./assets/ttf/zh-cn.ttf", 64, 1024};
     };
 }

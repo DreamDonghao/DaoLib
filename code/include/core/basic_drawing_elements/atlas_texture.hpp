@@ -26,6 +26,12 @@ namespace dao {
 
         AtlasTexture(uint32 textureId,BoundingBox boundingBox);
 
+        /// @brief 设置位置
+        void setPosition(float32 x, float32 y);
+
+        /// @brief 设置大小
+        void setSize(float32 width, float32 height);
+
         /// @brief 获取枚举名
         /// @returns 纹理枚举名
         [[nodiscard]] const uint32 &getName() const { return m_textureId; }

@@ -3,9 +3,11 @@
 //
 #ifndef SIMPLE_BUTTON_STYLE_HPP
 #define SIMPLE_BUTTON_STYLE_HPP
+#include "simple_button.hpp"
 #include "interface/button_style.hpp"
 
 namespace dao {
+
     class SimpleTextureButtonStyle : public ButtonStyle {
     public:
         SimpleTextureButtonStyle(

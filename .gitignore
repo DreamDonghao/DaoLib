@@ -12,3 +12,8 @@ CMakeSettings.json
 /cli_tool/build
 /cli_tool/.idea
 /releases
+/test/.idea
+/test/cmake-build-debug
+/old*
+/example/.idea
+/example/cmake-build-debug

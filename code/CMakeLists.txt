@@ -18,6 +18,8 @@ add_library(dao
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
         src/core/frame/window_command.cpp
+        src/component/button/simple_button.cpp
+        src/component/image.cpp
 )
 
 set_target_properties(dao PROPERTIES

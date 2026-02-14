@@ -12,19 +12,18 @@ namespace dao {
     public:
         ~SimpleButton() override = default;
 
-        SimpleButton(): SimpleButton(0.0f, 0.0f, 0.0f, 0.0f, [] {
-        }) {
+        SimpleButton()
+            : SimpleButton(0.0f, 0.0f, 0.0f, 0.0f, [] {
+            }) {
         }
 
-        SimpleButton(const float32 x, const float32 y, const float32 width, const float32 height,
+        SimpleButton(float32 x, float32 y, float32 width, float32 height,
                      std::move_only_function<void()> onClick,
-                     const ButtonStatus buttonStatus = dao::ButtonStatus::Normal)
-            : m_boundingBox(x, y, x + width, y + height),
-              m_status(buttonStatus), m_onClick(std::move(onClick)) {
-        }
+                     ButtonStatus buttonStatus = ButtonStatus::Normal);
 
-        SimpleButton(const SimpleButton&) = delete;
-        SimpleButton& operator=(const SimpleButton&) = delete;
+        SimpleButton(const SimpleButton &) = delete;
+
+        SimpleButton &operator=(const SimpleButton &) = delete;
 
         SimpleButton(SimpleButton &&other) noexcept {
             m_boundingBox = other.m_boundingBox;
@@ -39,52 +38,25 @@ namespace dao {
             return *this;
         }
 
-        void handleEvent(const SDL_Event &event) override {
-            if (m_status == ButtonStatus::Disabled) {
-                return;
-            }
-            float x = 0, y = 0;
-            if (event.type == SDL_EVENT_MOUSE_MOTION) {
-                x = event.motion.x;
-                y = event.motion.y;
-            } else if (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN ||
-                       event.type == SDL_EVENT_MOUSE_BUTTON_UP) {
-                x = event.button.x;
-                y = event.button.y;
-            } else {
-                return;
-            }
-            if (!m_boundingBox.isInBoundingBox(x, y)) {
-                m_status = ButtonStatus::Normal;
-                return;
-            }
-            if (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN &&
-                event.button.button == SDL_BUTTON_LEFT) {
-                m_status = ButtonStatus::Pressed;
-                return;
-            }
-            if (event.type == SDL_EVENT_MOUSE_BUTTON_UP &&
-                event.button.button == SDL_BUTTON_LEFT &&
-                m_status == ButtonStatus::Pressed) {
-                m_status = ButtonStatus::Hover;
-                m_onClick();
-                return;
-            }
-            m_status = ButtonStatus::Hover;
-        }
+        /// @brief 处理事件
+        void handleEvent(const SDL_Event &event) override;
+
 
         [[nodiscard]] bool isEnable() const override {
             return m_status != ButtonStatus::Disabled;
         }
 
+        /// @brief 获取当前状态
         [[nodiscard]] ButtonStatus getStatus() const override {
             return m_status;
         }
 
+        /// @brief 设置状态
         void setStatus(const ButtonStatus status) {
             m_status = status;
         }
 
+        /// @brief 获取边界框
         [[nodiscard]] BoundingBox getBoundingBox() const {
             return m_boundingBox;
         }

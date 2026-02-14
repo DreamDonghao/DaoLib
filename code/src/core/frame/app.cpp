@@ -2,7 +2,6 @@
 // Created by donghao on 25-12-6.
 //
 #include <core/frame/app.hpp>
-#include <iostream>
 #include <ranges>
 #include <SDL3_ttf/SDL_ttf.h>
 
@@ -14,15 +13,11 @@ namespace dao {
                 render();
                 window->update();
                 m_runWindowNum += window->isRunning();
-                if (SDL_GetKeyboardFocus() == window->getSDLWindow()) {
-                    const bool *key = SDL_GetKeyboardState(nullptr);
-                }
             }
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
                 if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
                     uint32 wid = event.window.windowID;
-
                     if (auto it = m_windows.find(wid); it != m_windows.end()) {
                         it->second->requestClose();
                     }
@@ -31,7 +26,6 @@ namespace dao {
                 if (!focus) {
                     continue;
                 }
-
                 auto wid = SDL_GetWindowID(focus);
                 m_windows[wid]->handleInputEvent(event);
             }
@@ -49,11 +43,11 @@ namespace dao {
 
     App::App() {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
-            std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
+            DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
         SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, "1");
         if (!TTF_Init()) {
-            SDL_Log("1TTF_Init failed: %s", SDL_GetError());
+            DAO_ERROR_LOG(std::string("初始化 SDL_TTF 失败 ") + SDL_GetError());
         }
     }
 

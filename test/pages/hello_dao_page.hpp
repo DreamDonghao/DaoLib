@@ -1,18 +1,19 @@
 #pragma once
 #include <daoui.hpp>
 #include <texture_id.hpp>
-using namespace dao;
+#include <component/image.hpp>
 
-class HelloDaoPage :public GeneralPage {
-    Text text{0, 0, U"你好 Dao", 50, hexToRGBA("#D249FC")};
-    AtlasTexture img{texture::image,10,50,160,200};
+class HelloDaoPage :public dao::GeneralPage {
+    //Text text{0, 0, U"你好 Dao", 50, hexToRGBA("#D249FC")};
+    dao::Image image{10,50,150,150,texture::image};
+    dao::AtlasTexture img{texture::image,10,50,160,200};
 public:
     HelloDaoPage() : GeneralPage("helloDaoPage") {
     };
 
     ~HelloDaoPage() override = default;
 
-    [[nodiscard]] std::vector<uint32> getRegisterTexture() const override;
+    [[nodiscard]] std::vector<dao::uint32> getRegisterTexture() const override;
 
     void init() override;
 

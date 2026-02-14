@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.31)
-
-project(test LANGUAGES CXX)
+if(NOT CMAKE_PROJECT_NAME)
+    cmake_minimum_required(VERSION 3.31)
+    project(test LANGUAGES CXX )
+endif()
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -29,9 +30,9 @@ add_custom_command(
         COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/assets/textures"
         COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/assets/textures/atlas"
         COMMAND ${CMAKE_COMMAND} -E copy_directory
-        "${CMAKE_SOURCE_DIR}/assets/ttf"
-        "${CMAKE_BINARY_DIR}/assets/ttf"
+        "${CMAKE_SOURCE_DIR}/test/assets/ttf"
+        "${CMAKE_BINARY_DIR}/test/assets/ttf"
         COMMAND ${CMAKE_COMMAND} -E copy_directory
-        "${CMAKE_SOURCE_DIR}/assets/textures/atlas"
-        "${CMAKE_BINARY_DIR}/assets/textures/atlas"
+        "${CMAKE_SOURCE_DIR}/test/assets/textures/atlas"
+        "${CMAKE_BINARY_DIR}/test/assets/textures/atlas"
 )
