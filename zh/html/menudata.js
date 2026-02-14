@@ -33,6 +33,7 @@ var menudata={children:[
 {text:"变量",url:"namespacemembers_vars.html"},
 {text:"类型定义",url:"namespacemembers_type.html"},
 {text:"枚举",url:"namespacemembers_enum.html"}]}]},
+{text:"概念",url:"concepts.html"},
 {text:"类",url:"annotated.html",children:[
 {text:"类列表",url:"annotated.html"},
 {text:"类索引",url:"classes.html"},

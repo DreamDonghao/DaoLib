@@ -50,6 +50,7 @@ var NAVTREE =
         [ "枚举", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
+    [ "概念", "concepts.html", "concepts" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -72,8 +73,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "animated__sprite_8hpp.html",
-"classdao_1_1Rectangle.html#afdb783feff29bb4cb2b6e4e223871888",
-"functions_~.html"
+"classdao_1_1Page.html#aca509ded5e077e2100b1b830d07777d8",
+"functions_g.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

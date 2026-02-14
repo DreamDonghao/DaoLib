@@ -1,6 +1,8 @@
 var annotated_dup =
 [
     [ "dao", "namespacedao.html", [
+      [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
+      [ "Image", "classdao_1_1Image.html", "classdao_1_1Image" ],
       [ "AtlasTexture", "classdao_1_1AtlasTexture.html", "classdao_1_1AtlasTexture" ],
       [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
       [ "AtlasDrawBatch", "structdao_1_1AtlasDrawBatch.html", "structdao_1_1AtlasDrawBatch" ],
@@ -14,7 +16,6 @@ var annotated_dup =
       [ "BoundingBox", "classdao_1_1BoundingBox.html", "classdao_1_1BoundingBox" ],
       [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
       [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html", "classdao_1_1AnimatedSprite" ],
-      [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
       [ "SimpleTextButtonStyle", "classdao_1_1SimpleTextButtonStyle.html", "classdao_1_1SimpleTextButtonStyle" ],
       [ "SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", "classdao_1_1SimpleTextureButtonStyle" ],
       [ "GeometryVertex", "structdao_1_1GeometryVertex.html", "structdao_1_1GeometryVertex" ],

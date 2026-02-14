@@ -4,7 +4,7 @@ var searchData=
   ['a_20feature_20branch_1',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
   ['a_20pull_20request_2',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
   ['addpage_3',['addPage',['../classdao_1_1Window.html#abe737d4b0ff1d4ade1c4df0b82ec4bb6',1,'dao::Window']]],
-  ['addtobatch_4',['addToBatch',['../classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd',1,'dao::VertexBatchBuilder::addToBatch(const AtlasTexture &amp;texture)'],['../classdao_1_1VertexBatchBuilder.html#a8b487cf79e3e93f7f1833712c1e7fff2',1,'dao::VertexBatchBuilder::addToBatch(std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const int32 &gt; indices)'],['../classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f',1,'dao::VertexBatchBuilder::addToBatch(const Text &amp;text)']]],
+  ['addtobatch_4',['addToBatch',['../classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd',1,'dao::VertexBatchBuilder::addToBatch(const AtlasTexture &amp;texture)'],['../classdao_1_1VertexBatchBuilder.html#a8b487cf79e3e93f7f1833712c1e7fff2',1,'dao::VertexBatchBuilder::addToBatch(std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const int32 &gt; indices)'],['../classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f',1,'dao::VertexBatchBuilder::addToBatch(const Text &amp;text)'],['../classdao_1_1GeneralPage.html#a1733e27e83628d7bcbb0cda5ff80852f',1,'dao::GeneralPage::addToBatch()']]],
   ['and_20commit_5',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
   ['and_20revision_6',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
   ['animated_5fsprite_2ehpp_7',['animated_sprite.hpp',['../animated__sprite_8hpp.html',1,'']]],

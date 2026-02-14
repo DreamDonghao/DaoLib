@@ -1,17 +1,18 @@
 <map id="dao::BoundingBox::BoundingBox" name="dao::BoundingBox::BoundingBox">
-<area shape="rect" id="Node000001" title="构造函数" alt="" coords="512,155,747,181"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a1e19f44123bd2183125f73f6c6c70569" title="构造函数" alt="" coords="303,61,446,101"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,153,434,104,435,99,579,148"/>
-<area shape="rect" id="Node000005" href="$classdao_1_1InputBox.html#ab3a79c9b87ad07a656854dcbbcd9997e" title=" " alt="" coords="285,126,464,151"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="505,156,464,152,465,146,506,151"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1MappedRegion.html#a79a6c612ba70e3c5932a9622284f7324" title=" " alt="" coords="295,176,454,216"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="501,185,454,190,454,185,500,180"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1SimpleButton.html#a14872b42b5fc41a96efdfbc477f49c13" title=" " alt="" coords="299,264,450,304"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="589,189,421,266,419,261,587,184"/>
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="512,181,747,206"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a1e19f44123bd2183125f73f6c6c70569" title="构造函数" alt="" coords="303,87,446,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,179,434,129,435,124,579,174"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#ab3a79c9b87ad07a656854dcbbcd9997e" title=" " alt="" coords="285,151,464,177"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="505,182,464,177,465,172,506,176"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1MappedRegion.html#a79a6c612ba70e3c5932a9622284f7324" title=" " alt="" coords="295,201,454,241"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="501,210,454,215,454,210,500,205"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1SimpleButton.html#aaa756b4b071c768f34820e7122de2165" title=" " alt="" coords="299,265,450,305"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="581,213,465,256,432,268,430,263,463,251,579,208"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1AnimatedSprite.html#a4b9e02262910d6abf59cd97c39541f2d" title=" " alt="" coords="44,29,199,69"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,73,199,62,199,56,290,68"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1SimpleTextureButtonStyle.html#a458fc9651483a6e7af9ee1f47c6a5c4b" title=" " alt="" coords="5,93,237,133"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="290,95,238,101,237,96,289,89"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,90,198,69,200,64,291,85"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Image.html#a915db11ebb17707aa93184b929d0042f" title=" " alt="" coords="49,94,193,119"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="290,109,194,109,194,104,290,104"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1SimpleTextureButtonStyle.html#a458fc9651483a6e7af9ee1f47c6a5c4b" title=" " alt="" coords="5,144,237,184"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="291,128,211,147,210,141,289,123"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="165,18,149,11,121,8,97,10,82,15,77,21,79,28,74,30,71,20,79,10,96,5,121,3,151,6,167,13"/>
-<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="418,252,403,245,375,243,350,245,335,249,330,255,333,263,328,264,325,254,332,245,349,239,375,237,404,240,420,247"/>
 </map>

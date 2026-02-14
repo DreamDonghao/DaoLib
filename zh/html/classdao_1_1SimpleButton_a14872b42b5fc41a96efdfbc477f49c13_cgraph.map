@@ -1,6 +1,0 @@
-<map id="dao::SimpleButton::SimpleButton" name="dao::SimpleButton::SimpleButton">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,156,69"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="36,30,33,20,40,10,56,5,81,3,109,6,124,13,122,18,107,11,81,8,57,10,44,15,38,21,41,28"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#ab7c0a5bdec77c69149249cd4413d4047" title="构造函数" alt="" coords="204,37,439,62"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,47,190,47,190,52,156,52"/>
-</map>

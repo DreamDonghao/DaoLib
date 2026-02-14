@@ -3,5 +3,6 @@ var dir_22e820cb3364895cf8fb238b7ed3b342 =
     [ "button", "dir_e110ac75852ca2ec3324e5bdaf59a0dd.html", "dir_e110ac75852ca2ec3324e5bdaf59a0dd" ],
     [ "input", "dir_0c8a8e0f147f06be3e7c94bb538a7668.html", "dir_0c8a8e0f147f06be3e7c94bb538a7668" ],
     [ "geometry.hpp", "geometry_8hpp.html", "geometry_8hpp" ],
+    [ "image.hpp", "image_8hpp.html", "image_8hpp" ],
     [ "rectangle.hpp", "rectangle_8hpp.html", "rectangle_8hpp" ]
 ];

@@ -9,7 +9,8 @@ var indexSectionsWithContent =
   6: "cfhitu",
   7: "bimw",
   8: "dhimnops",
-  9: "12345678bdfjpru仓使克列创参合审开提的编行项"
+  9: "12345678bdfjpru仓使克列创参合审开提的编行项",
+  10: "b"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "pages"
+  9: "pages",
+  10: "concepts"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "类型定义",
   7: "枚举",
   8: "枚举值",
-  9: "页"
+  9: "页",
+  10: "概念"
 };
 

@@ -1,0 +1,9 @@
+<map id="dao::AtlasTexture::setPosition" name="dao::AtlasTexture::setPosition">
+<area shape="rect" id="Node000001" title="设置位置" alt="" coords="5,47,148,87"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc" title="获取高度" alt="" coords="196,5,408,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,49,229,31,231,36,149,54"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401" title="获取宽度" alt="" coords="199,55,405,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,65,185,65,185,70,148,70"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1BoundingBox.html#a9dd1dc9331a7277dccc08a74a31b4f0e" title="设置数据" alt="" coords="218,104,386,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,80,231,98,229,104,148,86"/>
+</map>

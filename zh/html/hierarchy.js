@@ -15,6 +15,7 @@ var hierarchy =
         [ "dao::SimpleTextButtonStyle", "classdao_1_1SimpleTextButtonStyle.html", null ],
         [ "dao::SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", null ]
       ] ],
+      [ "dao::Image", "classdao_1_1Image.html", null ],
       [ "dao::InputBoxStyle", "classdao_1_1InputBoxStyle.html", null ],
       [ "dao::Rectangle", "classdao_1_1Rectangle.html", null ]
     ] ],

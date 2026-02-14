@@ -1,5 +1,9 @@
 <map id="dao::BoundingBox::getHeight" name="dao::BoundingBox::getHeight">
-<area shape="rect" id="Node000001" title="获取高度" alt="" coords="245,5,457,31"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9" title=" " alt="" coords="5,5,197,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,21,198,21,198,15,232,15"/>
+<area shape="rect" id="Node000001" title="获取高度" alt="" coords="468,35,680,60"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9" title=" " alt="" coords="228,5,420,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,36,420,32,420,27,455,31"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1AtlasTexture.html#a5f8e8f25f92b41c66926b09e53b508a1" title="设置位置" alt="" coords="253,55,395,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="454,63,396,70,395,65,454,58"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Image.html#ad5dcd4bfd07cbe8e12fbf5593ce54d1c" title=" " alt="" coords="5,63,180,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,78,180,78,180,73,239,73"/>
 </map>
