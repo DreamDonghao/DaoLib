@@ -31,6 +31,7 @@ var hierarchy =
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],
     [ "dao::Text", "classdao_1_1Text.html", null ],
     [ "dao::TickTimer", "classdao_1_1TickTimer.html", null ],
+    [ "dao::Tray", "classdao_1_1Tray.html", null ],
     [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
     [ "dao::Window", "classdao_1_1Window.html", null ],
     [ "dao::WindowCommand", "structdao_1_1WindowCommand.html", null ],

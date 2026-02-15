@@ -7,6 +7,7 @@ var searchData=
   ['color_4',['color',['../structdao_1_1GeometryVertex.html#ab060f06f53bc8a380cebe34c337aac70',1,'dao::GeometryVertex']]],
   ['color_5frgb_2ehpp_5',['color_rgb.hpp',['../color__rgb_8hpp.html',1,'']]],
   ['colorrgba_6',['ColorRGBA',['../structdao_1_1ColorRGBA.html',1,'dao']]],
-  ['createwindow_7',['createWindow',['../classdao_1_1App.html#a1d61b27853d61a76fac818ee40939051',1,'dao::App']]],
-  ['currentdatetime_8',['currentDateTime',['../namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994',1,'dao']]]
+  ['createtray_7',['createTray',['../classdao_1_1App.html#a0b32236d553792ba926b1797bbb2d57a',1,'dao::App']]],
+  ['createwindow_8',['createWindow',['../classdao_1_1App.html#a1d61b27853d61a76fac818ee40939051',1,'dao::App']]],
+  ['currentdatetime_9',['currentDateTime',['../namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994',1,'dao']]]
 ];

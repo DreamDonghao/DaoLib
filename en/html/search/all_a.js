@@ -13,6 +13,7 @@ var searchData=
   ['commit_10',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
   ['conduct_11',['8. Code of Conduct',['../join.html#autotoc_md16',1,'']]],
   ['create_20a_20feature_20branch_12',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
-  ['createwindow_13',['createWindow',['../classdao_1_1App.html#a1d61b27853d61a76fac818ee40939051',1,'dao::App']]],
-  ['currentdatetime_14',['currentDateTime',['../namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994',1,'dao']]]
+  ['createtray_13',['createTray',['../classdao_1_1App.html#a0b32236d553792ba926b1797bbb2d57a',1,'dao::App']]],
+  ['createwindow_14',['createWindow',['../classdao_1_1App.html#a1d61b27853d61a76fac818ee40939051',1,'dao::App']]],
+  ['currentdatetime_15',['currentDateTime',['../namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994',1,'dao']]]
 ];

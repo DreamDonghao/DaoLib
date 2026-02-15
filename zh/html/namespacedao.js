@@ -25,6 +25,7 @@ var namespacedao =
     [ "ColorRGBA", "structdao_1_1ColorRGBA.html", "structdao_1_1ColorRGBA" ],
     [ "GlyphAtlas", "classdao_1_1GlyphAtlas.html", "classdao_1_1GlyphAtlas" ],
     [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ],
+    [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
     [ "RingVector", "classdao_1_1RingVector.html", "classdao_1_1RingVector" ],
     [ "TickTimer", "classdao_1_1TickTimer.html", "classdao_1_1TickTimer" ],
     [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
