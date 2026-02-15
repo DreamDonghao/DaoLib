@@ -1,13 +1,13 @@
 {
   "name" : "app-sdl3",
   "version-string" : "0.1.0",
-  "builtin-baseline" : "a11dd074dac3fa168aa8efb992cbb0220a3dc481",
+  "builtin-baseline" : "e5a1490e1409d175932ef6014519e9ae149ddb7c",
   "dependencies" : [ {
     "name" : "sdl3",
-    "version>=" : "3.2.26"
+    "version>=" : "3.4.0"
   }, {
     "name" : "sdl3-image",
-    "version>=" : "3.2.4",
+    "version>=" : "3.4.0",
     "default-features" : false,
     "features" : [ "png" ]
   }, {
@@ -16,18 +16,6 @@
   }, {
     "name" : "utfcpp",
     "version>=" : "4.0.6"
-  }, {
-    "name" : "cpp-httplib",
-    "version>=" : "0.28.0"
-  }, {
-    "name" : "nlohmann-json",
-    "version>=" : "3.12.0#1"
-  }, {
-    "name" : "cpr",
-    "version>=" : "1.14.1"
-  }, {
-    "name" : "openssl",
-    "version>=" : "3.6.0#3"
   } ],
   "overrides" : [ ]
 }

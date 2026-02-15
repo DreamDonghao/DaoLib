@@ -41,11 +41,18 @@ namespace dao {
         return *m_windows[windowId];
     }
 
+    Tray &App::createTray(const std::string_view iconPath, const std::string_view tooltip) {
+        m_tray = std::make_unique<Tray>(iconPath, tooltip);
+        return *m_tray;
+    }
+
     App::App() {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
-        SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, "1");
+        if (!SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, "1")) {
+            DAO_ERROR_LOG(std::string("初始化 SDL_Hint 失败 ") + SDL_GetError());
+        }
         if (!TTF_Init()) {
             DAO_ERROR_LOG(std::string("初始化 SDL_TTF 失败 ") + SDL_GetError());
         }

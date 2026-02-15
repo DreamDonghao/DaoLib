@@ -64,9 +64,10 @@ namespace dao {
 
         void setSize(uint32 width, uint32 height) const;
 
-        void setTitle(const std::string& title) const;
+        void setTitle(const std::string &title) const;
 
         void setClickThrough(bool enable) const;
+
     private:
         uint32 m_id;           ///< ID
         bool m_running = true; ///< 是否正在运行

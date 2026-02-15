@@ -4,6 +4,7 @@
 #ifndef APP_HPP
 #define APP_HPP
 #include <core/frame/window.hpp>
+#include <core/frame/tray.hpp>
 
 namespace dao {
     /// @brief 应用
@@ -38,6 +39,9 @@ namespace dao {
                              bool resizable = false, bool transparent = false, bool onTop = false,
                              bool borderless = false);
 
+        /// @brief 创建托盘
+        Tray &createTray(std::string_view iconPath, std::string_view tooltip);
+
         /// @brief 获取窗口
         /// @param windowId 窗口 id
         /// @returns 窗口对象的引用
@@ -49,11 +53,12 @@ namespace dao {
     private:
         uint32 m_runWindowNum = 1;                            ///< 当前正在运行的窗口数量
         hash_map<uint32, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
+        std::unique_ptr<Tray> m_tray = nullptr;               ///<托盘
 
-        /// 设置默认构造函数为私有成员，使 App 成为单例模式
+        /// @brief 设置默认构造函数为私有成员，使 App 成为单例模式
         App();
 
-        /// 渲染所有窗口内容
+        /// @brief 渲染所有窗口内容
         void render();
     };
 }
