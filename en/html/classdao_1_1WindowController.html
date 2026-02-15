@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1WindowController.html','','classdao_1_1Win
 <p>窗口控制器  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="window__command_8hpp_source.html">window_command.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::WindowController:</div>
 <div class="dyncontent">
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>窗口控制器 </p>
 
-<p class="definition">Definition at line <a class="el" href="window__command_8hpp_source.html#l00028">28</a> of file <a class="el" href="window__command_8hpp_source.html">window_command.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8hpp_source.html#l00028">28</a> of file <a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a037ca4a7d5873eb3d184611bfbecd4da" name="a037ca4a7d5873eb3d184611bfbecd4da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a037ca4a7d5873eb3d184611bfbecd4da">&#9670;&#160;</a></span>WindowController() <span class="overload">[1/2]</span></h2>
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 
 <p>执行命令 </p>
 
-<p class="definition">Definition at line <a class="el" href="window__command_8cpp_source.html#l00007">7</a> of file <a class="el" href="window__command_8cpp_source.html">window_command.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00007">7</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    7</span>                                                       {</div>
 <div class="line"><span class="lineno">    8</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[type, data]: m_windowCommands) {</div>
 <div class="line"><span class="lineno">    9</span>        <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> x, y;</div>
@@ -217,10 +217,10 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   29</span>    }</div>
 <div class="line"><span class="lineno">   30</span>    m_windowCommands.clear();</div>
 <div class="line"><span class="lineno">   31</span>}</div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>Definition</b> <a href="window__command_8hpp_source.html#l00016">window_command.hpp:16</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>Definition</b> <a href="window__command_8hpp_source.html#l00015">window_command.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>Definition</b> <a href="window__command_8hpp_source.html#l00018">window_command.hpp:18</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__command_8hpp_source.html#l00017">window_command.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00016">window_controller.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00015">window_controller.hpp:15</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00017">window_controller.hpp:17</a></div></div>
 <div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00024">better_stl.hpp:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -240,7 +240,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="window__command_8cpp_source.html#l00037">37</a> of file <a class="el" href="window__command_8cpp_source.html">window_command.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00037">37</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                  {</div>
 <div class="line"><span class="lineno">   38</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">WindowCommandType::setClickThrough</a>, std::any{clickThrough}});</div>
 <div class="line"><span class="lineno">   39</span>}</div>
@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="window__command_8cpp_source.html#l00041">41</a> of file <a class="el" href="window__command_8cpp_source.html">window_command.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00041">41</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>                                                        {</div>
 <div class="line"><span class="lineno">   42</span>    m_windowCommands.push_back(WindowCommand{</div>
 <div class="line"><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">WindowCommandType::setPosition</a>, std::any{std::make_pair(x, y)}</div>
@@ -294,7 +294,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="window__command_8cpp_source.html#l00047">47</a> of file <a class="el" href="window__command_8cpp_source.html">window_command.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00047">47</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>                                                    {</div>
 <div class="line"><span class="lineno">   48</span>    m_windowCommands.push_back(WindowCommand{</div>
 <div class="line"><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">WindowCommandType::setSize</a>, std::any{std::make_pair(x, y)}</div>
@@ -318,7 +318,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="window__command_8cpp_source.html#l00033">33</a> of file <a class="el" href="window__command_8cpp_source.html">window_command.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00033">33</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>                                                           {</div>
 <div class="line"><span class="lineno">   34</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">WindowCommandType::switchPage</a>, std::any{title}});</div>
 <div class="line"><span class="lineno">   35</span>}</div>
@@ -326,8 +326,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>code/include/core/frame/<a class="el" href="window__command_8hpp_source.html">window_command.hpp</a></li>
-<li>code/src/core/frame/<a class="el" href="window__command_8cpp_source.html">window_command.cpp</a></li>
+<li>code/include/core/frame/<a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a></li>
+<li>code/src/core/frame/<a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

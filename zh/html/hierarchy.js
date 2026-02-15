@@ -1,6 +1,8 @@
 var hierarchy =
 [
     [ "dao::App", "classdao_1_1App.html", null ],
+    [ "dao::AppCommand", "structdao_1_1AppCommand.html", null ],
+    [ "dao::AppController", "classdao_1_1AppController.html", null ],
     [ "dao::AtlasDrawBatch", "structdao_1_1AtlasDrawBatch.html", null ],
     [ "dao::AtlasRegion", "structdao_1_1AtlasRegion.html", null ],
     [ "dao::AtlasTexture", "classdao_1_1AtlasTexture.html", null ],
@@ -9,6 +11,7 @@ var hierarchy =
       [ "dao::SimpleButton", "classdao_1_1SimpleButton.html", null ]
     ] ],
     [ "dao::ColorRGBA", "structdao_1_1ColorRGBA.html", null ],
+    [ "dao::Context", "classdao_1_1Context.html", null ],
     [ "dao::Drawable", "classdao_1_1Drawable.html", [
       [ "dao::AnimatedSprite", "classdao_1_1AnimatedSprite.html", null ],
       [ "dao::ButtonStyle", "classdao_1_1ButtonStyle.html", [

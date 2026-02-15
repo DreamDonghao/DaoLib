@@ -1,7 +1,0 @@
-<map id="dao::Text::setContent" name="dao::Text::setContent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="256,45,416,70"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1SimpleTextButtonStyle.html#a7107b8f54c4cfc4da6b0cab59f823602" title=" " alt="" coords="5,5,208,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,47,208,42,209,37,242,42"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1InputBoxStyle.html#a324744201bc2d8226e29452d0785a44d" title="写入批处理" alt="" coords="34,69,179,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,73,180,82,179,77,242,68"/>
-</map>

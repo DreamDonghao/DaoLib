@@ -103,9 +103,9 @@ $(function(){initNavTree('classdao_1_1Page.html','','classdao_1_1Page-members');
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Page__inherit__graph.png" border="0" usemap="#adao_1_1Page_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1Page_inherit__map" id="adao_1_1Page_inherit__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
-<area shape="rect" href="classdao_1_1GeneralPage.html" title="通用页面接口" alt="" coords="5,299,181,584"/>
-<area shape="poly" title=" " alt="" coords="96,264,96,299,91,299,91,264"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,291"/>
+<area shape="rect" href="classdao_1_1GeneralPage.html" title="通用页面接口" alt="" coords="5,339,181,664"/>
+<area shape="poly" title=" " alt="" coords="96,305,96,338,91,338,91,305"/>
 </map>
 </div>
 <div class="dynheader">
@@ -113,7 +113,7 @@ dao::Page 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Page__coll__graph.png" border="0" usemap="#adao_1_1Page_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Page_coll__map" id="adao_1_1Page_coll__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,291"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -134,12 +134,14 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a2c0341df72814f338b2a85bbd1041f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口控制器  <br /></td></tr>
 <tr class="memitem:a22d8ff31f8b52df2b69f7c726183ba70" id="r_a22d8ff31f8b52df2b69f7c726183ba70"><td class="memItemLeft">virtual const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a22d8ff31f8b52df2b69f7c726183ba70">getTitle</a> () const =0</td></tr>
 <tr class="memdesc:a22d8ff31f8b52df2b69f7c726183ba70"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
+<tr class="memitem:ad96a4e367746a03b382b962d560674fd" id="r_ad96a4e367746a03b382b962d560674fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad96a4e367746a03b382b962d560674fd">setContext</a> (<a class="el" href="classdao_1_1Context.html">Context</a> *context)=0</td></tr>
+<tr class="memitem:a59b4d56493e5eb1a73585bcca81e6523" id="r_a59b4d56493e5eb1a73585bcca81e6523"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1Context.html">Context</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a59b4d56493e5eb1a73585bcca81e6523">getContext</a> () const =0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>页面接口 </p>
 <p>提供了所有页面的接口，所有页面最底层都应继承这个类 </p>
 
-<p class="definition">在文件 <a class="el" href="page_8hpp_source.html">page.hpp</a> 第 <a class="el" href="page_8hpp_source.html#l00012">12</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="page_8hpp_source.html">page.hpp</a> 第 <a class="el" href="page_8hpp_source.html#l00014">14</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aa593d76b639520c4ea0287951c0cba92" name="aa593d76b639520c4ea0287951c0cba92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa593d76b639520c4ea0287951c0cba92">&#9670;&#160;</a></span>~Page()</h2>
@@ -194,6 +196,33 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="a59b4d56493e5eb1a73585bcca81e6523" name="a59b4d56493e5eb1a73585bcca81e6523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b4d56493e5eb1a73585bcca81e6523">&#9670;&#160;</a></span>getContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classdao_1_1Context.html">Context</a> &amp; dao::Page::getContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#acd3a2fad27d67916cb9107aa9b27d342">dao::GeneralPage</a> 内被实现.</p>
+
+</div>
+</div>
 <a id="afa41322cc43ea42f95ac06237bdfa622" name="afa41322cc43ea42f95ac06237bdfa622"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa41322cc43ea42f95ac06237bdfa622">&#9670;&#160;</a></span>getDrawBatches()</h2>
 
@@ -217,7 +246,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a7dfe974731c1674dc3654313e947b032">dao::GeneralPage</a> 内被实现.</p>
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a07a2ce9131904cc02f274aa6ca97d630">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>
@@ -244,7 +273,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a6a2d7f917c08fff9bca2e678bd83efa7">dao::GeneralPage</a> 内被实现.</p>
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a68d560dbe0586089614fe6682ab6f608">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>
@@ -331,7 +360,7 @@ Public 成员函数</h2></td></tr>
 
 <p>获取窗口控制器 </p>
 
-<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a180e5fea30e52d692c2d7cab168fe4b2">dao::GeneralPage</a> 内被实现.</p>
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a628205314933bbcabdf7532190cab7b5">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>
@@ -388,6 +417,33 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>在 <a class="el" href="classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7">dao::GeneralPage</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad96a4e367746a03b382b962d560674fd" name="ad96a4e367746a03b382b962d560674fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96a4e367746a03b382b962d560674fd">&#9670;&#160;</a></span>setContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dao::Page::setContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1Context.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#ac2b9ff8a681ae758f5c589cb5a46586d">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>

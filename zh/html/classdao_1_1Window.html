@@ -103,45 +103,60 @@ dao::Window 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Window__coll__graph.png" border="0" usemap="#adao_1_1Window_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Window_coll__map" id="adao_1_1Window_coll__map">
-<area shape="rect" title="窗口" alt="" coords="5,5,159,271"/>
+<area shape="rect" title="窗口" alt="" coords="5,5,173,271"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a1dddfea67d02776367a0b73898e1fcd9" id="r_a1dddfea67d02776367a0b73898e1fcd9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1dddfea67d02776367a0b73898e1fcd9">Window</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> width, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> height, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
+<tr class="memitem:aaad727da147076875b069e0b1802672e" id="r_aaad727da147076875b069e0b1802672e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaad727da147076875b069e0b1802672e">Window</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> width, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> height, bool display=false, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
 <tr class="memitem:a8d53dfb54f139ee857eae1afee44afb3" id="r_a8d53dfb54f139ee857eae1afee44afb3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8d53dfb54f139ee857eae1afee44afb3">~Window</a> ()</td></tr>
-<tr class="memitem:abe737d4b0ff1d4ade1c4df0b82ec4bb6" id="r_abe737d4b0ff1d4ade1c4df0b82ec4bb6"><td class="memItemLeft"><a class="el" href="#a1dddfea67d02776367a0b73898e1fcd9">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abe737d4b0ff1d4ade1c4df0b82ec4bb6">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1Page.html">Page</a> &gt; &amp;&amp;page)</td></tr>
+<tr class="memitem:abe737d4b0ff1d4ade1c4df0b82ec4bb6" id="r_abe737d4b0ff1d4ade1c4df0b82ec4bb6"><td class="memItemLeft"><a class="el" href="#aaad727da147076875b069e0b1802672e">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abe737d4b0ff1d4ade1c4df0b82ec4bb6">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1Page.html">Page</a> &gt; &amp;&amp;page)</td></tr>
 <tr class="memdesc:abe737d4b0ff1d4ade1c4df0b82ec4bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加页面  <br /></td></tr>
 <tr class="memitem:aa4ea13ba1779beb5a2aaa534bce1518a" id="r_aa4ea13ba1779beb5a2aaa534bce1518a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4ea13ba1779beb5a2aaa534bce1518a">registerTexture</a> (const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> &amp;textureId)</td></tr>
-<tr class="memdesc:aa4ea13ba1779beb5a2aaa534bce1518a"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载纹理图集  <br /></td></tr>
+<tr class="memdesc:aa4ea13ba1779beb5a2aaa534bce1518a"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载纹理对应的纹理图集  <br /></td></tr>
+<tr class="memitem:af506f7804932b2a731eff22be71a79e6" id="r_af506f7804932b2a731eff22be71a79e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a> ()</td></tr>
+<tr class="memdesc:af506f7804932b2a731eff22be71a79e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据当前窗口拥有的页面加载未加载的图集  <br /></td></tr>
 <tr class="memitem:a073ba8cbf4be105904f1b6bd1c79033a" id="r_a073ba8cbf4be105904f1b6bd1c79033a"><td class="memItemLeft"><a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a>&#160;</td><td class="memItemRight"><a class="el" href="#a073ba8cbf4be105904f1b6bd1c79033a">getId</a> () const</td></tr>
 <tr class="memdesc:a073ba8cbf4be105904f1b6bd1c79033a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 id  <br /></td></tr>
 <tr class="memitem:a5948603a9220bfecebe7f68924478ff2" id="r_a5948603a9220bfecebe7f68924478ff2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5948603a9220bfecebe7f68924478ff2">update</a> ()</td></tr>
 <tr class="memdesc:a5948603a9220bfecebe7f68924478ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新一帧  <br /></td></tr>
 <tr class="memitem:a0c90ad9e111c5495e556f06d16dfb7ed" id="r_a0c90ad9e111c5495e556f06d16dfb7ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c90ad9e111c5495e556f06d16dfb7ed">handleInputEvent</a> (const SDL_Event &amp;event)</td></tr>
 <tr class="memdesc:a0c90ad9e111c5495e556f06d16dfb7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息  <br /></td></tr>
-<tr class="memitem:a3de6588432138b3ebbc11be18340c0c4" id="r_a3de6588432138b3ebbc11be18340c0c4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3de6588432138b3ebbc11be18340c0c4">requestClose</a> ()</td></tr>
-<tr class="memdesc:a3de6588432138b3ebbc11be18340c0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口关闭请求  <br /></td></tr>
+<tr class="memitem:a15682d38f6a4f26df5dac389cfeab905" id="r_a15682d38f6a4f26df5dac389cfeab905"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a> () const</td></tr>
+<tr class="memdesc:a15682d38f6a4f26df5dac389cfeab905"><td class="mdescLeft">&#160;</td><td class="mdescRight">隐藏窗口  <br /></td></tr>
+<tr class="memitem:a5da0453643006a0248af568895ee8c39" id="r_a5da0453643006a0248af568895ee8c39"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5da0453643006a0248af568895ee8c39">show</a> () const</td></tr>
+<tr class="memdesc:a5da0453643006a0248af568895ee8c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示窗口  <br /></td></tr>
+<tr class="memitem:a32cc34e3cb8e1a94fd80510e0b3b9f9d" id="r_a32cc34e3cb8e1a94fd80510e0b3b9f9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a32cc34e3cb8e1a94fd80510e0b3b9f9d">destroy</a> ()</td></tr>
+<tr class="memdesc:a32cc34e3cb8e1a94fd80510e0b3b9f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁窗口  <br /></td></tr>
+<tr class="memitem:a5904cf1fad9f0d89748399c66dfdb93d" id="r_a5904cf1fad9f0d89748399c66dfdb93d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5904cf1fad9f0d89748399c66dfdb93d">create</a> ()</td></tr>
+<tr class="memdesc:a5904cf1fad9f0d89748399c66dfdb93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建窗口  <br /></td></tr>
 <tr class="memitem:a226bb29d986f758ece72de4cac972ffb" id="r_a226bb29d986f758ece72de4cac972ffb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a226bb29d986f758ece72de4cac972ffb">isRunning</a> () const</td></tr>
 <tr class="memdesc:a226bb29d986f758ece72de4cac972ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否在运行  <br /></td></tr>
 <tr class="memitem:a0f0c2775b23a3c659dfba454a56e0b10" id="r_a0f0c2775b23a3c659dfba454a56e0b10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f0c2775b23a3c659dfba454a56e0b10">render</a> ()</td></tr>
 <tr class="memdesc:a0f0c2775b23a3c659dfba454a56e0b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染  <br /></td></tr>
 <tr class="memitem:a98c43811ce3cbc6fbe93688ddafb228b" id="r_a98c43811ce3cbc6fbe93688ddafb228b"><td class="memItemLeft">const SDL_Window *&#160;</td><td class="memItemRight"><a class="el" href="#a98c43811ce3cbc6fbe93688ddafb228b">getSDLWindow</a> () const</td></tr>
+<tr class="memdesc:a98c43811ce3cbc6fbe93688ddafb228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 SDL_window 指针  <br /></td></tr>
 <tr class="memitem:a8821f99dc73fa664ef6dbaaafabd4dbe" id="r_a8821f99dc73fa664ef6dbaaafabd4dbe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8821f99dc73fa664ef6dbaaafabd4dbe">switchPage</a> (std::string title)</td></tr>
 <tr class="memdesc:a8821f99dc73fa664ef6dbaaafabd4dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换页面  <br /></td></tr>
 <tr class="memitem:affa75c05bd42b3625f0cf9e97e9510e1" id="r_affa75c05bd42b3625f0cf9e97e9510e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#affa75c05bd42b3625f0cf9e97e9510e1">setPosition</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> x, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> y) const</td></tr>
+<tr class="memdesc:affa75c05bd42b3625f0cf9e97e9510e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置位置  <br /></td></tr>
 <tr class="memitem:a75239852988199dc411635f8602e0c19" id="r_a75239852988199dc411635f8602e0c19"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75239852988199dc411635f8602e0c19">setSize</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> width, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> height) const</td></tr>
+<tr class="memdesc:a75239852988199dc411635f8602e0c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置大小  <br /></td></tr>
 <tr class="memitem:a4141bfcdcbd8d86fd07be7ee96f4a837" id="r_a4141bfcdcbd8d86fd07be7ee96f4a837"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a> (const std::string &amp;title) const</td></tr>
+<tr class="memdesc:a4141bfcdcbd8d86fd07be7ee96f4a837"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标题  <br /></td></tr>
 <tr class="memitem:aee09499f8b02c51e3589c654930c7fb5" id="r_aee09499f8b02c51e3589c654930c7fb5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aee09499f8b02c51e3589c654930c7fb5">setClickThrough</a> (bool enable) const</td></tr>
+<tr class="memdesc:aee09499f8b02c51e3589c654930c7fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置点击是否穿透  <br /></td></tr>
+<tr class="memitem:a68532c20c275b5e6c57a0f7bb838793f" id="r_a68532c20c275b5e6c57a0f7bb838793f"><td class="memItemLeft"><a class="el" href="classdao_1_1AppController.html">AppController</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a68532c20c275b5e6c57a0f7bb838793f">getAppController</a> ()</td></tr>
+<tr class="memitem:a57479f8d69f04bca8e290838fa87cafe" id="r_a57479f8d69f04bca8e290838fa87cafe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57479f8d69f04bca8e290838fa87cafe">setContext</a> (<a class="el" href="classdao_1_1Context.html">Context</a> *context)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>窗口 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00012">12</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00016">16</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
-<a id="a1dddfea67d02776367a0b73898e1fcd9" name="a1dddfea67d02776367a0b73898e1fcd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dddfea67d02776367a0b73898e1fcd9">&#9670;&#160;</a></span>Window()</h2>
+<a id="aaad727da147076875b069e0b1802672e" name="aaad727da147076875b069e0b1802672e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad727da147076875b069e0b1802672e">&#9670;&#160;</a></span>Window()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,6 +170,16 @@ Public 成员函数</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a></td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>display</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isSubject</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,6 +207,8 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">width</td><td>窗口默认宽度 </td></tr>
     <tr><td class="paramname">height</td><td>窗口默认高度 </td></tr>
+    <tr><td class="paramname">display</td><td>默认显示 </td></tr>
+    <tr><td class="paramname">isSubject</td><td>为应用主体窗口 </td></tr>
     <tr><td class="paramname">resizable</td><td>可重新设置大小 </td></tr>
     <tr><td class="paramname">transparent</td><td>支持透明 </td></tr>
     <tr><td class="paramname">onTop</td><td>置顶 </td></tr>
@@ -189,29 +216,38 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>构建纯白纹理</p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00012">12</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>                                                                                                          {</div>
-<div class="line"><span class="lineno">   14</span>        SDL_WindowFlags flags = 0;</div>
-<div class="line"><span class="lineno">   15</span>        <span class="keywordflow">if</span> (resizable)flags |= SDL_WINDOW_RESIZABLE;</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (transparent)flags |= SDL_WINDOW_TRANSPARENT;</div>
-<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">if</span> (onTop)flags |= SDL_WINDOW_ALWAYS_ON_TOP;</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (borderless)flags |= SDL_WINDOW_BORDERLESS;</div>
-<div class="line"><span class="lineno">   19</span>        m_window = SDL_CreateWindow(<span class="stringliteral">&quot;&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height), flags);</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>        m_renderer = SDL_CreateRenderer(m_window, <span class="stringliteral">&quot;direct3d11&quot;</span>);</div>
-<div class="line"><span class="lineno">   22</span>        SDL_SetRenderVSync(m_renderer, 0);</div>
-<div class="line"><span class="lineno">   23</span>        m_id = SDL_GetWindowID(m_window);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   24</span><span class="comment">        /// 构建纯白纹理</span></div>
-<div class="line"><span class="lineno">   25</span>        SDL_Texture *tex = SDL_CreateTexture(</div>
-<div class="line"><span class="lineno">   26</span>            m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1</div>
-<div class="line"><span class="lineno">   27</span>        );</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keyword">constexpr</span> Uint32 whitePixel = 0xFFFFFFFF;</div>
-<div class="line"><span class="lineno">   29</span>        SDL_UpdateTexture(tex, <span class="keyword">nullptr</span>, &amp;whitePixel, 4);</div>
-<div class="line"><span class="lineno">   30</span>        m_atlasTextures[0] = tex;</div>
-<div class="line"><span class="lineno">   31</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00010">10</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>        : m_width(width), m_height(height) {</div>
+<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">if</span> (resizable) m_windowFlags |= SDL_WINDOW_RESIZABLE;</div>
+<div class="line"><span class="lineno">   15</span>        <span class="keywordflow">if</span> (transparent) m_windowFlags |= SDL_WINDOW_TRANSPARENT;</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (onTop) m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;</div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">if</span> (borderless) m_windowFlags |= SDL_WINDOW_BORDERLESS;</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_function" href="#a5904cf1fad9f0d89748399c66dfdb93d">create</a>();</div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (!display) {</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
+<div class="line"><span class="lineno">   21</span>        }</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span> (isSubject) {</div>
+<div class="line"><span class="lineno">   23</span>            m_closeAction = [<span class="keyword">this</span>]() {</div>
+<div class="line"><span class="lineno">   24</span>                m_appController.close();</div>
+<div class="line"><span class="lineno">   25</span>            };</div>
+<div class="line"><span class="lineno">   26</span>        }</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a15682d38f6a4f26df5dac389cfeab905"><div class="ttname"><a href="#a15682d38f6a4f26df5dac389cfeab905">dao::Window::hide</a></div><div class="ttdeci">void hide() const</div><div class="ttdoc">隐藏窗口</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00098">window.cpp:98</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_a5904cf1fad9f0d89748399c66dfdb93d"><div class="ttname"><a href="#a5904cf1fad9f0d89748399c66dfdb93d">dao::Window::create</a></div><div class="ttdeci">void create()</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00114">window.cpp:114</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_aaad727da147076875b069e0b1802672e_cgraph.png" border="0" usemap="#aclassdao_1_1Window_aaad727da147076875b069e0b1802672e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_aaad727da147076875b069e0b1802672e_cgraph" id="aclassdao_1_1Window_aaad727da147076875b069e0b1802672e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,171,56"/>
+<area shape="rect" href="classdao_1_1Window.html#a5904cf1fad9f0d89748399c66dfdb93d" title="创建窗口" alt="" coords="219,5,373,31"/>
+<area shape="poly" title=" " alt="" coords="171,31,205,26,205,32,171,36"/>
+<area shape="rect" href="classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905" title="隐藏窗口" alt="" coords="225,55,367,80"/>
+<area shape="poly" title=" " alt="" coords="171,50,212,55,212,60,171,56"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8d53dfb54f139ee857eae1afee44afb3" name="a8d53dfb54f139ee857eae1afee44afb3"></a>
@@ -229,12 +265,11 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00033">33</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                    {</div>
-<div class="line"><span class="lineno">   34</span>        SDL_DestroyRenderer(m_renderer);</div>
-<div class="line"><span class="lineno">   35</span>        SDL_DestroyWindow(m_window);</div>
-<div class="line"><span class="lineno">   36</span>        SDL_Quit();</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00029">29</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                    {</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (m_renderer) { SDL_DestroyRenderer(m_renderer); }</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">if</span> (m_window) { SDL_DestroyWindow(m_window); }</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,7 +281,7 @@ Public 成员函数</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a1dddfea67d02776367a0b73898e1fcd9">Window</a> &amp; dao::Window::addPage </td>
+          <td class="memname"><a class="el" href="#aaad727da147076875b069e0b1802672e">Window</a> &amp; dao::Window::addPage </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdao_1_1Page.html">Page</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>page</em></span></td><td>)</td>
           <td></td>
@@ -262,26 +297,135 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00039">39</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                      {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keyword">const</span> std::string title = page-&gt;getTitle();</div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(!m_pages.contains(title), std::string(<span class="stringliteral">&quot;重复页面:&quot;</span>) + title);</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> textureId: page-&gt;getRegisterTexture()) {</div>
-<div class="line"><span class="lineno">   43</span>            <a class="code hl_function" href="#aa4ea13ba1779beb5a2aaa534bce1518a">registerTexture</a>(textureId);</div>
-<div class="line"><span class="lineno">   44</span>        }</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (m_pages.empty()) {</div>
-<div class="line"><span class="lineno">   46</span>            m_nowPageTitle = title;</div>
-<div class="line"><span class="lineno">   47</span>            <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
-<div class="line"><span class="lineno">   48</span>        }</div>
-<div class="line"><span class="lineno">   49</span>        m_pages[title] = std::move(page);</div>
-<div class="line"><span class="lineno">   50</span>        m_pages[title]-&gt;init();</div>
-<div class="line"><span class="lineno">   51</span>        m_atlasTextures[1] = SDL_CreateTextureFromSurface(</div>
-<div class="line"><span class="lineno">   52</span>            m_renderer, &amp;m_pages[title]-&gt;getGlyphAtlas().getAtlasSurface());</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00131">window.cpp:131</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_aa4ea13ba1779beb5a2aaa534bce1518a"><div class="ttname"><a href="#aa4ea13ba1779beb5a2aaa534bce1518a">dao::Window::registerTexture</a></div><div class="ttdeci">void registerTexture(const uint32 &amp;textureId)</div><div class="ttdoc">加载纹理图集</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00056">window.cpp:56</a></div></div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00034">34</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                      {</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keyword">const</span> std::string title = page-&gt;getTitle();</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(!m_pages.contains(title), std::string(<span class="stringliteral">&quot;重复页面:&quot;</span>) + title);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (m_pages.empty()) {</div>
+<div class="line"><span class="lineno">   39</span>            m_nowPageTitle = title;</div>
+<div class="line"><span class="lineno">   40</span>            <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="line"><span class="lineno">   42</span>        m_pages[title] = std::move(page);</div>
+<div class="line"><span class="lineno">   43</span>        m_pages[title]-&gt;setContext(m_context);</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_function" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a>();</div>
+<div class="line"><span class="lineno">   45</span>        m_pages[title]-&gt;init();</div>
+<div class="line"><span class="lineno">   46</span>        m_atlasTextures[1] = SDL_CreateTextureFromSurface(</div>
+<div class="line"><span class="lineno">   47</span>            m_renderer, &amp;m_pages[title]-&gt;getGlyphAtlas().getAtlasSurface());</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00166">window.cpp:166</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00063">window.cpp:63</a></div></div>
 <div class="ttc" id="anamespacedao_html_a24e91b1ba23935657b9b4fefae8f56e8"><div class="ttname"><a href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">dao::detectionError</a></div><div class="ttdeci">void detectionError(const bool pass, const std::string_view &amp;message)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00043">better_stl.hpp:43</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph.png" border="0" usemap="#aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph" id="aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph">
+<area shape="rect" title="添加页面" alt="" coords="5,13,173,38"/>
+<area shape="rect" href="classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
+<area shape="poly" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5904cf1fad9f0d89748399c66dfdb93d" name="a5904cf1fad9f0d89748399c66dfdb93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5904cf1fad9f0d89748399c66dfdb93d">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::create </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建窗口 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00114">114</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>                        {</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (m_window) {</div>
+<div class="line"><span class="lineno">  116</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;重复创建窗口&quot;</span>);</div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span>        m_window = SDL_CreateWindow(</div>
+<div class="line"><span class="lineno">  120</span>            m_nowPageTitle.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_height),</div>
+<div class="line"><span class="lineno">  121</span>            m_windowFlags);</div>
+<div class="line"><span class="lineno">  122</span>        m_renderer = SDL_CreateRenderer(m_window, <span class="stringliteral">&quot;direct3d11&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>        SDL_SetRenderVSync(m_renderer, 0);</div>
+<div class="line"><span class="lineno">  124</span>        m_id = SDL_GetWindowID(m_window);</div>
+<div class="line"><span class="lineno">  125</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00067">better_stl.hpp:67</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" id="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph">
+<area shape="rect" title="创建窗口" alt="" coords="219,5,373,31"/>
+<area shape="rect" href="classdao_1_1Window.html#aaad727da147076875b069e0b1802672e" title=" " alt="" coords="5,5,171,31"/>
+<area shape="poly" title=" " alt="" coords="205,21,171,21,171,15,205,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a32cc34e3cb8e1a94fd80510e0b3b9f9d" name="a32cc34e3cb8e1a94fd80510e0b3b9f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cc34e3cb8e1a94fd80510e0b3b9f9d">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁窗口 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00107">107</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                         {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (m_window) {</div>
+<div class="line"><span class="lineno">  109</span>            SDL_DestroyWindow(m_window);</div>
+<div class="line"><span class="lineno">  110</span>            m_window = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  111</span>        }</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68532c20c275b5e6c57a0f7bb838793f" name="a68532c20c275b5e6c57a0f7bb838793f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68532c20c275b5e6c57a0f7bb838793f">&#9670;&#160;</a></span>getAppController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdao_1_1AppController.html">AppController</a> &amp; dao::Window::getAppController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00093">93</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> m_appController; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -310,8 +454,8 @@ Public 成员函数</h2></td></tr>
 
 <p>获取 id </p>
 
-<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00039">39</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> m_id; }</div>
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00049">49</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> m_id; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,10 +482,10 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00056">56</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                             {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">return</span> m_window;</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
+<p>获取 SDL_window 指针 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00076">76</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> m_window; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,11 +506,46 @@ Public 成员函数</h2></td></tr>
 
 <p>处理消息 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00085">85</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                        {</div>
-<div class="line"><span class="lineno">   86</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   87</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00094">94</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                                                        {</div>
+<div class="line"><span class="lineno">   95</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a15682d38f6a4f26df5dac389cfeab905" name="a15682d38f6a4f26df5dac389cfeab905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15682d38f6a4f26df5dac389cfeab905">&#9670;&#160;</a></span>hide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::hide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>隐藏窗口 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00098">98</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>                            {</div>
+<div class="line"><span class="lineno">   99</span>        SDL_HideWindow(m_window);</div>
+<div class="line"><span class="lineno">  100</span>        m_closeAction();</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph" id="aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph">
+<area shape="rect" title="隐藏窗口" alt="" coords="219,5,360,31"/>
+<area shape="rect" href="classdao_1_1Window.html#aaad727da147076875b069e0b1802672e" title=" " alt="" coords="5,5,171,31"/>
+<area shape="poly" title=" " alt="" coords="205,21,171,21,171,15,205,15"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a226bb29d986f758ece72de4cac972ffb" name="a226bb29d986f758ece72de4cac972ffb"></a>
@@ -394,9 +573,56 @@ Public 成员函数</h2></td></tr>
 
 <p>判断是否在运行 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00051">51</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> m_running; }</div>
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00070">70</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> m_running; }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="af506f7804932b2a731eff22be71a79e6" name="af506f7804932b2a731eff22be71a79e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af506f7804932b2a731eff22be71a79e6">&#9670;&#160;</a></span>registerPageTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::registerPageTexture </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据当前窗口拥有的页面加载未加载的图集 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00063">63</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                     {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (m_atlasTextures.contains(0)) {</div>
+<div class="line"><span class="lineno">   65</span>            SDL_Texture *tex = SDL_CreateTexture(</div>
+<div class="line"><span class="lineno">   66</span>                m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1</div>
+<div class="line"><span class="lineno">   67</span>            );</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keyword">constexpr</span> Uint32 whitePixel = 0xFFFFFFFF;</div>
+<div class="line"><span class="lineno">   69</span>            SDL_UpdateTexture(tex, <span class="keyword">nullptr</span>, &amp;whitePixel, 4);</div>
+<div class="line"><span class="lineno">   70</span>            m_atlasTextures[0] = tex;</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;page: m_pages | std::views::values) {</div>
+<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> textureId: page-&gt;getRegisterTexture()) {</div>
+<div class="line"><span class="lineno">   74</span>                <a class="code hl_function" href="#aa4ea13ba1779beb5a2aaa534bce1518a">registerTexture</a>(textureId);</div>
+<div class="line"><span class="lineno">   75</span>            }</div>
+<div class="line"><span class="lineno">   76</span>        }</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_aa4ea13ba1779beb5a2aaa534bce1518a"><div class="ttname"><a href="#aa4ea13ba1779beb5a2aaa534bce1518a">dao::Window::registerTexture</a></div><div class="ttdeci">void registerTexture(const uint32 &amp;textureId)</div><div class="ttdoc">加载纹理对应的纹理图集</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00051">window.cpp:51</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph.png" border="0" usemap="#aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph" id="aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph">
+<area shape="rect" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
+<area shape="rect" href="classdao_1_1Window.html#abe737d4b0ff1d4ade1c4df0b82ec4bb6" title="添加页面" alt="" coords="5,13,173,38"/>
+<area shape="poly" title=" " alt="" coords="208,28,174,28,174,23,208,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aa4ea13ba1779beb5a2aaa534bce1518a" name="aa4ea13ba1779beb5a2aaa534bce1518a"></a>
@@ -414,31 +640,28 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>加载纹理图集 </p>
+<p>加载纹理对应的纹理图集 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00056">56</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                        {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">getAtlasRegion</a>(textureId);</div>
-<div class="line"><span class="lineno">   58</span>        <span class="comment">// 加载新纹理图集</span></div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *texturePath = atlasRegion.atlasPath;</div>
-<div class="line"><span class="lineno">   61</span>            m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">if</span> (!m_atlasTextures[atlasId]) {</div>
-<div class="line"><span class="lineno">   63</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;纹理图集加载失败:&quot;</span>+std::string(texturePath));</div>
-<div class="line"><span class="lineno">   64</span>            }</div>
-<div class="line"><span class="lineno">   65</span>            SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00051">51</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                                                        {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">getAtlasRegion</a>(textureId);</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *texturePath = atlasRegion.atlasPath;</div>
+<div class="line"><span class="lineno">   55</span>            m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">if</span> (!m_atlasTextures[atlasId]) {</div>
+<div class="line"><span class="lineno">   57</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;纹理图集加载失败:&quot;</span> + std::string(texturePath));</div>
+<div class="line"><span class="lineno">   58</span>            }</div>
+<div class="line"><span class="lineno">   59</span>            SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a12373994fd1651320a5895a7299d1dd9"><div class="ttname"><a href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">dao::getAtlasRegion</a></div><div class="ttdeci">const AtlasRegion &amp; getAtlasRegion(const uint32 textureId)</div><div class="ttdoc">通过纹理名称枚举获取图集区域数据</div><div class="ttdef"><b>定义</b> <a href="atlas__region_8hpp_source.html#l00017">atlas_region.hpp:17</a></div></div>
-<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00067">better_stl.hpp:67</a></div></div>
 <div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00024">better_stl.hpp:24</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Window_aa4ea13ba1779beb5a2aaa534bce1518a_cgraph.png" border="0" usemap="#aclassdao_1_1Window_aa4ea13ba1779beb5a2aaa534bce1518a_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Window_aa4ea13ba1779beb5a2aaa534bce1518a_cgraph" id="aclassdao_1_1Window_aa4ea13ba1779beb5a2aaa534bce1518a_cgraph">
-<area shape="rect" title="加载纹理图集" alt="" coords="5,5,216,31"/>
+<area shape="rect" title="加载纹理对应的纹理图集" alt="" coords="5,5,216,31"/>
 <area shape="rect" href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9" title="通过纹理名称枚举获取图集区域数据" alt="" coords="264,5,417,31"/>
 <area shape="poly" title=" " alt="" coords="216,15,250,15,250,21,216,21"/>
 </map>
@@ -463,44 +686,20 @@ Public 成员函数</h2></td></tr>
 
 <p>渲染 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00093">93</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>                        {</div>
-<div class="line"><span class="lineno">   94</span>        SDL_RenderClear(m_renderer);</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[atlasId, vertices, indices,indicesCount]:</div>
-<div class="line"><span class="lineno">   96</span>             m_pages[m_nowPageTitle]-&gt;getDrawBatches()) {</div>
-<div class="line"><span class="lineno">   97</span>            SDL_RenderGeometry(</div>
-<div class="line"><span class="lineno">   98</span>                m_renderer, m_atlasTextures[atlasId],</div>
-<div class="line"><span class="lineno">   99</span>                vertices.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(vertices.size()),</div>
-<div class="line"><span class="lineno">  100</span>                indices-&gt;data(), indicesCount</div>
-<div class="line"><span class="lineno">  101</span>            );</div>
-<div class="line"><span class="lineno">  102</span>        }</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>        SDL_RenderPresent(m_renderer);</div>
-<div class="line"><span class="lineno">  105</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3de6588432138b3ebbc11be18340c0c4" name="a3de6588432138b3ebbc11be18340c0c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de6588432138b3ebbc11be18340c0c4">&#9670;&#160;</a></span>requestClose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dao::Window::requestClose </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>窗口关闭请求 </p>
-
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00089">89</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                              {</div>
-<div class="line"><span class="lineno">   90</span>        m_running = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00128">128</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>                        {</div>
+<div class="line"><span class="lineno">  129</span>        SDL_RenderClear(m_renderer);</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[atlasId, vertices, indices,indicesCount]:</div>
+<div class="line"><span class="lineno">  131</span>             m_pages[m_nowPageTitle]-&gt;getDrawBatches()) {</div>
+<div class="line"><span class="lineno">  132</span>            SDL_RenderGeometry(</div>
+<div class="line"><span class="lineno">  133</span>                m_renderer, m_atlasTextures[atlasId],</div>
+<div class="line"><span class="lineno">  134</span>                vertices.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(vertices.size()),</div>
+<div class="line"><span class="lineno">  135</span>                indices-&gt;data(), indicesCount</div>
+<div class="line"><span class="lineno">  136</span>            );</div>
+<div class="line"><span class="lineno">  137</span>        }</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>        SDL_RenderPresent(m_renderer);</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -519,6 +718,38 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置点击是否穿透 </p>
+
+</div>
+</div>
+<a id="a57479f8d69f04bca8e290838fa87cafe" name="a57479f8d69f04bca8e290838fa87cafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57479f8d69f04bca8e290838fa87cafe">&#9670;&#160;</a></span>setContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::setContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1Context.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="window_8hpp_source.html">window.hpp</a> 第 <a class="el" href="window_8hpp_source.html#l00095">95</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                          {</div>
+<div class="line"><span class="lineno">   96</span>            m_context = context;</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affa75c05bd42b3625f0cf9e97e9510e1" name="affa75c05bd42b3625f0cf9e97e9510e1"></a>
@@ -540,10 +771,12 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00123">123</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                                 {</div>
-<div class="line"><span class="lineno">  124</span>        SDL_SetWindowPosition(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(x), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(y));</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
+<p>设置位置 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00158">158</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>                                                                 {</div>
+<div class="line"><span class="lineno">  159</span>        SDL_SetWindowPosition(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(x), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(y));</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -566,10 +799,12 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00127">127</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>                                                                      {</div>
-<div class="line"><span class="lineno">  128</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
+<p>设置大小 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00162">162</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>                                                                      {</div>
+<div class="line"><span class="lineno">  163</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -588,10 +823,36 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00131">131</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  131</span>                                                      {</div>
-<div class="line"><span class="lineno">  132</span>        SDL_SetWindowTitle(m_window, title.c_str());</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
+<p>设置标题 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00166">166</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>                                                      {</div>
+<div class="line"><span class="lineno">  167</span>        SDL_SetWindowTitle(m_window, title.c_str());</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5da0453643006a0248af568895ee8c39" name="a5da0453643006a0248af568895ee8c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da0453643006a0248af568895ee8c39">&#9670;&#160;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Window::show </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>展示窗口 </p>
+
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00103">103</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>                            {</div>
+<div class="line"><span class="lineno">  104</span>        SDL_ShowWindow(m_window);</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -612,18 +873,18 @@ Public 成员函数</h2></td></tr>
 
 <p>切换页面 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00111">111</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>                                           {</div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title),</div>
-<div class="line"><span class="lineno">  113</span>                       std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
-<div class="line"><span class="lineno">  114</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
-<div class="line"><span class="lineno">  115</span>        m_nowPageTitle = std::move(title);</div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
-<div class="line"><span class="lineno">  117</span>        m_pages[m_nowPageTitle]-&gt;init();</div>
-<div class="line"><span class="lineno">  118</span>        m_atlasTextures[1] = SDL_CreateTextureFromSurface(</div>
-<div class="line"><span class="lineno">  119</span>            m_renderer, &amp;m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface()</div>
-<div class="line"><span class="lineno">  120</span>        );</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00146">146</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>                                           {</div>
+<div class="line"><span class="lineno">  147</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title),</div>
+<div class="line"><span class="lineno">  148</span>                       std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
+<div class="line"><span class="lineno">  149</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
+<div class="line"><span class="lineno">  150</span>        m_nowPageTitle = std::move(title);</div>
+<div class="line"><span class="lineno">  151</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
+<div class="line"><span class="lineno">  152</span>        m_pages[m_nowPageTitle]-&gt;init();</div>
+<div class="line"><span class="lineno">  153</span>        m_atlasTextures[1] = SDL_CreateTextureFromSurface(</div>
+<div class="line"><span class="lineno">  154</span>            m_renderer, &amp;m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface()</div>
+<div class="line"><span class="lineno">  155</span>        );</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -644,21 +905,21 @@ Public 成员函数</h2></td></tr>
 
 <p>更新一帧 </p>
 
-<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00070">70</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                        {</div>
-<div class="line"><span class="lineno">   71</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().isUpdated()) {</div>
-<div class="line"><span class="lineno">   73</span>            SDL_UpdateTexture(</div>
-<div class="line"><span class="lineno">   74</span>                m_atlasTextures[1], <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">   75</span>                m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface().pixels,</div>
-<div class="line"><span class="lineno">   76</span>                m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface().pitch</div>
-<div class="line"><span class="lineno">   77</span>            );</div>
-<div class="line"><span class="lineno">   78</span>            SDL_SetTextureScaleMode(m_atlasTextures[1], SDL_SCALEMODE_NEAREST);</div>
-<div class="line"><span class="lineno">   79</span>            m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().clearUpdateFlag();</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>        executeCommand();</div>
-<div class="line"><span class="lineno">   83</span>    }</div>
+<p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00079">79</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                        {</div>
+<div class="line"><span class="lineno">   80</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().isUpdated()) {</div>
+<div class="line"><span class="lineno">   82</span>            SDL_UpdateTexture(</div>
+<div class="line"><span class="lineno">   83</span>                m_atlasTextures[1], <span class="keyword">nullptr</span>,</div>
+<div class="line"><span class="lineno">   84</span>                m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface().pixels,</div>
+<div class="line"><span class="lineno">   85</span>                m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().getAtlasSurface().pitch</div>
+<div class="line"><span class="lineno">   86</span>            );</div>
+<div class="line"><span class="lineno">   87</span>            SDL_SetTextureScaleMode(m_atlasTextures[1], SDL_SCALEMODE_NEAREST);</div>
+<div class="line"><span class="lineno">   88</span>            m_pages[m_nowPageTitle]-&gt;getGlyphAtlas().clearUpdateFlag();</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        executeCommand();</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

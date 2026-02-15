@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: dao::Context类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdao_1_1Context.html','','classdao_1_1Context-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dao::Context类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>全局环境上下文管理器  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="context_8hpp_source.html">context.hpp</a>&gt;</code></p>
+<div class="dynheader">
+dao::Context 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Context__coll__graph.png" border="0" usemap="#adao_1_1Context_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="adao_1_1Context_coll__map" id="adao_1_1Context_coll__map">
+<area shape="rect" title="全局环境上下文管理器" alt="" coords="5,5,148,191"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7fb9372abf3620c039c1bbc87230e99e" id="r_a7fb9372abf3620c039c1bbc87230e99e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7fb9372abf3620c039c1bbc87230e99e">Context</a> ()=default</td></tr>
+<tr class="memdesc:a7fb9372abf3620c039c1bbc87230e99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="memitem:a0578a00f7b41db505cd0c9b870bfc421" id="r_a0578a00f7b41db505cd0c9b870bfc421"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
+<tr class="memitem:a0578a00f7b41db505cd0c9b870bfc421 template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0578a00f7b41db505cd0c9b870bfc421">emplaceState</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a0578a00f7b41db505cd0c9b870bfc421"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册或替换一个状态对象  <br /></td></tr>
+<tr class="memitem:aa78d0fc04efd7b3a4ae8886124e5d41a" id="r_aa78d0fc04efd7b3a4ae8886124e5d41a"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aa78d0fc04efd7b3a4ae8886124e5d41a template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa78d0fc04efd7b3a4ae8886124e5d41a">getState</a> ()</td></tr>
+<tr class="memdesc:aa78d0fc04efd7b3a4ae8886124e5d41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取已注册的状态对象  <br /></td></tr>
+<tr class="memitem:a77fb6f1fa808126153255191bf562ed0" id="r_a77fb6f1fa808126153255191bf562ed0"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a77fb6f1fa808126153255191bf562ed0 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77fb6f1fa808126153255191bf562ed0">hasState</a> () const</td></tr>
+<tr class="memdesc:a77fb6f1fa808126153255191bf562ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否已注册指定类型的状态  <br /></td></tr>
+<tr class="memitem:aeb77d63481d5263c72a574cc21da0c22" id="r_aeb77d63481d5263c72a574cc21da0c22"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
+<tr class="memitem:aeb77d63481d5263c72a574cc21da0c22 template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aeb77d63481d5263c72a574cc21da0c22">emplaceService</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aeb77d63481d5263c72a574cc21da0c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册或替换一个服务对象  <br /></td></tr>
+<tr class="memitem:a3e88278f74236f7379dae8090d7d6275" id="r_a3e88278f74236f7379dae8090d7d6275"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a3e88278f74236f7379dae8090d7d6275 template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3e88278f74236f7379dae8090d7d6275">service</a> ()</td></tr>
+<tr class="memdesc:a3e88278f74236f7379dae8090d7d6275"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取已注册的服务对象  <br /></td></tr>
+<tr class="memitem:a57373ea1f6bda4c3e6e02b79de69156a" id="r_a57373ea1f6bda4c3e6e02b79de69156a"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a57373ea1f6bda4c3e6e02b79de69156a template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a57373ea1f6bda4c3e6e02b79de69156a">hasService</a> () const</td></tr>
+<tr class="memdesc:a57373ea1f6bda4c3e6e02b79de69156a"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否已注册指定类型的服务  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>全局环境上下文管理器 </p>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00010">10</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a7fb9372abf3620c039c1bbc87230e99e" name="a7fb9372abf3620c039c1bbc87230e99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb9372abf3620c039c1bbc87230e99e">&#9670;&#160;</a></span>Context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::Context::Context </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="aeb77d63481d5263c72a574cc21da0c22" name="aeb77d63481d5263c72a574cc21da0c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb77d63481d5263c72a574cc21da0c22">&#9670;&#160;</a></span>emplaceService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; dao::Context::emplaceService </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册或替换一个服务对象 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>服务类型 </td></tr>
+    <tr><td class="paramname">Args</td><td>构造函数参数类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>传递给构造函数的参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新创建的服务对象的引用 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00053">53</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                           {</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keyword">auto</span> ptr = std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><span class="lineno">   55</span>            m_services[<span class="keyword">typeid</span>(T)] = ptr;</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">return</span> *ptr;</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0578a00f7b41db505cd0c9b870bfc421" name="a0578a00f7b41db505cd0c9b870bfc421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0578a00f7b41db505cd0c9b870bfc421">&#9670;&#160;</a></span>emplaceState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; dao::Context::emplaceState </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册或替换一个状态对象 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>状态类型 </td></tr>
+    <tr><td class="paramname">Args</td><td>构造函数参数类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>传递给构造函数的参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新创建的状态对象的引用 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00021">21</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                         {</div>
+<div class="line"><span class="lineno">   22</span>            <span class="keyword">auto</span> ptr = std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><span class="lineno">   23</span>            m_states[<span class="keyword">typeid</span>(T)] = ptr;</div>
+<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">return</span> *ptr;</div>
+<div class="line"><span class="lineno">   25</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa78d0fc04efd7b3a4ae8886124e5d41a" name="aa78d0fc04efd7b3a4ae8886124e5d41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78d0fc04efd7b3a4ae8886124e5d41a">&#9670;&#160;</a></span>getState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; dao::Context::getState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取已注册的状态对象 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>状态类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态对象的引用 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00031">31</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                      {</div>
+<div class="line"><span class="lineno">   32</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = m_states.find(<span class="keyword">typeid</span>(T));</div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">if</span> (it == m_states.end()) {</div>
+<div class="line"><span class="lineno">   34</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;状态不存在&quot;</span>);</div>
+<div class="line"><span class="lineno">   35</span>            }</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">return</span> *std::static_pointer_cast&lt;T&gt;(it-&gt;second);</div>
+<div class="line"><span class="lineno">   37</span>        }</div>
+<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00067">better_stl.hpp:67</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57373ea1f6bda4c3e6e02b79de69156a" name="a57373ea1f6bda4c3e6e02b79de69156a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57373ea1f6bda4c3e6e02b79de69156a">&#9670;&#160;</a></span>hasService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dao::Context::hasService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查是否已注册指定类型的服务 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>服务类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true 如果服务已注册，否则 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00075">75</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                              {</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> m_services.contains(<span class="keyword">typeid</span>(T));</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a77fb6f1fa808126153255191bf562ed0" name="a77fb6f1fa808126153255191bf562ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fb6f1fa808126153255191bf562ed0">&#9670;&#160;</a></span>hasState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dao::Context::hasState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查是否已注册指定类型的状态 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>状态类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true 如果状态已注册，否则 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00043">43</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                            {</div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">return</span> m_states.contains(<span class="keyword">typeid</span>(T));</div>
+<div class="line"><span class="lineno">   45</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e88278f74236f7379dae8090d7d6275" name="a3e88278f74236f7379dae8090d7d6275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e88278f74236f7379dae8090d7d6275">&#9670;&#160;</a></span>service()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; dao::Context::service </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取已注册的服务对象 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>服务类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>服务对象的引用 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="context_8hpp_source.html">context.hpp</a> 第 <a class="el" href="context_8hpp_source.html#l00063">63</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                     {</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = m_services.find(<span class="keyword">typeid</span>(T));</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (it == m_services.end()) {</div>
+<div class="line"><span class="lineno">   66</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;服务不存在&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>            }</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">return</span> *std::static_pointer_cast&lt;T&gt;(it-&gt;second);</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>code/include/core/frame/<a class="el" href="context_8hpp_source.html">context.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['window_0',['Window',['../classdao_1_1Window.html',1,'dao::Window'],['../classdao_1_1Window.html#a1dddfea67d02776367a0b73898e1fcd9',1,'dao::Window::Window()']]],
+  ['window_0',['Window',['../classdao_1_1Window.html',1,'dao::Window'],['../classdao_1_1Window.html#aaad727da147076875b069e0b1802672e',1,'dao::Window::Window()']]],
   ['window_2ecpp_1',['window.cpp',['../window_8cpp.html',1,'']]],
   ['window_2ehpp_2',['window.hpp',['../window_8hpp.html',1,'']]],
-  ['window_5fcommand_2ecpp_3',['window_command.cpp',['../window__command_8cpp.html',1,'']]],
-  ['window_5fcommand_2ehpp_4',['window_command.hpp',['../window__command_8hpp.html',1,'']]],
+  ['window_5fcontroller_2ecpp_3',['window_controller.cpp',['../window__controller_8cpp.html',1,'']]],
+  ['window_5fcontroller_2ehpp_4',['window_controller.hpp',['../window__controller_8hpp.html',1,'']]],
   ['windowcommand_5',['WindowCommand',['../structdao_1_1WindowCommand.html',1,'dao']]],
   ['windowcommandtype_6',['WindowCommandType',['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67',1,'dao']]],
   ['windowcontroller_7',['WindowController',['../classdao_1_1WindowController.html',1,'dao::WindowController'],['../classdao_1_1WindowController.html#a037ca4a7d5873eb3d184611bfbecd4da',1,'dao::WindowController::WindowController()=default'],['../classdao_1_1WindowController.html#a96520d1f16df5125cfa33d7c2ce97aba',1,'dao::WindowController::WindowController(const WindowController &amp;)=delete']]],

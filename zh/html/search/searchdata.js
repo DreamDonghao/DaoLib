@@ -7,8 +7,8 @@ var indexSectionsWithContent =
   4: "abcdeghimnoprstuvw~",
   5: "abcdgimnrtvxy",
   6: "cfhitu",
-  7: "bimw",
-  8: "dhimnops",
+  7: "abimw",
+  8: "cdhimnops",
   9: "12345678bdfjpru仓使克列创参合审开提的编行项",
   10: "b"
 };

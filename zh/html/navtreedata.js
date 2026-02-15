@@ -57,7 +57,7 @@ var NAVTREE =
       [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", "functions_dup" ],
-        [ "函数", "functions_func.html", null ],
+        [ "函数", "functions_func.html", "functions_func" ],
         [ "变量", "functions_vars.html", null ],
         [ "类型定义", "functions_type.html", null ],
         [ "枚举", "functions_enum.html", null ],
@@ -73,8 +73,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "animated__sprite_8hpp.html",
-"classdao_1_1Page.html#aaec3b13b96ce664ccc388648a6f6b6d6",
-"files.html"
+"classdao_1_1InputBox.html#ab3a79c9b87ad07a656854dcbbcd9997e",
+"classdao_1_1Window.html#abe737d4b0ff1d4ade1c4df0b82ec4bb6",
+"structdao_1_1GeometryVertex.html#a6a2162e2ac8f9c735ee86169a1b419d4"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

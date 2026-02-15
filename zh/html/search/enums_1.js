@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inputstatus_0',['InputStatus',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033b',1,'dao']]]
+  ['buttonstatus_0',['ButtonStatus',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f',1,'dao']]]
 ];

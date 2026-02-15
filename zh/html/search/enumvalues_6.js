@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pressed_0',['Pressed',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040',1,'dao']]]
+  ['observe_0',['Observe',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04a4e418f11f274aa1c52fb51a7707a2926',1,'dao::SwitchDeleter']]]
 ];
