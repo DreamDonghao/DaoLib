@@ -3,10 +3,17 @@
 #include <texture_id.hpp>
 #include <component/image.hpp>
 
+struct Data {
+    int val = 0;
+};
+
 class HelloDaoPage :public dao::GeneralPage {
     //Text text{0, 0, U"你好 Dao", 50, hexToRGBA("#D249FC")};
     dao::Image image{10,50,150,150,texture::image};
     dao::AtlasTexture img{texture::image,10,50,160,200};
+    dao::SimpleButton simpleButton{10,50,150,150,[this] {
+        std::cout <<getContext().getState<Data>().val << std::endl;
+    }};
 public:
     HelloDaoPage() : GeneralPage("helloDaoPage") {
     };

@@ -16,4 +16,5 @@ void HelloDaoPage::update() {
 }
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
+    simpleButton.handleEvent(event);
 }

@@ -1,7 +1,7 @@
 //
 // Created by donghao on 2026/2/11.
 //
-#include <core/frame/window_command.hpp>
+#include <core/frame/window_controller.hpp>
 #include <core/frame/window.hpp>
 
 void dao::WindowController::executeCommand(Window &window) {

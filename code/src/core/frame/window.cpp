@@ -1,52 +1,47 @@
-//
-// Created by donghao on 25-12-6.
-//
 #include <core/frame/window.hpp>
-#include <core/frame/window_command.hpp>
+#include <core/frame/window_controller.hpp>
 #include <core/basic_drawing_elements/atlas_region.hpp>
 #include <SDL3_image/SDL_image.h>
 #include <utility>
 #include <chrono>
+#include <ranges>
 
 namespace dao {
-    Window::Window(const uint32 width, const uint32 height,
-                   const bool resizable, const bool transparent, const bool onTop, const bool borderless) {
-        SDL_WindowFlags flags = 0;
-        if (resizable)flags |= SDL_WINDOW_RESIZABLE;
-        if (transparent)flags |= SDL_WINDOW_TRANSPARENT;
-        if (onTop)flags |= SDL_WINDOW_ALWAYS_ON_TOP;
-        if (borderless)flags |= SDL_WINDOW_BORDERLESS;
-        m_window = SDL_CreateWindow("", static_cast<int>(width), static_cast<int>(height), flags);
-
-        m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
-        SDL_SetRenderVSync(m_renderer, 0);
-        m_id = SDL_GetWindowID(m_window);
-        /// 构建纯白纹理
-        SDL_Texture *tex = SDL_CreateTexture(
-            m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1
-        );
-        constexpr Uint32 whitePixel = 0xFFFFFFFF;
-        SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
-        m_atlasTextures[0] = tex;
+    Window::Window(
+        const uint32 width, const uint32 height, const bool display, bool isSubject,
+        const bool resizable, const bool transparent, const bool onTop, const bool borderless)
+        : m_width(width), m_height(height) {
+        if (resizable) m_windowFlags |= SDL_WINDOW_RESIZABLE;
+        if (transparent) m_windowFlags |= SDL_WINDOW_TRANSPARENT;
+        if (onTop) m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;
+        if (borderless) m_windowFlags |= SDL_WINDOW_BORDERLESS;
+        create();
+        if (!display) {
+            hide();
+        }
+        if (isSubject) {
+            m_closeAction = [this]() {
+                m_appController.close();
+            };
+        }
     }
 
     Window::~Window() {
-        SDL_DestroyRenderer(m_renderer);
-        SDL_DestroyWindow(m_window);
-        SDL_Quit();
+        if (m_renderer) { SDL_DestroyRenderer(m_renderer); }
+        if (m_window) { SDL_DestroyWindow(m_window); }
     }
 
     Window &Window::addPage(std::unique_ptr<Page> &&page) {
         const std::string title = page->getTitle();
         detectionError(!m_pages.contains(title), std::string("重复页面:") + title);
-        for (auto textureId: page->getRegisterTexture()) {
-            registerTexture(textureId);
-        }
+
         if (m_pages.empty()) {
             m_nowPageTitle = title;
             setTitle(m_nowPageTitle);
         }
         m_pages[title] = std::move(page);
+        m_pages[title]->setContext(m_context);
+        registerPageTexture();
         m_pages[title]->init();
         m_atlasTextures[1] = SDL_CreateTextureFromSurface(
             m_renderer, &m_pages[title]->getGlyphAtlas().getAtlasSurface());
@@ -55,15 +50,29 @@ namespace dao {
 
     void Window::registerTexture(const uint32 &textureId) {
         const AtlasRegion atlasRegion = getAtlasRegion(textureId);
-        // 加载新纹理图集
         if (const uint32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
             if (!m_atlasTextures[atlasId]) {
-                DAO_ERROR_LOG("纹理图集加载失败:"+std::string(texturePath));
+                DAO_ERROR_LOG("纹理图集加载失败:" + std::string(texturePath));
             }
             SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
+        }
+    }
 
+    void Window::registerPageTexture() {
+        if (m_atlasTextures.contains(0)) {
+            SDL_Texture *tex = SDL_CreateTexture(
+                m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1
+            );
+            constexpr Uint32 whitePixel = 0xFFFFFFFF;
+            SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
+            m_atlasTextures[0] = tex;
+        }
+        for (const auto &page: m_pages | std::views::values) {
+            for (auto textureId: page->getRegisterTexture()) {
+                registerTexture(textureId);
+            }
         }
     }
 
@@ -86,9 +95,35 @@ namespace dao {
         m_pages[m_nowPageTitle]->handleInputEvent(event);
     }
 
-    void Window::requestClose() {
-        m_running = false;
+    void Window::hide() const {
+        SDL_HideWindow(m_window);
+        m_closeAction();
     }
+
+    void Window::show() const {
+        SDL_ShowWindow(m_window);
+    }
+
+    void Window::destroy() {
+        if (m_window) {
+            SDL_DestroyWindow(m_window);
+            m_window = nullptr;
+        }
+    }
+
+    void Window::create() {
+        if (m_window) {
+            DAO_ERROR_LOG("重复创建窗口");
+            return;
+        }
+        m_window = SDL_CreateWindow(
+            m_nowPageTitle.data(), static_cast<int>(m_width), static_cast<int>(m_height),
+            m_windowFlags);
+        m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
+        SDL_SetRenderVSync(m_renderer, 0);
+        m_id = SDL_GetWindowID(m_window);
+    }
+
 
     void Window::render() {
         SDL_RenderClear(m_renderer);

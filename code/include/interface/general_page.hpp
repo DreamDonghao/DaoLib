@@ -4,15 +4,17 @@
 #ifndef GENERAL_PAGE_HPP
 #define GENERAL_PAGE_HPP
 #include "page.hpp"
-#include <utility>
 
 namespace dao {
+    class Context;
     template<typename T> concept BatchWritable = requires(T t, VertexBatchBuilder &b) { t.writeToBatch(b); };
 
     /// @brief 通用页面接口
     /// @details 提供的一个继承自 Page 的通用页面接口，实现了一些页面通常应该具备的功能
     class GeneralPage : public Page {
     public:
+        explicit GeneralPage(std::string title);
+
         ~GeneralPage() override = default;
 
         void init() override = 0;
@@ -28,26 +30,13 @@ namespace dao {
         /// @brief 处理消息
         void handleInputEvent(const SDL_Event &event) override = 0;
 
+        [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override;
 
-        explicit GeneralPage(std::string title) : m_title(std::move(title)) {
-        }
+        GlyphAtlas &getGlyphAtlas() override;
 
-        [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override {
-            return m_vertexBatch.getDrawBatches();
-        }
+        WindowController &getWindowController() override;
 
-        GlyphAtlas &getGlyphAtlas() override {
-            return m_vertexBatch.getGlyphAtlas();
-        }
-
-        WindowController &getWindowController() override {
-            return m_windowController;
-        }
-
-        [[nodiscard]] const std::string &getTitle() const override {
-            return m_title;
-        }
-
+        [[nodiscard]] const std::string &getTitle() const override;
 
         template<BatchWritable... Args>
         void addToBatch(Args &&... args) {
@@ -55,11 +44,16 @@ namespace dao {
             (args.writeToBatch(m_vertexBatch), ...);
         }
 
+        void setContext(Context *context) override;
+
+        [[nodiscard]] Context &getContext() const override;
+
     protected:
         WindowController m_windowController; ///< 窗口控制器
     private:
         std::string m_title;
         VertexBatchBuilder m_vertexBatch{"./assets/ttf/zh-cn.ttf", 64, 1024};
+        Context *m_context = nullptr;
     };
 }
 #endif //GENERAL_PAGE_HPP

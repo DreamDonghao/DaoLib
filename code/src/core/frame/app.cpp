@@ -6,47 +6,7 @@
 #include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
-    void App::run() {
-        while (m_runWindowNum) {
-            m_runWindowNum = 0;
-            for (const auto &window: m_windows | std::views::values) {
-                render();
-                window->update();
-                m_runWindowNum += window->isRunning();
-            }
-            SDL_Event event;
-            while (SDL_PollEvent(&event)) {
-                if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
-                    uint32 wid = event.window.windowID;
-                    if (auto it = m_windows.find(wid); it != m_windows.end()) {
-                        it->second->requestClose();
-                    }
-                }
-                SDL_Window *focus = SDL_GetMouseFocus();
-                if (!focus) {
-                    continue;
-                }
-                auto wid = SDL_GetWindowID(focus);
-                m_windows[wid]->handleInputEvent(event);
-            }
-        }
-        SDL_Quit();
-    }
-
-    Window &App::createWindow(uint32 width, uint32 height,
-                              bool resizable, bool transparent, bool onTop, bool borderless) {
-        auto nowWindow = std::make_unique<Window>(width, height, resizable, transparent, onTop, borderless);
-        const uint32 windowId = nowWindow->getId();
-        m_windows[windowId] = std::move(nowWindow);
-        return *m_windows[windowId];
-    }
-
-    Tray &App::createTray(const std::string_view iconPath, const std::string_view tooltip) {
-        m_tray = std::make_unique<Tray>(iconPath, tooltip);
-        return *m_tray;
-    }
-
-    App::App() {
+    App::App(const bool clickThrough) {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
@@ -56,11 +16,71 @@ namespace dao {
         if (!TTF_Init()) {
             DAO_ERROR_LOG(std::string("初始化 SDL_TTF 失败 ") + SDL_GetError());
         }
+        if (!SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, clickThrough ? "1" : "0")) {
+            DAO_ERROR_LOG("失焦点击生效设置失败");
+        }
     }
 
-    void App::render() {
-        for (const auto &window: m_windows | std::views::values) {
-            window->render();
+    App::~App() {
+        TTF_Quit();
+        SDL_Quit();
+    }
+
+    void App::run() {
+        m_running = true;
+        while (m_running) {
+            for (const auto &window: m_windows | std::views::values) {
+                window->update();
+                window->render();
+                window->getAppController().executeCommand(*this);
+            }
+            SDL_Event event;
+            while (SDL_PollEvent(&event)) {
+                if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
+                    uint32_t wid = event.window.windowID;
+                    if (auto it = m_windows.find(wid); it != m_windows.end()) {
+                        it->second->hide();
+                    }
+                }
+
+                uint32_t wid = 0;
+                if (event.type >= SDL_EVENT_WINDOW_FIRST && event.type <= SDL_EVENT_WINDOW_LAST) {
+                    wid = event.window.windowID;
+                } else if (event.type >= SDL_EVENT_KEY_DOWN && event.type <= SDL_EVENT_KEY_UP) {
+                    wid = event.key.windowID;
+                } else if (event.type >= SDL_EVENT_MOUSE_MOTION && event.type <= SDL_EVENT_MOUSE_WHEEL) {
+                    wid = event.button.windowID;
+                }
+
+                if (wid != 0) {
+                    if (auto it = m_windows.find(wid); it != m_windows.end()) {
+                        it->second->handleInputEvent(event);
+                    }
+                }
+            }
         }
+    }
+
+    void App::close() {
+        for (const auto &window: m_windows | std::views::values) {
+            window->destroy();
+        }
+        m_running = false;
+    }
+
+    Window &App::createWindow(uint32 width, uint32 height, bool display, bool isSubject,
+                              bool resizable, bool transparent, bool onTop, bool borderless) {
+        auto nowWindow = std::make_unique<Window>(
+            width, height, display, isSubject,
+            resizable, transparent, onTop, borderless);
+        const uint32 windowId = nowWindow->getId();
+        m_windows[windowId] = std::move(nowWindow);
+        m_windows[windowId]->setContext(&m_context);
+        return *m_windows[windowId];
+    }
+
+    Tray &App::createTray(const std::string_view iconPath, const std::string_view tooltip) {
+        m_tray = std::make_unique<Tray>(iconPath, tooltip);
+        return *m_tray;
     }
 }

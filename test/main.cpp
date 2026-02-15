@@ -1,3 +1,4 @@
+#include <thread>
 #include <core/frame/app.hpp>
 #include <SDL3/SDL.h>
 #include "hello_dao_page.hpp"
@@ -8,16 +9,15 @@ struct TrayContext {
     bool mute = false;
 
     // radio 组（Mode）
-    SDL_TrayEntry* modeNormal = nullptr;
-    SDL_TrayEntry* modeGaming = nullptr;
-    SDL_TrayEntry* modeSilent = nullptr;
+    SDL_TrayEntry *modeNormal = nullptr;
+    SDL_TrayEntry *modeGaming = nullptr;
+    SDL_TrayEntry *modeSilent = nullptr;
 };
 
 // ========= 回调 =========
-static void OnTrayAction(void* userdata, SDL_TrayEntry* entry)
-{
-    auto* ctx = static_cast<TrayContext*>(userdata);
-    const char* label = SDL_GetTrayEntryLabel(entry);
+static void OnTrayAction(void *userdata, SDL_TrayEntry *entry) {
+    auto *ctx = static_cast<TrayContext *>(userdata);
+    const char *label = SDL_GetTrayEntryLabel(entry);
 
     if (!label) return;
 
@@ -52,8 +52,7 @@ static void OnTrayAction(void* userdata, SDL_TrayEntry* entry)
     // ---- radio 组（Mode）----
     if (entry == ctx->modeNormal ||
         entry == ctx->modeGaming ||
-        entry == ctx->modeSilent)
-    {
+        entry == ctx->modeSilent) {
         // 手动互斥
         SDL_SetTrayEntryChecked(ctx->modeNormal, entry == ctx->modeNormal);
         SDL_SetTrayEntryChecked(ctx->modeGaming, entry == ctx->modeGaming);
@@ -66,52 +65,56 @@ static void OnTrayAction(void* userdata, SDL_TrayEntry* entry)
     SDL_Log("Clicked: %s", label);
 }
 
-int main(int argc, char *argv[])
-{
+
+int main(int argc, char *argv[]) {
     /// 创建应用
-    auto &app = dao::App::getApp();
+    dao::App app{true};
+
+    app.getContext().emplaceState<Data>(1);
 
     /// 创建窗口
-    app.createWindow(300, 300, true)
-        .addPage(std::make_unique<HelloDaoPage>());
+    app.createWindow(1300, 1300, true,true, true, true)
+            .addPage(std::make_unique<HelloDaoPage>());
 
+    app.createWindow(300, 300, true,false)
+            .addPage(std::make_unique<HelloDaoPage>());
     /// 创建托盘
-    auto tray = app.createTray("./assets/textures/atlas/icon.png", "托盘").getSDLTray();
+    const auto tray = app.createTray("./assets/textures/atlas/icon.png", "托盘").getSDLTray();
 
     // ========= 创建菜单 =========
-    SDL_TrayMenu* menu = SDL_CreateTrayMenu(tray);
+    SDL_TrayMenu *menu = SDL_CreateTrayMenu(tray);
 
     TrayContext ctx{};
 
     // ---- Open ----
-    SDL_TrayEntry* open =
-        SDL_InsertTrayEntryAt(menu, -1, "Open", SDL_TRAYENTRY_BUTTON);
+    SDL_TrayEntry *open =
+            SDL_InsertTrayEntryAt(menu, -1, "Open", SDL_TRAYENTRY_BUTTON);
     SDL_SetTrayEntryCallback(open, OnTrayAction, &ctx);
 
     // ---- 分隔线（disabled entry 实现）----
     SDL_InsertTrayEntryAt(menu, -1, "------",
-        SDL_TRAYENTRY_BUTTON | SDL_TRAYENTRY_DISABLED);
+                          SDL_TRAYENTRY_BUTTON | SDL_TRAYENTRY_DISABLED);
 
     // ---- checkbox ----
-    SDL_TrayEntry* autoStart =
-        SDL_InsertTrayEntryAt(menu, -1, "Auto Start", SDL_TRAYENTRY_CHECKBOX);
+    SDL_TrayEntry *autoStart =
+            SDL_InsertTrayEntryAt(menu, -1, "Auto Start", SDL_TRAYENTRY_CHECKBOX);
     SDL_SetTrayEntryCallback(autoStart, OnTrayAction, &ctx);
 
-    SDL_TrayEntry* mute =
-        SDL_InsertTrayEntryAt(menu, -1, "Mute", SDL_TRAYENTRY_CHECKBOX);
+    SDL_TrayEntry *mute =
+            SDL_InsertTrayEntryAt(menu, -1, "Mute", SDL_TRAYENTRY_CHECKBOX);
     SDL_SetTrayEntryCallback(mute, OnTrayAction, &ctx);
 
     // ---- submenu：Mode ----
-    SDL_TrayEntry* modeEntry =
-        SDL_InsertTrayEntryAt(menu, -1, "Mode", SDL_TRAYENTRY_SUBMENU);
+    SDL_TrayEntry *modeEntry =
+            SDL_InsertTrayEntryAt(menu, -1, "Mode", SDL_TRAYENTRY_SUBMENU);
 
-    SDL_TrayMenu* modeMenu = SDL_CreateTraySubmenu(modeEntry);
+    SDL_TrayMenu *modeMenu = SDL_CreateTraySubmenu(modeEntry);
 
-    ctx.modeNormal =SDL_InsertTrayEntryAt(modeMenu, -1, "Normal", SDL_TRAYENTRY_CHECKBOX);
+    ctx.modeNormal = SDL_InsertTrayEntryAt(modeMenu, -1, "Normal", SDL_TRAYENTRY_CHECKBOX);
 
-    ctx.modeGaming =SDL_InsertTrayEntryAt(modeMenu, -1, "Gaming", SDL_TRAYENTRY_CHECKBOX);
+    ctx.modeGaming = SDL_InsertTrayEntryAt(modeMenu, -1, "Gaming", SDL_TRAYENTRY_CHECKBOX);
 
-    ctx.modeSilent =SDL_InsertTrayEntryAt(modeMenu, -1, "Silent", SDL_TRAYENTRY_CHECKBOX);
+    ctx.modeSilent = SDL_InsertTrayEntryAt(modeMenu, -1, "Silent", SDL_TRAYENTRY_CHECKBOX);
 
     SDL_SetTrayEntryCallback(ctx.modeNormal, OnTrayAction, &ctx);
     SDL_SetTrayEntryCallback(ctx.modeGaming, OnTrayAction, &ctx);
@@ -121,8 +124,8 @@ int main(int argc, char *argv[])
     SDL_SetTrayEntryChecked(ctx.modeNormal, true);
 
     // ---- Exit ----
-    SDL_TrayEntry* exitEntry =
-        SDL_InsertTrayEntryAt(menu, -1, "Exit", SDL_TRAYENTRY_BUTTON);
+    SDL_TrayEntry *exitEntry =
+            SDL_InsertTrayEntryAt(menu, -1, "Exit", SDL_TRAYENTRY_BUTTON);
     SDL_SetTrayEntryCallback(exitEntry, OnTrayAction, &ctx);
 
     /// 运行应用

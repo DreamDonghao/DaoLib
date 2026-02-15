@@ -17,9 +17,13 @@ add_library(dao
         src/core/frame/window.cpp
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
-        src/core/frame/window_command.cpp
+        src/core/frame/window_controller.cpp
         src/component/button/simple_button.cpp
         src/component/image.cpp
+        src/core/frame/app_controller.cpp
+        src/core/frame/context.cpp
+        include/core/frame/context.hpp
+        src/interface/general_page.cpp
 )
 
 set_target_properties(dao PROPERTIES
