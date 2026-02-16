@@ -8,5 +8,6 @@ var searchData=
   ['hexbytetou8_5',['hexByteToU8',['../namespacedao.html#a3decb5fab6d89a778cfca92971d8f8e7',1,'dao']]],
   ['hextorgba_6',['hexToRGBA',['../namespacedao.html#a542a4f45ed97f24bacd1eaaea3ff0a01',1,'dao']]],
   ['hide_7',['hide',['../classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905',1,'dao::Window']]],
-  ['hover_8',['Hover',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc',1,'dao']]]
+  ['hidewindow_8',['hideWindow',['../classdao_1_1App.html#aa14ee9c5017261919f8f6514445fe180',1,'dao::App']]],
+  ['hover_9',['Hover',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc',1,'dao']]]
 ];

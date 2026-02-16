@@ -93,15 +93,44 @@ $(function(){initNavTree('tray_8hpp.html','',''); });
   <div class="headertitle"><div class="title">tray.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;SDL3_image/SDL_image.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="better__stl_8hpp_source.html">core/tool/better_stl.hpp</a>&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;SDL3_image/SDL_image.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 tray.hpp 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="tray_8hpp__incl.png" border="0" usemap="#acode_2include_2core_2frame_2tray_8hpp" loading="lazy" alt=""/></div>
 <map name="acode_2include_2core_2frame_2tray_8hpp" id="acode_2include_2core_2frame_2tray_8hpp">
-<area shape="rect" title=" " alt="" coords="12,5,191,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,197,119"/>
-<area shape="poly" title=" " alt="" coords="104,46,104,79,99,79,99,46"/>
+<area shape="rect" title=" " alt="" coords="632,5,811,45"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="399,93,572,119"/>
+<area shape="poly" title=" " alt="" coords="666,48,533,92,532,87,664,43"/>
+<area shape="rect" title=" " alt="" coords="597,93,683,119"/>
+<area shape="poly" title=" " alt="" coords="703,47,664,85,660,82,700,44"/>
+<area shape="rect" title=" " alt="" coords="708,93,900,119"/>
+<area shape="poly" title=" " alt="" coords="743,44,784,82,780,86,740,47"/>
+<area shape="rect" title=" " alt="" coords="925,93,987,119"/>
+<area shape="poly" title=" " alt="" coords="778,43,912,87,911,92,777,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,72,192"/>
+<area shape="poly" title=" " alt="" coords="399,120,256,140,86,169,85,164,255,135,398,115"/>
+<area shape="rect" title=" " alt="" coords="96,167,181,192"/>
+<area shape="poly" title=" " alt="" coords="429,121,195,169,194,164,428,116"/>
+<area shape="rect" title=" " alt="" coords="205,167,272,192"/>
+<area shape="poly" title=" " alt="" coords="446,121,286,167,284,162,445,116"/>
+<area shape="rect" title=" " alt="" coords="297,167,370,192"/>
+<area shape="poly" title=" " alt="" coords="462,121,371,163,369,158,460,116"/>
+<area shape="rect" title=" " alt="" coords="395,167,475,192"/>
+<area shape="poly" title=" " alt="" coords="479,121,453,157,449,154,475,117"/>
+<area shape="rect" title=" " alt="" coords="499,167,576,192"/>
+<area shape="poly" title=" " alt="" coords="496,117,523,154,519,157,492,121"/>
+<area shape="rect" title=" " alt="" coords="600,167,672,192"/>
+<area shape="poly" title=" " alt="" coords="511,116,600,158,598,163,508,121"/>
+<area shape="rect" title=" " alt="" coords="697,167,821,192"/>
+<area shape="poly" title=" " alt="" coords="530,116,702,161,701,166,529,121"/>
+<area shape="rect" title=" " alt="" coords="845,167,969,192"/>
+<area shape="poly" title=" " alt="" coords="553,116,832,163,831,168,553,121"/>
+<area shape="rect" title=" " alt="" coords="993,167,1164,192"/>
+<area shape="poly" title=" " alt="" coords="573,115,980,164,979,169,572,120"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -130,6 +159,14 @@ tray.hpp 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:dao" id="r_dao"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html">dao</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a67ff9152aa01a22dc1d0ea41705f14bc" id="r_a67ff9152aa01a22dc1d0ea41705f14bc"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc">dao::TrayFunc</a> = std::move_only_function&lt;void(SDL_TrayEntry *entry)&gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5cbc9f994c2e5d21237029b8b92a364d" id="r_a5cbc9f994c2e5d21237029b8b92a364d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">dao::callback</a> (void *userdata, SDL_TrayEntry *entry)</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

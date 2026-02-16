@@ -8,6 +8,6 @@ var searchData=
   ['_7egeneralpage_5',['~GeneralPage',['../classdao_1_1GeneralPage.html#aac72afd8e8f75284480bfa1cff930fab',1,'dao::GeneralPage']]],
   ['_7epage_6',['~Page',['../classdao_1_1Page.html#aa593d76b639520c4ea0287951c0cba92',1,'dao::Page']]],
   ['_7esimplebutton_7',['~SimpleButton',['../classdao_1_1SimpleButton.html#a571d1b46d38df252d6eeada00a8e04a4',1,'dao::SimpleButton']]],
-  ['_7etray_8',['~Tray',['../classdao_1_1Tray.html#a03299ec319b6560989ba724d8d00da50',1,'dao::Tray']]],
+  ['_7etray_8',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
   ['_7ewindow_9',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
 ];

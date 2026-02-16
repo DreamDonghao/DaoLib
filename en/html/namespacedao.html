@@ -164,6 +164,7 @@ Concepts</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ab7a82d8c41ded6b017d91c4a007e932c" id="r_ab7a82d8c41ded6b017d91c4a007e932c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ab7a82d8c41ded6b017d91c4a007e932c">TextureID</a> = <a class="el" href="#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a></td></tr>
+<tr class="memitem:a67ff9152aa01a22dc1d0ea41705f14bc" id="r_a67ff9152aa01a22dc1d0ea41705f14bc"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a67ff9152aa01a22dc1d0ea41705f14bc">TrayFunc</a> = std::move_only_function&lt;void(SDL_TrayEntry *entry)&gt;</td></tr>
 <tr class="memitem:aef4d1812e2cbf9e27a094352b0414e0d" id="r_aef4d1812e2cbf9e27a094352b0414e0d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aef4d1812e2cbf9e27a094352b0414e0d">int8</a> = int8_t</td></tr>
 <tr class="memitem:ae0da2a436ea11170c46cc9313cbc8aaa" id="r_ae0da2a436ea11170c46cc9313cbc8aaa"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ae0da2a436ea11170c46cc9313cbc8aaa">int16</a> = int16_t</td></tr>
 <tr class="memitem:a31fa607e3f3e8f5b16c91804ed2a8069" id="r_a31fa607e3f3e8f5b16c91804ed2a8069"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> = int32_t</td></tr>
@@ -199,6 +200,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5cbc9f994c2e5d21237029b8b92a364d" id="r_a5cbc9f994c2e5d21237029b8b92a364d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cbc9f994c2e5d21237029b8b92a364d">callback</a> (void *userdata, SDL_TrayEntry *entry)</td></tr>
 <tr class="memitem:a02af220658c49a0b7ac198977f450e7f" id="r_a02af220658c49a0b7ac198977f450e7f"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:a02af220658c49a0b7ac198977f450e7f template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a02af220658c49a0b7ac198977f450e7f">sort</a> (Container &amp;container)</td></tr>
 <tr class="memitem:a2b9c156f3ca595ce3ac2d360b9805711" id="r_a2b9c156f3ca595ce3ac2d360b9805711"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2b9c156f3ca595ce3ac2d360b9805711">randomInt</a> (const int min, const int max)</td></tr>
@@ -343,6 +345,22 @@ template&lt;typename K, typename V&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="atlas__texture_8hpp_source.html#l00009">9</a> of file <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a67ff9152aa01a22dc1d0ea41705f14bc" name="a67ff9152aa01a22dc1d0ea41705f14bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ff9152aa01a22dc1d0ea41705f14bc">&#9670;&#160;</a></span>TrayFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a67ff9152aa01a22dc1d0ea41705f14bc">dao::TrayFunc</a> = std::move_only_function&lt;void(SDL_TrayEntry *entry)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tray_8hpp_source.html#l00008">8</a> of file <a class="el" href="tray_8hpp_source.html">tray.hpp</a>.</p>
 
 </div>
 </div>
@@ -572,6 +590,41 @@ template&lt;typename K, typename V&gt; </div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a5cbc9f994c2e5d21237029b8b92a364d" name="a5cbc9f994c2e5d21237029b8b92a364d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbc9f994c2e5d21237029b8b92a364d">&#9670;&#160;</a></span>callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::callback </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_TrayEntry *</td>          <td class="paramname"><span class="paramname"><em>entry</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tray_8hpp_source.html#l00010">10</a> of file <a class="el" href="tray_8hpp_source.html">tray.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                               {</div>
+<div class="line"><span class="lineno">   11</span>        (*<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="#a67ff9152aa01a22dc1d0ea41705f14bc">TrayFunc</a> *<span class="keyword">&gt;</span>(userdata))(entry);</div>
+<div class="line"><span class="lineno">   12</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a67ff9152aa01a22dc1d0ea41705f14bc"><div class="ttname"><a href="#a67ff9152aa01a22dc1d0ea41705f14bc">dao::TrayFunc</a></div><div class="ttdeci">std::move_only_function&lt; void(SDL_TrayEntry *entry)&gt; TrayFunc</div><div class="ttdef"><b>Definition</b> <a href="tray_8hpp_source.html#l00008">tray.hpp:8</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a746bc8fde96bdaae84bc29183b0ee994" name="a746bc8fde96bdaae84bc29183b0ee994"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a746bc8fde96bdaae84bc29183b0ee994">&#9670;&#160;</a></span>currentDateTime()</h2>
 

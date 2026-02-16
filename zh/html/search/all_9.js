@@ -11,8 +11,9 @@ var searchData=
   ['boundingbox_8',['BoundingBox',['../classdao_1_1BoundingBox.html',1,'dao::BoundingBox'],['../classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54',1,'dao::BoundingBox::BoundingBox()=default'],['../classdao_1_1BoundingBox.html#ab7c0a5bdec77c69149249cd4413d4047',1,'dao::BoundingBox::BoundingBox(float32 left, float32 up, float32 right, float32 down)']]],
   ['bug_20列表_9',['Bug 列表',['../bug.html',1,'']]],
   ['button_10',['Button',['../classdao_1_1Button.html',1,'dao']]],
-  ['button_2ehpp_11',['button.hpp',['../button_8hpp.html',1,'']]],
-  ['button_5fstyle_2ehpp_12',['button_style.hpp',['../button__style_8hpp.html',1,'']]],
-  ['buttonstatus_13',['ButtonStatus',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f',1,'dao']]],
-  ['buttonstyle_14',['ButtonStyle',['../classdao_1_1ButtonStyle.html',1,'dao']]]
+  ['button_11',['button',['../classdao_1_1Tray.html#a058921ddbe925245d411257467e0887a',1,'dao::Tray::button(const std::string_view label, TrayFunc &amp;trayFunc) const'],['../classdao_1_1Tray.html#a3391fbbfae90c1cab622bada59f42b2e',1,'dao::Tray::button(const std::string_view label, TrayFunc &amp;&amp;trayFunc)']]],
+  ['button_2ehpp_12',['button.hpp',['../button_8hpp.html',1,'']]],
+  ['button_5fstyle_2ehpp_13',['button_style.hpp',['../button__style_8hpp.html',1,'']]],
+  ['buttonstatus_14',['ButtonStatus',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f',1,'dao']]],
+  ['buttonstyle_15',['ButtonStyle',['../classdao_1_1ButtonStyle.html',1,'dao']]]
 ];

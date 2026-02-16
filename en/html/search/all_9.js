@@ -12,8 +12,9 @@ var searchData=
   ['branch_9',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
   ['bug_20list_10',['Bug List',['../bug.html',1,'']]],
   ['button_11',['Button',['../classdao_1_1Button.html',1,'dao']]],
-  ['button_2ehpp_12',['button.hpp',['../button_8hpp.html',1,'']]],
-  ['button_5fstyle_2ehpp_13',['button_style.hpp',['../button__style_8hpp.html',1,'']]],
-  ['buttonstatus_14',['ButtonStatus',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f',1,'dao']]],
-  ['buttonstyle_15',['ButtonStyle',['../classdao_1_1ButtonStyle.html',1,'dao']]]
+  ['button_12',['button',['../classdao_1_1Tray.html#a058921ddbe925245d411257467e0887a',1,'dao::Tray::button(const std::string_view label, TrayFunc &amp;trayFunc) const'],['../classdao_1_1Tray.html#a3391fbbfae90c1cab622bada59f42b2e',1,'dao::Tray::button(const std::string_view label, TrayFunc &amp;&amp;trayFunc)']]],
+  ['button_2ehpp_13',['button.hpp',['../button_8hpp.html',1,'']]],
+  ['button_5fstyle_2ehpp_14',['button_style.hpp',['../button__style_8hpp.html',1,'']]],
+  ['buttonstatus_15',['ButtonStatus',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f',1,'dao']]],
+  ['buttonstyle_16',['ButtonStyle',['../classdao_1_1ButtonStyle.html',1,'dao']]]
 ];

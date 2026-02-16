@@ -43,6 +43,7 @@ var namespacedao =
     [ "int64", "namespacedao.html#a48ccb0e7cea03df22bde53598488577e", null ],
     [ "int8", "namespacedao.html#aef4d1812e2cbf9e27a094352b0414e0d", null ],
     [ "TextureID", "namespacedao.html#ab7a82d8c41ded6b017d91c4a007e932c", null ],
+    [ "TrayFunc", "namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc", null ],
     [ "uint16", "namespacedao.html#a4fb07c9dd4d228206acf860f75cc4880", null ],
     [ "uint32", "namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd", null ],
     [ "uint64", "namespacedao.html#a2a8f1a95f540566ae8b57f8313f932d1", null ],
@@ -67,6 +68,7 @@ var namespacedao =
       [ "setPosition", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804", null ],
       [ "setSize", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f", null ]
     ] ],
+    [ "callback", "namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d", null ],
     [ "currentDateTime", "namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994", null ],
     [ "DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ],
     [ "detectionError", "namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8", null ],
