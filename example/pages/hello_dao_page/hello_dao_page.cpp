@@ -1,18 +1,22 @@
 #include "hello_dao_page.hpp"
 
-std::vector<uint32> HelloDaoPage::getRegisterTexture() const {
-    return {texture::image};
-}
+namespace example {
+    using namespace dao;
 
-void HelloDaoPage::init() {
-}
+    std::vector<uint32> HelloDaoPage::getRegisterTexture() const {
+        return {texture::image};
+    }
 
-void HelloDaoPage::close() {
-}
+    void HelloDaoPage::init() {
+    }
 
-void HelloDaoPage::update() {
-    addToBatch(image);
-}
+    void HelloDaoPage::close() {
+    }
 
-void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
+    void HelloDaoPage::update() {
+        addToBatch(image);
+    }
+
+    void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
+    }
 }

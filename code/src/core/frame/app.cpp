@@ -68,19 +68,17 @@ namespace dao {
         m_running = false;
     }
 
-    Window &App::createWindow(uint32 width, uint32 height, bool display, bool isSubject,
-                              bool resizable, bool transparent, bool onTop, bool borderless) {
+    Window &App::createWindow(
+        uint32 width, uint32 height, const std::string_view tag,
+        bool hidden, bool isSubject,
+        bool resizable, bool transparent, bool onTop, bool borderless) {
         auto nowWindow = std::make_unique<Window>(
-            width, height, display, isSubject,
+            width, height, hidden, isSubject,
             resizable, transparent, onTop, borderless);
         const uint32 windowId = nowWindow->getId();
+        m_windowMap[tag] = windowId;
         m_windows[windowId] = std::move(nowWindow);
         m_windows[windowId]->setContext(&m_context);
         return *m_windows[windowId];
-    }
-
-    Tray &App::createTray(const std::string_view iconPath, const std::string_view tooltip) {
-        m_tray = std::make_unique<Tray>(iconPath, tooltip);
-        return *m_tray;
     }
 }

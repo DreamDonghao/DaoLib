@@ -1,13 +1,15 @@
 #include <core/frame/app.hpp>
-#include "pages/hello_dao_page/hello_dao_page.hpp"
+#include <hello_dao_page/hello_dao_page.hpp>
 
 int main(int argc, char *argv[]) {
+    using namespace example;
     /// 创建一个应用
-    auto &app = dao::App::getApp();
+    dao::App app;
 
     /// 创建一个窗口并添加一个页面
-    app.createWindow(300, 300,true)
-            .addPage(std::make_unique<HelloDaoPage>());
+    app.createWindow(800, 600, "设置", false, false,
+                     true, false, false, false)
+            .addPage(std::make_unique<example::HelloDaoPage>());
 
     app.run();
     return 0;

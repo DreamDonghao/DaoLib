@@ -11,12 +11,17 @@ add_executable(${PROJECT_NAME}
         assets/textures/config/atlas_region.cpp
         main.cpp
         pages/hello_dao_page/hello_dao_page.cpp
+        tray/tray.cpp
+        context/states/states.cpp
+        context/services/service.cpp
 )
 
 # 本地 include
 target_include_directories(${PROJECT_NAME} PRIVATE
         assets/textures/inc
         pages
+        tray
+        context
 )
 
 # 链接 dao

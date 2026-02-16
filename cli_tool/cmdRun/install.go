@@ -19,6 +19,7 @@ func run(name string, args ...string) {
 		os.Exit(1)
 	}
 }
+
 func Install(buildType string, vcpkgCmakePath string) {
 	exePath, _ := os.Executable()
 	exeDir := filepath.Dir(exePath)
@@ -31,6 +32,11 @@ func Install(buildType string, vcpkgCmakePath string) {
 		[]byte(strings.ReplaceAll(installDir, "\\", "/")), 0644)
 	if err != nil {
 		log.Fatal(err)
+	}
+
+	err = os.RemoveAll(buildDir)
+	if err != nil {
+
 	}
 
 	fmt.Println("cmake", "-S", sourceDir, "-B", buildDir, "-DCMAKE_TOOLCHAIN_FILE="+vcpkgCmakePath)

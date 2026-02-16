@@ -23,13 +23,13 @@ namespace dao {
     public:
         /// @param width 窗口默认宽度
         /// @param height 窗口默认高度
-        /// @param display 默认显示
+        /// @param hidden 隐藏
         /// @param isSubject 为应用主体窗口
         /// @param resizable 可重新设置大小
         /// @param transparent 支持透明
         /// @param onTop 置顶
         /// @param borderless 无边框
-        Window(uint32 width, uint32 height, bool display = false, bool isSubject = false,
+        Window(uint32 width, uint32 height, bool hidden = false, bool isSubject = false,
                bool resizable = false, bool transparent = false, bool
                onTop = false, bool borderless = false);
 

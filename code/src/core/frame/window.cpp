@@ -8,15 +8,16 @@
 
 namespace dao {
     Window::Window(
-        const uint32 width, const uint32 height, const bool display, bool isSubject,
+        const uint32 width, const uint32 height, const bool hidden, const bool isSubject,
         const bool resizable, const bool transparent, const bool onTop, const bool borderless)
         : m_width(width), m_height(height) {
+        if (hidden) m_windowFlags |= SDL_WINDOW_HIDDEN;
         if (resizable) m_windowFlags |= SDL_WINDOW_RESIZABLE;
         if (transparent) m_windowFlags |= SDL_WINDOW_TRANSPARENT;
         if (onTop) m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;
         if (borderless) m_windowFlags |= SDL_WINDOW_BORDERLESS;
         create();
-        if (!display) {
+        if (!hidden) {
             hide();
         }
         if (isSubject) {

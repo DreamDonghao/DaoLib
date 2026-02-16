@@ -58,6 +58,16 @@ var createProjectCmd = &cobra.Command{
 	},
 }
 
+var createPageCmd = &cobra.Command{
+	Use:   "page [name]",
+	Short: "创建页面",
+	Args:  cobra.ExactArgs(1),
+	Run: func(cmd *cobra.Command, args []string) {
+		pageName := args[0]
+		cmdRun.CreatePage(pageName)
+	},
+}
+
 var textureCmd = &cobra.Command{
 	Use:   "texture",
 	Short: "纹理相关命令",
@@ -79,7 +89,7 @@ func init() {
 	rootCmd.AddCommand(installCmd)
 	rootCmd.AddCommand(createCmd)
 	createCmd.AddCommand(createProjectCmd)
-
+	createCmd.AddCommand(createPageCmd)
 	rootCmd.AddCommand(textureCmd)
 	textureCmd.AddCommand(packCmd)
 
