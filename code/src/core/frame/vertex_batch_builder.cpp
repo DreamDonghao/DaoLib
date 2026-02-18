@@ -4,7 +4,7 @@
 #include <span>
 #include <core/frame/vertex_batch_builder.hpp>
 #include "core/basic_drawing_elements/atlas_region.hpp"
-#include <print>
+
 
 namespace dao {
     std::vector<int> VertexBatchBuilder::s_qudaIndices = {};

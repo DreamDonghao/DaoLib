@@ -19,6 +19,11 @@ void dao::WindowController::executeCommand(Window &window) {
                 y = std::any_cast<std::pair<uint32, uint32> >(data).second;
                 window.setPosition(x, y);
                 break;
+            case WindowCommandType::movePosition:
+                x = std::any_cast<std::pair<uint32, uint32> >(data).first;
+                y = std::any_cast<std::pair<uint32, uint32> >(data).second;
+                window.movePosition(x, y);
+                break;
             case WindowCommandType::setSize:
                 x = std::any_cast<std::pair<uint32, uint32> >(data).first;
                 y = std::any_cast<std::pair<uint32, uint32> >(data).second;
@@ -36,6 +41,12 @@ void dao::WindowController::switchPage(const std::string &title) {
 
 void dao::WindowController::setClickThrough(const bool &clickThrough) {
     m_windowCommands.push_back(WindowCommand{WindowCommandType::setClickThrough, std::any{clickThrough}});
+}
+
+void dao::WindowController::movePosition(const uint32 x, const uint32 y) {
+    m_windowCommands.push_back(WindowCommand{
+        WindowCommandType::movePosition, std::any{std::make_pair(x, y)}
+    });
 }
 
 void dao::WindowController::setPosition(uint32 x, uint32 y) {

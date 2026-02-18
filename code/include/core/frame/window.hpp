@@ -81,6 +81,8 @@ namespace dao {
         /// @brief 设置位置
         void setPosition(uint32 x, uint32 y) const;
 
+        void movePosition(uint32 x, uint32 y) const;
+
         /// @brief 设置大小
         void setSize(uint32 width, uint32 height) const;
 

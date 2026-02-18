@@ -15,6 +15,7 @@ namespace dao {
         switchPage,      ///< 切换页面
         setClickThrough, ///< 设置点击是否穿透
         setPosition,     ///< 设置窗口位置
+        movePosition,    ///< 移动窗口位置
         setSize,         ////<设置窗口大小
     };
 
@@ -37,6 +38,8 @@ namespace dao {
         void switchPage(const std::string &title);
 
         void setClickThrough(const bool &clickThrough);
+
+        void movePosition(const uint32 x, const uint32 y);
 
         void setPosition(uint32 x, uint32 y);
 

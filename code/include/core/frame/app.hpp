@@ -7,14 +7,16 @@
 #include <core/frame/tray.hpp>
 
 #include "context.hpp"
+#include "frameLimiter.hpp"
 
 namespace dao {
     /// @brief 应用
     /// @details 用来管理整个应用程序
     class App final {
     public:
+        /// @param fps 帧率
         /// @param clickThrough 失焦点击生效
-        explicit App(bool clickThrough = false);
+        explicit App(uint32 fps = 60,bool clickThrough = false);
 
         App(const App &) = delete;            // 禁止拷贝
         App &operator=(const App &) = delete; // 禁止拷贝
@@ -68,6 +70,7 @@ namespace dao {
 
     private:
         bool m_running = false;                               ///< 是否运行
+        FrameLimiter m_frameLimiter;                          ///< 帧率控制器
         hash_map<std::string_view, uint32> m_windowMap;       ///< 窗口标识 ID 映射表
         hash_map<uint32, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
         std::unique_ptr<Tray> m_tray = nullptr;               ///< 托盘

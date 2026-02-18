@@ -6,7 +6,7 @@
 #include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
-    App::App(const bool clickThrough) {
+    App::App(const uint32 fps, const bool clickThrough) : m_frameLimiter(fps) {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
@@ -29,6 +29,7 @@ namespace dao {
     void App::run() {
         m_running = true;
         while (m_running) {
+            m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {
                 window->update();
                 window->render();

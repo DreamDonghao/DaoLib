@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
     /// 创建应用
-    dao::App app{true};
+    dao::App app{60,true};
 
     app.getContext().emplaceService<dao::App*>(&app);
 

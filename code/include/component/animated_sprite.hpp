@@ -5,8 +5,8 @@
 #define TEST_DAO_ANIMATED_SPRITE_HPP
 #include <core/tool/tick_timer.hpp>
 #include <core/tool/ring_vector.hpp>
-#include "core/basic_drawing_elements/atlas_texture.hpp"
-#include "interface/drawable.hpp"
+#include "../core/basic_drawing_elements/atlas_texture.hpp"
+#include "../interface/drawable.hpp"
 #include <core/tool/better_stl.hpp>
 
 namespace dao {

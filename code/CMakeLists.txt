@@ -10,6 +10,10 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+if(MSVC)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
+endif()
+
 add_library(dao
         src/core/basic_drawing_elements/atlas_texture.cpp
         src/core/frame/app.cpp
@@ -18,11 +22,10 @@ add_library(dao
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
         src/core/frame/window_controller.cpp
-        src/component/button/simple_button.cpp
-        src/component/image.cpp
         src/core/frame/app_controller.cpp
         src/core/frame/context.cpp
-        include/core/frame/context.hpp
+        src/component/button/simple_button.cpp
+        src/component/image.cpp
         src/interface/general_page.cpp
 )
 

@@ -17,9 +17,6 @@ namespace dao {
         if (onTop) m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;
         if (borderless) m_windowFlags |= SDL_WINDOW_BORDERLESS;
         create();
-        if (!hidden) {
-            hide();
-        }
         if (isSubject) {
             m_closeAction = [this]() {
                 m_appController.close();
@@ -158,6 +155,12 @@ namespace dao {
 
     void Window::setPosition(const uint32 x, const uint32 y) const {
         SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
+    }
+
+    void Window::movePosition(const uint32 x, const uint32 y) const {
+        int wx, wy;
+        SDL_GetWindowPosition(m_window, &wx, &wy);
+        SDL_SetWindowPosition(m_window, wx + x, wy + y);
     }
 
     void Window::setSize(const uint32 width, const uint32 height) const {
