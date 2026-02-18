@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['page_0',['Page',['../classdao_1_1Page.html',1,'dao']]]
+  ['mappedregion_0',['MappedRegion',['../classdao_1_1MappedRegion.html',1,'dao']]]
 ];

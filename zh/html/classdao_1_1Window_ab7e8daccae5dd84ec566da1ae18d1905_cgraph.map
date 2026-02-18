@@ -1,7 +1,5 @@
 <map id="dao::Window::Window" name="dao::Window::Window">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,31"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a5904cf1fad9f0d89748399c66dfdb93d" title="创建窗口" alt="" coords="219,5,373,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,31,205,26,205,32,171,36"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905" title="隐藏窗口" alt="" coords="225,55,367,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,50,212,55,212,60,171,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,15,205,15,205,21,171,21"/>
 </map>

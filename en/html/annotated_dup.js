@@ -10,6 +10,7 @@ var annotated_dup =
       [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
       [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
       [ "Context", "classdao_1_1Context.html", "classdao_1_1Context" ],
+      [ "FrameLimiter", "classdao_1_1FrameLimiter.html", "classdao_1_1FrameLimiter" ],
       [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
       [ "AtlasDrawBatch", "structdao_1_1AtlasDrawBatch.html", "structdao_1_1AtlasDrawBatch" ],
       [ "VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", "classdao_1_1VertexBatchBuilder" ],

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['push_5fback_0',['push_back',['../classdao_1_1RingVector.html#a08827cd0c873cb3c7b0c644f464aec80',1,'dao::RingVector::push_back(const Type &amp;value)'],['../classdao_1_1RingVector.html#affb5511e61ad5ade84b86f43b3c942b2',1,'dao::RingVector::push_back(Type &amp;&amp;value)']]]
+  ['operator_20bool_0',['operator bool',['../classdao_1_1TickTimer.html#ae5ca12579fab91ab13dabd37c5579e10',1,'dao::TickTimer']]],
+  ['operator_20sdl_5fvertex_1',['operator SDL_Vertex',['../structdao_1_1GeometryVertex.html#a6a2162e2ac8f9c735ee86169a1b419d4',1,'dao::GeometryVertex']]],
+  ['operator_28_29_2',['operator()',['../classdao_1_1SwitchDeleter.html#aa99385585feabd061a0d4e52baa04571',1,'dao::SwitchDeleter']]],
+  ['operator_3d_3',['operator=',['../classdao_1_1SimpleButton.html#aa23a00dcbebe7d8a15ccc0d3c2ae1074',1,'dao::SimpleButton::operator=(const SimpleButton &amp;)=delete'],['../classdao_1_1SimpleButton.html#a974e6e6e657c363550f5578edd3a0114',1,'dao::SimpleButton::operator=(SimpleButton &amp;&amp;other) noexcept'],['../classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb',1,'dao::App::operator=(const App &amp;)=delete'],['../classdao_1_1App.html#adfd337c3a29089d75039d97ddf130c55',1,'dao::App::operator=(App &amp;&amp;)=default']]]
 ];

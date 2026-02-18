@@ -9,6 +9,7 @@ var namespacedao =
     [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
     [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
     [ "Context", "classdao_1_1Context.html", "classdao_1_1Context" ],
+    [ "FrameLimiter", "classdao_1_1FrameLimiter.html", "classdao_1_1FrameLimiter" ],
     [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
     [ "AtlasDrawBatch", "structdao_1_1AtlasDrawBatch.html", "structdao_1_1AtlasDrawBatch" ],
     [ "VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", "classdao_1_1VertexBatchBuilder" ],
@@ -66,6 +67,7 @@ var namespacedao =
       [ "switchPage", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4", null ],
       [ "setClickThrough", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de", null ],
       [ "setPosition", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804", null ],
+      [ "movePosition", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065", null ],
       [ "setSize", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f", null ]
     ] ],
     [ "callback", "namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d", null ],

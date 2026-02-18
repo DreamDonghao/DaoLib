@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['_7eapp_0',['~App',['../classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8',1,'dao::App']]],
-  ['_7eboundingbox_1',['~BoundingBox',['../classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa',1,'dao::BoundingBox']]],
-  ['_7ebutton_2',['~Button',['../classdao_1_1Button.html#a66472af440e09cbd79f27b8218d9a3dd',1,'dao::Button']]],
-  ['_7ebuttonstyle_3',['~ButtonStyle',['../classdao_1_1ButtonStyle.html#a8076c5713d1de630655dc285cb562bf4',1,'dao::ButtonStyle']]],
-  ['_7edrawable_4',['~Drawable',['../classdao_1_1Drawable.html#acd199ae1f40ae641c4d79236c735b018',1,'dao::Drawable']]],
-  ['_7egeneralpage_5',['~GeneralPage',['../classdao_1_1GeneralPage.html#aac72afd8e8f75284480bfa1cff930fab',1,'dao::GeneralPage']]],
-  ['_7epage_6',['~Page',['../classdao_1_1Page.html#aa593d76b639520c4ea0287951c0cba92',1,'dao::Page']]],
-  ['_7esimplebutton_7',['~SimpleButton',['../classdao_1_1SimpleButton.html#a571d1b46d38df252d6eeada00a8e04a4',1,'dao::SimpleButton']]],
-  ['_7etray_8',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
-  ['_7ewindow_9',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['wait_0',['wait',['../classdao_1_1FrameLimiter.html#a8aa8563286f327130680004ce50e4e06',1,'dao::FrameLimiter']]],
+  ['window_1',['Window',['../classdao_1_1Window.html#ab7e8daccae5dd84ec566da1ae18d1905',1,'dao::Window']]],
+  ['windowcontroller_2',['WindowController',['../classdao_1_1WindowController.html#a037ca4a7d5873eb3d184611bfbecd4da',1,'dao::WindowController::WindowController()=default'],['../classdao_1_1WindowController.html#a96520d1f16df5125cfa33d7c2ce97aba',1,'dao::WindowController::WindowController(const WindowController &amp;)=delete']]],
+  ['writetobatch_3',['writeToBatch',['../classdao_1_1Image.html#af7f91c28ce1a9f8d38c8c07602c7867c',1,'dao::Image::writeToBatch()'],['../classdao_1_1AnimatedSprite.html#a6a2e1768db693d5802df32787579602e',1,'dao::AnimatedSprite::writeToBatch()'],['../classdao_1_1SimpleTextButtonStyle.html#aebb191eeab6f4abcdc68ac2154b14c08',1,'dao::SimpleTextButtonStyle::writeToBatch()'],['../classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b',1,'dao::SimpleTextureButtonStyle::writeToBatch()'],['../classdao_1_1InputBoxStyle.html#a324744201bc2d8226e29452d0785a44d',1,'dao::InputBoxStyle::writeToBatch()'],['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98',1,'dao::ButtonStyle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
 ];

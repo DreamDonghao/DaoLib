@@ -109,6 +109,7 @@ $(function(){initNavTree('namespacedao.html','',''); });
 <tr class="memitem:Tray" id="r_Tray"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Tray.html">Tray</a></td></tr>
 <tr class="memitem:Context" id="r_Context"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Context.html">Context</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局环境上下文管理器  <a href="classdao_1_1Context.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:FrameLimiter" id="r_FrameLimiter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1FrameLimiter.html">FrameLimiter</a></td></tr>
 <tr class="memitem:SwitchDeleter" id="r_SwitchDeleter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1SwitchDeleter.html">SwitchDeleter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可控删除器  <a href="classdao_1_1SwitchDeleter.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:AtlasDrawBatch" id="r_AtlasDrawBatch"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a></td></tr>
@@ -181,10 +182,14 @@ $(function(){initNavTree('namespacedao.html','',''); });
 枚举</h2></td></tr>
 <tr class="memitem:a669d1540132621e770829fa49a5f5787" id="r_a669d1540132621e770829fa49a5f5787"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a669d1540132621e770829fa49a5f5787">AppCommandType</a> { <a class="el" href="#a669d1540132621e770829fa49a5f5787a716f6b30598ba30945d84485e61c1027">close</a>
  }</td></tr>
-<tr class="memitem:a55c8fd75b7572d13bfd5f12e4a8fad67" id="r_a55c8fd75b7572d13bfd5f12e4a8fad67"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67">WindowCommandType</a> { <a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">switchPage</a>
+<tr class="memitem:a55c8fd75b7572d13bfd5f12e4a8fad67" id="r_a55c8fd75b7572d13bfd5f12e4a8fad67"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67">WindowCommandType</a> { <br />
+&#160;&#160;<a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">switchPage</a>
 , <a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">setClickThrough</a>
 , <a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">setPosition</a>
-, <a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">setSize</a>
+, <a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">movePosition</a>
+, <br />
+&#160;&#160;<a class="el" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">setSize</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a55c8fd75b7572d13bfd5f12e4a8fad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口命令类型  <a href="#a55c8fd75b7572d13bfd5f12e4a8fad67">更多...</a><br /></td></tr>
 <tr class="memitem:ae7d5292a7122742f97a26215da2d033b" id="r_ae7d5292a7122742f97a26215da2d033b"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ae7d5292a7122742f97a26215da2d033b">InputStatus</a> { <a class="el" href="#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241">Disabled</a>
@@ -572,6 +577,8 @@ template&lt;typename K, typename V&gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804" name="a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"></a>setPosition&#160;</td><td class="fielddoc"><p>设置窗口位置 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065" name="a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065"></a>movePosition&#160;</td><td class="fielddoc"><p>移动窗口位置 </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f" name="a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"></a>setSize&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -580,11 +587,13 @@ template&lt;typename K, typename V&gt; </div>
 <div class="line"><span class="lineno">   15</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">switchPage</a>,      <span class="comment">///&lt; 切换页面</span></div>
 <div class="line"><span class="lineno">   16</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">setClickThrough</a>, <span class="comment">///&lt; 设置点击是否穿透</span></div>
 <div class="line"><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">setPosition</a>,     <span class="comment">///&lt; 设置窗口位置</span></div>
-<div class="line"><span class="lineno">   18</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">setSize</a>,         <span class="comment">////&lt;设置窗口大小</span></div>
-<div class="line"><span class="lineno">   19</span>    };</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">movePosition</a>,    <span class="comment">///&lt; 移动窗口位置</span></div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">setSize</a>,         <span class="comment">////&lt;设置窗口大小</span></div>
+<div class="line"><span class="lineno">   20</span>    };</div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00016">window_controller.hpp:16</a></div></div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00015">window_controller.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00019">window_controller.hpp:19</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">dao::WindowCommandType::movePosition</a></div><div class="ttdeci">@ movePosition</div><div class="ttdoc">移动窗口位置</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00017">window_controller.hpp:17</a></div></div>
 </div><!-- fragment -->
 </div>

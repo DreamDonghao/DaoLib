@@ -103,7 +103,7 @@ dao::WindowController 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1WindowController__coll__graph.png" border="0" usemap="#adao_1_1WindowController_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1WindowController_coll__map" id="adao_1_1WindowController_coll__map">
-<area shape="rect" title="窗口控制器" alt="" coords="5,5,168,191"/>
+<area shape="rect" title="窗口控制器" alt="" coords="5,5,168,211"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -115,13 +115,14 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:ae3965b5e6b5fb98f4b181b25d0027648"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行命令  <br /></td></tr>
 <tr class="memitem:af0054f5b3e5758f6cfc872dfdff5f06e" id="r_af0054f5b3e5758f6cfc872dfdff5f06e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0054f5b3e5758f6cfc872dfdff5f06e">switchPage</a> (const std::string &amp;title)</td></tr>
 <tr class="memitem:ae6dff362a731040872066e7483c555cf" id="r_ae6dff362a731040872066e7483c555cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6dff362a731040872066e7483c555cf">setClickThrough</a> (const bool &amp;clickThrough)</td></tr>
+<tr class="memitem:ae85281fd10dfd07f76ec37dc38e89a55" id="r_ae85281fd10dfd07f76ec37dc38e89a55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae85281fd10dfd07f76ec37dc38e89a55">movePosition</a> (const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> x, const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> y)</td></tr>
 <tr class="memitem:afe272abb3cc459360ea220e73a27e8c5" id="r_afe272abb3cc459360ea220e73a27e8c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe272abb3cc459360ea220e73a27e8c5">setPosition</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> x, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> y)</td></tr>
 <tr class="memitem:a331f2059f1f30bec5ed9145586c8993f" id="r_a331f2059f1f30bec5ed9145586c8993f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a331f2059f1f30bec5ed9145586c8993f">setSize</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> x, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> y)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>窗口控制器 </p>
 
-<p class="definition">在文件 <a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a> 第 <a class="el" href="window__controller_8hpp_source.html#l00028">28</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a> 第 <a class="el" href="window__controller_8hpp_source.html#l00029">29</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a037ca4a7d5873eb3d184611bfbecd4da" name="a037ca4a7d5873eb3d184611bfbecd4da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a037ca4a7d5873eb3d184611bfbecd4da">&#9670;&#160;</a></span>WindowController() <span class="overload">[1/2]</span></h2>
@@ -207,21 +208,55 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   19</span>                y = std::any_cast&lt;std::pair&lt;uint32, uint32&gt; &gt;(data).second;</div>
 <div class="line"><span class="lineno">   20</span>                window.setPosition(x, y);</div>
 <div class="line"><span class="lineno">   21</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">WindowCommandType::setSize</a>:</div>
+<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">WindowCommandType::movePosition</a>:</div>
 <div class="line"><span class="lineno">   23</span>                x = std::any_cast&lt;std::pair&lt;uint32, uint32&gt; &gt;(data).first;</div>
 <div class="line"><span class="lineno">   24</span>                y = std::any_cast&lt;std::pair&lt;uint32, uint32&gt; &gt;(data).second;</div>
-<div class="line"><span class="lineno">   25</span>                window.setSize(x, y);</div>
-<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   27</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   28</span>        }</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="line"><span class="lineno">   30</span>    m_windowCommands.clear();</div>
-<div class="line"><span class="lineno">   31</span>}</div>
+<div class="line"><span class="lineno">   25</span>                window.movePosition(x, y);</div>
+<div class="line"><span class="lineno">   26</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">WindowCommandType::setSize</a>:</div>
+<div class="line"><span class="lineno">   28</span>                x = std::any_cast&lt;std::pair&lt;uint32, uint32&gt; &gt;(data).first;</div>
+<div class="line"><span class="lineno">   29</span>                y = std::any_cast&lt;std::pair&lt;uint32, uint32&gt; &gt;(data).second;</div>
+<div class="line"><span class="lineno">   30</span>                window.setSize(x, y);</div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   32</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   33</span>        }</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="line"><span class="lineno">   35</span>    m_windowCommands.clear();</div>
+<div class="line"><span class="lineno">   36</span>}</div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00016">window_controller.hpp:16</a></div></div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00015">window_controller.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00019">window_controller.hpp:19</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">dao::WindowCommandType::movePosition</a></div><div class="ttdeci">@ movePosition</div><div class="ttdoc">移动窗口位置</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
 <div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>定义</b> <a href="window__controller_8hpp_source.html#l00017">window_controller.hpp:17</a></div></div>
 <div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00024">better_stl.hpp:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae85281fd10dfd07f76ec37dc38e89a55" name="ae85281fd10dfd07f76ec37dc38e89a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85281fd10dfd07f76ec37dc38e89a55">&#9670;&#160;</a></span>movePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::WindowController::movePosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00046">46</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                     {</div>
+<div class="line"><span class="lineno">   47</span>    m_windowCommands.push_back(WindowCommand{</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">WindowCommandType::movePosition</a>, std::any{std::make_pair(x, y)}</div>
+<div class="line"><span class="lineno">   49</span>    });</div>
+<div class="line"><span class="lineno">   50</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,10 +275,10 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00037">37</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                  {</div>
-<div class="line"><span class="lineno">   38</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">WindowCommandType::setClickThrough</a>, std::any{clickThrough}});</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00042">42</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                  {</div>
+<div class="line"><span class="lineno">   43</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">WindowCommandType::setClickThrough</a>, std::any{clickThrough}});</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,12 +301,12 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00041">41</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                        {</div>
-<div class="line"><span class="lineno">   42</span>    m_windowCommands.push_back(WindowCommand{</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">WindowCommandType::setPosition</a>, std::any{std::make_pair(x, y)}</div>
-<div class="line"><span class="lineno">   44</span>    });</div>
-<div class="line"><span class="lineno">   45</span>}</div>
+<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00052">52</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                                                        {</div>
+<div class="line"><span class="lineno">   53</span>    m_windowCommands.push_back(WindowCommand{</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">WindowCommandType::setPosition</a>, std::any{std::make_pair(x, y)}</div>
+<div class="line"><span class="lineno">   55</span>    });</div>
+<div class="line"><span class="lineno">   56</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -294,12 +329,12 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00047">47</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                    {</div>
-<div class="line"><span class="lineno">   48</span>    m_windowCommands.push_back(WindowCommand{</div>
-<div class="line"><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">WindowCommandType::setSize</a>, std::any{std::make_pair(x, y)}</div>
-<div class="line"><span class="lineno">   50</span>    });</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00058">58</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                    {</div>
+<div class="line"><span class="lineno">   59</span>    m_windowCommands.push_back(WindowCommand{</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">WindowCommandType::setSize</a>, std::any{std::make_pair(x, y)}</div>
+<div class="line"><span class="lineno">   61</span>    });</div>
+<div class="line"><span class="lineno">   62</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,10 +353,10 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00033">33</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                           {</div>
-<div class="line"><span class="lineno">   34</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">WindowCommandType::switchPage</a>, std::any{title}});</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">在文件 <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a> 第 <a class="el" href="window__controller_8cpp_source.html#l00038">38</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                           {</div>
+<div class="line"><span class="lineno">   39</span>    m_windowCommands.push_back(WindowCommand{<a class="code hl_enumvalue" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">WindowCommandType::switchPage</a>, std::any{title}});</div>
+<div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

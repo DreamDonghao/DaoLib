@@ -22,6 +22,7 @@ var hierarchy =
       [ "dao::InputBoxStyle", "classdao_1_1InputBoxStyle.html", null ],
       [ "dao::Rectangle", "classdao_1_1Rectangle.html", null ]
     ] ],
+    [ "dao::FrameLimiter", "classdao_1_1FrameLimiter.html", null ],
     [ "dao::Geometry&lt; N &gt;", "classdao_1_1Geometry.html", null ],
     [ "dao::GeometryVertex", "structdao_1_1GeometryVertex.html", null ],
     [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
