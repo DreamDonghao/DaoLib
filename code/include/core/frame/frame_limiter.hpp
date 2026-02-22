@@ -7,7 +7,7 @@
 namespace dao {
     class FrameLimiter {
     public:
-        explicit FrameLimiter(const uint32 target_fps)
+        explicit FrameLimiter(const u32 target_fps)
             : m_frame_duration(std::chrono::nanoseconds(1'000'000'000 / target_fps)),
               m_last_frame_time(std::chrono::steady_clock::now()),
               m_spin_threshold(std::chrono::milliseconds(2)) {

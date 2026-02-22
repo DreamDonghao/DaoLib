@@ -11,8 +11,8 @@
 namespace dao {
     /// @brief 几何图形顶点
     struct GeometryVertex {
-        float32 x;      ///< x坐标
-        float32 y;      ///< y坐标
+        f32 x;      ///< x坐标
+        f32 y;      ///< y坐标
         ColorRGBA color; ///< 颜色
 
         /// @brief 到SDL_Vertex的类型转换
@@ -45,15 +45,15 @@ namespace dao {
     public:
         explicit Geometry(const std::array<GeometryVertex, N> &vertices): m_vertices(makeVertices(vertices)) {
             int index = -1;
-            for (uint32 i = 1; i < N - 1; ++i) {
+            for (u32 i = 1; i < N - 1; ++i) {
                 m_indices[++index] = 0;
                 m_indices[++index] = i;
                 m_indices[++index] = i + 1;
             }
         }
 
-        void moveXY(const float32 x, const float32 y) {
-            for (uint32 i = 0; i < N; ++i) {
+        void moveXY(const f32 x, const f32 y) {
+            for (u32 i = 0; i < N; ++i) {
                 m_vertices[i].position.x += x;
                 m_vertices[i].position.y += y;
             }
@@ -65,13 +65,13 @@ namespace dao {
         }
 
         /// @brief 获取索引数组
-        std::span<const int32> getIndices() const {
+        std::span<const i32> getIndices() const {
             return m_indices;
         }
 
     private:
         std::array<SDL_Vertex, N> m_vertices;             ///< 顶点
-        mutable std::array<int32, (N - 2) * 3> m_indices; ///< 索引
+        mutable std::array<i32, (N - 2) * 3> m_indices; ///< 索引
     };
 } // dao
 

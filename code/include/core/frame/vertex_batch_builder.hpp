@@ -15,14 +15,14 @@ namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
     struct AtlasDrawBatch {
-        AtlasDrawBatch(const uint32 a, std::vector<SDL_Vertex> v,
-                       std::unique_ptr<std::vector<int32>, SwitchDeleter<std::vector<int32> > > i)
+        AtlasDrawBatch(const u32 a, std::vector<SDL_Vertex> v,
+                       std::unique_ptr<std::vector<i32>, SwitchDeleter<std::vector<i32> > > i)
             : atlasId(a), vertices(std::move(v)), indices(std::move(i)) {
         }
 
-        uint32 atlasId;                   ///< 绘制的纹理图集 ID
+        u32 atlasId;                      ///< 绘制的纹理图集 ID
         std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
-        std::unique_ptr<std::vector<int32>, SwitchDeleter<std::vector<int32> > > indices;
+        std::unique_ptr<std::vector<i32>, SwitchDeleter<std::vector<i32> > > indices;
         int indicesCount{0};
     };
 
@@ -32,7 +32,7 @@ namespace dao {
     public:
         explicit VertexBatchBuilder(const size_t qudaCount = 1024) { expandQudaIndicesTo(qudaCount); }
 
-        explicit VertexBatchBuilder(std::string_view fontPath, float32 glyphSize, int32 atlasSize,
+        explicit VertexBatchBuilder(std::string_view fontPath, f32 glyphSize = 24, i32 atlasSize = 1024,
                                     size_t qudaCount = 1024);
 
         /// @brief 禁用复制构造函数
@@ -55,7 +55,7 @@ namespace dao {
         void addToBatch(const AtlasTexture &texture);
 
         /// @brief 添加绘制元素到批处理
-        void addToBatch(std::span<const SDL_Vertex> v, std::span<const int32> indices);
+        void addToBatch(std::span<const SDL_Vertex> v, std::span<const i32> indices);
 
         /// @brief 添加文本到批处理
         void addToBatch(const Text &text);
@@ -67,15 +67,15 @@ namespace dao {
         /// @brief 获取将要绘制的所有内容的数据
         [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const { return m_drawBatches; }
 
-        GlyphAtlas &getGlyphAtlas() { return m_glyphAtlas; }
+        [[nodiscard]] GlyphAtlas &getGlyphAtlas() { return m_glyphAtlas; }
 
     private:
+        static std::vector<i32> s_qudaIndices;     ///< 共用矩形顶点数组索引
         std::vector<AtlasDrawBatch> m_drawBatches; ///< 一组绘制的数据
-        static std::vector<int32> s_qudaIndices;   ///< 共用矩形顶点数组索引
-        GlyphAtlas m_glyphAtlas;
+        GlyphAtlas m_glyphAtlas;                   ///< 字形图集
 
         /// @brief  添加纹理的数据到顶点数组
-        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, uint32 textureId);
+        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, u32 textureId);
     };
 } // name_
 

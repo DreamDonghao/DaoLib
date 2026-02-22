@@ -11,7 +11,7 @@ namespace dao {
     /// @brief 矩形
     class Rectangle : public Drawable {
     public:
-        Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)
+        Rectangle(const f32 x, const f32 y, const f32 w, const f32 h, const ColorRGBA color)
             : m_vertices(std::array<GeometryVertex, 4>(
                 {
                     {x, y, color},
@@ -25,9 +25,9 @@ namespace dao {
             : Rectangle(box.getLeft(), box.getTop(), box.getWidth(), box.getHeight(), color) {
         }
 
-        void setPosition(const float32 x, const float32 y) {
-            const float32 dx = x - m_vertices.getVertices()[0].position.x;
-            const float32 dy = y - m_vertices.getVertices()[0].position.y;
+        void setPosition(const f32 x, const f32 y) {
+            const f32 dx = x - m_vertices.getVertices()[0].position.x;
+            const f32 dy = y - m_vertices.getVertices()[0].position.y;
             m_vertices.moveXY(dx, dy);
         }
 

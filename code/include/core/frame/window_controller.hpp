@@ -39,11 +39,11 @@ namespace dao {
 
         void setClickThrough(const bool &clickThrough);
 
-        void movePosition(const uint32 x, const uint32 y);
+        void movePosition(const u32 x, const u32 y);
 
-        void setPosition(uint32 x, uint32 y);
+        void setPosition(u32 x, u32 y);
 
-        void setSize(uint32 x, uint32 y);
+        void setSize(u32 x, u32 y);
 
     private:
         std::vector<WindowCommand> m_windowCommands;

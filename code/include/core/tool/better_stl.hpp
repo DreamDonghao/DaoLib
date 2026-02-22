@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-12-9.
-//
-#ifndef BETTER_STL_HPP
-#define BETTER_STL_HPP
+#pragma once
 #include <cstdint>
 #include <algorithm>
 #include <chrono>
@@ -12,18 +8,22 @@
 #include <random>
 #include <source_location>
 #include <unordered_map>
-#include <utf8cpp/utf8/checked.h>
 
 namespace dao {
-    using int8 = int8_t;
-    using int16 = int16_t;
-    using int32 = int32_t;
-    using int64 = int64_t;
-    using uint8 = uint8_t;
-    using uint16 = uint16_t;
-    using uint32 = uint32_t;
-    using uint64 = uint64_t;
-    using float32 = float;
+    using i8 = int8_t;
+    using i16 = int16_t;
+    using i32 = int32_t;
+    using i64 = int64_t;
+    using u8 = uint8_t;
+    using u16 = uint16_t;
+    using u32 = uint32_t;
+    using u64 = uint64_t;
+    using f32 = float;
+    using f64 = double;
+
+    using utf32char = char32_t;
+    using utf32str = std::u32string;
+    using utf32string_view = std::u32string_view;
 
     template<typename K, typename V>
     using hash_map = std::unordered_map<K, V>;
@@ -53,15 +53,14 @@ namespace dao {
         const auto now = system_clock::now();
 
         // 转换到中国时区
-        const zoned_time china_time{ "Asia/Shanghai", now };
+        const zoned_time china_time{"Asia/Shanghai", now};
 
         const auto sec = floor<seconds>(china_time.get_local_time());
         const auto ms =
-            duration_cast<milliseconds>(china_time.get_local_time() - sec).count();
+                duration_cast<milliseconds>(china_time.get_local_time() - sec).count();
 
         return std::format("{:%Y-%m-%d %H:%M:%S}.{:03}", sec, ms);
     }
-
 
 
     inline void DAO_ERROR_LOG(const std::string &msg,
@@ -73,7 +72,7 @@ namespace dao {
                 << "函数[Function]: " << loc.function_name() << "\n\n";
     }
 
-    inline std::u32string to_u32(const std::string& s) {
+    inline std::u32string to_u32(const std::string &s) {
         std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> conv;
         return conv.from_bytes(s);
     }
@@ -113,8 +112,8 @@ namespace dao {
     /// @brief 结果为浮点数的除法
     template<typename T>
         requires std::is_arithmetic_v<T> // 约束为整数或浮点类型
-    float32 ratio(T a, T b) {
-        return static_cast<float32>(a) / static_cast<float32>(b);
+    f32 ratio(T a, T b) {
+        return static_cast<f32>(a) / static_cast<f32>(b);
     }
 
     /// @brief 可控删除器
@@ -156,4 +155,4 @@ namespace dao {
         );
     }
 }
-#endif //BETTER_STL_HPP
+

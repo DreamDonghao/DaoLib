@@ -12,10 +12,10 @@ namespace dao {
             : SimpleTextButtonStyle(0, 0, 0, 0, U"", 0, ColorRGBA{}, nullptr) {
         }
 
-        SimpleTextButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h,
-                              const std::u32string &text, const float32 textSize, const ColorRGBA textColor,
+        SimpleTextButtonStyle(const f32 x, const f32 y, const f32 w, const f32 h,
+                              const std::u32string &text, const f32 textSize, const ColorRGBA textColor,
                               Button *button)
-            : m_text(x, y, text, textSize, textColor), m_button(button) {
+            : m_text(x, y, textSize, textColor,text), m_button(button) {
         }
 
         SimpleTextButtonStyle(const SimpleTextButtonStyle &other) noexcept {

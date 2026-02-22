@@ -22,7 +22,7 @@ namespace dao {
         void close() override = 0;
 
         /// @brief 获取加载图集
-        [[nodiscard]] std::vector<uint32> getRegisterTexture() const override = 0;
+        [[nodiscard]] std::vector<u32> getRegisterTexture() const override = 0;
 
         /// @brief 更新
         void update() override = 0;
@@ -32,7 +32,7 @@ namespace dao {
 
         [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override;
 
-        GlyphAtlas &getGlyphAtlas() override;
+        [[nodiscard]] GlyphAtlas &getGlyphAtlas() override;
 
         WindowController &getWindowController() override;
 
@@ -50,9 +50,13 @@ namespace dao {
 
     protected:
         WindowController m_windowController; ///< 窗口控制器
+        [[nodiscard]] f32 getGlyphAspectRatio(const utf32char charCode) {
+            return m_vertexBatch.getGlyphAtlas().getGlyphAspectRatio(charCode);
+        }
+
     private:
         std::string m_title;
-        VertexBatchBuilder m_vertexBatch{"./assets/ttf/zh-cn.ttf", 64, 1024};
+        VertexBatchBuilder m_vertexBatch{"./assets/ttf/zh-cn.ttf"};
         Context *m_context = nullptr;
     };
 }

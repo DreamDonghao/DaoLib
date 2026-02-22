@@ -11,14 +11,14 @@ namespace dao {
     class SimpleTextureButtonStyle : public ButtonStyle {
     public:
         SimpleTextureButtonStyle(
-            const float32 x, const float32 y, const float32 w, const float32 h,
-            const uint32 atnId, const uint32 athId, const uint32 atpId,
+            const f32 x, const f32 y, const f32 w, const f32 h,
+            const u32 atnId, const u32 athId, const u32 atpId,
             Button *button)
             : m_normalStyle(atnId, x, y, x + w, y + h), m_hoverStyle(athId, x, y, x + w, y + h),
               m_pressedStyle(atpId, x, y, x + w, y + h), m_button(button) {
         }
 
-        SimpleTextureButtonStyle(SimpleButton &button, const uint32 atnId, const uint32 athId, const uint32 atpId)
+        SimpleTextureButtonStyle(SimpleButton &button, const u32 atnId, const u32 athId, const u32 atpId)
             : m_normalStyle(atnId, button.getBoundingBox()), m_hoverStyle(athId, button.getBoundingBox()),
               m_pressedStyle(atpId, button.getBoundingBox()), m_button(&button) {
         }

@@ -17,7 +17,7 @@ namespace dao {
         /// @param up 上边界坐标
         /// @param right 右边界坐标
         /// @param down 下边界坐标
-        BoundingBox(float32 left, float32 up, float32 right, float32 down);
+        BoundingBox(f32 left, f32 up, f32 right, f32 down);
 
         ~BoundingBox() = default;
 

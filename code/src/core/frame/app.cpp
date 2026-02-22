@@ -6,7 +6,7 @@
 #include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
-    App::App(const uint32 fps, const bool clickThrough) : m_frameLimiter(fps) {
+    App::App(const u32 fps, const bool clickThrough) : m_frameLimiter(fps) {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
@@ -70,13 +70,13 @@ namespace dao {
     }
 
     Window &App::createWindow(
-        uint32 width, uint32 height, const std::string_view tag,
+        u32 width, u32 height, const std::string_view tag,
         bool hidden, bool isSubject,
         bool resizable, bool transparent, bool onTop, bool borderless) {
         auto nowWindow = std::make_unique<Window>(
             width, height, hidden, isSubject,
             resizable, transparent, onTop, borderless);
-        const uint32 windowId = nowWindow->getId();
+        const u32 windowId = nowWindow->getId();
         m_windowMap[tag] = windowId;
         m_windows[windowId] = std::move(nowWindow);
         m_windows[windowId]->setContext(&m_context);

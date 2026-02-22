@@ -9,7 +9,7 @@ const std::vector<dao::AtlasDrawBatch> & dao::GeneralPage::getDrawBatches() cons
     return m_vertexBatch.getDrawBatches();
 }
 
-dao::GlyphAtlas & dao::GeneralPage::getGlyphAtlas() {
+ dao::GlyphAtlas & dao::GeneralPage::getGlyphAtlas() {
     return m_vertexBatch.getGlyphAtlas();
 }
 

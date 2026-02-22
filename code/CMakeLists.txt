@@ -27,6 +27,7 @@ add_library(dao
         src/component/button/simple_button.cpp
         src/component/image.cpp
         src/interface/general_page.cpp
+        src/test.cpp
 )
 
 set_target_properties(dao PROPERTIES

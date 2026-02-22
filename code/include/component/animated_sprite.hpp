@@ -12,8 +12,8 @@
 namespace dao {
     class AnimatedSprite : Drawable {
     public:
-        AnimatedSprite(const uint32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
-                       const std::initializer_list<uint32> &textureIDs)
+        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
+                       const std::initializer_list<u32> &textureIDs)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (const auto textureID: textureIDs) {
                 AtlasTexture texture{textureID, x, y, x + width, y + height};
@@ -22,7 +22,7 @@ namespace dao {
         }
 
         template<size_t N>
-        AnimatedSprite(const uint32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
+        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
                        const std::array<TextureID, N> &textureIDs)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (const auto textureID: textureIDs) {
@@ -31,7 +31,7 @@ namespace dao {
             }
         }
 
-        AnimatedSprite(const uint32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
+        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
                        const TextureID begin, const TextureID end)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (TextureID textureID = begin; textureID < end; ++textureID) {

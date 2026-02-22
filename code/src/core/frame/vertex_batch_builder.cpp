@@ -10,8 +10,8 @@ namespace dao {
     std::vector<int> VertexBatchBuilder::s_qudaIndices = {};
 
     VertexBatchBuilder::VertexBatchBuilder(
-        const std::string_view fontPath, const float32 glyphSize,
-        const int32 atlasSize, const size_t qudaCount)
+        const std::string_view fontPath, const f32 glyphSize,
+        const i32 atlasSize, const size_t qudaCount)
         : m_glyphAtlas(fontPath, glyphSize, atlasSize) {
         expandQudaIndicesTo(qudaCount);
     }
@@ -53,9 +53,9 @@ namespace dao {
 
     void VertexBatchBuilder::addToBatch(const AtlasTexture &texture) {
         const AtlasRegion atlasRegion = getAtlasRegion(texture.getName());
-        if (const uint32 atlasId = atlasRegion.atlasId;
-                m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId
-            ) {
+        if (const u32 atlasId = atlasRegion.atlasId;
+            m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId
+        ) {
             m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
         }
         m_drawBatches.back().indicesCount += 6;
@@ -65,15 +65,15 @@ namespace dao {
         );
     }
 
-    void VertexBatchBuilder::addToBatch(const std::span<const SDL_Vertex> v, const std::span<const int32> indices) {
+    void VertexBatchBuilder::addToBatch(const std::span<const SDL_Vertex> v, const std::span<const i32> indices) {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<int32>()));
+            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
         }
         m_drawBatches.back().indicesCount += static_cast<int>(indices.size());
-        const auto offset = static_cast<int32>(m_drawBatches.back().vertices.size());
+        const auto offset = static_cast<i32>(m_drawBatches.back().vertices.size());
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
         auto &current_indices = *m_drawBatches.back().indices;
-        for (const int32 index: indices) {
+        for (const i32 index: indices) {
             current_indices.push_back(index + offset);
         }
     }
@@ -85,9 +85,9 @@ namespace dao {
         m_drawBatches.back().indicesCount += static_cast<int>(text.getContent().size()) * 6;
         auto &vertices = m_drawBatches.back().vertices;
 
-        float32 x = text.getX();
-        float32 y = text.getY();
-        const float32 size = text.getFontSize();
+        f32 x = text.getX();
+        f32 y = text.getY();
+        const f32 size = text.getFontSize();
         for (const auto &ch: text.getContent()) {
             if (ch == U'\n') {
                 y += size;
@@ -96,7 +96,7 @@ namespace dao {
             }
             m_glyphAtlas.registerGlyph(ch);
             auto b = m_glyphAtlas.getGlyphAtlasRegion(ch);
-            const float32 w = size / b.getHeight() * b.getWidth();
+            const f32 w = size / b.getHeight() * b.getWidth();
             vertices.push_back({
                 {x, y},
                 text.getColor(),
@@ -116,7 +116,7 @@ namespace dao {
     }
 
     void VertexBatchBuilder::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
-                                                const uint32 textureId) {
+                                                const u32 textureId) {
         const float winL = pos.getLeft();
         const float winT = pos.getTop();
         const float winR = pos.getRight();

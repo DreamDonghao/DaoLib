@@ -15,9 +15,9 @@ namespace dao {
     public:
         explicit InputBoxStyle(InputBox &inputBox, const int flickerInterval = 3000)
             : m_inputBox(&inputBox), m_rectangle(inputBox.getBoundingBox(), hexToRGBA("#FFFFFF")),
-              m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(),
-                     U"", 50,
-                     hexToRGBA("#66E656")),
+              m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(), 50,
+                     hexToRGBA("#66E656"),
+                     U""),
               m_flickerInterval(flickerInterval) {
         }
 

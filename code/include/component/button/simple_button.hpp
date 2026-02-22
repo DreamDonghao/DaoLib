@@ -17,7 +17,7 @@ namespace dao {
             }) {
         }
 
-        SimpleButton(float32 x, float32 y, float32 width, float32 height,
+        SimpleButton(f32 x, f32 y, f32 width, f32 height,
                      std::move_only_function<void()> onClick,
                      ButtonStatus buttonStatus = ButtonStatus::Normal);
 

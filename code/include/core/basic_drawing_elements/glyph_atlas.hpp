@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-12-17.
-//
-#ifndef GLYPH_ATLAS_HPP
-#define GLYPH_ATLAS_HPP
+#pragma once
 #include <core/tool/better_stl.hpp>
 #include <SDL3/SDL_surface.h>
 #include <SDL3_ttf/SDL_ttf.h>
@@ -24,14 +20,14 @@ namespace dao {
         GlyphAtlas() = default;
 
         /// @param ttfPath 字体文件
-        /// @param glyphSize 字号大小
+        /// @param glyphSize 字号(磅值)大小,决定渲染效果
         /// @param atlasSize 字形图集大小
-        GlyphAtlas(const std::string_view &ttfPath, const float32 glyphSize, const int32 atlasSize)
+        explicit GlyphAtlas(const std::string_view &ttfPath, const f32 glyphSize = 24, const i32 atlasSize = 1024)
             : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
               m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {
-            if(!m_font) {
+            if (!m_font) {
                 const std::string errorMsg(ttfPath);
-                DAO_ERROR_LOG("字体文件加载失败:"+errorMsg);
+                DAO_ERROR_LOG("字体文件加载失败:" + errorMsg);
             }
             SDL_FillSurfaceRect(
                 m_atlasSurface, nullptr,
@@ -45,11 +41,14 @@ namespace dao {
         /// @brief 加载字形
         /// @details 将一个文字的字形编码添加到字形图集中
         /// @param charCode 文字的utf-32编码
-        void registerGlyph(const char32_t charCode) {
+        void registerGlyph(const utf32char charCode) {
             if (m_glyphs.contains(charCode)) { return; }
+
             m_isUpdated = true;
             SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});
             m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
+            m_glyphAspectRatios.emplace(charCode, ratio(glyphSurface->w, m_cursor.rowHeight));
+
             if (m_cursor.x + glyphSurface->w > m_atlasSize) {
                 m_cursor.x = 0;
                 m_cursor.y += m_cursor.rowHeight;
@@ -104,17 +103,26 @@ namespace dao {
         /// @brief 获取是否有新的字形添加
         [[nodiscard]] bool isUpdated() const { return m_isUpdated; }
 
+
+        /// @brief 获取字形的宽高比
+        [[nodiscard]] f32 getGlyphAspectRatio(const utf32char charCode) const {
+            if (const auto it = m_glyphAspectRatios.find(charCode); it != m_glyphAspectRatios.end()) {
+                return it->second;
+            }
+            return 1;
+        }
+
     private:
         struct Cursor {
-            int32 x, y, rowHeight;
+            i32 x, y, rowHeight;
         };
 
-        hash_map<char32_t, Glyph> m_glyphs{}; ///< 字符在图集中的位置
-        int32 m_atlasSize{0};
-        TTF_Font *m_font{nullptr};
-        SDL_Surface *m_atlasSurface{nullptr};
+        i32 m_atlasSize{0};                             ///< 字形图集大小
+        TTF_Font *m_font{nullptr};                      ///< 字体文件
+        SDL_Surface *m_atlasSurface{nullptr};           ///< 字形图集
+        hash_map<utf32char, Glyph> m_glyphs{};          ///< 字符在图集中的位置
+        hash_map<utf32char, f32> m_glyphAspectRatios{}; ///< 字符宽高比
         Cursor m_cursor{0, 0, 0};
         bool m_isUpdated{false};
     };
 }
-#endif //GLYPH_ATLAS_HPP

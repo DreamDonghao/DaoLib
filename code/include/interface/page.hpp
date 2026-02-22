@@ -20,7 +20,7 @@ namespace dao {
         virtual void close() = 0;
 
         /// @brief 获取加载图集
-        [[nodiscard]] virtual std::vector<uint32> getRegisterTexture() const = 0;
+        [[nodiscard]] virtual std::vector<u32> getRegisterTexture() const = 0;
 
         /// @brief 更新
         virtual void update() = 0;
@@ -30,7 +30,7 @@ namespace dao {
 
         [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
 
-        virtual GlyphAtlas &getGlyphAtlas() = 0;
+        [[nodiscard]] virtual  GlyphAtlas &getGlyphAtlas()= 0;
 
         /// @brief 获取窗口控制器
         virtual WindowController &getWindowController() = 0;

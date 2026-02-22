@@ -8,7 +8,7 @@
 
 namespace dao {
     Window::Window(
-        const uint32 width, const uint32 height, const bool hidden, const bool isSubject,
+        const u32 width, const u32 height, const bool hidden, const bool isSubject,
         const bool resizable, const bool transparent, const bool onTop, const bool borderless)
         : m_width(width), m_height(height) {
         if (hidden) m_windowFlags |= SDL_WINDOW_HIDDEN;
@@ -46,9 +46,9 @@ namespace dao {
         return *this;
     }
 
-    void Window::registerTexture(const uint32 &textureId) {
+    void Window::registerTexture(const u32 &textureId) {
         const AtlasRegion atlasRegion = getAtlasRegion(textureId);
-        if (const uint32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
+        if (const u32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
             if (!m_atlasTextures[atlasId]) {
@@ -76,6 +76,7 @@ namespace dao {
 
     void Window::update() {
         m_pages[m_nowPageTitle]->update();
+
         if (m_pages[m_nowPageTitle]->getGlyphAtlas().isUpdated()) {
             SDL_UpdateTexture(
                 m_atlasTextures[1], nullptr,
@@ -153,17 +154,17 @@ namespace dao {
         );
     }
 
-    void Window::setPosition(const uint32 x, const uint32 y) const {
+    void Window::setPosition(const u32 x, const u32 y) const {
         SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
     }
 
-    void Window::movePosition(const uint32 x, const uint32 y) const {
+    void Window::movePosition(const u32 x, const u32 y) const {
         int wx, wy;
         SDL_GetWindowPosition(m_window, &wx, &wy);
         SDL_SetWindowPosition(m_window, wx + x, wy + y);
     }
 
-    void Window::setSize(const uint32 width, const uint32 height) const {
+    void Window::setSize(const u32 width, const u32 height) const {
         SDL_SetWindowSize(m_window, static_cast<int>(width), static_cast<int>(height));
     }
 

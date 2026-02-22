@@ -22,8 +22,8 @@ namespace dao {
         float a;
     };
 
-    constexpr uint8 hexByteToU8(const std::string_view sv) noexcept {
-        uint8 value = 0;
+    constexpr u8 hexByteToU8(const std::string_view sv) noexcept {
+        u8 value = 0;
         for (const char c: sv) {
             value *= 16;
             if (c >= '0' && c <= '9') value += c - '0';
@@ -42,10 +42,10 @@ namespace dao {
         if (len != 6 && len != 8) {
             return {255, 255, 255, 1.0f};
         }
-        const uint8 r = hexByteToU8(hex.substr(0, 2));
-        const uint8 g = hexByteToU8(hex.substr(2, 2));
-        const uint8 b = hexByteToU8(hex.substr(4, 2));
-        const float32 a = (len == 8)? rgbNorm[hexByteToU8(hex.substr(6, 2))]: 1.0f;
+        const u8 r = hexByteToU8(hex.substr(0, 2));
+        const u8 g = hexByteToU8(hex.substr(2, 2));
+        const u8 b = hexByteToU8(hex.substr(4, 2));
+        const f32 a = (len == 8)? rgbNorm[hexByteToU8(hex.substr(6, 2))]: 1.0f;
 
         if ((r == 0 && (hex[0] != '0' || hex[1] != '0')) ||
             (g == 0 && (hex[2] != '0' || hex[3] != '0')) ||

@@ -3,15 +3,15 @@
 //
 #include <component/image.hpp>
 
-dao::Image::Image(const float32 x, const float32 y, const float32 width, const float32 height,
+dao::Image::Image(const f32 x, const f32 y, const f32 width, const f32 height,
     const TextureID textureID): m_texture(textureID,x, y, x + width, y + height) {
 }
 
-void dao::Image::setPosition(const float32 x, const float32 y) {
+void dao::Image::setPosition(const f32 x, const f32 y) {
     m_texture.setPosition(x, y);
 }
 
-void dao::Image::setSize(const float32 x, const float32 y) {
+void dao::Image::setSize(const f32 x, const f32 y) {
     m_texture.setSize(x, y);
 }
 

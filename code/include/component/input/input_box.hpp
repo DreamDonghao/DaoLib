@@ -21,7 +21,7 @@ namespace dao {
     /// 暂未找到解决方案
     class InputBox {
     public:
-        InputBox(const float32 x, const float32 y, const float32 w, const float32 h,
+        InputBox(const f32 x, const f32 y, const f32 w, const f32 h,
                  const InputStatus status = InputStatus::Normal)
             : m_status(status), m_boundingBox(x, y, x + w, y + h) {
         }

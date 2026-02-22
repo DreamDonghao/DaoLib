@@ -9,11 +9,11 @@
 namespace dao {
     class Image : public Drawable {
     public:
-        Image(float32 x, float32 y,float32 width, float32 height, TextureID textureID);
+        Image(f32 x, f32 y,f32 width, f32 height, TextureID textureID);
 
-        void setPosition(float32 x, float32 y);
+        void setPosition(f32 x, f32 y);
 
-        void setSize(float32 x, float32 y);
+        void setSize(f32 x, f32 y);
 
         void writeToBatch(VertexBatchBuilder &builder) const override;
 

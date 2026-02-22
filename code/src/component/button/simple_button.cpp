@@ -5,7 +5,7 @@
 #include <component/button/simple_button.hpp>
 
 dao::SimpleButton::SimpleButton(
-    const float32 x, const float32 y, const float32 width, const float32 height,
+    const f32 x, const f32 y, const f32 width, const f32 height,
     std::move_only_function<void()> onClick, const ButtonStatus buttonStatus)
     : m_boundingBox(x, y, x + width, y + height),
       m_status(buttonStatus), m_onClick(std::move(onClick)) {

@@ -13,7 +13,7 @@ namespace example {
 
         ~HelloDaoPage() override = default;
 
-        [[nodiscard]] std::vector<dao::uint32> getRegisterTexture() const override;
+        [[nodiscard]] std::vector<dao::u32> getRegisterTexture() const override;
 
         void init() override;
 
