@@ -110,11 +110,11 @@ dao::Geometry&lt; N &gt; 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a7874ba9e0189656231b3547a662649bf" id="r_a7874ba9e0189656231b3547a662649bf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7874ba9e0189656231b3547a662649bf">Geometry</a> (const std::array&lt; <a class="el" href="structdao_1_1GeometryVertex.html">GeometryVertex</a>, N &gt; &amp;vertices)</td></tr>
-<tr class="memitem:aaedebda415f14c3cee55ab4ab2221eef" id="r_aaedebda415f14c3cee55ab4ab2221eef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaedebda415f14c3cee55ab4ab2221eef">moveXY</a> (const <a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a> x, const <a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a> y)</td></tr>
+<tr class="memitem:ab5545cef32eca2b95518ce346f6d1843" id="r_ab5545cef32eca2b95518ce346f6d1843"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5545cef32eca2b95518ce346f6d1843">moveXY</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y)</td></tr>
 <tr class="memitem:acb66f283adca1695ee7287b0e7d620b8" id="r_acb66f283adca1695ee7287b0e7d620b8"><td class="memItemLeft">std::span&lt; const SDL_Vertex &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acb66f283adca1695ee7287b0e7d620b8">getVertices</a> () const</td></tr>
 <tr class="memdesc:acb66f283adca1695ee7287b0e7d620b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取顶点  <br /></td></tr>
-<tr class="memitem:a24345b2726a5e64e368a661162c63fab" id="r_a24345b2726a5e64e368a661162c63fab"><td class="memItemLeft">std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a24345b2726a5e64e368a661162c63fab">getIndices</a> () const</td></tr>
-<tr class="memdesc:a24345b2726a5e64e368a661162c63fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取索引数组  <br /></td></tr>
+<tr class="memitem:a453feec85c359f809e0340023d08c14b" id="r_a453feec85c359f809e0340023d08c14b"><td class="memItemLeft">std::span&lt; const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a453feec85c359f809e0340023d08c14b">getIndices</a> () const</td></tr>
+<tr class="memdesc:a453feec85c359f809e0340023d08c14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取索引数组  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t N&gt;<br />
@@ -156,7 +156,7 @@ template&lt;size_t N&gt; </div>
 <p class="definition">在文件 <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a> 第 <a class="el" href="geometry_8hpp_source.html#l00046">46</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                      : m_vertices(<a class="code hl_function" href="namespacedao.html#a72edcc6fbb3034d72283f64a9df0288b">makeVertices</a>(<a class="code hl_class" href="classdao_1_1Geometry.html">vertices</a>)) {</div>
 <div class="line"><span class="lineno">   47</span>            <span class="keywordtype">int</span> <a class="code hl_class" href="classdao_1_1Geometry.html">index</a> = -1;</div>
-<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Geometry.html">uint32</a> <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> = 1; <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Geometry.html">N</a> - 1; ++<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>) {</div>
+<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Geometry.html">u32</a> <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> = 1; <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Geometry.html">N</a> - 1; ++<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>) {</div>
 <div class="line"><span class="lineno">   49</span>                m_indices[++<a class="code hl_class" href="classdao_1_1Geometry.html">index</a>] = 0;</div>
 <div class="line"><span class="lineno">   50</span>                m_indices[++<a class="code hl_class" href="classdao_1_1Geometry.html">index</a>] = <a class="code hl_class" href="classdao_1_1Geometry.html">i</a>;</div>
 <div class="line"><span class="lineno">   51</span>                m_indices[++<a class="code hl_class" href="classdao_1_1Geometry.html">index</a>] = <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> + 1;</div>
@@ -168,8 +168,8 @@ template&lt;size_t N&gt; </div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
-<a id="a24345b2726a5e64e368a661162c63fab" name="a24345b2726a5e64e368a661162c63fab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24345b2726a5e64e368a661162c63fab">&#9670;&#160;</a></span>getIndices()</h2>
+<a id="a453feec85c359f809e0340023d08c14b" name="a453feec85c359f809e0340023d08c14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453feec85c359f809e0340023d08c14b">&#9670;&#160;</a></span>getIndices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +180,7 @@ template&lt;size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt; <a class="el" href="classdao_1_1Geometry.html">dao::Geometry</a>&lt; N &gt;::getIndices </td>
+          <td class="memname">std::span&lt; const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt; <a class="el" href="classdao_1_1Geometry.html">dao::Geometry</a>&lt; N &gt;::getIndices </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -196,7 +196,7 @@ template&lt;size_t N&gt; </div>
 <p>获取索引数组 </p>
 
 <p class="definition">在文件 <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a> 第 <a class="el" href="geometry_8hpp_source.html#l00068">68</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>                                                {</div>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                                              {</div>
 <div class="line"><span class="lineno">   69</span>            <span class="keywordflow">return</span> m_indices;</div>
 <div class="line"><span class="lineno">   70</span>        }</div>
 </div><!-- fragment -->
@@ -236,8 +236,8 @@ template&lt;size_t N&gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aaedebda415f14c3cee55ab4ab2221eef" name="aaedebda415f14c3cee55ab4ab2221eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaedebda415f14c3cee55ab4ab2221eef">&#9670;&#160;</a></span>moveXY()</h2>
+<a id="ab5545cef32eca2b95518ce346f6d1843" name="ab5545cef32eca2b95518ce346f6d1843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5545cef32eca2b95518ce346f6d1843">&#9670;&#160;</a></span>moveXY()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,12 +250,12 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdao_1_1Geometry.html">dao::Geometry</a>&lt; N &gt;::moveXY </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -266,8 +266,8 @@ template&lt;size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">在文件 <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a> 第 <a class="el" href="geometry_8hpp_source.html#l00055">55</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                                                      {</div>
-<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Geometry.html">uint32</a> <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> = 0; <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Geometry.html">N</a>; ++<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>) {</div>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                                              {</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Geometry.html">u32</a> <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> = 0; <a class="code hl_class" href="classdao_1_1Geometry.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Geometry.html">N</a>; ++<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>) {</div>
 <div class="line"><span class="lineno">   57</span>                m_vertices[<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>].position.x += <a class="code hl_class" href="classdao_1_1Geometry.html">x</a>;</div>
 <div class="line"><span class="lineno">   58</span>                m_vertices[<a class="code hl_class" href="classdao_1_1Geometry.html">i</a>].position.y += <a class="code hl_class" href="classdao_1_1Geometry.html">y</a>;</div>
 <div class="line"><span class="lineno">   59</span>            }</div>

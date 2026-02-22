@@ -94,7 +94,7 @@ $(function(){initNavTree('classdao_1_1FrameLimiter.html','','classdao_1_1FrameLi
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::FrameLimiter:</div>
 <div class="dyncontent">
@@ -106,16 +106,16 @@ Collaboration diagram for dao::FrameLimiter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4bb402db4e96dfeafbf54d4fa84e2755" id="r_a4bb402db4e96dfeafbf54d4fa84e2755"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4bb402db4e96dfeafbf54d4fa84e2755">FrameLimiter</a> (const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> target_fps)</td></tr>
+<tr class="memitem:a0c8a8cf68d85bb1ef69edda193d7fccf" id="r_a0c8a8cf68d85bb1ef69edda193d7fccf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0c8a8cf68d85bb1ef69edda193d7fccf">FrameLimiter</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> target_fps)</td></tr>
 <tr class="memitem:a8aa8563286f327130680004ce50e4e06" id="r_a8aa8563286f327130680004ce50e4e06"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8aa8563286f327130680004ce50e4e06">wait</a> ()</td></tr>
 <tr class="memitem:aa9e1957736725c50af94ba924f6e2ea2" id="r_aa9e1957736725c50af94ba924f6e2ea2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa9e1957736725c50af94ba924f6e2ea2">setFPS</a> (int target_fps)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="frameLimiter_8hpp_source.html#l00008">8</a> of file <a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00008">8</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4bb402db4e96dfeafbf54d4fa84e2755" name="a4bb402db4e96dfeafbf54d4fa84e2755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bb402db4e96dfeafbf54d4fa84e2755">&#9670;&#160;</a></span>FrameLimiter()</h2>
+<a id="a0c8a8cf68d85bb1ef69edda193d7fccf" name="a0c8a8cf68d85bb1ef69edda193d7fccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8a8cf68d85bb1ef69edda193d7fccf">&#9670;&#160;</a></span>FrameLimiter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">dao::FrameLimiter::FrameLimiter </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a></td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frameLimiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   11</span>            : m_frame_duration(std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps)),</div>
 <div class="line"><span class="lineno">   12</span>              m_last_frame_time(std::chrono::steady_clock::now()),</div>
 <div class="line"><span class="lineno">   13</span>              m_spin_threshold(std::chrono::milliseconds(2)) {</div>
@@ -145,8 +145,8 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_cgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_cgraph" id="aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_cgraph">
+<div class="center"><img src="classdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph" id="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,155,69"/>
 <area shape="poly" title=" " alt="" coords="52,29,50,20,54,11,65,5,80,3,98,6,107,13,104,17,96,11,80,8,66,10,58,14,55,21,57,28"/>
 </map>
@@ -154,8 +154,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_icgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_icgraph" id="aclassdao_1_1FrameLimiter_a4bb402db4e96dfeafbf54d4fa84e2755_icgraph">
+<div class="center"><img src="classdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph" id="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph">
 <area shape="rect" title=" " alt="" coords="5,29,155,69"/>
 <area shape="poly" title=" " alt="" coords="104,17,96,11,80,8,66,10,58,14,55,21,57,28,52,29,50,20,54,11,65,5,80,3,98,6,107,13"/>
 </map>
@@ -187,7 +187,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frameLimiter_8hpp_source.html#l00032">32</a> of file <a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00032">32</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>                                    {</div>
 <div class="line"><span class="lineno">   33</span>            m_frame_duration = std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps);</div>
 <div class="line"><span class="lineno">   34</span>        }</div>
@@ -217,7 +217,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frameLimiter_8hpp_source.html#l00016">16</a> of file <a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00016">16</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                    {</div>
 <div class="line"><span class="lineno">   17</span>            <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
 <div class="line"><span class="lineno">   18</span>            <span class="keyword">const</span> <span class="keyword">auto</span> elapsed = now - m_last_frame_time;</div>
@@ -237,7 +237,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/frame/<a class="el" href="frameLimiter_8hpp_source.html">frameLimiter.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

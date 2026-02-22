@@ -5,7 +5,7 @@ var classdao_1_1Page =
     [ "getContext", "classdao_1_1Page.html#a59b4d56493e5eb1a73585bcca81e6523", null ],
     [ "getDrawBatches", "classdao_1_1Page.html#afa41322cc43ea42f95ac06237bdfa622", null ],
     [ "getGlyphAtlas", "classdao_1_1Page.html#a2e2ba0bcd05ef75790b48406656e755d", null ],
-    [ "getRegisterTexture", "classdao_1_1Page.html#aaec3b13b96ce664ccc388648a6f6b6d6", null ],
+    [ "getRegisterTexture", "classdao_1_1Page.html#aab08f7b1a71e30f9413a95cabf6f80aa", null ],
     [ "getTitle", "classdao_1_1Page.html#a22d8ff31f8b52df2b69f7c726183ba70", null ],
     [ "getWindowController", "classdao_1_1Page.html#a2c0341df72814f338b2a85bbd1041f92", null ],
     [ "handleInputEvent", "classdao_1_1Page.html#a747c78b366ac47b41d18659d1b863bd6", null ],

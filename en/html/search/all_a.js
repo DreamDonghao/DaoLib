@@ -20,6 +20,6 @@ var searchData=
   ['create_20a_20feature_20branch_17',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
   ['createtray_18',['createTray',['../classdao_1_1App.html#a0d54948b998aa74ccca2a5b63e6fb88a',1,'dao::App']]],
   ['createtraymenu_19',['createTrayMenu',['../classdao_1_1Tray.html#a479d0299037b4d746f01992f77b2d5ef',1,'dao::Tray']]],
-  ['createwindow_20',['createWindow',['../classdao_1_1App.html#abd4126555a9c286964e62ca28a579ed2',1,'dao::App']]],
+  ['createwindow_20',['createWindow',['../classdao_1_1App.html#a04e7a4c06b0cd881634367fe2755b314',1,'dao::App']]],
   ['currentdatetime_21',['currentDateTime',['../namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994',1,'dao']]]
 ];

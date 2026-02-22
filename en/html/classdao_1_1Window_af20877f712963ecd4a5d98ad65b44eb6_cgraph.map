@@ -1,0 +1,5 @@
+<map id="dao::Window::registerTexture" name="dao::Window::registerTexture">
+<area shape="rect" id="Node000001" title="加载纹理对应的纹理图集" alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#a218b3feaf8d9937e7350038006688abd" title="通过纹理名称枚举获取图集区域数据" alt="" coords="264,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,15,250,15,250,21,216,21"/>
+</map>

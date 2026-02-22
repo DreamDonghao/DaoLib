@@ -73,9 +73,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "animated__sprite_8hpp.html",
-"classdao_1_1Image.html#ad5dcd4bfd07cbe8e12fbf5593ce54d1c",
-"classdao_1_1Window.html#a4141bfcdcbd8d86fd07be7ee96f4a837",
-"structdao_1_1AtlasDrawBatch.html#a1156d0f6a50c1dc7f3125008acac0007"
+"classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab",
+"classdao_1_1Window.html#a32cc34e3cb8e1a94fd80510e0b3b9f9d",
+"structdao_1_1AppCommand.html#a731ccdd5f379bcc1ee01d8dfd11df21f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

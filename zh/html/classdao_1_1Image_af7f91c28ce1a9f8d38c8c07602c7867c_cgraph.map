@@ -2,8 +2,8 @@
 <area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,35,192,60"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="240,27,419,67"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,45,226,45,226,50,192,50"/>
-<area shape="rect" id="Node000003" href="$namespacedao.html#a12373994fd1651320a5895a7299d1dd9" title="通过纹理名称枚举获取图集区域数据" alt="" coords="467,5,620,31"/>
+<area shape="rect" id="Node000003" href="$namespacedao.html#a218b3feaf8d9937e7350038006688abd" title="通过纹理名称枚举获取图集区域数据" alt="" coords="467,5,620,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,32,452,28,453,33,419,38"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1AtlasTexture.html#a3c0e898b3f46c7143028f455bbde4bf6" title="获取枚举名" alt="" coords="472,55,615,95"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1AtlasTexture.html#a93cc0b9ba324d5d96347bdc86bb1359f" title="获取枚举名" alt="" coords="472,55,615,95"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="419,56,459,62,458,67,419,62"/>
 </map>

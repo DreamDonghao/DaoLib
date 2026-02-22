@@ -1,7 +1,0 @@
-<map id="dao::Image::Image" name="dao::Image::Image">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,149,38"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a1e19f44123bd2183125f73f6c6c70569" title="构造函数" alt="" coords="197,5,340,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,23,183,23,183,28,149,28"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#ab7c0a5bdec77c69149249cd4413d4047" title="构造函数" alt="" coords="388,13,623,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,23,375,23,375,28,340,28"/>
-</map>
