@@ -15,7 +15,7 @@ void HelloDaoPage::close() {
 
 void HelloDaoPage::update() {
     f32 len = 0;
-    for (const utf32char ch: dao::utf32str(U"abcABC123你")) {
+    for (const utf32char ch: dao::utf32str(U"abcABCga")) {
         len += getGlyphAspectRatio(ch)*200;
     }
 

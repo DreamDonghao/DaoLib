@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-11-26.
-//
-#ifndef PAGE_HPP
-#define PAGE_HPP
+#pragma once
 #include <core/frame/vertex_batch_builder.hpp>
 #include <core/frame/window_controller.hpp>
 
@@ -15,11 +11,16 @@ namespace dao {
     public:
         virtual ~Page() = default;
 
+        /// @brief 初始化页面
+        /// @details 每次打开页面时执行
         virtual void init() = 0;
 
+        /// @brief 关闭页面
+        /// @details 每次关闭页面时执行
         virtual void close() = 0;
 
         /// @brief 获取加载图集
+        /// @details 用于预加载纹理
         [[nodiscard]] virtual std::vector<u32> getRegisterTexture() const = 0;
 
         /// @brief 更新
@@ -28,19 +29,22 @@ namespace dao {
         /// @brief 处理消息
         virtual void handleInputEvent(const SDL_Event &event) = 0;
 
-        [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
-
-        [[nodiscard]] virtual  GlyphAtlas &getGlyphAtlas()= 0;
+        /// @brief 获取字形图集
+        [[nodiscard]] virtual GlyphAtlas &getGlyphAtlas() = 0;
 
         /// @brief 获取窗口控制器
         virtual WindowController &getWindowController() = 0;
 
+        /// @brief 获取全局上下文
+        virtual void setContext(Context *context) = 0;
+
+        /// @brief 设置渲染批处理器
+        virtual void setVertexBatch(VertexBatchBuilder *vertexBatch) = 0;
+
         /// @brief 获取页面标题
         [[nodiscard]] virtual const std::string &getTitle() const = 0;
 
-        virtual void setContext(Context *context) = 0;
-
-        virtual Context &getContext() const= 0;
+        /// @brief 设置全局环境上下文
+        [[nodiscard]] virtual Context &getContext() const = 0;
     };
 }
-#endif //PAGE_HPP

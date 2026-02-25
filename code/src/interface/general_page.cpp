@@ -1,16 +1,11 @@
 #include <interface/general_page.hpp>
-
 #include "core/frame/context.hpp"
 
 dao::GeneralPage::GeneralPage(std::string title): m_title(std::move(title)) {
 }
 
-const std::vector<dao::AtlasDrawBatch> & dao::GeneralPage::getDrawBatches() const {
-    return m_vertexBatch.getDrawBatches();
-}
-
  dao::GlyphAtlas & dao::GeneralPage::getGlyphAtlas() {
-    return m_vertexBatch.getGlyphAtlas();
+    return m_vertexBatch->getGlyphAtlas();
 }
 
 dao::WindowController & dao::GeneralPage::getWindowController() {
@@ -24,7 +19,6 @@ const std::string & dao::GeneralPage::getTitle() const {
 void dao::GeneralPage::setContext(Context *context) {
     m_context = context;
 }
-
 
 dao::Context &dao::GeneralPage::getContext() const {
     if (!m_context) {

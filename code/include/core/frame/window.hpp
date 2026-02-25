@@ -81,7 +81,7 @@ namespace dao {
         /// @brief 设置位置
         void setPosition(u32 x, u32 y) const;
 
-        void movePosition(u32 x, u32 y) const;
+        void movePosition(i32 x, i32 y) const;
 
         /// @brief 设置大小
         void setSize(u32 width, u32 height) const;
@@ -99,17 +99,18 @@ namespace dao {
         }
 
     private:
-        u32 m_id{0xFFFFFFFF};                               ///< ID
+        u32 m_id{0xFFFFFFFF};                                  ///< ID
         bool m_running = true;                                 ///< 是否正在运行
         SDL_Window *m_window{nullptr};                         ///< SDL_Window 指针
         SDL_Renderer *m_renderer{nullptr};                     ///< SDL_Renderer 指针
-        hash_map<u32, SDL_Texture *> m_atlasTextures;       ///< 纹理图集
+        hash_map<u32, SDL_Texture *> m_atlasTextures;          ///< 纹理图集
         std::string m_nowPageTitle;                            ///< 当前页面的标题
         hash_map<std::string, std::unique_ptr<Page> > m_pages; ///< 窗口拥有的页面
-        u32 m_width;                                        ///< 窗口宽度
-        u32 m_height;                                       ///< 窗口高度
+        u32 m_width;                                           ///< 窗口宽度
+        u32 m_height;                                          ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
         AppController m_appController;                         ///< 应用控制器
+        VertexBatchBuilder m_vertexBatchBuilder{"./assets/ttf/zh-cn.ttf"};
 
         Context *m_context = nullptr;
 

@@ -39,6 +39,7 @@ namespace dao {
         }
         m_pages[title] = std::move(page);
         m_pages[title]->setContext(m_context);
+        m_pages[title]->setVertexBatch(&m_vertexBatchBuilder);
         registerPageTexture();
         m_pages[title]->init();
         m_atlasTextures[1] = SDL_CreateTextureFromSurface(
@@ -90,6 +91,20 @@ namespace dao {
         executeCommand();
     }
 
+    void Window::render() {
+        SDL_RenderClear(m_renderer);
+        for (const auto &[atlasId, vertices, indices,indicesCount]:
+             m_vertexBatchBuilder.getDrawBatches()) {
+            SDL_RenderGeometry(
+                m_renderer, m_atlasTextures[atlasId],
+                vertices.data(), static_cast<int>(vertices.size()),
+                indices->data(), indicesCount
+            );
+        }
+
+        SDL_RenderPresent(m_renderer);
+    }
+
     void Window::handleInputEvent(const SDL_Event &event) {
         m_pages[m_nowPageTitle]->handleInputEvent(event);
     }
@@ -124,20 +139,6 @@ namespace dao {
     }
 
 
-    void Window::render() {
-        SDL_RenderClear(m_renderer);
-        for (const auto &[atlasId, vertices, indices,indicesCount]:
-             m_pages[m_nowPageTitle]->getDrawBatches()) {
-            SDL_RenderGeometry(
-                m_renderer, m_atlasTextures[atlasId],
-                vertices.data(), static_cast<int>(vertices.size()),
-                indices->data(), indicesCount
-            );
-        }
-
-        SDL_RenderPresent(m_renderer);
-    }
-
     void Window::executeCommand() {
         m_pages[m_nowPageTitle]->getWindowController().executeCommand(*this);
     }
@@ -158,7 +159,7 @@ namespace dao {
         SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
     }
 
-    void Window::movePosition(const u32 x, const u32 y) const {
+    void Window::movePosition(const i32 x, const i32 y) const {
         int wx, wy;
         SDL_GetWindowPosition(m_window, &wx, &wy);
         SDL_SetWindowPosition(m_window, wx + x, wy + y);

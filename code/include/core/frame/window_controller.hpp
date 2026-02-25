@@ -1,6 +1,3 @@
-//
-// Created by donghao on 25-12-19.
-//
 #pragma once
 #include <any>
 #include <string>
@@ -35,14 +32,19 @@ namespace dao {
         /// @brief 执行命令
         void executeCommand(Window &window);
 
+        /// @brief 切换页面
         void switchPage(const std::string &title);
 
+        /// @brief 设置是否点击穿透
         void setClickThrough(const bool &clickThrough);
 
-        void movePosition(const u32 x, const u32 y);
+        /// @brief 移动窗口位置
+        void movePosition(u32 x, u32 y);
 
+        /// @brief 设置窗口位置
         void setPosition(u32 x, u32 y);
 
+        /// @brief 设置窗口大小
         void setSize(u32 x, u32 y);
 
     private:
