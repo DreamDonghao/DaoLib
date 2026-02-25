@@ -114,15 +114,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3965b5e6b5fb98f4b181b25d0027648" id="r_ae3965b5e6b5fb98f4b181b25d0027648"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae3965b5e6b5fb98f4b181b25d0027648">executeCommand</a> (<a class="el" href="classdao_1_1Window.html">Window</a> &amp;window)</td></tr>
 <tr class="memdesc:ae3965b5e6b5fb98f4b181b25d0027648"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行命令  <br /></td></tr>
 <tr class="memitem:af0054f5b3e5758f6cfc872dfdff5f06e" id="r_af0054f5b3e5758f6cfc872dfdff5f06e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0054f5b3e5758f6cfc872dfdff5f06e">switchPage</a> (const std::string &amp;title)</td></tr>
+<tr class="memdesc:af0054f5b3e5758f6cfc872dfdff5f06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换页面  <br /></td></tr>
 <tr class="memitem:ae6dff362a731040872066e7483c555cf" id="r_ae6dff362a731040872066e7483c555cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6dff362a731040872066e7483c555cf">setClickThrough</a> (const bool &amp;clickThrough)</td></tr>
-<tr class="memitem:a621b4f04a5a44158437bb6bef407e659" id="r_a621b4f04a5a44158437bb6bef407e659"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a621b4f04a5a44158437bb6bef407e659">movePosition</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> x, const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> y)</td></tr>
+<tr class="memdesc:ae6dff362a731040872066e7483c555cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否点击穿透  <br /></td></tr>
+<tr class="memitem:a06c1a1404b171d596602367d7516a589" id="r_a06c1a1404b171d596602367d7516a589"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a06c1a1404b171d596602367d7516a589">movePosition</a> (<a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> x, <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> y)</td></tr>
+<tr class="memdesc:a06c1a1404b171d596602367d7516a589"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动窗口位置  <br /></td></tr>
 <tr class="memitem:adf854b87788dea0e02d7edbe4e86c35d" id="r_adf854b87788dea0e02d7edbe4e86c35d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adf854b87788dea0e02d7edbe4e86c35d">setPosition</a> (<a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> x, <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> y)</td></tr>
+<tr class="memdesc:adf854b87788dea0e02d7edbe4e86c35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口位置  <br /></td></tr>
 <tr class="memitem:a9cb2bc2b568d03e03756bc52b7fd245b" id="r_a9cb2bc2b568d03e03756bc52b7fd245b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9cb2bc2b568d03e03756bc52b7fd245b">setSize</a> (<a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> x, <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> y)</td></tr>
+<tr class="memdesc:a9cb2bc2b568d03e03756bc52b7fd245b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口大小  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>窗口控制器 </p>
 
-<p class="definition">Definition at line <a class="el" href="window__controller_8hpp_source.html#l00029">29</a> of file <a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__controller_8hpp_source.html#l00026">26</a> of file <a class="el" href="window__controller_8hpp_source.html">window_controller.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a037ca4a7d5873eb3d184611bfbecd4da" name="a037ca4a7d5873eb3d184611bfbecd4da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a037ca4a7d5873eb3d184611bfbecd4da">&#9670;&#160;</a></span>WindowController() <span class="overload">[1/2]</span></h2>
@@ -224,16 +229,16 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   35</span>    m_windowCommands.clear();</div>
 <div class="line"><span class="lineno">   36</span>}</div>
 <div class="ttc" id="anamespacedao_html_a462c18f321a06a71fb3175d5d96b1bc6"><div class="ttname"><a href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">dao::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00019">better_stl.hpp:19</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00016">window_controller.hpp:16</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00015">window_controller.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00019">window_controller.hpp:19</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">dao::WindowCommandType::movePosition</a></div><div class="ttdeci">@ movePosition</div><div class="ttdoc">移动窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00018">window_controller.hpp:18</a></div></div>
-<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00017">window_controller.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::WindowCommandType::setClickThrough</a></div><div class="ttdeci">@ setClickThrough</div><div class="ttdoc">设置点击是否穿透</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00013">window_controller.hpp:13</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::WindowCommandType::switchPage</a></div><div class="ttdeci">@ switchPage</div><div class="ttdoc">切换页面</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00012">window_controller.hpp:12</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::WindowCommandType::setSize</a></div><div class="ttdeci">@ setSize</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00016">window_controller.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">dao::WindowCommandType::movePosition</a></div><div class="ttdeci">@ movePosition</div><div class="ttdoc">移动窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00015">window_controller.hpp:15</a></div></div>
+<div class="ttc" id="anamespacedao_html_a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804"><div class="ttname"><a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::WindowCommandType::setPosition</a></div><div class="ttdeci">@ setPosition</div><div class="ttdoc">设置窗口位置</div><div class="ttdef"><b>Definition</b> <a href="window__controller_8hpp_source.html#l00014">window_controller.hpp:14</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a621b4f04a5a44158437bb6bef407e659" name="a621b4f04a5a44158437bb6bef407e659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621b4f04a5a44158437bb6bef407e659">&#9670;&#160;</a></span>movePosition()</h2>
+<a id="a06c1a1404b171d596602367d7516a589" name="a06c1a1404b171d596602367d7516a589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c1a1404b171d596602367d7516a589">&#9670;&#160;</a></span>movePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,15 +246,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void dao::WindowController::movePosition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>移动窗口位置 </p>
 
 <p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00046">46</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   46</span>                                                               {</div>
@@ -274,6 +281,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>设置是否点击穿透 </p>
 
 <p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00042">42</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                  {</div>
@@ -300,6 +309,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>设置窗口位置 </p>
 
 <p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00052">52</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   52</span>                                                  {</div>
@@ -329,6 +340,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置窗口大小 </p>
+
 <p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00058">58</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                              {</div>
 <div class="line"><span class="lineno">   59</span>    m_windowCommands.push_back(WindowCommand{</div>
@@ -352,6 +365,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>切换页面 </p>
 
 <p class="definition">Definition at line <a class="el" href="window__controller_8cpp_source.html#l00038">38</a> of file <a class="el" href="window__controller_8cpp_source.html">window_controller.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>                                                           {</div>

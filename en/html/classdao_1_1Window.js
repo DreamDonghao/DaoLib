@@ -11,7 +11,7 @@ var classdao_1_1Window =
     [ "handleInputEvent", "classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed", null ],
     [ "hide", "classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905", null ],
     [ "isRunning", "classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb", null ],
-    [ "movePosition", "classdao_1_1Window.html#a494c9ca7352c233f22b0a2eb47d5c542", null ],
+    [ "movePosition", "classdao_1_1Window.html#abd4677dadbb2df5c579953224348b4a3", null ],
     [ "registerPageTexture", "classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6", null ],
     [ "registerTexture", "classdao_1_1Window.html#af20877f712963ecd4a5d98ad65b44eb6", null ],
     [ "render", "classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10", null ],

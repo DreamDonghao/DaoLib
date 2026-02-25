@@ -121,27 +121,33 @@ Collaboration diagram for dao::Page:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa593d76b639520c4ea0287951c0cba92" id="r_aa593d76b639520c4ea0287951c0cba92"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#aa593d76b639520c4ea0287951c0cba92">~Page</a> ()=default</td></tr>
 <tr class="memitem:a9f42866fb33b05271618e0be64e5cfac" id="r_a9f42866fb33b05271618e0be64e5cfac"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9f42866fb33b05271618e0be64e5cfac">init</a> ()=0</td></tr>
+<tr class="memdesc:a9f42866fb33b05271618e0be64e5cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化页面  <br /></td></tr>
 <tr class="memitem:aca509ded5e077e2100b1b830d07777d8" id="r_aca509ded5e077e2100b1b830d07777d8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aca509ded5e077e2100b1b830d07777d8">close</a> ()=0</td></tr>
+<tr class="memdesc:aca509ded5e077e2100b1b830d07777d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭页面  <br /></td></tr>
 <tr class="memitem:aab08f7b1a71e30f9413a95cabf6f80aa" id="r_aab08f7b1a71e30f9413a95cabf6f80aa"><td class="memItemLeft">virtual std::vector&lt; <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aab08f7b1a71e30f9413a95cabf6f80aa">getRegisterTexture</a> () const =0</td></tr>
 <tr class="memdesc:aab08f7b1a71e30f9413a95cabf6f80aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取加载图集  <br /></td></tr>
 <tr class="memitem:a64a8523dc6b0bfd23ea824f981f4b7d0" id="r_a64a8523dc6b0bfd23ea824f981f4b7d0"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a64a8523dc6b0bfd23ea824f981f4b7d0">update</a> ()=0</td></tr>
 <tr class="memdesc:a64a8523dc6b0bfd23ea824f981f4b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <br /></td></tr>
 <tr class="memitem:a747c78b366ac47b41d18659d1b863bd6" id="r_a747c78b366ac47b41d18659d1b863bd6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a747c78b366ac47b41d18659d1b863bd6">handleInputEvent</a> (const SDL_Event &amp;event)=0</td></tr>
 <tr class="memdesc:a747c78b366ac47b41d18659d1b863bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息  <br /></td></tr>
-<tr class="memitem:afa41322cc43ea42f95ac06237bdfa622" id="r_afa41322cc43ea42f95ac06237bdfa622"><td class="memItemLeft">virtual const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afa41322cc43ea42f95ac06237bdfa622">getDrawBatches</a> () const =0</td></tr>
 <tr class="memitem:a2e2ba0bcd05ef75790b48406656e755d" id="r_a2e2ba0bcd05ef75790b48406656e755d"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2e2ba0bcd05ef75790b48406656e755d">getGlyphAtlas</a> ()=0</td></tr>
+<tr class="memdesc:a2e2ba0bcd05ef75790b48406656e755d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字形图集  <br /></td></tr>
 <tr class="memitem:a2c0341df72814f338b2a85bbd1041f92" id="r_a2c0341df72814f338b2a85bbd1041f92"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1WindowController.html">WindowController</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2c0341df72814f338b2a85bbd1041f92">getWindowController</a> ()=0</td></tr>
 <tr class="memdesc:a2c0341df72814f338b2a85bbd1041f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口控制器  <br /></td></tr>
+<tr class="memitem:ad96a4e367746a03b382b962d560674fd" id="r_ad96a4e367746a03b382b962d560674fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad96a4e367746a03b382b962d560674fd">setContext</a> (<a class="el" href="classdao_1_1Context.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:ad96a4e367746a03b382b962d560674fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取全局上下文  <br /></td></tr>
+<tr class="memitem:a8fa75fad5bc57d1e97ae16f631fc5a38" id="r_a8fa75fad5bc57d1e97ae16f631fc5a38"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8fa75fad5bc57d1e97ae16f631fc5a38">setVertexBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> *vertexBatch)=0</td></tr>
+<tr class="memdesc:a8fa75fad5bc57d1e97ae16f631fc5a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置渲染批处理器  <br /></td></tr>
 <tr class="memitem:a22d8ff31f8b52df2b69f7c726183ba70" id="r_a22d8ff31f8b52df2b69f7c726183ba70"><td class="memItemLeft">virtual const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a22d8ff31f8b52df2b69f7c726183ba70">getTitle</a> () const =0</td></tr>
 <tr class="memdesc:a22d8ff31f8b52df2b69f7c726183ba70"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
-<tr class="memitem:ad96a4e367746a03b382b962d560674fd" id="r_ad96a4e367746a03b382b962d560674fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad96a4e367746a03b382b962d560674fd">setContext</a> (<a class="el" href="classdao_1_1Context.html">Context</a> *context)=0</td></tr>
 <tr class="memitem:a59b4d56493e5eb1a73585bcca81e6523" id="r_a59b4d56493e5eb1a73585bcca81e6523"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1Context.html">Context</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a59b4d56493e5eb1a73585bcca81e6523">getContext</a> () const =0</td></tr>
+<tr class="memdesc:a59b4d56493e5eb1a73585bcca81e6523"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置全局环境上下文  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>页面接口 </p>
 <p>提供了所有页面的接口，所有页面最底层都应继承这个类 </p>
 
-<p class="definition">Definition at line <a class="el" href="page_8hpp_source.html#l00014">14</a> of file <a class="el" href="page_8hpp_source.html">page.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="page_8hpp_source.html#l00010">10</a> of file <a class="el" href="page_8hpp_source.html">page.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa593d76b639520c4ea0287951c0cba92" name="aa593d76b639520c4ea0287951c0cba92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa593d76b639520c4ea0287951c0cba92">&#9670;&#160;</a></span>~Page()</h2>
@@ -192,6 +198,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>关闭页面 </p>
+<p>每次关闭页面时执行 </p>
+
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a679837d73d36b06f37a6d9f10ff52d0d">dao::GeneralPage</a>.</p>
 
 </div>
@@ -214,39 +223,14 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#acd3a2fad27d67916cb9107aa9b27d342">dao::GeneralPage</a>.</p>
-
-</div>
-</div>
-<a id="afa41322cc43ea42f95ac06237bdfa622" name="afa41322cc43ea42f95ac06237bdfa622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa41322cc43ea42f95ac06237bdfa622">&#9670;&#160;</a></span>getDrawBatches()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp; dao::Page::getDrawBatches </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a07a2ce9131904cc02f274aa6ca97d630">dao::GeneralPage</a>.</p>
+<p>设置全局环境上下文 </p>
+
+<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#acd3a2fad27d67916cb9107aa9b27d342">dao::GeneralPage</a>.</p>
 
 </div>
 </div>
@@ -272,6 +256,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>获取字形图集 </p>
 
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a68d560dbe0586089614fe6682ab6f608">dao::GeneralPage</a>.</p>
 
@@ -301,6 +287,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>获取加载图集 </p>
+<p>用于预加载纹理 </p>
 
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a4bc39c9786b815c5b2364cd34033042f">dao::GeneralPage</a>.</p>
 
@@ -416,6 +403,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>初始化页面 </p>
+<p>每次打开页面时执行 </p>
+
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7">dao::GeneralPage</a>.</p>
 
 </div>
@@ -443,7 +433,38 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>获取全局上下文 </p>
+
 <p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#ac2b9ff8a681ae758f5c589cb5a46586d">dao::GeneralPage</a>.</p>
+
+</div>
+</div>
+<a id="a8fa75fad5bc57d1e97ae16f631fc5a38" name="a8fa75fad5bc57d1e97ae16f631fc5a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa75fad5bc57d1e97ae16f631fc5a38">&#9670;&#160;</a></span>setVertexBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dao::Page::setVertexBatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> *</td>          <td class="paramname"><span class="paramname"><em>vertexBatch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置渲染批处理器 </p>
+
+<p>Implemented in <a class="el" href="classdao_1_1GeneralPage.html#a6a5a754b1112b8ca02ff91d37a61f0c7">dao::GeneralPage</a>.</p>
 
 </div>
 </div>
