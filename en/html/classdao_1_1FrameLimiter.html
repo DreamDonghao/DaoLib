@@ -94,28 +94,36 @@ $(function(){initNavTree('classdao_1_1FrameLimiter.html','','classdao_1_1FrameLi
 </div><!--header-->
 <div class="contents">
 
+<p>帧率限制器  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::FrameLimiter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1FrameLimiter__coll__graph.png" border="0" usemap="#adao_1_1FrameLimiter_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1FrameLimiter_coll__map" id="adao_1_1FrameLimiter_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,139,111"/>
+<area shape="rect" title="帧率限制器" alt="" coords="5,5,139,111"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c8a8cf68d85bb1ef69edda193d7fccf" id="r_a0c8a8cf68d85bb1ef69edda193d7fccf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0c8a8cf68d85bb1ef69edda193d7fccf">FrameLimiter</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> target_fps)</td></tr>
+<tr class="memitem:ae7ff8948e2799362adfec6977073e595" id="r_ae7ff8948e2799362adfec6977073e595"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae7ff8948e2799362adfec6977073e595">FrameLimiter</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> target_fps)</td></tr>
+<tr class="memdesc:ae7ff8948e2799362adfec6977073e595"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
 <tr class="memitem:a8aa8563286f327130680004ce50e4e06" id="r_a8aa8563286f327130680004ce50e4e06"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8aa8563286f327130680004ce50e4e06">wait</a> ()</td></tr>
-<tr class="memitem:aa9e1957736725c50af94ba924f6e2ea2" id="r_aa9e1957736725c50af94ba924f6e2ea2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa9e1957736725c50af94ba924f6e2ea2">setFPS</a> (int target_fps)</td></tr>
+<tr class="memdesc:a8aa8563286f327130680004ce50e4e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待下一帧  <br /></td></tr>
+<tr class="memitem:ab1409f064b66b636f0dc8fcb313433be" id="r_ab1409f064b66b636f0dc8fcb313433be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab1409f064b66b636f0dc8fcb313433be">setFPS</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> target_fps)</td></tr>
+<tr class="memdesc:ab1409f064b66b636f0dc8fcb313433be"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态设置目标帧率  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00008">8</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<div class="textblock"><p>帧率限制器 </p>
+<p>用于精确控制应用程序的帧率，确保帧率稳定在目标值 采用混合等待策略：先睡眠等待大部分时间，然后自旋等待剩余时间 </p>
+
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0c8a8cf68d85bb1ef69edda193d7fccf" name="a0c8a8cf68d85bb1ef69edda193d7fccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c8a8cf68d85bb1ef69edda193d7fccf">&#9670;&#160;</a></span>FrameLimiter()</h2>
+<a id="ae7ff8948e2799362adfec6977073e595" name="ae7ff8948e2799362adfec6977073e595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ff8948e2799362adfec6977073e595">&#9670;&#160;</a></span>FrameLimiter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +134,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">dao::FrameLimiter::FrameLimiter </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a></td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a></td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -137,26 +145,35 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>            : m_frame_duration(std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps)),</div>
-<div class="line"><span class="lineno">   12</span>              m_last_frame_time(std::chrono::steady_clock::now()),</div>
-<div class="line"><span class="lineno">   13</span>              m_spin_threshold(std::chrono::milliseconds(2)) {</div>
-<div class="line"><span class="lineno">   14</span>        }</div>
+<p>构造函数 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_fps</td><td>目标帧率（每秒帧数） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00014">14</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>            : m_frame_duration(std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps)), <span class="comment">// 计算每帧持续时间（纳秒）</span></div>
+<div class="line"><span class="lineno">   16</span>              m_last_frame_time(std::chrono::steady_clock::now()),                    <span class="comment">// 记录上一帧的时间点</span></div>
+<div class="line"><span class="lineno">   17</span>              m_spin_threshold(std::chrono::milliseconds(2)) {</div>
+<div class="line"><span class="lineno">   18</span>            <span class="comment">// 自旋等待阈值（2毫秒）</span></div>
+<div class="line"><span class="lineno">   19</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph" id="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,155,69"/>
+<div class="center"><img src="classdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph" id="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph">
+<area shape="rect" title="构造函数" alt="" coords="5,29,155,69"/>
 <area shape="poly" title=" " alt="" coords="52,29,50,20,54,11,65,5,80,3,98,6,107,13,104,17,96,11,80,8,66,10,58,14,55,21,57,28"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph" id="aclassdao_1_1FrameLimiter_a0c8a8cf68d85bb1ef69edda193d7fccf_icgraph">
-<area shape="rect" title=" " alt="" coords="5,29,155,69"/>
+<div class="center"><img src="classdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph" id="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph">
+<area shape="rect" title="构造函数" alt="" coords="5,29,155,69"/>
 <area shape="poly" title=" " alt="" coords="104,17,96,11,80,8,66,10,58,14,55,21,57,28,52,29,50,20,54,11,65,5,80,3,98,6,107,13"/>
 </map>
 </div>
@@ -164,8 +181,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aa9e1957736725c50af94ba924f6e2ea2" name="aa9e1957736725c50af94ba924f6e2ea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e1957736725c50af94ba924f6e2ea2">&#9670;&#160;</a></span>setFPS()</h2>
+<a id="ab1409f064b66b636f0dc8fcb313433be" name="ab1409f064b66b636f0dc8fcb313433be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1409f064b66b636f0dc8fcb313433be">&#9670;&#160;</a></span>setFPS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +193,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void dao::FrameLimiter::setFPS </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a></td>          <td class="paramname"><span class="paramname"><em>target_fps</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -187,10 +204,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00032">32</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                    {</div>
-<div class="line"><span class="lineno">   33</span>            m_frame_duration = std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps);</div>
-<div class="line"><span class="lineno">   34</span>        }</div>
+<p>动态设置目标帧率 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_fps</td><td>新的目标帧率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00046">46</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                          {</div>
+<div class="line"><span class="lineno">   47</span>            m_frame_duration = std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps); <span class="comment">// 重新计算每帧持续时间</span></div>
+<div class="line"><span class="lineno">   48</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,22 +242,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00016">16</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                    {</div>
-<div class="line"><span class="lineno">   17</span>            <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">   18</span>            <span class="keyword">const</span> <span class="keyword">auto</span> elapsed = now - m_last_frame_time;</div>
-<div class="line"><span class="lineno">   19</span> </div>
-<div class="line"><span class="lineno">   20</span>            <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> sleep_duration = m_frame_duration - elapsed; sleep_duration &gt; m_spin_threshold) {</div>
-<div class="line"><span class="lineno">   21</span>                <span class="keyword">const</span> <span class="keyword">auto</span> sleep_time = sleep_duration - m_spin_threshold;</div>
-<div class="line"><span class="lineno">   22</span>                std::this_thread::sleep_for(sleep_time);</div>
-<div class="line"><span class="lineno">   23</span>            }</div>
-<div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>            <span class="keywordflow">while</span> (std::chrono::steady_clock::now() - m_last_frame_time &lt; m_frame_duration) {</div>
-<div class="line"><span class="lineno">   26</span>                std::this_thread::yield();</div>
-<div class="line"><span class="lineno">   27</span>            }</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>            m_last_frame_time = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">   30</span>        }</div>
+<p>等待下一帧 </p>
+<p>混合等待策略：</p><ol type="1">
+<li>计算已用时间</li>
+<li>如果剩余时间大于自旋阈值，先睡眠等待大部分时间</li>
+<li>自旋等待剩余时间，确保精确到达下一帧时间点 </li>
+</ol>
+
+<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00026">26</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                    {</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now(); <span class="comment">// 获取当前时间</span></div>
+<div class="line"><span class="lineno">   28</span>            <span class="keyword">const</span> <span class="keyword">auto</span> elapsed = now - m_last_frame_time;      <span class="comment">// 计算自上一帧以来的时间</span></div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>            <span class="comment">// 如果剩余时间大于自旋阈值，先进行睡眠等待</span></div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> sleep_duration = m_frame_duration - elapsed; sleep_duration &gt; m_spin_threshold) {</div>
+<div class="line"><span class="lineno">   32</span>                <span class="keyword">const</span> <span class="keyword">auto</span> sleep_time = sleep_duration - m_spin_threshold; <span class="comment">// 睡眠时间 = 剩余时间 - 自旋阈值</span></div>
+<div class="line"><span class="lineno">   33</span>                std::this_thread::sleep_for(sleep_time);                   <span class="comment">// 睡眠等待</span></div>
+<div class="line"><span class="lineno">   34</span>            }</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>            <span class="comment">// 自旋等待直到达到目标帧时间</span></div>
+<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">while</span> (std::chrono::steady_clock::now() - m_last_frame_time &lt; m_frame_duration) {</div>
+<div class="line"><span class="lineno">   38</span>                std::this_thread::yield(); <span class="comment">// 让出CPU时间片</span></div>
+<div class="line"><span class="lineno">   39</span>            }</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>            m_last_frame_time = std::chrono::steady_clock::now(); <span class="comment">// 更新上一帧时间</span></div>
+<div class="line"><span class="lineno">   42</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>

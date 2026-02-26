@@ -11,5 +11,5 @@ var searchData=
   ['utf32char_8',['utf32char',['../namespacedao.html#addc09e7009536ce405ecc985ece7673c',1,'dao']]],
   ['utf32str_9',['utf32str',['../namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021',1,'dao']]],
   ['utf32string_5fview_10',['utf32string_view',['../namespacedao.html#acb49e64cd2b5daeb13cbf71c3cd40ced',1,'dao']]],
-  ['utf8toutf32_11',['utf8ToUtf32',['../namespacedao.html#ab6af3908a5961209e84d06b4e07b30f9',1,'dao']]]
+  ['utf8toutf32_11',['utf8ToUtf32',['../namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c',1,'dao']]]
 ];

@@ -1,6 +1,6 @@
 <map id="dao::GeneralPage::getGlyphAspectRatio" name="dao::GeneralPage::getGlyphAspectRatio">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,37,208,77"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#ab014207f61de97667b135606fd42361c" title="获取字形的宽高比" alt="" coords="256,5,448,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8" title="获取字形的宽高比" alt="" coords="256,5,448,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,41,242,37,243,42,208,47"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1VertexBatchBuilder.html#af2e5e1df7d9ff8e0a044831646af7066" title=" " alt="" coords="263,69,441,109"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,68,249,73,249,79,208,73"/>

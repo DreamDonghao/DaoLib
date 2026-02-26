@@ -75,7 +75,7 @@ var NAVTREEINDEX =
 "animated__sprite_8hpp.html",
 "classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab",
 "classdao_1_1Window.html#a32cc34e3cb8e1a94fd80510e0b3b9f9d",
-"structdao_1_1AppCommand.html#a731ccdd5f379bcc1ee01d8dfd11df21f"
+"structdao_1_1AppCommand.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

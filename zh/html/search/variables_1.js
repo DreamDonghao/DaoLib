@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['b_0',['b',['../structdao_1_1ColorRGBA.html#a794d11a2a43e39a9d650071d50377c47',1,'dao::ColorRGBA']]]
+  ['b_0',['b',['../structdao_1_1ColorRGBA.html#a0a9005dea6899f0a3477a6dbf6be3870',1,'dao::ColorRGBA']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_0',['b',['../structdao_1_1ColorRGBA.html#a794d11a2a43e39a9d650071d50377c47',1,'dao::ColorRGBA']]],
-  ['batchregisterglyph_1',['batchRegisterGlyph',['../classdao_1_1GlyphAtlas.html#af4c29f18a6dc4d416222c70a940d2024',1,'dao::GlyphAtlas']]],
+  ['b_0',['b',['../structdao_1_1ColorRGBA.html#a0a9005dea6899f0a3477a6dbf6be3870',1,'dao::ColorRGBA']]],
+  ['batchregisterglyph_1',['batchRegisterGlyph',['../classdao_1_1GlyphAtlas.html#abdbf3abfc793ce25bcfc6e42f03a81f0',1,'dao::GlyphAtlas']]],
   ['batchwritable_2',['BatchWritable',['../conceptdao_1_1BatchWritable.html',1,'dao']]],
   ['beginuse_3',['beginUse',['../classdao_1_1AnimatedSprite.html#a87da06007bdd6ddbf44f9d95700e3ce6',1,'dao::AnimatedSprite']]],
   ['better_5fstl_2ehpp_4',['better_stl.hpp',['../better__stl_8hpp.html',1,'']]],

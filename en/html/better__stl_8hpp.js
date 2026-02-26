@@ -23,6 +23,5 @@ var better__stl_8hpp =
     [ "dao::randomInt", "namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711", null ],
     [ "dao::ratio", "namespacedao.html#af0e428264a3d67735ed1bbfa2c4f8073", null ],
     [ "dao::sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ],
-    [ "dao::to_u32", "namespacedao.html#a4ca7a84f1f77f350bdff582218fb2f10", null ],
-    [ "dao::utf8ToUtf32", "namespacedao.html#ab6af3908a5961209e84d06b4e07b30f9", null ]
+    [ "dao::utf8ToUtf32", "namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c", null ]
 ];

@@ -120,8 +120,8 @@ Collaboration diagram for dao::AnimatedSprite:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91269780586bd27ef28ab865b7ba9315" id="r_a91269780586bd27ef28ab865b7ba9315"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a91269780586bd27ef28ab865b7ba9315">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const std::initializer_list&lt; <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> &gt; &amp;textureIDs)</td></tr>
 <tr class="memitem:aaf29a1c79b78879d7df037ec55e34969" id="r_aaf29a1c79b78879d7df037ec55e34969"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:aaf29a1c79b78879d7df037ec55e34969 template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaf29a1c79b78879d7df037ec55e34969">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const std::array&lt; <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a>, N &gt; &amp;textureIDs)</td></tr>
-<tr class="memitem:ae72060ce09468af2c8981227b4eac886" id="r_ae72060ce09468af2c8981227b4eac886"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae72060ce09468af2c8981227b4eac886">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a> begin, const <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a> end)</td></tr>
+<tr class="memitem:aaf29a1c79b78879d7df037ec55e34969 template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaf29a1c79b78879d7df037ec55e34969">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const std::array&lt; <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a>, N &gt; &amp;textureIDs)</td></tr>
+<tr class="memitem:ae72060ce09468af2c8981227b4eac886" id="r_ae72060ce09468af2c8981227b4eac886"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae72060ce09468af2c8981227b4eac886">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> begin, const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> end)</td></tr>
 <tr class="memitem:a87da06007bdd6ddbf44f9d95700e3ce6" id="r_a87da06007bdd6ddbf44f9d95700e3ce6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a87da06007bdd6ddbf44f9d95700e3ce6">beginUse</a> () const</td></tr>
 <tr class="memitem:a6a2e1768db693d5802df32787579602e" id="r_a6a2e1768db693d5802df32787579602e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a2e1768db693d5802df32787579602e">writeToBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;builder) const override</td></tr>
 <tr class="memdesc:a6a2e1768db693d5802df32787579602e"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入批处理  <br /></td></tr>
@@ -244,7 +244,7 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a>, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>textureIDs</em></span>&#160;)</td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a>, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>textureIDs</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -319,12 +319,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a></td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a></td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -336,12 +336,12 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="animated__sprite_8hpp_source.html#l00034">34</a> of file <a class="el" href="animated__sprite_8hpp_source.html">animated_sprite.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>            : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">TextureID</a> textureID = begin; textureID &lt; end; ++textureID) {</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> textureID = begin; textureID &lt; end; ++textureID) {</div>
 <div class="line"><span class="lineno">   38</span>                AtlasTexture texture{textureID, x, y, x + width, y + height};</div>
 <div class="line"><span class="lineno">   39</span>                m_textures.push_back(texture);</div>
 <div class="line"><span class="lineno">   40</span>            }</div>
 <div class="line"><span class="lineno">   41</span>        }</div>
-<div class="ttc" id="anamespacedao_html_af4fa28219990d91cc5cfecdb14566464"><div class="ttname"><a href="namespacedao.html#af4fa28219990d91cc5cfecdb14566464">dao::TextureID</a></div><div class="ttdeci">u32 TextureID</div><div class="ttdef"><b>Definition</b> <a href="atlas__texture_8hpp_source.html#l00009">atlas_texture.hpp:9</a></div></div>
+<div class="ttc" id="anamespacedao_html_a827cc131e40024bc7248f45a5049fddc"><div class="ttname"><a href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">dao::TextureID</a></div><div class="ttdeci">i32 TextureID</div><div class="ttdef"><b>Definition</b> <a href="atlas__texture_8hpp_source.html#l00009">atlas_texture.hpp:9</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

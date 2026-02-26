@@ -23,7 +23,7 @@
 <area shape="rect" id="Node000025" href="$glyph__atlas_8hpp.html" title=" " alt="" coords="465,431,663,471"/>
 <area shape="poly" id="edge24_Node000006_Node000025" title=" " alt="" coords="584,292,618,312,633,325,645,341,652,362,645,384,630,406,610,425,607,421,626,403,640,382,646,362,640,344,629,329,615,316,582,297"/>
 <area shape="rect" id="Node000028" href="$text_8hpp.html" title=" " alt="" coords="819,431,967,471"/>
-<area shape="poly" id="edge29_Node000006_Node000028" title=" " alt="" coords="563,293,666,340,842,422,840,427,664,345,561,297"/>
+<area shape="poly" id="edge29_Node000006_Node000028" title=" " alt="" coords="563,292,841,422,839,427,560,297"/>
 <area shape="rect" id="Node000009" href="$mapped__region_8hpp.html" title=" " alt="" coords="171,438,383,463"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="280,383,280,424,275,424,275,383"/>
 <area shape="rect" id="Node000010" href="$bounding__box_8hpp.html" title=" " alt="" coords="270,519,413,559"/>
@@ -62,8 +62,6 @@
 <area shape="rect" id="Node000030" href="$color__rgb_8hpp.html" title=" " alt="" coords="1043,526,1154,551"/>
 <area shape="poly" id="edge32_Node000028_Node000030" title=" " alt="" coords="939,468,1060,518,1058,523,937,473"/>
 <area shape="poly" id="edge33_Node000030_Node000011" title=" " alt="" coords="1061,554,1031,561,861,592,716,612,715,607,861,587,1030,556,1060,549"/>
-<area shape="rect" id="Node000031" title=" " alt="" coords="1020,607,1076,632"/>
-<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="1093,553,1065,596,1061,594,1089,550"/>
-<area shape="rect" id="Node000032" title=" " alt="" coords="1101,607,1198,632"/>
-<area shape="poly" id="edge35_Node000030_Node000032" title=" " alt="" coords="1108,550,1137,594,1132,596,1104,553"/>
+<area shape="rect" id="Node000031" title=" " alt="" coords="1071,607,1127,632"/>
+<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="1101,552,1101,593,1096,593,1096,552"/>
 </map>

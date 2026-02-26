@@ -1,0 +1,11 @@
+<map id="dao::getAtlasRegion" name="dao::getAtlasRegion">
+<area shape="rect" id="Node000001" title="通过纹理名称枚举获取图集区域数据" alt="" coords="503,64,656,89"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="260,27,439,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,68,439,61,439,56,489,63"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Window.html#a9b1fe05874c3f7bedb132304f9471645" title="加载纹理对应的纹理图集" alt="" coords="244,92,455,117"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="489,90,454,95,453,89,489,85"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Image.html#af7f91c28ce1a9f8d38c8c07602c7867c" title="写入批处理" alt="" coords="7,5,194,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="246,38,194,32,194,26,246,33"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="5,55,196,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,62,196,67,196,62,246,56"/>
+</map>

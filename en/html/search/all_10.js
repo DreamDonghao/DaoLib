@@ -18,7 +18,7 @@ var searchData=
   ['inputbox_15',['InputBox',['../classdao_1_1InputBox.html',1,'dao::InputBox'],['../classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3',1,'dao::InputBox::InputBox()']]],
   ['inputboxstyle_16',['InputBoxStyle',['../classdao_1_1InputBoxStyle.html',1,'dao::InputBoxStyle'],['../classdao_1_1InputBoxStyle.html#abd8daf3ce5f3c3c4f75dab5a8a615cc9',1,'dao::InputBoxStyle::InputBoxStyle()']]],
   ['inputstatus_17',['InputStatus',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033b',1,'dao']]],
-  ['insert_18',['insert',['../classdao_1_1Text.html#a4deffe02bf7c7bf414bdabd948897777',1,'dao::Text']]],
+  ['insert_18',['insert',['../classdao_1_1Text.html#ae0c3acc77e4042276cdc2503d9f7ef9f',1,'dao::Text']]],
   ['interval_19',['interval',['../classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979',1,'dao::TickTimer']]],
   ['isenable_20',['isEnable',['../classdao_1_1SimpleButton.html#a60694f0c52906c8efda2aae008cd875b',1,'dao::SimpleButton::isEnable()'],['../classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354',1,'dao::Button::isEnable()']]],
   ['isinboundingbox_21',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a471a206bb57544106eef5458dd234962',1,'dao::BoundingBox']]],
