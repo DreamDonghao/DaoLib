@@ -3,7 +3,7 @@
 
 using namespace dao;
 
-std::vector<u32> HelloDaoPage::getRegisterTexture() const {
+std::vector<TextureID> HelloDaoPage::getRegisterTexture() const {
     return {texture::image};
 }
 

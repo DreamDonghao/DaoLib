@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-12-18.
-//
-#ifndef TEXT_HPP
-#define TEXT_HPP
+#pragma once
 #include <SDL3/SDL_pixels.h>
 #include "core/tool/better_stl.hpp"
 #include "color_rgb.hpp"
@@ -23,7 +19,7 @@ namespace dao {
             : m_x(x), m_y(y), m_fontSize(fontSize), m_color(color), m_content(std::move(content)) {
         }
 
-        void insert(const u64 index, const utf32char ch) {
+        void insert(const i64 index, const utf32char ch) {
             m_content.insert(index, 1, ch);
         }
 
@@ -49,4 +45,4 @@ namespace dao {
         utf32str m_content{};
     };
 }
-#endif //TEXT_HPP
+

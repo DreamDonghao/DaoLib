@@ -15,12 +15,12 @@ namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
     struct AtlasDrawBatch {
-        AtlasDrawBatch(const u32 a, std::vector<SDL_Vertex> v,
+        AtlasDrawBatch(const i32 a, std::vector<SDL_Vertex> v,
                        std::unique_ptr<std::vector<i32>, SwitchDeleter<std::vector<i32> > > i)
             : atlasId(a), vertices(std::move(v)), indices(std::move(i)) {
         }
 
-        u32 atlasId;                      ///< 绘制的纹理图集 ID
+        i32 atlasId;                      ///< 绘制的纹理图集 ID
         std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
         std::unique_ptr<std::vector<i32>, SwitchDeleter<std::vector<i32> > > indices;
         int indicesCount{0};
@@ -75,7 +75,7 @@ namespace dao {
         GlyphAtlas m_glyphAtlas;                   ///< 字形图集
 
         /// @brief  添加纹理的数据到顶点数组
-        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, u32 textureId);
+        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, i32 textureId);
     };
 } // name_
 

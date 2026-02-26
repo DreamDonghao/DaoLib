@@ -27,7 +27,8 @@ add_library(dao
         src/component/button/simple_button.cpp
         src/component/image.cpp
         src/interface/general_page.cpp
-        src/test.cpp
+        src/daoui.cpp
+        src/core/basic_drawing_elements/glyph_atlas.hpp.cpp
 )
 
 set_target_properties(dao PROPERTIES

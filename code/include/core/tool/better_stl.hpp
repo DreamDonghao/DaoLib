@@ -14,9 +14,13 @@ namespace dao {
     using i16 = int16_t;
     using i32 = int32_t;
     using i64 = int64_t;
+    /// @brief 非必要不要使用无符号类型
     using u8 = uint8_t;
+    /// @brief 非必要不要使用无符号类型
     using u16 = uint16_t;
+    /// @brief 非必要不要使用无符号类型
     using u32 = uint32_t;
+    /// @brief 非必要不要使用无符号类型
     using u64 = uint64_t;
     using f32 = float;
     using f64 = double;
@@ -72,41 +76,48 @@ namespace dao {
                 << "函数[Function]: " << loc.function_name() << "\n\n";
     }
 
-    inline std::u32string to_u32(const std::string &s) {
-        std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> conv;
-        return conv.from_bytes(s);
-    }
+    inline utf32str utf8ToUtf32(const std::string &s) {
+        std::u32string out;
+        out.reserve(s.size());
 
+        size_t i = 0;
+        const size_t size = s.size();
 
-    inline std::u32string utf8ToUtf32(const std::string &utf8Str) {
-        std::u32string utf32Str;
-
-        for (size_t i = 0; i < utf8Str.size();) {
-            uint32_t codepoint = 0;
-
-            if (const unsigned char c = utf8Str[i]; c < 0x80) {
-                // 单字节 UTF-8
+        while (i < size) {
+            const unsigned char c = static_cast<unsigned char>(s[i]);
+            u32 codepoint = 0;
+            size_t len = 0;
+            if (c < 0x80) {
                 codepoint = c;
-                i += 1;
+                len = 1;
             } else if ((c & 0xE0) == 0xC0) {
-                // 双字节 UTF-8
-                codepoint = (c & 0x1F) << 6 | utf8Str[i + 1] & 0x3F;
-                i += 2;
+                if (i + 1 >= size) break;
+                codepoint = (c & 0x1F) << 6 |
+                            static_cast<unsigned char>(s[i + 1]) & 0x3F;
+                len = 2;
             } else if ((c & 0xF0) == 0xE0) {
-                // 三字节 UTF-8
-                codepoint = ((c & 0x0F) << 12) | ((utf8Str[i + 1] & 0x3F) << 6) | (utf8Str[i + 2] & 0x3F);
-                i += 3;
+                if (i + 2 >= size) break;
+                codepoint =
+                        (c & 0x0F) << 12 |
+                        (static_cast<unsigned char>(s[i + 1]) & 0x3F) << 6 |
+                        static_cast<unsigned char>(s[i + 2]) & 0x3F;
+                len = 3;
             } else if ((c & 0xF8) == 0xF0) {
-                // 四字节 UTF-8
-                codepoint = ((c & 0x07) << 18) | ((utf8Str[i + 1] & 0x3F) << 12) |
-                            ((utf8Str[i + 2] & 0x3F) << 6) | (utf8Str[i + 3] & 0x3F);
-                i += 4;
+                if (i + 3 >= size) break;
+                codepoint = (c & 0x07) << 18 |
+                            (static_cast<unsigned char>(s[i + 1]) & 0x3F) << 12 |
+                            (static_cast<unsigned char>(s[i + 2]) & 0x3F) << 6 |
+                            static_cast<unsigned char>(s[i + 3]) & 0x3F;
+                len = 4;
+            } else {
+                codepoint = 0xFFFD;
+                len = 1;
             }
-
-            utf32Str.push_back(codepoint);
+            out.push_back(codepoint);
+            i += len;
         }
 
-        return utf32Str;
+        return out;
     }
 
     /// @brief 结果为浮点数的除法
@@ -155,4 +166,3 @@ namespace dao {
         );
     }
 }
-

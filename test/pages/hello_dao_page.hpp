@@ -23,7 +23,7 @@ private:
 };
 
 class HelloDaoPage : public dao::GeneralPage {
-    TextBox text{0, 200, 200, dao::hexToRGBA("#D249FC"), U"abcABCgabcdefghizklmnopq123你好.。"};
+    TextBox text{0, 200, 200, dao::hexToRGBA("#D249FC"), U"abcA你好.。"};
     dao::Image image{10, 50, 200, 200, texture::image};
     dao::AtlasTexture img{texture::image, 10, 50, 160, 200};
     dao::SimpleButton simpleButton{
@@ -38,7 +38,7 @@ public:
 
     ~HelloDaoPage() override = default;
 
-    [[nodiscard]] std::vector<dao::u32> getRegisterTexture() const override;
+    [[nodiscard]] std::vector<dao::TextureID> getRegisterTexture() const override;
 
     void init() override;
 

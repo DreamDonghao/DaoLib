@@ -53,7 +53,7 @@ namespace dao {
 
     void VertexBatchBuilder::addToBatch(const AtlasTexture &texture) {
         const AtlasRegion atlasRegion = getAtlasRegion(texture.getName());
-        if (const u32 atlasId = atlasRegion.atlasId;
+        if (const i32 atlasId = atlasRegion.atlasId;
             m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId
         ) {
             m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
@@ -116,7 +116,7 @@ namespace dao {
     }
 
     void VertexBatchBuilder::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
-                                                const u32 textureId) {
+                                                const i32 textureId) {
         const float winL = pos.getLeft();
         const float winT = pos.getTop();
         const float winR = pos.getRight();

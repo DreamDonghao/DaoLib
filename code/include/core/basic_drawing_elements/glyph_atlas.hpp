@@ -22,75 +22,19 @@ namespace dao {
         /// @param ttfPath 字体文件
         /// @param glyphSize 字号(磅值)大小,决定渲染效果
         /// @param atlasSize 字形图集大小
-        explicit GlyphAtlas(const std::string_view &ttfPath, const f32 glyphSize = 24, const i32 atlasSize = 1024)
-            : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
-              m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {
-            if (!m_font) {
-                const std::string errorMsg(ttfPath);
-                DAO_ERROR_LOG("字体文件加载失败:" + errorMsg);
-            }
-            SDL_FillSurfaceRect(
-                m_atlasSurface, nullptr,
-                SDL_MapRGBA(
-                    SDL_GetPixelFormatDetails(m_atlasSurface->format),
-                    nullptr, 0, 0, 0, 0
-                )
-            );
-        }
+        explicit GlyphAtlas(const std::string_view &ttfPath, f32 glyphSize = 24, i32 atlasSize = 1024);
 
         /// @brief 加载字形
         /// @details 将一个文字的字形编码添加到字形图集中
         /// @param charCode 文字的utf-32编码
-        void registerGlyph(const utf32char charCode) {
-            if (m_glyphs.contains(charCode)) { return; }
-
-            m_isUpdated = true;
-            SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});
-            m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
-            m_glyphAspectRatios.emplace(charCode, ratio(glyphSurface->w, m_cursor.rowHeight));
-
-            if (m_cursor.x + glyphSurface->w > m_atlasSize) {
-                m_cursor.x = 0;
-                m_cursor.y += m_cursor.rowHeight;
-                m_cursor.rowHeight = 0;
-            }
-            const SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface->w, glyphSurface->h};
-            SDL_BlitSurface(glyphSurface, nullptr, m_atlasSurface, &dst);
-            int minx, maxx, miny, maxy, advance;
-            TTF_GetGlyphMetrics(m_font, charCode, &minx, &maxx, &miny, &maxy, &advance);
-
-            Glyph glyph{};
-            glyph.size = {static_cast<float>(glyphSurface->w), static_cast<float>(glyphSurface->h)};
-            glyph.bearing = {static_cast<float>(minx), static_cast<float>(maxy)};
-            glyph.advance = static_cast<float>(advance);
-
-            glyph.pos = {
-                ratio(dst.x, m_atlasSize), ratio(dst.y, m_atlasSize),
-                ratio(dst.w, m_atlasSize), ratio(dst.h, m_atlasSize)
-            };
-
-            m_glyphs.emplace(charCode, glyph);
-            m_cursor.x += glyphSurface->w;
-
-            SDL_DestroySurface(glyphSurface);
-        }
+        void registerGlyph(utf32char charCode);
 
         /// @brief 批量加载字形
         /// @details 将一批文字的字形编码添加到字形图集中
-        void batchRegisterGlyph(const std::string_view chars) {
-            for (auto &ch: chars) {
-                registerGlyph(ch);
-            }
-        }
+        void batchRegisterGlyph(std::string_view chars);
 
         /// @brief 获取文字在图集中的位置
-        BoundingBox getGlyphAtlasRegion(const char32_t charCode) {
-            return {
-                m_glyphs[charCode].pos.x, m_glyphs[charCode].pos.y,
-                m_glyphs[charCode].pos.x + m_glyphs[charCode].pos.w,
-                m_glyphs[charCode].pos.y + m_glyphs[charCode].pos.h,
-            };
-        }
+        BoundingBox getGlyphAtlasRegion(char32_t charCode);
 
         /// @brief 获取字形图集
         [[nodiscard]] SDL_Surface &getAtlasSurface() const {
@@ -105,12 +49,7 @@ namespace dao {
 
 
         /// @brief 获取字形的宽高比
-        [[nodiscard]] f32 getGlyphAspectRatio(const utf32char charCode) const {
-            if (const auto it = m_glyphAspectRatios.find(charCode); it != m_glyphAspectRatios.end()) {
-                return it->second;
-            }
-            return 1;
-        }
+        [[nodiscard]] f32 getGlyphAspectRatio(utf32char charCode) const;
 
     private:
         struct Cursor {
@@ -125,4 +64,6 @@ namespace dao {
         Cursor m_cursor{0, 0, 0};
         bool m_isUpdated{false};
     };
+
+
 }

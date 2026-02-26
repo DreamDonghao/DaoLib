@@ -29,7 +29,7 @@ namespace dao {
         /// @param transparent 支持透明
         /// @param onTop 置顶
         /// @param borderless 无边框
-        Window(u32 width, u32 height, bool hidden = false, bool isSubject = false,
+        Window(i32 width, i32 height, bool hidden = false, bool isSubject = false,
                bool resizable = false, bool transparent = false, bool
                onTop = false, bool borderless = false);
 
@@ -40,13 +40,13 @@ namespace dao {
         Window &addPage(std::unique_ptr<Page> &&page);
 
         /// @brief 加载纹理对应的纹理图集
-        void registerTexture(const u32 &textureId);
+        void registerTexture(const i32 &textureId);
 
         /// @brief 根据当前窗口拥有的页面加载未加载的图集
         void registerPageTexture();
 
         /// @brief 获取 id
-        [[nodiscard]] u32 getId() const { return m_id; }
+        [[nodiscard]] i32 getId() const { return m_id; }
 
         /// @brief 更新一帧
         void update();
@@ -79,12 +79,12 @@ namespace dao {
         void switchPage(std::string title);
 
         /// @brief 设置位置
-        void setPosition(u32 x, u32 y) const;
+        void setPosition(i32 x, i32 y) const;
 
         void movePosition(i32 x, i32 y) const;
 
         /// @brief 设置大小
-        void setSize(u32 width, u32 height) const;
+        void setSize(i32 width, i32 height) const;
 
         /// @brief 设置标题
         void setTitle(const std::string &title) const;
@@ -99,15 +99,15 @@ namespace dao {
         }
 
     private:
-        u32 m_id{0xFFFFFFFF};                                  ///< ID
+        i32 m_id{-1};                                          ///< ID
         bool m_running = true;                                 ///< 是否正在运行
         SDL_Window *m_window{nullptr};                         ///< SDL_Window 指针
         SDL_Renderer *m_renderer{nullptr};                     ///< SDL_Renderer 指针
-        hash_map<u32, SDL_Texture *> m_atlasTextures;          ///< 纹理图集
+        hash_map<i32, SDL_Texture *> m_atlasTextures;          ///< 纹理图集
         std::string m_nowPageTitle;                            ///< 当前页面的标题
         hash_map<std::string, std::unique_ptr<Page> > m_pages; ///< 窗口拥有的页面
-        u32 m_width;                                           ///< 窗口宽度
-        u32 m_height;                                          ///< 窗口高度
+        i32 m_width;                                           ///< 窗口宽度
+        i32 m_height;                                          ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
         AppController m_appController;                         ///< 应用控制器
         VertexBatchBuilder m_vertexBatchBuilder{"./assets/ttf/zh-cn.ttf"};

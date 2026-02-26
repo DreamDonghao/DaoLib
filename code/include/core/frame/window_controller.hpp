@@ -1,13 +1,12 @@
 #pragma once
 #include <any>
 #include <string>
-
 #include "core/tool/better_stl.hpp"
 
 namespace dao {
     class Window;
 
-    /// @brief 窗口命令类型
+    /// @brief 窗口级命令类型
     enum class WindowCommandType {
         switchPage,      ///< 切换页面
         setClickThrough, ///< 设置点击是否穿透
@@ -16,7 +15,7 @@ namespace dao {
         setSize,         ////<设置窗口大小
     };
 
-    /// @brief 窗口命令
+    /// @brief 窗口级命令
     struct WindowCommand {
         WindowCommandType type; ///< 页面命令类型
         std::any data;          ///< 数据
@@ -39,13 +38,13 @@ namespace dao {
         void setClickThrough(const bool &clickThrough);
 
         /// @brief 移动窗口位置
-        void movePosition(u32 x, u32 y);
+        void movePosition(i32 x, i32 y);
 
         /// @brief 设置窗口位置
-        void setPosition(u32 x, u32 y);
+        void setPosition(i32 x, i32 y);
 
         /// @brief 设置窗口大小
-        void setSize(u32 x, u32 y);
+        void setSize(i32 x, i32 y);
 
     private:
         std::vector<WindowCommand> m_windowCommands;

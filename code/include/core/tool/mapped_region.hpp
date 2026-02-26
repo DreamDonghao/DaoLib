@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-11-28.
-//
-#ifndef MAPPED_REGION_HPP
-#define MAPPED_REGION_HPP
+#pragma once
 #include <core/tool/bounding_box.hpp>
 #include <tuple>
 
@@ -29,4 +25,4 @@ namespace dao {
         BoundingBox m_boundingBoxB{0.f, 0.f, 0.f, 0.f};
     };
 }
-#endif //MAPPED_REGION_HPP
+

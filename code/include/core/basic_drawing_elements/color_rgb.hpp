@@ -5,11 +5,11 @@
 #define COLOR_HPP
 #include <core/tool/better_stl.hpp>
 #include <array>
-#include <string_view>
+
 namespace dao {
     /// @brief 将RGB 255 归一化
-    constexpr std::array<float, 256> rgbNorm = [] {
-        std::array<float, 256> lut{};
+    constexpr std::array<f32, 256> rgbNorm = [] {
+        std::array<f32, 256> lut{};
         for (std::size_t i = 0; i < lut.size(); ++i) {
             lut[i] = static_cast<float>(i) / 255.0f;
         }
@@ -18,12 +18,12 @@ namespace dao {
 
     /// @brief RGBA 颜色
     struct ColorRGBA {
-        uint32_t r, g, b;
+        i32 r, g, b;
         float a;
     };
 
-    constexpr u8 hexByteToU8(const std::string_view sv) noexcept {
-        u8 value = 0;
+    constexpr i32 hexByteToU8(const std::string_view sv) noexcept {
+        i32 value{0};
         for (const char c: sv) {
             value *= 16;
             if (c >= '0' && c <= '9') value += c - '0';
@@ -38,14 +38,14 @@ namespace dao {
     constexpr ColorRGBA hexToRGBA(std::string_view hex) {
         if (!hex.empty() && hex[0] == '#')
             hex.remove_prefix(1);
-        const auto len = hex.size();
+        const auto len{hex.size()};
         if (len != 6 && len != 8) {
             return {255, 255, 255, 1.0f};
         }
-        const u8 r = hexByteToU8(hex.substr(0, 2));
-        const u8 g = hexByteToU8(hex.substr(2, 2));
-        const u8 b = hexByteToU8(hex.substr(4, 2));
-        const f32 a = (len == 8)? rgbNorm[hexByteToU8(hex.substr(6, 2))]: 1.0f;
+        const i32 r{hexByteToU8(hex.substr(0, 2))};
+        const i32 g = hexByteToU8(hex.substr(2, 2));
+        const i32 b = hexByteToU8(hex.substr(4, 2));
+        const f32 a = (len == 8) ? rgbNorm[hexByteToU8(hex.substr(6, 2))] : 1.0f;
 
         if ((r == 0 && (hex[0] != '0' || hex[1] != '0')) ||
             (g == 0 && (hex[2] != '0' || hex[3] != '0')) ||

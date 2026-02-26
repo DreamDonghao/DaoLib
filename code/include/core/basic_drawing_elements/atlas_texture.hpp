@@ -6,7 +6,7 @@
 #include "core/tool/mapped_region.hpp"
 
 namespace dao {
-    using TextureID = u32;
+    using TextureID = i32;
 
     /// @brief 图集纹理
     /// @details 表示纹理图集中的一个纹理区域
@@ -22,9 +22,9 @@ namespace dao {
         /// @param up 上区边界标
         /// @param right 右边界坐标
         /// @param down 下边界坐标
-        AtlasTexture(u32 textureId, float left, float up, float right, float down);
+        AtlasTexture(i32 textureId, float left, float up, float right, float down);
 
-        AtlasTexture(u32 textureId,BoundingBox boundingBox);
+        AtlasTexture(i32 textureId,BoundingBox boundingBox);
 
         /// @brief 设置位置
         void setPosition(f32 x, f32 y);
@@ -34,14 +34,14 @@ namespace dao {
 
         /// @brief 获取枚举名
         /// @returns 纹理枚举名
-        [[nodiscard]] const u32 &getName() const { return m_textureId; }
+        [[nodiscard]] const i32 &getName() const { return m_textureId; }
 
         /// @brief 获取显示边界框
         /// @returns 边界框
         [[nodiscard]] const BoundingBox &getBoundingBox() const { return m_boundingBox; }
 
     private:
-        u32 m_textureId = 0;    ///< 纹理枚举名
+        TextureID m_textureId = 0;    ///< 纹理枚举名
         BoundingBox m_boundingBox; ///< 纹理要显示的位置
     };
 }

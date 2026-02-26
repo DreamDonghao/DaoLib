@@ -6,7 +6,7 @@
 #include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
-    App::App(const u32 fps, const bool clickThrough) : m_frameLimiter(fps) {
+    App::App(const i32 fps, const bool clickThrough) : m_frameLimiter(fps) {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             DAO_ERROR_LOG(std::string("初始化 SDL 失败 ") + SDL_GetError());
         }
@@ -38,19 +38,19 @@ namespace dao {
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
                 if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
-                    uint32_t wid = event.window.windowID;
+                    const i32 wid = static_cast<i32>(event.window.windowID);
                     if (auto it = m_windows.find(wid); it != m_windows.end()) {
                         it->second->hide();
                     }
                 }
 
-                uint32_t wid = 0;
+                i32 wid = 0;
                 if (event.type >= SDL_EVENT_WINDOW_FIRST && event.type <= SDL_EVENT_WINDOW_LAST) {
-                    wid = event.window.windowID;
+                    wid = static_cast<i32>(event.window.windowID);
                 } else if (event.type >= SDL_EVENT_KEY_DOWN && event.type <= SDL_EVENT_KEY_UP) {
-                    wid = event.key.windowID;
+                    wid = static_cast<i32>(event.key.windowID);
                 } else if (event.type >= SDL_EVENT_MOUSE_MOTION && event.type <= SDL_EVENT_MOUSE_WHEEL) {
-                    wid = event.button.windowID;
+                    wid = static_cast<i32>(event.button.windowID);
                 }
 
                 if (wid != 0) {
@@ -70,13 +70,13 @@ namespace dao {
     }
 
     Window &App::createWindow(
-        u32 width, u32 height, const std::string_view tag,
+        i32 width, i32 height, const std::string_view tag,
         bool hidden, bool isSubject,
         bool resizable, bool transparent, bool onTop, bool borderless) {
         auto nowWindow = std::make_unique<Window>(
             width, height, hidden, isSubject,
             resizable, transparent, onTop, borderless);
-        const u32 windowId = nowWindow->getId();
+        const i32 windowId = nowWindow->getId();
         m_windowMap[tag] = windowId;
         m_windows[windowId] = std::move(nowWindow);
         m_windows[windowId]->setContext(&m_context);

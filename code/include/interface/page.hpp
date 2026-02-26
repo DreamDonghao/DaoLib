@@ -21,7 +21,7 @@ namespace dao {
 
         /// @brief 获取加载图集
         /// @details 用于预加载纹理
-        [[nodiscard]] virtual std::vector<u32> getRegisterTexture() const = 0;
+        [[nodiscard]] virtual std::vector<i32> getRegisterTexture() const = 0;
 
         /// @brief 更新
         virtual void update() = 0;

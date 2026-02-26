@@ -45,7 +45,7 @@ namespace dao {
     public:
         explicit Geometry(const std::array<GeometryVertex, N> &vertices): m_vertices(makeVertices(vertices)) {
             int index = -1;
-            for (u32 i = 1; i < N - 1; ++i) {
+            for (i32 i = 1; i < N - 1; ++i) {
                 m_indices[++index] = 0;
                 m_indices[++index] = i;
                 m_indices[++index] = i + 1;
@@ -53,7 +53,7 @@ namespace dao {
         }
 
         void moveXY(const f32 x, const f32 y) {
-            for (u32 i = 0; i < N; ++i) {
+            for (i32 i = 0; i < N; ++i) {
                 m_vertices[i].position.x += x;
                 m_vertices[i].position.y += y;
             }

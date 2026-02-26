@@ -1,11 +1,6 @@
-//
-// Created by donghao on 25-11-26.
-//
-#ifndef APP_HPP
-#define APP_HPP
+#pragma once
 #include <core/frame/window.hpp>
 #include <core/frame/tray.hpp>
-
 #include "context.hpp"
 #include "frame_limiter.hpp"
 
@@ -16,7 +11,7 @@ namespace dao {
     public:
         /// @param fps 帧率
         /// @param clickThrough 失焦点击生效
-        explicit App(u32 fps = 60,bool clickThrough = false);
+        explicit App(i32 fps = 60, bool clickThrough = false);
 
         App(const App &) = delete;            // 禁止拷贝
         App &operator=(const App &) = delete; // 禁止拷贝
@@ -34,7 +29,7 @@ namespace dao {
         /// @param onTop 置顶
         /// @param borderless 无边框
         /// @returns 窗口对象的引用
-        Window &createWindow(u32 width, u32 height, std::string_view tag,
+        Window &createWindow(i32 width, i32 height, std::string_view tag,
                              bool hidden = false, bool isSubject = false,
                              bool resizable = false, bool transparent = false, bool onTop = false,
                              bool borderless = false);
@@ -50,7 +45,7 @@ namespace dao {
         /// @brief 获取窗口
         /// @param windowId 窗口 id
         /// @returns 窗口对象的引用
-        Window &getWindow(const u32 windowId) { return *m_windows[windowId]; }
+        Window &getWindow(const i32 windowId) { return *m_windows[windowId]; }
 
         /// @brief 启动应用
         void run();
@@ -69,12 +64,11 @@ namespace dao {
         }
 
     private:
-        bool m_running = false;                               ///< 是否运行
-        FrameLimiter m_frameLimiter;                          ///< 帧率控制器
-        hash_map<std::string_view, u32> m_windowMap;       ///< 窗口标识 ID 映射表
-        hash_map<u32, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
-        std::unique_ptr<Tray> m_tray = nullptr;               ///< 托盘
-        Context m_context;                                    ///< 全局环境数据
+        bool m_running = false;                            ///< 是否运行
+        FrameLimiter m_frameLimiter;                       ///< 帧率控制器
+        hash_map<std::string_view, i32> m_windowMap;       ///< 窗口标识 ID 映射表
+        hash_map<i32, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
+        std::unique_ptr<Tray> m_tray = nullptr;            ///< 托盘
+        Context m_context;                                 ///< 全局环境数据
     };
 }
-#endif //APP_HPP

@@ -8,7 +8,7 @@
 
 namespace dao {
     Window::Window(
-        const u32 width, const u32 height, const bool hidden, const bool isSubject,
+        const i32 width, const i32 height, const bool hidden, const bool isSubject,
         const bool resizable, const bool transparent, const bool onTop, const bool borderless)
         : m_width(width), m_height(height) {
         if (hidden) m_windowFlags |= SDL_WINDOW_HIDDEN;
@@ -47,9 +47,9 @@ namespace dao {
         return *this;
     }
 
-    void Window::registerTexture(const u32 &textureId) {
+    void Window::registerTexture(const i32 &textureId) {
         const AtlasRegion atlasRegion = getAtlasRegion(textureId);
-        if (const u32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
+        if (const i32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
             if (!m_atlasTextures[atlasId]) {
@@ -131,7 +131,7 @@ namespace dao {
             return;
         }
         m_window = SDL_CreateWindow(
-            m_nowPageTitle.data(), static_cast<int>(m_width), static_cast<int>(m_height),
+            m_nowPageTitle.data(), m_width, m_height,
             m_windowFlags);
         m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
         SDL_SetRenderVSync(m_renderer, 0);
@@ -155,8 +155,8 @@ namespace dao {
         );
     }
 
-    void Window::setPosition(const u32 x, const u32 y) const {
-        SDL_SetWindowPosition(m_window, static_cast<int>(x), static_cast<int>(y));
+    void Window::setPosition(const i32 x, const i32 y) const {
+        SDL_SetWindowPosition(m_window, x,y);
     }
 
     void Window::movePosition(const i32 x, const i32 y) const {
@@ -165,7 +165,7 @@ namespace dao {
         SDL_SetWindowPosition(m_window, wx + x, wy + y);
     }
 
-    void Window::setSize(const u32 width, const u32 height) const {
+    void Window::setSize(const i32 width, const i32 height) const {
         SDL_SetWindowSize(m_window, static_cast<int>(width), static_cast<int>(height));
     }
 
