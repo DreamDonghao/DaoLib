@@ -1,9 +1,5 @@
-//
-// Created by donghao on 25-12-12.
-//
-#ifndef BUTTON_STYLE_HPP
-#define BUTTON_STYLE_HPP
-#include "button.hpp"
+#pragma once
+#include <interface/button.hpp>
 #include "drawable.hpp"
 
 namespace dao {
@@ -19,4 +15,3 @@ namespace dao {
         virtual void bindButton(Button *button) = 0;
     };
 }
-#endif //BUTTON_STYLE_HPP

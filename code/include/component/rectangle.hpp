@@ -1,8 +1,4 @@
-//
-// Created by donghao on 25-12-8.
-//
-#ifndef RECTANGLE_HPP
-#define RECTANGLE_HPP
+#pragma once
 #include <interface/drawable.hpp>
 #include <component/geometry.hpp>
 #include <array>
@@ -12,13 +8,10 @@ namespace dao {
     class Rectangle : public Drawable {
     public:
         Rectangle(const f32 x, const f32 y, const f32 w, const f32 h, const ColorRGBA color)
-            : m_vertices(std::array<GeometryVertex, 4>(
-                {
-                    {x, y, color},
-                    {x + w, y, color},
-                    {x + w, y + h, color},
-                    {x, y + h, color}
-                })) {
+            : m_triangle{
+                Triangle(Vertex{x, y,color}, Vertex{x + w, y,color}, Vertex{x + w, y + h,color}),
+                Triangle(Vertex{x + w, y + h,color}, Vertex{x, y + h,color}, Vertex{x, y,color})
+            } {
         }
 
         Rectangle(const BoundingBox box, const ColorRGBA color)
@@ -26,17 +19,18 @@ namespace dao {
         }
 
         void setPosition(const f32 x, const f32 y) {
-            const f32 dx = x - m_vertices.getVertices()[0].position.x;
-            const f32 dy = y - m_vertices.getVertices()[0].position.y;
-            m_vertices.moveXY(dx, dy);
+            const f32 dx = x - m_triangle[0].vertex(0).x();
+            const f32 dy = y - m_triangle[1].vertex(0).y();
+            m_triangle[0].translate(dx,dy);
         }
 
         void writeToBatch(VertexBatchBuilder &builder) const override {
-            builder.addToBatch(m_vertices.getVertices(), m_vertices.getIndices());
+            builder.addToBatch(m_triangle[0]);
+            builder.addToBatch(m_triangle[1]);
         }
 
     private:
-        Geometry<4> m_vertices;
+        std::array<Triangle, 2> m_triangle;
     };
 }
-#endif //RECTANGLE_HPP
+

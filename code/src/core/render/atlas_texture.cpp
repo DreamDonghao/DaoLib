@@ -1,12 +1,9 @@
-//
-// Created by donghao on 25-12-6.
-//
-#include <core/basic_drawing_elements/atlas_texture.hpp>
+#include <core/render/atlas_texture.hpp>
 
 namespace dao {
     AtlasTexture::AtlasTexture(const TextureID textureId,
-                               const f32 left, const f32 up, const f32 right, const f32 down)
-        : m_textureId(textureId), m_boundingBox(left, up, right, down) {
+                               const f32 left, const f32 top, const f32 right, const f32 bottom)
+        : m_textureId(textureId), m_boundingBox(left, top, right, bottom) {
     }
 
     AtlasTexture::AtlasTexture(const TextureID textureId, const BoundingBox boundingBox)
@@ -25,5 +22,11 @@ namespace dao {
             m_boundingBox.getLeft(), m_boundingBox.getTop(),
             m_boundingBox.getLeft()+width, m_boundingBox.getTop()+height
         );
+    }
+
+    TextureID AtlasTexture::getTextureID() const { return m_textureId; }
+
+    const BoundingBox & AtlasTexture::getBoundingBox() const {
+        return m_boundingBox;
     }
 }

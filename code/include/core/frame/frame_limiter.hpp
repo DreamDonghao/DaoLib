@@ -1,7 +1,7 @@
 #pragma once
 #include <chrono>
 #include <thread>
-#include "core/tool/better_stl.hpp"
+#include <core/tool/better_stl.hpp>
 
 namespace dao {
     /// @brief 帧率限制器

@@ -1,4 +1,4 @@
-#include <core/basic_drawing_elements/glyph_atlas.hpp>
+#include <core/render/primitives/glyph_atlas.hpp>
 
 dao::GlyphAtlas::GlyphAtlas(const std::string_view &ttfPath, const f32 glyphSize, const i32 atlasSize): m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
     m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {

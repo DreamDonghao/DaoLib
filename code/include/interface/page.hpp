@@ -1,5 +1,5 @@
 #pragma once
-#include <core/frame/vertex_batch_builder.hpp>
+#include <core/render/vertex_batch_builder.hpp>
 #include <core/frame/window_controller.hpp>
 
 namespace dao {

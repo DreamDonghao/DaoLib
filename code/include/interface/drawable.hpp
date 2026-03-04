@@ -1,9 +1,5 @@
-//
-// Created by donghao on 25-12-8.
-//
-#ifndef DRAWABLE_HPP
-#define DRAWABLE_HPP
-#include "core/frame/vertex_batch_builder.hpp"
+#pragma once
+#include <core/render/vertex_batch_builder.hpp>
 
 namespace dao {
     /// @brief 可绘制对象接口
@@ -15,4 +11,3 @@ namespace dao {
         virtual void writeToBatch(VertexBatchBuilder &builder) const = 0;
     };
 }
-#endif //DRAWABLE_HPP

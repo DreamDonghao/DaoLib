@@ -1,9 +1,8 @@
 #include <core/frame/window.hpp>
 #include <core/frame/window_controller.hpp>
-#include <core/basic_drawing_elements/atlas_region.hpp>
+#include <core/render/primitives/atlas_region.hpp>
 #include <SDL3_image/SDL_image.h>
 #include <utility>
-#include <chrono>
 #include <ranges>
 
 namespace dao {
@@ -135,7 +134,7 @@ namespace dao {
             m_windowFlags);
         m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
         SDL_SetRenderVSync(m_renderer, 0);
-        m_id = SDL_GetWindowID(m_window);
+        m_id = static_cast<i32>(SDL_GetWindowID(m_window));
     }
 
 
@@ -156,7 +155,7 @@ namespace dao {
     }
 
     void Window::setPosition(const i32 x, const i32 y) const {
-        SDL_SetWindowPosition(m_window, x,y);
+        SDL_SetWindowPosition(m_window, x, y);
     }
 
     void Window::movePosition(const i32 x, const i32 y) const {

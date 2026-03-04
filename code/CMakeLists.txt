@@ -15,9 +15,9 @@ if(MSVC)
 endif()
 
 add_library(dao
-        src/core/basic_drawing_elements/atlas_texture.cpp
+        src/core/render/atlas_texture.cpp
         src/core/frame/app.cpp
-        src/core/frame/vertex_batch_builder.cpp
+        src/core/render/vertex_batch_builder.cpp
         src/core/frame/window.cpp
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
@@ -28,7 +28,7 @@ add_library(dao
         src/component/image.cpp
         src/interface/general_page.cpp
         src/daoui.cpp
-        src/core/basic_drawing_elements/glyph_atlas.hpp.cpp
+        src/core/render/primitives/glyph_atlas.hpp.cpp
 )
 
 set_target_properties(dao PROPERTIES

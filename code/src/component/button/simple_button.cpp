@@ -1,6 +1,3 @@
-//
-// Created by donghao on 2026/2/14.
-//
 
 #include <component/button/simple_button.hpp>
 

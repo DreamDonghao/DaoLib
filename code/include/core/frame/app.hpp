@@ -1,8 +1,8 @@
 #pragma once
 #include <core/frame/window.hpp>
 #include <core/frame/tray.hpp>
-#include "context.hpp"
-#include "frame_limiter.hpp"
+#include <core/frame/context.hpp>
+#include <core/frame/frame_limiter.hpp>
 
 namespace dao {
     /// @brief 应用

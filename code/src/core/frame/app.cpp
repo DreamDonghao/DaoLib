@@ -1,6 +1,3 @@
-//
-// Created by donghao on 25-12-6.
-//
 #include <core/frame/app.hpp>
 #include <ranges>
 #include <SDL3_ttf/SDL_ttf.h>

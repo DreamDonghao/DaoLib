@@ -1,15 +1,11 @@
-//
-// Created by donghao on 25-12-4.
-//
-#ifndef WINDOW_HPP
-#define WINDOW_HPP
+#pragma once
 #include <functional>
 #include <string>
 #include <SDL3/SDL.h>
 #include <interface/page.hpp>
-
-#include "app_controller.hpp"
-#include "context.hpp"
+#include <core/frame/app_controller.hpp>
+#include <core/frame/context.hpp>
+#include <core/render/vertex_batch_builder.hpp>
 
 namespace dao {
     /// @brief 窗口
@@ -123,4 +119,4 @@ namespace dao {
         };
     };
 }
-#endif //WINDOW_HPP
+

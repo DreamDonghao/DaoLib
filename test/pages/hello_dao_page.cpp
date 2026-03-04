@@ -20,7 +20,7 @@ void HelloDaoPage::update() {
     }
 
     dao::Image image1{len, 50, 150, 150, texture::image};
-    dao::Rectangle rectangle{len, 0, 100, 500, dao::hexToRGBA("#00D980")};
+    dao::Rectangle rectangle{len, 0, 100, 500, ColorRGBA("#00D980")};
     addToBatch(image, text, rectangle);
 }
 

@@ -10,7 +10,7 @@ struct Data {
 
 class TextBox : public dao::Drawable {
 public:
-    TextBox(const dao::f32 x, const dao::f32 y, const dao::f32 fontSize, const dao::ColorRGBA color = {0, 0, 0, 1},
+    TextBox(const dao::f32 x, const dao::f32 y, const dao::f32 fontSize, const dao::ColorRGBA color = dao::White,
             dao::utf32str content = U"") : text(x, y, fontSize, color, std::move(content)) {
     }
 
@@ -23,7 +23,7 @@ private:
 };
 
 class HelloDaoPage : public dao::GeneralPage {
-    TextBox text{0, 200, 200, dao::hexToRGBA("#D249FC"), U"abcA你好.。"};
+    TextBox text{0, 200, 200, dao::ColorRGBA("#D249FC"), U"abcA你好.。"};
     dao::Image image{10, 50, 200, 200, texture::image};
     dao::AtlasTexture img{texture::image, 10, 50, 160, 200};
     dao::SimpleButton simpleButton{

@@ -4,8 +4,8 @@
 #ifndef INPUT_BOX_STYLE_HPP
 #define INPUT_BOX_STYLE_HPP
 #include "input_box.hpp"
-#include "core/basic_drawing_elements/text.hpp"
-#include "core/frame/vertex_batch_builder.hpp"
+#include "../../core/render/text.hpp"
+#include "../../core/render/vertex_batch_builder.hpp"
 #include "interface/drawable.hpp"
 
 namespace dao {
@@ -14,9 +14,9 @@ namespace dao {
     class InputBoxStyle : public Drawable {
     public:
         explicit InputBoxStyle(InputBox &inputBox, const int flickerInterval = 3000)
-            : m_inputBox(&inputBox), m_rectangle(inputBox.getBoundingBox(), hexToRGBA("#FFFFFF")),
+            : m_inputBox(&inputBox), m_rectangle(inputBox.getBoundingBox(), ColorRGBA("#FFFFFF")),
               m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(), 50,
-                     hexToRGBA("#66E656"),
+                     ColorRGBA("#66E656"),
                      U""),
               m_flickerInterval(flickerInterval) {
         }
