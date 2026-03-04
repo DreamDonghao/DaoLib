@@ -9,7 +9,7 @@ var searchData=
   ['image_2ehpp_6',['image.hpp',['../image_8hpp.html',1,'']]],
   ['indices_7',['indices',['../structdao_1_1AtlasDrawBatch.html#a88e392c58cc616de9180789fdc43e8a2',1,'dao::AtlasDrawBatch']]],
   ['indicescount_8',['indicesCount',['../structdao_1_1AtlasDrawBatch.html#a0aeb26a8aa991891fd20d42094484780',1,'dao::AtlasDrawBatch']]],
-  ['init_9',['init',['../classdao_1_1Page.html#a9f42866fb33b05271618e0be64e5cfac',1,'dao::Page::init()'],['../classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7',1,'dao::GeneralPage::init()']]],
+  ['init_9',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer']]],
   ['input_10',['Input',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5',1,'dao']]],
   ['input_5fbox_2ehpp_11',['input_box.hpp',['../input__box_8hpp.html',1,'']]],
   ['input_5fbox_5fstyle_2ehpp_12',['input_box_style.hpp',['../input__box__style_8hpp.html',1,'']]],

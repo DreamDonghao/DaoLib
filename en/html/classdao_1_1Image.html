@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3170ebedf4cd59ff0bd8fe133d29d4ab" id="r_a3170ebedf4cd59ff0bd8fe133d29d4ab"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3170ebedf4cd59ff0bd8fe133d29d4ab">Image</a> (<a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y, <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> width, <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> height, <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> textureID)</td></tr>
 <tr class="memitem:aca40b163cfbf2262c3b06910afc3ecce" id="r_aca40b163cfbf2262c3b06910afc3ecce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca40b163cfbf2262c3b06910afc3ecce">setPosition</a> (<a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y)</td></tr>
 <tr class="memitem:a49b75970e3d284a29aeef95c1bc34c22" id="r_a49b75970e3d284a29aeef95c1bc34c22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49b75970e3d284a29aeef95c1bc34c22">setSize</a> (<a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y)</td></tr>
-<tr class="memitem:af7f91c28ce1a9f8d38c8c07602c7867c" id="r_af7f91c28ce1a9f8d38c8c07602c7867c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af7f91c28ce1a9f8d38c8c07602c7867c">writeToBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;builder) const override</td></tr>
-<tr class="memdesc:af7f91c28ce1a9f8d38c8c07602c7867c"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入批处理  <br /></td></tr>
+<tr class="memitem:a16dba7f5b5d1e63124459b9064186335" id="r_a16dba7f5b5d1e63124459b9064186335"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a16dba7f5b5d1e63124459b9064186335">writeToBatch</a> (<a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;builder) const override</td></tr>
+<tr class="memdesc:a16dba7f5b5d1e63124459b9064186335"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入批处理  <br /></td></tr>
 <tr class="inherit_header pub_methods_classdao_1_1Drawable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdao_1_1Drawable')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classdao_1_1Drawable.html">dao::Drawable</a></td></tr>
 <tr class="memitem:acd199ae1f40ae641c4d79236c735b018 inherit pub_methods_classdao_1_1Drawable" id="r_acd199ae1f40ae641c4d79236c735b018"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Drawable.html#acd199ae1f40ae641c4d79236c735b018">~Drawable</a> ()=default</td></tr>
 </table>
@@ -267,8 +267,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="af7f91c28ce1a9f8d38c8c07602c7867c" name="af7f91c28ce1a9f8d38c8c07602c7867c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f91c28ce1a9f8d38c8c07602c7867c">&#9670;&#160;</a></span>writeToBatch()</h2>
+<a id="a16dba7f5b5d1e63124459b9064186335" name="a16dba7f5b5d1e63124459b9064186335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dba7f5b5d1e63124459b9064186335">&#9670;&#160;</a></span>writeToBatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void dao::Image::writeToBatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -292,24 +292,24 @@ Here is the call graph for this function:</div>
 
 <p>写入批处理 </p>
 
-<p>Implements <a class="el" href="classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1">dao::Drawable</a>.</p>
+<p>Implements <a class="el" href="classdao_1_1Drawable.html#a42c9b31c223e16a540cf1d6e7fbca4bc">dao::Drawable</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="image_8cpp_source.html#l00018">18</a> of file <a class="el" href="image_8cpp_source.html">image.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                             {</div>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                        {</div>
 <div class="line"><span class="lineno">   19</span>    builder.addToBatch(m_texture);</div>
 <div class="line"><span class="lineno">   20</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1Image_af7f91c28ce1a9f8d38c8c07602c7867c_cgraph.png" border="0" usemap="#aclassdao_1_1Image_af7f91c28ce1a9f8d38c8c07602c7867c_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Image_af7f91c28ce1a9f8d38c8c07602c7867c_cgraph" id="aclassdao_1_1Image_af7f91c28ce1a9f8d38c8c07602c7867c_cgraph">
+<div class="center"><img src="classdao_1_1Image_a16dba7f5b5d1e63124459b9064186335_cgraph.png" border="0" usemap="#aclassdao_1_1Image_a16dba7f5b5d1e63124459b9064186335_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Image_a16dba7f5b5d1e63124459b9064186335_cgraph" id="aclassdao_1_1Image_a16dba7f5b5d1e63124459b9064186335_cgraph">
 <area shape="rect" title="写入批处理" alt="" coords="5,35,192,60"/>
-<area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="240,27,419,67"/>
-<area shape="poly" title=" " alt="" coords="192,45,226,45,226,50,192,50"/>
-<area shape="rect" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="467,5,620,31"/>
-<area shape="poly" title=" " alt="" coords="419,32,452,28,453,33,419,38"/>
-<area shape="rect" href="classdao_1_1AtlasTexture.html#aa508936fa5c927b89dd1889ebc9acba8" title="获取纹理ID" alt="" coords="472,55,615,95"/>
-<area shape="poly" title=" " alt="" coords="419,56,459,62,458,67,419,62"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a3c8d09826a51c0f089dede7d8faab624" title="添加纹理到批处理" alt="" coords="240,27,391,67"/>
+<area shape="poly" title=" " alt="" coords="193,45,226,45,226,50,193,50"/>
+<area shape="rect" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="439,5,592,31"/>
+<area shape="poly" title=" " alt="" coords="390,34,425,29,425,34,391,39"/>
+<area shape="rect" href="classdao_1_1AtlasTexture.html#aa508936fa5c927b89dd1889ebc9acba8" title="获取纹理ID" alt="" coords="444,55,587,95"/>
+<area shape="poly" title=" " alt="" coords="391,55,430,61,430,66,390,60"/>
 </map>
 </div>
 

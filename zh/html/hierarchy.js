@@ -6,6 +6,7 @@ var hierarchy =
     [ "dao::AtlasDrawBatch", "structdao_1_1AtlasDrawBatch.html", null ],
     [ "dao::AtlasRegion", "structdao_1_1AtlasRegion.html", null ],
     [ "dao::AtlasTexture", "classdao_1_1AtlasTexture.html", null ],
+    [ "dao::BatchRenderer", "classdao_1_1BatchRenderer.html", null ],
     [ "dao::BoundingBox", "classdao_1_1BoundingBox.html", null ],
     [ "dao::Button", "classdao_1_1Button.html", [
       [ "dao::SimpleButton", "classdao_1_1SimpleButton.html", null ]
@@ -36,7 +37,6 @@ var hierarchy =
     [ "dao::Tray", "classdao_1_1Tray.html", null ],
     [ "dao::Triangle", "classdao_1_1Triangle.html", null ],
     [ "dao::Vertex", "classdao_1_1Vertex.html", null ],
-    [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
     [ "dao::Window", "classdao_1_1Window.html", null ],
     [ "dao::WindowCommand", "structdao_1_1WindowCommand.html", null ],
     [ "dao::WindowController", "classdao_1_1WindowController.html", null ]

@@ -117,14 +117,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">页面接口  <a href="classdao_1_1Page.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AtlasDrawBatch" id="r_AtlasDrawBatch"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">纹理图集绘制批  <a href="structdao_1_1AtlasDrawBatch.html#details">More...</a><br /></td></tr>
-<tr class="memitem:VertexBatchBuilder" id="r_VertexBatchBuilder"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">顶点批处理构建器  <a href="classdao_1_1VertexBatchBuilder.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BatchRenderer" id="r_BatchRenderer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">批处理渲染器  <a href="classdao_1_1BatchRenderer.html#details">More...</a><br /></td></tr>
 <tr class="memitem:WindowCommand" id="r_WindowCommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1WindowCommand.html">WindowCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口级命令  <a href="structdao_1_1WindowCommand.html#details">More...</a><br /></td></tr>
 <tr class="memitem:WindowController" id="r_WindowController"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1WindowController.html">WindowController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口控制器  <a href="classdao_1_1WindowController.html#details">More...</a><br /></td></tr>
-<tr class="memitem:AtlasRegion" id="r_AtlasRegion"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1AtlasRegion.html">AtlasRegion</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">图集区域数据  <a href="structdao_1_1AtlasRegion.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AtlasTexture" id="r_AtlasTexture"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1AtlasTexture.html">AtlasTexture</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">图集纹理  <a href="classdao_1_1AtlasTexture.html#details">More...</a><br /></td></tr>
 <tr class="memitem:GlyphAtlas" id="r_GlyphAtlas"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a></td></tr>
@@ -133,6 +131,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">文本渲染对象  <a href="classdao_1_1Text.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Triangle" id="r_Triangle"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Triangle.html">Triangle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">三角形几何图元  <a href="classdao_1_1Triangle.html#details">More...</a><br /></td></tr>
+<tr class="memitem:AtlasRegion" id="r_AtlasRegion"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1AtlasRegion.html">AtlasRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">图集区域数据  <a href="structdao_1_1AtlasRegion.html#details">More...</a><br /></td></tr>
 <tr class="memitem:MappedRegion" id="r_MappedRegion"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1MappedRegion.html">MappedRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">映射区域  <a href="classdao_1_1MappedRegion.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BoundingBox" id="r_BoundingBox"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a></td></tr>
@@ -1038,15 +1038,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedao_ad96690207b9d82980d7a5d689b83a950_icgraph.png" border="0" usemap="#anamespacedao_ad96690207b9d82980d7a5d689b83a950_icgraph" loading="lazy" alt=""/></div>
 <map name="anamespacedao_ad96690207b9d82980d7a5d689b83a950_icgraph" id="anamespacedao_ad96690207b9d82980d7a5d689b83a950_icgraph">
-<area shape="rect" title="通过纹理ID获取对应的图集区域数据" alt="" coords="503,64,656,89"/>
-<area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="260,27,439,67"/>
-<area shape="poly" title=" " alt="" coords="488,68,439,61,439,56,489,63"/>
-<area shape="rect" href="classdao_1_1Window.html#a9b1fe05874c3f7bedb132304f9471645" title="加载纹理对应的纹理图集" alt="" coords="244,92,455,117"/>
-<area shape="poly" title=" " alt="" coords="489,90,454,95,453,89,489,85"/>
-<area shape="rect" href="classdao_1_1Image.html#af7f91c28ce1a9f8d38c8c07602c7867c" title="写入批处理" alt="" coords="7,5,194,31"/>
-<area shape="poly" title=" " alt="" coords="246,38,194,32,194,26,246,33"/>
-<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="5,55,196,95"/>
-<area shape="poly" title=" " alt="" coords="247,62,196,67,196,62,246,56"/>
+<area shape="rect" title="通过纹理ID获取对应的图集区域数据" alt="" coords="443,65,596,91"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a3c8d09826a51c0f089dede7d8faab624" title="添加纹理到批处理" alt="" coords="244,26,395,66"/>
+<area shape="poly" title=" " alt="" coords="429,66,395,61,396,55,430,61"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a2081e7bf8b0d39666ce99729d0b4a8dc" title="注册纹理到渲染器" alt="" coords="244,90,395,130"/>
+<area shape="poly" title=" " alt="" coords="430,95,396,101,395,95,429,90"/>
+<area shape="rect" href="classdao_1_1Image.html#a16dba7f5b5d1e63124459b9064186335" title="写入批处理" alt="" coords="7,5,194,31"/>
+<area shape="poly" title=" " alt="" coords="230,37,194,33,194,27,231,32"/>
+<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a3558bd62a99f61094c17630a66cd0834" title="加入绘制批处理" alt="" coords="5,55,196,95"/>
+<area shape="poly" title=" " alt="" coords="231,61,197,65,196,60,230,55"/>
 </map>
 </div>
 

@@ -1,3 +1,17 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$classdao_1_1FrameLimiter.html" title="帧率限制器" alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000000" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="5,104,121,129"/>
+<area shape="rect" id="Node000001" href="$classdao_1_1AnimatedSprite.html" title=" " alt="" coords="169,5,324,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="89,93,125,67,168,41,199,28,201,33,171,46,128,71,92,97"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ButtonStyle.html" title="按钮样式接口" alt="" coords="181,55,312,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="123,98,198,78,199,83,125,103"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Image.html" title=" " alt="" coords="199,104,294,129"/>
+<area shape="poly" id="edge6_Node000000_Node000005" title=" " alt="" coords="135,114,199,114,199,119,135,119"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBoxStyle.html" title=" " alt="" coords="174,153,319,179"/>
+<area shape="poly" id="edge7_Node000000_Node000006" title=" " alt="" coords="125,130,199,151,198,156,123,135"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Rectangle.html" title="矩形" alt="" coords="187,203,306,228"/>
+<area shape="poly" id="edge8_Node000000_Node000007" title=" " alt="" coords="92,136,128,163,171,189,198,200,196,205,168,194,125,168,89,140"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1SimpleTextButtonStyle.html" title=" " alt="" coords="372,27,575,52"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="325,55,372,49,372,54,326,60"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1SimpleTextureButtonStyle.html" title=" " alt="" coords="378,77,569,117"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="326,75,378,82,377,87,325,80"/>
 </map>

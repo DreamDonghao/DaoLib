@@ -1,7 +1,0 @@
-<map id="dao::VertexBatchBuilder::addToBatch" name="dao::VertexBatchBuilder::addToBatch">
-<area shape="rect" id="Node000001" title="添加纹理到批处理" alt="" coords="5,27,184,67"/>
-<area shape="rect" id="Node000002" href="$namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="232,5,385,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,32,218,28,218,33,185,38"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1AtlasTexture.html#aa508936fa5c927b89dd1889ebc9acba8" title="获取纹理ID" alt="" coords="237,55,380,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,56,224,62,224,67,184,62"/>
-</map>

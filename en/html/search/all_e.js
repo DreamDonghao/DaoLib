@@ -14,10 +14,10 @@ var searchData=
   ['getcontent_11',['getContent',['../classdao_1_1Text.html#ac8c1d3718f3357d0217dcbce4ac272a9',1,'dao::Text']]],
   ['getcontext_12',['getContext',['../classdao_1_1App.html#a5ab82fd0b55c46c5237ebd860a2cd30b',1,'dao::App::getContext()'],['../classdao_1_1Tray.html#af5a88d3a327243a7660680e2a670c480',1,'dao::Tray::getContext()'],['../classdao_1_1Page.html#a59b4d56493e5eb1a73585bcca81e6523',1,'dao::Page::getContext()'],['../classdao_1_1GeneralPage.html#acd3a2fad27d67916cb9107aa9b27d342',1,'dao::GeneralPage::getContext()']]],
   ['getcursorpos_13',['getCursorPos',['../classdao_1_1InputBox.html#a3c3924b780e16af37e536a3269287907',1,'dao::InputBox']]],
-  ['getdrawbatches_14',['getDrawBatches',['../classdao_1_1VertexBatchBuilder.html#a492ba0fab47dcd02c67fbdcf0803a63f',1,'dao::VertexBatchBuilder']]],
+  ['getdrawbatches_14',['getDrawBatches',['../classdao_1_1BatchRenderer.html#a4b44d5e385ebd187106034d083b6d0e3',1,'dao::BatchRenderer']]],
   ['getfontsize_15',['getFontSize',['../classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff',1,'dao::Text']]],
   ['getglyphaspectratio_16',['getGlyphAspectRatio',['../classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8',1,'dao::GlyphAtlas::getGlyphAspectRatio()'],['../classdao_1_1GeneralPage.html#a53326b138f13a0007cf7ddf1f8324755',1,'dao::GeneralPage::getGlyphAspectRatio()']]],
-  ['getglyphatlas_17',['getGlyphAtlas',['../classdao_1_1Page.html#a2e2ba0bcd05ef75790b48406656e755d',1,'dao::Page::getGlyphAtlas()'],['../classdao_1_1VertexBatchBuilder.html#af2e5e1df7d9ff8e0a044831646af7066',1,'dao::VertexBatchBuilder::getGlyphAtlas()'],['../classdao_1_1GeneralPage.html#a68d560dbe0586089614fe6682ab6f608',1,'dao::GeneralPage::getGlyphAtlas()']]],
+  ['getglyphatlas_17',['getGlyphAtlas',['../classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867',1,'dao::BatchRenderer']]],
   ['getglyphatlasregion_18',['getGlyphAtlasRegion',['../classdao_1_1GlyphAtlas.html#a1b500c6d6a06092f8522ae1a37f062a6',1,'dao::GlyphAtlas']]],
   ['getheight_19',['getHeight',['../classdao_1_1BoundingBox.html#a6a437676a6e700e7aea9c95bc049e8fe',1,'dao::BoundingBox']]],
   ['getid_20',['getId',['../classdao_1_1Window.html#af747f33b5f86ff4807027f7b200c90a4',1,'dao::Window']]],
@@ -39,8 +39,8 @@ var searchData=
   ['getwindowcontroller_36',['getWindowController',['../classdao_1_1Page.html#a2c0341df72814f338b2a85bbd1041f92',1,'dao::Page::getWindowController()'],['../classdao_1_1GeneralPage.html#a628205314933bbcabdf7532190cab7b5',1,'dao::GeneralPage::getWindowController()']]],
   ['getx_37',['getX',['../classdao_1_1Text.html#a3ffd6e138acb26e8b6baaa932f8932f3',1,'dao::Text']]],
   ['gety_38',['getY',['../classdao_1_1Text.html#af361e61b1290556adc4120cb5d2db2ac',1,'dao::Text']]],
-  ['glyph_5fatlas_2ehpp_39',['glyph_atlas.hpp',['../glyph__atlas_8hpp.html',1,'']]],
-  ['glyph_5fatlas_2ehpp_2ecpp_40',['glyph_atlas.hpp.cpp',['../glyph__atlas_8hpp_8cpp.html',1,'']]],
+  ['glyph_5fatlas_2ecpp_39',['glyph_atlas.cpp',['../glyph__atlas_8cpp.html',1,'']]],
+  ['glyph_5fatlas_2ehpp_40',['glyph_atlas.hpp',['../glyph__atlas_8hpp.html',1,'']]],
   ['glyphatlas_41',['GlyphAtlas',['../classdao_1_1GlyphAtlas.html',1,'dao::GlyphAtlas'],['../classdao_1_1GlyphAtlas.html#ab6324dcd18363531c22815b9de836f30',1,'dao::GlyphAtlas::GlyphAtlas()=default'],['../classdao_1_1GlyphAtlas.html#a91647ff29eb84224001b4d73de9eacd5',1,'dao::GlyphAtlas::GlyphAtlas(const std::string_view &amp;ttfPath, f32 glyphSize=24, i32 atlasSize=1024)']]],
   ['green_42',['Green',['../namespacedao.html#a97d9344a7a630a916ddf0a0bae63a1b2',1,'dao']]]
 ];

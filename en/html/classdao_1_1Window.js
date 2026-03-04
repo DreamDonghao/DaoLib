@@ -13,8 +13,6 @@ var classdao_1_1Window =
     [ "isRunning", "classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb", null ],
     [ "movePosition", "classdao_1_1Window.html#abd4677dadbb2df5c579953224348b4a3", null ],
     [ "registerPageTexture", "classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6", null ],
-    [ "registerTexture", "classdao_1_1Window.html#a9b1fe05874c3f7bedb132304f9471645", null ],
-    [ "render", "classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10", null ],
     [ "setClickThrough", "classdao_1_1Window.html#aee09499f8b02c51e3589c654930c7fb5", null ],
     [ "setContext", "classdao_1_1Window.html#a57479f8d69f04bca8e290838fa87cafe", null ],
     [ "setPosition", "classdao_1_1Window.html#a908a73535d29d58cb41e2ac46a35689e", null ],

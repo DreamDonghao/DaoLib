@@ -25,7 +25,7 @@ var searchData=
   ['settitle_22',['setTitle',['../classdao_1_1Window.html#a4141bfcdcbd8d86fd07be7ee96f4a837',1,'dao::Window']]],
   ['settop_23',['setTop',['../classdao_1_1BoundingBox.html#a72b03878d009cfafd6336c9dddd7ebdf',1,'dao::BoundingBox']]],
   ['setvertex_24',['setVertex',['../classdao_1_1Triangle.html#ae5fe3a32a96e2d316f40cc799fedf100',1,'dao::Triangle::setVertex(const size_t index, const f32 x, const f32 y, const ColorRGBA &amp;color)'],['../classdao_1_1Triangle.html#a49b56d7a4124ff8701d16961e02d501e',1,'dao::Triangle::setVertex(const size_t index, const Vertex &amp;vertex)']]],
-  ['setvertexbatch_25',['setVertexBatch',['../classdao_1_1Page.html#a8fa75fad5bc57d1e97ae16f631fc5a38',1,'dao::Page::setVertexBatch()'],['../classdao_1_1GeneralPage.html#a6a5a754b1112b8ca02ff91d37a61f0c7',1,'dao::GeneralPage::setVertexBatch()']]],
+  ['setvertexbatch_25',['setVertexBatch',['../classdao_1_1Page.html#ace3184b5adbf9b1d16ec48c9c1053bcb',1,'dao::Page::setVertexBatch()'],['../classdao_1_1GeneralPage.html#a40776c8f8bfe0bc115822057b36a82a2',1,'dao::GeneralPage::setVertexBatch()']]],
   ['setvertexcolor_26',['setVertexColor',['../classdao_1_1Triangle.html#af320594c9eb073fafd5bc61746a13fd2',1,'dao::Triangle']]],
   ['setvertexposition_27',['setVertexPosition',['../classdao_1_1Triangle.html#a50d5ba7f7afec3421455e6dbe2062cb7',1,'dao::Triangle']]],
   ['setx_28',['setX',['../classdao_1_1Text.html#afb8d6470b1fd8f858e6b30772429be45',1,'dao::Text']]],

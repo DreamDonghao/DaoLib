@@ -126,8 +126,8 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a836705b180a043707ec8a6d9472a7ef5" id="r_a836705b180a043707ec8a6d9472a7ef5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a836705b180a043707ec8a6d9472a7ef5">SimpleTextureButtonStyle</a> (<a class="el" href="classdao_1_1SimpleButton.html">SimpleButton</a> &amp;button, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atnId, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> athId, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atpId)</td></tr>
 <tr class="memitem:a7655f2794d0f071d12b7f13698a4a4b5" id="r_a7655f2794d0f071d12b7f13698a4a4b5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7655f2794d0f071d12b7f13698a4a4b5">bindButton</a> (<a class="el" href="classdao_1_1Button.html">Button</a> *button) override</td></tr>
 <tr class="memdesc:a7655f2794d0f071d12b7f13698a4a4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定按钮  <br /></td></tr>
-<tr class="memitem:a1d7da04151208e1e65826293f7154f8b" id="r_a1d7da04151208e1e65826293f7154f8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1d7da04151208e1e65826293f7154f8b">writeToBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;builder) const override</td></tr>
-<tr class="memdesc:a1d7da04151208e1e65826293f7154f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入绘制批处理  <br /></td></tr>
+<tr class="memitem:a3558bd62a99f61094c17630a66cd0834" id="r_a3558bd62a99f61094c17630a66cd0834"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3558bd62a99f61094c17630a66cd0834">writeToBatch</a> (<a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;builder) const override</td></tr>
+<tr class="memdesc:a3558bd62a99f61094c17630a66cd0834"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入绘制批处理  <br /></td></tr>
 <tr class="inherit_header pub_methods_classdao_1_1ButtonStyle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdao_1_1ButtonStyle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="classdao_1_1ButtonStyle.html">dao::ButtonStyle</a></td></tr>
 <tr class="memitem:a8076c5713d1de630655dc285cb562bf4 inherit pub_methods_classdao_1_1ButtonStyle" id="r_a8076c5713d1de630655dc285cb562bf4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1ButtonStyle.html#a8076c5713d1de630655dc285cb562bf4">~ButtonStyle</a> () override=default</td></tr>
 </table>
@@ -302,8 +302,8 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1d7da04151208e1e65826293f7154f8b" name="a1d7da04151208e1e65826293f7154f8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d7da04151208e1e65826293f7154f8b">&#9670;&#160;</a></span>writeToBatch()</h2>
+<a id="a3558bd62a99f61094c17630a66cd0834" name="a3558bd62a99f61094c17630a66cd0834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3558bd62a99f61094c17630a66cd0834">&#9670;&#160;</a></span>writeToBatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::SimpleTextureButtonStyle::writeToBatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -327,10 +327,10 @@ Public 成员函数</h2></td></tr>
 
 <p>加入绘制批处理 </p>
 
-<p>实现了 <a class="el" href="classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98">dao::ButtonStyle</a>.</p>
+<p>实现了 <a class="el" href="classdao_1_1ButtonStyle.html#aa582c7ca7d1927d22151d31b14507959">dao::ButtonStyle</a>.</p>
 
 <p class="definition">在文件 <a class="el" href="simple__texture__button__style_8hpp_source.html">simple_texture_button_style.hpp</a> 第 <a class="el" href="simple__texture__button__style_8hpp_source.html#l00030">30</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                                      {</div>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                                 {</div>
 <div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> (m_button-&gt;isEnable()) {</div>
 <div class="line"><span class="lineno">   32</span>                <span class="keywordflow">if</span> (m_button-&gt;getStatus() == <a class="code hl_enumvalue" href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0">ButtonStatus::Normal</a>) {</div>
 <div class="line"><span class="lineno">   33</span>                    builder.addToBatch(m_normalStyle);</div>
@@ -347,19 +347,19 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1SimpleTextureButtonStyle_a1d7da04151208e1e65826293f7154f8b_cgraph.png" border="0" usemap="#aclassdao_1_1SimpleTextureButtonStyle_a1d7da04151208e1e65826293f7154f8b_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1SimpleTextureButtonStyle_a1d7da04151208e1e65826293f7154f8b_cgraph" id="aclassdao_1_1SimpleTextureButtonStyle_a1d7da04151208e1e65826293f7154f8b_cgraph">
+<div class="center"><img src="classdao_1_1SimpleTextureButtonStyle_a3558bd62a99f61094c17630a66cd0834_cgraph.png" border="0" usemap="#aclassdao_1_1SimpleTextureButtonStyle_a3558bd62a99f61094c17630a66cd0834_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1SimpleTextureButtonStyle_a3558bd62a99f61094c17630a66cd0834_cgraph" id="aclassdao_1_1SimpleTextureButtonStyle_a3558bd62a99f61094c17630a66cd0834_cgraph">
 <area shape="rect" title="加入绘制批处理" alt="" coords="5,83,196,123"/>
-<area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加纹理到批处理" alt="" coords="244,26,423,66"/>
-<area shape="poly" title=" " alt="" coords="182,81,238,67,239,72,183,86"/>
-<area shape="rect" href="classdao_1_1Button.html#a9a4f38eac038cfb94d792ee4190f6245" title="获取当前状态" alt="" coords="250,91,417,116"/>
-<area shape="poly" title=" " alt="" coords="196,101,236,101,236,106,196,106"/>
-<area shape="rect" href="classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354" title=" " alt="" coords="253,140,413,165"/>
-<area shape="poly" title=" " alt="" coords="196,121,260,135,259,140,195,126"/>
-<area shape="rect" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="471,5,624,31"/>
-<area shape="poly" title=" " alt="" coords="423,32,456,27,457,32,423,37"/>
-<area shape="rect" href="classdao_1_1AtlasTexture.html#aa508936fa5c927b89dd1889ebc9acba8" title="获取纹理ID" alt="" coords="476,55,619,95"/>
-<area shape="poly" title=" " alt="" coords="423,56,463,61,462,66,423,61"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a3c8d09826a51c0f089dede7d8faab624" title="添加纹理到批处理" alt="" coords="252,26,403,66"/>
+<area shape="poly" title=" " alt="" coords="180,81,238,66,239,71,181,86"/>
+<area shape="rect" href="classdao_1_1Button.html#a9a4f38eac038cfb94d792ee4190f6245" title="获取当前状态" alt="" coords="244,91,411,116"/>
+<area shape="poly" title=" " alt="" coords="196,101,230,101,230,106,196,106"/>
+<area shape="rect" href="classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354" title=" " alt="" coords="247,140,407,165"/>
+<area shape="poly" title=" " alt="" coords="194,121,256,134,255,140,193,126"/>
+<area shape="rect" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="459,5,612,31"/>
+<area shape="poly" title=" " alt="" coords="402,33,445,27,446,33,403,39"/>
+<area shape="rect" href="classdao_1_1AtlasTexture.html#aa508936fa5c927b89dd1889ebc9acba8" title="获取纹理ID" alt="" coords="464,55,607,95"/>
+<area shape="poly" title=" " alt="" coords="403,54,451,61,450,66,402,59"/>
 </map>
 </div>
 

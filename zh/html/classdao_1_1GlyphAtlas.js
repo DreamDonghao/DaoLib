@@ -8,5 +8,5 @@ var classdao_1_1GlyphAtlas =
     [ "getGlyphAspectRatio", "classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8", null ],
     [ "getGlyphAtlasRegion", "classdao_1_1GlyphAtlas.html#a1b500c6d6a06092f8522ae1a37f062a6", null ],
     [ "isUpdated", "classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8", null ],
-    [ "registerGlyph", "classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e", null ]
+    [ "registerGlyph", "classdao_1_1GlyphAtlas.html#a9d0d7dc2944e7ceb563ca1741fa88e5e", null ]
 ];

@@ -123,8 +123,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:aaf29a1c79b78879d7df037ec55e34969 template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaf29a1c79b78879d7df037ec55e34969">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const std::array&lt; <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a>, N &gt; &amp;textureIDs)</td></tr>
 <tr class="memitem:ae72060ce09468af2c8981227b4eac886" id="r_ae72060ce09468af2c8981227b4eac886"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae72060ce09468af2c8981227b4eac886">AnimatedSprite</a> (const <a class="el" href="namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6">u32</a> fps, const float32 x, const float32 y, const float32 width, const float32 height, const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> begin, const <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> end)</td></tr>
 <tr class="memitem:a87da06007bdd6ddbf44f9d95700e3ce6" id="r_a87da06007bdd6ddbf44f9d95700e3ce6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a87da06007bdd6ddbf44f9d95700e3ce6">beginUse</a> () const</td></tr>
-<tr class="memitem:a6a2e1768db693d5802df32787579602e" id="r_a6a2e1768db693d5802df32787579602e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a2e1768db693d5802df32787579602e">writeToBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;builder) const override</td></tr>
-<tr class="memdesc:a6a2e1768db693d5802df32787579602e"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入批处理  <br /></td></tr>
+<tr class="memitem:a6a2e1768db693d5802df32787579602e" id="r_a6a2e1768db693d5802df32787579602e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a2e1768db693d5802df32787579602e">writeToBatch</a> (VertexBatchBuilder &amp;builder) const override</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock">
@@ -406,20 +405,16 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="memname">void dao::AnimatedSprite::writeToBatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
+          <td class="paramtype">VertexBatchBuilder &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>写入批处理 </p>
-
-<p>实现了 <a class="el" href="classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1">dao::Drawable</a>.</p>
 
 <p class="definition">在文件 <a class="el" href="animated__sprite_8hpp_source.html">animated_sprite.hpp</a> 第 <a class="el" href="animated__sprite_8hpp_source.html#l00047">47</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>                                                                      {</div>

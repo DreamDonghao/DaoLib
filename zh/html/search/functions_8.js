@@ -1,7 +1,7 @@
 var searchData=
 [
   ['image_0',['Image',['../classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab',1,'dao::Image']]],
-  ['init_1',['init',['../classdao_1_1Page.html#a9f42866fb33b05271618e0be64e5cfac',1,'dao::Page::init()'],['../classdao_1_1GeneralPage.html#a4250a74276c9e8423ac2215f869eadf7',1,'dao::GeneralPage::init()']]],
+  ['init_1',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer']]],
   ['inputbox_2',['InputBox',['../classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3',1,'dao::InputBox']]],
   ['inputboxstyle_3',['InputBoxStyle',['../classdao_1_1InputBoxStyle.html#abd8daf3ce5f3c3c4f75dab5a8a615cc9',1,'dao::InputBoxStyle']]],
   ['insert_4',['insert',['../classdao_1_1Text.html#ae0c3acc77e4042276cdc2503d9f7ef9f',1,'dao::Text']]],

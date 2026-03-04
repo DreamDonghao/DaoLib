@@ -126,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0924005b1ba087962d7328603e28b205" id="r_a0924005b1ba087962d7328603e28b205"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0924005b1ba087962d7328603e28b205">SimpleTextButtonStyle</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> w, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> h, const std::u32string &amp;text, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> textSize, const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> textColor, <a class="el" href="classdao_1_1Button.html">Button</a> *button)</td></tr>
 <tr class="memitem:a6e15768e8e4e16656757476a90b8a849" id="r_a6e15768e8e4e16656757476a90b8a849"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6e15768e8e4e16656757476a90b8a849">SimpleTextButtonStyle</a> (const SimpleTextButtonStyle &amp;other) noexcept</td></tr>
 <tr class="memitem:a8f86213d9fa6b3231cc0cae485440a29" id="r_a8f86213d9fa6b3231cc0cae485440a29"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8f86213d9fa6b3231cc0cae485440a29">SimpleTextButtonStyle</a> (SimpleTextButtonStyle &amp;&amp;other) noexcept</td></tr>
-<tr class="memitem:aebb191eeab6f4abcdc68ac2154b14c08" id="r_aebb191eeab6f4abcdc68ac2154b14c08"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aebb191eeab6f4abcdc68ac2154b14c08">writeToBatch</a> (<a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;builder) const override</td></tr>
-<tr class="memdesc:aebb191eeab6f4abcdc68ac2154b14c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入绘制批处理  <br /></td></tr>
+<tr class="memitem:a346213b60448513e6b0d6c3fde4d6d8d" id="r_a346213b60448513e6b0d6c3fde4d6d8d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a346213b60448513e6b0d6c3fde4d6d8d">writeToBatch</a> (<a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;builder) const override</td></tr>
+<tr class="memdesc:a346213b60448513e6b0d6c3fde4d6d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入绘制批处理  <br /></td></tr>
 <tr class="memitem:a7107b8f54c4cfc4da6b0cab59f823602" id="r_a7107b8f54c4cfc4da6b0cab59f823602"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7107b8f54c4cfc4da6b0cab59f823602">setText</a> (const std::u32string &amp;text)</td></tr>
 <tr class="memitem:a9cced42b3569cac35c2ec9fbcc12e498" id="r_a9cced42b3569cac35c2ec9fbcc12e498"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9cced42b3569cac35c2ec9fbcc12e498">bindButton</a> (<a class="el" href="classdao_1_1Button.html">Button</a> *button) override</td></tr>
 <tr class="memdesc:a9cced42b3569cac35c2ec9fbcc12e498"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定按钮  <br /></td></tr>
@@ -368,8 +368,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aebb191eeab6f4abcdc68ac2154b14c08" name="aebb191eeab6f4abcdc68ac2154b14c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb191eeab6f4abcdc68ac2154b14c08">&#9670;&#160;</a></span>writeToBatch()</h2>
+<a id="a346213b60448513e6b0d6c3fde4d6d8d" name="a346213b60448513e6b0d6c3fde4d6d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346213b60448513e6b0d6c3fde4d6d8d">&#9670;&#160;</a></span>writeToBatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +380,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void dao::SimpleTextButtonStyle::writeToBatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdao_1_1VertexBatchBuilder.html">VertexBatchBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>builder</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -393,10 +393,10 @@ Here is the call graph for this function:</div>
 
 <p>加入绘制批处理 </p>
 
-<p>Implements <a class="el" href="classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98">dao::ButtonStyle</a>.</p>
+<p>Implements <a class="el" href="classdao_1_1ButtonStyle.html#aa582c7ca7d1927d22151d31b14507959">dao::ButtonStyle</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="simple__text__button__style_8hpp_source.html#l00031">31</a> of file <a class="el" href="simple__text__button__style_8hpp_source.html">simple_text_button_style.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                                      {</div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                                 {</div>
 <div class="line"><span class="lineno">   32</span>            <span class="keywordflow">if</span> (m_button-&gt;isEnable()) {</div>
 <div class="line"><span class="lineno">   33</span>                builder.addToBatch(m_text);</div>
 <div class="line"><span class="lineno">   34</span>            }</div>
@@ -404,8 +404,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1SimpleTextButtonStyle_aebb191eeab6f4abcdc68ac2154b14c08_cgraph.png" border="0" usemap="#aclassdao_1_1SimpleTextButtonStyle_aebb191eeab6f4abcdc68ac2154b14c08_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1SimpleTextButtonStyle_aebb191eeab6f4abcdc68ac2154b14c08_cgraph" id="aclassdao_1_1SimpleTextButtonStyle_aebb191eeab6f4abcdc68ac2154b14c08_cgraph">
+<div class="center"><img src="classdao_1_1SimpleTextButtonStyle_a346213b60448513e6b0d6c3fde4d6d8d_cgraph.png" border="0" usemap="#aclassdao_1_1SimpleTextButtonStyle_a346213b60448513e6b0d6c3fde4d6d8d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1SimpleTextButtonStyle_a346213b60448513e6b0d6c3fde4d6d8d_cgraph" id="aclassdao_1_1SimpleTextButtonStyle_a346213b60448513e6b0d6c3fde4d6d8d_cgraph">
 <area shape="rect" title="加入绘制批处理" alt="" coords="5,5,208,45"/>
 <area shape="rect" href="classdao_1_1Button.html#a60046bc3238ec9169c98197241bbf354" title=" " alt="" coords="256,13,416,38"/>
 <area shape="poly" title=" " alt="" coords="208,23,242,23,242,28,208,28"/>

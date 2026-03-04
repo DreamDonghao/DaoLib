@@ -2,7 +2,7 @@ var searchData=
 [
   ['c_0',['C',['../classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a431586ae5aeac6dc9bd0e008c7432f5d',1,'dao::Triangle']]],
   ['callback_1',['callback',['../namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d',1,'dao']]],
-  ['cleardrawbatches_2',['clearDrawBatches',['../classdao_1_1VertexBatchBuilder.html#a2351da4d72765f2b8c47eec0be4d64e1',1,'dao::VertexBatchBuilder']]],
+  ['cleardrawbatches_2',['clearDrawBatches',['../classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2',1,'dao::BatchRenderer']]],
   ['clearupdateflag_3',['clearUpdateFlag',['../classdao_1_1GlyphAtlas.html#a2cdee5e502fad6002385b5605e36469d',1,'dao::GlyphAtlas']]],
   ['clock_4',['clock',['../classdao_1_1TickTimer.html#a406d0262c5830ca8019d33cd8b3fe230',1,'dao::TickTimer']]],
   ['clone_20the_20repository_5',['2. Clone the Repository',['../join.html#autotoc_md4',1,'']]],

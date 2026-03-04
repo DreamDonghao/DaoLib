@@ -1,7 +1,7 @@
 var searchData=
 [
   ['callback_0',['callback',['../namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d',1,'dao']]],
-  ['cleardrawbatches_1',['clearDrawBatches',['../classdao_1_1VertexBatchBuilder.html#a2351da4d72765f2b8c47eec0be4d64e1',1,'dao::VertexBatchBuilder']]],
+  ['cleardrawbatches_1',['clearDrawBatches',['../classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2',1,'dao::BatchRenderer']]],
   ['clearupdateflag_2',['clearUpdateFlag',['../classdao_1_1GlyphAtlas.html#a2cdee5e502fad6002385b5605e36469d',1,'dao::GlyphAtlas']]],
   ['close_3',['close',['../classdao_1_1App.html#a327fa218cd155dd0b048f2d9d8ab32c8',1,'dao::App::close()'],['../classdao_1_1AppController.html#a92399095cf556e7fcf26f69f039a5f18',1,'dao::AppController::close()'],['../classdao_1_1Page.html#aca509ded5e077e2100b1b830d07777d8',1,'dao::Page::close()'],['../classdao_1_1GeneralPage.html#a679837d73d36b06f37a6d9f10ff52d0d',1,'dao::GeneralPage::close()']]],
   ['color_4',['color',['../classdao_1_1Vertex.html#a1905ea697181a73c9d282a1744add5e9',1,'dao::Vertex']]],
