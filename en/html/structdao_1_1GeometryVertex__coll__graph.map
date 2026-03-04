@@ -1,5 +1,0 @@
-<map id="dao::GeometryVertex" name="dao::GeometryVertex">
-<area shape="rect" id="Node000001" title="几何图形顶点" alt="" coords="5,201,177,287"/>
-<area shape="rect" id="Node000002" href="$structdao_1_1ColorRGBA.html" title="RGBA 颜色" alt="" coords="33,5,150,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,131,94,184,89,184,89,131"/>
-</map>

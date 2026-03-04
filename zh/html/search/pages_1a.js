@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['编写代码并提交_0',['4. 编写代码并提交',['../join.html#autotoc_md8',1,'']]]
+  ['从零基础到精通教程_0',['从零基础到精通教程',['../tutorial.html',1,'DaoUI 从零基础到精通教程'],['../tutorial.html#autotoc_md22',1,'DaoUI 从零基础到精通教程']]]
 ];

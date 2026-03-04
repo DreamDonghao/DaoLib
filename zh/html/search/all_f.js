@@ -5,9 +5,8 @@ var searchData=
   ['hash_5fmap_2',['hash_map',['../namespacedao.html#a0ad639e9f8555dbf881042e9de05d81f',1,'dao']]],
   ['hasservice_3',['hasService',['../classdao_1_1Context.html#a57373ea1f6bda4c3e6e02b79de69156a',1,'dao::Context']]],
   ['hasstate_4',['hasState',['../classdao_1_1Context.html#a77fb6f1fa808126153255191bf562ed0',1,'dao::Context']]],
-  ['hexbytetou8_5',['hexByteToU8',['../namespacedao.html#a1c44af593e54125e217d05ed4a85451d',1,'dao']]],
-  ['hextorgba_6',['hexToRGBA',['../namespacedao.html#a542a4f45ed97f24bacd1eaaea3ff0a01',1,'dao']]],
-  ['hide_7',['hide',['../classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905',1,'dao::Window']]],
-  ['hidewindow_8',['hideWindow',['../classdao_1_1App.html#aa14ee9c5017261919f8f6514445fe180',1,'dao::App']]],
-  ['hover_9',['Hover',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc',1,'dao']]]
+  ['hextorgba_5',['hexToRGBA',['../classdao_1_1ColorRGBA.html#ab097f5daa2d6ef03bc27196453ebc285',1,'dao::ColorRGBA']]],
+  ['hide_6',['hide',['../classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905',1,'dao::Window']]],
+  ['hidewindow_7',['hideWindow',['../classdao_1_1App.html#aa14ee9c5017261919f8f6514445fe180',1,'dao::App']]],
+  ['hover_8',['Hover',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc',1,'dao']]]
 ];

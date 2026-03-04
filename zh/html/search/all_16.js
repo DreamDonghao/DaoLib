@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['r_0',['r',['../structdao_1_1ColorRGBA.html#a39863dbef66b9b3cb26673d2a2fdde2b',1,'dao::ColorRGBA']]],
-  ['randomint_1',['randomInt',['../namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711',1,'dao']]],
-  ['ratio_2',['ratio',['../namespacedao.html#af0e428264a3d67735ed1bbfa2c4f8073',1,'dao']]],
-  ['rectangle_3',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao::Rectangle'],['../classdao_1_1Rectangle.html#a35532d25c97f7b78e85abe9aa77f88b8',1,'dao::Rectangle::Rectangle(const f32 x, const f32 y, const f32 w, const f32 h, const ColorRGBA color)'],['../classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9',1,'dao::Rectangle::Rectangle(const BoundingBox box, const ColorRGBA color)']]],
-  ['rectangle_2ehpp_4',['rectangle.hpp',['../rectangle_8hpp.html',1,'']]],
-  ['regions_5',['regions',['../namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e',1,'dao']]],
-  ['registerglyph_6',['registerGlyph',['../classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e',1,'dao::GlyphAtlas']]],
-  ['registerpagetexture_7',['registerPageTexture',['../classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6',1,'dao::Window']]],
-  ['registertexture_8',['registerTexture',['../classdao_1_1Window.html#a9b1fe05874c3f7bedb132304f9471645',1,'dao::Window']]],
-  ['render_9',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
-  ['request_10',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['reset_11',['reset',['../classdao_1_1TickTimer.html#ab2a607659a93d2ee9b6c6477566d5078',1,'dao::TickTimer']]],
-  ['resetqudaindices_12',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
-  ['rgbnorm_13',['rgbNorm',['../namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26',1,'dao']]],
-  ['ring_5fvector_2ehpp_14',['ring_vector.hpp',['../ring__vector_8hpp.html',1,'']]],
-  ['ringvector_15',['RingVector',['../classdao_1_1RingVector.html',1,'dao::RingVector&lt; Type &gt;'],['../classdao_1_1RingVector.html#a38432003aae0b7b7cd7dde56a3c9cba4',1,'dao::RingVector::RingVector()']]],
-  ['ringvector_3c_20dao_3a_3aatlastexture_20_3e_16',['RingVector&lt; dao::AtlasTexture &gt;',['../classdao_1_1RingVector.html',1,'dao']]],
-  ['run_17',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
+  ['q1_3a_20如何调试_20ui_20布局？_0',['Q1: 如何调试 UI 布局？',['../tutorial.html#autotoc_md67',1,'']]],
+  ['q2_3a_20如何实现页面切换？_1',['Q2: 如何实现页面切换？',['../tutorial.html#autotoc_md68',1,'']]],
+  ['q3_3a_20如何处理中文输入？_2',['Q3: 如何处理中文输入？',['../tutorial.html#autotoc_md69',1,'']]],
+  ['q4_3a_20如何自定义组件样式？_3',['Q4: 如何自定义组件样式？',['../tutorial.html#autotoc_md70',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['创建工作分支_0',['3. 创建工作分支',['../join.html#autotoc_md6',1,'']]]
+  ['从零基础到精通教程_0',['从零基础到精通教程',['../tutorial.html',1,'DaoUI 从零基础到精通教程'],['../tutorial.html#autotoc_md22',1,'DaoUI 从零基础到精通教程']]]
 ];

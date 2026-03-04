@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['windowcommandtype_0',['WindowCommandType',['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67',1,'dao']]]
+  ['vertexindex_0',['VertexIndex',['../classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7',1,'dao::Triangle']]]
 ];

@@ -72,10 +72,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"animated__sprite_8hpp.html",
-"classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab",
-"classdao_1_1Window.html#a32cc34e3cb8e1a94fd80510e0b3b9f9d",
-"structdao_1_1AppCommand.html"
+"Vertex_8hpp.html",
+"classdao_1_1GeneralPage.html#ac2b9ff8a681ae758f5c589cb5a46586d",
+"classdao_1_1Triangle.html#a50d5ba7f7afec3421455e6dbe2062cb7",
+"join.html#autotoc_md14"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

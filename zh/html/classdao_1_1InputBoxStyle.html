@@ -156,13 +156,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">在文件 <a class="el" href="input__box__style_8hpp_source.html">input_box_style.hpp</a> 第 <a class="el" href="input__box__style_8hpp_source.html#l00016">16</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>            : m_inputBox(&amp;inputBox), m_rectangle(inputBox.getBoundingBox(), <a class="code hl_function" href="namespacedao.html#a542a4f45ed97f24bacd1eaaea3ff0a01">hexToRGBA</a>(<span class="stringliteral">&quot;#FFFFFF&quot;</span>)),</div>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>            : m_inputBox(&amp;inputBox), m_rectangle(inputBox.getBoundingBox(), ColorRGBA(<span class="stringliteral">&quot;#FFFFFF&quot;</span>)),</div>
 <div class="line"><span class="lineno">   18</span>              m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(), 50,</div>
-<div class="line"><span class="lineno">   19</span>                     <a class="code hl_function" href="namespacedao.html#a542a4f45ed97f24bacd1eaaea3ff0a01">hexToRGBA</a>(<span class="stringliteral">&quot;#66E656&quot;</span>),</div>
+<div class="line"><span class="lineno">   19</span>                     ColorRGBA(<span class="stringliteral">&quot;#66E656&quot;</span>),</div>
 <div class="line"><span class="lineno">   20</span>                     U<span class="stringliteral">&quot;&quot;</span>),</div>
 <div class="line"><span class="lineno">   21</span>              m_flickerInterval(flickerInterval) {</div>
 <div class="line"><span class="lineno">   22</span>        }</div>
-<div class="ttc" id="anamespacedao_html_a542a4f45ed97f24bacd1eaaea3ff0a01"><div class="ttname"><a href="namespacedao.html#a542a4f45ed97f24bacd1eaaea3ff0a01">dao::hexToRGBA</a></div><div class="ttdeci">constexpr ColorRGBA hexToRGBA(std::string_view hex)</div><div class="ttdoc">将 hex 颜色格式转换为 RGBA 格式</div><div class="ttdef"><b>定义</b> <a href="color__rgb_8hpp_source.html#l00038">color_rgb.hpp:38</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">

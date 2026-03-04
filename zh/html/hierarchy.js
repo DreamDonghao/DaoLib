@@ -10,7 +10,7 @@ var hierarchy =
     [ "dao::Button", "classdao_1_1Button.html", [
       [ "dao::SimpleButton", "classdao_1_1SimpleButton.html", null ]
     ] ],
-    [ "dao::ColorRGBA", "structdao_1_1ColorRGBA.html", null ],
+    [ "dao::ColorRGBA", "classdao_1_1ColorRGBA.html", null ],
     [ "dao::Context", "classdao_1_1Context.html", null ],
     [ "dao::Drawable", "classdao_1_1Drawable.html", [
       [ "dao::AnimatedSprite", "classdao_1_1AnimatedSprite.html", null ],
@@ -23,8 +23,6 @@ var hierarchy =
       [ "dao::Rectangle", "classdao_1_1Rectangle.html", null ]
     ] ],
     [ "dao::FrameLimiter", "classdao_1_1FrameLimiter.html", null ],
-    [ "dao::Geometry&lt; N &gt;", "classdao_1_1Geometry.html", null ],
-    [ "dao::GeometryVertex", "structdao_1_1GeometryVertex.html", null ],
     [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
     [ "dao::InputBox", "classdao_1_1InputBox.html", null ],
     [ "dao::MappedRegion", "classdao_1_1MappedRegion.html", null ],
@@ -36,6 +34,8 @@ var hierarchy =
     [ "dao::Text", "classdao_1_1Text.html", null ],
     [ "dao::TickTimer", "classdao_1_1TickTimer.html", null ],
     [ "dao::Tray", "classdao_1_1Tray.html", null ],
+    [ "dao::Triangle", "classdao_1_1Triangle.html", null ],
+    [ "dao::Vertex", "classdao_1_1Vertex.html", null ],
     [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
     [ "dao::Window", "classdao_1_1Window.html", null ],
     [ "dao::WindowCommand", "structdao_1_1WindowCommand.html", null ],

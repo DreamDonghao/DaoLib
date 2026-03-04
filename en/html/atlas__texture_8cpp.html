@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DaoUI: code/src/core/basic_drawing_elements/atlas_texture.cpp File Reference</title>
+<title>DaoUI: code/src/core/render/atlas_texture.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,41 +93,41 @@ $(function(){initNavTree('atlas__texture_8cpp.html','',''); });
   <div class="headertitle"><div class="title">atlas_texture.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="atlas__texture_8hpp_source.html">core/basic_drawing_elements/atlas_texture.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="atlas__texture_8hpp_source.html">core/render/atlas_texture.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for atlas_texture.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="atlas__texture_8cpp__incl.png" border="0" usemap="#acode_2src_2core_2basic__drawing__elements_2atlas__texture_8cpp" loading="lazy" alt=""/></div>
-<map name="acode_2src_2core_2basic__drawing__elements_2atlas__texture_8cpp" id="acode_2src_2core_2basic__drawing__elements_2atlas__texture_8cpp">
-<area shape="rect" title=" " alt="" coords="403,5,589,60"/>
-<area shape="rect" href="atlas__texture_8hpp.html" title=" " alt="" coords="392,108,600,148"/>
-<area shape="poly" title=" " alt="" coords="499,60,499,94,493,94,493,60"/>
-<area shape="rect" href="mapped__region_8hpp.html" title=" " alt="" coords="390,196,602,221"/>
-<area shape="poly" title=" " alt="" coords="499,148,499,182,493,182,493,148"/>
-<area shape="rect" href="bounding__box_8hpp.html" title=" " alt="" coords="363,269,506,309"/>
-<area shape="poly" title=" " alt="" coords="489,223,460,260,456,257,485,220"/>
-<area shape="rect" title=" " alt="" coords="530,277,585,302"/>
-<area shape="poly" title=" " alt="" coords="507,220,542,264,538,268,503,223"/>
-<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="379,357,491,383"/>
-<area shape="poly" title=" " alt="" coords="437,310,437,343,432,343,432,310"/>
-<area shape="rect" title=" " alt="" coords="5,431,72,456"/>
-<area shape="poly" title=" " alt="" coords="379,382,249,403,86,433,85,428,248,398,378,377"/>
-<area shape="rect" title=" " alt="" coords="96,431,181,456"/>
-<area shape="poly" title=" " alt="" coords="388,385,196,431,194,426,386,380"/>
-<area shape="rect" title=" " alt="" coords="205,431,272,456"/>
-<area shape="poly" title=" " alt="" coords="404,385,284,428,283,423,402,380"/>
-<area shape="rect" title=" " alt="" coords="297,431,370,456"/>
-<area shape="poly" title=" " alt="" coords="420,385,363,425,360,420,417,380"/>
-<area shape="rect" title=" " alt="" coords="395,431,475,456"/>
-<area shape="poly" title=" " alt="" coords="437,383,437,417,432,417,432,383"/>
-<area shape="rect" title=" " alt="" coords="499,431,576,456"/>
-<area shape="poly" title=" " alt="" coords="453,380,511,420,508,425,450,385"/>
-<area shape="rect" title=" " alt="" coords="600,431,672,456"/>
-<area shape="poly" title=" " alt="" coords="468,380,591,423,590,429,466,385"/>
-<area shape="rect" title=" " alt="" coords="697,431,821,456"/>
-<area shape="poly" title=" " alt="" coords="487,380,693,425,692,430,486,385"/>
-<area shape="rect" title=" " alt="" coords="845,431,969,456"/>
-<area shape="poly" title=" " alt="" coords="491,377,832,428,831,433,490,382"/>
+<div class="center"><img src="atlas__texture_8cpp__incl.png" border="0" usemap="#acode_2src_2core_2render_2atlas__texture_8cpp" loading="lazy" alt=""/></div>
+<map name="acode_2src_2core_2render_2atlas__texture_8cpp" id="acode_2src_2core_2render_2atlas__texture_8cpp">
+<area shape="rect" title=" " alt="" coords="419,5,573,45"/>
+<area shape="rect" href="atlas__texture_8hpp.html" title=" " alt="" coords="389,93,603,119"/>
+<area shape="poly" title=" " alt="" coords="499,46,499,79,493,79,493,46"/>
+<area shape="rect" href="mapped__region_8hpp.html" title=" " alt="" coords="390,167,602,192"/>
+<area shape="poly" title=" " alt="" coords="499,119,499,153,493,153,493,119"/>
+<area shape="rect" href="bounding__box_8hpp.html" title=" " alt="" coords="363,240,506,280"/>
+<area shape="poly" title=" " alt="" coords="489,194,460,231,456,227,485,191"/>
+<area shape="rect" title=" " alt="" coords="530,247,585,273"/>
+<area shape="poly" title=" " alt="" coords="507,191,542,235,538,238,503,194"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="348,328,521,353"/>
+<area shape="poly" title=" " alt="" coords="437,280,437,314,432,314,432,280"/>
+<area shape="rect" title=" " alt="" coords="5,401,72,427"/>
+<area shape="poly" title=" " alt="" coords="357,356,234,376,86,404,85,399,233,371,357,351"/>
+<area shape="rect" title=" " alt="" coords="96,401,181,427"/>
+<area shape="poly" title=" " alt="" coords="388,356,196,402,194,397,386,351"/>
+<area shape="rect" title=" " alt="" coords="205,401,272,427"/>
+<area shape="poly" title=" " alt="" coords="404,356,284,399,283,394,402,351"/>
+<area shape="rect" title=" " alt="" coords="297,401,370,427"/>
+<area shape="poly" title=" " alt="" coords="420,356,363,395,360,391,417,351"/>
+<area shape="rect" title=" " alt="" coords="395,401,475,427"/>
+<area shape="poly" title=" " alt="" coords="437,354,437,388,432,388,432,354"/>
+<area shape="rect" title=" " alt="" coords="499,401,576,427"/>
+<area shape="poly" title=" " alt="" coords="453,351,511,391,508,395,450,356"/>
+<area shape="rect" title=" " alt="" coords="600,401,672,427"/>
+<area shape="poly" title=" " alt="" coords="468,351,591,394,590,399,466,356"/>
+<area shape="rect" title=" " alt="" coords="697,401,821,427"/>
+<area shape="poly" title=" " alt="" coords="487,351,693,396,692,401,486,356"/>
+<area shape="rect" title=" " alt="" coords="845,401,969,427"/>
+<area shape="poly" title=" " alt="" coords="512,351,832,398,831,404,511,356"/>
 </map>
 </div>
 </div>

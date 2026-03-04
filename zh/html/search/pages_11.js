@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['克隆仓库_0',['2. 克隆仓库',['../join.html#autotoc_md4',1,'']]]
+  ['rectangle_0',['矩形 (Rectangle)',['../tutorial.html#autotoc_md45',1,'']]],
+  ['request_1',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
 ];

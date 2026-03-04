@@ -169,21 +169,21 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00009">9</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>                                                   : m_frameLimiter(fps) {</div>
-<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">if</span> (!SDL_Init(SDL_INIT_VIDEO)) {</div>
-<div class="line"><span class="lineno">   11</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL 失败 &quot;</span>) + SDL_GetError());</div>
+<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00006">6</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>                                                   : m_frameLimiter(fps) {</div>
+<div class="line"><span class="lineno">    7</span>        <span class="keywordflow">if</span> (!SDL_Init(SDL_INIT_VIDEO)) {</div>
+<div class="line"><span class="lineno">    8</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">    9</span>        }</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, <span class="stringliteral">&quot;1&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   11</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_Hint 失败 &quot;</span>) + SDL_GetError());</div>
 <div class="line"><span class="lineno">   12</span>        }</div>
-<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, <span class="stringliteral">&quot;1&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   14</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_Hint 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (!TTF_Init()) {</div>
+<div class="line"><span class="lineno">   14</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_TTF 失败 &quot;</span>) + SDL_GetError());</div>
 <div class="line"><span class="lineno">   15</span>        }</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (!TTF_Init()) {</div>
-<div class="line"><span class="lineno">   17</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_TTF 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, clickThrough ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   17</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;失焦点击生效设置失败&quot;</span>);</div>
 <div class="line"><span class="lineno">   18</span>        }</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, clickThrough ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   20</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;失焦点击生效设置失败&quot;</span>);</div>
-<div class="line"><span class="lineno">   21</span>        }</div>
-<div class="line"><span class="lineno">   22</span>    }</div>
+<div class="line"><span class="lineno">   19</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00070">better_stl.hpp:70</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -228,11 +228,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00024">24</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>              {</div>
-<div class="line"><span class="lineno">   25</span>        TTF_Quit();</div>
-<div class="line"><span class="lineno">   26</span>        SDL_Quit();</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00021">21</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>              {</div>
+<div class="line"><span class="lineno">   22</span>        TTF_Quit();</div>
+<div class="line"><span class="lineno">   23</span>        SDL_Quit();</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,13 +254,13 @@ Public Member Functions</h2></td></tr>
 
 <p>关闭程序 </p>
 
-<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00065">65</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>                    {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   67</span>            window-&gt;destroy();</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>        m_running = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00062">62</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                    {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   64</span>            window-&gt;destroy();</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>        m_running = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,17 +375,17 @@ template&lt;typename Type&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00072">72</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                                                                       {</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(</div>
-<div class="line"><span class="lineno">   77</span>            width, height, hidden, isSubject,</div>
-<div class="line"><span class="lineno">   78</span>            resizable, transparent, onTop, borderless);</div>
-<div class="line"><span class="lineno">   79</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
-<div class="line"><span class="lineno">   80</span>        m_windowMap[tag] = windowId;</div>
-<div class="line"><span class="lineno">   81</span>        m_windows[windowId] = std::move(nowWindow);</div>
-<div class="line"><span class="lineno">   82</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00069">69</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                       {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(</div>
+<div class="line"><span class="lineno">   74</span>            width, height, hidden, isSubject,</div>
+<div class="line"><span class="lineno">   75</span>            resizable, transparent, onTop, borderless);</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
+<div class="line"><span class="lineno">   77</span>        m_windowMap[tag] = windowId;</div>
+<div class="line"><span class="lineno">   78</span>        m_windows[windowId] = std::move(nowWindow);</div>
+<div class="line"><span class="lineno">   79</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00015">better_stl.hpp:15</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -552,42 +552,42 @@ template&lt;typename Type&gt; </div>
 
 <p>启动应用 </p>
 
-<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00029">29</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>                  {</div>
-<div class="line"><span class="lineno">   30</span>        m_running = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">while</span> (m_running) {</div>
-<div class="line"><span class="lineno">   32</span>            m_frameLimiter.wait();</div>
-<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   34</span>                window-&gt;update();</div>
-<div class="line"><span class="lineno">   35</span>                window-&gt;render();</div>
-<div class="line"><span class="lineno">   36</span>                window-&gt;getAppController().executeCommand(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   37</span>            }</div>
-<div class="line"><span class="lineno">   38</span>            SDL_Event event;</div>
-<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
-<div class="line"><span class="lineno">   40</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
-<div class="line"><span class="lineno">   41</span>                    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   42</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   43</span>                        it-&gt;second-&gt;hide();</div>
-<div class="line"><span class="lineno">   44</span>                    }</div>
-<div class="line"><span class="lineno">   45</span>                }</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
-<div class="line"><span class="lineno">   48</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
-<div class="line"><span class="lineno">   49</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   50</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
-<div class="line"><span class="lineno">   51</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
-<div class="line"><span class="lineno">   52</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
-<div class="line"><span class="lineno">   53</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
-<div class="line"><span class="lineno">   54</span>                }</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
-<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   58</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   59</span>                    }</div>
-<div class="line"><span class="lineno">   60</span>                }</div>
-<div class="line"><span class="lineno">   61</span>            }</div>
-<div class="line"><span class="lineno">   62</span>        }</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="app_8cpp_source.html#l00026">26</a> of file <a class="el" href="app_8cpp_source.html">app.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                  {</div>
+<div class="line"><span class="lineno">   27</span>        m_running = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">while</span> (m_running) {</div>
+<div class="line"><span class="lineno">   29</span>            m_frameLimiter.wait();</div>
+<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   31</span>                window-&gt;update();</div>
+<div class="line"><span class="lineno">   32</span>                window-&gt;render();</div>
+<div class="line"><span class="lineno">   33</span>                window-&gt;getAppController().executeCommand(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   34</span>            }</div>
+<div class="line"><span class="lineno">   35</span>            SDL_Event event;</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
+<div class="line"><span class="lineno">   37</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
+<div class="line"><span class="lineno">   38</span>                    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
+<div class="line"><span class="lineno">   39</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   40</span>                        it-&gt;second-&gt;hide();</div>
+<div class="line"><span class="lineno">   41</span>                    }</div>
+<div class="line"><span class="lineno">   42</span>                }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
+<div class="line"><span class="lineno">   45</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
+<div class="line"><span class="lineno">   46</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
+<div class="line"><span class="lineno">   47</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
+<div class="line"><span class="lineno">   48</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
+<div class="line"><span class="lineno">   49</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
+<div class="line"><span class="lineno">   50</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
+<div class="line"><span class="lineno">   51</span>                }</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
+<div class="line"><span class="lineno">   54</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   55</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   56</span>                    }</div>
+<div class="line"><span class="lineno">   57</span>                }</div>
+<div class="line"><span class="lineno">   58</span>            }</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

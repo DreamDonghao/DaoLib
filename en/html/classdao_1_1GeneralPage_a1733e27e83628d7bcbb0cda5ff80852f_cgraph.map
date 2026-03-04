@@ -1,5 +1,5 @@
 <map id="dao::GeneralPage::addToBatch" name="dao::GeneralPage::addToBatch">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,13,224,38"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a4cdf7b1d496d486033ead6ac2f418f54" title="清理要绘制的纹理图集" alt="" coords="272,5,451,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a2351da4d72765f2b8c47eec0be4d64e1" title="清理要绘制的纹理图集" alt="" coords="272,5,451,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,23,258,23,258,28,224,28"/>
 </map>

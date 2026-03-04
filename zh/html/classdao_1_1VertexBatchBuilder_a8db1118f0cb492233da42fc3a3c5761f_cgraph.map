@@ -1,9 +1,9 @@
 <map id="dao::VertexBatchBuilder::addToBatch" name="dao::VertexBatchBuilder::addToBatch">
 <area shape="rect" id="Node000001" title="添加文本到批处理" alt="" coords="5,47,184,87"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff" title=" " alt="" coords="232,5,397,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff" title="获取字体大小" alt="" coords="232,5,397,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,45,243,31,245,36,185,50"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#a3ffd6e138acb26e8b6baaa932f8932f3" title=" " alt="" coords="255,55,374,80"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#a3ffd6e138acb26e8b6baaa932f8932f3" title="获取文本x坐标" alt="" coords="255,55,374,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,65,241,65,241,70,184,70"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1Text.html#af361e61b1290556adc4120cb5d2db2ac" title=" " alt="" coords="255,104,374,129"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Text.html#af361e61b1290556adc4120cb5d2db2ac" title="获取文本y坐标" alt="" coords="255,104,374,129"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,85,245,98,243,104,184,90"/>
 </map>

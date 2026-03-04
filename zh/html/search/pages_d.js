@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['request_0',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
+  ['image_0',['图片 (Image)',['../tutorial.html#autotoc_md44',1,'']]],
+  ['inputbox_1',['输入框 (InputBox)',['../tutorial.html#autotoc_md42',1,'']]]
 ];

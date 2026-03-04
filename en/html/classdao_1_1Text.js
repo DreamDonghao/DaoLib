@@ -1,7 +1,7 @@
 var classdao_1_1Text =
 [
     [ "Text", "classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d", null ],
-    [ "Text", "classdao_1_1Text.html#a6051eb5f7f9c209543aa48db0edece12", null ],
+    [ "Text", "classdao_1_1Text.html#a4274b8f7730896feb93444e21a7e6168", null ],
     [ "getColor", "classdao_1_1Text.html#ac8aeef167ec550f67ca384edee274cd3", null ],
     [ "getContent", "classdao_1_1Text.html#ac8c1d3718f3357d0217dcbce4ac272a9", null ],
     [ "getFontSize", "classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff", null ],

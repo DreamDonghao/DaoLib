@@ -1,0 +1,5 @@
+<map id="dao::ColorRGBA::b" name="dao::ColorRGBA::b">
+<area shape="rect" id="Node000001" title="获取蓝色通道值" alt="" coords="197,5,339,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#ac8aeef167ec550f67ca384edee274cd3" title="获取SDL格式的文本颜色" alt="" coords="5,5,149,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,21,150,21,150,15,184,15"/>
+</map>

@@ -1,11 +1,11 @@
 <map id="dao::Image::setPosition" name="dao::Image::setPosition">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,55,180,80"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a001d27926e737168811ace5526c5b93f" title="设置位置" alt="" coords="228,47,371,87"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a001d27926e737168811ace5526c5b93f" title="设置纹理位置（保持大小不变）" alt="" coords="228,47,371,87"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,65,214,65,214,70,181,70"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc" title="获取高度" alt="" coords="419,5,631,31"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a6a437676a6e700e7aea9c95bc049e8fe" title="获取高度" alt="" coords="419,5,631,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,49,452,31,453,36,372,54"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401" title="获取宽度" alt="" coords="421,55,628,80"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1BoundingBox.html#a62e48317fb72f0c75ef6c3fcc29c0311" title="获取宽度" alt="" coords="421,55,628,80"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="371,65,408,65,408,70,371,70"/>
-<area shape="rect" id="Node000005" href="$classdao_1_1BoundingBox.html#a9dd1dc9331a7277dccc08a74a31b4f0e" title="设置数据" alt="" coords="441,104,609,129"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1BoundingBox.html#ad7a15703eb1a7865b99141f4daf2b7d8" title="设置数据" alt="" coords="441,104,609,129"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="372,80,453,98,452,104,371,86"/>
 </map>

@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['val_0',['val',['../classdao_1_1RingVector.html#a691c03f498a1aae3e8ec5e3106f1e854',1,'dao::RingVector']]],
-  ['vertex_5fbatch_5fbuilder_2ecpp_1',['vertex_batch_builder.cpp',['../vertex__batch__builder_8cpp.html',1,'']]],
-  ['vertex_5fbatch_5fbuilder_2ehpp_2',['vertex_batch_builder.hpp',['../vertex__batch__builder_8hpp.html',1,'']]],
-  ['vertexbatchbuilder_3',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html',1,'dao::VertexBatchBuilder'],['../classdao_1_1VertexBatchBuilder.html#a37256aa3682923e58462fb4c61efd730',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#aece0350739b53eb304e9ca55d3f7fe9c',1,'dao::VertexBatchBuilder::VertexBatchBuilder(std::string_view fontPath, f32 glyphSize=24, i32 atlasSize=1024, size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ac1e68804164326316f2c09ce447e090d',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const VertexBatchBuilder &amp;)=delete']]],
-  ['vertices_4',['vertices',['../structdao_1_1AtlasDrawBatch.html#a1156d0f6a50c1dc7f3125008acac0007',1,'dao::AtlasDrawBatch']]]
+  ['u16_0',['u16',['../namespacedao.html#a68005dc114d91689af54bd55a8a941ce',1,'dao']]],
+  ['u32_1',['u32',['../namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6',1,'dao']]],
+  ['u64_2',['u64',['../namespacedao.html#afbe96c048a0e11859b8bc952fca64c5c',1,'dao']]],
+  ['u8_3',['u8',['../namespacedao.html#ab0cd81a977f02d099bca941a483e57ba',1,'dao']]],
+  ['ui_20布局？_4',['Q1: 如何调试 UI 布局？',['../tutorial.html#autotoc_md67',1,'']]],
+  ['update_5',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()'],['../classdao_1_1GeneralPage.html#aae2c10901d3f992a94342e9c9d630f58',1,'dao::GeneralPage::update()']]],
+  ['use_20使用_20daoui_20开发自己的应用_6',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;使用 DaoUI 开发&quot;&gt;使用 DaoUI 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['use_2emd_7',['use.md',['../use_8md.html',1,'']]],
+  ['utf32char_8',['utf32char',['../namespacedao.html#addc09e7009536ce405ecc985ece7673c',1,'dao']]],
+  ['utf32str_9',['utf32str',['../namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021',1,'dao']]],
+  ['utf32string_5fview_10',['utf32string_view',['../namespacedao.html#acb49e64cd2b5daeb13cbf71c3cd40ced',1,'dao']]],
+  ['utf8toutf32_11',['utf8ToUtf32',['../namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c',1,'dao']]]
 ];

@@ -94,7 +94,7 @@ $(function(){initNavTree('classdao_1_1Text.html','','classdao_1_1Text-members');
 </div><!--header-->
 <div class="contents">
 
-<p>文本  
+<p>文本渲染对象  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="text_8hpp_source.html">text.hpp</a>&gt;</code></p>
@@ -103,30 +103,43 @@ Collaboration diagram for dao::Text:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Text__coll__graph.png" border="0" usemap="#adao_1_1Text_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Text_coll__map" id="adao_1_1Text_coll__map">
-<area shape="rect" title="文本" alt="" coords="5,5,120,311"/>
+<area shape="rect" title="文本渲染对象" alt="" coords="5,5,120,311"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abf007195b5ded893b8c6f4d27e196c5d" id="r_abf007195b5ded893b8c6f4d27e196c5d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abf007195b5ded893b8c6f4d27e196c5d">Text</a> ()=default</td></tr>
-<tr class="memitem:a6051eb5f7f9c209543aa48db0edece12" id="r_a6051eb5f7f9c209543aa48db0edece12"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6051eb5f7f9c209543aa48db0edece12">Text</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> fontSize, const <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a> color={0, 0, 0, 1}, <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> content=U&quot;&quot;)</td></tr>
+<tr class="memitem:a4274b8f7730896feb93444e21a7e6168" id="r_a4274b8f7730896feb93444e21a7e6168"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4274b8f7730896feb93444e21a7e6168">Text</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> fontSize, const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> color=<a class="el" href="namespacedao.html#abdeff89559f45d72636a6430f476703b">White</a>, <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> content=U&quot;&quot;)</td></tr>
+<tr class="memdesc:a4274b8f7730896feb93444e21a7e6168"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
 <tr class="memitem:ae0c3acc77e4042276cdc2503d9f7ef9f" id="r_ae0c3acc77e4042276cdc2503d9f7ef9f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae0c3acc77e4042276cdc2503d9f7ef9f">insert</a> (const <a class="el" href="namespacedao.html#a3d5044c31e25746e391c0094a4e9bd38">i64</a> index, const <a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> ch)</td></tr>
+<tr class="memdesc:ae0c3acc77e4042276cdc2503d9f7ef9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">在文本指定位置插入一个字符  <br /></td></tr>
 <tr class="memitem:afb8d6470b1fd8f858e6b30772429be45" id="r_afb8d6470b1fd8f858e6b30772429be45"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb8d6470b1fd8f858e6b30772429be45">setX</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x)</td></tr>
+<tr class="memdesc:afb8d6470b1fd8f858e6b30772429be45"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文本x坐标  <br /></td></tr>
 <tr class="memitem:acb4c1ae31924e9a7b6c5647d7315472f" id="r_acb4c1ae31924e9a7b6c5647d7315472f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acb4c1ae31924e9a7b6c5647d7315472f">setY</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y)</td></tr>
+<tr class="memdesc:acb4c1ae31924e9a7b6c5647d7315472f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文本y坐标  <br /></td></tr>
 <tr class="memitem:a4c26c88b3f58a5bcbf95272a52fc0ba9" id="r_a4c26c88b3f58a5bcbf95272a52fc0ba9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4c26c88b3f58a5bcbf95272a52fc0ba9">setContent</a> (std::u32string content)</td></tr>
+<tr class="memdesc:a4c26c88b3f58a5bcbf95272a52fc0ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文本内容  <br /></td></tr>
 <tr class="memitem:a5714ba9f79bad56fb8ad340ffa7bc632" id="r_a5714ba9f79bad56fb8ad340ffa7bc632"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5714ba9f79bad56fb8ad340ffa7bc632">setFontSize</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> fontSize)</td></tr>
-<tr class="memitem:abb108bc32247bbc2f372e0e6e410624e" id="r_abb108bc32247bbc2f372e0e6e410624e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abb108bc32247bbc2f372e0e6e410624e">setColor</a> (const <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;color)</td></tr>
+<tr class="memdesc:a5714ba9f79bad56fb8ad340ffa7bc632"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体大小  <br /></td></tr>
+<tr class="memitem:abb108bc32247bbc2f372e0e6e410624e" id="r_abb108bc32247bbc2f372e0e6e410624e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abb108bc32247bbc2f372e0e6e410624e">setColor</a> (const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;color)</td></tr>
+<tr class="memdesc:abb108bc32247bbc2f372e0e6e410624e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文本颜色  <br /></td></tr>
 <tr class="memitem:a3ffd6e138acb26e8b6baaa932f8932f3" id="r_a3ffd6e138acb26e8b6baaa932f8932f3"><td class="memItemLeft"><a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3ffd6e138acb26e8b6baaa932f8932f3">getX</a> () const</td></tr>
+<tr class="memdesc:a3ffd6e138acb26e8b6baaa932f8932f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文本x坐标  <br /></td></tr>
 <tr class="memitem:af361e61b1290556adc4120cb5d2db2ac" id="r_af361e61b1290556adc4120cb5d2db2ac"><td class="memItemLeft"><a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#af361e61b1290556adc4120cb5d2db2ac">getY</a> () const</td></tr>
+<tr class="memdesc:af361e61b1290556adc4120cb5d2db2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文本y坐标  <br /></td></tr>
 <tr class="memitem:ac8c1d3718f3357d0217dcbce4ac272a9" id="r_ac8c1d3718f3357d0217dcbce4ac272a9"><td class="memItemLeft">const <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac8c1d3718f3357d0217dcbce4ac272a9">getContent</a> () const</td></tr>
+<tr class="memdesc:ac8c1d3718f3357d0217dcbce4ac272a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文本内容  <br /></td></tr>
 <tr class="memitem:aebc06efbc107ff9c3d043524b7658dff" id="r_aebc06efbc107ff9c3d043524b7658dff"><td class="memItemLeft"><a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#aebc06efbc107ff9c3d043524b7658dff">getFontSize</a> () const</td></tr>
+<tr class="memdesc:aebc06efbc107ff9c3d043524b7658dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体大小  <br /></td></tr>
 <tr class="memitem:ac8aeef167ec550f67ca384edee274cd3" id="r_ac8aeef167ec550f67ca384edee274cd3"><td class="memItemLeft">SDL_FColor&#160;</td><td class="memItemRight"><a class="el" href="#ac8aeef167ec550f67ca384edee274cd3">getColor</a> () const</td></tr>
+<tr class="memdesc:ac8aeef167ec550f67ca384edee274cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SDL格式的文本颜色  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>文本 </p>
+<div class="textblock"><p>文本渲染对象 </p>
+<p>表示一个可渲染的文本对象，包含位置、字体大小、颜色和UTF-32编码的内容 支持通过批处理系统渲染，可动态修改文本属性和内容 </p>
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00008">8</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00010">10</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abf007195b5ded893b8c6f4d27e196c5d" name="abf007195b5ded893b8c6f4d27e196c5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf007195b5ded893b8c6f4d27e196c5d">&#9670;&#160;</a></span>Text() <span class="overload">[1/2]</span></h2>
@@ -153,8 +166,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6051eb5f7f9c209543aa48db0edece12" name="a6051eb5f7f9c209543aa48db0edece12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6051eb5f7f9c209543aa48db0edece12">&#9670;&#160;</a></span>Text() <span class="overload">[2/2]</span></h2>
+<a id="a4274b8f7730896feb93444e21a7e6168" name="a4274b8f7730896feb93444e21a7e6168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4274b8f7730896feb93444e21a7e6168">&#9670;&#160;</a></span>Text() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +193,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{0,&#160;0,&#160;0,&#160;1}</span>, </td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacedao.html#abdeff89559f45d72636a6430f476703b">White</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,23 +207,22 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>构造函数 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>横坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>纵坐标 </td></tr>
-    <tr><td class="paramname">content</td><td>内容 </td></tr>
-    <tr><td class="paramname">fontSize</td><td>字体大小(高度) </td></tr>
-    <tr><td class="paramname">color</td><td>字体颜色 </td></tr>
+    <tr><td class="paramname">x</td><td>文本左上角的x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>文本左上角的y坐标 </td></tr>
+    <tr><td class="paramname">fontSize</td><td>字体大小（像素高度），默认32.0f </td></tr>
+    <tr><td class="paramname">color</td><td>文本颜色，默认黑色 </td></tr>
+    <tr><td class="paramname">content</td><td>UTF-32编码的文本内容，默认为空字符串 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00017">17</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                                                 {0, 0, 0, 1},</div>
-<div class="line"><span class="lineno">   18</span>             <a class="code hl_typedef" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> content = U<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">   19</span>            : m_x(x), m_y(y), m_fontSize(fontSize), m_color(color), m_content(std::move(content)) {</div>
-<div class="line"><span class="lineno">   20</span>        }</div>
-<div class="ttc" id="anamespacedao_html_aaa2e507e6d0fd4d95a3769ce0319c021"><div class="ttname"><a href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">dao::utf32str</a></div><div class="ttdeci">std::u32string utf32str</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00029">better_stl.hpp:29</a></div></div>
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00020">20</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>            : m_x(x), m_y(y), m_fontSize(fontSize), m_color(color), m_content(std::move(content)) {</div>
+<div class="line"><span class="lineno">   23</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,12 +250,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00036">36</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                  {</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.r], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.g], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.b], m_color.a};</div>
-<div class="line"><span class="lineno">   38</span>        }</div>
-<div class="ttc" id="anamespacedao_html_a2d1ee99dbefdf56a0d914aafecb40b26"><div class="ttname"><a href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">dao::rgbNorm</a></div><div class="ttdeci">constexpr std::array&lt; f32, 256 &gt; rgbNorm</div><div class="ttdoc">将RGB 255 归一化</div><div class="ttdef"><b>Definition</b> <a href="color__rgb_8hpp_source.html#l00011">color_rgb.hpp:11</a></div></div>
-</div><!-- fragment -->
+<p>获取SDL格式的文本颜色 </p>
+<p>将ColorRGBA转换为SDL_FColor格式，用于SDL渲染 </p><dl class="section return"><dt>Returns</dt><dd>SDL_FColor格式的文本颜色 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00069">69</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                  {</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">return</span> {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.r()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.g()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.b()], m_color.a()};</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="ttc" id="anamespacedao_html_a2d1ee99dbefdf56a0d914aafecb40b26"><div class="ttname"><a href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">dao::rgbNorm</a></div><div class="ttdeci">constexpr std::array&lt; f32, 256 &gt; rgbNorm</div><div class="ttdoc">RGB值归一化查找表</div><div class="ttdef"><b>Definition</b> <a href="color__rgb_8hpp_source.html#l00009">color_rgb.hpp:9</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Text_ac8aeef167ec550f67ca384edee274cd3_cgraph.png" border="0" usemap="#aclassdao_1_1Text_ac8aeef167ec550f67ca384edee274cd3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Text_ac8aeef167ec550f67ca384edee274cd3_cgraph" id="aclassdao_1_1Text_ac8aeef167ec550f67ca384edee274cd3_cgraph">
+<area shape="rect" title="获取SDL格式的文本颜色" alt="" coords="5,80,149,105"/>
+<area shape="rect" href="classdao_1_1ColorRGBA.html#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值" alt="" coords="197,5,339,31"/>
+<area shape="poly" title=" " alt="" coords="106,77,196,40,215,33,217,38,198,44,108,82"/>
+<area shape="rect" href="classdao_1_1ColorRGBA.html#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值" alt="" coords="197,55,339,80"/>
+<area shape="poly" title=" " alt="" coords="149,80,183,76,184,81,150,86"/>
+<area shape="rect" href="classdao_1_1ColorRGBA.html#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值" alt="" coords="197,104,339,129"/>
+<area shape="poly" title=" " alt="" coords="150,99,184,103,183,109,149,104"/>
+<area shape="rect" href="classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值" alt="" coords="199,153,337,179"/>
+<area shape="poly" title=" " alt="" coords="110,103,198,138,219,146,217,151,196,143,108,108"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac8c1d3718f3357d0217dcbce4ac272a9" name="ac8c1d3718f3357d0217dcbce4ac272a9"></a>
@@ -269,8 +300,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00033">33</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> m_content; }</div>
+<p>获取文本内容 </p>
+<dl class="section return"><dt>Returns</dt><dd>UTF-32编码的文本内容的常量引用 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00060">60</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{ <span class="keywordflow">return</span> m_content; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -297,14 +331,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00034">34</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> m_fontSize; }</div>
+<p>获取字体大小 </p>
+<dl class="section return"><dt>Returns</dt><dd>字体大小（像素高度） </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00064">64</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{ <span class="keywordflow">return</span> m_fontSize; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Text_aebc06efbc107ff9c3d043524b7658dff_icgraph.png" border="0" usemap="#aclassdao_1_1Text_aebc06efbc107ff9c3d043524b7658dff_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Text_aebc06efbc107ff9c3d043524b7658dff_icgraph" id="aclassdao_1_1Text_aebc06efbc107ff9c3d043524b7658dff_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,397,38"/>
+<area shape="rect" title="获取字体大小" alt="" coords="232,13,397,38"/>
 <area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="5,5,184,45"/>
 <area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
 </map>
@@ -335,14 +372,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00031">31</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <span class="keywordflow">return</span> m_x; }</div>
+<p>获取文本x坐标 </p>
+<dl class="section return"><dt>Returns</dt><dd>文本左上角的x坐标 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00052">52</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{ <span class="keywordflow">return</span> m_x; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Text_a3ffd6e138acb26e8b6baaa932f8932f3_icgraph.png" border="0" usemap="#aclassdao_1_1Text_a3ffd6e138acb26e8b6baaa932f8932f3_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Text_a3ffd6e138acb26e8b6baaa932f8932f3_icgraph" id="aclassdao_1_1Text_a3ffd6e138acb26e8b6baaa932f8932f3_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,351,38"/>
+<area shape="rect" title="获取文本x坐标" alt="" coords="232,13,351,38"/>
 <area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="5,5,184,45"/>
 <area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
 </map>
@@ -373,14 +413,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00032">32</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> m_y; }</div>
+<p>获取文本y坐标 </p>
+<dl class="section return"><dt>Returns</dt><dd>文本左上角的y坐标 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00056">56</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> m_y; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Text_af361e61b1290556adc4120cb5d2db2ac_icgraph.png" border="0" usemap="#aclassdao_1_1Text_af361e61b1290556adc4120cb5d2db2ac_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Text_af361e61b1290556adc4120cb5d2db2ac_icgraph" id="aclassdao_1_1Text_af361e61b1290556adc4120cb5d2db2ac_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,351,38"/>
+<area shape="rect" title="获取文本y坐标" alt="" coords="232,13,351,38"/>
 <area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a8db1118f0cb492233da42fc3a3c5761f" title="添加文本到批处理" alt="" coords="5,5,184,45"/>
 <area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
 </map>
@@ -415,10 +458,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00022">22</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                                                         {</div>
-<div class="line"><span class="lineno">   23</span>            m_content.insert(index, 1, ch);</div>
-<div class="line"><span class="lineno">   24</span>        }</div>
+<p>在文本指定位置插入一个字符 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>插入位置索引（0为开头） </td></tr>
+    <tr><td class="paramname">ch</td><td>要插入的UTF-32字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00028">28</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                         {</div>
+<div class="line"><span class="lineno">   29</span>            m_content.insert(index, 1, ch);</div>
+<div class="line"><span class="lineno">   30</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,7 +486,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void dao::Text::setColor </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -445,8 +497,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00030">30</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{ m_color = color; }</div>
+<p>设置文本颜色 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>新的文本颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00048">48</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{ m_color = color; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,8 +533,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00028">28</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{ m_content = std::move(content); }</div>
+<p>设置文本内容 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>UTF-32编码的新文本内容 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00040">40</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ m_content = std::move(content); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,8 +569,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00029">29</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{ m_fontSize = fontSize; }</div>
+<p>设置字体大小 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontSize</td><td>新的字体大小（像素高度） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00044">44</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{ m_fontSize = fontSize; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,8 +605,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00026">26</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>{ m_x = x; }</div>
+<p>设置文本x坐标 </p>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00033">33</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ m_x = x; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -557,13 +635,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00027">27</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{ m_y = y; }</div>
+<p>设置文本y坐标 </p>
+
+<p class="definition">Definition at line <a class="el" href="text_8hpp_source.html#l00036">36</a> of file <a class="el" href="text_8hpp_source.html">text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ m_y = y; }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/basic_drawing_elements/<a class="el" href="text_8hpp_source.html">text.hpp</a></li>
+<li>code/include/core/render/<a class="el" href="text_8hpp_source.html">text.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
