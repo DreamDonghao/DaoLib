@@ -1,6 +1,5 @@
 #pragma once
 #include <interface/drawable.hpp>
-#include <component/geometry.hpp>
 #include <array>
 
 namespace dao {
@@ -24,7 +23,7 @@ namespace dao {
             m_triangle[0].translate(dx,dy);
         }
 
-        void writeToBatch(VertexBatchBuilder &builder) const override {
+        void writeToBatch(BatchRenderer &builder) const override {
             builder.addToBatch(m_triangle[0]);
             builder.addToBatch(m_triangle[1]);
         }

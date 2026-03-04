@@ -4,7 +4,7 @@
 namespace dao {
     class Context;
     template<typename T> concept BatchWritable =
-            requires(T t, VertexBatchBuilder &b) { t.writeToBatch(b); };
+            requires(T t, BatchRenderer &b) { t.writeToBatch(b); };
 
     /// @brief 通用页面接口
     /// @details 提供的一个继承自 Page 的通用页面接口，实现了一些页面通常应该具备的功能
@@ -14,7 +14,7 @@ namespace dao {
 
         ~GeneralPage() override = default;
 
-        void init() override = 0;
+        void open() override = 0;
 
         void close() override = 0;
 
@@ -26,8 +26,6 @@ namespace dao {
 
         /// @brief 处理消息
         void handleInputEvent(const SDL_Event &event) override = 0;
-
-        [[nodiscard]] GlyphAtlas &getGlyphAtlas() override;
 
         WindowController &getWindowController() override;
 
@@ -41,7 +39,7 @@ namespace dao {
 
         void setContext(Context *context) override;
 
-        void setVertexBatch(VertexBatchBuilder *vertexBatch) override {
+        void setVertexBatch(BatchRenderer *vertexBatch) override {
             m_vertexBatch = vertexBatch;
         }
 
@@ -55,7 +53,7 @@ namespace dao {
 
     private:
         std::string m_title;
-        VertexBatchBuilder *m_vertexBatch = nullptr;
+        BatchRenderer *m_vertexBatch = nullptr;
         Context *m_context = nullptr;
     };
 }

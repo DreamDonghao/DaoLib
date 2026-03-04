@@ -1,15 +1,12 @@
-//
-// Created by donghao on 25-12-20.
-//
-#ifndef INPUT_BOX_STYLE_HPP
-#define INPUT_BOX_STYLE_HPP
+#pragma once
 #include "input_box.hpp"
-#include "../../core/render/text.hpp"
-#include "../../core/render/vertex_batch_builder.hpp"
+#include "core/render/text.hpp"
+#include "core/render/BatchRenderer.hpp"
 #include "interface/drawable.hpp"
+#include "core/tool/tick_timer.hpp"
 
 namespace dao {
-    class VertexBatchBuilder;
+    class BatchRenderer;
 
     class InputBoxStyle : public Drawable {
     public:
@@ -18,20 +15,18 @@ namespace dao {
               m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(), 50,
                      ColorRGBA("#66E656"),
                      U""),
-              m_flickerInterval(flickerInterval) {
+              m_flickerInterval(flickerInterval),
+              m_flickerTimer(std::chrono::milliseconds(flickerInterval)) {
         }
 
-        void writeToBatch(VertexBatchBuilder &builder) const override {
-            static int sustained = 0;
-            static bool isShown = false;
+        void writeToBatch(BatchRenderer &builder) const override {
             m_rectangle.writeToBatch(builder);
             m_text.setContent(m_inputBox->getText());
             if (m_inputBox->getStatus() == InputStatus::Input) {
-                if (++sustained == m_flickerInterval) {
-                    isShown = !isShown;
-                    sustained = 0;
+                if (static_cast<bool>(m_flickerTimer)) {
+                    m_cursorShown = !m_cursorShown;
                 }
-                if (isShown) {
+                if (m_cursorShown) {
                     m_text.insert(m_inputBox->getCursorPos(), '|');
                 }
             }
@@ -43,6 +38,8 @@ namespace dao {
         Rectangle m_rectangle;
         mutable Text m_text;
         int m_flickerInterval;
+        mutable TickTimer m_flickerTimer;
+        mutable bool m_cursorShown{false};
     };
 }
-#endif //INPUT_BOX_STYLE_HPP
+

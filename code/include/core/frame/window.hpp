@@ -5,7 +5,7 @@
 #include <interface/page.hpp>
 #include <core/frame/app_controller.hpp>
 #include <core/frame/context.hpp>
-#include <core/render/vertex_batch_builder.hpp>
+#include <core/render/BatchRenderer.hpp>
 
 namespace dao {
     /// @brief 窗口
@@ -35,9 +35,6 @@ namespace dao {
         /// @param page 要添加页面的unique_ptr指针
         Window &addPage(std::unique_ptr<Page> &&page);
 
-        /// @brief 加载纹理对应的纹理图集
-        void registerTexture(const i32 &textureId);
-
         /// @brief 根据当前窗口拥有的页面加载未加载的图集
         void registerPageTexture();
 
@@ -64,9 +61,6 @@ namespace dao {
 
         /// @brief 判断是否在运行
         [[nodiscard]] bool isRunning() const { return m_running; }
-
-        /// @brief 渲染
-        void render();
 
         /// @brief 获取 SDL_window 指针
         [[nodiscard]] const SDL_Window *getSDLWindow() const { return m_window; }
@@ -98,19 +92,16 @@ namespace dao {
         i32 m_id{-1};                                          ///< ID
         bool m_running = true;                                 ///< 是否正在运行
         SDL_Window *m_window{nullptr};                         ///< SDL_Window 指针
-        SDL_Renderer *m_renderer{nullptr};                     ///< SDL_Renderer 指针
-        hash_map<i32, SDL_Texture *> m_atlasTextures;          ///< 纹理图集
         std::string m_nowPageTitle;                            ///< 当前页面的标题
         hash_map<std::string, std::unique_ptr<Page> > m_pages; ///< 窗口拥有的页面
         i32 m_width;                                           ///< 窗口宽度
         i32 m_height;                                          ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
         AppController m_appController;                         ///< 应用控制器
-        VertexBatchBuilder m_vertexBatchBuilder{"./assets/ttf/zh-cn.ttf"};
+        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"};
+        Context *m_context{nullptr};
 
-        Context *m_context = nullptr;
-
-        /// @brie 执行窗口控制器的命令
+        /// @brief 执行窗口控制器的命令
         void executeCommand();
 
         std::function<void()> m_closeAction{
@@ -119,4 +110,3 @@ namespace dao {
         };
     };
 }
-

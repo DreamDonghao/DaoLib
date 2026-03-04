@@ -27,7 +27,8 @@ namespace dao {
         /// @brief 加载字形
         /// @details 将一个文字的字形编码添加到字形图集中
         /// @param charCode 文字的utf-32编码
-        void registerGlyph(utf32char charCode);
+        /// @return 是否加载
+        bool registerGlyph(utf32char charCode);
 
         /// @brief 批量加载字形
         /// @details 将一批文字的字形编码添加到字形图集中
@@ -64,6 +65,4 @@ namespace dao {
         Cursor m_cursor{0, 0, 0};
         bool m_isUpdated{false};
     };
-
-
 }

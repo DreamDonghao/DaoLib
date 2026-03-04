@@ -17,7 +17,7 @@ endif()
 add_library(dao
         src/core/render/atlas_texture.cpp
         src/core/frame/app.cpp
-        src/core/render/vertex_batch_builder.cpp
+        src/core/render/BatchRenderer.cpp
         src/core/frame/window.cpp
         src/core/tool/bounding_box.cpp
         src/core/tool/mapped_region.cpp
@@ -28,7 +28,7 @@ add_library(dao
         src/component/image.cpp
         src/interface/general_page.cpp
         src/daoui.cpp
-        src/core/render/primitives/glyph_atlas.hpp.cpp
+        src/core/render/primitives/glyph_atlas.cpp
 )
 
 set_target_properties(dao PROPERTIES

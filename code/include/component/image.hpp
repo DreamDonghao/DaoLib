@@ -11,7 +11,7 @@ namespace dao {
 
         void setSize(f32 x, f32 y);
 
-        void writeToBatch(VertexBatchBuilder &builder) const override;
+        void writeToBatch(BatchRenderer &builder) const override;
 
     private:
         AtlasTexture m_texture;

@@ -15,8 +15,8 @@ dao::GlyphAtlas::GlyphAtlas(const std::string_view &ttfPath, const f32 glyphSize
     );
 }
 
-void dao::GlyphAtlas::registerGlyph(const utf32char charCode) {
-    if (m_glyphs.contains(charCode)) { return; }
+bool dao::GlyphAtlas::registerGlyph(const utf32char charCode) {
+    if (m_glyphs.contains(charCode)) { return false; }
 
     m_isUpdated = true;
     SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});
@@ -47,6 +47,7 @@ void dao::GlyphAtlas::registerGlyph(const utf32char charCode) {
     m_cursor.x += glyphSurface->w;
 
     SDL_DestroySurface(glyphSurface);
+    return true;
 }
 
 inline void dao::GlyphAtlas::batchRegisterGlyph(const std::string_view chars) {

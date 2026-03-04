@@ -1,5 +1,5 @@
 #pragma once
-#include <core/render/vertex_batch_builder.hpp>
+#include <core/render/BatchRenderer.hpp>
 
 namespace dao {
     /// @brief 可绘制对象接口
@@ -8,6 +8,6 @@ namespace dao {
         virtual ~Drawable() = default;
 
         /// @brief 写入批处理
-        virtual void writeToBatch(VertexBatchBuilder &builder) const = 0;
+        virtual void writeToBatch(BatchRenderer &builder) const = 0;
     };
 }

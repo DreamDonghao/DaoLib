@@ -1,6 +1,5 @@
 #include <core/frame/window.hpp>
 #include <core/frame/window_controller.hpp>
-#include <core/render/primitives/atlas_region.hpp>
 #include <SDL3_image/SDL_image.h>
 #include <utility>
 #include <ranges>
@@ -24,7 +23,6 @@ namespace dao {
     }
 
     Window::~Window() {
-        if (m_renderer) { SDL_DestroyRenderer(m_renderer); }
         if (m_window) { SDL_DestroyWindow(m_window); }
     }
 
@@ -38,70 +36,25 @@ namespace dao {
         }
         m_pages[title] = std::move(page);
         m_pages[title]->setContext(m_context);
-        m_pages[title]->setVertexBatch(&m_vertexBatchBuilder);
+        m_pages[title]->setVertexBatch(&m_batchRenderer);
         registerPageTexture();
-        m_pages[title]->init();
-        m_atlasTextures[1] = SDL_CreateTextureFromSurface(
-            m_renderer, &m_pages[title]->getGlyphAtlas().getAtlasSurface());
+        m_pages[title]->open();
+
         return *this;
     }
 
-    void Window::registerTexture(const i32 &textureId) {
-        const AtlasRegion atlasRegion = getAtlasRegion(textureId);
-        if (const i32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
-            const char *texturePath = atlasRegion.atlasPath;
-            m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
-            if (!m_atlasTextures[atlasId]) {
-                DAO_ERROR_LOG("纹理图集加载失败:" + std::string(texturePath));
-            }
-            SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
-        }
-    }
-
     void Window::registerPageTexture() {
-        if (m_atlasTextures.contains(0)) {
-            SDL_Texture *tex = SDL_CreateTexture(
-                m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1
-            );
-            constexpr Uint32 whitePixel = 0xFFFFFFFF;
-            SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
-            m_atlasTextures[0] = tex;
-        }
         for (const auto &page: m_pages | std::views::values) {
             for (auto textureId: page->getRegisterTexture()) {
-                registerTexture(textureId);
+                m_batchRenderer.registerTexture(textureId);
             }
         }
     }
 
     void Window::update() {
         m_pages[m_nowPageTitle]->update();
-
-        if (m_pages[m_nowPageTitle]->getGlyphAtlas().isUpdated()) {
-            SDL_UpdateTexture(
-                m_atlasTextures[1], nullptr,
-                m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface().pixels,
-                m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface().pitch
-            );
-            SDL_SetTextureScaleMode(m_atlasTextures[1], SDL_SCALEMODE_NEAREST);
-            m_pages[m_nowPageTitle]->getGlyphAtlas().clearUpdateFlag();
-        }
-
+        m_batchRenderer.render();
         executeCommand();
-    }
-
-    void Window::render() {
-        SDL_RenderClear(m_renderer);
-        for (const auto &[atlasId, vertices, indices,indicesCount]:
-             m_vertexBatchBuilder.getDrawBatches()) {
-            SDL_RenderGeometry(
-                m_renderer, m_atlasTextures[atlasId],
-                vertices.data(), static_cast<int>(vertices.size()),
-                indices->data(), indicesCount
-            );
-        }
-
-        SDL_RenderPresent(m_renderer);
     }
 
     void Window::handleInputEvent(const SDL_Event &event) {
@@ -132,8 +85,7 @@ namespace dao {
         m_window = SDL_CreateWindow(
             m_nowPageTitle.data(), m_width, m_height,
             m_windowFlags);
-        m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
-        SDL_SetRenderVSync(m_renderer, 0);
+        m_batchRenderer.init(SDL_CreateRenderer(m_window, nullptr));
         m_id = static_cast<i32>(SDL_GetWindowID(m_window));
     }
 
@@ -148,10 +100,7 @@ namespace dao {
         m_pages[m_nowPageTitle]->close();
         m_nowPageTitle = std::move(title);
         setTitle(m_nowPageTitle);
-        m_pages[m_nowPageTitle]->init();
-        m_atlasTextures[1] = SDL_CreateTextureFromSurface(
-            m_renderer, &m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface()
-        );
+        m_pages[m_nowPageTitle]->open();
     }
 
     void Window::setPosition(const i32 x, const i32 y) const {

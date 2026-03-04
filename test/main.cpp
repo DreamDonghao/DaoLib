@@ -3,7 +3,7 @@
 #include "tray/my_tray.hpp"
 
 int main(int argc, char *argv[]) {
-    dao::App app{60, true};
+    dao::App app{120, true};
 
     app.getContext().emplaceService<dao::App *>(&app);
 

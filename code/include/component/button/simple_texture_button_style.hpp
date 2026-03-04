@@ -27,7 +27,7 @@ namespace dao {
             m_button = button;
         }
 
-        void writeToBatch(VertexBatchBuilder &builder) const override {
+        void writeToBatch(BatchRenderer &builder) const override {
             if (m_button->isEnable()) {
                 if (m_button->getStatus() == ButtonStatus::Normal) {
                     builder.addToBatch(m_normalStyle);

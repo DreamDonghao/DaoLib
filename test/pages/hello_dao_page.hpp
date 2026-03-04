@@ -14,7 +14,7 @@ public:
             dao::utf32str content = U"") : text(x, y, fontSize, color, std::move(content)) {
     }
 
-    void writeToBatch(dao::VertexBatchBuilder &builder) const override {
+    void writeToBatch(dao::BatchRenderer &builder) const override {
         builder.addToBatch(text);
     }
 
@@ -40,7 +40,7 @@ public:
 
     [[nodiscard]] std::vector<dao::TextureID> getRegisterTexture() const override;
 
-    void init() override;
+    void open() override;
 
     void close() override;
 

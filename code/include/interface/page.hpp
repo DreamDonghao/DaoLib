@@ -1,5 +1,5 @@
 #pragma once
-#include <core/render/vertex_batch_builder.hpp>
+#include <core/render/BatchRenderer.hpp>
 #include <core/frame/window_controller.hpp>
 
 namespace dao {
@@ -13,7 +13,7 @@ namespace dao {
 
         /// @brief 初始化页面
         /// @details 每次打开页面时执行
-        virtual void init() = 0;
+        virtual void open() = 0;
 
         /// @brief 关闭页面
         /// @details 每次关闭页面时执行
@@ -29,9 +29,6 @@ namespace dao {
         /// @brief 处理消息
         virtual void handleInputEvent(const SDL_Event &event) = 0;
 
-        /// @brief 获取字形图集
-        [[nodiscard]] virtual GlyphAtlas &getGlyphAtlas() = 0;
-
         /// @brief 获取窗口控制器
         virtual WindowController &getWindowController() = 0;
 
@@ -39,7 +36,7 @@ namespace dao {
         virtual void setContext(Context *context) = 0;
 
         /// @brief 设置渲染批处理器
-        virtual void setVertexBatch(VertexBatchBuilder *vertexBatch) = 0;
+        virtual void setVertexBatch(BatchRenderer *vertexBatch) = 0;
 
         /// @brief 获取页面标题
         [[nodiscard]] virtual const std::string &getTitle() const = 0;

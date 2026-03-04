@@ -4,10 +4,6 @@
 dao::GeneralPage::GeneralPage(std::string title): m_title(std::move(title)) {
 }
 
- dao::GlyphAtlas & dao::GeneralPage::getGlyphAtlas() {
-    return m_vertexBatch->getGlyphAtlas();
-}
-
 dao::WindowController & dao::GeneralPage::getWindowController() {
     return m_windowController;
 }

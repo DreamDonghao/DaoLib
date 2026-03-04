@@ -15,6 +15,6 @@ void dao::Image::setSize(const f32 x, const f32 y) {
     m_texture.setSize(x, y);
 }
 
-void dao::Image::writeToBatch(VertexBatchBuilder &builder) const {
+void dao::Image::writeToBatch(BatchRenderer &builder) const {
     builder.addToBatch(m_texture);
 }

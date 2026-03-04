@@ -7,7 +7,7 @@ std::vector<TextureID> HelloDaoPage::getRegisterTexture() const {
     return {texture::image};
 }
 
-void HelloDaoPage::init() {
+void HelloDaoPage::open() {
 }
 
 void HelloDaoPage::close() {

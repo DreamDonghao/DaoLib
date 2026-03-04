@@ -28,7 +28,7 @@ namespace dao {
             m_button = other.m_button;
         }
 
-        void writeToBatch(VertexBatchBuilder &builder) const override {
+        void writeToBatch(BatchRenderer &builder) const override {
             if (m_button->isEnable()) {
                 builder.addToBatch(m_text);
             }

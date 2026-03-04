@@ -29,7 +29,6 @@ namespace dao {
             m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {
                 window->update();
-                window->render();
                 window->getAppController().executeCommand(*this);
             }
             SDL_Event event;

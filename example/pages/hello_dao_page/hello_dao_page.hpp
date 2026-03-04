@@ -15,7 +15,7 @@ namespace example {
 
         [[nodiscard]] std::vector<dao::u32> getRegisterTexture() const override;
 
-        void init() override;
+        void open() override;
 
         void close() override;
 

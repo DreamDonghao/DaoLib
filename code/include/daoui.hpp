@@ -1,7 +1,7 @@
 #pragma once
 #include <core/frame/app.hpp>
 #include <core/frame/window.hpp>
-#include <core/render/vertex_batch_builder.hpp>
+#include <core/render/BatchRenderer.hpp>
 #include <interface/general_page.hpp>
 #include <interface/button.hpp>
 #include <component/button/simple_button.hpp>
