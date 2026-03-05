@@ -1,0 +1,5 @@
+<map id="dao::ifc::IButtonStyle" name="dao::ifc::IButtonStyle">
+<area shape="rect" id="Node000001" title="按钮样式接口" alt="" coords="5,139,156,244"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IDrawable.html" title="可绘制对象接口" alt="" coords="13,5,149,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,104,83,138,78,138,78,104"/>
+</map>

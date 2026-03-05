@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/core/tool/BoundingBox.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('BoundingBox_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BoundingBox.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="better__stl_8hpp_source.html">core/tool/better_stl.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+BoundingBox.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="BoundingBox_8hpp__incl.png" border="0" usemap="#acode_2include_2core_2tool_2BoundingBox_8hpp" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2tool_2BoundingBox_8hpp" id="acode_2include_2core_2tool_2BoundingBox_8hpp">
+<area shape="rect" title=" " alt="" coords="265,5,431,45"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="261,93,435,119"/>
+<area shape="poly" title=" " alt="" coords="351,46,351,79,345,79,345,46"/>
+<area shape="rect" title=" " alt="" coords="5,167,91,192"/>
+<area shape="poly" title=" " alt="" coords="300,121,105,167,103,162,299,116"/>
+<area shape="rect" title=" " alt="" coords="115,167,181,192"/>
+<area shape="poly" title=" " alt="" coords="317,121,195,164,193,159,315,116"/>
+<area shape="rect" title=" " alt="" coords="205,167,285,192"/>
+<area shape="poly" title=" " alt="" coords="333,121,275,161,272,156,330,116"/>
+<area shape="rect" title=" " alt="" coords="309,167,387,192"/>
+<area shape="poly" title=" " alt="" coords="351,119,351,153,345,153,345,119"/>
+<area shape="rect" title=" " alt="" coords="411,167,483,192"/>
+<area shape="poly" title=" " alt="" coords="365,117,421,156,418,161,362,121"/>
+<area shape="rect" title=" " alt="" coords="507,167,631,192"/>
+<area shape="poly" title=" " alt="" coords="384,116,522,160,520,165,383,121"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="655,167,795,192"/>
+<area shape="poly" title=" " alt="" coords="409,116,651,161,650,167,408,121"/>
+<area shape="rect" title=" " alt="" coords="603,240,727,265"/>
+<area shape="poly" title=" " alt="" coords="717,194,686,231,682,228,713,191"/>
+<area shape="rect" title=" " alt="" coords="752,240,819,265"/>
+<area shape="poly" title=" " alt="" coords="737,191,769,228,765,231,733,194"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="BoundingBox_8hpp__dep__incl.png" border="0" usemap="#acode_2include_2core_2tool_2BoundingBox_8hppdep" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2tool_2BoundingBox_8hppdep" id="acode_2include_2core_2tool_2BoundingBox_8hppdep">
+<area shape="rect" title=" " alt="" coords="1384,5,1549,45"/>
+<area shape="rect" href="InputBox_8hpp.html" title=" " alt="" coords="5,621,187,661"/>
+<area shape="poly" title=" " alt="" coords="1370,32,1048,45,845,57,638,74,445,96,285,125,223,141,176,160,147,180,140,190,137,200,137,467,134,511,126,554,106,622,101,620,120,553,129,510,132,467,132,200,135,187,143,176,174,155,222,136,284,119,444,91,637,68,845,52,1048,39,1370,26"/>
+<area shape="rect" href="GlyphAtlas_8hpp.html" title=" " alt="" coords="1268,93,1463,133"/>
+<area shape="poly" title=" " alt="" coords="1435,56,1389,95,1386,91,1432,52"/>
+<area shape="rect" href="MappedRegion_8hpp.html" title=" " alt="" coords="1491,93,1656,133"/>
+<area shape="poly" title=" " alt="" coords="1503,52,1551,91,1548,95,1499,56"/>
+<area shape="rect" href="BoundingBox_8cpp.html" title=" " alt="" coords="1680,93,1819,133"/>
+<area shape="poly" title=" " alt="" coords="1543,47,1688,91,1687,96,1541,52"/>
+<area shape="rect" href="InputBoxStyle_8hpp.html" title=" " alt="" coords="183,805,366,845"/>
+<area shape="poly" title=" " alt="" coords="126,670,258,803,254,806,123,673"/>
+<area shape="rect" href="daoui_8hpp.html" title=" " alt="" coords="815,900,987,925"/>
+<area shape="poly" title=" " alt="" coords="380,842,424,849,635,878,815,899,815,905,634,883,424,855,379,848"/>
+<area shape="rect" href="daoui_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="830,973,973,999"/>
+<area shape="poly" title=" " alt="" coords="904,939,904,973,899,973,899,939"/>
+<area shape="rect" href="BatchRenderer_8hpp.html" title=" " alt="" coords="1139,269,1322,309"/>
+<area shape="poly" title=" " alt="" coords="1307,142,1280,160,1258,183,1247,204,1239,227,1234,270,1228,269,1234,226,1242,202,1254,180,1277,156,1304,138"/>
+<area shape="rect" href="GlyphAtlas_8cpp.html" title=" " alt="" coords="1268,181,1463,221"/>
+<area shape="poly" title=" " alt="" coords="1368,147,1368,181,1363,181,1363,147"/>
+<area shape="poly" title=" " alt="" coords="1126,300,876,322,578,357,442,379,329,405,286,419,254,434,233,449,227,465,227,643,231,689,242,733,268,803,263,805,237,735,226,690,221,643,221,463,229,446,251,429,284,414,328,400,441,374,578,351,876,316,1125,295"/>
+<area shape="poly" title=" " alt="" coords="1181,319,1160,337,1144,358,1140,377,1144,397,1157,468,1181,531,1235,641,1254,692,1260,717,1261,743,1258,770,1250,797,1235,825,1214,854,1199,866,1178,876,1120,892,1053,903,988,910,987,904,1053,898,1119,887,1176,872,1196,862,1210,850,1231,822,1245,795,1253,768,1256,743,1254,718,1249,693,1230,643,1176,533,1152,470,1139,398,1135,377,1139,356,1156,333,1177,315"/>
+<area shape="rect" href="window_8hpp.html" title=" " alt="" coords="1332,357,1511,397"/>
+<area shape="poly" title=" " alt="" coords="1286,313,1381,355,1378,360,1284,317"/>
+<area shape="rect" href="IDrawable_8hpp.html" title=" " alt="" coords="911,357,1078,397"/>
+<area shape="poly" title=" " alt="" coords="1167,317,1047,360,1045,355,1165,312"/>
+<area shape="rect" href="IGeneralPage_8hpp.html" title=" " alt="" coords="1586,357,1753,397"/>
+<area shape="poly" title=" " alt="" coords="1336,308,1586,357,1585,362,1335,314"/>
+<area shape="rect" href="BatchRenderer_8cpp.html" title=" " alt="" coords="1153,357,1308,397"/>
+<area shape="poly" title=" " alt="" coords="1233,323,1233,357,1228,357,1228,323"/>
+<area shape="poly" title=" " alt="" coords="897,385,717,397,614,409,513,426,421,448,345,476,317,492,295,510,282,530,277,552,277,643,277,804,272,804,272,643,272,552,277,528,291,507,314,488,343,471,419,442,512,420,613,404,717,392,897,379"/>
+<area shape="rect" href="IGraph_8hpp.html" title=" " alt="" coords="871,445,1052,485"/>
+<area shape="poly" title=" " alt="" coords="985,411,971,446,966,444,980,409"/>
+<area shape="rect" href="image_8hpp.html" title=" " alt="" coords="1231,445,1412,485"/>
+<area shape="poly" title=" " alt="" coords="1080,398,1250,443,1249,448,1079,403"/>
+<area shape="rect" href="IButtonStyle_8hpp.html" title=" " alt="" coords="1006,709,1173,749"/>
+<area shape="poly" title=" " alt="" coords="1035,404,1052,423,1066,444,1080,480,1090,518,1099,594,1099,661,1095,710,1089,709,1093,661,1094,594,1085,519,1075,482,1062,447,1048,426,1031,408"/>
+<area shape="poly" title=" " alt="" coords="965,499,968,640,968,731,963,793,942,853,928,880,913,901,909,898,924,877,938,851,958,792,963,731,963,640,960,499"/>
+<area shape="rect" href="Polygon_8hpp.html" title=" " alt="" coords="691,533,872,573"/>
+<area shape="poly" title=" " alt="" coords="911,494,822,536,820,531,909,489"/>
+<area shape="rect" href="Rect_8hpp.html" title=" " alt="" coords="580,621,761,661"/>
+<area shape="poly" title=" " alt="" coords="747,584,697,623,694,619,744,580"/>
+<area shape="poly" title=" " alt="" coords="702,670,725,708,731,730,732,750,725,784,722,817,726,833,737,850,753,867,772,880,816,898,814,903,770,885,749,871,733,854,721,835,717,817,720,784,726,749,726,731,720,710,697,673"/>
+<area shape="rect" href="simple__button_8hpp.html" title=" " alt="" coords="518,709,711,749"/>
+<area shape="poly" title=" " alt="" coords="653,674,629,711,625,708,649,672"/>
+<area shape="rect" href="SolidRect_8hpp.html" title=" " alt="" coords="312,709,493,749"/>
+<area shape="poly" title=" " alt="" coords="600,668,462,712,461,707,598,663"/>
+<area shape="poly" title=" " alt="" coords="521,757,492,775,470,799,463,813,460,826,462,838,470,850,492,867,526,880,568,891,616,898,719,907,815,910,815,915,719,912,615,903,567,896,524,885,490,871,466,854,457,840,454,825,458,811,466,796,489,771,518,753"/>
+<area shape="rect" href="simple__texture__button__style_8hpp.html" title=" " alt="" coords="747,797,928,852"/>
+<area shape="poly" title=" " alt="" coords="673,752,776,795,774,800,671,757"/>
+<area shape="rect" href="simple__button_8cpp.html" title=" " alt="" coords="480,805,672,845"/>
+<area shape="poly" title=" " alt="" coords="604,763,586,806,581,804,599,761"/>
+<area shape="poly" title=" " alt="" coords="867,861,895,898,890,901,863,864"/>
+<area shape="poly" title=" " alt="" coords="367,760,302,807,299,802,364,755"/>
+<area shape="rect" href="image_8cpp.html" title=" " alt="" coords="1245,533,1398,573"/>
+<area shape="poly" title=" " alt="" coords="1324,499,1324,533,1319,533,1319,499"/>
+<area shape="poly" title=" " alt="" coords="1027,757,909,800,907,795,1025,752"/>
+<area shape="rect" href="simple__text__button__style_8hpp.html" title=" " alt="" coords="1002,797,1201,852"/>
+<area shape="poly" title=" " alt="" coords="1096,762,1101,797,1095,798,1091,763"/>
+<area shape="poly" title=" " alt="" coords="1029,860,929,902,927,897,1027,855"/>
+<area shape="poly" title=" " alt="" coords="1631,408,1609,426,1590,447,1554,496,1546,520,1543,552,1543,731,1538,752,1525,772,1506,790,1479,806,1412,834,1330,857,1239,876,1148,890,988,908,987,902,1147,885,1238,871,1328,852,1410,829,1477,801,1502,785,1521,768,1533,750,1537,730,1537,552,1540,519,1550,493,1586,444,1606,422,1627,404"/>
+<area shape="rect" href="IGeneralPage_8cpp.html" title=" " alt="" coords="1600,445,1739,485"/>
+<area shape="poly" title=" " alt="" coords="1672,411,1672,445,1667,445,1667,411"/>
+<area shape="rect" href="AtlasTexture_8hpp.html" title=" " alt="" coords="1487,181,1670,221"/>
+<area shape="poly" title=" " alt="" coords="1578,147,1580,181,1575,181,1573,147"/>
+<area shape="rect" href="MappedRegion_8cpp.html" title=" " alt="" coords="1694,181,1845,221"/>
+<area shape="poly" title=" " alt="" coords="1630,136,1727,179,1725,184,1628,141"/>
+<area shape="poly" title=" " alt="" coords="1490,227,1307,272,1306,267,1488,222"/>
+<area shape="poly" title=" " alt="" coords="1576,235,1556,326,1541,370,1525,399,1500,420,1472,436,1413,456,1411,451,1470,431,1497,415,1521,396,1536,368,1550,325,1571,234"/>
+<area shape="rect" href="animated__sprite_8hpp.html" title=" " alt="" coords="1777,269,1959,309"/>
+<area shape="poly" title=" " alt="" coords="1656,223,1805,267,1804,272,1654,228"/>
+<area shape="rect" href="IPage_8hpp.html" title=" " alt="" coords="1586,269,1753,309"/>
+<area shape="poly" title=" " alt="" coords="1610,229,1651,267,1647,271,1607,233"/>
+<area shape="rect" href="AtlasTexture_8cpp.html" title=" " alt="" coords="1983,269,2137,309"/>
+<area shape="poly" title=" " alt="" coords="1684,219,1971,267,1983,269,1982,274,1970,272,1683,224"/>
+<area shape="poly" title=" " alt="" coords="1603,316,1476,360,1475,355,1601,311"/>
+<area shape="poly" title=" " alt="" coords="1672,323,1672,357,1667,357,1667,323"/>
+</map>
+</div>
+</div>
+<p><a href="BoundingBox_8hpp_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:dao_3A_3ABoundingBox" id="r_dao_3A_3ABoundingBox"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BoundingBox.html">dao::BoundingBox</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">边界框  <a href="classdao_1_1BoundingBox.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:dao" id="r_dao"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html">dao</a></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

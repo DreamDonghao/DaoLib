@@ -1,5 +1,5 @@
 <map id="dao::AnimatedSprite" name="dao::AnimatedSprite">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,152,284"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="17,5,140,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,104,81,138,76,138,76,104"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,119,152,264"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="41,5,117,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,84,81,118,76,118,76,84"/>
 </map>

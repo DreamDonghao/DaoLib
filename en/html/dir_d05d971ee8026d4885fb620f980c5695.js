@@ -1,8 +1,8 @@
 var dir_d05d971ee8026d4885fb620f980c5695 =
 [
-    [ "button.hpp", "button_8hpp.html", "button_8hpp" ],
-    [ "button_style.hpp", "button__style_8hpp.html", "button__style_8hpp" ],
-    [ "drawable.hpp", "drawable_8hpp.html", "drawable_8hpp" ],
-    [ "general_page.hpp", "general__page_8hpp.html", "general__page_8hpp" ],
-    [ "page.hpp", "page_8hpp.html", "page_8hpp" ]
+    [ "IButton.hpp", "IButton_8hpp.html", "IButton_8hpp" ],
+    [ "IButtonStyle.hpp", "IButtonStyle_8hpp.html", "IButtonStyle_8hpp" ],
+    [ "IDrawable.hpp", "IDrawable_8hpp.html", "IDrawable_8hpp" ],
+    [ "IGeneralPage.hpp", "IGeneralPage_8hpp.html", "IGeneralPage_8hpp" ],
+    [ "IPage.hpp", "IPage_8hpp.html", "IPage_8hpp" ]
 ];

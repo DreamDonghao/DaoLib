@@ -1,0 +1,7 @@
+<map id="dao::BatchRenderer::addToBatch" name="dao::BatchRenderer::addToBatch">
+<area shape="rect" id="Node000001" title="添加文本到批处理" alt="" coords="256,37,407,77"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1InputBoxStyle.html#a83d83298e113ba0d3449282d6ced612e" title="写入批处理" alt="" coords="34,5,179,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,47,179,38,180,33,242,42"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1SimpleTextButtonStyle.html#a346213b60448513e6b0d6c3fde4d6d8d" title="写入批处理" alt="" coords="5,69,208,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,73,209,78,208,72,242,67"/>
+</map>

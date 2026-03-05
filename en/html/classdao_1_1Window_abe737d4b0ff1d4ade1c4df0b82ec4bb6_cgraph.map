@@ -1,5 +1,0 @@
-<map id="dao::Window::addPage" name="dao::Window::addPage">
-<area shape="rect" id="Node000001" title="添加页面" alt="" coords="5,13,173,38"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
-</map>

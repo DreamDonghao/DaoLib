@@ -1,0 +1,7 @@
+<map id="dao::ifc::IGeneralPage::getGlyphAspectRatio" name="dao::ifc::IGeneralPage::getGlyphAspectRatio">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,172,77"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8" title="获取字形的宽高比" alt="" coords="220,5,412,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,43,206,38,207,43,173,48"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867" title="获取字形图集" alt="" coords="241,69,391,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,66,227,74,227,79,172,72"/>
+</map>

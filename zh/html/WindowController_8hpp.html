@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/core/frame/WindowController.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('WindowController_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WindowController.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;any&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="better__stl_8hpp_source.html">core/tool/better_stl.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+WindowController.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="WindowController_8hpp__incl.png" border="0" usemap="#acode_2include_2core_2frame_2WindowController_8hpp" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2frame_2WindowController_8hpp" id="acode_2include_2core_2frame_2WindowController_8hpp">
+<area shape="rect" title=" " alt="" coords="119,5,297,45"/>
+<area shape="rect" title=" " alt="" coords="107,93,154,119"/>
+<area shape="poly" title=" " alt="" coords="191,47,154,85,150,82,187,44"/>
+<area shape="rect" title=" " alt="" coords="179,93,237,119"/>
+<area shape="poly" title=" " alt="" coords="211,46,211,79,205,79,205,46"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="261,93,435,119"/>
+<area shape="poly" title=" " alt="" coords="243,43,316,84,314,89,240,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,91,192"/>
+<area shape="poly" title=" " alt="" coords="300,121,105,167,103,162,299,116"/>
+<area shape="rect" title=" " alt="" coords="115,167,181,192"/>
+<area shape="poly" title=" " alt="" coords="317,121,195,164,193,159,315,116"/>
+<area shape="rect" title=" " alt="" coords="205,167,285,192"/>
+<area shape="poly" title=" " alt="" coords="333,121,275,161,272,156,330,116"/>
+<area shape="rect" title=" " alt="" coords="309,167,387,192"/>
+<area shape="poly" title=" " alt="" coords="351,119,351,153,345,153,345,119"/>
+<area shape="rect" title=" " alt="" coords="411,167,483,192"/>
+<area shape="poly" title=" " alt="" coords="365,117,421,156,418,161,362,121"/>
+<area shape="rect" title=" " alt="" coords="507,167,631,192"/>
+<area shape="poly" title=" " alt="" coords="384,116,522,160,520,165,383,121"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="655,167,795,192"/>
+<area shape="poly" title=" " alt="" coords="409,116,651,161,650,167,408,121"/>
+<area shape="rect" title=" " alt="" coords="603,240,727,265"/>
+<area shape="poly" title=" " alt="" coords="717,194,686,231,682,228,713,191"/>
+<area shape="rect" title=" " alt="" coords="752,240,819,265"/>
+<area shape="poly" title=" " alt="" coords="737,191,769,228,765,231,733,194"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="WindowController_8hpp__dep__incl.png" border="0" usemap="#acode_2include_2core_2frame_2WindowController_8hppdep" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2frame_2WindowController_8hppdep" id="acode_2include_2core_2frame_2WindowController_8hppdep">
+<area shape="rect" title=" " alt="" coords="283,5,462,45"/>
+<area shape="rect" href="IGeneralPage_8hpp.html" title=" " alt="" coords="97,93,264,133"/>
+<area shape="poly" title=" " alt="" coords="319,53,224,96,222,91,317,49"/>
+<area shape="rect" href="WindowController_8cpp.html" title=" " alt="" coords="289,93,457,133"/>
+<area shape="poly" title=" " alt="" coords="375,59,375,93,370,93,370,59"/>
+<area shape="rect" href="window_8cpp.html" title=" " alt="" coords="481,93,632,133"/>
+<area shape="poly" title=" " alt="" coords="427,49,518,91,515,96,424,54"/>
+<area shape="rect" href="daoui_8hpp.html" title=" " alt="" coords="5,189,177,214"/>
+<area shape="poly" title=" " alt="" coords="153,145,106,190,102,186,149,141"/>
+<area shape="rect" href="IGeneralPage_8cpp.html" title=" " alt="" coords="202,181,341,221"/>
+<area shape="poly" title=" " alt="" coords="212,141,253,179,249,183,209,145"/>
+<area shape="rect" href="daoui_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="20,269,163,295"/>
+<area shape="poly" title=" " alt="" coords="94,228,94,269,89,269,89,228"/>
+</map>
+</div>
+</div>
+<p><a href="WindowController_8hpp_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:dao_3A_3AWindowCommand" id="r_dao_3A_3AWindowCommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1WindowCommand.html">dao::WindowCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口级命令  <a href="structdao_1_1WindowCommand.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dao_3A_3AWindowController" id="r_dao_3A_3AWindowController"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1WindowController.html">dao::WindowController</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口控制器  <a href="classdao_1_1WindowController.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:dao" id="r_dao"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html">dao</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a55c8fd75b7572d13bfd5f12e4a8fad67" id="r_a55c8fd75b7572d13bfd5f12e4a8fad67"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67">dao::WindowCommandType</a> { <br />
+&#160;&#160;<a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4">dao::switchPage</a>
+, <a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a21acc1e2d77daeb71545dc6f238367de">dao::setClickThrough</a>
+, <a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67afe2f4ad0b60e69f5777c2cf5917dc804">dao::setPosition</a>
+, <a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065">dao::movePosition</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a8840bcb1a79ec28dc964ac0182acf57f">dao::setSize</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a55c8fd75b7572d13bfd5f12e4a8fad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口级命令类型  <a href="namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67">更多...</a><br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

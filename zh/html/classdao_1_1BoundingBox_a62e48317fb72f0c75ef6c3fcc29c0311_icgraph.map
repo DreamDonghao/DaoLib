@@ -1,9 +1,7 @@
 <map id="dao::BoundingBox::getWidth" name="dao::BoundingBox::getWidth">
-<area shape="rect" id="Node000001" title="获取宽度" alt="" coords="468,35,675,60"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9" title=" " alt="" coords="228,5,420,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,36,420,32,421,27,455,31"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1AtlasTexture.html#a001d27926e737168811ace5526c5b93f" title="设置纹理位置（保持大小不变）" alt="" coords="253,55,395,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="454,63,396,70,395,65,454,58"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1Image.html#aca40b163cfbf2262c3b06910afc3ecce" title=" " alt="" coords="5,63,180,88"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,78,180,78,180,73,239,73"/>
+<area shape="rect" id="Node000001" title="获取宽度" alt="" coords="419,13,625,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a001d27926e737168811ace5526c5b93f" title="设置纹理位置（保持大小不变）" alt="" coords="228,5,371,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="405,28,371,28,371,23,405,23"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Image.html#aca40b163cfbf2262c3b06910afc3ecce" title=" " alt="" coords="5,13,180,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
 </map>

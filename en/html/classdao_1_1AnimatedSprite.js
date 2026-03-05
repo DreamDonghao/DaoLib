@@ -1,8 +1,8 @@
 var classdao_1_1AnimatedSprite =
 [
-    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#a91269780586bd27ef28ab865b7ba9315", null ],
-    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#aaf29a1c79b78879d7df037ec55e34969", null ],
-    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#ae72060ce09468af2c8981227b4eac886", null ],
+    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#ae1e67e6c6a5f22f651bb4801cdc1ad57", null ],
+    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#abf0381387eb890f0bb132f6975c6cd4c", null ],
+    [ "AnimatedSprite", "classdao_1_1AnimatedSprite.html#a1d508018c21819ec58bf301211bad848", null ],
     [ "beginUse", "classdao_1_1AnimatedSprite.html#a87da06007bdd6ddbf44f9d95700e3ce6", null ],
-    [ "writeToBatch", "classdao_1_1AnimatedSprite.html#a6a2e1768db693d5802df32787579602e", null ]
+    [ "writeToBatch", "classdao_1_1AnimatedSprite.html#a13ba0a36032cf4b8e66ebbd960c58806", null ]
 ];

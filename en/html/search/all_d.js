@@ -1,9 +1,10 @@
 var searchData=
 [
   ['f32_0',['f32',['../namespacedao.html#a97a8fc44aad6375de4f486418d03b30d',1,'dao']]],
-  ['f64_1',['f64',['../namespacedao.html#a86cbf5a06915625b80cdad61d21c555b',1,'dao']]],
-  ['feature_20branch_2',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
-  ['fork_20the_20repository_3',['1. Fork the Repository',['../join.html#autotoc_md2',1,'']]],
-  ['frame_5flimiter_2ehpp_4',['frame_limiter.hpp',['../frame__limiter_8hpp.html',1,'']]],
-  ['framelimiter_5',['FrameLimiter',['../classdao_1_1FrameLimiter.html',1,'dao::FrameLimiter'],['../classdao_1_1FrameLimiter.html#ae7ff8948e2799362adfec6977073e595',1,'dao::FrameLimiter::FrameLimiter()']]]
+  ['f32pi_1',['f32pi',['../namespacedao.html#acf43f30b906744bcf8d4dbc1a997bccc',1,'dao']]],
+  ['f64_2',['f64',['../namespacedao.html#a86cbf5a06915625b80cdad61d21c555b',1,'dao']]],
+  ['feature_20branch_3',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
+  ['fork_20the_20repository_4',['1. Fork the Repository',['../join.html#autotoc_md2',1,'']]],
+  ['framelimiter_5',['FrameLimiter',['../classdao_1_1FrameLimiter.html',1,'dao::FrameLimiter'],['../classdao_1_1FrameLimiter.html#ae7ff8948e2799362adfec6977073e595',1,'dao::FrameLimiter::FrameLimiter()']]],
+  ['framelimiter_2ehpp_6',['FrameLimiter.hpp',['../FrameLimiter_8hpp.html',1,'']]]
 ];

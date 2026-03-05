@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1InputBox.html','','classdao_1_1InputBox-me
 <p>输入框  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="input__box_8hpp_source.html">input_box.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a>&gt;</code></p>
 <div class="dynheader">
 dao::InputBox 的协作图:</div>
 <div class="dyncontent">
@@ -121,7 +121,7 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>输入框 </p>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>使用 SDL3 的中文输入时，数字键选择候选词后偶发失效 可能是由于 SDL 事件循环与操作系统 IME 之间的"竞态条件"或事件冲突 暂未找到解决方案 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00022">22</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00017">17</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a6a58a59f721d6ea5fe5ad5f58d26bef3" name="a6a58a59f721d6ea5fe5ad5f58d26bef3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a58a59f721d6ea5fe5ad5f58d26bef3">&#9670;&#160;</a></span>InputBox()</h2>
@@ -165,9 +165,9 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00024">24</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>            : m_status(status), m_boundingBox(x, y, x + w, y + h) {</div>
-<div class="line"><span class="lineno">   27</span>        }</div>
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00019">19</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>            : m_status(status), m_boundingBox(x, y, x + w, y + h) {</div>
+<div class="line"><span class="lineno">   22</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -205,11 +205,22 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00090">90</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>                                                         {</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">return</span> m_boundingBox;</div>
-<div class="line"><span class="lineno">   92</span>        }</div>
-</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00085">85</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                         {</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span> m_boundingBox;</div>
+<div class="line"><span class="lineno">   87</span>        }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1InputBox_acbfb2c5ba07d88c6889bdc7e7d51c19c_icgraph.png" border="0" usemap="#aclassdao_1_1InputBox_acbfb2c5ba07d88c6889bdc7e7d51c19c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1InputBox_acbfb2c5ba07d88c6889bdc7e7d51c19c_icgraph" id="aclassdao_1_1InputBox_acbfb2c5ba07d88c6889bdc7e7d51c19c_icgraph">
+<area shape="rect" title=" " alt="" coords="199,37,425,62"/>
+<area shape="rect" href="classdao_1_1InputBoxStyle.html#abd8daf3ce5f3c3c4f75dab5a8a615cc9" title=" " alt="" coords="5,29,151,69"/>
+<area shape="poly" title=" " alt="" coords="185,52,151,52,151,47,185,47"/>
+<area shape="poly" title=" " alt="" coords="117,18,104,11,78,8,56,10,42,15,37,21,40,28,35,30,32,20,39,10,54,5,78,3,105,6,120,13"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a3c3924b780e16af37e536a3269287907" name="a3c3924b780e16af37e536a3269287907"></a>
@@ -235,11 +246,21 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00098">98</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>                                               {</div>
-<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">return</span> cursorPos;</div>
-<div class="line"><span class="lineno">  100</span>        }</div>
-</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00093">93</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>                                               {</div>
+<div class="line"><span class="lineno">   94</span>            <span class="keywordflow">return</span> cursorPos;</div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1InputBox_a3c3924b780e16af37e536a3269287907_icgraph.png" border="0" usemap="#aclassdao_1_1InputBox_a3c3924b780e16af37e536a3269287907_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1InputBox_a3c3924b780e16af37e536a3269287907_icgraph" id="aclassdao_1_1InputBox_a3c3924b780e16af37e536a3269287907_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,405,38"/>
+<area shape="rect" href="classdao_1_1InputBoxStyle.html#a83d83298e113ba0d3449282d6ced612e" title="写入批处理" alt="" coords="5,5,151,45"/>
+<area shape="poly" title=" " alt="" coords="185,28,151,28,151,23,185,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a577ca2994777031ffe60998c2dc15354" name="a577ca2994777031ffe60998c2dc15354"></a>
@@ -265,10 +286,10 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00094">94</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                                                    {</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">return</span> m_status;</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00089">89</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                    {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> m_status;</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -305,11 +326,21 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00102">102</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>                                                          {</div>
-<div class="line"><span class="lineno">  103</span>            <span class="keywordflow">return</span> m_text;</div>
-<div class="line"><span class="lineno">  104</span>        }</div>
-</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00097">97</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                          {</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">return</span> m_text;</div>
+<div class="line"><span class="lineno">   99</span>        }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1InputBox_aabfa1799b460b92da6223840bec4827d_icgraph.png" border="0" usemap="#aclassdao_1_1InputBox_aabfa1799b460b92da6223840bec4827d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1InputBox_aabfa1799b460b92da6223840bec4827d_icgraph" id="aclassdao_1_1InputBox_aabfa1799b460b92da6223840bec4827d_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,367,38"/>
+<area shape="rect" href="classdao_1_1InputBoxStyle.html#a83d83298e113ba0d3449282d6ced612e" title="写入批处理" alt="" coords="5,5,151,45"/>
+<area shape="poly" title=" " alt="" coords="185,28,151,28,151,23,185,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ad0bc0068c55bafb1ece54db487e42406" name="ad0bc0068c55bafb1ece54db487e42406"></a>
@@ -337,69 +368,69 @@ Public 成员函数</h2></td></tr>
 
 <p>处理消息，更新状态 </p>
 
-<p class="definition">在文件 <a class="el" href="input__box_8hpp_source.html">input_box.hpp</a> 第 <a class="el" href="input__box_8hpp_source.html#l00030">30</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                 {</div>
-<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> (m_status == <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241">InputStatus::Disabled</a>) {</div>
-<div class="line"><span class="lineno">   32</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   33</span>            }</div>
-<div class="line"><span class="lineno">   34</span>            <span class="keywordtype">float</span> x = 0, y = 0;</div>
-<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_MOTION) {</div>
-<div class="line"><span class="lineno">   36</span>                x = <span class="keyword">event</span>.motion.x;</div>
-<div class="line"><span class="lineno">   37</span>                y = <span class="keyword">event</span>.motion.y;</div>
-<div class="line"><span class="lineno">   38</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN || event.type == SDL_EVENT_MOUSE_BUTTON_UP) {</div>
-<div class="line"><span class="lineno">   39</span>                x = <span class="keyword">event</span>.button.x;</div>
-<div class="line"><span class="lineno">   40</span>                y = <span class="keyword">event</span>.button.y;</div>
-<div class="line"><span class="lineno">   41</span>            }</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>            SDL_Window *win = SDL_GetWindowFromID(event.window.windowID);</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">if</span> (m_status == <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">InputStatus::Input</a>) {</div>
-<div class="line"><span class="lineno">   45</span>                <span class="keyword">const</span> SDL_Rect rect{</div>
-<div class="line"><span class="lineno">   46</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getLeft()),</div>
-<div class="line"><span class="lineno">   47</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getTop()),   <span class="comment">// 顶部</span></div>
-<div class="line"><span class="lineno">   48</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getWidth()), <span class="comment">// 宽度</span></div>
-<div class="line"><span class="lineno">   49</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getHeight()) <span class="comment">// 高度</span></div>
-<div class="line"><span class="lineno">   50</span>                };</div>
-<div class="line"><span class="lineno">   51</span>                SDL_SetTextInputArea(win, &amp;rect, cursorPos);</div>
-<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_TEXT_INPUT) {</div>
-<div class="line"><span class="lineno">   53</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span> *utf8chars = <span class="keyword">event</span>.text.text;</div>
-<div class="line"><span class="lineno">   54</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> begin = utf8::unchecked::iterator(utf8chars);</div>
-<div class="line"><span class="lineno">   55</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> end = utf8::unchecked::iterator(utf8chars + std::strlen(utf8chars));</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = begin; it != end; ++it) {</div>
-<div class="line"><span class="lineno">   58</span>                        m_text.insert(m_text.begin() + cursorPos, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char32_t</span><span class="keyword">&gt;</span>(*it));</div>
-<div class="line"><span class="lineno">   59</span>                        cursorPos += 1;</div>
-<div class="line"><span class="lineno">   60</span>                    }</div>
-<div class="line"><span class="lineno">   61</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_KEY_DOWN) {</div>
-<div class="line"><span class="lineno">   62</span>                    <span class="keywordflow">if</span> (event.key.key == SDLK_BACKSPACE &amp;&amp; !m_text.empty()) {</div>
-<div class="line"><span class="lineno">   63</span>                        <span class="keywordflow">if</span> (cursorPos != 0) {</div>
-<div class="line"><span class="lineno">   64</span>                            m_text.erase(cursorPos - 1, 1);</div>
-<div class="line"><span class="lineno">   65</span>                            --cursorPos;</div>
-<div class="line"><span class="lineno">   66</span>                        }</div>
-<div class="line"><span class="lineno">   67</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_DELETE) {</div>
-<div class="line"><span class="lineno">   68</span>                        <span class="keywordflow">if</span> (cursorPos != m_text.size()) {</div>
-<div class="line"><span class="lineno">   69</span>                            m_text.erase(cursorPos, 1);</div>
-<div class="line"><span class="lineno">   70</span>                        }</div>
-<div class="line"><span class="lineno">   71</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_LEFT) {</div>
-<div class="line"><span class="lineno">   72</span>                        cursorPos = std::max(cursorPos - 1, 0);</div>
-<div class="line"><span class="lineno">   73</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_RIGHT) {</div>
-<div class="line"><span class="lineno">   74</span>                        cursorPos = std::min(cursorPos + 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_text.size()));</div>
+<p class="definition">在文件 <a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a> 第 <a class="el" href="InputBox_8hpp_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                 {</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">if</span> (m_status == <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241">InputStatus::Disabled</a>) {</div>
+<div class="line"><span class="lineno">   27</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   28</span>            }</div>
+<div class="line"><span class="lineno">   29</span>            <span class="keywordtype">float</span> x = 0, y = 0;</div>
+<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_MOTION) {</div>
+<div class="line"><span class="lineno">   31</span>                x = <span class="keyword">event</span>.motion.x;</div>
+<div class="line"><span class="lineno">   32</span>                y = <span class="keyword">event</span>.motion.y;</div>
+<div class="line"><span class="lineno">   33</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN || event.type == SDL_EVENT_MOUSE_BUTTON_UP) {</div>
+<div class="line"><span class="lineno">   34</span>                x = <span class="keyword">event</span>.button.x;</div>
+<div class="line"><span class="lineno">   35</span>                y = <span class="keyword">event</span>.button.y;</div>
+<div class="line"><span class="lineno">   36</span>            }</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>            SDL_Window *win = SDL_GetWindowFromID(event.window.windowID);</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">if</span> (m_status == <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">InputStatus::Input</a>) {</div>
+<div class="line"><span class="lineno">   40</span>                <span class="keyword">const</span> SDL_Rect rect{</div>
+<div class="line"><span class="lineno">   41</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getLeft()),</div>
+<div class="line"><span class="lineno">   42</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getTop()),   <span class="comment">// 顶部</span></div>
+<div class="line"><span class="lineno">   43</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getWidth()), <span class="comment">// 宽度</span></div>
+<div class="line"><span class="lineno">   44</span>                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_boundingBox.getHeight()) <span class="comment">// 高度</span></div>
+<div class="line"><span class="lineno">   45</span>                };</div>
+<div class="line"><span class="lineno">   46</span>                SDL_SetTextInputArea(win, &amp;rect, cursorPos);</div>
+<div class="line"><span class="lineno">   47</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_TEXT_INPUT) {</div>
+<div class="line"><span class="lineno">   48</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span> *utf8chars = <span class="keyword">event</span>.text.text;</div>
+<div class="line"><span class="lineno">   49</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> begin = utf8::unchecked::iterator(utf8chars);</div>
+<div class="line"><span class="lineno">   50</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> end = utf8::unchecked::iterator(utf8chars + std::strlen(utf8chars));</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = begin; it != end; ++it) {</div>
+<div class="line"><span class="lineno">   53</span>                        m_text.insert(m_text.begin() + cursorPos, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char32_t</span><span class="keyword">&gt;</span>(*it));</div>
+<div class="line"><span class="lineno">   54</span>                        cursorPos += 1;</div>
+<div class="line"><span class="lineno">   55</span>                    }</div>
+<div class="line"><span class="lineno">   56</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_KEY_DOWN) {</div>
+<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">if</span> (event.key.key == SDLK_BACKSPACE &amp;&amp; !m_text.empty()) {</div>
+<div class="line"><span class="lineno">   58</span>                        <span class="keywordflow">if</span> (cursorPos != 0) {</div>
+<div class="line"><span class="lineno">   59</span>                            m_text.erase(cursorPos - 1, 1);</div>
+<div class="line"><span class="lineno">   60</span>                            --cursorPos;</div>
+<div class="line"><span class="lineno">   61</span>                        }</div>
+<div class="line"><span class="lineno">   62</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_DELETE) {</div>
+<div class="line"><span class="lineno">   63</span>                        <span class="keywordflow">if</span> (cursorPos != m_text.size()) {</div>
+<div class="line"><span class="lineno">   64</span>                            m_text.erase(cursorPos, 1);</div>
+<div class="line"><span class="lineno">   65</span>                        }</div>
+<div class="line"><span class="lineno">   66</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_LEFT) {</div>
+<div class="line"><span class="lineno">   67</span>                        cursorPos = std::max(cursorPos - 1, 0);</div>
+<div class="line"><span class="lineno">   68</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.key.key == SDLK_RIGHT) {</div>
+<div class="line"><span class="lineno">   69</span>                        cursorPos = std::min(cursorPos + 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_text.size()));</div>
+<div class="line"><span class="lineno">   70</span>                    }</div>
+<div class="line"><span class="lineno">   71</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN &amp;&amp; event.button.button == SDL_BUTTON_LEFT) {</div>
+<div class="line"><span class="lineno">   72</span>                    <span class="keywordflow">if</span> (!m_boundingBox.isInBoundingBox(x, y)) {</div>
+<div class="line"><span class="lineno">   73</span>                        m_status = <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">InputStatus::Normal</a>;</div>
+<div class="line"><span class="lineno">   74</span>                        SDL_StopTextInput(win);</div>
 <div class="line"><span class="lineno">   75</span>                    }</div>
-<div class="line"><span class="lineno">   76</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN &amp;&amp; event.button.button == SDL_BUTTON_LEFT) {</div>
-<div class="line"><span class="lineno">   77</span>                    <span class="keywordflow">if</span> (!m_boundingBox.isInBoundingBox(x, y)) {</div>
-<div class="line"><span class="lineno">   78</span>                        m_status = <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">InputStatus::Normal</a>;</div>
-<div class="line"><span class="lineno">   79</span>                        SDL_StopTextInput(win);</div>
-<div class="line"><span class="lineno">   80</span>                    }</div>
+<div class="line"><span class="lineno">   76</span>                }</div>
+<div class="line"><span class="lineno">   77</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN &amp;&amp; event.button.button == SDL_BUTTON_LEFT) {</div>
+<div class="line"><span class="lineno">   78</span>                <span class="keywordflow">if</span> (m_boundingBox.isInBoundingBox(x, y)) {</div>
+<div class="line"><span class="lineno">   79</span>                    m_status = <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">InputStatus::Input</a>;</div>
+<div class="line"><span class="lineno">   80</span>                    SDL_StartTextInput(win);</div>
 <div class="line"><span class="lineno">   81</span>                }</div>
-<div class="line"><span class="lineno">   82</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN &amp;&amp; event.button.button == SDL_BUTTON_LEFT) {</div>
-<div class="line"><span class="lineno">   83</span>                <span class="keywordflow">if</span> (m_boundingBox.isInBoundingBox(x, y)) {</div>
-<div class="line"><span class="lineno">   84</span>                    m_status = <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">InputStatus::Input</a>;</div>
-<div class="line"><span class="lineno">   85</span>                    SDL_StartTextInput(win);</div>
-<div class="line"><span class="lineno">   86</span>                }</div>
-<div class="line"><span class="lineno">   87</span>            }</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">dao::InputStatus::Input</a></div><div class="ttdeci">@ Input</div><div class="ttdoc">输入</div><div class="ttdef"><b>定义</b> <a href="input__box_8hpp_source.html#l00015">input_box.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">dao::InputStatus::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">自然</div><div class="ttdef"><b>定义</b> <a href="input__box_8hpp_source.html#l00014">input_box.hpp:14</a></div></div>
-<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241">dao::InputStatus::Disabled</a></div><div class="ttdeci">@ Disabled</div><div class="ttdoc">禁用</div><div class="ttdef"><b>定义</b> <a href="input__box_8hpp_source.html#l00013">input_box.hpp:13</a></div></div>
+<div class="line"><span class="lineno">   82</span>            }</div>
+<div class="line"><span class="lineno">   83</span>        }</div>
+<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5">dao::InputStatus::Input</a></div><div class="ttdeci">@ Input</div><div class="ttdoc">输入</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00010">InputBox.hpp:10</a></div></div>
+<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">dao::InputStatus::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">自然</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00009">InputBox.hpp:9</a></div></div>
+<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241">dao::InputStatus::Disabled</a></div><div class="ttdeci">@ Disabled</div><div class="ttdoc">禁用</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00008">InputBox.hpp:8</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -414,7 +445,7 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>code/include/component/input/<a class="el" href="input__box_8hpp_source.html">input_box.hpp</a></li>
+<li>code/include/component/input/<a class="el" href="InputBox_8hpp_source.html">InputBox.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

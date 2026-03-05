@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mappedregion_0',['MappedRegion',['../classdao_1_1MappedRegion.html',1,'dao']]]
+  ['point_0',['Point',['../classdao_1_1Point.html',1,'dao']]],
+  ['polygon_1',['Polygon',['../classdao_1_1Polygon.html',1,'dao']]]
 ];

@@ -1,0 +1,7 @@
+<map id="dao::ifc::IButton::isEnable" name="dao::ifc::IButton::isEnable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="256,37,389,77"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1SimpleTextButtonStyle.html#a346213b60448513e6b0d6c3fde4d6d8d" title="写入批处理" alt="" coords="5,5,208,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,48,208,43,208,38,243,43"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1SimpleTextureButtonStyle.html#a3558bd62a99f61094c17630a66cd0834" title="写入批处理" alt="" coords="11,69,202,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,72,203,78,202,73,242,67"/>
+</map>

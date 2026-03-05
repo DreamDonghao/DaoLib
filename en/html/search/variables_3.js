@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['m_5fwindowcontroller_0',['m_windowController',['../classdao_1_1GeneralPage.html#a60df426e6fcb4f3eb4c153d58aca15a6',1,'dao::GeneralPage']]]
+  ['indices_0',['indices',['../structdao_1_1AtlasDrawBatch.html#a88e392c58cc616de9180789fdc43e8a2',1,'dao::AtlasDrawBatch']]],
+  ['indicescount_1',['indicesCount',['../structdao_1_1AtlasDrawBatch.html#a0aeb26a8aa991891fd20d42094484780',1,'dao::AtlasDrawBatch']]]
 ];

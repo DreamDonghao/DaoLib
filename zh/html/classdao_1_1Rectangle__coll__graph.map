@@ -1,5 +1,0 @@
-<map id="dao::Rectangle" name="dao::Rectangle">
-<area shape="rect" id="Node000001" title="矩形" alt="" coords="5,139,128,264"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="5,5,128,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,104,69,138,64,138,64,104"/>
-</map>

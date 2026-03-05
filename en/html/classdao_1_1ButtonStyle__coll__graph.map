@@ -1,5 +1,0 @@
-<map id="dao::ButtonStyle" name="dao::ButtonStyle">
-<area shape="rect" id="Node000001" title="按钮样式接口" alt="" coords="5,139,131,244"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="7,5,129,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,104,71,138,65,138,65,104"/>
-</map>

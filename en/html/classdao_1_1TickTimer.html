@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1TickTimer.html','','classdao_1_1TickTimer-
 <p>节拍器  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::TickTimer:</div>
 <div class="dyncontent">
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>节拍器 </p>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00011">11</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00007">7</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a406d0262c5830ca8019d33cd8b3fe230" name="a406d0262c5830ca8019d33cd8b3fe230"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a406d0262c5830ca8019d33cd8b3fe230">&#9670;&#160;</a></span>clock</h2>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00013">13</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00009">9</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -174,11 +174,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00016">16</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>            : m_interval(<a class="code hl_function" href="#a162b6e8707c21a8deddb180f01f35979">interval</a>),</div>
-<div class="line"><span class="lineno">   18</span>              m_last(clock::now()) {</div>
-<div class="line"><span class="lineno">   19</span>        }</div>
-<div class="ttc" id="aclassdao_1_1TickTimer_html_a162b6e8707c21a8deddb180f01f35979"><div class="ttname"><a href="#a162b6e8707c21a8deddb180f01f35979">dao::TickTimer::interval</a></div><div class="ttdeci">std::chrono::milliseconds interval() const</div><div class="ttdoc">获取当前间隔</div><div class="ttdef"><b>Definition</b> <a href="tick__timer_8hpp_source.html#l00052">tick_timer.hpp:52</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00012">12</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>            : m_interval(<a class="code hl_function" href="#a162b6e8707c21a8deddb180f01f35979">interval</a>),</div>
+<div class="line"><span class="lineno">   14</span>              m_last(clock::now()) {</div>
+<div class="line"><span class="lineno">   15</span>        }</div>
+<div class="ttc" id="aclassdao_1_1TickTimer_html_a162b6e8707c21a8deddb180f01f35979"><div class="ttname"><a href="#a162b6e8707c21a8deddb180f01f35979">dao::TickTimer::interval</a></div><div class="ttdeci">std::chrono::milliseconds interval() const</div><div class="ttdoc">获取当前间隔</div><div class="ttdef"><b>Definition</b> <a href="TickTimer_8hpp_source.html#l00048">TickTimer.hpp:48</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -226,10 +226,10 @@ Here is the caller graph for this function:</div>
 
 <p>获取当前间隔 </p>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00052">52</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                                               {</div>
-<div class="line"><span class="lineno">   53</span>            <span class="keywordflow">return</span> m_interval;</div>
-<div class="line"><span class="lineno">   54</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00048">48</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                               {</div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">return</span> m_interval;</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,15 +263,15 @@ Here is the caller graph for this function:</div>
 </ul>
 <p>特别注意： 如果主线程卡顿较久（例如 40ms，而 interval=16ms）， 本函数会只推进一个 interval，下一次调用仍可能返回 true， 从而保证时间轴连续，不丢逻辑帧。 </p>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00031">31</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                 {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> now = clock::now(); now - m_last &gt;= m_interval) {</div>
-<div class="line"><span class="lineno">   33</span>                <span class="comment">// 防止时间漂移：按固定步长推进，而不是直接跳到 now</span></div>
-<div class="line"><span class="lineno">   34</span>                m_last += m_interval;</div>
-<div class="line"><span class="lineno">   35</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   36</span>            }</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   38</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00027">27</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                                 {</div>
+<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> now = clock::now(); now - m_last &gt;= m_interval) {</div>
+<div class="line"><span class="lineno">   29</span>                <span class="comment">// 防止时间漂移：按固定步长推进，而不是直接跳到 now</span></div>
+<div class="line"><span class="lineno">   30</span>                m_last += m_interval;</div>
+<div class="line"><span class="lineno">   31</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   32</span>            }</div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   34</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,10 +300,10 @@ Here is the caller graph for this function:</div>
 
 <p>重置计时器，从当前时间重新开始 </p>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00041">41</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>                     {</div>
-<div class="line"><span class="lineno">   42</span>            m_last = clock::now();</div>
-<div class="line"><span class="lineno">   43</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00037">37</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                     {</div>
+<div class="line"><span class="lineno">   38</span>            m_last = clock::now();</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,15 +332,15 @@ Here is the caller graph for this function:</div>
 
 <p>修改触发间隔 </p>
 
-<p class="definition">Definition at line <a class="el" href="tick__timer_8hpp_source.html#l00046">46</a> of file <a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                         {</div>
-<div class="line"><span class="lineno">   47</span>            m_interval = <a class="code hl_function" href="#a162b6e8707c21a8deddb180f01f35979">interval</a>;</div>
-<div class="line"><span class="lineno">   48</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="TickTimer_8hpp_source.html#l00042">42</a> of file <a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                         {</div>
+<div class="line"><span class="lineno">   43</span>            m_interval = <a class="code hl_function" href="#a162b6e8707c21a8deddb180f01f35979">interval</a>;</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/tool/<a class="el" href="tick__timer_8hpp_source.html">tick_timer.hpp</a></li>
+<li>code/include/core/tool/<a class="el" href="TickTimer_8hpp_source.html">TickTimer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

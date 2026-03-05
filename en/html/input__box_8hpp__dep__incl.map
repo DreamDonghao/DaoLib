@@ -1,9 +1,0 @@
-<map id="code/include/component/input/input_box.hpp" name="code/include/component/input/input_box.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="12,5,193,45"/>
-<area shape="rect" id="Node000002" href="$input__box__style_8hpp.html" title=" " alt="" coords="5,93,200,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,59,105,93,100,93,100,59"/>
-<area shape="rect" id="Node000003" href="$daoui_8hpp.html" title=" " alt="" coords="17,181,189,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,147,105,181,100,181,100,147"/>
-<area shape="rect" id="Node000004" href="$daoui_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="31,255,174,280"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,220,105,255,100,255,100,220"/>
-</map>

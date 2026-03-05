@@ -1,7 +1,7 @@
 var searchData=
 [
   ['observe_0',['Observe',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04a4e418f11f274aa1c52fb51a7707a2926',1,'dao::SwitchDeleter']]],
-  ['open_1',['open',['../classdao_1_1Page.html#a72f023a550b8a0d9153dad6d21c2179c',1,'dao::Page::open()'],['../classdao_1_1GeneralPage.html#aa007d36844036ef7d0e22e31b342551c',1,'dao::GeneralPage::open()']]],
+  ['open_1',['open',['../classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368',1,'dao::ifc::IGeneralPage::open()'],['../classdao_1_1ifc_1_1IPage.html#a8ddd0d5822d40bb9624c2609c6f3127b',1,'dao::ifc::IPage::open()']]],
   ['operator_20bool_2',['operator bool',['../classdao_1_1TickTimer.html#ae5ca12579fab91ab13dabd37c5579e10',1,'dao::TickTimer']]],
   ['operator_20sdl_5fvertex_3',['operator SDL_Vertex',['../classdao_1_1Vertex.html#ad534df84163d1a0a4dd57f31ac3f0f9d',1,'dao::Vertex']]],
   ['operator_21_3d_4',['operator!=',['../classdao_1_1ColorRGBA.html#a8afb1e6e1b40c9a1c3ceac731a9eef26',1,'dao::ColorRGBA']]],

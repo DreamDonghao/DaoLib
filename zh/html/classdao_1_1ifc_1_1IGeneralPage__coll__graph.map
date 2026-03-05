@@ -1,0 +1,7 @@
+<map id="dao::ifc::IGeneralPage" name="dao::ifc::IGeneralPage">
+<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="101,341,277,667"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IPage.html" title="页面接口" alt="" coords="5,5,181,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,283,149,340,144,342,129,285"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1WindowController.html" title="窗口控制器" alt="" coords="205,35,368,241"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,242,239,326,234,325,257,240"/>
+</map>

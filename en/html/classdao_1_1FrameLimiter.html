@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1FrameLimiter.html','','classdao_1_1FrameLi
 <p>帧率限制器  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::FrameLimiter:</div>
 <div class="dyncontent">
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>帧率限制器 </p>
 <p>用于精确控制应用程序的帧率，确保帧率稳定在目标值 采用混合等待策略：先睡眠等待大部分时间，然后自旋等待剩余时间 </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FrameLimiter_8hpp_source.html#l00010">10</a> of file <a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7ff8948e2799362adfec6977073e595" name="ae7ff8948e2799362adfec6977073e595"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7ff8948e2799362adfec6977073e595">&#9670;&#160;</a></span>FrameLimiter()</h2>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00014">14</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FrameLimiter_8hpp_source.html#l00014">14</a> of file <a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>            : m_frame_duration(std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps)), <span class="comment">// 计算每帧持续时间（纳秒）</span></div>
 <div class="line"><span class="lineno">   16</span>              m_last_frame_time(std::chrono::steady_clock::now()),                    <span class="comment">// 记录上一帧的时间点</span></div>
 <div class="line"><span class="lineno">   17</span>              m_spin_threshold(std::chrono::milliseconds(2)) {</div>
@@ -212,7 +212,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00046">46</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FrameLimiter_8hpp_source.html#l00046">46</a> of file <a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   46</span>                                          {</div>
 <div class="line"><span class="lineno">   47</span>            m_frame_duration = std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps); <span class="comment">// 重新计算每帧持续时间</span></div>
 <div class="line"><span class="lineno">   48</span>        }</div>
@@ -249,7 +249,7 @@ Here is the caller graph for this function:</div>
 <li>自旋等待剩余时间，确保精确到达下一帧时间点 </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="frame__limiter_8hpp_source.html#l00026">26</a> of file <a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FrameLimiter_8hpp_source.html#l00026">26</a> of file <a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>                    {</div>
 <div class="line"><span class="lineno">   27</span>            <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now(); <span class="comment">// 获取当前时间</span></div>
 <div class="line"><span class="lineno">   28</span>            <span class="keyword">const</span> <span class="keyword">auto</span> elapsed = now - m_last_frame_time;      <span class="comment">// 计算自上一帧以来的时间</span></div>
@@ -271,7 +271,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/frame/<a class="el" href="frame__limiter_8hpp_source.html">frame_limiter.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

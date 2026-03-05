@@ -111,8 +111,8 @@ dao::Window 的协作图:</div>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac7430c33cbb27c35dbff5a0a4d454442" id="r_ac7430c33cbb27c35dbff5a0a4d454442"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, bool hidden=false, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
 <tr class="memitem:a8d53dfb54f139ee857eae1afee44afb3" id="r_a8d53dfb54f139ee857eae1afee44afb3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8d53dfb54f139ee857eae1afee44afb3">~Window</a> ()</td></tr>
-<tr class="memitem:abe737d4b0ff1d4ade1c4df0b82ec4bb6" id="r_abe737d4b0ff1d4ade1c4df0b82ec4bb6"><td class="memItemLeft"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abe737d4b0ff1d4ade1c4df0b82ec4bb6">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1Page.html">Page</a> &gt; &amp;&amp;page)</td></tr>
-<tr class="memdesc:abe737d4b0ff1d4ade1c4df0b82ec4bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加页面  <br /></td></tr>
+<tr class="memitem:a30b6535d63f2abf742c6c83a6e35d354" id="r_a30b6535d63f2abf742c6c83a6e35d354"><td class="memItemLeft"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a30b6535d63f2abf742c6c83a6e35d354">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1ifc_1_1IPage.html">ifc::IPage</a> &gt; &amp;&amp;page)</td></tr>
+<tr class="memdesc:a30b6535d63f2abf742c6c83a6e35d354"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加页面  <br /></td></tr>
 <tr class="memitem:af506f7804932b2a731eff22be71a79e6" id="r_af506f7804932b2a731eff22be71a79e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a> ()</td></tr>
 <tr class="memdesc:af506f7804932b2a731eff22be71a79e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据当前窗口拥有的页面加载未加载的图集  <br /></td></tr>
 <tr class="memitem:af747f33b5f86ff4807027f7b200c90a4" id="r_af747f33b5f86ff4807027f7b200c90a4"><td class="memItemLeft"><a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a>&#160;</td><td class="memItemRight"><a class="el" href="#af747f33b5f86ff4807027f7b200c90a4">getId</a> () const</td></tr>
@@ -229,17 +229,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   22</span>        }</div>
 <div class="line"><span class="lineno">   23</span>    }</div>
 <div class="ttc" id="aclassdao_1_1Window_html_a5904cf1fad9f0d89748399c66dfdb93d"><div class="ttname"><a href="#a5904cf1fad9f0d89748399c66dfdb93d">dao::Window::create</a></div><div class="ttdeci">void create()</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00080">window.cpp:80</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph.png" border="0" usemap="#aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph" id="aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,171,31"/>
-<area shape="rect" href="classdao_1_1Window.html#a5904cf1fad9f0d89748399c66dfdb93d" title="创建窗口" alt="" coords="219,5,373,31"/>
-<area shape="poly" title=" " alt="" coords="171,15,205,15,205,21,171,21"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d53dfb54f139ee857eae1afee44afb3" name="a8d53dfb54f139ee857eae1afee44afb3"></a>
@@ -265,8 +255,8 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
-<a id="abe737d4b0ff1d4ade1c4df0b82ec4bb6" name="abe737d4b0ff1d4ade1c4df0b82ec4bb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe737d4b0ff1d4ade1c4df0b82ec4bb6">&#9670;&#160;</a></span>addPage()</h2>
+<a id="a30b6535d63f2abf742c6c83a6e35d354" name="a30b6535d63f2abf742c6c83a6e35d354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b6535d63f2abf742c6c83a6e35d354">&#9670;&#160;</a></span>addPage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +264,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> &amp; dao::Window::addPage </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdao_1_1Page.html">Page</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>page</em></span></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdao_1_1ifc_1_1IPage.html">ifc::IPage</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>page</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -289,7 +279,7 @@ Public 成员函数</h2></td></tr>
 </dl>
 
 <p class="definition">在文件 <a class="el" href="window_8cpp_source.html">window.cpp</a> 第 <a class="el" href="window_8cpp_source.html#l00029">29</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                      {</div>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                          {</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keyword">const</span> std::string title = page-&gt;getTitle();</div>
 <div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(!m_pages.contains(title), std::string(<span class="stringliteral">&quot;重复页面:&quot;</span>) + title);</div>
 <div class="line"><span class="lineno">   32</span> </div>
@@ -307,18 +297,8 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00120">window.cpp:120</a></div></div>
 <div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>定义</b> <a href="window_8cpp_source.html#l00046">window.cpp:46</a></div></div>
-<div class="ttc" id="anamespacedao_html_a24e91b1ba23935657b9b4fefae8f56e8"><div class="ttname"><a href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">dao::detectionError</a></div><div class="ttdeci">void detectionError(const bool pass, const std::string_view &amp;message)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00047">better_stl.hpp:47</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph.png" border="0" usemap="#aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph" id="aclassdao_1_1Window_abe737d4b0ff1d4ade1c4df0b82ec4bb6_cgraph">
-<area shape="rect" title="添加页面" alt="" coords="5,13,173,38"/>
-<area shape="rect" href="classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
-<area shape="poly" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
-</map>
-</div>
-
+<div class="ttc" id="anamespacedao_html_a24e91b1ba23935657b9b4fefae8f56e8"><div class="ttname"><a href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">dao::detectionError</a></div><div class="ttdeci">void detectionError(const bool pass, const std::string_view &amp;message)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00022">better_stl.hpp:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5904cf1fad9f0d89748399c66dfdb93d" name="a5904cf1fad9f0d89748399c66dfdb93d"></a>
@@ -350,19 +330,9 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   88</span>        m_batchRenderer.init(SDL_CreateRenderer(m_window, <span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">   89</span>        m_id = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(SDL_GetWindowID(m_window));</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
-<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00070">better_stl.hpp:70</a></div></div>
-<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00015">better_stl.hpp:15</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" id="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph">
-<area shape="rect" title="创建窗口" alt="" coords="219,5,373,31"/>
-<area shape="rect" href="classdao_1_1Window.html#ac7430c33cbb27c35dbff5a0a4d454442" title=" " alt="" coords="5,5,171,31"/>
-<area shape="poly" title=" " alt="" coords="205,21,171,21,171,15,205,15"/>
-</map>
-</div>
-
+<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00045">better_stl.hpp:45</a></div></div>
+<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00007">type.hpp:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32cc34e3cb8e1a94fd80510e0b3b9f9d" name="a32cc34e3cb8e1a94fd80510e0b3b9f9d"></a>
@@ -612,17 +582,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   50</span>            }</div>
 <div class="line"><span class="lineno">   51</span>        }</div>
 <div class="line"><span class="lineno">   52</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph.png" border="0" usemap="#aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph" id="aclassdao_1_1Window_af506f7804932b2a731eff22be71a79e6_icgraph">
-<area shape="rect" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
-<area shape="rect" href="classdao_1_1Window.html#abe737d4b0ff1d4ade1c4df0b82ec4bb6" title="添加页面" alt="" coords="5,13,173,38"/>
-<area shape="poly" title=" " alt="" coords="208,28,174,28,174,23,208,23"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee09499f8b02c51e3589c654930c7fb5" name="aee09499f8b02c51e3589c654930c7fb5"></a>

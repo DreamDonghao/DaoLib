@@ -103,7 +103,7 @@ Collaboration diagram for dao::Vertex:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Vertex__coll__graph.png" border="0" usemap="#adao_1_1Vertex_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Vertex_coll__map" id="adao_1_1Vertex_coll__map">
-<area shape="rect" title="几何图形顶点" alt="" coords="5,5,177,211"/>
+<area shape="rect" title="几何图形顶点" alt="" coords="5,5,177,231"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -113,6 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ff8cc62f3c46252ecddc979ac81bc84" id="r_a9ff8cc62f3c46252ecddc979ac81bc84"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9ff8cc62f3c46252ecddc979ac81bc84">set</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>, const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;<a class="el" href="#a1905ea697181a73c9d282a1744add5e9">color</a>)</td></tr>
 <tr class="memitem:a20ac5b5cf36f34b58e1f000a50851096" id="r_a20ac5b5cf36f34b58e1f000a50851096"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20ac5b5cf36f34b58e1f000a50851096">setColor</a> (const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;<a class="el" href="#a1905ea697181a73c9d282a1744add5e9">color</a>)</td></tr>
 <tr class="memitem:a5de9bc7bb36210f01fef7cbc29ba727b" id="r_a5de9bc7bb36210f01fef7cbc29ba727b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5de9bc7bb36210f01fef7cbc29ba727b">setPosition</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>)</td></tr>
+<tr class="memitem:a768cc97163d2e4406e3ea01e5aae4954" id="r_a768cc97163d2e4406e3ea01e5aae4954"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a768cc97163d2e4406e3ea01e5aae4954">translate</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> dx, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> dy)</td></tr>
 <tr class="memitem:abb33c5e607ee9dfd2ead15c055da2795" id="r_abb33c5e607ee9dfd2ead15c055da2795"><td class="memItemLeft">constexpr <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a> () const noexcept</td></tr>
 <tr class="memdesc:abb33c5e607ee9dfd2ead15c055da2795"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取x坐标  <br /></td></tr>
 <tr class="memitem:a6a9eadab9168f2cdc729282c91f0fb97" id="r_a6a9eadab9168f2cdc729282c91f0fb97"><td class="memItemLeft">constexpr <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a> () const noexcept</td></tr>
@@ -162,9 +163,9 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00009">9</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>            : m_x(<a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>), m_y(<a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>), m_color(<a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>) {</div>
 <div class="line"><span class="lineno">   11</span>        }</div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_a1905ea697181a73c9d282a1744add5e9"><div class="ttname"><a href="#a1905ea697181a73c9d282a1744add5e9">dao::Vertex::color</a></div><div class="ttdeci">constexpr ColorRGBA color() const noexcept</div><div class="ttdoc">获取颜色</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00035">Vertex.hpp:35</a></div></div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_a6a9eadab9168f2cdc729282c91f0fb97"><div class="ttname"><a href="#a6a9eadab9168f2cdc729282c91f0fb97">dao::Vertex::y</a></div><div class="ttdeci">constexpr f32 y() const noexcept</div><div class="ttdoc">获取y坐标</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00032">Vertex.hpp:32</a></div></div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_abb33c5e607ee9dfd2ead15c055da2795"><div class="ttname"><a href="#abb33c5e607ee9dfd2ead15c055da2795">dao::Vertex::x</a></div><div class="ttdeci">constexpr f32 x() const noexcept</div><div class="ttdoc">获取x坐标</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00029">Vertex.hpp:29</a></div></div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_a1905ea697181a73c9d282a1744add5e9"><div class="ttname"><a href="#a1905ea697181a73c9d282a1744add5e9">dao::Vertex::color</a></div><div class="ttdeci">constexpr ColorRGBA color() const noexcept</div><div class="ttdoc">获取颜色</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00040">Vertex.hpp:40</a></div></div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_a6a9eadab9168f2cdc729282c91f0fb97"><div class="ttname"><a href="#a6a9eadab9168f2cdc729282c91f0fb97">dao::Vertex::y</a></div><div class="ttdeci">constexpr f32 y() const noexcept</div><div class="ttdoc">获取y坐标</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00037">Vertex.hpp:37</a></div></div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_abb33c5e607ee9dfd2ead15c055da2795"><div class="ttname"><a href="#abb33c5e607ee9dfd2ead15c055da2795">dao::Vertex::x</a></div><div class="ttdeci">constexpr f32 x() const noexcept</div><div class="ttdoc">获取x坐标</div><div class="ttdef"><b>Definition</b> <a href="Vertex_8hpp_source.html#l00034">Vertex.hpp:34</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -212,8 +213,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取颜色 </p>
 
-<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00035">35</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> m_color; }</div>
+<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00040">40</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> m_color; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -243,15 +244,15 @@ Here is the caller graph for this function:</div>
 <p>到SDL_Vertex的类型转换 </p>
 <p>纹理坐标用 1*1px 的纯白图片,将 255RGB 数据归一化 </p>
 
-<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00039">39</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>                                             {</div>
-<div class="line"><span class="lineno">   40</span>            SDL_Vertex result;</div>
-<div class="line"><span class="lineno">   41</span>            result.position = {m_x, m_y};</div>
-<div class="line"><span class="lineno">   42</span>            result.color = {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.r()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.g()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.b()], m_color.a()};</div>
-<div class="line"><span class="lineno">   43</span>            result.tex_coord = {1.0f, 1.0f};</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="ttc" id="anamespacedao_html_a2d1ee99dbefdf56a0d914aafecb40b26"><div class="ttname"><a href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">dao::rgbNorm</a></div><div class="ttdeci">constexpr std::array&lt; f32, 256 &gt; rgbNorm</div><div class="ttdoc">RGB值归一化查找表</div><div class="ttdef"><b>Definition</b> <a href="color__rgb_8hpp_source.html#l00009">color_rgb.hpp:9</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00044">44</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                             {</div>
+<div class="line"><span class="lineno">   45</span>            SDL_Vertex result;</div>
+<div class="line"><span class="lineno">   46</span>            result.position = {m_x, m_y};</div>
+<div class="line"><span class="lineno">   47</span>            result.color = {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.r()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.g()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.b()], m_color.a()};</div>
+<div class="line"><span class="lineno">   48</span>            result.tex_coord = {1.0f, 1.0f};</div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="ttc" id="anamespacedao_html_a2d1ee99dbefdf56a0d914aafecb40b26"><div class="ttname"><a href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">dao::rgbNorm</a></div><div class="ttdeci">constexpr std::array&lt; f32, 256 &gt; rgbNorm</div><div class="ttdoc">RGB值归一化查找表</div><div class="ttdef"><b>Definition</b> <a href="ColorRGB_8hpp_source.html#l00009">ColorRGB.hpp:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -361,6 +362,41 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a768cc97163d2e4406e3ea01e5aae4954" name="a768cc97163d2e4406e3ea01e5aae4954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768cc97163d2e4406e3ea01e5aae4954">&#9670;&#160;</a></span>translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Vertex::translate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a></td>          <td class="paramname"><span class="paramname"><em>dx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a></td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00028">28</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                   {</div>
+<div class="line"><span class="lineno">   29</span>            m_x += dx;</div>
+<div class="line"><span class="lineno">   30</span>            m_y += dy;</div>
+<div class="line"><span class="lineno">   31</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="abb33c5e607ee9dfd2ead15c055da2795" name="abb33c5e607ee9dfd2ead15c055da2795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb33c5e607ee9dfd2ead15c055da2795">&#9670;&#160;</a></span>x()</h2>
 
@@ -386,8 +422,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取x坐标 </p>
 
-<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00029">29</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> m_x; }</div>
+<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00034">34</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> m_x; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,8 +452,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取y坐标 </p>
 
-<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00032">32</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> m_y; }</div>
+<p class="definition">Definition at line <a class="el" href="Vertex_8hpp_source.html#l00037">37</a> of file <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{ <span class="keywordflow">return</span> m_y; }</div>
 </div><!-- fragment -->
 </div>
 </div>

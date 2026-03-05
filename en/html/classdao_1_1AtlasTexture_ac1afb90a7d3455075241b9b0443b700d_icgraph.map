@@ -1,7 +1,10 @@
 <map id="dao::AtlasTexture::AtlasTexture" name="dao::AtlasTexture::AtlasTexture">
-<area shape="rect" id="Node000001" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="285,27,428,67"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title=" " alt="" coords="49,5,193,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,39,193,30,194,24,272,34"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1SimpleTextureButtonStyle.html#aa59dffce115ac372f5d60d740d73df9b" title=" " alt="" coords="5,55,237,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,60,238,64,237,59,271,55"/>
+<area shape="rect" id="Node000001" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="285,87,428,127"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1AnimatedSprite.html#a1d508018c21819ec58bf301211bad848" title=" " alt="" coords="44,29,199,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,89,198,71,200,66,273,84"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title=" " alt="" coords="49,94,193,119"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="271,109,194,109,194,104,271,104"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1SimpleTextureButtonStyle.html#a630a576b0d9a984945fc8c2441ac3c8c" title=" " alt="" coords="5,144,237,184"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="272,130,205,147,203,141,271,125"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="161,18,147,11,121,8,99,10,85,15,80,21,83,28,78,30,75,20,82,10,98,5,121,3,149,6,164,13"/>
 </map>

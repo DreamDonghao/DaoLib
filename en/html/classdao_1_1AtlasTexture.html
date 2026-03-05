@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1AtlasTexture.html','','classdao_1_1AtlasTe
 <p>图集纹理  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="AtlasTexture_8hpp_source.html">AtlasTexture.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::AtlasTexture:</div>
 <div class="dyncontent">
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>图集纹理 </p>
 <p>表示纹理图集中的一个纹理区域，用于在屏幕上渲染指定的纹理部分 本类型本身不持有实际纹理数据，只保存纹理ID和显示区域信息 可通过 <a class="el" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据">getAtlasRegion()</a> 获取纹理在图集中的位置和所属图集信息 </p>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8hpp_source.html#l00012">12</a> of file <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8hpp_source.html#l00011">11</a> of file <a class="el" href="AtlasTexture_8hpp_source.html">AtlasTexture.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e849cffd54d3c5dd1d8e0a1d190c2fa" name="a4e849cffd54d3c5dd1d8e0a1d190c2fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e849cffd54d3c5dd1d8e0a1d190c2fa">&#9670;&#160;</a></span>AtlasTexture() <span class="overload">[1/3]</span></h2>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00004">4</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00004">4</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    6</span>        : m_textureId(textureId), m_boundingBox(left, top, right, bottom) {</div>
 <div class="line"><span class="lineno">    7</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
@@ -218,11 +218,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1AtlasTexture_ac1afb90a7d3455075241b9b0443b700d_icgraph.png" border="0" usemap="#aclassdao_1_1AtlasTexture_ac1afb90a7d3455075241b9b0443b700d_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1AtlasTexture_ac1afb90a7d3455075241b9b0443b700d_icgraph" id="aclassdao_1_1AtlasTexture_ac1afb90a7d3455075241b9b0443b700d_icgraph">
-<area shape="rect" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="285,27,428,67"/>
-<area shape="rect" href="classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title=" " alt="" coords="49,5,193,31"/>
-<area shape="poly" title=" " alt="" coords="271,39,193,30,194,24,272,34"/>
-<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#aa59dffce115ac372f5d60d740d73df9b" title=" " alt="" coords="5,55,237,95"/>
-<area shape="poly" title=" " alt="" coords="272,60,238,64,237,59,271,55"/>
+<area shape="rect" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="285,87,428,127"/>
+<area shape="rect" href="classdao_1_1AnimatedSprite.html#a1d508018c21819ec58bf301211bad848" title=" " alt="" coords="44,29,199,69"/>
+<area shape="poly" title=" " alt="" coords="271,89,198,71,200,66,273,84"/>
+<area shape="rect" href="classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title=" " alt="" coords="49,94,193,119"/>
+<area shape="poly" title=" " alt="" coords="271,109,194,109,194,104,271,104"/>
+<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a630a576b0d9a984945fc8c2441ac3c8c" title=" " alt="" coords="5,144,237,184"/>
+<area shape="poly" title=" " alt="" coords="272,130,205,147,203,141,271,125"/>
+<area shape="poly" title=" " alt="" coords="161,18,147,11,121,8,99,10,85,15,80,21,83,28,78,30,75,20,82,10,98,5,121,3,149,6,164,13"/>
 </map>
 </div>
 
@@ -256,7 +259,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00009">9</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00009">9</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>        : m_textureId(textureId), m_boundingBox(boundingBox) {</div>
 <div class="line"><span class="lineno">   11</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
@@ -299,7 +302,7 @@ Here is the caller graph for this function:</div>
 <p>获取显示边界框 </p>
 <dl class="section return"><dt>Returns</dt><dd>纹理显示边界框的常量引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00029">29</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00029">29</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                           {</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> m_boundingBox;</div>
 <div class="line"><span class="lineno">   31</span>    }</div>
@@ -332,7 +335,7 @@ Here is the caller graph for this function:</div>
 <p>获取纹理ID </p>
 <dl class="section return"><dt>Returns</dt><dd>纹理ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00027">27</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00027">27</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> m_textureId; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -344,7 +347,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="429,50,395,50,395,45,429,45"/>
 <area shape="rect" href="classdao_1_1Image.html#a16dba7f5b5d1e63124459b9064186335" title="写入批处理" alt="" coords="7,5,194,31"/>
 <area shape="poly" title=" " alt="" coords="230,38,194,33,194,28,231,33"/>
-<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a3558bd62a99f61094c17630a66cd0834" title="加入绘制批处理" alt="" coords="5,55,196,95"/>
+<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a3558bd62a99f61094c17630a66cd0834" title="写入批处理" alt="" coords="5,55,196,95"/>
 <area shape="poly" title=" " alt="" coords="231,61,197,66,196,60,230,56"/>
 </map>
 </div>
@@ -379,7 +382,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00013">13</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00013">13</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   13</span>                                                           {</div>
 <div class="line"><span class="lineno">   14</span>        m_boundingBox.set(</div>
 <div class="line"><span class="lineno">   15</span>            x, y,</div>
@@ -441,7 +444,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="atlas__texture_8cpp_source.html#l00020">20</a> of file <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AtlasTexture_8cpp_source.html#l00020">20</a> of file <a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                {</div>
 <div class="line"><span class="lineno">   21</span>        m_boundingBox.set(</div>
 <div class="line"><span class="lineno">   22</span>            m_boundingBox.getLeft(), m_boundingBox.getTop(),</div>
@@ -476,8 +479,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>code/include/core/render/<a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a></li>
-<li>code/src/core/render/<a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a></li>
+<li>code/include/core/render/<a class="el" href="AtlasTexture_8hpp_source.html">AtlasTexture.hpp</a></li>
+<li>code/src/core/render/<a class="el" href="AtlasTexture_8cpp_source.html">AtlasTexture.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

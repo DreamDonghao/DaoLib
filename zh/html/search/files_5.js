@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['general_5fpage_2ecpp_0',['general_page.cpp',['../general__page_8cpp.html',1,'']]],
-  ['general_5fpage_2ehpp_1',['general_page.hpp',['../general__page_8hpp.html',1,'']]],
-  ['glyph_5fatlas_2ecpp_2',['glyph_atlas.cpp',['../glyph__atlas_8cpp.html',1,'']]],
-  ['glyph_5fatlas_2ehpp_3',['glyph_atlas.hpp',['../glyph__atlas_8hpp.html',1,'']]]
+  ['glyphatlas_2ecpp_0',['GlyphAtlas.cpp',['../GlyphAtlas_8cpp.html',1,'']]],
+  ['glyphatlas_2ehpp_1',['GlyphAtlas.hpp',['../GlyphAtlas_8hpp.html',1,'']]]
 ];

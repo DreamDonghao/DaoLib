@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/interface/IGeneralPage.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('IGeneralPage_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IGeneralPage.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="IGeneralPage_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">interface</span><span class="preprocessor">/</span><span class="preprocessor">IPage</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">core</span><span class="preprocessor">/</span><span class="preprocessor">render</span><span class="preprocessor">/</span><span class="preprocessor">BatchRenderer</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">core</span><span class="preprocessor">/</span><span class="preprocessor">frame</span><span class="preprocessor">/</span><span class="preprocessor">WindowController</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespacedao.html">dao</a> {</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="conceptdao_1_1BatchWritable.html">    7</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_concept" href="conceptdao_1_1BatchWritable.html">T</a>&gt; <a class="code hl_concept" href="conceptdao_1_1BatchWritable.html">concept</a> <a class="code hl_concept" href="conceptdao_1_1BatchWritable.html">BatchWritable</a> =</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <a class="code hl_namespace" href="namespacedao.html">requires</a>(<a class="code hl_namespace" href="namespacedao.html">T</a> <a class="code hl_namespace" href="namespacedao.html">t</a>, <a class="code hl_namespace" href="namespacedao.html">BatchRenderer</a> &amp;<a class="code hl_namespace" href="namespacedao.html">b</a>) { <a class="code hl_namespace" href="namespacedao.html">t</a>.<a class="code hl_namespace" href="namespacedao.html">writeToBatch</a>(<a class="code hl_namespace" href="namespacedao.html">b</a>); };</div>
+</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacedao_1_1ifc.html">   10</a></span>    <span class="keyword">namespace</span> <a class="code hl_namespace" href="namespacedao_1_1ifc.html">ifc</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="comment">/// @brief 通用页面接口</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">/// @details 提供的一个继承自 IPage 的通用页面接口，实现了一些页面通常应该具备的功能</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html">   13</a></span>        <span class="keyword">class</span> <a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">IGeneralPage</a> : <span class="keyword">public</span> <a class="code hl_class" href="classdao_1_1ifc_1_1IPage.html">IPage</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keyword">explicit</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a580f2191c319be9268eb813380b956ef">IGeneralPage</a>(std::string title);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82">   17</a></span>            ~<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82">IGeneralPage</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368">   19</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368">open</a>() <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999">   21</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999">close</a>() <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="comment">/// @brief 获取加载图集</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">   24</a></span>            [[<a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">nodiscard</a>]] <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">std</a>::<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">vector</a>&lt;<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">i32</a>&gt; <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">getRegisterTexture</a>() <span class="keyword">const</span> <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="comment">/// @brief 更新</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714">   27</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714">update</a>() <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="comment">/// @brief 处理消息</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">   30</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">handleInputEvent</a>(<span class="keyword">const</span> SDL_Event &amp;event) <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_class" href="classdao_1_1WindowController.html">WindowController</a> &amp;<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a0316550779063ca85c3c59150dfe8b70">getWindowController</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            [[<a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">nodiscard</a>]] <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a3d9837c76c53f11c0f8f2b4b051775d9">getTitle</a>() <span class="keyword">const</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keyword">template</span>&lt;BatchWritable... Args&gt;</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c">   38</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c">addToBatch</a>(Args &amp;&amp;... args) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                m_vertexBatch<a class="code hl_function" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2">-&gt;</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2">clearDrawBatches</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2">(</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2">)</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                (args.writeToBatch(*m_vertexBatch), ...);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#aefdc984c6635a4b6c36959b78e08bbc1">setContext</a>(<a class="code hl_class" href="classdao_1_1Context.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80">   45</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80">setVertexBatch</a>(<a class="code hl_class" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> *vertexBatch) <span class="keyword">override</span> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                m_vertexBatch = vertexBatch;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            [[<a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">nodiscard</a>]] <a class="code hl_class" href="classdao_1_1Context.html">Context</a> &amp;<a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e">getContext</a>() <span class="keyword">const</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8">   52</a></span>            <a class="code hl_class" href="classdao_1_1WindowController.html">WindowController</a> <a class="code hl_variable" href="classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8">m_windowController</a>; <span class="comment">///&lt; 窗口控制器</span></div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd">   53</a></span>            [[<a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">nodiscard</a>]] <a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd">getGlyphAspectRatio</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">return</span> m_vertexBatch<a class="code hl_function" href="classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867">-&gt;</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867">getGlyphAtlas</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867">(</a><a class="code hl_function" href="classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867">)</a><a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">.</a><a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">getGlyphAspectRatio</a><a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">(</a>charCode<a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">)</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            std::string m_title;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_class" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> *m_vertexBatch = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_class" href="classdao_1_1Context.html">Context</a> *m_context = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        };</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="ttc" id="aclassdao_1_1BatchRenderer_html"><div class="ttname"><a href="classdao_1_1BatchRenderer.html">dao::BatchRenderer</a></div><div class="ttdoc">批处理渲染器</div><div class="ttdef"><b>定义</b> <a href="BatchRenderer_8hpp_source.html#l00030">BatchRenderer.hpp:30</a></div></div>
+<div class="ttc" id="aclassdao_1_1BatchRenderer_html_a510f7aa22be2348bcbe8fa7382c600b2"><div class="ttname"><a href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2">dao::BatchRenderer::clearDrawBatches</a></div><div class="ttdeci">void clearDrawBatches(u64 reserveSize=0)</div><div class="ttdoc">清理要绘制的纹理图集</div><div class="ttdef"><b>定义</b> <a href="BatchRenderer_8cpp_source.html#l00181">BatchRenderer.cpp:181</a></div></div>
+<div class="ttc" id="aclassdao_1_1BatchRenderer_html_a8884bbf31f9e4b0408a5d0415b9a0867"><div class="ttname"><a href="classdao_1_1BatchRenderer.html#a8884bbf31f9e4b0408a5d0415b9a0867">dao::BatchRenderer::getGlyphAtlas</a></div><div class="ttdeci">const GlyphAtlas &amp; getGlyphAtlas() const</div><div class="ttdoc">获取字形图集</div><div class="ttdef"><b>定义</b> <a href="BatchRenderer_8hpp_source.html#l00131">BatchRenderer.hpp:131</a></div></div>
+<div class="ttc" id="aclassdao_1_1Context_html"><div class="ttname"><a href="classdao_1_1Context.html">dao::Context</a></div><div class="ttdoc">全局环境上下文管理器</div><div class="ttdef"><b>定义</b> <a href="context_8hpp_source.html#l00010">context.hpp:10</a></div></div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a7e37bb5fa78b2455ccb8670e8c8565c8"><div class="ttname"><a href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">dao::GlyphAtlas::getGlyphAspectRatio</a></div><div class="ttdeci">f32 getGlyphAspectRatio(utf32char charCode) const</div><div class="ttdoc">获取字形的宽高比</div><div class="ttdef"><b>定义</b> <a href="GlyphAtlas_8cpp_source.html#l00067">GlyphAtlas.cpp:67</a></div></div>
+<div class="ttc" id="aclassdao_1_1WindowController_html"><div class="ttname"><a href="classdao_1_1WindowController.html">dao::WindowController</a></div><div class="ttdoc">窗口控制器</div><div class="ttdef"><b>定义</b> <a href="WindowController_8hpp_source.html#l00025">WindowController.hpp:25</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html">dao::ifc::IGeneralPage</a></div><div class="ttdoc">通用页面接口</div><div class="ttdef"><b>定义</b> <a href="#l00013">IGeneralPage.hpp:13</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a0316550779063ca85c3c59150dfe8b70"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a0316550779063ca85c3c59150dfe8b70">dao::ifc::IGeneralPage::getWindowController</a></div><div class="ttdeci">WindowController &amp; getWindowController() override</div><div class="ttdoc">获取窗口控制器</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8cpp_source.html#l00007">IGeneralPage.cpp:7</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a3d9837c76c53f11c0f8f2b4b051775d9"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a3d9837c76c53f11c0f8f2b4b051775d9">dao::ifc::IGeneralPage::getTitle</a></div><div class="ttdeci">const std::string &amp; getTitle() const override</div><div class="ttdoc">获取页面标题</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8cpp_source.html#l00011">IGeneralPage.cpp:11</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a518a9c220d67a9d0f5b8c1e3b8c0218c"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">dao::ifc::IGeneralPage::handleInputEvent</a></div><div class="ttdeci">void handleInputEvent(const SDL_Event &amp;event) override=0</div><div class="ttdoc">处理消息</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a580f2191c319be9268eb813380b956ef"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a580f2191c319be9268eb813380b956ef">dao::ifc::IGeneralPage::IGeneralPage</a></div><div class="ttdeci">IGeneralPage(std::string title)</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8cpp_source.html#l00004">IGeneralPage.cpp:4</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a6928832c3f7502ffb6d16bb133214afd"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd">dao::ifc::IGeneralPage::getGlyphAspectRatio</a></div><div class="ttdeci">f32 getGlyphAspectRatio(const utf32char charCode) const</div><div class="ttdef"><b>定义</b> <a href="#l00053">IGeneralPage.hpp:53</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a6c10e2097f44df159ddf8606f0037f5c"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c">dao::ifc::IGeneralPage::addToBatch</a></div><div class="ttdeci">void addToBatch(Args &amp;&amp;... args)</div><div class="ttdef"><b>定义</b> <a href="#l00038">IGeneralPage.hpp:38</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ab240866f12ef7bced2a369c871293f80"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80">dao::ifc::IGeneralPage::setVertexBatch</a></div><div class="ttdeci">void setVertexBatch(BatchRenderer *vertexBatch) override</div><div class="ttdoc">设置渲染批处理器</div><div class="ttdef"><b>定义</b> <a href="#l00045">IGeneralPage.hpp:45</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_acf5066c113f8dbfd40dd7647a530ef82"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82">dao::ifc::IGeneralPage::~IGeneralPage</a></div><div class="ttdeci">~IGeneralPage() override=default</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ad87ca6774d182cb9257638b08ba29368"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368">dao::ifc::IGeneralPage::open</a></div><div class="ttdeci">void open() override=0</div><div class="ttdoc">初始化页面</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_addd9e6a9b0cf92b15c821abdf17ff999"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999">dao::ifc::IGeneralPage::close</a></div><div class="ttdeci">void close() override=0</div><div class="ttdoc">关闭页面</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ade64c48e37494bc65d3987cdbfc4033e"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e">dao::ifc::IGeneralPage::getContext</a></div><div class="ttdeci">Context &amp; getContext() const override</div><div class="ttdoc">设置全局环境上下文</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8cpp_source.html#l00019">IGeneralPage.cpp:19</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ae0db1db567fcdaa8b9a70569e2395e82"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">dao::ifc::IGeneralPage::getRegisterTexture</a></div><div class="ttdeci">std::vector&lt; i32 &gt; getRegisterTexture() const override=0</div><div class="ttdoc">获取加载图集</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ae5e92b2e534b05a8594e5a5548427ca8"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8">dao::ifc::IGeneralPage::m_windowController</a></div><div class="ttdeci">WindowController m_windowController</div><div class="ttdoc">窗口控制器</div><div class="ttdef"><b>定义</b> <a href="#l00052">IGeneralPage.hpp:52</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_aefdc984c6635a4b6c36959b78e08bbc1"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#aefdc984c6635a4b6c36959b78e08bbc1">dao::ifc::IGeneralPage::setContext</a></div><div class="ttdeci">void setContext(Context *context) override</div><div class="ttdoc">获取全局上下文</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8cpp_source.html#l00015">IGeneralPage.cpp:15</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_af835f295dbb1b45f002d170b67d8d714"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714">dao::ifc::IGeneralPage::update</a></div><div class="ttdeci">void update() override=0</div><div class="ttdoc">更新</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IPage_html"><div class="ttname"><a href="classdao_1_1ifc_1_1IPage.html">dao::ifc::IPage</a></div><div class="ttdoc">页面接口</div><div class="ttdef"><b>定义</b> <a href="IPage_8hpp_source.html#l00013">IPage.hpp:13</a></div></div>
+<div class="ttc" id="aconceptdao_1_1BatchWritable_html"><div class="ttname"><a href="conceptdao_1_1BatchWritable.html">dao::BatchWritable</a></div><div class="ttdef"><b>定义</b> <a href="#l00007">IGeneralPage.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedao_1_1ifc_html"><div class="ttname"><a href="namespacedao_1_1ifc.html">dao::ifc</a></div><div class="ttdef"><b>定义</b> <a href="#l00010">IGeneralPage.hpp:10</a></div></div>
+<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>定义</b> <a href="simple__button_8hpp_source.html#l00008">simple_button.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedao_html_a97a8fc44aad6375de4f486418d03b30d"><div class="ttname"><a href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">dao::f32</a></div><div class="ttdeci">float f32</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00013">type.hpp:13</a></div></div>
+<div class="ttc" id="anamespacedao_html_addc09e7009536ce405ecc985ece7673c"><div class="ttname"><a href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">dao::utf32char</a></div><div class="ttdeci">char32_t utf32char</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00016">type.hpp:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<script src="style.js"></script>

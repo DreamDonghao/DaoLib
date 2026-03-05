@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
   0: "12345678abcdefghijmnopqrstuvwxy~上下主从仓代使克列创参合图多如安完审布常应开快性托按提故文最构核渲独的矩示窗第简管系纹组编自行资输运错集页项高",
-  1: "abcdfgimprstvw",
+  1: "abcfgimprstvw",
   2: "d",
   3: "abcdfgijmprstuvw",
   4: "abcdefghimnoprstuvwxy~",
-  5: "adimnrtv",
+  5: "adfimnrtv",
   6: "cfhitu",
   7: "abimvw",
   8: "abcdhimnops",

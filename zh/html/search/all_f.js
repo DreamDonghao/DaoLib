@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['handleevent_0',['handleEvent',['../classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3',1,'dao::SimpleButton::handleEvent()'],['../classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406',1,'dao::InputBox::handleEvent()'],['../classdao_1_1Button.html#a9ed21a4ebedc88ccf741fabb763153e9',1,'dao::Button::handleEvent()']]],
-  ['handleinputevent_1',['handleInputEvent',['../classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed',1,'dao::Window::handleInputEvent()'],['../classdao_1_1Page.html#a747c78b366ac47b41d18659d1b863bd6',1,'dao::Page::handleInputEvent()'],['../classdao_1_1GeneralPage.html#a8ea2c1faa2cb56a798c6b620960e18f7',1,'dao::GeneralPage::handleInputEvent()']]],
+  ['handleevent_0',['handleEvent',['../classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3',1,'dao::SimpleButton::handleEvent()'],['../classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406',1,'dao::InputBox::handleEvent()'],['../classdao_1_1ifc_1_1IButton.html#ad92979a118cc042f6b6fbc74cbdc0792',1,'dao::ifc::IButton::handleEvent()']]],
+  ['handleinputevent_1',['handleInputEvent',['../classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c',1,'dao::ifc::IGeneralPage::handleInputEvent()'],['../classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed',1,'dao::Window::handleInputEvent()'],['../classdao_1_1ifc_1_1IPage.html#acff3a62be8f466bb00ab8cd2e3cd69bd',1,'dao::ifc::IPage::handleInputEvent()']]],
   ['hash_5fmap_2',['hash_map',['../namespacedao.html#a0ad639e9f8555dbf881042e9de05d81f',1,'dao']]],
   ['hasservice_3',['hasService',['../classdao_1_1Context.html#a57373ea1f6bda4c3e6e02b79de69156a',1,'dao::Context']]],
   ['hasstate_4',['hasState',['../classdao_1_1Context.html#a77fb6f1fa808126153255191bf562ed0',1,'dao::Context']]],
