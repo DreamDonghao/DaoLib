@@ -3,8 +3,8 @@ package cmdRun
 import (
 	"bytes"
 	"embed"
+	"fmt"
 	"io/fs"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -13,18 +13,66 @@ import (
 //go:embed templates/project/*
 var templateFS embed.FS
 
-func CreateProject(projectName string) error {
-	targetRoot := filepath.Join(".", projectName)
-
-	// 创建项目根目录
-	if err := os.MkdirAll(targetRoot, 0755); err != nil {
-		return err
+// isSafeForProjectCreation 检查目录是否可以安全地创建项目
+// 允许存在常见的配置文件和隐藏目录
+func isSafeForProjectCreation(dir string) (bool, []string, error) {
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return false, nil, err
 	}
+
+	// 允许的文件/目录列表
+	allowed := map[string]bool{
+		".git":          true,
+		".gitignore":    true,
+		".vscode":       true,
+		".idea":         true,
+		".vs":           true,
+		".DS_Store":     true,
+		"Thumbs.db":     true,
+		".editorconfig": true,
+		".clang-format": true,
+		// 可以根据需要添加更多
+	}
+
+	var unsafeEntries []string
+	for _, entry := range entries {
+		if !allowed[entry.Name()] {
+			unsafeEntries = append(unsafeEntries, entry.Name())
+		}
+	}
+
+	return len(unsafeEntries) == 0, unsafeEntries, nil
+}
+
+// CreateProject 创建新项目（直接在当前目录）
+func CreateProject(projectName string) error {
+	currentDir := "."
+
+	// 检查目录是否安全
+	isSafe, unsafeEntries, err := isSafeForProjectCreation(currentDir)
+	if err != nil {
+		return fmt.Errorf("检查目录失败: %v", err)
+	}
+	if !isSafe {
+		return fmt.Errorf(
+			"当前目录不是空的，发现以下文件/目录: %v。\n请在空目录中运行此命令",
+			unsafeEntries,
+		)
+	}
+
+	// 直接在当前目录放置文件（不再创建子目录）
+	targetRoot := currentDir
 
 	// 遍历 embed 中的 project 目录
 	return fs.WalkDir(templateFS, "templates/project", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
+		}
+
+		// 跳过模板根目录本身
+		if path == "templates/project" {
+			return nil
 		}
 
 		// 计算相对路径
@@ -33,7 +81,7 @@ func CreateProject(projectName string) error {
 			return err
 		}
 
-		// 输出路径
+		// 输出路径直接在当前目录
 		outPath := filepath.Join(targetRoot, relPath)
 
 		// 如果是目录 → 创建
@@ -49,10 +97,10 @@ func CreateProject(projectName string) error {
 
 		exePath, _ := os.Executable()
 		exeDir := filepath.Dir(exePath)
-		
+
 		installPath, err := os.ReadFile(filepath.Join(exeDir, "install_path"))
 		if err != nil {
-			log.Fatal(err)
+			return fmt.Errorf("读取安装路径失败: %v", err)
 		}
 
 		// 如果是文本文件，替换占位符

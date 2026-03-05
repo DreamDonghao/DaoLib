@@ -1,5 +1,5 @@
-#include <core/frame/window_controller.hpp>
-#include <core/frame/window.hpp>
+#include <core/frame/WindowController.hpp>
+#include <core/frame/Window.hpp>
 
 void dao::WindowController::executeCommand(Window &window) {
     for (const auto &[type, data]: m_windowCommands) {

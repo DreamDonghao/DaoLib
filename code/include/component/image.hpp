@@ -1,9 +1,9 @@
 #pragma once
-#include <core/render/atlas_texture.hpp>
-#include <interface/drawable.hpp>
+#include <core/render/AtlasTexture.hpp>
+#include <interface/IDrawable.hpp>
 
 namespace dao {
-    class Image : public Drawable {
+    class Image : public ifc::IDrawable {
     public:
         Image(f32 x, f32 y,f32 width, f32 height, TextureID textureID);
 

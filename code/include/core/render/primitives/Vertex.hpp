@@ -1,6 +1,6 @@
 #pragma once
 #include <core/tool/better_stl.hpp>
-#include <core/render/primitives/color_rgb.hpp>
+#include <core/render/primitives/ColorRGB.hpp>
 #include <SDL3/SDL_render.h>
 namespace dao {
     /// @brief 几何图形顶点
@@ -23,6 +23,11 @@ namespace dao {
         void setPosition(const f32 x, const f32 y) {
             m_x = x;
             m_y = y;
+        }
+
+        void translate(const f32 dx, const f32 dy) {
+            m_x += dx;
+            m_y += dy;
         }
 
         /// @brief 获取x坐标

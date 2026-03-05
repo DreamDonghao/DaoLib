@@ -1,7 +1,7 @@
 #include <ranges>
 #include <span>
 #include <core/render/BatchRenderer.hpp>
-#include <core/render/primitives/atlas_region.hpp>
+#include <core/render/primitives/AtlasRegion.hpp>
 
 namespace dao {
     std::vector<int> BatchRenderer::s_quadIndices = {};
@@ -71,7 +71,7 @@ namespace dao {
         );
     }
 
-    void BatchRenderer::addToBatch(const std::span<AtlasTexture> &textures) {
+    void BatchRenderer::addToBatch(const std::span<const AtlasTexture> &textures) {
         for (const auto &texture: textures) {
             addToBatch(texture);
         }
@@ -121,7 +121,7 @@ namespace dao {
         batch.indicesCount += 3;
     }
 
-    void BatchRenderer::addToBatch(const std::span<Triangle> &triangles) {
+    void BatchRenderer::addToBatch(const std::span<const Triangle> &triangles) {
         for (const auto &triangle: triangles) {
             addToBatch(triangle);
         }
@@ -172,7 +172,7 @@ namespace dao {
         }
     }
 
-    void BatchRenderer::addToBatch(const std::span<Text> &texts) {
+    void BatchRenderer::addToBatch(const std::span<const Text> &texts) {
         for (const auto &text: texts) {
             addToBatch(text);
         }

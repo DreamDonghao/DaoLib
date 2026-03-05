@@ -1,4 +1,4 @@
-#include <core/frame/app.hpp>
+#include <core/frame/App.hpp>
 #include <ranges>
 #include <SDL3_ttf/SDL_ttf.h>
 

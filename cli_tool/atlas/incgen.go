@@ -9,8 +9,8 @@ import (
 	"dao/util"
 )
 
+// GenerateInc 从图集元数据生成 C++ 头文件
 func GenerateInc(data *AtlasMeta) error {
-
 	textureID := 2
 	texturesInc := "assets/textures/inc/textures.inc"
 	textureDataInc := "assets/textures/inc/texture_dates.inc"
@@ -56,7 +56,7 @@ func GenerateInc(data *AtlasMeta) error {
 		textureID += len(frames)
 	}
 
-	// texture_datas.inc
+	// 生成 texture_datas.inc
 	var regionEntries []string
 
 	for _, key := range imageKeys {

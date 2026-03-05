@@ -1,12 +1,8 @@
-//
-// Created by donghao on 25-12-18.
-//
-#ifndef SIMPLE_TEXT_BUTTON_STYLE_HPP
-#define SIMPLE_TEXT_BUTTON_STYLE_HPP
-#include "interface/button_style.hpp"
+#pragma once
+#include <interface/IButtonStyle.hpp>
 
 namespace dao {
-    class SimpleTextButtonStyle : public ButtonStyle {
+    class SimpleTextButtonStyle : public ifc::IButtonStyle {
     public:
         SimpleTextButtonStyle()
             : SimpleTextButtonStyle(0, 0, 0, 0, U"", 0, ColorRGBA{}, nullptr) {
@@ -14,7 +10,7 @@ namespace dao {
 
         SimpleTextButtonStyle(const f32 x, const f32 y, const f32 w, const f32 h,
                               const std::u32string &text, const f32 textSize, const ColorRGBA textColor,
-                              Button *button)
+                              ifc::IButton *button)
             : m_text(x, y, textSize, textColor,text), m_button(button) {
         }
 
@@ -38,13 +34,13 @@ namespace dao {
             m_text.setContent(text);
         }
 
-        void bindButton(Button *button) override {
+        void bindButton(ifc::IButton *button) override {
             m_button = button;
         }
 
     private:
         Text m_text;
-        Button *m_button;
+        ifc::IButton *m_button;
     };
 }
-#endif //SIMPLE_TEXT_BUTTON_STYLE_HPP
+

@@ -1,4 +1,4 @@
-#include <core/render/atlas_texture.hpp>
+#include <core/render/AtlasTexture.hpp>
 
 namespace dao {
     AtlasTexture::AtlasTexture(const TextureID textureId,

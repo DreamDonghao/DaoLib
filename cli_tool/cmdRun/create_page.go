@@ -7,7 +7,7 @@ import (
 	"unicode"
 )
 
-// PascalCase → snake_case
+// toSnakeCase 将 PascalCase 转换为 snake_case
 func toSnakeCase(s string) string {
 	var result []rune
 	for i, r := range s {
@@ -23,6 +23,7 @@ func toSnakeCase(s string) string {
 	return string(result)
 }
 
+// CreatePage 创建新页面
 func CreatePage(name string) {
 	// 解析 namespace 和 pageName
 	idx := strings.LastIndex(name, "::")
@@ -43,7 +44,7 @@ func CreatePage(name string) {
 	dir := "./pages/" + fileBase
 
 	if err := os.MkdirAll(dir, 0755); err != nil {
-		fmt.Println("Error creating directory:", err)
+		fmt.Println("创建目录失败:", err)
 		return
 	}
 
@@ -76,7 +77,7 @@ namespace %s {
 
 	hppPath := dir + "/" + fileBase + ".hpp"
 	if err := os.WriteFile(hppPath, hpp, 0644); err != nil {
-		fmt.Println("Error writing hpp:", err)
+		fmt.Println("写入 hpp 文件失败:", err)
 		return
 	}
 
@@ -103,7 +104,9 @@ namespace %s {
 
 	cppPath := dir + "/" + fileBase + ".cpp"
 	if err := os.WriteFile(cppPath, cpp, 0644); err != nil {
-		fmt.Println("Error writing cpp:", err)
+		fmt.Println("写入 cpp 文件失败:", err)
 		return
 	}
+
+	fmt.Println("页面创建成功:", dir)
 }

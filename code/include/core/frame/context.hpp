@@ -77,7 +77,7 @@ namespace dao {
         }
 
     private:
-        std::unordered_map<std::type_index, std::shared_ptr<void> > m_states; ///< 状态存储映射表
-        std::unordered_map<std::type_index, std::shared_ptr<void> > m_services;///< 服务存储映射表
+        std::unordered_map<std::type_index, std::shared_ptr<void> > m_states;   ///< 状态存储映射表
+        std::unordered_map<std::type_index, std::shared_ptr<void> > m_services; ///< 服务存储映射表
     };
 }

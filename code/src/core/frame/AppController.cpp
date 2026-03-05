@@ -1,5 +1,5 @@
-#include <core/frame/app_controller.hpp>
-#include "core/frame/app.hpp"
+#include <core/frame/AppController.hpp>
+#include "core/frame/App.hpp"
 
 void dao::AppController::executeCommand(App &app) {
     for (const auto &[type, data]: m_appCommands) {

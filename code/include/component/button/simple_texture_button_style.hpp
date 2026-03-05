@@ -1,19 +1,15 @@
-//
-// Created by donghao on 25-12-12.
-//
-#ifndef SIMPLE_BUTTON_STYLE_HPP
-#define SIMPLE_BUTTON_STYLE_HPP
+#pragma once
 #include "simple_button.hpp"
-#include "interface/button_style.hpp"
+#include "interface/IButtonStyle.hpp"
 
 namespace dao {
 
-    class SimpleTextureButtonStyle : public ButtonStyle {
+    class SimpleTextureButtonStyle : public ifc::IButtonStyle {
     public:
         SimpleTextureButtonStyle(
             const f32 x, const f32 y, const f32 w, const f32 h,
             const i32 atnId, const i32 athId, const i32 atpId,
-            Button *button)
+            ifc::IButton *button)
             : m_normalStyle(atnId, x, y, x + w, y + h), m_hoverStyle(athId, x, y, x + w, y + h),
               m_pressedStyle(atpId, x, y, x + w, y + h), m_button(button) {
         }
@@ -23,7 +19,7 @@ namespace dao {
               m_pressedStyle(atpId, button.getBoundingBox()), m_button(&button) {
         }
 
-        void bindButton(Button *button) override {
+        void bindButton(ifc::IButton *button) override {
             m_button = button;
         }
 
@@ -44,7 +40,6 @@ namespace dao {
         AtlasTexture m_normalStyle;
         AtlasTexture m_hoverStyle;
         AtlasTexture m_pressedStyle;
-        Button *m_button{nullptr};
+        ifc::IButton *m_button{nullptr};
     };
 }
-#endif //SIMPLE_BUTTON_STYLE_HPP

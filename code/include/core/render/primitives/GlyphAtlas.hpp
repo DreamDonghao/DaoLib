@@ -2,7 +2,7 @@
 #include <core/tool/better_stl.hpp>
 #include <SDL3/SDL_surface.h>
 #include <SDL3_ttf/SDL_ttf.h>
-#include <core/tool/bounding_box.hpp>
+#include <core/tool/BoundingBox.hpp>
 
 namespace dao {
     /// @brief 字形图集

@@ -1,13 +1,13 @@
 #pragma once
 #include <SDL3/SDL_render.h>
-#include <core/render/atlas_texture.hpp>
+#include <core/render/AtlasTexture.hpp>
 #include <utility>
 #include <vector>
 #include <span>
-#include <core/render/primitives/glyph_atlas.hpp>
-#include <core/render/text.hpp>
-#include <core/render/triangle.hpp>
-#include <core/render/primitives/atlas_region.hpp>
+#include <core/render/primitives/GlyphAtlas.hpp>
+#include <core/render/Text.hpp>
+#include <core/render/Triangle.hpp>
+#include <core/render/primitives/AtlasRegion.hpp>
 #include <SDL3_image/SDL_image.h>
 
 namespace dao {
@@ -90,7 +90,7 @@ namespace dao {
 
         /// @brief 添加一组三角形几何图元到批处理
         /// @param triangles 三角形图元数组
-        void addToBatch(const std::span<Triangle> &triangles);
+        void addToBatch(const std::span<const Triangle> &triangles);
 
         /// @brief 添加纹理到批处理
         /// @param texture 要添加的纹理图集纹理
@@ -98,7 +98,7 @@ namespace dao {
 
         /// @brief 添加一组纹理到批处理
         /// @param textures 纹理图集纹理数组
-        void addToBatch(const std::span<AtlasTexture> &textures);
+        void addToBatch(const std::span<const AtlasTexture> &textures);
 
         /// @brief 添加文本到批处理
         /// @param text 要添加的文本对象
@@ -106,7 +106,7 @@ namespace dao {
 
         /// @brief 添加一组文本到批处理
         /// @param texts 文本对象数组
-        void addToBatch(const std::span<Text> &texts);
+        void addToBatch(const std::span<const Text> &texts);
 
         /// @brief 清理要绘制的纹理图集
         /// @details 一般要每帧调用，否则会堆积上一帧的内容

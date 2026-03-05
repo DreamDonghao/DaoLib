@@ -1,5 +1,5 @@
-#include <core/frame/window.hpp>
-#include <core/frame/window_controller.hpp>
+#include <core/frame/Window.hpp>
+#include <core/frame/WindowController.hpp>
 #include <SDL3_image/SDL_image.h>
 #include <utility>
 #include <ranges>
@@ -26,7 +26,7 @@ namespace dao {
         if (m_window) { SDL_DestroyWindow(m_window); }
     }
 
-    Window &Window::addPage(std::unique_ptr<Page> &&page) {
+    Window &Window::addPage(std::unique_ptr<ifc::IPage> &&page) {
         const std::string title = page->getTitle();
         detectionError(!m_pages.contains(title), std::string("重复页面:") + title);
 

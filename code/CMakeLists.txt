@@ -15,20 +15,20 @@ if(MSVC)
 endif()
 
 add_library(dao
-        src/core/render/atlas_texture.cpp
+        src/core/render/AtlasTexture.cpp
         src/core/frame/app.cpp
         src/core/render/BatchRenderer.cpp
         src/core/frame/window.cpp
-        src/core/tool/bounding_box.cpp
-        src/core/tool/mapped_region.cpp
-        src/core/frame/window_controller.cpp
-        src/core/frame/app_controller.cpp
+        src/core/tool/BoundingBox.cpp
+        src/core/tool/MappedRegion.cpp
+        src/core/frame/WindowController.cpp
+        src/core/frame/AppController.cpp
         src/core/frame/context.cpp
         src/component/button/simple_button.cpp
         src/component/image.cpp
-        src/interface/general_page.cpp
+        src/interface/IGeneralPage.cpp
         src/daoui.cpp
-        src/core/render/primitives/glyph_atlas.cpp
+        src/core/render/primitives/GlyphAtlas.cpp
 )
 
 set_target_properties(dao PROPERTIES

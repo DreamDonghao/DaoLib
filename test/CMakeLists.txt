@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME}
         assets/textures/config/atlas_region.cpp
         main.cpp
         pages/hello_dao_page.cpp
+        tray/AppTray.cpp
 )
 
 # 本地 include
@@ -20,6 +21,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         pages
         tray
 )
+#find_package(Boost REQUIRED COMPONENTS asio)
+#target_link_libraries(${PROJECT_NAME} PRIVATE Boost::asio)
 
 # 链接 dao
 target_link_libraries(${PROJECT_NAME} PRIVATE dao::dao)

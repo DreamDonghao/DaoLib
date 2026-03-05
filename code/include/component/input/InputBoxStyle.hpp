@@ -1,17 +1,22 @@
 #pragma once
-#include "input_box.hpp"
-#include "core/render/text.hpp"
-#include "core/render/BatchRenderer.hpp"
-#include "interface/drawable.hpp"
-#include "core/tool/tick_timer.hpp"
+#include <component/input/InputBox.hpp>
+#include <core/render/Text.hpp>
+#include <core/render/BatchRenderer.hpp>
+#include <interface/IDrawable.hpp>
+#include <core/tool/TickTimer.hpp>
+
+#include "component/graph/SolidRect.hpp"
 
 namespace dao {
     class BatchRenderer;
 
-    class InputBoxStyle : public Drawable {
+    class InputBoxStyle : public ifc::IDrawable {
     public:
         explicit InputBoxStyle(InputBox &inputBox, const int flickerInterval = 3000)
-            : m_inputBox(&inputBox), m_rectangle(inputBox.getBoundingBox(), ColorRGBA("#FFFFFF")),
+            : m_inputBox(&inputBox),
+              m_rectangle(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(),
+                          inputBox.getBoundingBox().getWidth(), inputBox.getBoundingBox().getHeight(),
+                          ColorRGBA("#FFFFFF")),
               m_text(inputBox.getBoundingBox().getLeft(), inputBox.getBoundingBox().getTop(), 50,
                      ColorRGBA("#66E656"),
                      U""),
@@ -35,11 +40,10 @@ namespace dao {
 
     private:
         InputBox *m_inputBox;
-        Rectangle m_rectangle;
+        SolidRect m_rectangle;
         mutable Text m_text;
         int m_flickerInterval;
         mutable TickTimer m_flickerTimer;
         mutable bool m_cursorShown{false};
     };
 }
-

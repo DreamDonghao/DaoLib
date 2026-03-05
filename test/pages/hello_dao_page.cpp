@@ -1,6 +1,5 @@
 #include "hello_dao_page.hpp"
 
-
 using namespace dao;
 
 std::vector<TextureID> HelloDaoPage::getRegisterTexture() const {
@@ -19,8 +18,9 @@ void HelloDaoPage::update() {
         len += getGlyphAspectRatio(ch)*200;
     }
 
-    dao::Image image1{len, 50, 150, 150, texture::image};
-    dao::Rectangle rectangle{len, 0, 100, 500, ColorRGBA("#00D980")};
+    rectangle.rotate(500,500,0.01);
+
+    Image image1{len, 50, 150, 150, texture::image};
     addToBatch(image, text, rectangle);
 }
 

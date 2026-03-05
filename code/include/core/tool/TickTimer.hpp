@@ -1,8 +1,4 @@
-//
-// Created by donghao on 2026/2/12.
-//
-#ifndef TEST_DAO_TICK_TIMER_HPP
-#define TEST_DAO_TICK_TIMER_HPP
+#pragma once
 
 #include <chrono>
 
@@ -57,6 +53,4 @@ namespace dao {
         std::chrono::milliseconds m_interval; ///< 触发间隔
         clock::time_point m_last;             ///< 上次触发时间点
     };
-} // dao
-
-#endif //TEST_DAO_TICK_TIMER_HPP
+}

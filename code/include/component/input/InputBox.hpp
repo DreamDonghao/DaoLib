@@ -1,12 +1,7 @@
-//
-// Created by donghao on 25-12-20.
-//
-#ifndef INPUT_BOX_HPP
-#define INPUT_BOX_HPP
+#pragma once
 #include <SDL3/SDL_events.h>
 #include <utf8cpp/utf8/unchecked.h>
-
-#include "core/tool/bounding_box.hpp"
+#include <core/tool/BoundingBox.hpp>
 
 namespace dao {
     enum class InputStatus {
@@ -106,8 +101,7 @@ namespace dao {
     private:
         InputStatus m_status;
         BoundingBox m_boundingBox;
-        std::u32string m_text;
+        utf32str m_text;
         int cursorPos = 0;
     };
 }
-#endif //INPUT_BOX_HPP

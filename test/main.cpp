@@ -1,6 +1,6 @@
 #include <core/frame/app.hpp>
 #include "hello_dao_page.hpp"
-#include "tray/my_tray.hpp"
+#include "tray/AppTray.hpp"
 
 int main(int argc, char *argv[]) {
     dao::App app{120, true};
@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     app.createWindow(300, 300, "2", true, false)
             .addPage(std::make_unique<HelloDaoPage>());
     /// 创建托盘
-    app.createTray<myTray>("./assets/textures/atlas/icon.png", "托盘")
+    app.createTray<AppTray>("./assets/textures/atlas/icon.png", "托盘")
             .createTrayMenu();
 
     /// 运行应用

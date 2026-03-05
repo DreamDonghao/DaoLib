@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-7.
 //
-#include <core/tool/bounding_box.hpp>
+#include <core/tool/BoundingBox.hpp>
 namespace dao {
     BoundingBox::BoundingBox(const f32 left, const f32 top, const f32 right, const f32 bottom)
                : m_left(left), m_top(top), m_right(right), m_bottom(bottom) {

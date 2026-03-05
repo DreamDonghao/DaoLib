@@ -3,7 +3,7 @@
 #include <array>
 #include <core/render/primitives/Vertex.hpp>
 #include <core/tool/better_stl.hpp>
-#include <core/render/primitives/color_rgb.hpp>
+#include <core/render/primitives/ColorRGB.hpp>
 
 namespace dao {
     /// @brief 三角形几何图元

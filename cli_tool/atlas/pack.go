@@ -12,9 +12,9 @@ import (
 )
 
 const (
-	PADDING      = 2
-	ATLAS_WIDTH  = 2048
-	ATLAS_HEIGHT = 2048
+	padding     = 2
+	atlasWidth  = 2048
+	atlasHeight = 2048
 )
 
 type packItem struct {
@@ -26,19 +26,22 @@ type packItem struct {
 	Folder string
 }
 
+// makeAtlasJSONPath 从完整路径生成图集JSON路径（仅文件名部分）
 func makeAtlasJSONPath(path string) string {
 	return filepath.Base(path)
 }
 
+// PackAtlas 将PNG图片打包成图集
+// rootDir: 输入图片根目录
+// outputJSON: 输出元数据JSON文件路径
+// outputBase: 输出图集图片基础目录
 func PackAtlas(rootDir, outputJSON, outputBase string) error {
-
 	fmt.Println("扫描 PNG:", rootDir)
 
 	var imagesToPack []packItem
-	sequenceGroups := map[string][]packItem{}
+	sequenceGroups := make(map[string][]packItem)
 
 	err := filepath.Walk(rootDir, func(path string, info os.FileInfo, err error) error {
-
 		if err != nil {
 			return err
 		}
@@ -88,16 +91,16 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 	}
 
 	if len(imagesToPack) == 0 && len(sequenceGroups) == 0 {
-		return fmt.Errorf("没有 PNG")
+		return fmt.Errorf("没有找到 PNG 文件")
 	}
 
-	// 合并
+	// 合并序列帧和普通图片
 	allItems := append([]packItem{}, imagesToPack...)
 	for _, v := range sequenceGroups {
 		allItems = append(allItems, v...)
 	}
 
-	// 按高度排序
+	// 按高度降序排序
 	sort.Slice(allItems, func(i, j int) bool {
 		return allItems[i].H > allItems[j].H
 	})
@@ -105,19 +108,18 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 	atlasIndex := 2
 	cur := 0
 
-	imageMeta := map[string]interface{}{}
-	sequenceMeta := map[string][]interface{}{}
+	imageMeta := make(map[string]interface{})
+	sequenceMeta := make(map[string][]interface{})
 
 	for name := range sequenceGroups {
 		sequenceMeta[name] = []interface{}{}
 	}
 
 	for cur < len(allItems) {
-
 		atlasFileName := fmt.Sprintf("atlas_%04d.png", atlasIndex)
 		atlasName := filepath.Join(outputBase, atlasFileName)
 
-		atlas := image.NewRGBA(image.Rect(0, 0, ATLAS_WIDTH, ATLAS_HEIGHT))
+		atlasImage := image.NewRGBA(image.Rect(0, 0, atlasWidth, atlasHeight))
 
 		x, y, rowH := 0, 0, 0
 		i := cur
@@ -126,13 +128,13 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 			item := allItems[i]
 			w, h := item.W, item.H
 
-			newLine := x+w > ATLAS_WIDTH
+			newLine := x+w > atlasWidth
 			ny := y
 			if newLine {
-				ny = y + rowH + PADDING
+				ny = y + rowH + padding
 			}
 
-			if ny+h > ATLAS_HEIGHT {
+			if ny+h > atlasHeight {
 				break
 			}
 
@@ -142,7 +144,7 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 				rowH = 0
 			}
 
-			drawRect(atlas, item.Img, x, y)
+			drawRect(atlasImage, item.Img, x, y)
 
 			frameMeta := map[string]interface{}{
 				"atlas_file": makeAtlasJSONPath(atlasName),
@@ -159,15 +161,21 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 				imageMeta[item.Key] = frameMeta
 			}
 
-			x += w + PADDING
+			x += w + padding
 			if h > rowH {
 				rowH = h
 			}
 			i++
 		}
 
-		out, _ := os.Create(atlasName)
-		png.Encode(out, atlas)
+		out, err := os.Create(atlasName)
+		if err != nil {
+			return err
+		}
+		if err := png.Encode(out, atlasImage); err != nil {
+			out.Close()
+			return err
+		}
 		out.Close()
 
 		atlasIndex++
@@ -179,12 +187,18 @@ func PackAtlas(rootDir, outputJSON, outputBase string) error {
 		"sequence_frames": sequenceMeta,
 	}
 
-	raw, _ := json.MarshalIndent(final, "", "  ")
-	os.WriteFile(outputJSON, raw, 0644)
+	raw, err := json.MarshalIndent(final, "", "  ")
+	if err != nil {
+		return err
+	}
+	if err := os.WriteFile(outputJSON, raw, 0644); err != nil {
+		return err
+	}
 
 	return nil
 }
 
+// drawRect 将源图片绘制到目标图片的指定位置
 func drawRect(dst image.Image, src image.Image, x, y int) {
 	b := src.Bounds()
 	for i := 0; i < b.Dx(); i++ {

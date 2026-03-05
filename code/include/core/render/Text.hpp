@@ -1,7 +1,7 @@
 #pragma once
 #include <SDL3/SDL_pixels.h>
 #include "core/tool/better_stl.hpp"
-#include "primitives/color_rgb.hpp"
+#include "primitives/ColorRGB.hpp"
 
 namespace dao {
     /// @brief 文本渲染对象

@@ -1,19 +1,15 @@
-//
-// Created by donghao on 2026/2/12.
-//
-#ifndef TEST_DAO_ANIMATED_SPRITE_HPP
-#define TEST_DAO_ANIMATED_SPRITE_HPP
-#include <core/tool/tick_timer.hpp>
-#include <core/tool/ring_vector.hpp>
-#include "../core/basic_drawing_elements/atlas_texture.hpp"
-#include "../interface/drawable.hpp"
+#pragma once
+#include <core/tool/TickTimer.hpp>
+#include <core/tool/RingVector.hpp>
+#include <core/render/AtlasTexture.hpp>
+#include <interface/drawable.hpp>
 #include <core/tool/better_stl.hpp>
 
 namespace dao {
     class AnimatedSprite : Drawable {
     public:
-        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
-                       const std::initializer_list<u32> &textureIDs)
+        AnimatedSprite(const u32 fps, const f32 x, const f32 y, const f32 width, const f32 height,
+                       const std::initializer_list<TextureID> &textureIDs)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (const auto textureID: textureIDs) {
                 AtlasTexture texture{textureID, x, y, x + width, y + height};
@@ -22,7 +18,7 @@ namespace dao {
         }
 
         template<size_t N>
-        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
+        AnimatedSprite(const u32 fps, const f32 x, const f32 y, const f32 width, const f32 height,
                        const std::array<TextureID, N> &textureIDs)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (const auto textureID: textureIDs) {
@@ -31,7 +27,7 @@ namespace dao {
             }
         }
 
-        AnimatedSprite(const u32 fps, const float32 x, const float32 y, const float32 width, const float32 height,
+        AnimatedSprite(const u32 fps, const f32 x, const f32 y, const f32 width, const f32 height,
                        const TextureID begin, const TextureID end)
             : m_tickTimer(std::chrono::milliseconds(1000 / fps)) {
             for (TextureID textureID = begin; textureID < end; ++textureID) {
@@ -44,7 +40,7 @@ namespace dao {
             m_tickTimer.reset();
         }
 
-        void writeToBatch(VertexBatchBuilder &builder) const override {
+        void writeToBatch(BatchRenderer &builder) const override {
             builder.addToBatch(m_textures.val());
             if (m_tickTimer) {
                 m_textures.next();
@@ -55,6 +51,4 @@ namespace dao {
         mutable RingVector<AtlasTexture> m_textures;
         mutable TickTimer m_tickTimer;
     };
-} // dao
-
-#endif //TEST_DAO_ANIMATED_SPRITE_HPP
+}

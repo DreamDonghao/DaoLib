@@ -1,5 +1,5 @@
 #pragma once
-#include <core/tool/bounding_box.hpp>
+#include <core/tool/BoundingBox.hpp>
 #include <tuple>
 
 namespace dao {

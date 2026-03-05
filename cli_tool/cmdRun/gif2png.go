@@ -10,9 +10,10 @@ import (
 	"path/filepath"
 )
 
+// RunGif2Png 将 GIF 文件转换为 PNG 序列帧
 func RunGif2Png(args []string) {
 	if len(args) < 2 {
-		fmt.Println("用法: asset-tool gif2png input.gif output_dir")
+		fmt.Println("用法: dao gif2png input.gif output_dir")
 		return
 	}
 
@@ -59,5 +60,5 @@ func RunGif2Png(args []string) {
 		fmt.Println("导出:", outPath)
 	}
 
-	fmt.Println("完成，共导出", len(g.Image), "帧")
+	fmt.Printf("完成，共导出 %d 帧\n", len(g.Image))
 }

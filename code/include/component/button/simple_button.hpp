@@ -1,14 +1,12 @@
-//
-// Created by donghao on 25-12-11.
-//
+
 #pragma once
 #include <functional>
 #include <SDL3/SDL_events.h>
-#include <component/rectangle.hpp>
-#include <interface/button.hpp>
+#include <component/graph/Rect.hpp>
+#include <interface/IButton.hpp>
 
 namespace dao {
-    class SimpleButton : public Button {
+    class SimpleButton : public ifc::IButton {
     public:
         ~SimpleButton() override = default;
 

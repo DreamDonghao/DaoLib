@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// FrameMeta 图集帧元数据
 type FrameMeta struct {
 	AtlasFile string  `json:"atlas_file"`
 	AtlasID   int     `json:"atlas_id"`
@@ -14,11 +15,13 @@ type FrameMeta struct {
 	Bottom    float64 `json:"bottom"`
 }
 
+// AtlasMeta 图集元数据
 type AtlasMeta struct {
 	Images         map[string]FrameMeta   `json:"images"`
 	SequenceFrames map[string][]FrameMeta `json:"sequence_frames"`
 }
 
+// LoadMeta 加载图集元数据
 func LoadMeta(path string) (*AtlasMeta, error) {
 	raw, err := os.ReadFile(path)
 	if err != nil {

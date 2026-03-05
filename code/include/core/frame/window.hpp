@@ -2,9 +2,9 @@
 #include <functional>
 #include <string>
 #include <SDL3/SDL.h>
-#include <interface/page.hpp>
-#include <core/frame/app_controller.hpp>
-#include <core/frame/context.hpp>
+#include <interface/IPage.hpp>
+#include <core/frame/AppController.hpp>
+#include <core/frame/Context.hpp>
 #include <core/render/BatchRenderer.hpp>
 
 namespace dao {
@@ -33,7 +33,7 @@ namespace dao {
 
         /// @brief 添加页面
         /// @param page 要添加页面的unique_ptr指针
-        Window &addPage(std::unique_ptr<Page> &&page);
+        Window &addPage(std::unique_ptr<ifc::IPage> &&page);
 
         /// @brief 根据当前窗口拥有的页面加载未加载的图集
         void registerPageTexture();
@@ -93,7 +93,7 @@ namespace dao {
         bool m_running = true;                                 ///< 是否正在运行
         SDL_Window *m_window{nullptr};                         ///< SDL_Window 指针
         std::string m_nowPageTitle;                            ///< 当前页面的标题
-        hash_map<std::string, std::unique_ptr<Page> > m_pages; ///< 窗口拥有的页面
+        hash_map<std::string, std::unique_ptr<ifc::IPage> > m_pages; ///< 窗口拥有的页面
         i32 m_width;                                           ///< 窗口宽度
         i32 m_height;                                          ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
