@@ -7,7 +7,6 @@ namespace dao {
     std::vector<int> BatchRenderer::s_quadIndices = {};
 
     BatchRenderer::BatchRenderer(
-
         const std::string_view fontPath, const f32 glyphSize,
         const i32 atlasSize, const size_t quadCount)
         : m_glyphAtlas(fontPath, glyphSize, atlasSize) {
@@ -65,6 +64,10 @@ namespace dao {
             m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_quadIndices));
         }
         m_drawBatches.back().indicesCount += 6;
+        if (m_drawBatches.back().indicesCount > s_quadIndices.size()) {
+            DAO_ERROR_LOG("共用矩形顶点数组索引不足");
+            expandQuadIndicesTo(s_quadIndices.size() * 2);
+        }
         appendQuadVertices(
             m_drawBatches.back().vertices,
             texture.getBoundingBox(), atlasRegion
@@ -96,6 +99,37 @@ namespace dao {
             m_renderer, &m_glyphAtlas.getAtlasSurface());
     }
 
+    void BatchRenderer::addToBatch(const std::span<const SDL_Vertex> v, const std::span<const i32> indices) {
+        // 如果没有批次或者当前批次不是几何图形批次（atlasId != 0），则创建新的几何图形绘制批次
+        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
+            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
+        }
+
+        auto &batch = m_drawBatches.back();
+
+        // 更新索引数量
+        batch.indicesCount += static_cast<int>(indices.size());
+
+        // 计算顶点偏移量，用于调整索引值
+        const auto offset = static_cast<i32>(batch.vertices.size());
+
+        // 添加顶点数据 - 预分配并直接拷贝，避免中间重分配和多次拷贝
+        if (const size_t vCount = v.size(); vCount > 0) {
+            const i64 oldVSize = static_cast<i64>(batch.vertices.size());
+            batch.vertices.resize(oldVSize + vCount);
+            std::ranges::copy(v, batch.vertices.begin() + oldVSize);
+        }
+
+        // 批量添加索引数据并根据偏移量调整索引值 - 直接写入调整后的目标位置，避免先插入再转换的两次遍历
+        auto &current_indices = *batch.indices;
+        if (const size_t idxCount = indices.size(); idxCount > 0) {
+            const i64 oldIdxSize = static_cast<i64>(current_indices.size());
+            current_indices.resize(oldIdxSize + idxCount);
+            std::ranges::transform(indices, current_indices.begin() + oldIdxSize,
+                                   [offset](const i32 idx) { return idx + offset; });
+        }
+    }
+
     void BatchRenderer::addToBatch(const Triangle &triangle) {
         // 确保有一个用于几何图元的批次（atlasId = 0）
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
@@ -105,25 +139,49 @@ namespace dao {
         auto &batch = m_drawBatches.back();
         const auto offset = static_cast<i32>(batch.vertices.size());
 
-        // 批量添加顶点
-        batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(0)));
-        batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(1)));
-        batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(2)));
+        // 预分配顶点空间，一次性添加所有顶点
+        const i64 oldVertexSize = static_cast<i64>(batch.vertices.size());
+        batch.vertices.resize(oldVertexSize + 3);
+        batch.vertices[oldVertexSize] = static_cast<SDL_Vertex>(triangle.vertex(0));
+        batch.vertices[oldVertexSize + 1] = static_cast<SDL_Vertex>(triangle.vertex(1));
+        batch.vertices[oldVertexSize + 2] = static_cast<SDL_Vertex>(triangle.vertex(2));
 
-        // 批量添加索引
+        // 预分配索引空间，一次性添加所有索引
         auto &indices = *batch.indices;
-        indices.reserve(indices.size() + 3);
-        indices.push_back(offset);
-        indices.push_back(offset + 1);
-        indices.push_back(offset + 2);
+        const i64 oldIndexSize = static_cast<i64>(indices.size());
+        indices.resize(oldIndexSize + 3);
+        indices[oldIndexSize] = offset;
+        indices[oldIndexSize + 1] = offset + 1;
+        indices[oldIndexSize + 2] = offset + 2;
 
         // 更新索引计数
         batch.indicesCount += 3;
     }
 
     void BatchRenderer::addToBatch(const std::span<const Triangle> &triangles) {
-        for (const auto &triangle: triangles) {
-            addToBatch(triangle);
+        if (triangles.empty()) {
+            return;
+        }
+
+        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
+            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
+        }
+
+        auto &batch = m_drawBatches.back();
+        auto &indices = *batch.indices;
+
+        for (const auto &triangle : triangles) {
+            const auto offset = static_cast<i32>(batch.vertices.size());
+
+            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(0)));
+            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(1)));
+            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(2)));
+
+            indices.push_back(offset);
+            indices.push_back(offset + 1);
+            indices.push_back(offset + 2);
+
+            batch.indicesCount += 3;
         }
     }
 
@@ -223,3 +281,4 @@ namespace dao {
         vertices.push_back({{winL, winB}, {1, 1, 1, 1}, {normalized_texL, normalized_texB}});
     }
 }
+

@@ -1,10 +1,10 @@
-@page tutorial DaoUI 从零基础到精通教程
+@page tutorial DaoLib 从零基础到精通教程
 
-# DaoUI 从零基础到精通教程
+# DaoLib 从零基础到精通教程
 
 ## 简介
 
-DaoUI 是一个基于 SDL3 的现代 C++ 用户界面库，旨在提供简单、高效、可扩展的 UI 开发体验。它采用 C++23 标准，支持跨平台开发，提供了完整的应用管理、窗口系统、页面组件、渲染批处理和状态管理等功能。
+DaoLib 是一个基于 SDL3 的现代 C++ 用户界面库，旨在提供简单、高效、可扩展的 UI 开发体验。它采用 C++23 标准，支持跨平台开发，提供了完整的应用管理、窗口系统、页面组件、渲染批处理和状态管理等功能。
 
 ### 主要特性
 
@@ -30,7 +30,7 @@ DaoUI 是一个基于 SDL3 的现代 C++ 用户界面库，旨在提供简单、
 
 ### 使用 vcpkg 管理依赖
 
-DaoUI 使用 vcpkg 管理依赖。确保已安装 [vcpkg](https://vcpkg.io/) 并配置好集成。
+DaoLib 使用 vcpkg 管理依赖。确保已安装 [vcpkg](https://vcpkg.io/) 并配置好集成。
 
 ```bash
 # 安装依赖
@@ -39,22 +39,22 @@ vcpkg install sdl3 sdl3-image[png] sdl3-ttf utf8cpp
 
 ### 集成到 CMake 项目
 
-将 DaoUI 作为子模块或直接复制到你的项目中，然后在 `CMakeLists.txt` 中添加：
+将 DaoLib 作为子模块或直接复制到你的项目中，然后在 `CMakeLists.txt` 中添加：
 
 ```cmake
-# 添加 DaoUI 子目录
+# 添加 DaoLib 子目录
 add_subdirectory(path/to/dao)
 
-# 链接 DaoUI 库
+# 链接 DaoLib 库
 target_link_libraries(your_target PRIVATE dao::dao)
 ```
 
-### 独立构建 DaoUI
+### 独立构建 DaoLib
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/DaoUI.git
-cd DaoUI
+git clone https://github.com/your-username/DaoLib.git
+cd DaoLib
 
 # 配置和构建
 cmake -B build -DCMAKE_TOOLCHAIN_FILE=[path/to/vcpkg]/scripts/buildsystems/vcpkg.cmake
@@ -70,7 +70,7 @@ cmake --build build --config Release
 创建一个简单的窗口应用：
 
 ```cpp
-#include <daoui.hpp>
+#include <daoLib.hpp>
 
 int main() {
     // 创建应用实例，60 FPS，启用点击穿透
@@ -91,7 +91,7 @@ int main() {
 让我们创建一个包含页面和基本组件的完整应用：
 
 ```cpp
-#include <daoui.hpp>
+#include <daoLib.hpp>
 
 // 自定义页面类
 class MyPage : public dao::GeneralPage {
@@ -99,7 +99,7 @@ class MyPage : public dao::GeneralPage {
         std::cout << "按钮被点击!" << std::endl;
     }};
 
-    dao::Text text{100, 200, 24, dao::hexToRGBA("#000000"), U"你好 DaoUI!"};
+    dao::Text text{100, 200, 24, dao::hexToRGBA("#000000"), U"你好 DaoLib!"};
 
 public:
     MyPage() : GeneralPage("myPage") {}
@@ -146,7 +146,7 @@ int main() {
 
 ### 1. 应用 (App)
 
-`dao::App` 是 DaoUI 应用的入口点，负责管理整个应用程序的生命周期。
+`dao::App` 是 DaoLib 应用的入口点，负责管理整个应用程序的生命周期。
 
 **主要功能：**
 - 创建和管理窗口
@@ -243,7 +243,7 @@ public:
 
 ### 4. 组件 (Components)
 
-DaoUI 提供了多种内置 UI 组件。
+DaoLib 提供了多种内置 UI 组件。
 
 #### 按钮 (SimpleButton)
 
@@ -402,7 +402,7 @@ context.emplaceService<dao::App*>(&app);
 ### 示例 1：计数器应用
 
 ```cpp
-#include <daoui.hpp>
+#include <daoLib.hpp>
 
 // 计数器状态
 struct CounterState {
@@ -466,7 +466,7 @@ int main() {
 ### 示例 2：用户登录界面
 
 ```cpp
-#include <daoui.hpp>
+#include <daoLib.hpp>
 #include <string>
 
 struct UserCredentials {
@@ -534,7 +534,7 @@ int main() {
 
 ### 托盘系统
 
-DaoUI 支持系统托盘图标和菜单。
+DaoLib 支持系统托盘图标和菜单。
 
 **创建自定义托盘：**
 ```cpp
@@ -723,7 +723,7 @@ getWindow().switchPage("otherPageTitle");
 
 ### Q3: 如何处理中文输入？
 
-DaoUI 内置支持 UTF-32 字符串，确保使用正确的字符串字面量：
+DaoLib 内置支持 UTF-32 字符串，确保使用正确的字符串字面量：
 
 ```cpp
 // 使用 UTF-32 字符串字面量 (C++11)
@@ -794,10 +794,10 @@ public:
 
 ## 下一步
 
-- 查看 [API 文档](@ref daoui.hpp) 获取详细类参考
+- 查看 [API 文档](@ref daoLib.hpp) 获取详细类参考
 - 参考测试示例了解更多用法
-- 参与 DaoUI 开发，提交 Issue 和 Pull Request
+- 参与 DaoLib 开发，提交 Issue 和 Pull Request
 
 ---
 
-*本教程基于 DaoUI 版本 0.0.1，最后更新于 2026年3月3日。*
+*本教程基于 DaoLib 版本 0.0.1，最后更新于 2026年3月3日。*

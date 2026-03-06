@@ -29,14 +29,14 @@ namespace dao {
             /// @brief 处理消息
             void handleInputEvent(const SDL_Event &event) override = 0;
 
-
             WindowController &getWindowController() override;
 
             [[nodiscard]] const std::string &getTitle() const override;
 
+            void clearBatch() const;
+
             template<BatchWritable... Args>
             void addToBatch(Args &&... args) {
-                m_vertexBatch->clearDrawBatches();
                 (args.writeToBatch(*m_vertexBatch), ...);
             }
 

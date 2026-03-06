@@ -1,4 +1,4 @@
-# DaoUI
+# DaoLib
 
 [中文](README.zh.md) | [English](README.md)
 
@@ -7,19 +7,19 @@ A cross-platform C++ GUI development framework for building desktop applications
 ---
 
 📘 Documentation and Tutorials:  
-https://dreamdonghao.github.io/DaoUI/en/html
+https://dreamdonghao.github.io/DaoLib/en/html
 
-Through this documentation, you can learn how to use DaoUI, understand its design philosophy, and participate in project development.
+Through this documentation, you can learn how to use DaoLib, understand its design philosophy, and participate in project development.
 
 ---
 
 ## Project Introduction
 
-DaoUI is a cross-platform GUI library built with C++, aiming to provide a lightweight, high-performance application development solution with a low learning curve.
+DaoLib is a cross-platform GUI library built with C++, aiming to provide a lightweight, high-performance application development solution with a low learning curve.
 
 The framework is built on SDL3, supports hardware acceleration, and all rendering is accomplished through vertex batching. When used appropriately, it delivers excellent performance, making it suitable not only for desktop application development but also for 2D games or other real-time visualization projects.
 
-DaoUI is not positioned as a full-fledged game engine, nor does it provide a vast array of pre-built controls like Qt. Currently, it offers the following core capabilities:
+DaoLib is not positioned as a full-fledged game engine, nor does it provide a vast array of pre-built controls like Qt. Currently, it offers the following core capabilities:
 
 - Texture management
 - Geometric shape rendering
@@ -30,7 +30,7 @@ The design philosophy is: provide only the essential underlying capabilities, al
 
 With basic C++ experience, you can get started in a relatively short time. Commonly used components are under continuous development.
 
-Whether you're a beginner or an experienced developer, you are welcome to participate in the development and improvement of DaoUI for practice, learning, and building projects.
+Whether you're a beginner or an experienced developer, you are welcome to participate in the development and improvement of DaoLib for practice, learning, and building projects.
 
 ---
 
@@ -130,4 +130,4 @@ This command will automatically complete the atlas packaging and generate the re
 
 For complete project documentation and advanced usage, please visit:
 
-https://dreamdonghao.github.io/DaoUI/en/html
+https://dreamdonghao.github.io/DaoLib/en/html

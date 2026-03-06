@@ -1,5 +1,5 @@
 
-#include <component/button/simple_button.hpp>
+#include <component/button/SimpleButton.hpp>
 
 dao::SimpleButton::SimpleButton(
     const f32 x, const f32 y, const f32 width, const f32 height,

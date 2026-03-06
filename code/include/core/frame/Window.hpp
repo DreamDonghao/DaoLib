@@ -71,6 +71,9 @@ namespace dao {
         /// @brief 设置位置
         void setPosition(i32 x, i32 y) const;
 
+        /// @brief 移动窗口位置
+        /// @param x 新的 x 坐标
+        /// @param y 新的 y 坐标
         void movePosition(i32 x, i32 y) const;
 
         /// @brief 设置大小
@@ -82,8 +85,12 @@ namespace dao {
         /// @brief 设置点击是否穿透
         void setClickThrough(bool enable) const;
 
+        /// @brief 获取应用控制器
+        /// @return 应用控制器引用
         AppController &getAppController() { return m_appController; }
 
+        /// @brief 设置上下文
+        /// @param context 上下文指针
         void setContext(Context *context) {
             m_context = context;
         }
@@ -98,13 +105,13 @@ namespace dao {
         i32 m_height;                                          ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
         AppController m_appController;                         ///< 应用控制器
-        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"};
-        Context *m_context{nullptr};
+        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"}; ///< 批处理渲染器
+        Context *m_context{nullptr};                           ///< 上下文
 
         /// @brief 执行窗口控制器的命令
         void executeCommand();
 
-        std::function<void()> m_closeAction{
+        std::function<void()> m_closeAction{                   ///< 窗口关闭时执行的操作
             [] {
             }
         };

@@ -19,10 +19,10 @@ namespace dao {
             : atlasId(a), vertices(std::move(v)), indices(std::move(i)) {
         }
 
-        i32 atlasId;                      ///< 绘制的纹理图集 ID
-        std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
+        i32 atlasId;                                                                  ///< 绘制的纹理图集 ID
+        std::vector<SDL_Vertex> vertices;                                             ///< 绘制纹理图集的顶点数组
         std::unique_ptr<std::vector<i32>, SwitchDeleter<std::vector<i32> > > indices; ///< 索引数组（可能共享静态缓冲区或独占）
-        int indicesCount{0};               ///< 实际使用的索引数量
+        int indicesCount{0};                                                          ///< 实际使用的索引数量
     };
 
     /// @brief 批处理渲染器
@@ -54,7 +54,8 @@ namespace dao {
         /// @param vertices 目标顶点数组
         /// @param pos 纹理位置和尺寸
         /// @param atlasRegion 纹理在图集中的区域
-        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, const AtlasRegion &atlasRegion);
+        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos,
+                                       const AtlasRegion &atlasRegion);
 
     public:
         /// @brief 构造函数（无字体）
@@ -69,8 +70,8 @@ namespace dao {
         /// @param atlasSize 字形图集尺寸（正方形边长）
         /// @param quadCount 初始矩形索引缓冲容量
         explicit BatchRenderer(std::string_view fontPath, f32 glyphSize = 24,
-                                    i32 atlasSize = 1024,
-                                    size_t quadCount = 1024);
+                               i32 atlasSize = 1024,
+                               size_t quadCount = 1024);
 
         /// @brief 析构函数
         /// @details 清理所有纹理资源和渲染器
@@ -83,6 +84,14 @@ namespace dao {
 
         /// @brief 禁用复制构造函数
         BatchRenderer(const BatchRenderer &) = delete;
+
+        // @brief 添加原始顶点和索引数据到批处理
+        // @details 将用户提供的顶点和索引数据直接添加到渲染批次中。
+        //          使用 atlasId = 0（白色纹理），适用于纯色几何图元渲染。
+        //          索引值会根据当前批次已有的顶点数自动偏移。
+        // @param v 顶点数据数组
+        // @param indices 索引数据数组（索引基于顶点数组的相对位置）
+        void addToBatch(std::span<const SDL_Vertex> v, std::span<const i32> indices);
 
         /// @brief 添加三角形几何图元到批处理
         /// @param triangle 三角形图元
@@ -131,9 +140,13 @@ namespace dao {
         [[nodiscard]] const GlyphAtlas &getGlyphAtlas() const { return m_glyphAtlas; }
 
     private:
-        SDL_Renderer *m_renderer{nullptr};                  ///< SDL渲染器指针
-        std::vector<AtlasDrawBatch> m_drawBatches;          ///< 一组绘制的数据
-        hash_map<TextureID, SDL_Texture *> m_atlasTextures; ///< 纹理图集ID到SDL纹理的映射
-        GlyphAtlas m_glyphAtlas;                            ///< 字形图集
+        SDL_Renderer *m_renderer{nullptr};         ///< SDL渲染器指针
+        std::vector<AtlasDrawBatch> m_drawBatches; ///< 一组绘制的数据
+        /// @brief 纹理图集ID到SDL纹理的映射
+        /// @details 预留 ID\n
+        /// 0: 白色纹理（用于几何图形绘制）
+        /// 1: 字形图集
+        hash_map<TextureID, SDL_Texture *> m_atlasTextures;
+        GlyphAtlas m_glyphAtlas; ///< 字形图集
     };
 }

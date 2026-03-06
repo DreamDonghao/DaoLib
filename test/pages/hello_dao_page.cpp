@@ -7,22 +7,30 @@ std::vector<TextureID> HelloDaoPage::getRegisterTexture() const {
 }
 
 void HelloDaoPage::open() {
+
 }
 
 void HelloDaoPage::close() {
 }
 
+Image image1{1, 50, 150, 150, texture::image};
+dao::Circle circle{500, 500, 100, dao::ColorRGBA("#185ABD"), dao::ColorRGBA("#FE2857")};
+
+Polygon a{Vertex{0, 0,}, Vertex{100, 0}, Vertex{100, 100}};
+
 void HelloDaoPage::update() {
+    clearBatch();
     f32 len = 0;
     for (const utf32char ch: dao::utf32str(U"abcABCga")) {
-        len += getGlyphAspectRatio(ch)*200;
+        len += getGlyphAspectRatio(ch) * 200;
     }
+    rectangle.rotate(500, 500, 0.01);
 
-    rectangle.rotate(500,500,0.01);
-
-    Image image1{len, 50, 150, 150, texture::image};
-    addToBatch(image, text, rectangle);
+    for (i32 i = 0; i < 1000000; ++i) {
+        addToBatch(a);
+    }
 }
+
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
     simpleButton.handleEvent(event);

@@ -1,5 +1,5 @@
 #pragma once
-#include "simple_button.hpp"
+#include "SimpleButton.hpp"
 #include "interface/IButtonStyle.hpp"
 
 namespace dao {

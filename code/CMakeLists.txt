@@ -24,10 +24,10 @@ add_library(dao
         src/core/frame/WindowController.cpp
         src/core/frame/AppController.cpp
         src/core/frame/context.cpp
-        src/component/button/simple_button.cpp
+        src/component/button/SimpleButton.cpp
         src/component/image.cpp
         src/interface/IGeneralPage.cpp
-        src/daoui.cpp
+        src/daolib.cpp
         src/core/render/primitives/GlyphAtlas.cpp
 )
 

@@ -32,6 +32,7 @@ class HelloDaoPage : public dao::ifc::IGeneralPage {
         }
     };
     dao::SolidRect rectangle{200,200,100,100,dao::ColorRGBA("#06C763")};
+
 public:
     HelloDaoPage() : IGeneralPage("helloDaoPage") {
     };

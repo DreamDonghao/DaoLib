@@ -1,8 +1,8 @@
-@page join Participate in DaoUI Development
+@page join Participate in DaoLib Development
 
 # Development Process
 
-Welcome to contributing to the development of DaoUI. This project uses a protected main branch. All changes must be completed via Pull Requests. Please follow the process below:
+Welcome to contributing to the development of DaoLib. This project uses a protected main branch. All changes must be completed via Pull Requests. Please follow the process below:
 
 ---
 
@@ -17,8 +17,8 @@ Click “Fork” to copy the repository to your personal GitHub account.
 Download the code to your local machine:
 
 ```bash  
-git clone https://github.com/<your-username>/DaoUI.git  
-cd DaoUI  
+git clone https://github.com/<your-username>/DaoLib.git  
+cd DaoLib  
 ```  
 
 ---

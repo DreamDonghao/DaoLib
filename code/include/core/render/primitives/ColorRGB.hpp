@@ -152,6 +152,10 @@ namespace dao {
             return ColorRGBA{r, g, b, a};
         }
 
+        explicit constexpr operator SDL_FColor() const noexcept {
+            return {rgbNorm[m_r], rgbNorm[m_g], rgbNorm[m_b], m_a};
+        }
+
     private:
         i32 m_r; ///< 红色通道值 (0-255)
         i32 m_g; ///< 绿色通道值 (0-255)

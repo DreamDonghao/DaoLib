@@ -1,8 +1,8 @@
-@page join 参与 DaoUI 开发
+@page join 参与 DaoLib 开发
 
 #  开发流程
 
-欢迎参与 DaoUI 的开发。本项目采用受保护的主分支，所有变更必须通过 Pull Request 完成。请遵循以下流程：
+欢迎参与 DaoLib 的开发。本项目采用受保护的主分支，所有变更必须通过 Pull Request 完成。请遵循以下流程：
 
 ---
 
@@ -17,8 +17,8 @@
 将代码下载到本地
 
 ```bash
-git clone https://github.com/<your-username>/DaoUI.git
-cd DaoUI
+git clone https://github.com/<your-username>/DaoLib.git
+cd DaoLib
 ```
 
 ---
