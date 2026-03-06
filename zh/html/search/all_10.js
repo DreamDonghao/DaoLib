@@ -16,8 +16,8 @@ var searchData=
   ['igraph_13',['IGraph',['../classdao_1_1ifc_1_1IGraph.html',1,'dao::ifc']]],
   ['igraph_2ehpp_14',['IGraph.hpp',['../IGraph_8hpp.html',1,'']]],
   ['image_15',['Image',['../tutorial.html#autotoc_md44',1,'图片 (Image)'],['../classdao_1_1Image.html',1,'dao::Image'],['../classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab',1,'dao::Image::Image()']]],
-  ['image_2ecpp_16',['image.cpp',['../image_8cpp.html',1,'']]],
-  ['image_2ehpp_17',['image.hpp',['../image_8hpp.html',1,'']]],
+  ['image_2ecpp_16',['Image.cpp',['../Image_8cpp.html',1,'']]],
+  ['image_2ehpp_17',['Image.hpp',['../Image_8hpp.html',1,'']]],
   ['indices_18',['indices',['../structdao_1_1AtlasDrawBatch.html#a88e392c58cc616de9180789fdc43e8a2',1,'dao::AtlasDrawBatch']]],
   ['indicescount_19',['indicesCount',['../structdao_1_1AtlasDrawBatch.html#a0aeb26a8aa991891fd20d42094484780',1,'dao::AtlasDrawBatch']]],
   ['init_20',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer']]],
@@ -37,5 +37,5 @@ var searchData=
   ['isnull_34',['isNull',['../classdao_1_1ColorRGBA.html#aeeeed29db77ac297599e1b2ff9c8c8e6',1,'dao::ColorRGBA']]],
   ['isrunning_35',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
   ['isupdated_36',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
-  ['isvalid_37',['isValid',['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox::isValid()'],['../classdao_1_1ColorRGBA.html#a863970aba997b66e1b4d8a26378a5bbe',1,'dao::ColorRGBA::isValid()'],['../classdao_1_1Triangle.html#a3e1fcb3efa7c60446203af4ba38d3efe',1,'dao::Triangle::isValid()']]]
+  ['isvalid_37',['isValid',['../classdao_1_1Triangle.html#a3e1fcb3efa7c60446203af4ba38d3efe',1,'dao::Triangle::isValid()'],['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox::isValid()'],['../classdao_1_1ColorRGBA.html#a863970aba997b66e1b4d8a26378a5bbe',1,'dao::ColorRGBA::isValid()']]]
 ];

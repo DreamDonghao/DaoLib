@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "DaoUI", "index.html", [
-    [ "Participate in DaoUI Development", "join.html", [
+    [ "Participate in DaoLib Development", "join.html", [
       [ "Development Process", "join.html#autotoc_md0", [
         [ "1. Fork the Repository", "join.html#autotoc_md2", null ],
         [ "2. Clone the Repository", "join.html#autotoc_md4", null ],
@@ -38,7 +38,7 @@ var NAVTREE =
       ] ],
       [ "Project Dependencies", "join.html#autotoc_md18", null ]
     ] ],
-    [ "developed using DaoUI", "use.html", null ],
+    [ "developed using DaoLib", "use.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -72,10 +72,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AppController_8cpp.html",
-"classdao_1_1ColorRGBA.html#ad0e13687a474ebdaaf02c62b904e4f68",
-"classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979",
-"dir_19e7b1025efe00f948186926f751f61a.html"
+"AnimatedSprite_8hpp.html",
+"classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903",
+"classdao_1_1SimpleTextureButtonStyle.html#a836705b180a043707ec8a6d9472a7ef5",
+"classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80",
+"structdao_1_1WindowCommand.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

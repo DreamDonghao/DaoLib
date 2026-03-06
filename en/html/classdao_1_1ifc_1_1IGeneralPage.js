@@ -3,6 +3,7 @@ var classdao_1_1ifc_1_1IGeneralPage =
     [ "IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html#a580f2191c319be9268eb813380b956ef", null ],
     [ "~IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82", null ],
     [ "addToBatch", "classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c", null ],
+    [ "clearBatch", "classdao_1_1ifc_1_1IGeneralPage.html#ae78fd60af98520ae9d1c141a223b02e2", null ],
     [ "close", "classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999", null ],
     [ "getContext", "classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e", null ],
     [ "getGlyphAspectRatio", "classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd", null ],

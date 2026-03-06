@@ -110,16 +110,19 @@ dao::AppController 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa40e39415f2bda17e7da6a11ef401fde" id="r_aa40e39415f2bda17e7da6a11ef401fde"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa40e39415f2bda17e7da6a11ef401fde">AppController</a> ()=default</td></tr>
+<tr class="memdesc:aa40e39415f2bda17e7da6a11ef401fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
 <tr class="memitem:adaf76a7a5b4c6fe6fe8902d13e3e123f" id="r_adaf76a7a5b4c6fe6fe8902d13e3e123f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#adaf76a7a5b4c6fe6fe8902d13e3e123f">AppController</a> (const AppController &amp;)=delete</td></tr>
+<tr class="memdesc:adaf76a7a5b4c6fe6fe8902d13e3e123f"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁止拷贝构造  <br /></td></tr>
 <tr class="memitem:a9daf3dd62acaf544e5c554a17041839f" id="r_a9daf3dd62acaf544e5c554a17041839f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9daf3dd62acaf544e5c554a17041839f">executeCommand</a> (<a class="el" href="classdao_1_1App.html">App</a> &amp;app)</td></tr>
 <tr class="memdesc:a9daf3dd62acaf544e5c554a17041839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行命令  <br /></td></tr>
 <tr class="memitem:a92399095cf556e7fcf26f69f039a5f18" id="r_a92399095cf556e7fcf26f69f039a5f18"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a92399095cf556e7fcf26f69f039a5f18">close</a> ()</td></tr>
-<tr class="memdesc:a92399095cf556e7fcf26f69f039a5f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭应用  <br /></td></tr>
+<tr class="memdesc:a92399095cf556e7fcf26f69f039a5f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送关闭应用命令  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>应用控制器 </p>
+<p>负责处理应用级别的命令，例如关闭应用等 </p>
 
-<p class="definition">在文件 <a class="el" href="AppController_8hpp_source.html">AppController.hpp</a> 第 <a class="el" href="AppController_8hpp_source.html#l00020">20</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="AppController_8hpp_source.html">AppController.hpp</a> 第 <a class="el" href="AppController_8hpp_source.html#l00022">22</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aa40e39415f2bda17e7da6a11ef401fde" name="aa40e39415f2bda17e7da6a11ef401fde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa40e39415f2bda17e7da6a11ef401fde">&#9670;&#160;</a></span>AppController() <span class="overload">[1/2]</span></h2>
@@ -143,6 +146,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>默认构造函数 </p>
 
 </div>
 </div>
@@ -169,6 +174,8 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>禁止拷贝构造 </p>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
@@ -187,7 +194,7 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>关闭应用 </p>
+<p>发送关闭应用命令 </p>
 
 <p class="definition">在文件 <a class="el" href="AppController_8cpp_source.html">AppController.cpp</a> 第 <a class="el" href="AppController_8cpp_source.html#l00016">16</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                             {</div>
@@ -213,6 +220,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>执行命令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>要执行命令的应用实例 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">在文件 <a class="el" href="AppController_8cpp_source.html">AppController.cpp</a> 第 <a class="el" href="AppController_8cpp_source.html#l00004">4</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">    4</span>                                              {</div>

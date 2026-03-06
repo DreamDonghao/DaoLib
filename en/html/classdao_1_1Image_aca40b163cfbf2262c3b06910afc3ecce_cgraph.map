@@ -1,5 +1,5 @@
 <map id="dao::Image::setPosition" name="dao::Image::setPosition">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,180,80"/>
+<area shape="rect" id="Node000001" title="设置图像位置" alt="" coords="5,55,180,80"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#a001d27926e737168811ace5526c5b93f" title="设置纹理位置（保持大小不变）" alt="" coords="228,47,371,87"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,65,214,65,214,70,181,70"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a6a437676a6e700e7aea9c95bc049e8fe" title="获取高度" alt="" coords="419,5,631,31"/>

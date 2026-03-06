@@ -1,21 +1,27 @@
 <map id="dao::ifc::IDrawable" name="dao::ifc::IDrawable">
 <area shape="rect" id="Node000001" title="可绘制对象接口" alt="" coords="237,5,373,91"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Image.html" title=" " alt="" coords="5,139,128,264"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Image.html" title="图像组件" alt="" coords="5,139,128,264"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,91,141,141,130,149,127,145,139,136,224,86"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1InputBoxStyle.html" title=" " alt="" coords="153,159,290,244"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,104,247,160,242,157,273,101"/>
 <area shape="rect" id="Node000004" href="$classdao_1_1ifc_1_1IButtonStyle.html" title="按钮样式接口" alt="" coords="314,149,465,254"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="338,102,363,147,358,150,333,104"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1ifc_1_1IGraph.html" title=" " alt="" coords="591,139,713,264"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="387,82,592,171,589,176,385,87"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1ifc_1_1IGraph.html" title="图形接口" alt="" coords="816,139,939,264"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="387,68,816,181,815,186,386,73"/>
 <area shape="rect" id="Node000005" href="$classdao_1_1SimpleTextButtonStyle.html" title=" " alt="" coords="67,312,261,497"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="323,265,263,318,260,314,319,261"/>
 <area shape="rect" id="Node000006" href="$classdao_1_1SimpleTextureButtonStyle.html" title=" " alt="" coords="285,335,493,475"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="392,268,392,334,387,334,387,268"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1Polygon.html" title=" " alt="" coords="517,342,640,467"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="627,278,604,343,599,341,622,277"/>
-<area shape="rect" id="Node000009" href="$classdao_1_1Rect.html" title=" " alt="" coords="664,342,787,467"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="682,277,705,341,700,343,677,278"/>
-<area shape="rect" id="Node000010" href="$classdao_1_1SolidRect.html" title=" " alt="" coords="811,342,933,467"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="726,249,800,310,828,340,824,344,797,314,723,253"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1Circle.html" title="圆形图形" alt="" coords="517,342,640,467"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="804,231,728,266,690,289,654,314,624,344,620,340,650,310,687,284,726,262,802,227"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1MaxPolygon.html" title="多边形图形" alt="" coords="665,322,791,487"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="825,277,791,323,787,320,821,274"/>
+<area shape="rect" id="Node000010" href="$classdao_1_1Polygon.html" title="多边形图形" alt="" coords="816,342,939,467"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="880,278,880,342,875,342,875,278"/>
+<area shape="rect" id="Node000011" href="$classdao_1_1Rect.html" title="矩形图形" alt="" coords="963,342,1085,467"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="933,274,981,340,977,343,929,277"/>
+<area shape="rect" id="Node000012" href="$classdao_1_1SolidCircle.html" title="实心圆形图形" alt="" coords="1109,342,1232,467"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="952,227,1026,262,1064,285,1099,310,1129,340,1126,344,1096,314,1061,289,1023,267,950,232"/>
+<area shape="rect" id="Node000013" href="$classdao_1_1SolidRect.html" title="实心矩形图形" alt="" coords="1256,342,1379,467"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="953,209,1019,221,1095,241,1173,270,1246,310,1278,340,1275,344,1242,314,1171,275,1093,246,1018,227,952,214"/>
 </map>

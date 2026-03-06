@@ -103,9 +103,9 @@ $(function(){initNavTree('classdao_1_1ifc_1_1IGeneralPage.html','','classdao_1_1
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ifc_1_1IGeneralPage__inherit__graph.png" border="0" usemap="#adao_1_1ifc_1_1IGeneralPage_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1ifc_1_1IGeneralPage_inherit__map" id="adao_1_1ifc_1_1IGeneralPage_inherit__map">
-<area shape="rect" title="通用页面接口" alt="" coords="5,319,181,644"/>
+<area shape="rect" title="通用页面接口" alt="" coords="5,319,181,664"/>
 <area shape="rect" href="classdao_1_1ifc_1_1IPage.html" title="页面接口" alt="" coords="5,5,181,271"/>
-<area shape="poly" title=" " alt="" coords="96,285,96,318,91,318,91,285"/>
+<area shape="poly" title=" " alt="" coords="96,284,96,318,91,318,91,284"/>
 </map>
 </div>
 <div class="dynheader">
@@ -113,11 +113,11 @@ dao::ifc::IGeneralPage 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ifc_1_1IGeneralPage__coll__graph.png" border="0" usemap="#adao_1_1ifc_1_1IGeneralPage_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1ifc_1_1IGeneralPage_coll__map" id="adao_1_1ifc_1_1IGeneralPage_coll__map">
-<area shape="rect" title="通用页面接口" alt="" coords="101,341,277,667"/>
+<area shape="rect" title="通用页面接口" alt="" coords="101,341,277,687"/>
 <area shape="rect" href="classdao_1_1ifc_1_1IPage.html" title="页面接口" alt="" coords="5,5,181,271"/>
-<area shape="poly" title=" " alt="" coords="134,283,149,340,144,342,129,285"/>
+<area shape="poly" title=" " alt="" coords="133,284,148,340,143,342,128,285"/>
 <area shape="rect" href="classdao_1_1WindowController.html" title="窗口控制器" alt="" coords="205,35,368,241"/>
-<area shape="poly" title=" " alt="" coords="262,242,239,326,234,325,257,240"/>
+<area shape="poly" title=" " alt="" coords="263,242,241,326,236,325,258,240"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -139,6 +139,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a0316550779063ca85c3c59150dfe8b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口控制器  <br /></td></tr>
 <tr class="memitem:a3d9837c76c53f11c0f8f2b4b051775d9" id="r_a3d9837c76c53f11c0f8f2b4b051775d9"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3d9837c76c53f11c0f8f2b4b051775d9">getTitle</a> () const override</td></tr>
 <tr class="memdesc:a3d9837c76c53f11c0f8f2b4b051775d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
+<tr class="memitem:ae78fd60af98520ae9d1c141a223b02e2" id="r_ae78fd60af98520ae9d1c141a223b02e2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae78fd60af98520ae9d1c141a223b02e2">clearBatch</a> () const</td></tr>
 <tr class="memitem:a6c10e2097f44df159ddf8606f0037f5c" id="r_a6c10e2097f44df159ddf8606f0037f5c"><td class="memTemplParams" colspan="2">template&lt;BatchWritable... Args&gt; </td></tr>
 <tr class="memitem:a6c10e2097f44df159ddf8606f0037f5c template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c10e2097f44df159ddf8606f0037f5c">addToBatch</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memitem:aefdc984c6635a4b6c36959b78e08bbc1" id="r_aefdc984c6635a4b6c36959b78e08bbc1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aefdc984c6635a4b6c36959b78e08bbc1">setContext</a> (<a class="el" href="classdao_1_1Context.html">Context</a> *context) override</td></tr>
@@ -189,7 +190,7 @@ Protected 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00004">4</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>                                               : m_title(std::move(title)) {</div>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>                                                : m_title(std::move(title)) {</div>
 <div class="line"><span class="lineno">    5</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -245,16 +246,37 @@ template&lt;BatchWritable... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="IGeneralPage_8hpp_source.html">IGeneralPage.hpp</a> 第 <a class="el" href="IGeneralPage_8hpp_source.html#l00038">38</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                             {</div>
-<div class="line"><span class="lineno">   39</span>                m_vertexBatch-&gt;clearDrawBatches();</div>
+<p class="definition">在文件 <a class="el" href="IGeneralPage_8hpp_source.html">IGeneralPage.hpp</a> 第 <a class="el" href="IGeneralPage_8hpp_source.html#l00039">39</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                             {</div>
 <div class="line"><span class="lineno">   40</span>                (args.writeToBatch(*m_vertexBatch), ...);</div>
 <div class="line"><span class="lineno">   41</span>            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae78fd60af98520ae9d1c141a223b02e2" name="ae78fd60af98520ae9d1c141a223b02e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78fd60af98520ae9d1c141a223b02e2">&#9670;&#160;</a></span>clearBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::ifc::IGeneralPage::clearBatch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00015">15</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                                          {</div>
+<div class="line"><span class="lineno">   16</span>    m_vertexBatch-&gt;clearDrawBatches();</div>
+<div class="line"><span class="lineno">   17</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1ifc_1_1IGeneralPage_a6c10e2097f44df159ddf8606f0037f5c_cgraph.png" border="0" usemap="#aclassdao_1_1ifc_1_1IGeneralPage_a6c10e2097f44df159ddf8606f0037f5c_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1ifc_1_1IGeneralPage_a6c10e2097f44df159ddf8606f0037f5c_cgraph" id="aclassdao_1_1ifc_1_1IGeneralPage_a6c10e2097f44df159ddf8606f0037f5c_cgraph">
+<div class="center"><img src="classdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph.png" border="0" usemap="#aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph" id="aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,169,45"/>
 <area shape="rect" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2" title="清理要绘制的纹理图集" alt="" coords="217,5,368,45"/>
 <area shape="poly" title=" " alt="" coords="169,23,203,23,203,28,169,28"/>
@@ -320,14 +342,14 @@ template&lt;BatchWritable... Args&gt; </div>
 
 <p>实现了 <a class="el" href="classdao_1_1ifc_1_1IPage.html#a7585dc69db59f945d09879b33f0ddf2c">dao::ifc::IPage</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00019">19</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                 {</div>
-<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">if</span> (!m_context) {</div>
-<div class="line"><span class="lineno">   21</span>        <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;m_context指针为空&quot;</span>);</div>
-<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">return</span> *<span class="keyword">new</span> Context;</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> *m_context;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00023">23</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                 {</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">if</span> (!m_context) {</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;m_context指针为空&quot;</span>);</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">return</span> *<span class="keyword">new</span> Context;</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> *m_context;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
 <div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00045">better_stl.hpp:45</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -431,7 +453,7 @@ template&lt;BatchWritable... Args&gt; </div>
 <p>实现了 <a class="el" href="classdao_1_1ifc_1_1IPage.html#a8476ce06c868ef3c02cbdd4d1cb324f5">dao::ifc::IPage</a>.</p>
 
 <p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00011">11</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                     {</div>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                    {</div>
 <div class="line"><span class="lineno">   12</span>    <span class="keywordflow">return</span> m_title;</div>
 <div class="line"><span class="lineno">   13</span>}</div>
 </div><!-- fragment -->
@@ -465,7 +487,7 @@ template&lt;BatchWritable... Args&gt; </div>
 <p>实现了 <a class="el" href="classdao_1_1ifc_1_1IPage.html#a73b791f59326c7321eb2329536d29ea5">dao::ifc::IPage</a>.</p>
 
 <p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00007">7</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                              {</div>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                             {</div>
 <div class="line"><span class="lineno">    8</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae5e92b2e534b05a8594e5a5548427ca8">m_windowController</a>;</div>
 <div class="line"><span class="lineno">    9</span>}</div>
 <div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ae5e92b2e534b05a8594e5a5548427ca8"><div class="ttname"><a href="#ae5e92b2e534b05a8594e5a5548427ca8">dao::ifc::IGeneralPage::m_windowController</a></div><div class="ttdeci">WindowController m_windowController</div><div class="ttdoc">窗口控制器</div><div class="ttdef"><b>定义</b> <a href="IGeneralPage_8hpp_source.html#l00052">IGeneralPage.hpp:52</a></div></div>
@@ -558,10 +580,10 @@ template&lt;BatchWritable... Args&gt; </div>
 
 <p>实现了 <a class="el" href="classdao_1_1ifc_1_1IPage.html#a3710e4f0adbac8c62e2aeb31e73d767c">dao::ifc::IPage</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00015">15</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>                                                    {</div>
-<div class="line"><span class="lineno">   16</span>    m_context = context;</div>
-<div class="line"><span class="lineno">   17</span>}</div>
+<p class="definition">在文件 <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a> 第 <a class="el" href="IGeneralPage_8cpp_source.html#l00019">19</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                    {</div>
+<div class="line"><span class="lineno">   20</span>    m_context = context;</div>
+<div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -1,5 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
 <area shape="rect" id="Node000000" href="$classdao_1_1ifc_1_1IButton.html" title="按钮接口" alt="" coords="5,5,131,31"/>
-<area shape="rect" id="Node000001" href="$classdao_1_1SimpleButton.html" title=" " alt="" coords="179,5,321,31"/>
+<area shape="rect" id="Node000001" href="$classdao_1_1SimpleButton.html" title="简单按钮组件" alt="" coords="179,5,321,31"/>
 <area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
 </map>

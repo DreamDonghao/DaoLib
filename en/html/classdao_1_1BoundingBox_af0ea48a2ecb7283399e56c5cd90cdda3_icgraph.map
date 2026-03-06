@@ -2,15 +2,15 @@
 <area shape="rect" id="Node000001" title="构造函数" alt="" coords="512,181,747,206"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#ac1afb90a7d3455075241b9b0443b700d" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="303,87,446,127"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,179,434,129,435,124,579,174"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3" title=" " alt="" coords="285,151,464,177"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3" title="构造函数" alt="" coords="285,151,464,177"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="505,182,464,177,465,172,506,176"/>
 <area shape="rect" id="Node000007" href="$classdao_1_1MappedRegion.html#a59b269ee103dca66be498ed31bc874c5" title=" " alt="" coords="295,201,454,241"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="501,210,454,215,454,210,500,205"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1SimpleButton.html#acb7a4bc8ee81f73542914fa9966733a7" title=" " alt="" coords="299,265,450,305"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1SimpleButton.html#acb7a4bc8ee81f73542914fa9966733a7" title="构造函数" alt="" coords="299,265,450,305"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="581,213,465,256,432,268,430,263,463,251,579,208"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1AnimatedSprite.html#a1d508018c21819ec58bf301211bad848" title=" " alt="" coords="44,29,199,69"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1AnimatedSprite.html#a1d508018c21819ec58bf301211bad848" title="构造函数（使用范围）" alt="" coords="44,29,199,69"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,90,198,69,200,64,291,85"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title=" " alt="" coords="49,94,193,119"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Image.html#a3170ebedf4cd59ff0bd8fe133d29d4ab" title="构造函数" alt="" coords="49,94,193,119"/>
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="290,109,194,109,194,104,290,104"/>
 <area shape="rect" id="Node000005" href="$classdao_1_1SimpleTextureButtonStyle.html#a630a576b0d9a984945fc8c2441ac3c8c" title=" " alt="" coords="5,144,237,184"/>
 <area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="291,128,211,147,210,141,289,123"/>

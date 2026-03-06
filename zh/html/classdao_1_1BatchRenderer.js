@@ -10,6 +10,7 @@ var classdao_1_1BatchRenderer =
     [ "addToBatch", "classdao_1_1BatchRenderer.html#af533a6d0e97c1ef1a4d903913f83a713", null ],
     [ "addToBatch", "classdao_1_1BatchRenderer.html#a262b4e752ee4752868c8e7946cb07bce", null ],
     [ "addToBatch", "classdao_1_1BatchRenderer.html#a6f3316bbdd731a8e142de160f33013df", null ],
+    [ "addToBatch", "classdao_1_1BatchRenderer.html#adf3725fb9136c3de16c49ad38e8f8062", null ],
     [ "clearDrawBatches", "classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2", null ],
     [ "expandQuadIndicesTo", "classdao_1_1BatchRenderer.html#aa9e4c192947da172c1c139e00e46bf1f", null ],
     [ "getDrawBatches", "classdao_1_1BatchRenderer.html#a4b44d5e385ebd187106034d083b6d0e3", null ],

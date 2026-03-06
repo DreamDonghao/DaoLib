@@ -1,0 +1,7 @@
+<map id="dao::MaxPolygon" name="dao::MaxPolygon">
+<area shape="rect" id="Node000001" title="多边形图形" alt="" coords="10,312,137,477"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IGraph.html" title="图形接口" alt="" coords="12,139,135,264"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,278,76,312,71,312,71,278"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ifc_1_1IDrawable.html" title="可绘制对象接口" alt="" coords="5,5,141,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,104,76,138,71,138,71,104"/>
+</map>

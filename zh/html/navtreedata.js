@@ -25,7 +25,8 @@
 var NAVTREE =
 [
   [ "DaoUI", "index.html", [
-    [ "参与 DaoUI 开发", "join.html", [
+    [ "DaoLib", "index.html", null ],
+    [ "参与 DaoLib 开发", "join.html", [
       [ "开发流程", "join.html#autotoc_md0", [
         [ "1. Fork 仓库", "join.html#autotoc_md2", null ],
         [ "2. 克隆仓库", "join.html#autotoc_md4", null ],
@@ -38,8 +39,8 @@ var NAVTREE =
       ] ],
       [ "项目依赖", "join.html#autotoc_md18", null ]
     ] ],
-    [ "DaoUI 从零基础到精通教程", "tutorial.html", [
-      [ "DaoUI 从零基础到精通教程", "tutorial.html#autotoc_md22", [
+    [ "DaoLib 从零基础到精通教程", "tutorial.html", [
+      [ "DaoLib 从零基础到精通教程", "tutorial.html#autotoc_md22", [
         [ "简介", "tutorial.html#autotoc_md23", [
           [ "主要特性", "tutorial.html#autotoc_md24", null ]
         ] ],
@@ -47,7 +48,7 @@ var NAVTREE =
           [ "系统要求", "tutorial.html#autotoc_md27", null ],
           [ "使用 vcpkg 管理依赖", "tutorial.html#autotoc_md28", null ],
           [ "集成到 CMake 项目", "tutorial.html#autotoc_md29", null ],
-          [ "独立构建 DaoUI", "tutorial.html#autotoc_md30", null ]
+          [ "独立构建 DaoLib", "tutorial.html#autotoc_md30", null ]
         ] ],
         [ "快速开始", "tutorial.html#autotoc_md32", [
           [ "最小应用示例", "tutorial.html#autotoc_md33", null ],
@@ -97,7 +98,7 @@ var NAVTREE =
         [ "下一步", "tutorial.html#autotoc_md76", null ]
       ] ]
     ] ],
-    [ "使用 DaoUI 开发", "use.html", null ],
+    [ "使用 DaoLib 开发", "use.html", null ],
     [ "Bug 列表", "bug.html", null ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
@@ -131,11 +132,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AppController_8cpp.html",
-"classdao_1_1ColorRGBA.html#ad0e13687a474ebdaaf02c62b904e4f68",
-"classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979",
-"dir_213e840db13fc7d66ab12dfe48679f4c.html",
-"type_8hpp.html"
+"AnimatedSprite_8hpp.html",
+"classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903",
+"classdao_1_1SimpleTextureButtonStyle.html#a836705b180a043707ec8a6d9472a7ef5",
+"classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80",
+"structdao_1_1WindowCommand.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

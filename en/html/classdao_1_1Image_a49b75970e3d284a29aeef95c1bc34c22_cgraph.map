@@ -1,5 +1,5 @@
 <map id="dao::Image::setSize" name="dao::Image::setSize">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,156,80"/>
+<area shape="rect" id="Node000001" title="设置图像大小" alt="" coords="5,55,156,80"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1AtlasTexture.html#ac3f85f6bf71b2815b26174796a68a839" title="设置纹理大小（保持位置不变）" alt="" coords="204,47,347,87"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,65,190,65,190,70,156,70"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a705ef13bcb21e253230bee595d826ee2" title="获取左边界坐标" alt="" coords="395,5,588,31"/>

@@ -26,8 +26,11 @@ var hierarchy =
         [ "dao::SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", null ]
       ] ],
       [ "dao::ifc::IGraph", "classdao_1_1ifc_1_1IGraph.html", [
+        [ "dao::Circle", "classdao_1_1Circle.html", null ],
+        [ "dao::MaxPolygon", "classdao_1_1MaxPolygon.html", null ],
         [ "dao::Polygon", "classdao_1_1Polygon.html", null ],
         [ "dao::Rect", "classdao_1_1Rect.html", null ],
+        [ "dao::SolidCircle", "classdao_1_1SolidCircle.html", null ],
         [ "dao::SolidRect", "classdao_1_1SolidRect.html", null ]
       ] ]
     ] ],

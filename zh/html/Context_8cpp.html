@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/src/core/frame/Context.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Context_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Context.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="Context_8hpp_source.html">core/frame/Context.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Context.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="Context_8cpp__incl.png" border="0" usemap="#acode_2src_2core_2frame_2Context_8cpp" loading="lazy" alt=""/></div>
+<map name="acode_2src_2core_2frame_2Context_8cpp" id="acode_2src_2core_2frame_2Context_8cpp">
+<area shape="rect" title=" " alt="" coords="44,5,195,45"/>
+<area shape="rect" href="Context_8hpp.html" title=" " alt="" coords="31,93,207,119"/>
+<area shape="poly" title=" " alt="" coords="122,46,122,79,117,79,117,46"/>
+<area shape="rect" title=" " alt="" coords="35,240,113,265"/>
+<area shape="poly" title=" " alt="" coords="128,118,140,152,142,173,138,193,124,215,105,233,102,229,119,212,133,191,137,172,135,153,123,120"/>
+<area shape="rect" title=" " alt="" coords="36,167,123,192"/>
+<area shape="poly" title=" " alt="" coords="115,120,95,156,90,153,110,118"/>
+<area shape="rect" title=" " alt="" coords="155,313,279,339"/>
+<area shape="poly" title=" " alt="" coords="86,121,52,140,37,152,26,168,13,194,8,217,12,240,26,264,49,287,78,303,110,313,142,320,141,325,108,319,76,308,46,291,21,267,7,241,3,217,8,192,21,165,34,149,49,135,84,116"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="255,167,429,192"/>
+<area shape="poly" title=" " alt="" coords="156,116,294,160,292,165,154,121"/>
+<area shape="poly" title=" " alt="" coords="300,195,127,240,126,235,298,189"/>
+<area shape="rect" title=" " alt="" coords="650,240,735,265"/>
+<area shape="poly" title=" " alt="" coords="400,189,637,237,636,242,399,195"/>
+<area shape="rect" title=" " alt="" coords="759,240,826,265"/>
+<area shape="poly" title=" " alt="" coords="429,188,574,208,746,237,746,243,573,213,429,193"/>
+<area shape="rect" title=" " alt="" coords="137,240,217,265"/>
+<area shape="poly" title=" " alt="" coords="317,194,217,237,215,232,314,190"/>
+<area shape="rect" title=" " alt="" coords="241,240,313,265"/>
+<area shape="poly" title=" " alt="" coords="333,194,299,232,295,228,329,191"/>
+<area shape="rect" title=" " alt="" coords="337,240,461,265"/>
+<area shape="poly" title=" " alt="" coords="354,191,383,227,379,231,349,194"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="485,240,625,265"/>
+<area shape="poly" title=" " alt="" coords="377,189,509,233,507,238,376,195"/>
+<area shape="poly" title=" " alt="" coords="502,268,285,313,284,308,500,263"/>
+<area shape="rect" title=" " alt="" coords="522,313,589,339"/>
+<area shape="poly" title=" " alt="" coords="558,266,558,300,553,300,553,266"/>
+</map>
+</div>
+</div>
+<p><a href="Context_8cpp_source.html">浏览该文件的源代码.</a></p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

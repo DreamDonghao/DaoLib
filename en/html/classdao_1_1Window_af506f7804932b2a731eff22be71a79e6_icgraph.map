@@ -1,0 +1,5 @@
+<map id="dao::Window::registerPageTexture" name="dao::Window::registerPageTexture">
+<area shape="rect" id="Node000001" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="5,13,173,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,28,174,28,174,23,208,23"/>
+</map>

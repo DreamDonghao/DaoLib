@@ -1,5 +1,6 @@
 <map id="dao::ColorRGBA::hexToRGBA" name="dao::ColorRGBA::hexToRGBA">
-<area shape="rect" id="Node000001" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="5,5,213,31"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="261,5,465,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,15,248,15,248,21,214,21"/>
+<area shape="rect" id="Node000001" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="5,29,213,55"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="261,29,465,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,39,248,39,248,45,214,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="322,31,313,21,318,11,335,5,363,3,399,7,409,11,413,17,409,20,406,15,398,12,363,8,336,10,322,15,319,20,326,27"/>
 </map>

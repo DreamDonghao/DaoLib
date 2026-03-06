@@ -120,13 +120,13 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a6a9eadab9168f2cdc729282c91f0fb97"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取y坐标  <br /></td></tr>
 <tr class="memitem:a1905ea697181a73c9d282a1744add5e9" id="r_a1905ea697181a73c9d282a1744add5e9"><td class="memItemLeft">constexpr <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1905ea697181a73c9d282a1744add5e9">color</a> () const noexcept</td></tr>
 <tr class="memdesc:a1905ea697181a73c9d282a1744add5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取颜色  <br /></td></tr>
-<tr class="memitem:ad534df84163d1a0a4dd57f31ac3f0f9d" id="r_ad534df84163d1a0a4dd57f31ac3f0f9d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad534df84163d1a0a4dd57f31ac3f0f9d">operator SDL_Vertex</a> () const</td></tr>
-<tr class="memdesc:ad534df84163d1a0a4dd57f31ac3f0f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">到SDL_Vertex的类型转换  <br /></td></tr>
+<tr class="memitem:af571e7236e1d85a85544662caf814c03" id="r_af571e7236e1d85a85544662caf814c03"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#af571e7236e1d85a85544662caf814c03">operator SDL_Vertex</a> () const noexcept</td></tr>
+<tr class="memdesc:af571e7236e1d85a85544662caf814c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">到SDL_Vertex的类型转换  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>几何图形顶点 </p>
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00007">7</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00008">8</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aafbe63962bed9d1b689a20d51d78a22b" name="aafbe63962bed9d1b689a20d51d78a22b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafbe63962bed9d1b689a20d51d78a22b">&#9670;&#160;</a></span>Vertex()</h2>
@@ -160,12 +160,14 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00009">9</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>            : m_x(<a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>), m_y(<a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>), m_color(<a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>) {</div>
-<div class="line"><span class="lineno">   11</span>        }</div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_a1905ea697181a73c9d282a1744add5e9"><div class="ttname"><a href="#a1905ea697181a73c9d282a1744add5e9">dao::Vertex::color</a></div><div class="ttdeci">constexpr ColorRGBA color() const noexcept</div><div class="ttdoc">获取颜色</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00040">Vertex.hpp:40</a></div></div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_a6a9eadab9168f2cdc729282c91f0fb97"><div class="ttname"><a href="#a6a9eadab9168f2cdc729282c91f0fb97">dao::Vertex::y</a></div><div class="ttdeci">constexpr f32 y() const noexcept</div><div class="ttdoc">获取y坐标</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00037">Vertex.hpp:37</a></div></div>
-<div class="ttc" id="aclassdao_1_1Vertex_html_abb33c5e607ee9dfd2ead15c055da2795"><div class="ttname"><a href="#abb33c5e607ee9dfd2ead15c055da2795">dao::Vertex::x</a></div><div class="ttdeci">constexpr f32 x() const noexcept</div><div class="ttdoc">获取x坐标</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00034">Vertex.hpp:34</a></div></div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00010">10</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>            : m_color(<a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>), m_data{</div>
+<div class="line"><span class="lineno">   12</span>                  {<a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>, <a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>}, <span class="keyword">static_cast&lt;</span>SDL_FColor<span class="keyword">&gt;</span>(<a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>), {1.0f, 1.0f}</div>
+<div class="line"><span class="lineno">   13</span>              } {</div>
+<div class="line"><span class="lineno">   14</span>        }</div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_a1905ea697181a73c9d282a1744add5e9"><div class="ttname"><a href="#a1905ea697181a73c9d282a1744add5e9">dao::Vertex::color</a></div><div class="ttdeci">constexpr ColorRGBA color() const noexcept</div><div class="ttdoc">获取颜色</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00042">Vertex.hpp:42</a></div></div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_a6a9eadab9168f2cdc729282c91f0fb97"><div class="ttname"><a href="#a6a9eadab9168f2cdc729282c91f0fb97">dao::Vertex::y</a></div><div class="ttdeci">constexpr f32 y() const noexcept</div><div class="ttdoc">获取y坐标</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00039">Vertex.hpp:39</a></div></div>
+<div class="ttc" id="aclassdao_1_1Vertex_html_abb33c5e607ee9dfd2ead15c055da2795"><div class="ttname"><a href="#abb33c5e607ee9dfd2ead15c055da2795">dao::Vertex::x</a></div><div class="ttdeci">constexpr f32 x() const noexcept</div><div class="ttdoc">获取x坐标</div><div class="ttdef"><b>定义</b> <a href="Vertex_8hpp_source.html#l00036">Vertex.hpp:36</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -213,13 +215,13 @@ Public 成员函数</h2></td></tr>
 
 <p>获取颜色 </p>
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00040">40</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> m_color; }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00042">42</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> m_color; }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad534df84163d1a0a4dd57f31ac3f0f9d" name="ad534df84163d1a0a4dd57f31ac3f0f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad534df84163d1a0a4dd57f31ac3f0f9d">&#9670;&#160;</a></span>operator SDL_Vertex()</h2>
+<a id="af571e7236e1d85a85544662caf814c03" name="af571e7236e1d85a85544662caf814c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af571e7236e1d85a85544662caf814c03">&#9670;&#160;</a></span>operator SDL_Vertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +238,7 @@ Public 成员函数</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -244,15 +246,10 @@ Public 成员函数</h2></td></tr>
 <p>到SDL_Vertex的类型转换 </p>
 <p>纹理坐标用 1*1px 的纯白图片,将 255RGB 数据归一化 </p>
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00044">44</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                             {</div>
-<div class="line"><span class="lineno">   45</span>            SDL_Vertex result;</div>
-<div class="line"><span class="lineno">   46</span>            result.position = {m_x, m_y};</div>
-<div class="line"><span class="lineno">   47</span>            result.color = {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.r()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.g()], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_color.b()], m_color.a()};</div>
-<div class="line"><span class="lineno">   48</span>            result.tex_coord = {1.0f, 1.0f};</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="ttc" id="anamespacedao_html_a2d1ee99dbefdf56a0d914aafecb40b26"><div class="ttname"><a href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">dao::rgbNorm</a></div><div class="ttdeci">constexpr std::array&lt; f32, 256 &gt; rgbNorm</div><div class="ttdoc">RGB值归一化查找表</div><div class="ttdef"><b>定义</b> <a href="ColorRGB_8hpp_source.html#l00009">ColorRGB.hpp:9</a></div></div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00046">46</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                {</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><span class="lineno">   48</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -288,12 +285,11 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00013">13</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>                                                                   {</div>
-<div class="line"><span class="lineno">   14</span>            m_x = <a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>;</div>
-<div class="line"><span class="lineno">   15</span>            m_y = <a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>;</div>
-<div class="line"><span class="lineno">   16</span>            m_color = <a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>;</div>
-<div class="line"><span class="lineno">   17</span>        }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00016">16</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                   {</div>
+<div class="line"><span class="lineno">   17</span>            m_data.position = {<a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>, <a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>};</div>
+<div class="line"><span class="lineno">   18</span>            m_color = <a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>;</div>
+<div class="line"><span class="lineno">   19</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -320,10 +316,11 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00019">19</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                                              {</div>
-<div class="line"><span class="lineno">   20</span>            m_color = <a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>;</div>
-<div class="line"><span class="lineno">   21</span>        }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00021">21</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                              {</div>
+<div class="line"><span class="lineno">   22</span>            m_color = <a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>;</div>
+<div class="line"><span class="lineno">   23</span>            m_data.color = <span class="keyword">static_cast&lt;</span>SDL_FColor<span class="keyword">&gt;</span>(<a class="code hl_function" href="#a1905ea697181a73c9d282a1744add5e9">color</a>);</div>
+<div class="line"><span class="lineno">   24</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -354,11 +351,10 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00023">23</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                   {</div>
-<div class="line"><span class="lineno">   24</span>            m_x = <a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>;</div>
-<div class="line"><span class="lineno">   25</span>            m_y = <a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>;</div>
-<div class="line"><span class="lineno">   26</span>        }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00026">26</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                                   {</div>
+<div class="line"><span class="lineno">   27</span>            m_data.position = {<a class="code hl_function" href="#abb33c5e607ee9dfd2ead15c055da2795">x</a>, <a class="code hl_function" href="#a6a9eadab9168f2cdc729282c91f0fb97">y</a>};</div>
+<div class="line"><span class="lineno">   28</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -389,11 +385,11 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00028">28</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                   {</div>
-<div class="line"><span class="lineno">   29</span>            m_x += dx;</div>
-<div class="line"><span class="lineno">   30</span>            m_y += dy;</div>
-<div class="line"><span class="lineno">   31</span>        }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00030">30</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                   {</div>
+<div class="line"><span class="lineno">   31</span>            m_data.position.x += dx;</div>
+<div class="line"><span class="lineno">   32</span>            m_data.position.y += dy;</div>
+<div class="line"><span class="lineno">   33</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -422,8 +418,8 @@ Public 成员函数</h2></td></tr>
 
 <p>获取x坐标 </p>
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00034">34</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> m_x; }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00036">36</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> m_data.position.x; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,8 +448,8 @@ Public 成员函数</h2></td></tr>
 
 <p>获取y坐标 </p>
 
-<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00037">37</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>{ <span class="keywordflow">return</span> m_y; }</div>
+<p class="definition">在文件 <a class="el" href="Vertex_8hpp_source.html">Vertex.hpp</a> 第 <a class="el" href="Vertex_8hpp_source.html#l00039">39</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> m_data.position.y; }</div>
 </div><!-- fragment -->
 </div>
 </div>

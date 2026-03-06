@@ -1,21 +1,5 @@
 <map id="dao::InputBoxStyle::writeToBatch" name="dao::InputBoxStyle::writeToBatch">
-<area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,179,151,219"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a262b4e752ee4752868c8e7946cb07bce" title="添加文本到批处理" alt="" coords="227,47,377,87"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,177,141,138,197,98,214,90,216,95,200,103,144,142,101,181"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a3c3924b780e16af37e536a3269287907" title=" " alt="" coords="199,112,405,137"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,177,198,147,229,138,231,143,200,153,124,182"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1InputBox.html#a577ca2994777031ffe60998c2dc15354" title=" " alt="" coords="211,161,393,187"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="151,188,197,183,197,189,151,194"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1InputBox.html#aabfa1799b460b92da6223840bec4827d" title=" " alt="" coords="218,211,386,236"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="151,204,204,210,204,216,151,210"/>
-<area shape="rect" id="Node000009" href="$classdao_1_1Text.html#ae0c3acc77e4042276cdc2503d9f7ef9f" title="在文本指定位置插入一个字符" alt="" coords="239,260,365,285"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="124,217,200,246,227,254,225,259,198,251,123,222"/>
-<area shape="rect" id="Node000010" href="$classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9" title="设置文本内容" alt="" coords="222,309,382,335"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="100,218,143,258,171,278,200,296,216,302,214,307,197,300,168,283,140,262,96,222"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff" title="获取字体大小" alt="" coords="453,5,619,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,49,461,31,462,36,378,54"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1Text.html#a3ffd6e138acb26e8b6baaa932f8932f3" title="获取文本x坐标" alt="" coords="477,55,595,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="378,65,463,65,463,70,378,70"/>
-<area shape="rect" id="Node000005" href="$classdao_1_1Text.html#af361e61b1290556adc4120cb5d2db2ac" title="获取文本y坐标" alt="" coords="477,104,595,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="378,81,464,99,463,104,377,86"/>
+<area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,5,151,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1InputBox.html#a577ca2994777031ffe60998c2dc15354" title="获取当前状态" alt="" coords="199,13,381,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,23,185,23,185,28,151,28"/>
 </map>

@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1Tray.html','','classdao_1_1Tray-members');
 <p>托盘  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="tray_8hpp_source.html">tray.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Tray_8hpp_source.html">Tray.hpp</a>&gt;</code></p>
 <div class="dynheader">
 dao::Tray 的协作图:</div>
 <div class="dyncontent">
@@ -129,7 +129,7 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>托盘 </p>
 <p>用于管理应用程序的系统托盘功能，包括托盘图标、托盘菜单和菜单项回调 </p>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00022">22</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00022">22</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a77f5a6aa30146f57d27585dd6be175a8" name="a77f5a6aa30146f57d27585dd6be175a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77f5a6aa30146f57d27585dd6be175a8">&#9670;&#160;</a></span>Tray()</h2>
@@ -165,7 +165,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00026">26</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00026">26</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>                                                                          {</div>
 <div class="line"><span class="lineno">   27</span>            m_icon = IMG_Load(iconPath.data());</div>
 <div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (!m_icon) {</div>
@@ -207,7 +207,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00074">74</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00074">74</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   74</span>                        {</div>
 <div class="line"><span class="lineno">   75</span>            SDL_DestroySurface(m_icon);</div>
 <div class="line"><span class="lineno">   76</span>            SDL_DestroyTray(m_tray);</div>
@@ -252,13 +252,13 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00053">53</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00053">53</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                                                     {</div>
 <div class="line"><span class="lineno">   54</span>            m_callbacks.push_back(std::move(trayFunc));</div>
 <div class="line"><span class="lineno">   55</span>            SDL_TrayEntry *entry = SDL_InsertTrayEntryAt(m_menu, -1, label.data(), SDL_TRAYENTRY_BUTTON);</div>
 <div class="line"><span class="lineno">   56</span>            SDL_SetTrayEntryCallback(entry, <a class="code hl_function" href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">callback</a>, &amp;m_callbacks.back());</div>
 <div class="line"><span class="lineno">   57</span>        }</div>
-<div class="ttc" id="anamespacedao_html_a5cbc9f994c2e5d21237029b8b92a364d"><div class="ttname"><a href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">dao::callback</a></div><div class="ttdeci">void callback(void *userdata, SDL_TrayEntry *entry)</div><div class="ttdoc">托盘回调函数适配器</div><div class="ttdef"><b>定义</b> <a href="tray_8hpp_source.html#l00016">tray.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedao_html_a5cbc9f994c2e5d21237029b8b92a364d"><div class="ttname"><a href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">dao::callback</a></div><div class="ttdeci">void callback(void *userdata, SDL_TrayEntry *entry)</div><div class="ttdoc">托盘回调函数适配器</div><div class="ttdef"><b>定义</b> <a href="Tray_8hpp_source.html#l00016">Tray.hpp:16</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,7 +299,7 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="section warning"><dt>警告</dt><dd>使用此版本时需确保 trayFunc 生命周期长于托盘对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00045">45</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00045">45</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>                                                                          {</div>
 <div class="line"><span class="lineno">   46</span>            SDL_TrayEntry *entry = SDL_InsertTrayEntryAt(m_menu, -1, label.data(), SDL_TRAYENTRY_BUTTON);</div>
 <div class="line"><span class="lineno">   47</span>            SDL_SetTrayEntryCallback(entry, <a class="code hl_function" href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">callback</a>, &amp;trayFunc);</div>
@@ -357,7 +357,7 @@ Public 成员函数</h2></td></tr>
 
 <p>获取上下文对象 </p>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00068">68</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00068">68</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> *m_context; }</div>
 </div><!-- fragment -->
 </div>
@@ -387,7 +387,7 @@ Public 成员函数</h2></td></tr>
 
 <p>获取 SDL 托盘对象 </p>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00062">62</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00062">62</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> m_tray; }</div>
 </div><!-- fragment -->
 </div>
@@ -417,7 +417,7 @@ Public 成员函数</h2></td></tr>
 
 <p>获取 SDL 托盘菜单对象 </p>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00065">65</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00065">65</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>{ <span class="keywordflow">return</span> m_menu; }</div>
 </div><!-- fragment -->
 </div>
@@ -453,13 +453,13 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="tray_8hpp_source.html">tray.hpp</a> 第 <a class="el" href="tray_8hpp_source.html#l00072">72</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Tray_8hpp_source.html">Tray.hpp</a> 第 <a class="el" href="Tray_8hpp_source.html#l00072">72</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   72</span>{ m_context = &amp;context; }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>code/include/core/frame/<a class="el" href="tray_8hpp_source.html">tray.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="Tray_8hpp_source.html">Tray.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

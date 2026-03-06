@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/core/frame/Tray.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Tray_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Tray.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="better__stl_8hpp_source.html">core/tool/better_stl.hpp</a>&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;SDL3_image/SDL_image.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Tray.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="Tray_8hpp__incl.png" border="0" usemap="#acode_2include_2core_2frame_2Tray_8hpp" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2frame_2Tray_8hpp" id="acode_2include_2core_2frame_2Tray_8hpp">
+<area shape="rect" title=" " alt="" coords="495,5,673,45"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="261,93,435,119"/>
+<area shape="poly" title=" " alt="" coords="528,48,396,92,394,87,527,43"/>
+<area shape="rect" title=" " alt="" coords="459,93,546,119"/>
+<area shape="poly" title=" " alt="" coords="566,47,527,85,523,82,562,44"/>
+<area shape="rect" title=" " alt="" coords="571,93,763,119"/>
+<area shape="poly" title=" " alt="" coords="606,44,646,82,643,86,602,47"/>
+<area shape="rect" title=" " alt="" coords="787,93,850,119"/>
+<area shape="poly" title=" " alt="" coords="641,43,775,87,773,92,639,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,91,192"/>
+<area shape="poly" title=" " alt="" coords="300,121,105,167,103,162,299,116"/>
+<area shape="rect" title=" " alt="" coords="115,167,181,192"/>
+<area shape="poly" title=" " alt="" coords="317,121,195,164,193,159,315,116"/>
+<area shape="rect" title=" " alt="" coords="205,167,285,192"/>
+<area shape="poly" title=" " alt="" coords="333,121,275,161,272,156,330,116"/>
+<area shape="rect" title=" " alt="" coords="309,167,387,192"/>
+<area shape="poly" title=" " alt="" coords="351,119,351,153,345,153,345,119"/>
+<area shape="rect" title=" " alt="" coords="411,167,483,192"/>
+<area shape="poly" title=" " alt="" coords="365,117,421,156,418,161,362,121"/>
+<area shape="rect" title=" " alt="" coords="507,167,631,192"/>
+<area shape="poly" title=" " alt="" coords="384,116,522,160,520,165,383,121"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="655,167,795,192"/>
+<area shape="poly" title=" " alt="" coords="409,116,651,161,650,167,408,121"/>
+<area shape="rect" title=" " alt="" coords="603,240,727,265"/>
+<area shape="poly" title=" " alt="" coords="717,194,686,231,682,228,713,191"/>
+<area shape="rect" title=" " alt="" coords="752,240,819,265"/>
+<area shape="poly" title=" " alt="" coords="737,191,769,228,765,231,733,194"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="Tray_8hpp__dep__incl.png" border="0" usemap="#acode_2include_2core_2frame_2Tray_8hppdep" loading="lazy" alt=""/></div>
+<map name="acode_2include_2core_2frame_2Tray_8hppdep" id="acode_2include_2core_2frame_2Tray_8hppdep">
+<area shape="rect" title=" " alt="" coords="192,5,371,45"/>
+<area shape="rect" href="App_8hpp.html" title=" " alt="" coords="192,93,371,133"/>
+<area shape="poly" title=" " alt="" coords="284,59,284,93,279,93,279,59"/>
+<area shape="rect" href="daolib_8hpp.html" title=" " alt="" coords="5,189,181,214"/>
+<area shape="poly" title=" " alt="" coords="229,141,119,191,117,186,227,137"/>
+<area shape="rect" href="App_8cpp.html" title=" " alt="" coords="206,181,357,221"/>
+<area shape="poly" title=" " alt="" coords="284,147,284,181,279,181,279,147"/>
+<area shape="rect" href="AppController_8cpp.html" title=" " alt="" coords="381,181,531,221"/>
+<area shape="poly" title=" " alt="" coords="333,137,419,179,417,184,331,142"/>
+<area shape="rect" href="daolib_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="20,269,167,295"/>
+<area shape="poly" title=" " alt="" coords="96,228,96,269,91,269,91,228"/>
+</map>
+</div>
+</div>
+<p><a href="Tray_8hpp_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:dao_3A_3ATray" id="r_dao_3A_3ATray"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Tray.html">dao::Tray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">托盘  <a href="classdao_1_1Tray.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:dao" id="r_dao"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html">dao</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a67ff9152aa01a22dc1d0ea41705f14bc" id="r_a67ff9152aa01a22dc1d0ea41705f14bc"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc">dao::TrayFunc</a> = std::move_only_function&lt;void(SDL_TrayEntry *entry)&gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5cbc9f994c2e5d21237029b8b92a364d" id="r_a5cbc9f994c2e5d21237029b8b92a364d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d">dao::callback</a> (void *userdata, SDL_TrayEntry *entry)</td></tr>
+<tr class="memdesc:a5cbc9f994c2e5d21237029b8b92a364d"><td class="mdescLeft">&#160;</td><td class="mdescRight">托盘回调函数适配器  <br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

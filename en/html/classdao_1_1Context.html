@@ -97,7 +97,7 @@ $(function(){initNavTree('classdao_1_1Context.html','','classdao_1_1Context-memb
 <p>全局环境上下文管理器  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="context_8hpp_source.html">context.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Context_8hpp_source.html">Context.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for dao::Context:</div>
 <div class="dyncontent">
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>全局环境上下文管理器 </p>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00010">10</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00010">10</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7fb9372abf3620c039c1bbc87230e99e" name="a7fb9372abf3620c039c1bbc87230e99e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fb9372abf3620c039c1bbc87230e99e">&#9670;&#160;</a></span>Context()</h2>
@@ -204,7 +204,7 @@ template&lt;typename T, typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>新创建的服务对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00053">53</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00053">53</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                           {</div>
 <div class="line"><span class="lineno">   54</span>            <span class="keyword">auto</span> ptr = std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><span class="lineno">   55</span>            m_services[<span class="keyword">typeid</span>(T)] = ptr;</div>
@@ -254,7 +254,7 @@ template&lt;typename T, typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>新创建的状态对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00021">21</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00021">21</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>                                         {</div>
 <div class="line"><span class="lineno">   22</span>            <span class="keyword">auto</span> ptr = std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><span class="lineno">   23</span>            m_states[<span class="keyword">typeid</span>(T)] = ptr;</div>
@@ -297,7 +297,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>状态对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00031">31</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00031">31</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   31</span>                      {</div>
 <div class="line"><span class="lineno">   32</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = m_states.find(<span class="keyword">typeid</span>(T));</div>
 <div class="line"><span class="lineno">   33</span>            <span class="keywordflow">if</span> (it == m_states.end()) {</div>
@@ -343,7 +343,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true 如果服务已注册，否则 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00075">75</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00075">75</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>                                              {</div>
 <div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> m_services.contains(<span class="keyword">typeid</span>(T));</div>
 <div class="line"><span class="lineno">   77</span>        }</div>
@@ -384,7 +384,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true 如果状态已注册，否则 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00043">43</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00043">43</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   43</span>                                            {</div>
 <div class="line"><span class="lineno">   44</span>            <span class="keywordflow">return</span> m_states.contains(<span class="keyword">typeid</span>(T));</div>
 <div class="line"><span class="lineno">   45</span>        }</div>
@@ -425,7 +425,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>服务对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="context_8hpp_source.html#l00063">63</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00063">63</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   63</span>                     {</div>
 <div class="line"><span class="lineno">   64</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = m_services.find(<span class="keyword">typeid</span>(T));</div>
 <div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (it == m_services.end()) {</div>
@@ -437,7 +437,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/frame/<a class="el" href="context_8hpp_source.html">context.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="Context_8hpp_source.html">Context.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,5 +1,5 @@
 <map id="dao::ifc::IGeneralPage" name="dao::ifc::IGeneralPage">
-<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="5,319,181,644"/>
+<area shape="rect" id="Node000001" title="通用页面接口" alt="" coords="5,319,181,664"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IPage.html" title="页面接口" alt="" coords="5,5,181,271"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,285,96,318,91,318,91,285"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,284,96,318,91,318,91,284"/>
 </map>

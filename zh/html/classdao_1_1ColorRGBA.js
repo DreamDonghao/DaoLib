@@ -8,6 +8,7 @@ var classdao_1_1ColorRGBA =
     [ "hexToRGBA", "classdao_1_1ColorRGBA.html#ab097f5daa2d6ef03bc27196453ebc285", null ],
     [ "isNull", "classdao_1_1ColorRGBA.html#aeeeed29db77ac297599e1b2ff9c8c8e6", null ],
     [ "isValid", "classdao_1_1ColorRGBA.html#a863970aba997b66e1b4d8a26378a5bbe", null ],
+    [ "operator SDL_FColor", "classdao_1_1ColorRGBA.html#a3e68cccd12c3f00c9d602d4a31e93883", null ],
     [ "operator!=", "classdao_1_1ColorRGBA.html#a8afb1e6e1b40c9a1c3ceac731a9eef26", null ],
     [ "operator==", "classdao_1_1ColorRGBA.html#a33db2c8e9676189131b3d82fcf2c00e4", null ],
     [ "r", "classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99", null ],

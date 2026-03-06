@@ -141,6 +141,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a863970aba997b66e1b4d8a26378a5bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查颜色是否为有效颜色  <br /></td></tr>
 <tr class="memitem:aeeeed29db77ac297599e1b2ff9c8c8e6" id="r_aeeeed29db77ac297599e1b2ff9c8c8e6"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#aeeeed29db77ac297599e1b2ff9c8c8e6">isNull</a> () const noexcept</td></tr>
 <tr class="memdesc:aeeeed29db77ac297599e1b2ff9c8c8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查颜色是否为NullRGBA（无效颜色哨兵值）  <br /></td></tr>
+<tr class="memitem:a3e68cccd12c3f00c9d602d4a31e93883" id="r_a3e68cccd12c3f00c9d602d4a31e93883"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#a3e68cccd12c3f00c9d602d4a31e93883">operator SDL_FColor</a> () const noexcept</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
@@ -209,11 +210,21 @@ Public 成员函数</h2></td></tr>
 <div class="ttc" id="aclassdao_1_1ColorRGBA_html_a939ff68e385a78c8c8dd2fd057dcd294"><div class="ttname"><a href="#a939ff68e385a78c8c8dd2fd057dcd294">dao::ColorRGBA::g</a></div><div class="ttdeci">constexpr i32 g() const noexcept</div><div class="ttdoc">获取绿色通道值</div><div class="ttdef"><b>定义</b> <a href="ColorRGB_8hpp_source.html#l00078">ColorRGB.hpp:78</a></div></div>
 <div class="ttc" id="aclassdao_1_1ColorRGBA_html_ab64644a0ada0dfce4dacd0e3660dd3f0"><div class="ttname"><a href="#ab64644a0ada0dfce4dacd0e3660dd3f0">dao::ColorRGBA::a</a></div><div class="ttdeci">constexpr f32 a() const noexcept</div><div class="ttdoc">获取透明度值</div><div class="ttdef"><b>定义</b> <a href="ColorRGB_8hpp_source.html#l00084">ColorRGB.hpp:84</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_cgraph.png" border="0" usemap="#aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_cgraph" id="aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_cgraph">
+<area shape="rect" title="构造函数（RGBA分量）" alt="" coords="5,29,209,55"/>
+<area shape="poly" title=" " alt="" coords="74,31,67,21,71,11,84,5,107,3,136,6,147,16,143,20,133,11,107,8,86,10,74,15,72,20,78,28"/>
+</map>
+</div>
+<div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_icgraph.png" border="0" usemap="#aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_icgraph" id="aclassdao_1_1ColorRGBA_a01c24fdf79e7ec9e166fed6a131d1c07_icgraph">
 <area shape="rect" title="构造函数（RGBA分量）" alt="" coords="261,35,465,60"/>
+<area shape="poly" title=" " alt="" coords="409,25,406,21,398,17,363,13,336,15,322,20,319,26,326,33,322,36,313,26,318,16,335,10,363,8,399,12,409,17,413,22"/>
 <area shape="rect" href="classdao_1_1ColorRGBA.html#ab097f5daa2d6ef03bc27196453ebc285" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="5,5,213,31"/>
 <area shape="poly" title=" " alt="" coords="248,37,213,33,214,27,248,31"/>
 <area shape="rect" href="classdao_1_1SimpleTextButtonStyle.html#a2b52154d78b66b290a6796320a6aa643" title=" " alt="" coords="8,55,211,95"/>
@@ -467,9 +478,10 @@ Public 成员函数</h2></td></tr>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ColorRGBA_ab097f5daa2d6ef03bc27196453ebc285_cgraph.png" border="0" usemap="#aclassdao_1_1ColorRGBA_ab097f5daa2d6ef03bc27196453ebc285_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1ColorRGBA_ab097f5daa2d6ef03bc27196453ebc285_cgraph" id="aclassdao_1_1ColorRGBA_ab097f5daa2d6ef03bc27196453ebc285_cgraph">
-<area shape="rect" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="5,5,213,31"/>
-<area shape="rect" href="classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="261,5,465,31"/>
-<area shape="poly" title=" " alt="" coords="214,15,248,15,248,21,214,21"/>
+<area shape="rect" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="5,29,213,55"/>
+<area shape="rect" href="classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="261,29,465,55"/>
+<area shape="poly" title=" " alt="" coords="214,39,248,39,248,45,214,45"/>
+<area shape="poly" title=" " alt="" coords="322,31,313,21,318,11,335,5,363,3,399,7,409,11,413,17,409,20,406,15,398,12,363,8,336,10,322,15,319,20,326,27"/>
 </map>
 </div>
 
@@ -543,6 +555,36 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">  104</span>                   m_b &gt;= 0 &amp;&amp; m_b &lt;= 255 &amp;&amp;</div>
 <div class="line"><span class="lineno">  105</span>                   m_a &gt;= 0.0f &amp;&amp; m_a &lt;= 1.0f;</div>
 <div class="line"><span class="lineno">  106</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e68cccd12c3f00c9d602d4a31e93883" name="a3e68cccd12c3f00c9d602d4a31e93883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e68cccd12c3f00c9d602d4a31e93883">&#9670;&#160;</a></span>operator SDL_FColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::ColorRGBA::operator SDL_FColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ColorRGB_8hpp_source.html">ColorRGB.hpp</a> 第 <a class="el" href="ColorRGB_8hpp_source.html#l00155">155</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>                                                                {</div>
+<div class="line"><span class="lineno">  156</span>            <span class="keywordflow">return</span> {<a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_r], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_g], <a class="code hl_variable" href="namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26">rgbNorm</a>[m_b], m_a};</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -659,17 +701,7 @@ Public 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="ColorRGB_8hpp_source.html">ColorRGB.hpp</a> 第 <a class="el" href="ColorRGB_8hpp_source.html#l00075">75</a> 行定义.</p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>{ <span class="keywordflow">return</span> m_r; }</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1ColorRGBA_a0514035326561bc9d8688ebff102ca99_icgraph.png" border="0" usemap="#aclassdao_1_1ColorRGBA_a0514035326561bc9d8688ebff102ca99_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1ColorRGBA_a0514035326561bc9d8688ebff102ca99_icgraph" id="aclassdao_1_1ColorRGBA_a0514035326561bc9d8688ebff102ca99_icgraph">
-<area shape="rect" title="获取红色通道值" alt="" coords="197,5,336,31"/>
-<area shape="rect" href="classdao_1_1Text.html#ac8aeef167ec550f67ca384edee274cd3" title="获取SDL格式的文本颜色" alt="" coords="5,5,149,31"/>
-<area shape="poly" title=" " alt="" coords="183,21,150,21,150,15,183,15"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad322c53c5713f82dd5a7ba109d9e7b01" name="ad322c53c5713f82dd5a7ba109d9e7b01"></a>

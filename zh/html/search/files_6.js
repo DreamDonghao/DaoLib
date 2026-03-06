@@ -6,8 +6,8 @@ var searchData=
   ['igeneralpage_2ecpp_3',['IGeneralPage.cpp',['../IGeneralPage_8cpp.html',1,'']]],
   ['igeneralpage_2ehpp_4',['IGeneralPage.hpp',['../IGeneralPage_8hpp.html',1,'']]],
   ['igraph_2ehpp_5',['IGraph.hpp',['../IGraph_8hpp.html',1,'']]],
-  ['image_2ecpp_6',['image.cpp',['../image_8cpp.html',1,'']]],
-  ['image_2ehpp_7',['image.hpp',['../image_8hpp.html',1,'']]],
+  ['image_2ecpp_6',['Image.cpp',['../Image_8cpp.html',1,'']]],
+  ['image_2ehpp_7',['Image.hpp',['../Image_8hpp.html',1,'']]],
   ['inputbox_2ehpp_8',['InputBox.hpp',['../InputBox_8hpp.html',1,'']]],
   ['inputboxstyle_2ehpp_9',['InputBoxStyle.hpp',['../InputBoxStyle_8hpp.html',1,'']]],
   ['ipage_2ehpp_10',['IPage.hpp',['../IPage_8hpp.html',1,'']]]

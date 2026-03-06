@@ -1,9 +1,0 @@
-<map id="code/src/core/frame/app.cpp" name="code/src/core/frame/app.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="139,5,289,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,156,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,48,113,89,111,84,181,43"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="181,93,247,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,46,217,79,211,79,211,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="271,93,410,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,43,312,84,309,88,243,48"/>
-</map>

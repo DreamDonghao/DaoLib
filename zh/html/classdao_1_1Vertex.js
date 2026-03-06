@@ -2,7 +2,7 @@ var classdao_1_1Vertex =
 [
     [ "Vertex", "classdao_1_1Vertex.html#aafbe63962bed9d1b689a20d51d78a22b", null ],
     [ "color", "classdao_1_1Vertex.html#a1905ea697181a73c9d282a1744add5e9", null ],
-    [ "operator SDL_Vertex", "classdao_1_1Vertex.html#ad534df84163d1a0a4dd57f31ac3f0f9d", null ],
+    [ "operator SDL_Vertex", "classdao_1_1Vertex.html#af571e7236e1d85a85544662caf814c03", null ],
     [ "set", "classdao_1_1Vertex.html#a9ff8cc62f3c46252ecddc979ac81bc84", null ],
     [ "setColor", "classdao_1_1Vertex.html#a20ac5b5cf36f34b58e1f000a50851096", null ],
     [ "setPosition", "classdao_1_1Vertex.html#a5de9bc7bb36210f01fef7cbc29ba727b", null ],
