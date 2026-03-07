@@ -1,33 +1,40 @@
 #pragma once
-#include <functional>
-#include <string>
 #include <SDL3/SDL.h>
-#include <interface/IPage.hpp>
 #include <core/frame/AppController.hpp>
 #include <core/frame/Context.hpp>
 #include <core/render/BatchRenderer.hpp>
+#include <functional>
+#include <interface/IPage.hpp>
+#include <string>
 
 namespace dao {
     /// @brief 窗口
     class Window {
         struct TextureDeleter {
             void operator()(SDL_Texture *texture) const {
-                if (texture) SDL_DestroyTexture(texture);
+                if (texture)
+                    SDL_DestroyTexture(texture);
             }
         };
 
     public:
+        /// @brief 窗口工作状态
+        enum class WorkState {
+            Foreground, ///< 前台运行
+            Background, ///< 后台运行
+            Closed      ///< 窗口关闭
+        };
+
         /// @param width 窗口默认宽度
         /// @param height 窗口默认高度
-        /// @param hidden 隐藏
+        /// @param workState 窗口默认工作状态 （前台运行，后台运行，关闭）
         /// @param isSubject 为应用主体窗口
         /// @param resizable 可重新设置大小
         /// @param transparent 支持透明
         /// @param onTop 置顶
         /// @param borderless 无边框
-        Window(i32 width, i32 height, bool hidden = false, bool isSubject = false,
-               bool resizable = false, bool transparent = false, bool
-               onTop = false, bool borderless = false);
+        Window(i32 width, i32 height, WorkState workState, bool isSubject = false, bool resizable = false,
+               bool transparent = false, bool onTop = false, bool borderless = false);
 
         ~Window();
 
@@ -50,17 +57,26 @@ namespace dao {
         /// @brief 隐藏窗口
         void hide() const;
 
-        /// @brief 展示窗口
+        /// @brief 显示窗口
         void show() const;
 
-        /// @brief 销毁窗口
-        void destroy();
+        /// @brief 获取窗口状态
+        /// @note 注意区分窗口工作状态\n
+        /// Foreground 前台运行：正常打开的窗口（包括最小化）\n
+        /// Background 后台运行：隐藏运行的窗口，可实现后台任务\n
+        /// Closed 窗口关闭：不运行的窗口\n
+        /// @return Foreground 前台运行\n
+        /// Background 后台运行 \n
+        /// Closed 关闭\n
+        [[nodiscard]] WorkState workState() const { return m_workState; }
 
-        /// @brief 创建窗口
-        void create();
-
-        /// @brief 判断是否在运行
-        [[nodiscard]] bool isRunning() const { return m_running; }
+        /// @brief 转换窗口工作状态
+        /// @details 参数可选：\n
+        /// Foreground 前台运行：正常打开的窗口（包括最小化）\n
+        /// Background 后台运行：隐藏运行的窗口，可实现后台任务\n
+        /// Closed 窗口关闭：不运行的窗口\n
+        /// @param workState 窗口工作状态
+        void convertWorkState(WorkState workState);
 
         /// @brief 获取 SDL_window 指针
         [[nodiscard]] const SDL_Window *getSDLWindow() const { return m_window; }
@@ -91,29 +107,24 @@ namespace dao {
 
         /// @brief 设置上下文
         /// @param context 上下文指针
-        void setContext(Context *context) {
-            m_context = context;
-        }
+        void setContext(Context *context);
 
     private:
-        i32 m_id{-1};                                          ///< ID
-        bool m_running = true;                                 ///< 是否正在运行
-        SDL_Window *m_window{nullptr};                         ///< SDL_Window 指针
-        std::string m_nowPageTitle;                            ///< 当前页面的标题
-        hash_map<std::string, std::unique_ptr<ifc::IPage> > m_pages; ///< 窗口拥有的页面
-        i32 m_width;                                           ///< 窗口宽度
-        i32 m_height;                                          ///< 窗口高度
-        SDL_WindowFlags m_windowFlags = 0;                     ///< 窗口属性标记
-        AppController m_appController;                         ///< 应用控制器
-        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"}; ///< 批处理渲染器
-        Context *m_context{nullptr};                           ///< 上下文
+        i32 m_id{-1};                                               ///< ID
+        WorkState m_workState;                                      ///< 窗口工作状态
+        SDL_Window *m_window{nullptr};                              ///< SDL_Window 指针
+        std::string m_nowPageTitle;                                 ///< 当前页面的标题
+        hash_map<std::string, std::unique_ptr<ifc::IPage>> m_pages; ///< 窗口拥有的页面
+        i32 m_width;                                                ///< 窗口宽度
+        i32 m_height;                                               ///< 窗口高度
+        SDL_WindowFlags m_windowFlags = 0;                          ///< 窗口属性标记
+        AppController m_appController;                              ///< 应用控制器
+        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"};    ///< 批处理渲染器
+        Context *m_context{nullptr};                                ///< 上下文
 
         /// @brief 执行窗口控制器的命令
         void executeCommand();
 
-        std::function<void()> m_closeAction{                   ///< 窗口关闭时执行的操作
-            [] {
-            }
-        };
+        std::function<void()> m_closeAction{[] {}}; ///< 窗口关闭时执行的操作
     };
-}
+} // namespace dao

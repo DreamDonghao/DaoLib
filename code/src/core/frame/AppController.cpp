@@ -5,7 +5,7 @@ void dao::AppController::executeCommand(App &app) {
     for (const auto &[type, data]: m_appCommands) {
         switch (type) {
             case AppCommandType::close:
-                app.close();
+                app.exit();
             default:
                 break;
         }

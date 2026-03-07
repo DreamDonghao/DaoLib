@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME}
         assets/textures/config/atlas_region.cpp
         main.cpp
         pages/hello_dao_page.cpp
+        pages/page_a/page_a.cpp
         tray/AppTray.cpp
 )
 
