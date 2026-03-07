@@ -17,11 +17,14 @@ namespace dao {
         /// @brief 禁止拷贝构造
         App(const App &) = delete;
 
+        /// @brief 禁止移动构造
+        App(App &&) = delete;
+
         /// @brief 禁止拷贝赋值
         App &operator=(const App &) = delete;
 
-        /// @brief 默认移动赋值
-        App &operator=(App &&) = default;
+        /// @brief 禁止移动赋值
+        App &operator=(App &&) = delete;
 
         /// @brief 析构函数
         ~App();
@@ -30,7 +33,7 @@ namespace dao {
         /// @param width 窗口默认宽度
         /// @param height 窗口默认高度
         /// @param tag 窗口标识
-        /// @param hidden 是否隐藏，默认为false
+        /// @param workState 窗口默认工作状态 （前台运行，后台运行，关闭）
         /// @param isSubject 是否为应用主体窗口，默认为false
         /// @param resizable 窗口是否可重新设置大小，默认为false
         /// @param transparent 是否支持透明，默认为false
@@ -38,7 +41,7 @@ namespace dao {
         /// @param borderless 是否无边框，默认为false
         /// @returns 窗口对象的引用
         Window &createWindow(i32 width, i32 height, std::string_view tag,
-                             bool hidden = false, bool isSubject = false,
+                             Window::WorkState workState, bool isSubject = false,
                              bool resizable = false, bool transparent = false, bool onTop = false,
                              bool borderless = false);
 
@@ -62,8 +65,8 @@ namespace dao {
         /// @brief 启动应用程序主循环
         void run();
 
-        /// @brief 关闭应用程序
-        void close();
+        /// @brief 关闭退出应用程序
+        void exit();
 
         /// @brief 获取全局上下文
         /// @return 全局上下文对象的引用

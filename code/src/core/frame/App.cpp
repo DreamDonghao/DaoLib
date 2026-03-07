@@ -1,6 +1,6 @@
+#include <SDL3_ttf/SDL_ttf.h>
 #include <core/frame/App.hpp>
 #include <ranges>
-#include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
     App::App(const i32 fps, const bool clickThrough) : m_frameLimiter(fps) {
@@ -23,20 +23,26 @@ namespace dao {
         SDL_Quit();
     }
 
+
     void App::run() {
         m_running = true;
         while (m_running) {
+            std::cout << "*****" << m_running << std::endl;
             m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {
-                window->update();
-                window->getAppController().executeCommand(*this);
+                if (window->workState() != Window::WorkState::Closed) {
+                    window->update();
+                    window->getAppController().executeCommand(*this);
+                }
             }
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
+                // 处理窗口关闭按钮（左上角）点击事件
                 if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
                     const i32 wid = static_cast<i32>(event.window.windowID);
+                    std::cout << wid << std::endl;
                     if (auto it = m_windows.find(wid); it != m_windows.end()) {
-                        it->second->hide();
+                        it->second->convertWorkState(Window::WorkState::Closed);
                     }
                 }
 
@@ -56,26 +62,21 @@ namespace dao {
                 }
             }
         }
-    }
-
-    void App::close() {
         for (const auto &window: m_windows | std::views::values) {
-            window->destroy();
+            window->convertWorkState(Window::WorkState::Closed);
         }
-        m_running = false;
     }
 
-    Window &App::createWindow(
-        i32 width, i32 height, const std::string_view tag,
-        bool hidden, bool isSubject,
-        bool resizable, bool transparent, bool onTop, bool borderless) {
-        auto nowWindow = std::make_unique<Window>(
-            width, height, hidden, isSubject,
-            resizable, transparent, onTop, borderless);
+    void App::exit() { m_running = false; }
+
+    Window &App::createWindow(i32 width, i32 height, const std::string_view tag, Window::WorkState workState,
+                              bool isSubject, bool resizable, bool transparent, bool onTop, bool borderless) {
+        auto nowWindow = std::make_unique<Window>(width, height, workState, isSubject, resizable, transparent, onTop,
+                                                  borderless);
         const i32 windowId = nowWindow->getId();
         m_windowMap[tag] = windowId;
         m_windows[windowId] = std::move(nowWindow);
         m_windows[windowId]->setContext(&m_context);
         return *m_windows[windowId];
     }
-}
+} // namespace dao

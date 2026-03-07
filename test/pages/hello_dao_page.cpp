@@ -19,16 +19,7 @@ dao::Circle circle{500, 500, 100, dao::ColorRGBA("#185ABD"), dao::ColorRGBA("#FE
 Polygon a{Vertex{0, 0,}, Vertex{100, 0}, Vertex{100, 100}};
 
 void HelloDaoPage::update() {
-    clearBatch();
-    f32 len = 0;
-    for (const utf32char ch: dao::utf32str(U"abcABCga")) {
-        len += getGlyphAspectRatio(ch) * 200;
-    }
-    rectangle.rotate(500, 500, 0.01);
-
-    for (i32 i = 0; i < 1000000; ++i) {
-        addToBatch(a);
-    }
+   std::cout << "Hello Dao Page" << std::endl;
 }
 
 
