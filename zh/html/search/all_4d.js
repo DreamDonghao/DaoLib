@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['自定义_20drawable_20组件_0',['自定义 Drawable 组件',['../tutorial.html#autotoc_md58',1,'']]]
+  ['编写代码并提交_0',['4. 编写代码并提交',['../join.html#autotoc_md8',1,'']]]
 ];

@@ -107,11 +107,19 @@ Collaboration diagram for dao::Window:</div>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae166d0fdbdde0f3e99bc4cec1fdb722c" id="r_ae166d0fdbdde0f3e99bc4cec1fdb722c"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> { <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">Foreground</a>
+, <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">Background</a>
+, <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Closed</a>
+ }</td></tr>
+<tr class="memdesc:ae166d0fdbdde0f3e99bc4cec1fdb722c"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口工作状态  <a href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7430c33cbb27c35dbff5a0a4d454442" id="r_ac7430c33cbb27c35dbff5a0a4d454442"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, bool hidden=false, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
+<tr class="memitem:ae2c38877e63bcc6580b958273cc5d5a3" id="r_ae2c38877e63bcc6580b958273cc5d5a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> <a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
 <tr class="memitem:a8d53dfb54f139ee857eae1afee44afb3" id="r_a8d53dfb54f139ee857eae1afee44afb3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8d53dfb54f139ee857eae1afee44afb3">~Window</a> ()</td></tr>
-<tr class="memitem:a30b6535d63f2abf742c6c83a6e35d354" id="r_a30b6535d63f2abf742c6c83a6e35d354"><td class="memItemLeft"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a30b6535d63f2abf742c6c83a6e35d354">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1ifc_1_1IPage.html">ifc::IPage</a> &gt; &amp;&amp;page)</td></tr>
+<tr class="memitem:a30b6535d63f2abf742c6c83a6e35d354" id="r_a30b6535d63f2abf742c6c83a6e35d354"><td class="memItemLeft"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a30b6535d63f2abf742c6c83a6e35d354">addPage</a> (std::unique_ptr&lt; <a class="el" href="classdao_1_1ifc_1_1IPage.html">ifc::IPage</a> &gt; &amp;&amp;page)</td></tr>
 <tr class="memdesc:a30b6535d63f2abf742c6c83a6e35d354"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加页面  <br /></td></tr>
 <tr class="memitem:af506f7804932b2a731eff22be71a79e6" id="r_af506f7804932b2a731eff22be71a79e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a> ()</td></tr>
 <tr class="memdesc:af506f7804932b2a731eff22be71a79e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据当前窗口拥有的页面加载未加载的图集  <br /></td></tr>
@@ -124,13 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a15682d38f6a4f26df5dac389cfeab905" id="r_a15682d38f6a4f26df5dac389cfeab905"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a> () const</td></tr>
 <tr class="memdesc:a15682d38f6a4f26df5dac389cfeab905"><td class="mdescLeft">&#160;</td><td class="mdescRight">隐藏窗口  <br /></td></tr>
 <tr class="memitem:a5da0453643006a0248af568895ee8c39" id="r_a5da0453643006a0248af568895ee8c39"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5da0453643006a0248af568895ee8c39">show</a> () const</td></tr>
-<tr class="memdesc:a5da0453643006a0248af568895ee8c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示窗口  <br /></td></tr>
-<tr class="memitem:a32cc34e3cb8e1a94fd80510e0b3b9f9d" id="r_a32cc34e3cb8e1a94fd80510e0b3b9f9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a32cc34e3cb8e1a94fd80510e0b3b9f9d">destroy</a> ()</td></tr>
-<tr class="memdesc:a32cc34e3cb8e1a94fd80510e0b3b9f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁窗口  <br /></td></tr>
-<tr class="memitem:a5904cf1fad9f0d89748399c66dfdb93d" id="r_a5904cf1fad9f0d89748399c66dfdb93d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5904cf1fad9f0d89748399c66dfdb93d">create</a> ()</td></tr>
-<tr class="memdesc:a5904cf1fad9f0d89748399c66dfdb93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建窗口  <br /></td></tr>
-<tr class="memitem:a226bb29d986f758ece72de4cac972ffb" id="r_a226bb29d986f758ece72de4cac972ffb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a226bb29d986f758ece72de4cac972ffb">isRunning</a> () const</td></tr>
-<tr class="memdesc:a226bb29d986f758ece72de4cac972ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否在运行  <br /></td></tr>
+<tr class="memdesc:a5da0453643006a0248af568895ee8c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示窗口  <br /></td></tr>
+<tr class="memitem:a804cb3b8a2f0b45189c40186f206bae3" id="r_a804cb3b8a2f0b45189c40186f206bae3"><td class="memItemLeft"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a>&#160;</td><td class="memItemRight"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a> () const</td></tr>
+<tr class="memdesc:a804cb3b8a2f0b45189c40186f206bae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口状态  <br /></td></tr>
+<tr class="memitem:ad65855b81763b99608b9a26739174fdb" id="r_ad65855b81763b99608b9a26739174fdb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad65855b81763b99608b9a26739174fdb">convertWorkState</a> (<a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> <a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>)</td></tr>
+<tr class="memdesc:ad65855b81763b99608b9a26739174fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换窗口工作状态  <br /></td></tr>
 <tr class="memitem:a98c43811ce3cbc6fbe93688ddafb228b" id="r_a98c43811ce3cbc6fbe93688ddafb228b"><td class="memItemLeft">const SDL_Window *&#160;</td><td class="memItemRight"><a class="el" href="#a98c43811ce3cbc6fbe93688ddafb228b">getSDLWindow</a> () const</td></tr>
 <tr class="memdesc:a98c43811ce3cbc6fbe93688ddafb228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 SDL_window 指针  <br /></td></tr>
 <tr class="memitem:a8821f99dc73fa664ef6dbaaafabd4dbe" id="r_a8821f99dc73fa664ef6dbaaafabd4dbe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8821f99dc73fa664ef6dbaaafabd4dbe">switchPage</a> (std::string title)</td></tr>
@@ -154,9 +160,49 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>窗口 </p>
 
 <p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00012">12</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac7430c33cbb27c35dbff5a0a4d454442" name="ac7430c33cbb27c35dbff5a0a4d454442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7430c33cbb27c35dbff5a0a4d454442">&#9670;&#160;</a></span>Window()</h2>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae166d0fdbdde0f3e99bc4cec1fdb722c" name="ae166d0fdbdde0f3e99bc4cec1fdb722c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">&#9670;&#160;</a></span>WorkState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">dao::Window::WorkState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口工作状态 </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f" name="ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f"></a>Foreground&#160;</td><td class="fielddoc"><p>前台运行 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419" name="ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419"></a>Background&#160;</td><td class="fielddoc"><p>后台运行 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e" name="ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"></a>Closed&#160;</td><td class="fielddoc"><p>窗口关闭 </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00022">22</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                             {</div>
+<div class="line"><span class="lineno">   23</span>            Foreground, <span class="comment">///&lt; 前台运行</span></div>
+<div class="line"><span class="lineno">   24</span>            Background, <span class="comment">///&lt; 后台运行</span></div>
+<div class="line"><span class="lineno">   25</span>            Closed      <span class="comment">///&lt; 窗口关闭</span></div>
+<div class="line"><span class="lineno">   26</span>        };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae2c38877e63bcc6580b958273cc5d5a3" name="ae2c38877e63bcc6580b958273cc5d5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c38877e63bcc6580b958273cc5d5a3">&#9670;&#160;</a></span>Window()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +220,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hidden</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+          <td class="paramtype"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a></td>          <td class="paramname"><span class="paramname"><em>workState</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -207,7 +253,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">width</td><td>窗口默认宽度 </td></tr>
     <tr><td class="paramname">height</td><td>窗口默认高度 </td></tr>
-    <tr><td class="paramname">hidden</td><td>隐藏 </td></tr>
+    <tr><td class="paramname"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态">workState</a></td><td>窗口默认工作状态 （前台运行，后台运行，关闭） </td></tr>
     <tr><td class="paramname">isSubject</td><td>为应用主体窗口 </td></tr>
     <tr><td class="paramname">resizable</td><td>可重新设置大小 </td></tr>
     <tr><td class="paramname">transparent</td><td>支持透明 </td></tr>
@@ -217,32 +263,39 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00008">8</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>        : m_width(width), m_height(height) {</div>
-<div class="line"><span class="lineno">   12</span>        <span class="keywordflow">if</span> (hidden) m_windowFlags |= SDL_WINDOW_HIDDEN;</div>
-<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (resizable) m_windowFlags |= SDL_WINDOW_RESIZABLE;</div>
-<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">if</span> (transparent) m_windowFlags |= SDL_WINDOW_TRANSPARENT;</div>
-<div class="line"><span class="lineno">   15</span>        <span class="keywordflow">if</span> (onTop) m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (borderless) m_windowFlags |= SDL_WINDOW_BORDERLESS;</div>
-<div class="line"><span class="lineno">   17</span>        <a class="code hl_function" href="#a5904cf1fad9f0d89748399c66dfdb93d">create</a>();</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (isSubject) {</div>
-<div class="line"><span class="lineno">   19</span>            m_closeAction = [<span class="keyword">this</span>]() {</div>
-<div class="line"><span class="lineno">   20</span>                m_appController.close();</div>
-<div class="line"><span class="lineno">   21</span>            };</div>
-<div class="line"><span class="lineno">   22</span>        }</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a5904cf1fad9f0d89748399c66dfdb93d"><div class="ttname"><a href="#a5904cf1fad9f0d89748399c66dfdb93d">dao::Window::create</a></div><div class="ttdeci">void create()</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00080">Window.cpp:80</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph.png" border="0" usemap="#aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph" id="aclassdao_1_1Window_ac7430c33cbb27c35dbff5a0a4d454442_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,171,31"/>
-<area shape="rect" href="classdao_1_1Window.html#a5904cf1fad9f0d89748399c66dfdb93d" title="创建窗口" alt="" coords="219,5,373,31"/>
-<area shape="poly" title=" " alt="" coords="171,15,205,15,205,21,171,21"/>
-</map>
-</div>
-
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00010">10</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                                                                          :</div>
+<div class="line"><span class="lineno">   12</span>        m_workState(<a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>), m_width(width), m_height(height) {</div>
+<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (m_workState == <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">WorkState::Background</a> || m_workState == <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">WorkState::Closed</a>) {</div>
+<div class="line"><span class="lineno">   14</span>            m_windowFlags |= SDL_WINDOW_HIDDEN;</div>
+<div class="line"><span class="lineno">   15</span>        }</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (resizable)</div>
+<div class="line"><span class="lineno">   17</span>            m_windowFlags |= SDL_WINDOW_RESIZABLE;</div>
+<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (transparent)</div>
+<div class="line"><span class="lineno">   19</span>            m_windowFlags |= SDL_WINDOW_TRANSPARENT;</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">if</span> (onTop)</div>
+<div class="line"><span class="lineno">   21</span>            m_windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span> (borderless)</div>
+<div class="line"><span class="lineno">   23</span>            m_windowFlags |= SDL_WINDOW_BORDERLESS;</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>        m_window = SDL_CreateWindow(m_nowPageTitle.data(), m_width, m_height, m_windowFlags);</div>
+<div class="line"><span class="lineno">   26</span>        m_batchRenderer.init(SDL_CreateRenderer(m_window, <span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">   27</span>        m_id = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(SDL_GetWindowID(m_window));</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (isSubject) {</div>
+<div class="line"><span class="lineno">   31</span>            m_closeAction = [<span class="keyword">this</span>]() {</div>
+<div class="line"><span class="lineno">   32</span>                <span class="keywordflow">if</span> (m_context-&gt;has&lt;App&gt;()) {</div>
+<div class="line"><span class="lineno">   33</span>                    m_context-&gt;get&lt;App&gt;()-&gt;exit();</div>
+<div class="line"><span class="lineno">   34</span>                }</div>
+<div class="line"><span class="lineno">   35</span>            };</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a804cb3b8a2f0b45189c40186f206bae3"><div class="ttname"><a href="#a804cb3b8a2f0b45189c40186f206bae3">dao::Window::workState</a></div><div class="ttdeci">WorkState workState() const</div><div class="ttdoc">获取窗口状态</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00071">Window.hpp:71</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00025">Window.hpp:25</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">dao::Window::WorkState::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdoc">后台运行</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00024">Window.hpp:24</a></div></div>
+<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00008">type.hpp:8</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d53dfb54f139ee857eae1afee44afb3" name="a8d53dfb54f139ee857eae1afee44afb3"></a>
@@ -260,10 +313,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00025">25</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                    {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">if</span> (m_window) { SDL_DestroyWindow(m_window); }</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00039">39</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                    {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (m_window) {</div>
+<div class="line"><span class="lineno">   41</span>            SDL_DestroyWindow(m_window);</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,7 +330,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ac7430c33cbb27c35dbff5a0a4d454442">Window</a> &amp; dao::Window::addPage </td>
+          <td class="memname"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> &amp; dao::Window::addPage </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdao_1_1ifc_1_1IPage.html">ifc::IPage</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>page</em></span></td><td>)</td>
           <td></td>
@@ -291,108 +346,103 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00029">29</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                          {</div>
-<div class="line"><span class="lineno">   30</span>        <span class="keyword">const</span> std::string title = page-&gt;getTitle();</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(!m_pages.contains(title), std::string(<span class="stringliteral">&quot;重复页面:&quot;</span>) + title);</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (m_pages.empty()) {</div>
-<div class="line"><span class="lineno">   34</span>            m_nowPageTitle = title;</div>
-<div class="line"><span class="lineno">   35</span>            <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-<div class="line"><span class="lineno">   37</span>        m_pages[title] = std::move(page);</div>
-<div class="line"><span class="lineno">   38</span>        m_pages[title]-&gt;setContext(m_context);</div>
-<div class="line"><span class="lineno">   39</span>        m_pages[title]-&gt;setVertexBatch(&amp;m_batchRenderer);</div>
-<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a>();</div>
-<div class="line"><span class="lineno">   41</span>        m_pages[title]-&gt;open();</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   44</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00120">Window.cpp:120</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00046">Window.cpp:46</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00045">45</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                          {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keyword">const</span> std::string title = page-&gt;getTitle();</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(!m_pages.contains(title), std::string(<span class="stringliteral">&quot;重复页面:&quot;</span>) + title);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">if</span> (m_pages.empty()) {</div>
+<div class="line"><span class="lineno">   50</span>            m_nowPageTitle = title;</div>
+<div class="line"><span class="lineno">   51</span>            <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
+<div class="line"><span class="lineno">   52</span>        }</div>
+<div class="line"><span class="lineno">   53</span>        m_pages[title] = std::move(page);</div>
+<div class="line"><span class="lineno">   54</span>        m_pages[title]-&gt;setContext(m_context);</div>
+<div class="line"><span class="lineno">   55</span>        m_pages[title]-&gt;setVertexBatch(&amp;m_batchRenderer);</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_function" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a>();</div>
+<div class="line"><span class="lineno">   57</span>        m_pages[title]-&gt;open();</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00128">Window.cpp:128</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00062">Window.cpp:62</a></div></div>
 <div class="ttc" id="anamespacedao_html_a24e91b1ba23935657b9b4fefae8f56e8"><div class="ttname"><a href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">dao::detectionError</a></div><div class="ttdeci">void detectionError(const bool pass, const std::string_view &amp;message)</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00022">better_stl.hpp:22</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Window_a30b6535d63f2abf742c6c83a6e35d354_cgraph.png" border="0" usemap="#aclassdao_1_1Window_a30b6535d63f2abf742c6c83a6e35d354_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Window_a30b6535d63f2abf742c6c83a6e35d354_cgraph" id="aclassdao_1_1Window_a30b6535d63f2abf742c6c83a6e35d354_cgraph">
-<area shape="rect" title="添加页面" alt="" coords="5,13,173,38"/>
+<area shape="rect" title="添加页面" alt="" coords="5,42,173,67"/>
 <area shape="rect" href="classdao_1_1Window.html#af506f7804932b2a731eff22be71a79e6" title="根据当前窗口拥有的页面加载未加载的图集" alt="" coords="221,5,416,45"/>
-<area shape="poly" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
+<area shape="poly" title=" " alt="" coords="173,41,207,37,208,42,174,47"/>
+<area shape="rect" href="classdao_1_1Window.html#a4141bfcdcbd8d86fd07be7ee96f4a837" title="设置标题" alt="" coords="237,70,400,95"/>
+<area shape="poly" title=" " alt="" coords="174,62,224,68,223,74,173,68"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5904cf1fad9f0d89748399c66dfdb93d" name="a5904cf1fad9f0d89748399c66dfdb93d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5904cf1fad9f0d89748399c66dfdb93d">&#9670;&#160;</a></span>create()</h2>
+<a id="ad65855b81763b99608b9a26739174fdb" name="ad65855b81763b99608b9a26739174fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65855b81763b99608b9a26739174fdb">&#9670;&#160;</a></span>convertWorkState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dao::Window::create </td>
+          <td class="memname">void dao::Window::convertWorkState </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a></td>          <td class="paramname"><span class="paramname"><em>workState</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>创建窗口 </p>
+<p>转换窗口工作状态 </p>
+<p>参数可选：<br  />
+Foreground 前台运行：正常打开的窗口（包括最小化）<br  />
+Background 后台运行：隐藏运行的窗口，可实现后台任务<br  />
+Closed 窗口关闭：不运行的窗口<br  />
+</p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态">workState</a></td><td>窗口工作状态 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00080">80</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                        {</div>
-<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (m_window) {</div>
-<div class="line"><span class="lineno">   82</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;重复创建窗口&quot;</span>);</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   84</span>        }</div>
-<div class="line"><span class="lineno">   85</span>        m_window = SDL_CreateWindow(</div>
-<div class="line"><span class="lineno">   86</span>            m_nowPageTitle.data(), m_width, m_height,</div>
-<div class="line"><span class="lineno">   87</span>            m_windowFlags);</div>
-<div class="line"><span class="lineno">   88</span>        m_batchRenderer.init(SDL_CreateRenderer(m_window, <span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">   89</span>        m_id = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(SDL_GetWindowID(m_window));</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
-<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00045">better_stl.hpp:45</a></div></div>
-<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00007">type.hpp:7</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00086">86</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                           {</div>
+<div class="line"><span class="lineno">   87</span>        m_workState = <a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>;</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">switch</span> (m_workState) {</div>
+<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">WorkState::Foreground</a>:</div>
+<div class="line"><span class="lineno">   90</span>                <a class="code hl_function" href="#a5da0453643006a0248af568895ee8c39">show</a>();</div>
+<div class="line"><span class="lineno">   91</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">WorkState::Background</a>:</div>
+<div class="line"><span class="lineno">   93</span>                <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
+<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">WorkState::Closed</a>:</div>
+<div class="line"><span class="lineno">   96</span>                <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
+<div class="line"><span class="lineno">   97</span>                m_closeAction();</div>
+<div class="line"><span class="lineno">   98</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   99</span>                ;</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  101</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a15682d38f6a4f26df5dac389cfeab905"><div class="ttname"><a href="#a15682d38f6a4f26df5dac389cfeab905">dao::Window::hide</a></div><div class="ttdeci">void hide() const</div><div class="ttdoc">隐藏窗口</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00082">Window.cpp:82</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_a5da0453643006a0248af568895ee8c39"><div class="ttname"><a href="#a5da0453643006a0248af568895ee8c39">dao::Window::show</a></div><div class="ttdeci">void show() const</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>Definition</b> <a href="Window_8cpp_source.html#l00084">Window.cpp:84</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">dao::Window::WorkState::Foreground</a></div><div class="ttdeci">@ Foreground</div><div class="ttdoc">前台运行</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00023">Window.hpp:23</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph" id="aclassdao_1_1Window_a5904cf1fad9f0d89748399c66dfdb93d_icgraph">
-<area shape="rect" title="创建窗口" alt="" coords="219,5,373,31"/>
-<area shape="rect" href="classdao_1_1Window.html#ac7430c33cbb27c35dbff5a0a4d454442" title=" " alt="" coords="5,5,171,31"/>
-<area shape="poly" title=" " alt="" coords="205,21,171,21,171,15,205,15"/>
+<div class="center"><img src="classdao_1_1Window_ad65855b81763b99608b9a26739174fdb_cgraph.png" border="0" usemap="#aclassdao_1_1Window_ad65855b81763b99608b9a26739174fdb_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_ad65855b81763b99608b9a26739174fdb_cgraph" id="aclassdao_1_1Window_ad65855b81763b99608b9a26739174fdb_cgraph">
+<area shape="rect" title="转换窗口工作状态" alt="" coords="5,23,200,63"/>
+<area shape="rect" href="classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905" title="隐藏窗口" alt="" coords="251,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="200,29,237,25,238,30,201,35"/>
+<area shape="rect" href="classdao_1_1Window.html#a5da0453643006a0248af568895ee8c39" title="显示窗口" alt="" coords="248,55,395,80"/>
+<area shape="poly" title=" " alt="" coords="201,51,234,55,234,60,200,57"/>
 </map>
 </div>
 
-</div>
-</div>
-<a id="a32cc34e3cb8e1a94fd80510e0b3b9f9d" name="a32cc34e3cb8e1a94fd80510e0b3b9f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32cc34e3cb8e1a94fd80510e0b3b9f9d">&#9670;&#160;</a></span>destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dao::Window::destroy </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>销毁窗口 </p>
-
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00073">73</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                         {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (m_window) {</div>
-<div class="line"><span class="lineno">   75</span>            SDL_DestroyWindow(m_window);</div>
-<div class="line"><span class="lineno">   76</span>            m_window = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   77</span>        }</div>
-<div class="line"><span class="lineno">   78</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a68532c20c275b5e6c57a0f7bb838793f" name="a68532c20c275b5e6c57a0f7bb838793f"></a>
@@ -421,8 +471,8 @@ Here is the caller graph for this function:</div>
 <p>获取应用控制器 </p>
 <dl class="section return"><dt>Returns</dt><dd>应用控制器引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00090">90</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> m_appController; }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00106">106</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> m_appController; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -451,8 +501,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取 id </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00042">42</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> m_id; }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00049">49</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> m_id; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -481,8 +531,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取 SDL_window 指针 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00066">66</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{ <span class="keywordflow">return</span> m_window; }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00082">82</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> m_window; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -503,10 +553,12 @@ Here is the caller graph for this function:</div>
 
 <p>处理消息 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00060">60</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                        {</div>
-<div class="line"><span class="lineno">   61</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   62</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00076">76</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                        {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (event.type == SDL_EVENT_QUIT) {</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
+<div class="line"><span class="lineno">   79</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -527,42 +579,19 @@ Here is the caller graph for this function:</div>
 
 <p>隐藏窗口 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00064">64</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                            {</div>
-<div class="line"><span class="lineno">   65</span>        SDL_HideWindow(m_window);</div>
-<div class="line"><span class="lineno">   66</span>        m_closeAction();</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00082">82</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{ SDL_HideWindow(m_window); }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph" id="aclassdao_1_1Window_a15682d38f6a4f26df5dac389cfeab905_icgraph">
+<area shape="rect" title="隐藏窗口" alt="" coords="248,13,389,38"/>
+<area shape="rect" href="classdao_1_1Window.html#ad65855b81763b99608b9a26739174fdb" title="转换窗口工作状态" alt="" coords="5,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+</map>
 </div>
-</div>
-<a id="a226bb29d986f758ece72de4cac972ffb" name="a226bb29d986f758ece72de4cac972ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a226bb29d986f758ece72de4cac972ffb">&#9670;&#160;</a></span>isRunning()</h2>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dao::Window::isRunning </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>判断是否在运行 </p>
-
-<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00063">63</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <span class="keywordflow">return</span> m_running; }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="abd4677dadbb2df5c579953224348b4a3" name="abd4677dadbb2df5c579953224348b4a3"></a>
@@ -593,12 +622,12 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00110">110</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>                                                            {</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordtype">int</span> wx, wy;</div>
-<div class="line"><span class="lineno">  112</span>        SDL_GetWindowPosition(m_window, &amp;wx, &amp;wy);</div>
-<div class="line"><span class="lineno">  113</span>        SDL_SetWindowPosition(m_window, wx + x, wy + y);</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00118">118</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                            {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordtype">int</span> wx, wy;</div>
+<div class="line"><span class="lineno">  120</span>        SDL_GetWindowPosition(m_window, &amp;wx, &amp;wy);</div>
+<div class="line"><span class="lineno">  121</span>        SDL_SetWindowPosition(m_window, wx + x, wy + y);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -619,14 +648,14 @@ Here is the caller graph for this function:</div>
 
 <p>根据当前窗口拥有的页面加载未加载的图集 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00046">46</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                     {</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;page: m_pages | std::views::values) {</div>
-<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> textureId: page-&gt;getRegisterTexture()) {</div>
-<div class="line"><span class="lineno">   49</span>                m_batchRenderer.registerTexture(textureId);</div>
-<div class="line"><span class="lineno">   50</span>            }</div>
-<div class="line"><span class="lineno">   51</span>        }</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00062">62</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                     {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;page: m_pages | std::views::values) {</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> textureId: page-&gt;getRegisterTexture()) {</div>
+<div class="line"><span class="lineno">   65</span>                m_batchRenderer.registerTexture(textureId);</div>
+<div class="line"><span class="lineno">   66</span>            }</div>
+<div class="line"><span class="lineno">   67</span>        }</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -664,9 +693,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void dao::Window::setContext </td>
@@ -675,11 +701,6 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>设置上下文 </p>
@@ -690,10 +711,8 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00094">94</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                                          {</div>
-<div class="line"><span class="lineno">   95</span>            m_context = context;</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00132">132</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{ m_context = context; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -718,10 +737,8 @@ Here is the caller graph for this function:</div>
 
 <p>设置位置 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00106">106</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                           {</div>
-<div class="line"><span class="lineno">  107</span>        SDL_SetWindowPosition(m_window, x, y);</div>
-<div class="line"><span class="lineno">  108</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00116">116</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{ SDL_SetWindowPosition(m_window, x, y); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -746,10 +763,10 @@ Here is the caller graph for this function:</div>
 
 <p>设置大小 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00116">116</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>                                                                {</div>
-<div class="line"><span class="lineno">  117</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00124">124</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>                                                                {</div>
+<div class="line"><span class="lineno">  125</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -770,11 +787,21 @@ Here is the caller graph for this function:</div>
 
 <p>设置标题 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00120">120</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  120</span>                                                      {</div>
-<div class="line"><span class="lineno">  121</span>        SDL_SetWindowTitle(m_window, title.c_str());</div>
-<div class="line"><span class="lineno">  122</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00128">128</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ SDL_SetWindowTitle(m_window, title.c_str()); }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a4141bfcdcbd8d86fd07be7ee96f4a837_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a4141bfcdcbd8d86fd07be7ee96f4a837_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a4141bfcdcbd8d86fd07be7ee96f4a837_icgraph" id="aclassdao_1_1Window_a4141bfcdcbd8d86fd07be7ee96f4a837_icgraph">
+<area shape="rect" title="设置标题" alt="" coords="240,31,403,56"/>
+<area shape="rect" href="classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="15,5,183,31"/>
+<area shape="poly" title=" " alt="" coords="226,35,183,30,183,25,227,30"/>
+<area shape="rect" href="classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe" title="切换页面" alt="" coords="5,55,192,80"/>
+<area shape="poly" title=" " alt="" coords="227,56,193,60,192,55,226,51"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5da0453643006a0248af568895ee8c39" name="a5da0453643006a0248af568895ee8c39"></a>
@@ -792,13 +819,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>展示窗口 </p>
+<p>显示窗口 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00069">69</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>                            {</div>
-<div class="line"><span class="lineno">   70</span>        SDL_ShowWindow(m_window);</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00084">84</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{ SDL_ShowWindow(m_window); }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a5da0453643006a0248af568895ee8c39_icgraph.png" border="0" usemap="#aclassdao_1_1Window_a5da0453643006a0248af568895ee8c39_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a5da0453643006a0248af568895ee8c39_icgraph" id="aclassdao_1_1Window_a5da0453643006a0248af568895ee8c39_icgraph">
+<area shape="rect" title="显示窗口" alt="" coords="248,13,395,38"/>
+<area shape="rect" href="classdao_1_1Window.html#ad65855b81763b99608b9a26739174fdb" title="转换窗口工作状态" alt="" coords="5,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8821f99dc73fa664ef6dbaaafabd4dbe" name="a8821f99dc73fa664ef6dbaaafabd4dbe"></a>
@@ -818,16 +853,25 @@ Here is the caller graph for this function:</div>
 
 <p>切换页面 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00097">97</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>                                           {</div>
-<div class="line"><span class="lineno">   98</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title),</div>
-<div class="line"><span class="lineno">   99</span>                       std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
-<div class="line"><span class="lineno">  100</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
-<div class="line"><span class="lineno">  101</span>        m_nowPageTitle = std::move(title);</div>
-<div class="line"><span class="lineno">  102</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
-<div class="line"><span class="lineno">  103</span>        m_pages[m_nowPageTitle]-&gt;open();</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00108">108</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>                                           {</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title), std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
+<div class="line"><span class="lineno">  110</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
+<div class="line"><span class="lineno">  111</span>        m_nowPageTitle = std::move(title);</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
+<div class="line"><span class="lineno">  113</span>        m_pages[m_nowPageTitle]-&gt;open();</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Window_a8821f99dc73fa664ef6dbaaafabd4dbe_cgraph.png" border="0" usemap="#aclassdao_1_1Window_a8821f99dc73fa664ef6dbaaafabd4dbe_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Window_a8821f99dc73fa664ef6dbaaafabd4dbe_cgraph" id="aclassdao_1_1Window_a8821f99dc73fa664ef6dbaaafabd4dbe_cgraph">
+<area shape="rect" title="切换页面" alt="" coords="5,5,192,31"/>
+<area shape="rect" href="classdao_1_1Window.html#a4141bfcdcbd8d86fd07be7ee96f4a837" title="设置标题" alt="" coords="240,5,403,31"/>
+<area shape="poly" title=" " alt="" coords="192,15,226,15,226,21,192,21"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5948603a9220bfecebe7f68924478ff2" name="a5948603a9220bfecebe7f68924478ff2"></a>
@@ -847,12 +891,51 @@ Here is the caller graph for this function:</div>
 
 <p>更新一帧 </p>
 
-<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00054">54</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                        {</div>
-<div class="line"><span class="lineno">   55</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
-<div class="line"><span class="lineno">   56</span>        m_batchRenderer.render();</div>
-<div class="line"><span class="lineno">   57</span>        executeCommand();</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00070">70</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                        {</div>
+<div class="line"><span class="lineno">   71</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
+<div class="line"><span class="lineno">   72</span>        m_batchRenderer.render();</div>
+<div class="line"><span class="lineno">   73</span>        executeCommand();</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a804cb3b8a2f0b45189c40186f206bae3" name="a804cb3b8a2f0b45189c40186f206bae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804cb3b8a2f0b45189c40186f206bae3">&#9670;&#160;</a></span>workState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> dao::Window::workState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取窗口状态 </p>
+<dl class="section note"><dt>Note</dt><dd>注意区分窗口工作状态<br  />
+Foreground 前台运行：正常打开的窗口（包括最小化）<br  />
+Background 后台运行：隐藏运行的窗口，可实现后台任务<br  />
+Closed 窗口关闭：不运行的窗口<br  />
+</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Foreground 前台运行<br  />
+Background 后台运行 <br  />
+Closed 关闭<br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Window_8hpp_source.html#l00071">71</a> of file <a class="el" href="Window_8hpp_source.html">Window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <span class="keywordflow">return</span> m_workState; }</div>
 </div><!-- fragment -->
 </div>
 </div>

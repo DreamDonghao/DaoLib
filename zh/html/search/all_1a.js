@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['u16_0',['u16',['../namespacedao.html#a68005dc114d91689af54bd55a8a941ce',1,'dao']]],
-  ['u32_1',['u32',['../namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6',1,'dao']]],
-  ['u64_2',['u64',['../namespacedao.html#afbe96c048a0e11859b8bc952fca64c5c',1,'dao']]],
-  ['u8_3',['u8',['../namespacedao.html#ab0cd81a977f02d099bca941a483e57ba',1,'dao']]],
-  ['ui_20布局？_4',['Q1: 如何调试 UI 布局？',['../tutorial.html#autotoc_md67',1,'']]],
-  ['update_5',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1ifc_1_1IPage.html#affbb24599d216bf75947bd3410c3ca9f',1,'dao::ifc::IPage::update()'],['../classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714',1,'dao::ifc::IGeneralPage::update()']]],
-  ['use_20使用_20daolib_20开发自己的应用_6',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;使用 DaoLib 开发&quot;&gt;使用 DaoLib 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
-  ['use_2emd_7',['use.md',['../use_8md.html',1,'']]],
-  ['utf32char_8',['utf32char',['../namespacedao.html#addc09e7009536ce405ecc985ece7673c',1,'dao']]],
-  ['utf32str_9',['utf32str',['../namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021',1,'dao']]],
-  ['utf32string_5fview_10',['utf32string_view',['../namespacedao.html#acb49e64cd2b5daeb13cbf71c3cd40ced',1,'dao']]],
-  ['utf8toutf32_11',['utf8ToUtf32',['../namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c',1,'dao']]]
+  ['text_0',['Text',['../tutorial.html#autotoc_md43',1,'文本 (Text)'],['../classdao_1_1Text.html',1,'dao::Text'],['../classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d',1,'dao::Text::Text()=default'],['../classdao_1_1Text.html#a4274b8f7730896feb93444e21a7e6168',1,'dao::Text::Text(const f32 x, const f32 y, const f32 fontSize, const ColorRGBA color=White, utf32str content=U&quot;&quot;)']]],
+  ['text_2ehpp_1',['Text.hpp',['../Text_8hpp.html',1,'']]],
+  ['textureid_2',['TextureID',['../namespacedao.html#a827cc131e40024bc7248f45a5049fddc',1,'dao']]],
+  ['ticktimer_3',['TickTimer',['../classdao_1_1TickTimer.html',1,'dao::TickTimer'],['../classdao_1_1TickTimer.html#a8796c174985d7052ed33b5d91d1b12d3',1,'dao::TickTimer::TickTimer()']]],
+  ['ticktimer_2ehpp_4',['TickTimer.hpp',['../TickTimer_8hpp.html',1,'']]],
+  ['translate_5',['translate',['../classdao_1_1Triangle.html#a5a4988ff16cd6bcbd328037edca90a02',1,'dao::Triangle::translate()'],['../classdao_1_1Vertex.html#a768cc97163d2e4406e3ea01e5aae4954',1,'dao::Vertex::translate()'],['../classdao_1_1Circle.html#a4d1d233debc77e814a56e43a13e4e8d2',1,'dao::Circle::translate()'],['../classdao_1_1ifc_1_1IGraph.html#a5240adeabad999d2e41570fe35089b6d',1,'dao::ifc::IGraph::translate()'],['../classdao_1_1MaxPolygon.html#afd53d8386f5618eeefe6d5aa08d34e2a',1,'dao::MaxPolygon::translate()'],['../classdao_1_1Polygon.html#a0744ee3af166797a8dc08e423dbb1b36',1,'dao::Polygon::translate()'],['../classdao_1_1Rect.html#a9557af61ea83055d46f520995e3b2e6b',1,'dao::Rect::translate()'],['../classdao_1_1SolidCircle.html#adb3ad4755006f1605c22fb065fa10663',1,'dao::SolidCircle::translate()'],['../classdao_1_1SolidRect.html#af558b52259b3c26431279cec61f40fac',1,'dao::SolidRect::translate()']]],
+  ['transparent_6',['Transparent',['../namespacedao.html#aab9a2796c48dad2a0033ad574dc1a195',1,'dao']]],
+  ['tray_7',['Tray',['../classdao_1_1Tray.html',1,'dao::Tray'],['../classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8',1,'dao::Tray::Tray()']]],
+  ['tray_2ehpp_8',['Tray.hpp',['../Tray_8hpp.html',1,'']]],
+  ['trayfunc_9',['TrayFunc',['../namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc',1,'dao']]],
+  ['triangle_10',['Triangle',['../classdao_1_1Triangle.html',1,'dao::Triangle'],['../classdao_1_1Triangle.html#ac0689ad2b8ad9ee0877b8c95b78568da',1,'dao::Triangle::Triangle()'],['../classdao_1_1Triangle.html#a3d9d6d2b4fab6736f680e7e24c83d4b6',1,'dao::Triangle::Triangle(const Vertex &amp;vertexA, const Vertex &amp;vertexB, const Vertex &amp;vertexC)']]],
+  ['triangle_2ehpp_11',['Triangle.hpp',['../Triangle_8hpp.html',1,'']]],
+  ['tutorial_2emd_12',['tutorial.md',['../tutorial_8md.html',1,'']]],
+  ['type_13',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]],
+  ['type_2ehpp_14',['type.hpp',['../type_8hpp.html',1,'']]]
 ];

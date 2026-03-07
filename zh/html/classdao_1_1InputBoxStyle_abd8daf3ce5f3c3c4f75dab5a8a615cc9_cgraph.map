@@ -1,4 +1,10 @@
 <map id="dao::InputBoxStyle::InputBoxStyle" name="dao::InputBoxStyle::InputBoxStyle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,151,69"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,29,48,20,53,11,63,5,78,3,95,6,105,13,102,17,93,11,78,8,65,10,57,14,54,21,55,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,151,87"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="35,48,32,38,39,28,54,23,78,21,105,24,120,31,117,36,104,29,78,26,56,28,42,33,37,39,40,46"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1InputBox.html#acbfb2c5ba07d88c6889bdc7e7d51c19c" title="获取边界框" alt="" coords="199,5,425,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,49,237,31,239,36,152,55"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a705ef13bcb21e253230bee595d826ee2" title="获取左边界坐标" alt="" coords="215,55,409,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,65,201,65,201,70,151,70"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1BoundingBox.html#a0ebecb14841b7a605c616adbd688b195" title="获取上边界坐标" alt="" coords="217,104,407,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,80,239,99,237,104,151,85"/>
 </map>

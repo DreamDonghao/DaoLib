@@ -1,11 +1,14 @@
 var NAVTREEINDEX4 =
 {
-"structdao_1_1WindowCommand.html":[5,0,0,13],
-"structdao_1_1WindowCommand.html":[7,0,0,13],
-"structdao_1_1WindowCommand.html#a2984d556994fe450ac350f120e82cd66":[5,0,0,13,0],
-"structdao_1_1WindowCommand.html#a2984d556994fe450ac350f120e82cd66":[7,0,0,13,0],
-"structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f":[5,0,0,13,1],
-"structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f":[7,0,0,13,1],
+"structdao_1_1AtlasRegion.html#ad5be02910a782f2a20b68e8b91cb3b77":[7,0,0,19,2],
+"structdao_1_1AtlasRegion.html#ad8ea4c6b6c23034cfa52626c115c98ce":[5,0,0,19,4],
+"structdao_1_1AtlasRegion.html#ad8ea4c6b6c23034cfa52626c115c98ce":[7,0,0,19,4],
+"structdao_1_1WindowCommand.html":[5,0,0,12],
+"structdao_1_1WindowCommand.html":[7,0,0,12],
+"structdao_1_1WindowCommand.html#a2984d556994fe450ac350f120e82cd66":[5,0,0,12,0],
+"structdao_1_1WindowCommand.html#a2984d556994fe450ac350f120e82cd66":[7,0,0,12,0],
+"structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f":[5,0,0,12,1],
+"structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f":[7,0,0,12,1],
 "tutorial.html":[2],
 "tutorial.html#autotoc_md22":[2,0],
 "tutorial.html#autotoc_md23":[2,0,0],
@@ -53,7 +56,7 @@ var NAVTREEINDEX4 =
 "tutorial.html#autotoc_md73":[2,0,8,0],
 "tutorial.html#autotoc_md74":[2,0,8,1],
 "tutorial.html#autotoc_md76":[2,0,9],
-"type_8hpp.html":[8,0,0,0,1,2,6],
-"type_8hpp_source.html":[8,0,0,0,1,2,6],
+"type_8hpp.html":[8,0,0,0,1,2,7],
+"type_8hpp_source.html":[8,0,0,0,1,2,7],
 "use.html":[3]
 };

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['输入框_20inputbox_0',['输入框 (InputBox)',['../tutorial.html#autotoc_md42',1,'']]]
+  ['资源管理_0',['1. 资源管理',['../tutorial.html#autotoc_md61',1,'']]]
 ];

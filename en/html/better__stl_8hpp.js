@@ -1,8 +1,6 @@
 var better__stl_8hpp =
 [
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
-    [ "dao::currentDateTime", "namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994", null ],
-    [ "dao::DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ],
     [ "dao::detectionError", "namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8", null ],
     [ "dao::makeManage", "namespacedao.html#ac45f69004e30262d01cf3851e336eef6", null ],
     [ "dao::makeObserver", "namespacedao.html#afeed7b027b4850f4e688ae60c50e7807", null ],

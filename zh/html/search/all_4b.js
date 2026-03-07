@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['组件_0',['自定义 Drawable 组件',['../tutorial.html#autotoc_md58',1,'']]],
-  ['组件_20components_1',['4. 组件 (Components)',['../tutorial.html#autotoc_md40',1,'']]]
+  ['纹理管理_0',['纹理管理',['../tutorial.html#autotoc_md57',1,'']]],
+  ['纹理_20atlastexture_1',['纹理 (AtlasTexture)',['../tutorial.html#autotoc_md46',1,'']]]
 ];

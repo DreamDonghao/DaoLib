@@ -1,0 +1,7 @@
+<map id="dao::Window::setTitle" name="dao::Window::setTitle">
+<area shape="rect" id="Node000001" title="设置标题" alt="" coords="240,31,403,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="15,5,183,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,35,183,30,183,25,227,30"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe" title="切换页面" alt="" coords="5,55,192,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,56,193,60,192,55,226,51"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dao::Window::hide" name="dao::Window::hide">
+<area shape="rect" id="Node000001" title="隐藏窗口" alt="" coords="248,13,389,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#ad65855b81763b99608b9a26739174fdb" title="转换窗口工作状态" alt="" coords="5,5,200,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+</map>

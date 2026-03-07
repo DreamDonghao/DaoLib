@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['图片_20image_0',['图片 (Image)',['../tutorial.html#autotoc_md44',1,'']]]
+  ['合并_0',['7. 合并',['../join.html#autotoc_md14',1,'']]]
 ];

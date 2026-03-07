@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['列表_0',['Bug 列表',['../bug.html',1,'']]]
+  ['克隆仓库_0',['2. 克隆仓库',['../join.html#autotoc_md4',1,'']]]
 ];

@@ -37,7 +37,6 @@ var searchData=
   ['isinboundingbox_34',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a5ba96cb61f0e6cd4d4919c330e6354b2',1,'dao::BoundingBox']]],
   ['isintersects_35',['isIntersects',['../classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b',1,'dao::BoundingBox']]],
   ['isnull_36',['isNull',['../classdao_1_1ColorRGBA.html#aeeeed29db77ac297599e1b2ff9c8c8e6',1,'dao::ColorRGBA']]],
-  ['isrunning_37',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
-  ['isupdated_38',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
-  ['isvalid_39',['isValid',['../classdao_1_1Triangle.html#a3e1fcb3efa7c60446203af4ba38d3efe',1,'dao::Triangle::isValid()'],['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox::isValid()'],['../classdao_1_1ColorRGBA.html#a863970aba997b66e1b4d8a26378a5bbe',1,'dao::ColorRGBA::isValid()']]]
+  ['isupdated_37',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
+  ['isvalid_38',['isValid',['../classdao_1_1Triangle.html#a3e1fcb3efa7c60446203af4ba38d3efe',1,'dao::Triangle::isValid()'],['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox::isValid()'],['../classdao_1_1ColorRGBA.html#a863970aba997b66e1b4d8a26378a5bbe',1,'dao::ColorRGBA::isValid()']]]
 ];

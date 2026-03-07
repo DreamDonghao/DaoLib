@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['normal_0',['Normal',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal'],['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal']]]
+  ['manage_0',['Manage',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04ab3883f0579495de7a9fd164dd74f9938',1,'dao::SwitchDeleter']]],
+  ['moveposition_1',['movePosition',['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67ac4717e4283326a30e7aaf07022c28065',1,'dao']]]
 ];
