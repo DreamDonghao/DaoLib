@@ -13,7 +13,7 @@ const std::string &dao::ifc::IGeneralPage::getTitle() const {
 }
 
 void dao::ifc::IGeneralPage::clearBatch() const {
-    m_vertexBatch->clearDrawBatches();
+    m_vertexBatch->clear();
 }
 
 void dao::ifc::IGeneralPage::setContext(Context *context) {

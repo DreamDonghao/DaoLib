@@ -13,7 +13,7 @@ namespace test {
     }
 
     void PageA::update() {
-        std::cout << "PageA" << std::endl;
+
     }
 
     void PageA::handleInputEvent(const SDL_Event &event) {

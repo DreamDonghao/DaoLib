@@ -9,10 +9,10 @@ int main(int argc, char *argv[]) {
     app.getContext().emplace<dao::App>(app);
 
     /// 创建窗口
-    app.createWindow(1300, 1300, "设置", dao::Window::WorkState::Foreground, false, true, true, true)
+    app.createWindow(1300, 1300, "设置", dao::Window::WorkState::Foreground, true, true, true, false)
             .addPage(std::make_unique<HelloDaoPage>());
 
-    app.createWindow(300, 300, "2", dao::Window::WorkState::Background, false, false)
+    app.createWindow(300, 300, "2", dao::Window::WorkState::Background, true, false)
             .addPage(std::make_unique<test::PageA>());
     /// 创建托盘
     app.createTray<AppTray>("./assets/textures/atlas/icon.png", "托盘").createTrayMenu();

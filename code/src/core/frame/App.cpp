@@ -27,7 +27,6 @@ namespace dao {
     void App::run() {
         m_running = true;
         while (m_running) {
-            std::cout << "*****" << m_running << std::endl;
             m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {
                 if (window->workState() != Window::WorkState::Closed) {

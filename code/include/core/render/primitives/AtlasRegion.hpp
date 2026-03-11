@@ -8,10 +8,10 @@ namespace dao {
     struct AtlasRegion {
         const char *const atlasPath; ///< 图集区域对应的纹理图集文件路径
         const i32 atlasId;           ///< 图集区域对应的纹理图集编号
-        const f32 normalizedLeft;    ///< 归一化左边界坐标 (0.0 ~ 1.0)
-        const f32 normalizedTop;     ///< 归一化上边界坐标 (0.0 ~ 1.0)
-        const f32 normalizedRight;   ///< 归一化右边界坐标 (0.0 ~ 1.0)
-        const f32 normalizedBottom;  ///< 归一化下边界坐标 (0.0 ~ 1.0)
+        const f32 norLeft;    ///< 归一化左边界坐标 (0.0 ~ 1.0)
+        const f32 norTop;     ///< 归一化上边界坐标 (0.0 ~ 1.0)
+        const f32 norRight;   ///< 归一化右边界坐标 (0.0 ~ 1.0)
+        const f32 norBottom;  ///< 归一化下边界坐标 (0.0 ~ 1.0)
     };
 
     /// @brief 图集区域数据数组

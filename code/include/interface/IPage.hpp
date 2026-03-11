@@ -1,5 +1,5 @@
 #pragma once
-#include <core/render/AtlasTexture.hpp>
+#include <core/render/Texture.hpp>
 union SDL_Event;
 
 namespace dao {

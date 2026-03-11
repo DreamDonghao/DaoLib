@@ -8,9 +8,9 @@ namespace dao {
     /// @details 表示纹理图集中的一个纹理区域，用于在屏幕上渲染指定的纹理部分
     /// 本类型本身不持有实际纹理数据，只保存纹理ID和显示区域信息
     /// 可通过 getAtlasRegion() 获取纹理在图集中的位置和所属图集信息
-    class AtlasTexture {
+    class Texture {
     public:
-        AtlasTexture() = default;
+        Texture() = default;
 
         /// @brief 构造函数，通过指定边界坐标创建纹理
         /// @param textureId 纹理ID
@@ -18,12 +18,12 @@ namespace dao {
         /// @param top 上边界坐标
         /// @param right 右边界坐标
         /// @param bottom 下边界坐标
-        AtlasTexture(TextureID textureId, f32 left, f32 top, f32 right, f32 bottom);
+        Texture(TextureID textureId, f32 left, f32 top, f32 right, f32 bottom);
 
         /// @brief 构造函数，通过边界框创建纹理
         /// @param textureId 纹理ID
         /// @param boundingBox 纹理显示边界框
-        AtlasTexture(TextureID textureId, BoundingBox boundingBox);
+        Texture(TextureID textureId, BoundingBox boundingBox);
 
         /// @brief 设置纹理位置（保持大小不变）
         /// @param x 新的左边界坐标

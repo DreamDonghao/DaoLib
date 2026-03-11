@@ -56,12 +56,16 @@ inline void dao::GlyphAtlas::batchRegisterGlyph(const std::string_view chars) {
     }
 }
 
-dao::BoundingBox dao::GlyphAtlas::getGlyphAtlasRegion(const char32_t charCode) {
-    return {
-        m_glyphs[charCode].pos.x, m_glyphs[charCode].pos.y,
-        m_glyphs[charCode].pos.x + m_glyphs[charCode].pos.w,
-        m_glyphs[charCode].pos.y + m_glyphs[charCode].pos.h,
-    };
+dao::BoundingBox dao::GlyphAtlas::getGlyphAtlasRegion(const utf32char charCode) const {
+    if (const auto it = m_glyphs.find(charCode); it != m_glyphs.end()) {
+        const auto& glyph = it->second;
+        return {
+            glyph.pos.x, glyph.pos.y,
+            glyph.pos.x + glyph.pos.w,
+            glyph.pos.y + glyph.pos.h,
+        };
+    }
+    return BoundingBox{};
 }
 
 dao::f32 dao::GlyphAtlas::getGlyphAspectRatio(const utf32char charCode) const {

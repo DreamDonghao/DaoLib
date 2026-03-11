@@ -7,22 +7,29 @@ std::vector<TextureID> HelloDaoPage::getRegisterTexture() const {
 }
 
 void HelloDaoPage::open() {
-
 }
 
 void HelloDaoPage::close() {
 }
 
-Image image1{1, 50, 150, 150, texture::image};
-dao::Circle circle{500, 500, 100, dao::ColorRGBA("#185ABD"), dao::ColorRGBA("#FE2857")};
+Polygon<4> polygon(
+    Vertex(0, 0, Red),
+    Vertex(100, 0, Red),
+    Vertex(100, 100, Red),
+    Vertex(0, 100, Red)
+);
 
-Polygon a{Vertex{0, 0,}, Vertex{100, 0}, Vertex{100, 100}};
+Image texture1{0, 0, 100, 100, texture::image};
 
 void HelloDaoPage::update() {
-   std::cout << "Hello Dao Page" << std::endl;
+    clearBatch();
+    addToBatch(polygon,texture1);
+    for (int i = 0;i < 10000;++i) {
+        addToBatch(polygon,texture1);
+    }
 }
 
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
-    simpleButton.handleEvent(event);
+
 }

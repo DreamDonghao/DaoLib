@@ -19,6 +19,8 @@ namespace dao {
     public:
         GlyphAtlas() = default;
 
+        GlyphAtlas(GlyphAtlas &glyphAtlas) = delete;
+
         /// @param ttfPath 字体文件
         /// @param glyphSize 字号(磅值)大小,决定渲染效果
         /// @param atlasSize 字形图集大小
@@ -35,7 +37,7 @@ namespace dao {
         void batchRegisterGlyph(std::string_view chars);
 
         /// @brief 获取文字在图集中的位置
-        BoundingBox getGlyphAtlasRegion(char32_t charCode);
+        BoundingBox getGlyphAtlasRegion(char32_t charCode)const;
 
         /// @brief 获取字形图集
         [[nodiscard]] SDL_Surface &getAtlasSurface() const {
