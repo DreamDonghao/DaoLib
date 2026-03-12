@@ -1,9 +1,11 @@
 <map id="code/include/core/render/primitives/ColorRGB.hpp" name="code/include/core/render/primitives/ColorRGB.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="315,5,501,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="384,5,571,45"/>
 <area shape="rect" id="Node000002" href="$better__stl_8hpp.html" title=" " alt="" coords="252,93,425,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,47,360,84,356,81,389,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,48,372,89,370,84,443,43"/>
 <area shape="rect" id="Node000014" title=" " alt="" coords="449,93,505,119"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="427,44,460,81,456,84,423,47"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="480,46,480,79,475,79,475,46"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="529,93,671,119"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="508,43,572,84,569,88,506,48"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,167,91,192"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,121,105,167,103,162,291,116"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="64,240,131,265"/>

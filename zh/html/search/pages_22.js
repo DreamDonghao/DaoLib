@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['合并_0',['7. 合并',['../join.html#autotoc_md14',1,'']]]
+  ['多窗口管理_0',['多窗口管理',['../tutorial.html#autotoc_md56',1,'']]]
 ];

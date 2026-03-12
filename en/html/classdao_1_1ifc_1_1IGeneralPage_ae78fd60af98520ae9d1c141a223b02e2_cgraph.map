@@ -1,5 +1,5 @@
 <map id="dao::ifc::IGeneralPage::clearBatch" name="dao::ifc::IGeneralPage::clearBatch">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,45"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2" title="清理要绘制的纹理图集" alt="" coords="217,5,368,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a059b2827b8e43b2d4437269951496b3a" title="清理要绘制的纹理图集" alt="" coords="217,5,368,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,23,203,23,203,28,169,28"/>
 </map>

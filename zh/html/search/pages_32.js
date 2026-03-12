@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['故障排除_0',['故障排除',['../tutorial.html#autotoc_md72',1,'']]]
+  ['最佳实践_0',['最佳实践',['../tutorial.html#autotoc_md60',1,'']]],
+  ['最小应用示例_1',['最小应用示例',['../tutorial.html#autotoc_md33',1,'']]]
 ];

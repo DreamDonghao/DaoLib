@@ -3,7 +3,7 @@ var classdao_1_1ifc_1_1IPage =
     [ "~IPage", "classdao_1_1ifc_1_1IPage.html#a7cf93058e0e29461319c3d3786c6d0c1", null ],
     [ "close", "classdao_1_1ifc_1_1IPage.html#a733d497ad553e3cce427ac58d5cebb88", null ],
     [ "getContext", "classdao_1_1ifc_1_1IPage.html#a7585dc69db59f945d09879b33f0ddf2c", null ],
-    [ "getRegisterTexture", "classdao_1_1ifc_1_1IPage.html#a949750223d54b78924563c4646d59062", null ],
+    [ "getRegisterTextures", "classdao_1_1ifc_1_1IPage.html#aa3f41d349abc9002260a209f6274c501", null ],
     [ "getTitle", "classdao_1_1ifc_1_1IPage.html#a8476ce06c868ef3c02cbdd4d1cb324f5", null ],
     [ "getWindowController", "classdao_1_1ifc_1_1IPage.html#a73b791f59326c7321eb2329536d29ea5", null ],
     [ "handleInputEvent", "classdao_1_1ifc_1_1IPage.html#acff3a62be8f466bb00ab8cd2e3cd69bd", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['页面_20page_0',['3. 页面 (Page)',['../tutorial.html#autotoc_md39',1,'']]]
+  ['高级功能_0',['高级功能',['../tutorial.html#autotoc_md54',1,'']]]
 ];

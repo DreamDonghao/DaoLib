@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['简介_0',['简介',['../tutorial.html#autotoc_md23',1,'']]]
+  ['系统要求_0',['系统要求',['../tutorial.html#autotoc_md27',1,'']]]
 ];

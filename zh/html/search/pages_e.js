@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['join_20参与_20daolib_20的开发_0',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot; title=&quot;参与 DaoLib 开发&quot;&gt;参与 DaoLib 的开发&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]]
+  ['page_0',['3. 页面 (Page)',['../tutorial.html#autotoc_md39',1,'']]],
+  ['pull_20request_1',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
 ];

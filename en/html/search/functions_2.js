@@ -1,9 +1,9 @@
 var searchData=
 [
   ['callback_0',['callback',['../namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d',1,'dao']]],
-  ['circle_1',['Circle',['../classdao_1_1Circle.html#a97ad181a9384db5b755c93cfffdcbdae',1,'dao::Circle']]],
-  ['clearbatch_2',['clearBatch',['../classdao_1_1ifc_1_1IGeneralPage.html#ae78fd60af98520ae9d1c141a223b02e2',1,'dao::ifc::IGeneralPage']]],
-  ['cleardrawbatches_3',['clearDrawBatches',['../classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2',1,'dao::BatchRenderer']]],
+  ['circle_1',['Circle',['../classdao_1_1Circle.html#a5032711f30f0f1b6de39341193e4152b',1,'dao::Circle']]],
+  ['clear_2',['clear',['../classdao_1_1BatchRenderer.html#a059b2827b8e43b2d4437269951496b3a',1,'dao::BatchRenderer']]],
+  ['clearbatch_3',['clearBatch',['../classdao_1_1ifc_1_1IGeneralPage.html#ae78fd60af98520ae9d1c141a223b02e2',1,'dao::ifc::IGeneralPage']]],
   ['clearupdateflag_4',['clearUpdateFlag',['../classdao_1_1GlyphAtlas.html#a2cdee5e502fad6002385b5605e36469d',1,'dao::GlyphAtlas']]],
   ['close_5',['close',['../classdao_1_1AppController.html#a92399095cf556e7fcf26f69f039a5f18',1,'dao::AppController::close()'],['../classdao_1_1ifc_1_1IPage.html#a733d497ad553e3cce427ac58d5cebb88',1,'dao::ifc::IPage::close()'],['../classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999',1,'dao::ifc::IGeneralPage::close()']]],
   ['color_6',['color',['../classdao_1_1Vertex.html#a1905ea697181a73c9d282a1744add5e9',1,'dao::Vertex']]],

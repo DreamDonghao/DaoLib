@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['val_0',['val',['../classdao_1_1RingVector.html#a691c03f498a1aae3e8ec5e3106f1e854',1,'dao::RingVector::val()'],['../classdao_1_1RingVector.html#af50d442a2cbeb1d77386119799bc0c88',1,'dao::RingVector::val() const']]],
-  ['vertex_1',['Vertex',['../classdao_1_1Vertex.html#aafbe63962bed9d1b689a20d51d78a22b',1,'dao::Vertex']]],
-  ['vertex_2',['vertex',['../classdao_1_1Triangle.html#a93da917bb235259043d8162607c97666',1,'dao::Triangle']]]
+  ['update_0',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1ifc_1_1IPage.html#affbb24599d216bf75947bd3410c3ca9f',1,'dao::ifc::IPage::update()'],['../classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714',1,'dao::ifc::IGeneralPage::update()']]],
+  ['utf8toutf32_1',['utf8ToUtf32',['../namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c',1,'dao']]]
 ];

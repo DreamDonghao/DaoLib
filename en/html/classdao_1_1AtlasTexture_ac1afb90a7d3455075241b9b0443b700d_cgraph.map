@@ -1,5 +1,0 @@
-<map id="dao::AtlasTexture::AtlasTexture" name="dao::AtlasTexture::AtlasTexture">
-<area shape="rect" id="Node000001" title="构造函数，通过指定边界坐标创建纹理" alt="" coords="5,5,148,45"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#af0ea48a2ecb7283399e56c5cd90cdda3" title="构造函数" alt="" coords="196,13,431,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,23,183,23,183,28,148,28"/>
-</map>

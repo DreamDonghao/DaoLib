@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['独立构建_20daolib_0',['独立构建 DaoLib',['../tutorial.html#autotoc_md30',1,'']]]
+  ['的开发_0',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot; title=&quot;参与 DaoLib 开发&quot;&gt;参与 DaoLib 的开发&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]]
 ];

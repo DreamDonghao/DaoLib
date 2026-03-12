@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad87ca6774d182cb9257638b08ba29368"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化页面  <br /></td></tr>
 <tr class="memitem:addd9e6a9b0cf92b15c821abdf17ff999" id="r_addd9e6a9b0cf92b15c821abdf17ff999"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addd9e6a9b0cf92b15c821abdf17ff999">close</a> () override=0</td></tr>
 <tr class="memdesc:addd9e6a9b0cf92b15c821abdf17ff999"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭页面  <br /></td></tr>
-<tr class="memitem:ae0db1db567fcdaa8b9a70569e2395e82" id="r_ae0db1db567fcdaa8b9a70569e2395e82"><td class="memItemLeft">std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae0db1db567fcdaa8b9a70569e2395e82">getRegisterTexture</a> () const override=0</td></tr>
-<tr class="memdesc:ae0db1db567fcdaa8b9a70569e2395e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取加载图集  <br /></td></tr>
+<tr class="memitem:a90d8134e500070cd111a0571297fcebb" id="r_a90d8134e500070cd111a0571297fcebb"><td class="memItemLeft">std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a90d8134e500070cd111a0571297fcebb">getRegisterTextures</a> () const override=0</td></tr>
+<tr class="memdesc:a90d8134e500070cd111a0571297fcebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取要注册的纹理ID列表  <br /></td></tr>
 <tr class="memitem:af835f295dbb1b45f002d170b67d8d714" id="r_af835f295dbb1b45f002d170b67d8d714"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af835f295dbb1b45f002d170b67d8d714">update</a> () override=0</td></tr>
 <tr class="memdesc:af835f295dbb1b45f002d170b67d8d714"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <br /></td></tr>
 <tr class="memitem:a518a9c220d67a9d0f5b8c1e3b8c0218c" id="r_a518a9c220d67a9d0f5b8c1e3b8c0218c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a518a9c220d67a9d0f5b8c1e3b8c0218c">handleInputEvent</a> (const SDL_Event &amp;event) override=0</td></tr>
@@ -270,7 +270,7 @@ template&lt;BatchWritable... Args&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="IGeneralPage_8cpp_source.html#l00015">15</a> of file <a class="el" href="IGeneralPage_8cpp_source.html">IGeneralPage.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>                                          {</div>
-<div class="line"><span class="lineno">   16</span>    m_vertexBatch-&gt;clearDrawBatches();</div>
+<div class="line"><span class="lineno">   16</span>    m_vertexBatch-&gt;clear();</div>
 <div class="line"><span class="lineno">   17</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -278,7 +278,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph.png" border="0" usemap="#aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph" id="aclassdao_1_1ifc_1_1IGeneralPage_ae78fd60af98520ae9d1c141a223b02e2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,169,45"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a510f7aa22be2348bcbe8fa7382c600b2" title="清理要绘制的纹理图集" alt="" coords="217,5,368,45"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a059b2827b8e43b2d4437269951496b3a" title="清理要绘制的纹理图集" alt="" coords="217,5,368,45"/>
 <area shape="poly" title=" " alt="" coords="169,23,203,23,203,28,169,28"/>
 </map>
 </div>
@@ -396,8 +396,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ae0db1db567fcdaa8b9a70569e2395e82" name="ae0db1db567fcdaa8b9a70569e2395e82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0db1db567fcdaa8b9a70569e2395e82">&#9670;&#160;</a></span>getRegisterTexture()</h2>
+<a id="a90d8134e500070cd111a0571297fcebb" name="a90d8134e500070cd111a0571297fcebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d8134e500070cd111a0571297fcebb">&#9670;&#160;</a></span>getRegisterTextures()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +406,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt; dao::ifc::IGeneralPage::getRegisterTexture </td>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt; dao::ifc::IGeneralPage::getRegisterTextures </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -419,9 +419,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>获取加载图集 </p>
+<p>获取要注册的纹理ID列表 </p>
 
-<p>Implements <a class="el" href="classdao_1_1ifc_1_1IPage.html#a949750223d54b78924563c4646d59062">dao::ifc::IPage</a>.</p>
+<p>Implements <a class="el" href="classdao_1_1ifc_1_1IPage.html#aa3f41d349abc9002260a209f6274c501">dao::ifc::IPage</a>.</p>
 
 </div>
 </div>

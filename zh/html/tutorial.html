@@ -164,8 +164,8 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassdao_1_1App_html"><div class="ttname"><a href="classdao_1_1App.html">dao::App</a></div><div class="ttdoc">应用管理类</div><div class="ttdef"><b>定义</b> <a href="App_8hpp_source.html#l00010">App.hpp:10</a></div></div>
-<div class="ttc" id="aclassdao_1_1App_html_a4b5486e80b896ce8140f1f844b403422"><div class="ttname"><a href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">dao::App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">启动应用程序主循环</div><div class="ttdef"><b>定义</b> <a href="App_8cpp_source.html#l00027">App.cpp:27</a></div></div>
-<div class="ttc" id="aclassdao_1_1App_html_a652e22a7a65185638d9e299e625cbd89"><div class="ttname"><a href="classdao_1_1App.html#a652e22a7a65185638d9e299e625cbd89">dao::App::createWindow</a></div><div class="ttdeci">Window &amp; createWindow(i32 width, i32 height, std::string_view tag, Window::WorkState workState, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>定义</b> <a href="App_8cpp_source.html#l00072">App.cpp:72</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a4b5486e80b896ce8140f1f844b403422"><div class="ttname"><a href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">dao::App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">启动应用程序主循环</div><div class="ttdef"><b>定义</b> <a href="App_8cpp_source.html#l00028">App.cpp:28</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a652e22a7a65185638d9e299e625cbd89"><div class="ttname"><a href="classdao_1_1App.html#a652e22a7a65185638d9e299e625cbd89">dao::App::createWindow</a></div><div class="ttdeci">Window &amp; createWindow(i32 width, i32 height, std::string_view tag, Window::WorkState workState, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>定义</b> <a href="App_8cpp_source.html#l00071">App.cpp:71</a></div></div>
 </div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
 第一个完整应用</h3>
 <p>让我们创建一个包含页面和基本组件的完整应用：</p>
@@ -173,7 +173,7 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 自定义页面类</span></div>
 <div class="line"><span class="keyword">class </span>MyPage : <span class="keyword">public</span> dao::GeneralPage {</div>
-<div class="line">    <a class="code hl_class" href="classdao_1_1SimpleButton.html">dao::SimpleButton</a> button{100, 100, 200, 50, [] {</div>
+<div class="line">    dao::SimpleButton button{100, 100, 200, 50, [] {</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;按钮被点击!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    }};</div>
 <div class="line"> </div>
@@ -202,7 +202,7 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> handleInputEvent(<span class="keyword">const</span> SDL_Event&amp; event)<span class="keyword"> override </span>{</div>
 <div class="line">        <span class="comment">// 处理输入事件</span></div>
-<div class="line">        button.<a class="code hl_function" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">handleEvent</a>(event);</div>
+<div class="line">        button.handleEvent(event);</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
@@ -216,8 +216,6 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">    app.<a class="code hl_function" href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">run</a>();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdao_1_1SimpleButton_html"><div class="ttname"><a href="classdao_1_1SimpleButton.html">dao::SimpleButton</a></div><div class="ttdoc">简单按钮组件</div><div class="ttdef"><b>定义</b> <a href="SimpleButton_8hpp_source.html#l00011">SimpleButton.hpp:11</a></div></div>
-<div class="ttc" id="aclassdao_1_1SimpleButton_html_adad10a14c27691758bd8754e688e25d3"><div class="ttname"><a href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">dao::SimpleButton::handleEvent</a></div><div class="ttdeci">void handleEvent(const SDL_Event &amp;event) override</div><div class="ttdoc">处理鼠标事件</div><div class="ttdef"><b>定义</b> <a href="SimpleButton_8cpp_source.html#l00011">SimpleButton.cpp:11</a></div></div>
 <div class="ttc" id="aclassdao_1_1Window_html_a30b6535d63f2abf742c6c83a6e35d354"><div class="ttname"><a href="classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354">dao::Window::addPage</a></div><div class="ttdeci">Window &amp; addPage(std::unique_ptr&lt; ifc::IPage &gt; &amp;&amp;page)</div><div class="ttdoc">添加页面</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00045">Window.cpp:45</a></div></div>
 <div class="ttc" id="anamespacedao_html_a669d1540132621e770829fa49a5f5787a716f6b30598ba30945d84485e61c1027"><div class="ttname"><a href="namespacedao.html#a669d1540132621e770829fa49a5f5787a716f6b30598ba30945d84485e61c1027">dao::AppCommandType::close</a></div><div class="ttdeci">@ close</div><div class="ttdoc">关闭应用</div><div class="ttdef"><b>定义</b> <a href="AppController_8hpp_source.html#l00010">AppController.hpp:10</a></div></div>
 </div><!-- fragment --><hr  />
@@ -312,7 +310,7 @@ DaoLib 从零基础到精通教程</h1>
 <h4 class="doxsection"><a class="anchor" id="autotoc_md41"></a>
 按钮 (SimpleButton)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建按钮</span></div>
-<div class="line"><a class="code hl_class" href="classdao_1_1SimpleButton.html">dao::SimpleButton</a> button{</div>
+<div class="line">dao::SimpleButton button{</div>
 <div class="line">    x, y, width, height,          <span class="comment">// 位置和尺寸</span></div>
 <div class="line">    [] {                           <span class="comment">// 点击回调</span></div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;按钮点击&quot;</span> &lt;&lt; std::endl;</div>
@@ -321,35 +319,28 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 处理事件</span></div>
-<div class="line">button.<a class="code hl_function" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">handleEvent</a>(event);</div>
+<div class="line">button.handleEvent(event);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 检查状态</span></div>
-<div class="line"><span class="keywordflow">if</span> (button.<a class="code hl_function" href="classdao_1_1SimpleButton.html#a60694f0c52906c8efda2aae008cd875b">isEnable</a>()) {</div>
+<div class="line"><span class="keywordflow">if</span> (button.isEnable()) {</div>
 <div class="line">    <span class="comment">// 按钮可用</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 设置状态</span></div>
-<div class="line">button.<a class="code hl_function" href="classdao_1_1SimpleButton.html#aefd4a618b8982823212c59352cd7aedf">setStatus</a>(<a class="code hl_enumvalue" href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">dao::ButtonStatus::Disabled</a>);</div>
-<div class="ttc" id="aclassdao_1_1SimpleButton_html_a60694f0c52906c8efda2aae008cd875b"><div class="ttname"><a href="classdao_1_1SimpleButton.html#a60694f0c52906c8efda2aae008cd875b">dao::SimpleButton::isEnable</a></div><div class="ttdeci">bool isEnable() const override</div><div class="ttdoc">检查按钮是否启用</div><div class="ttdef"><b>定义</b> <a href="SimpleButton_8hpp_source.html#l00064">SimpleButton.hpp:64</a></div></div>
-<div class="ttc" id="aclassdao_1_1SimpleButton_html_aefd4a618b8982823212c59352cd7aedf"><div class="ttname"><a href="classdao_1_1SimpleButton.html#aefd4a618b8982823212c59352cd7aedf">dao::SimpleButton::setStatus</a></div><div class="ttdeci">void setStatus(const ButtonStatus status)</div><div class="ttdoc">设置状态</div><div class="ttdef"><b>定义</b> <a href="SimpleButton_8hpp_source.html#l00076">SimpleButton.hpp:76</a></div></div>
+<div class="line">button.setStatus(<a class="code hl_enumvalue" href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">dao::ButtonStatus::Disabled</a>);</div>
 <div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0">dao::ButtonStatus::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">自然</div><div class="ttdef"><b>定义</b> <a href="IButton_8hpp_source.html#l00008">IButton.hpp:8</a></div></div>
 <div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241"><div class="ttname"><a href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">dao::ButtonStatus::Disabled</a></div><div class="ttdeci">@ Disabled</div><div class="ttdoc">禁用</div><div class="ttdef"><b>定义</b> <a href="IButton_8hpp_source.html#l00007">IButton.hpp:7</a></div></div>
 </div><!-- fragment --><h4 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
 输入框 (InputBox)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建输入框</span></div>
-<div class="line"><a class="code hl_class" href="classdao_1_1InputBox.html">dao::InputBox</a> inputBox{x, y, width, height, <a class="code hl_enumvalue" href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">dao::InputStatus::Normal</a>};</div>
+<div class="line">dao::InputBox inputBox{x, y, width, height, dao::InputStatus::Normal};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 处理事件</span></div>
-<div class="line">inputBox.<a class="code hl_function" href="classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406">handleEvent</a>(event);</div>
+<div class="line">inputBox.handleEvent(event);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 获取输入内容</span></div>
-<div class="line">std::u32string text = inputBox.<a class="code hl_function" href="classdao_1_1InputBox.html#aabfa1799b460b92da6223840bec4827d">getText</a>();</div>
-<div class="line"><span class="keywordtype">int</span> cursorPos = inputBox.<a class="code hl_function" href="classdao_1_1InputBox.html#a3c3924b780e16af37e536a3269287907">getCursorPos</a>();</div>
-<div class="ttc" id="aclassdao_1_1InputBox_html"><div class="ttname"><a href="classdao_1_1InputBox.html">dao::InputBox</a></div><div class="ttdoc">输入框组件</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00019">InputBox.hpp:19</a></div></div>
-<div class="ttc" id="aclassdao_1_1InputBox_html_a3c3924b780e16af37e536a3269287907"><div class="ttname"><a href="classdao_1_1InputBox.html#a3c3924b780e16af37e536a3269287907">dao::InputBox::getCursorPos</a></div><div class="ttdeci">int getCursorPos() const</div><div class="ttdoc">获取光标位置</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00108">InputBox.hpp:108</a></div></div>
-<div class="ttc" id="aclassdao_1_1InputBox_html_aabfa1799b460b92da6223840bec4827d"><div class="ttname"><a href="classdao_1_1InputBox.html#aabfa1799b460b92da6223840bec4827d">dao::InputBox::getText</a></div><div class="ttdeci">const std::u32string &amp; getText() const</div><div class="ttdoc">获取输入文本</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00114">InputBox.hpp:114</a></div></div>
-<div class="ttc" id="aclassdao_1_1InputBox_html_ad0bc0068c55bafb1ece54db487e42406"><div class="ttname"><a href="classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406">dao::InputBox::handleEvent</a></div><div class="ttdeci">void handleEvent(const SDL_Event &amp;event)</div><div class="ttdoc">处理鼠标和键盘事件</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00034">InputBox.hpp:34</a></div></div>
-<div class="ttc" id="anamespacedao_html_ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0">dao::InputStatus::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">自然</div><div class="ttdef"><b>定义</b> <a href="InputBox_8hpp_source.html#l00010">InputBox.hpp:10</a></div></div>
+<div class="line">std::u32string text = inputBox.getText();</div>
+<div class="line"><span class="keywordtype">int</span> cursorPos = inputBox.getCursorPos();</div>
 </div><!-- fragment --><h4 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
 文本 (Text)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建文本</span></div>
@@ -361,13 +352,10 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 修改文本属性</span></div>
-<div class="line">text.<a class="code hl_function" href="classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9">setContent</a>(U<span class="stringliteral">&quot;新内容&quot;</span>);</div>
-<div class="line">text.<a class="code hl_function" href="classdao_1_1Text.html#abb108bc32247bbc2f372e0e6e410624e">setColor</a>(dao::hexToRGBA(<span class="stringliteral">&quot;#00FF00&quot;</span>));</div>
-<div class="line">text.<a class="code hl_function" href="classdao_1_1Text.html#a5714ba9f79bad56fb8ad340ffa7bc632">setFontSize</a>(48.0f);</div>
-<div class="ttc" id="aclassdao_1_1Text_html"><div class="ttname"><a href="classdao_1_1Text.html">dao::Text</a></div><div class="ttdoc">文本渲染对象</div><div class="ttdef"><b>定义</b> <a href="Text_8hpp_source.html#l00010">Text.hpp:10</a></div></div>
-<div class="ttc" id="aclassdao_1_1Text_html_a4c26c88b3f58a5bcbf95272a52fc0ba9"><div class="ttname"><a href="classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9">dao::Text::setContent</a></div><div class="ttdeci">void setContent(std::u32string content)</div><div class="ttdoc">设置文本内容</div><div class="ttdef"><b>定义</b> <a href="Text_8hpp_source.html#l00040">Text.hpp:40</a></div></div>
-<div class="ttc" id="aclassdao_1_1Text_html_a5714ba9f79bad56fb8ad340ffa7bc632"><div class="ttname"><a href="classdao_1_1Text.html#a5714ba9f79bad56fb8ad340ffa7bc632">dao::Text::setFontSize</a></div><div class="ttdeci">void setFontSize(const f32 fontSize)</div><div class="ttdoc">设置字体大小</div><div class="ttdef"><b>定义</b> <a href="Text_8hpp_source.html#l00044">Text.hpp:44</a></div></div>
-<div class="ttc" id="aclassdao_1_1Text_html_abb108bc32247bbc2f372e0e6e410624e"><div class="ttname"><a href="classdao_1_1Text.html#abb108bc32247bbc2f372e0e6e410624e">dao::Text::setColor</a></div><div class="ttdeci">void setColor(const ColorRGBA &amp;color)</div><div class="ttdoc">设置文本颜色</div><div class="ttdef"><b>定义</b> <a href="Text_8hpp_source.html#l00048">Text.hpp:48</a></div></div>
+<div class="line">text.setContent(U<span class="stringliteral">&quot;新内容&quot;</span>);</div>
+<div class="line">text.setColor(dao::hexToRGBA(<span class="stringliteral">&quot;#00FF00&quot;</span>));</div>
+<div class="line">text.setFontSize(48.0f);</div>
+<div class="ttc" id="aclassdao_1_1Text_html"><div class="ttname"><a href="classdao_1_1Text.html">dao::Text</a></div><div class="ttdef"><b>定义</b> <a href="Text_8hpp_source.html#l00008">Text.hpp:8</a></div></div>
 </div><!-- fragment --><h4 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
 图片 (Image)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建图片（需要预加载纹理）</span></div>
@@ -377,16 +365,16 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">std::vector&lt;dao::i32&gt; getRegisterTexture()<span class="keyword"> const override </span>{</div>
 <div class="line">    <span class="keywordflow">return</span> {textureId};</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdao_1_1Image_html"><div class="ttname"><a href="classdao_1_1Image.html">dao::Image</a></div><div class="ttdoc">图像组件</div><div class="ttdef"><b>定义</b> <a href="Image_8hpp_source.html#l00008">Image.hpp:8</a></div></div>
+<div class="ttc" id="aclassdao_1_1Image_html"><div class="ttname"><a href="classdao_1_1Image.html">dao::Image</a></div><div class="ttdef"><b>定义</b> <a href="Image_8hpp_source.html#l00008">Image.hpp:8</a></div></div>
 </div><!-- fragment --><h4 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 矩形 (Rectangle)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建矩形</span></div>
-<div class="line">dao::Rectangle rect{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#3498db&quot;</span>)};</div>
+<div class="line"><a class="code hl_class" href="classdao_1_1Rectangle.html">dao::Rectangle</a> rect{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#3498db&quot;</span>)};</div>
+<div class="ttc" id="aclassdao_1_1Rectangle_html"><div class="ttname"><a href="classdao_1_1Rectangle.html">dao::Rectangle</a></div><div class="ttdoc">矩形图形组件</div><div class="ttdef"><b>定义</b> <a href="Rectangle_8hpp_source.html#l00011">Rectangle.hpp:11</a></div></div>
 </div><!-- fragment --><h4 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
-纹理 (AtlasTexture)</h4>
+纹理 (Texture)</h4>
 <div class="fragment"><div class="line"><span class="comment">// 创建纹理实例</span></div>
-<div class="line"><a class="code hl_class" href="classdao_1_1AtlasTexture.html">dao::AtlasTexture</a> texture{textureId, x, y, width, height};</div>
-<div class="ttc" id="aclassdao_1_1AtlasTexture_html"><div class="ttname"><a href="classdao_1_1AtlasTexture.html">dao::AtlasTexture</a></div><div class="ttdoc">图集纹理</div><div class="ttdef"><b>定义</b> <a href="AtlasTexture_8hpp_source.html#l00011">AtlasTexture.hpp:11</a></div></div>
+<div class="line">dao::Texture texture{textureId, x, y, width, height};</div>
 </div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
 5. 渲染批处理 (VertexBatchBuilder)</h3>
 <p><span class="tt">VertexBatchBuilder</span> 负责高效的批处理渲染。</p>
@@ -455,7 +443,7 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">class </span>CounterPage : <span class="keyword">public</span> dao::GeneralPage {</div>
-<div class="line">    <a class="code hl_class" href="classdao_1_1SimpleButton.html">dao::SimpleButton</a> incrementBtn{100, 100, 200, 50, [<span class="keyword">this</span>] {</div>
+<div class="line">    dao::SimpleButton incrementBtn{100, 100, 200, 50, [<span class="keyword">this</span>] {</div>
 <div class="line">        <span class="comment">// 增加计数</span></div>
 <div class="line">        getContext().getState&lt;CounterState&gt;().count++;</div>
 <div class="line">    }};</div>
@@ -484,15 +472,15 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">    <span class="keywordtype">void</span> update()<span class="keyword"> override </span>{</div>
 <div class="line">        <span class="comment">// 更新计数显示</span></div>
 <div class="line">        <span class="keywordtype">int</span> count = getContext().getState&lt;CounterState&gt;().count;</div>
-<div class="line">        countText.<a class="code hl_function" href="classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9">setContent</a>(std::to_wstring(count));</div>
+<div class="line">        countText.setContent(std::to_wstring(count));</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// 渲染组件</span></div>
 <div class="line">        addToBatch(incrementBtn, decrementBtn, countText);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> handleInputEvent(<span class="keyword">const</span> SDL_Event&amp; event)<span class="keyword"> override </span>{</div>
-<div class="line">        incrementBtn.<a class="code hl_function" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">handleEvent</a>(event);</div>
-<div class="line">        decrementBtn.<a class="code hl_function" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">handleEvent</a>(event);</div>
+<div class="line">        incrementBtn.handleEvent(event);</div>
+<div class="line">        decrementBtn.handleEvent(event);</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
@@ -517,13 +505,13 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">class </span>LoginPage : <span class="keyword">public</span> dao::GeneralPage {</div>
-<div class="line">    <a class="code hl_class" href="classdao_1_1InputBox.html">dao::InputBox</a> usernameBox{100, 100, 300, 40};</div>
+<div class="line">    dao::InputBox usernameBox{100, 100, 300, 40};</div>
 <div class="line">    dao::InputBox passwordBox{100, 200, 300, 40};</div>
 <div class="line"> </div>
 <div class="line">    dao::SimpleButton loginBtn{100, 300, 150, 50, [<span class="keyword">this</span>] {</div>
 <div class="line">        <span class="keyword">auto</span>&amp; creds = getContext().getState&lt;UserCredentials&gt;();</div>
-<div class="line">        creds.username = usernameBox.<a class="code hl_function" href="classdao_1_1InputBox.html#aabfa1799b460b92da6223840bec4827d">getText</a>();</div>
-<div class="line">        creds.password = passwordBox.<a class="code hl_function" href="classdao_1_1InputBox.html#aabfa1799b460b92da6223840bec4827d">getText</a>();</div>
+<div class="line">        creds.username = usernameBox.getText();</div>
+<div class="line">        creds.password = passwordBox.getText();</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// 这里添加登录验证逻辑</span></div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;登录尝试: &quot;</span></div>
@@ -553,9 +541,9 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> handleInputEvent(<span class="keyword">const</span> SDL_Event&amp; event)<span class="keyword"> override </span>{</div>
-<div class="line">        usernameBox.<a class="code hl_function" href="classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406">handleEvent</a>(event);</div>
-<div class="line">        passwordBox.<a class="code hl_function" href="classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406">handleEvent</a>(event);</div>
-<div class="line">        loginBtn.<a class="code hl_function" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">handleEvent</a>(event);</div>
+<div class="line">        usernameBox.handleEvent(event);</div>
+<div class="line">        passwordBox.handleEvent(event);</div>
+<div class="line">        loginBtn.handleEvent(event);</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
@@ -663,7 +651,7 @@ DaoLib 从零基础到精通教程</h1>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> writeToBatch(dao::VertexBatchBuilder&amp; builder)<span class="keyword"> const override </span>{</div>
 <div class="line">        <span class="comment">// 绘制背景</span></div>
-<div class="line">        dao::Rectangle bg{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#ecf0f1&quot;</span>)};</div>
+<div class="line">        <a class="code hl_class" href="classdao_1_1Rectangle.html">dao::Rectangle</a> bg{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#ecf0f1&quot;</span>)};</div>
 <div class="line">        builder.addToBatch(bg);</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// 绘制进度条</span></div>
@@ -734,7 +722,7 @@ DaoLib 从零基础到精通教程</h1>
 Q1: 如何调试 UI 布局？</h3>
 <p>使用 <span class="tt">BoundingBox</span> 辅助调试：</p>
 <div class="fragment"><div class="line"><span class="comment">// 在组件周围绘制调试边框</span></div>
-<div class="line">dao::Rectangle debugRect{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#FF0000&quot;</span>), <span class="keyword">false</span>};</div>
+<div class="line"><a class="code hl_class" href="classdao_1_1Rectangle.html">dao::Rectangle</a> debugRect{x, y, width, height, dao::hexToRGBA(<span class="stringliteral">&quot;#FF0000&quot;</span>), <span class="keyword">false</span>};</div>
 <div class="line">addToBatch(debugRect);</div>
 </div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md68"></a>
 Q2: 如何实现页面切换？</h3>

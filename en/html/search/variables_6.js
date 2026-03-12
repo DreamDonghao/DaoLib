@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['regions_0',['regions',['../namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e',1,'dao']]],
-  ['rgbnorm_1',['rgbNorm',['../namespacedao.html#a2d1ee99dbefdf56a0d914aafecb40b26',1,'dao']]]
+  ['type_0',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]]
 ];

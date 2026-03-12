@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['矩形_20rectangle_0',['矩形 (Rectangle)',['../tutorial.html#autotoc_md45',1,'']]]
+  ['窗口_20window_0',['2. 窗口 (Window)',['../tutorial.html#autotoc_md38',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['提交_20pull_20request_0',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
+  ['故障排除_0',['故障排除',['../tutorial.html#autotoc_md72',1,'']]]
 ];

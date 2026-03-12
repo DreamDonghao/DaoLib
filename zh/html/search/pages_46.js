@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['资源管理_0',['1. 资源管理',['../tutorial.html#autotoc_md61',1,'']]]
+  ['运行时问题_0',['运行时问题',['../tutorial.html#autotoc_md74',1,'']]]
 ];

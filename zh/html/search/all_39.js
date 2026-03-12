@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['托盘系统_0',['托盘系统',['../tutorial.html#autotoc_md55',1,'']]]
+  ['按钮_20simplebutton_0',['按钮 (SimpleButton)',['../tutorial.html#autotoc_md41',1,'']]]
 ];

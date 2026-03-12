@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['Bug List',['../bug.html',1,'']]]
+  ['merge_0',['7. Merge',['../join.html#autotoc_md14',1,'']]]
 ];

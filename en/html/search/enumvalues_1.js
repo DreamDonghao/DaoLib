@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['b_0',['B',['../classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a263b802cbd08339d9f8a33c707a940e1',1,'dao::Triangle']]],
-  ['background_1',['Background',['../classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419',1,'dao::Window']]]
+  ['close_0',['close',['../namespacedao.html#a669d1540132621e770829fa49a5f5787a716f6b30598ba30945d84485e61c1027',1,'dao']]],
+  ['closed_1',['Closed',['../classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e',1,'dao::Window']]]
 ];

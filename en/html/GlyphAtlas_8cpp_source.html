@@ -96,88 +96,123 @@ $(function(){initNavTree('GlyphAtlas_8cpp_source.html','',''); });
 <a href="GlyphAtlas_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">core</span><span class="preprocessor">/</span><span class="preprocessor">render</span><span class="preprocessor">/</span><span class="preprocessor">primitives</span><span class="preprocessor">/</span><span class="preprocessor">GlyphAtlas</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a91647ff29eb84224001b4d73de9eacd5">    3</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::GlyphAtlas(<span class="keyword">const</span> std::string_view &amp;ttfPath, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> glyphSize, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atlasSize): m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">if</span> (!m_font) {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="keyword">const</span> std::string errorMsg(ttfPath);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        DAO_ERROR_LOG(<span class="stringliteral">&quot;字体文件加载失败:&quot;</span> + errorMsg);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    SDL_FillSurfaceRect(</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        m_atlasSurface, <span class="keywordtype">nullptr</span>,</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        SDL_MapRGBA(</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            SDL_GetPixelFormatDetails(m_atlasSurface-&gt;format),</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordtype">nullptr</span>, 0, 0, 0, 0</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        )</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    );</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a2c107901ededcd60f40f2061295b727a">    3</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::~<a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a2c107901ededcd60f40f2061295b727a">GlyphAtlas</a>() {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keywordflow">if</span> (m_font) {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        TTF_CloseFont(m_font);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">if</span> (m_atlas) {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        SDL_DestroySurface(m_atlas);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a9d0d7dc2944e7ceb563ca1741fa88e5e">   18</a></span><span class="keywordtype">bool</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::registerGlyph(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (m_glyphs.contains(charCode)) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    m_isUpdated = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface-&gt;h);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    m_glyphAspectRatios.emplace(charCode, ratio(glyphSurface-&gt;w, m_cursor.rowHeight));</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (m_cursor.x + glyphSurface-&gt;w &gt; m_atlasSize) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        m_cursor.x = 0;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        m_cursor.y += m_cursor.rowHeight;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        m_cursor.rowHeight = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface-&gt;w, glyphSurface-&gt;h};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    SDL_BlitSurface(glyphSurface, <span class="keywordtype">nullptr</span>, m_atlasSurface, &amp;dst);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> minx, maxx, miny, maxy, advance;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    TTF_GetGlyphMetrics(m_font, charCode, &amp;minx, &amp;maxx, &amp;miny, &amp;maxy, &amp;advance);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    Glyph glyph{};</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    glyph.size = {<span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(glyphSurface-&gt;w), <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(glyphSurface-&gt;h)};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    glyph.bearing = {<span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(minx), <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(maxy)};</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    glyph.advance = <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(advance);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    glyph.pos = {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        ratio(dst.x, m_atlasSize), ratio(dst.y, m_atlasSize),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ratio(dst.w, m_atlasSize), ratio(dst.h, m_atlasSize)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    m_glyphs.emplace(charCode, glyph);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    m_cursor.x += glyphSurface-&gt;w;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    SDL_DestroySurface(glyphSurface);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a98d02c276d95f3e791dd5fa924b47588">   12</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::GlyphAtlas(<span class="keyword">const</span> std::string_view &amp;ttfPath, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> glyphSize, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atlasSize)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      m_atlas(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (!m_font) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">const</span> std::string errorMsg(ttfPath);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        DAO_ERROR_LOG(<span class="stringliteral">&quot;字体文件加载失败:&quot;</span> + errorMsg);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    SDL_FillSurfaceRect(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        m_atlas, <span class="keywordtype">nullptr</span>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        SDL_MapRGBA(SDL_GetPixelFormatDetails(m_atlas-&gt;format), <span class="keywordtype">nullptr</span>, 0, 0, 0, 0)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    );</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e">   25</a></span><span class="keywordtype">void</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::registerGlyph(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface-&gt;h);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    m_glyphAspectRatios.emplace(charCode, ratio(glyphSurface-&gt;w, m_cursor.rowHeight));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span> (m_cursor.x + glyphSurface-&gt;w &gt; m_atlasSize) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        m_cursor.x = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        m_cursor.y += m_cursor.rowHeight;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        m_cursor.rowHeight = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface-&gt;w, glyphSurface-&gt;h};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    SDL_BlitSurface(glyphSurface, <span class="keywordtype">nullptr</span>, m_atlas, &amp;dst);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> minx, maxx, miny, maxy, advance;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TTF_GetGlyphMetrics(m_font, charCode, &amp;minx, &amp;maxx, &amp;miny, &amp;maxy, &amp;advance);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Glyph glyph{};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    glyph.size = {<span class="keyword">static_cast</span>&lt;<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&gt;(glyphSurface-&gt;w), <span class="keyword">static_cast</span>&lt;<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&gt;(glyphSurface-&gt;h)};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    glyph.bearing = {<span class="keyword">static_cast</span>&lt;<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&gt;(minx), <span class="keyword">static_cast</span>&lt;<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&gt;(maxy)};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    glyph.advance = <span class="keyword">static_cast</span>&lt;<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&gt;(advance);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    glyph.pos = {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        ratio(dst.x, m_atlasSize), ratio(dst.y, m_atlasSize),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        ratio(dst.w, m_atlasSize), ratio(dst.h, m_atlasSize)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    };</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    m_glyphs.emplace(charCode, glyph);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    m_cursor.x += glyphSurface-&gt;w;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#abdbf3abfc793ce25bcfc6e42f03a81f0">   53</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::batchRegisterGlyph(<span class="keyword">const</span> std::string_view chars) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;ch: chars) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        registerGlyph(ch);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    SDL_DestroySurface(glyphSurface);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    m_isUpdated = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a1b500c6d6a06092f8522ae1a37f062a6">   59</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1BoundingBox.html">BoundingBox</a> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::getGlyphAtlasRegion(<span class="keyword">const</span> <span class="keyword">char32_t</span> charCode) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        m_glyphs[charCode].pos.x, m_glyphs[charCode].pos.y,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        m_glyphs[charCode].pos.x + m_glyphs[charCode].pos.w,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        m_glyphs[charCode].pos.y + m_glyphs[charCode].pos.h,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    };</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50">   57</a></span><span class="keywordtype">bool</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::tryRegisterGlyph(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (m_glyphs.contains(charCode)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    registerGlyph(charCode);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">   67</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::getGlyphAspectRatio(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) <span class="keyword">const</span> {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphAspectRatios.find(charCode); it != m_glyphAspectRatios.end()) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> it-&gt;second;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a81129592c241243a145647d4b4e9851e">   65</a></span><span class="keywordtype">void</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::batchRegisterGlyph(<span class="keyword">const</span> utf32str_view chars) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;ch: chars) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        registerGlyph(ch);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 </div>
-<div class="ttc" id="aclassdao_1_1BoundingBox_html"><div class="ttname"><a href="classdao_1_1BoundingBox.html">dao::BoundingBox</a></div><div class="ttdoc">边界框</div><div class="ttdef"><b>Definition</b> <a href="BoundingBox_8hpp_source.html#l00007">BoundingBox.hpp:7</a></div></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a47c32591bd5ffa5b2ca0df3d9f43a1c0">   71</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1BoundingBox.html">BoundingBox</a> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::getGlyphAtlasRegion(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;glyph = it-&gt;second;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            glyph.pos.x, glyph.pos.y,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            glyph.pos.x + glyph.pos.w,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            glyph.pos.y + glyph.pos.h,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classdao_1_1BoundingBox.html">BoundingBox</a><a class="code hl_function" href="classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54">{</a><a class="code hl_function" href="classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54">}</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a53575f88607a0295aedb60e09130f005">   83</a></span><a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a53575f88607a0295aedb60e09130f005">SDL_Surface</a> &amp;<a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::<a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a53575f88607a0295aedb60e09130f005">getAtlasSurface</a>() <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> *m_atlas;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8">   87</a></span><a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::getGlyphAspectRatio(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> ratio(it-&gt;second.size.x, it-&gt;second.size.y);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> 1.0f;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classdao_1_1GlyphAtlas.html#a7c2ff714715df4f19b4b77899efddf00">   94</a></span><span class="keywordtype">bool</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_class" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a>::isLoaded(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> m_glyphs.contains(charCode);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+</div>
+<div class="ttc" id="aclassdao_1_1BoundingBox_html"><div class="ttname"><a href="classdao_1_1BoundingBox.html">dao::BoundingBox</a></div><div class="ttdoc">边界框</div><div class="ttdef"><b>Definition</b> <a href="BoundingBox_8hpp_source.html#l00006">BoundingBox.hpp:6</a></div></div>
+<div class="ttc" id="aclassdao_1_1BoundingBox_html_a93a90662a60c5440bff020c1b68acf54"><div class="ttname"><a href="classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54">dao::BoundingBox::BoundingBox</a></div><div class="ttdeci">BoundingBox()=default</div></div>
 <div class="ttc" id="aclassdao_1_1GlyphAtlas_html"><div class="ttname"><a href="classdao_1_1GlyphAtlas.html">dao::GlyphAtlas</a></div><div class="ttdoc">字形图集</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8hpp_source.html#l00010">GlyphAtlas.hpp:10</a></div></div>
-<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>Definition</b> <a href="SimpleButton_8hpp_source.html#l00008">SimpleButton.hpp:8</a></div></div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a2c107901ededcd60f40f2061295b727a"><div class="ttname"><a href="classdao_1_1GlyphAtlas.html#a2c107901ededcd60f40f2061295b727a">dao::GlyphAtlas::~GlyphAtlas</a></div><div class="ttdeci">~GlyphAtlas()</div><div class="ttdef"><b>Definition</b> <a href="#l00003">GlyphAtlas.cpp:3</a></div></div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a53575f88607a0295aedb60e09130f005"><div class="ttname"><a href="classdao_1_1GlyphAtlas.html#a53575f88607a0295aedb60e09130f005">dao::GlyphAtlas::getAtlasSurface</a></div><div class="ttdeci">SDL_Surface &amp; getAtlasSurface() const</div><div class="ttdoc">获取字形图集</div><div class="ttdef"><b>Definition</b> <a href="#l00083">GlyphAtlas.cpp:83</a></div></div>
+<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>Definition</b> <a href="App_8cpp_source.html#l00005">App.cpp:5</a></div></div>
 <div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00008">type.hpp:8</a></div></div>
 <div class="ttc" id="anamespacedao_html_a97a8fc44aad6375de4f486418d03b30d"><div class="ttname"><a href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">dao::f32</a></div><div class="ttdeci">float f32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00014">type.hpp:14</a></div></div>
 <div class="ttc" id="anamespacedao_html_addc09e7009536ce405ecc985ece7673c"><div class="ttname"><a href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">dao::utf32char</a></div><div class="ttdeci">char32_t utf32char</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00017">type.hpp:17</a></div></div>

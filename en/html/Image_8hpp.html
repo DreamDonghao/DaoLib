@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DaoUI: code/include/component/Image.hpp File Reference</title>
+<title>DaoUI: code/include/components/Image.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,104 +93,81 @@ $(function(){initNavTree('Image_8hpp.html','',''); });
   <div class="headertitle"><div class="title">Image.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="AtlasTexture_8hpp_source.html">core/render/AtlasTexture.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="IDrawable_8hpp_source.html">interface/IDrawable.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="BatchRenderer_8hpp_source.html">core/render/BatchRenderer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Vertex_8hpp_source.html">core/render/primitives/Vertex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="IDrawable_8hpp_source.html">core/render/IDrawable.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="AtlasRegion_8hpp_source.html">core/render/primitives/AtlasRegion.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Image.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="Image_8hpp__incl.png" border="0" usemap="#acode_2include_2component_2Image_8hpp" loading="lazy" alt=""/></div>
-<map name="acode_2include_2component_2Image_8hpp" id="acode_2include_2component_2Image_8hpp">
-<area shape="rect" title=" " alt="" coords="326,5,507,45"/>
-<area shape="rect" href="AtlasTexture_8hpp.html" title=" " alt="" coords="133,240,343,265"/>
-<area shape="poly" title=" " alt="" coords="404,47,258,231,254,228,400,44"/>
-<area shape="rect" href="IDrawable_8hpp.html" title=" " alt="" coords="402,93,581,119"/>
-<area shape="poly" title=" " alt="" coords="437,44,473,81,469,85,433,47"/>
-<area shape="rect" href="MappedRegion_8hpp.html" title=" " alt="" coords="65,321,273,346"/>
-<area shape="poly" title=" " alt="" coords="230,267,190,312,186,309,226,264"/>
-<area shape="rect" href="BoundingBox_8hpp.html" title=" " alt="" coords="135,401,333,427"/>
-<area shape="poly" title=" " alt="" coords="180,344,218,389,213,392,176,348"/>
-<area shape="rect" title=" " alt="" coords="5,401,60,427"/>
-<area shape="poly" title=" " alt="" coords="150,348,66,397,63,392,147,344"/>
-<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="673,475,846,500"/>
-<area shape="poly" title=" " alt="" coords="319,424,661,470,661,475,318,429"/>
-<area shape="rect" title=" " alt="" coords="426,548,511,573"/>
-<area shape="poly" title=" " alt="" coords="713,503,525,548,524,543,712,497"/>
-<area shape="rect" title=" " alt="" coords="485,621,551,647"/>
-<area shape="poly" title=" " alt="" coords="689,503,632,520,603,534,577,550,550,579,531,610,526,607,546,575,574,546,601,529,630,515,688,497"/>
-<area shape="rect" href="Log_8hpp.html" title=" " alt="" coords="587,548,721,573"/>
-<area shape="poly" title=" " alt="" coords="744,502,684,543,681,538,741,498"/>
-<area shape="rect" title=" " alt="" coords="725,621,805,647"/>
-<area shape="poly" title=" " alt="" coords="762,500,766,608,761,608,757,501"/>
-<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="797,548,937,573"/>
-<area shape="poly" title=" " alt="" coords="778,498,840,538,837,543,775,502"/>
-<area shape="rect" title=" " alt="" coords="962,548,1039,573"/>
-<area shape="poly" title=" " alt="" coords="799,497,949,542,948,547,797,503"/>
-<area shape="rect" title=" " alt="" coords="1063,548,1135,573"/>
-<area shape="poly" title=" " alt="" coords="819,497,1050,545,1049,550,818,503"/>
-<area shape="poly" title=" " alt="" coords="633,576,553,617,551,613,631,571"/>
-<area shape="poly" title=" " alt="" coords="673,571,736,611,733,616,670,576"/>
-<area shape="rect" title=" " alt="" coords="576,621,700,647"/>
-<area shape="poly" title=" " alt="" coords="654,574,646,609,641,608,649,573"/>
-<area shape="rect" title=" " alt="" coords="829,621,895,647"/>
-<area shape="poly" title=" " alt="" coords="869,574,867,608,861,608,864,573"/>
-<area shape="rect" title=" " alt="" coords="919,621,978,647"/>
-<area shape="poly" title=" " alt="" coords="882,571,927,610,923,614,879,575"/>
-<area shape="rect" title=" " alt="" coords="1003,621,1127,647"/>
-<area shape="poly" title=" " alt="" coords="900,571,1020,614,1019,619,898,576"/>
-<area shape="rect" href="BatchRenderer_8hpp.html" title=" " alt="" coords="505,167,728,192"/>
-<area shape="poly" title=" " alt="" coords="513,116,586,157,583,162,510,121"/>
-<area shape="poly" title=" " alt="" coords="556,195,313,240,312,235,555,189"/>
-<area shape="rect" title=" " alt="" coords="1322,401,1466,427"/>
-<area shape="poly" title=" " alt="" coords="729,183,975,202,1092,218,1176,237,1240,269,1297,311,1344,354,1378,389,1374,393,1340,358,1293,315,1237,274,1174,243,1091,223,974,208,728,189"/>
-<area shape="rect" title=" " alt="" coords="419,240,479,265"/>
-<area shape="poly" title=" " alt="" coords="591,194,490,237,488,232,589,190"/>
-<area shape="rect" title=" " alt="" coords="503,240,565,265"/>
-<area shape="poly" title=" " alt="" coords="605,194,560,233,556,229,602,190"/>
-<area shape="rect" title=" " alt="" coords="590,240,643,265"/>
-<area shape="poly" title=" " alt="" coords="619,192,619,226,614,226,614,192"/>
-<area shape="rect" href="GlyphAtlas_8hpp.html" title=" " alt="" coords="519,313,685,353"/>
-<area shape="poly" title=" " alt="" coords="631,191,653,224,660,245,658,266,648,287,634,305,630,302,643,284,653,265,654,245,648,226,626,194"/>
-<area shape="rect" href="Text_8hpp.html" title=" " alt="" coords="747,321,902,346"/>
-<area shape="poly" title=" " alt="" coords="634,190,799,310,796,314,631,194"/>
-<area shape="rect" href="Triangle_8hpp.html" title=" " alt="" coords="985,240,1163,265"/>
-<area shape="poly" title=" " alt="" coords="691,189,987,235,987,241,690,195"/>
-<area shape="rect" href="AtlasRegion_8hpp.html" title=" " alt="" coords="297,313,464,353"/>
-<area shape="poly" title=" " alt="" coords="506,193,453,211,429,224,408,242,391,269,384,300,379,299,386,267,404,238,426,220,451,206,504,188"/>
-<area shape="rect" title=" " alt="" coords="769,240,961,265"/>
-<area shape="poly" title=" " alt="" coords="657,189,812,234,811,239,656,195"/>
-<area shape="poly" title=" " alt="" coords="519,355,301,401,300,396,518,350"/>
-<area shape="poly" title=" " alt="" coords="629,352,685,399,743,462,739,466,681,403,625,356"/>
-<area shape="rect" title=" " alt="" coords="357,401,508,427"/>
-<area shape="poly" title=" " alt="" coords="563,356,471,398,469,393,560,351"/>
-<area shape="rect" title=" " alt="" coords="533,401,671,427"/>
-<area shape="poly" title=" " alt="" coords="605,354,605,387,599,387,599,354"/>
-<area shape="poly" title=" " alt="" coords="819,348,787,402,768,462,763,460,782,400,814,345"/>
-<area shape="rect" title=" " alt="" coords="797,401,938,427"/>
-<area shape="poly" title=" " alt="" coords="833,345,857,388,852,391,829,347"/>
-<area shape="rect" href="ColorRGB_8hpp.html" title=" " alt="" coords="1013,401,1196,427"/>
-<area shape="poly" title=" " alt="" coords="866,343,1051,395,1050,400,865,349"/>
-<area shape="poly" title=" " alt="" coords="1050,429,829,474,828,469,1049,424"/>
-<area shape="rect" title=" " alt="" coords="1166,475,1222,500"/>
-<area shape="poly" title=" " alt="" coords="1121,425,1170,464,1167,468,1117,429"/>
-<area shape="poly" title=" " alt="" coords="1071,267,1055,299,1030,343,995,389,952,429,901,456,847,474,845,469,899,452,948,425,991,385,1025,340,1051,296,1067,264"/>
-<area shape="poly" title=" " alt="" coords="1074,266,1068,305,1067,329,1071,353,1089,389,1085,391,1066,354,1062,330,1062,305,1068,265"/>
-<area shape="poly" title=" " alt="" coords="1164,258,1191,265,1218,276,1242,291,1262,312,1271,331,1274,352,1271,374,1264,395,1241,435,1216,466,1212,463,1237,432,1259,393,1266,373,1269,352,1266,333,1257,315,1238,295,1215,281,1190,270,1163,263"/>
-<area shape="rect" href="Vertex_8hpp.html" title=" " alt="" coords="1080,313,1247,353"/>
-<area shape="poly" title=" " alt="" coords="1089,264,1133,302,1130,306,1085,268"/>
-<area shape="poly" title=" " alt="" coords="1187,352,1201,369,1214,388,1218,409,1211,428,1193,438,1163,447,1073,462,860,482,860,477,1072,457,1162,442,1191,434,1207,425,1213,409,1209,390,1197,372,1183,355"/>
-<area shape="poly" title=" " alt="" coords="1219,351,1348,394,1346,399,1218,356"/>
-<area shape="poly" title=" " alt="" coords="1151,355,1124,392,1120,388,1147,352"/>
-<area shape="poly" title=" " alt="" coords="298,354,188,379,146,392,125,403,121,414,125,425,150,438,198,449,341,465,509,476,659,481,659,487,508,481,340,471,198,454,149,443,121,428,115,414,121,400,144,387,187,374,297,348"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="Image_8hpp__dep__incl.png" border="0" usemap="#acode_2include_2component_2Image_8hppdep" loading="lazy" alt=""/></div>
-<map name="acode_2include_2component_2Image_8hppdep" id="acode_2include_2component_2Image_8hppdep">
-<area shape="rect" title=" " alt="" coords="5,5,187,45"/>
-<area shape="rect" href="Image_8cpp.html" title=" " alt="" coords="19,93,173,133"/>
-<area shape="poly" title=" " alt="" coords="99,59,99,93,93,93,93,59"/>
+<div class="center"><img src="Image_8hpp__incl.png" border="0" usemap="#acode_2include_2components_2Image_8hpp" loading="lazy" alt=""/></div>
+<map name="acode_2include_2components_2Image_8hpp" id="acode_2include_2components_2Image_8hpp">
+<area shape="rect" title=" " alt="" coords="591,5,779,45"/>
+<area shape="rect" href="BatchRenderer_8hpp.html" title=" " alt="" coords="372,189,595,214"/>
+<area shape="poly" title=" " alt="" coords="592,46,548,66,528,79,511,95,499,114,491,134,486,175,480,175,486,133,494,111,507,92,524,75,545,61,589,42"/>
+<area shape="rect" href="Vertex_8hpp.html" title=" " alt="" coords="669,181,836,221"/>
+<area shape="poly" title=" " alt="" coords="701,44,730,92,743,131,750,167,745,168,737,132,725,94,697,47"/>
+<area shape="rect" href="IDrawable_8hpp.html" title=" " alt="" coords="521,101,715,126"/>
+<area shape="poly" title=" " alt="" coords="672,47,638,91,634,88,668,44"/>
+<area shape="rect" href="AtlasRegion_8hpp.html" title=" " alt="" coords="801,93,968,133"/>
+<area shape="poly" title=" " alt="" coords="730,43,829,85,827,90,728,48"/>
+<area shape="rect" title=" " alt="" coords="494,277,638,302"/>
+<area shape="poly" title=" " alt="" coords="496,212,547,264,543,268,493,216"/>
+<area shape="rect" title=" " alt="" coords="216,277,279,302"/>
+<area shape="poly" title=" " alt="" coords="448,217,291,272,286,274,284,269,289,267,447,212"/>
+<area shape="rect" href="GlyphAtlas_8hpp.html" title=" " alt="" coords="303,269,469,309"/>
+<area shape="poly" title=" " alt="" coords="472,216,420,262,416,258,468,212"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="803,357,977,383"/>
+<area shape="poly" title=" " alt="" coords="470,305,482,307,790,353,790,358,482,312,469,310"/>
+<area shape="rect" title=" " alt="" coords="5,357,156,383"/>
+<area shape="poly" title=" " alt="" coords="314,312,139,356,138,351,312,307"/>
+<area shape="rect" title=" " alt="" coords="181,357,319,383"/>
+<area shape="poly" title=" " alt="" coords="355,312,283,353,281,348,352,307"/>
+<area shape="rect" href="BoundingBox_8hpp.html" title=" " alt="" coords="343,357,541,383"/>
+<area shape="poly" title=" " alt="" coords="402,308,428,344,424,348,397,311"/>
+<area shape="rect" title=" " alt="" coords="1049,431,1134,456"/>
+<area shape="poly" title=" " alt="" coords="923,380,1047,423,1045,429,921,385"/>
+<area shape="rect" title=" " alt="" coords="1011,504,1078,529"/>
+<area shape="poly" title=" " alt="" coords="959,380,1075,403,1123,416,1148,429,1154,440,1154,451,1142,471,1119,488,1092,501,1089,496,1116,483,1138,467,1149,450,1149,442,1144,433,1121,421,1074,408,958,385"/>
+<area shape="rect" href="Log_8hpp.html" title=" " alt="" coords="692,431,827,456"/>
+<area shape="poly" title=" " alt="" coords="870,385,794,426,791,422,868,380"/>
+<area shape="rect" title=" " alt="" coords="675,504,755,529"/>
+<area shape="poly" title=" " alt="" coords="816,385,734,405,701,418,681,432,676,446,678,461,697,492,692,495,673,463,671,446,677,429,699,413,732,400,814,380"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="417,431,557,456"/>
+<area shape="poly" title=" " alt="" coords="826,385,566,431,565,426,825,380"/>
+<area shape="rect" title=" " alt="" coords="851,431,929,456"/>
+<area shape="poly" title=" " alt="" coords="893,383,893,417,887,417,887,383"/>
+<area shape="rect" title=" " alt="" coords="953,431,1025,456"/>
+<area shape="poly" title=" " alt="" coords="907,381,963,420,960,425,904,385"/>
+<area shape="poly" title=" " alt="" coords="806,453,999,501,997,506,805,459"/>
+<area shape="poly" title=" " alt="" coords="754,458,732,494,727,491,750,455"/>
+<area shape="rect" title=" " alt="" coords="780,504,904,529"/>
+<area shape="poly" title=" " alt="" coords="774,454,820,493,816,497,771,458"/>
+<area shape="rect" title=" " alt="" coords="353,504,419,529"/>
+<area shape="poly" title=" " alt="" coords="473,458,415,498,412,494,470,454"/>
+<area shape="rect" title=" " alt="" coords="443,504,502,529"/>
+<area shape="poly" title=" " alt="" coords="488,457,480,491,475,490,482,456"/>
+<area shape="rect" title=" " alt="" coords="527,504,651,529"/>
+<area shape="poly" title=" " alt="" coords="505,454,562,494,559,498,502,458"/>
+<area shape="poly" title=" " alt="" coords="452,382,475,418,470,421,447,384"/>
+<area shape="poly" title=" " alt="" coords="713,224,604,273,602,268,711,219"/>
+<area shape="poly" title=" " alt="" coords="775,220,820,268,877,344,873,347,816,271,771,224"/>
+<area shape="rect" href="ColorRGB_8hpp.html" title=" " alt="" coords="961,269,1128,309"/>
+<area shape="poly" title=" " alt="" coords="817,219,969,263,967,268,816,224"/>
+<area shape="rect" href="Point_8hpp.html" title=" " alt="" coords="662,277,806,302"/>
+<area shape="poly" title=" " alt="" coords="751,222,742,263,737,262,746,221"/>
+<area shape="poly" title=" " alt="" coords="1009,312,926,353,924,349,1006,307"/>
+<area shape="rect" title=" " alt="" coords="1166,357,1222,383"/>
+<area shape="poly" title=" " alt="" coords="1082,307,1161,348,1158,353,1079,312"/>
+<area shape="rect" title=" " alt="" coords="1001,357,1142,383"/>
+<area shape="poly" title=" " alt="" coords="1054,309,1065,343,1060,345,1049,310"/>
+<area shape="poly" title=" " alt="" coords="710,304,661,329,605,360,514,424,511,420,602,355,658,324,708,300"/>
+<area shape="rect" title=" " alt="" coords="700,357,779,383"/>
+<area shape="poly" title=" " alt="" coords="737,302,740,343,735,344,732,302"/>
+<area shape="rect" title=" " alt="" coords="616,357,676,383"/>
+<area shape="poly" title=" " alt="" coords="723,304,671,350,667,346,719,300"/>
+<area shape="poly" title=" " alt="" coords="601,128,514,184,511,179,598,124"/>
+<area shape="poly" title=" " alt="" coords="888,133,892,343,887,343,882,133"/>
 </map>
 </div>
 </div>
@@ -199,7 +176,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:dao_3A_3AImage" id="r_dao_3A_3AImage"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Image.html">dao::Image</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">图像组件  <a href="classdao_1_1Image.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>

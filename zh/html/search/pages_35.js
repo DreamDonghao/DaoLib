@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['构建问题_0',['构建问题',['../tutorial.html#autotoc_md73',1,'']]]
+  ['渲染批处理_20vertexbatchbuilder_0',['5. 渲染批处理 (VertexBatchBuilder)',['../tutorial.html#autotoc_md47',1,'']]]
 ];

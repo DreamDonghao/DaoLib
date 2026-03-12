@@ -1,18 +1,11 @@
 var classdao_1_1Triangle =
 [
-    [ "VertexIndex", "classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7", [
-      [ "A", "classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a60fbff3360a437bb30fe92416ce127b7", null ],
-      [ "B", "classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a263b802cbd08339d9f8a33c707a940e1", null ],
-      [ "C", "classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a431586ae5aeac6dc9bd0e008c7432f5d", null ]
-    ] ],
-    [ "Triangle", "classdao_1_1Triangle.html#ac0689ad2b8ad9ee0877b8c95b78568da", null ],
-    [ "Triangle", "classdao_1_1Triangle.html#a3d9d6d2b4fab6736f680e7e24c83d4b6", null ],
-    [ "isValid", "classdao_1_1Triangle.html#a3e1fcb3efa7c60446203af4ba38d3efe", null ],
-    [ "setAllColors", "classdao_1_1Triangle.html#ac86cbf3e1d679a4f1252ecce5801619d", null ],
-    [ "setVertex", "classdao_1_1Triangle.html#ae5fe3a32a96e2d316f40cc799fedf100", null ],
-    [ "setVertex", "classdao_1_1Triangle.html#a49b56d7a4124ff8701d16961e02d501e", null ],
-    [ "setVertexColor", "classdao_1_1Triangle.html#af320594c9eb073fafd5bc61746a13fd2", null ],
-    [ "setVertexPosition", "classdao_1_1Triangle.html#a50d5ba7f7afec3421455e6dbe2062cb7", null ],
-    [ "translate", "classdao_1_1Triangle.html#a5a4988ff16cd6bcbd328037edca90a02", null ],
-    [ "vertex", "classdao_1_1Triangle.html#a93da917bb235259043d8162607c97666", null ]
+    [ "Triangle", "classdao_1_1Triangle.html#a8473dd1801ba9f668bc83c94d08ec678", null ],
+    [ "rotate", "classdao_1_1Triangle.html#a51dd58135f8162404985407f7cd3d36f", null ],
+    [ "setColor", "classdao_1_1Triangle.html#aec428e3d83f94afc2f56028296a4264f", null ],
+    [ "setVertex", "classdao_1_1Triangle.html#ab55419cb6bc252ce6fb7751b4183323a", null ],
+    [ "translate", "classdao_1_1Triangle.html#ade891a82e9e31a793635f8d3015490e7", null ],
+    [ "vertexX", "classdao_1_1Triangle.html#ab04aa59a64eb0898cefb130ed64a36c8", null ],
+    [ "vertexY", "classdao_1_1Triangle.html#a3230754b132f77ae28a0e2f983d0c88c", null ],
+    [ "writeToBatch", "classdao_1_1Triangle.html#aff6d75adde783fa772bb4f4921391a86", null ]
 ];

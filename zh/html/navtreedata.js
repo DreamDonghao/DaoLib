@@ -64,7 +64,7 @@ var NAVTREE =
             [ "文本 (Text)", "tutorial.html#autotoc_md43", null ],
             [ "图片 (Image)", "tutorial.html#autotoc_md44", null ],
             [ "矩形 (Rectangle)", "tutorial.html#autotoc_md45", null ],
-            [ "纹理 (AtlasTexture)", "tutorial.html#autotoc_md46", null ]
+            [ "纹理 (Texture)", "tutorial.html#autotoc_md46", null ]
           ] ],
           [ "5. 渲染批处理 (VertexBatchBuilder)", "tutorial.html#autotoc_md47", null ],
           [ "6. 上下文管理器 (Context)", "tutorial.html#autotoc_md48", null ]
@@ -99,7 +99,6 @@ var NAVTREE =
       ] ]
     ] ],
     [ "使用 DaoLib 开发", "use.html", null ],
-    [ "Bug 列表", "bug.html", null ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
       [ "命名空间成员", "namespacemembers.html", [
@@ -132,11 +131,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AnimatedSprite_8hpp.html",
-"classdao_1_1BoundingBox.html#ab539c199e4bf5830121dd838335ac2dc",
-"classdao_1_1SolidCircle.html",
-"classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd",
-"structdao_1_1AtlasRegion.html#ad5be02910a782f2a20b68e8b91cb3b77"
+"AppController_8cpp.html",
+"classdao_1_1ColorRGBA.html#a6bc91fdf21708235653f56c7fbb0df54",
+"classdao_1_1Sector.html#aeff9a8d300b3d68dd787793e3254c63d",
+"classdao_1_1ifc_1_1IPage.html#a8ddd0d5822d40bb9624c2609c6f3127b"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

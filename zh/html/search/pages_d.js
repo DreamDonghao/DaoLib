@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['image_0',['图片 (Image)',['../tutorial.html#autotoc_md44',1,'']]],
-  ['inputbox_1',['输入框 (InputBox)',['../tutorial.html#autotoc_md42',1,'']]]
+  ['join_20参与_20daolib_20的开发_0',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot; title=&quot;参与 DaoLib 开发&quot;&gt;参与 DaoLib 的开发&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]]
 ];

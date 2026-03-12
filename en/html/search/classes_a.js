@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['text_0',['Text',['../classdao_1_1Text.html',1,'dao']]],
-  ['ticktimer_1',['TickTimer',['../classdao_1_1TickTimer.html',1,'dao']]],
-  ['tray_2',['Tray',['../classdao_1_1Tray.html',1,'dao']]],
-  ['triangle_3',['Triangle',['../classdao_1_1Triangle.html',1,'dao']]]
+  ['rectangle_0',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao']]],
+  ['ring_1',['Ring',['../classdao_1_1Ring.html',1,'dao']]],
+  ['ringvector_2',['RingVector',['../classdao_1_1RingVector.html',1,'dao']]],
+  ['roundedrectangle_3',['RoundedRectangle',['../classdao_1_1RoundedRectangle.html',1,'dao']]]
 ];

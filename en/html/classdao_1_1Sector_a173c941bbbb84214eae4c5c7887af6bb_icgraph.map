@@ -1,0 +1,5 @@
+<map id="dao::Sector::translate" name="dao::Sector::translate">
+<area shape="rect" id="Node000001" title="平移图形" alt="" coords="228,5,389,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Sector.html#a3f966a73a6b0c4891dfa54179d5ce39c" title="设置圆心位置" alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,21,180,21,180,15,214,15"/>
+</map>

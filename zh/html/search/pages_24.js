@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['多窗口管理_0',['多窗口管理',['../tutorial.html#autotoc_md56',1,'']]]
+  ['安装与构建_0',['安装与构建',['../tutorial.html#autotoc_md26',1,'']]]
 ];

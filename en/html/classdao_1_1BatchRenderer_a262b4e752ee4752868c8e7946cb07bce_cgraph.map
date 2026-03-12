@@ -1,9 +1,0 @@
-<map id="dao::BatchRenderer::addToBatch" name="dao::BatchRenderer::addToBatch">
-<area shape="rect" id="Node000001" title="添加文本到批处理" alt="" coords="5,47,156,87"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#aebc06efbc107ff9c3d043524b7658dff" title="获取字体大小" alt="" coords="204,5,369,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,47,219,31,220,37,157,52"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#a3ffd6e138acb26e8b6baaa932f8932f3" title="获取文本x坐标" alt="" coords="227,55,346,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,65,213,65,213,70,157,70"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1Text.html#af361e61b1290556adc4120cb5d2db2ac" title="获取文本y坐标" alt="" coords="227,104,346,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,83,220,98,219,103,156,88"/>
-</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['审核与修改_0',['6. 审核与修改',['../join.html#autotoc_md12',1,'']]]
+  ['常见问题_0',['常见问题',['../tutorial.html#autotoc_md66',1,'']]]
 ];

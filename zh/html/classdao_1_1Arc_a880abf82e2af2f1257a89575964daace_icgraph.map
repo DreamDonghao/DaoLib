@@ -1,0 +1,5 @@
+<map id="dao::Arc::translate" name="dao::Arc::translate">
+<area shape="rect" id="Node000001" title="平移图形" alt="" coords="208,5,349,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Arc.html#a3ff8d33995da7773ff7a131330115213" title="设置圆心位置" alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,21,160,21,160,15,194,15"/>
+</map>

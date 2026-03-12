@@ -1,0 +1,7 @@
+<map id="dao::RoundedRectangle" name="dao::RoundedRectangle">
+<area shape="rect" id="Node000001" title="圆角矩形图形组件" alt="" coords="5,312,173,537"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IGraph.html" title="图形接口" alt="" coords="28,139,151,264"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,278,92,312,87,312,87,278"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ifc_1_1IDrawable.html" title="可绘制对象接口" alt="" coords="21,5,157,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,104,92,138,87,138,87,104"/>
+</map>

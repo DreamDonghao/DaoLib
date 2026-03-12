@@ -124,8 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ddd0d5822d40bb9624c2609c6f3127b"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化页面  <br /></td></tr>
 <tr class="memitem:a733d497ad553e3cce427ac58d5cebb88" id="r_a733d497ad553e3cce427ac58d5cebb88"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a733d497ad553e3cce427ac58d5cebb88">close</a> ()=0</td></tr>
 <tr class="memdesc:a733d497ad553e3cce427ac58d5cebb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭页面  <br /></td></tr>
-<tr class="memitem:a949750223d54b78924563c4646d59062" id="r_a949750223d54b78924563c4646d59062"><td class="memItemLeft">virtual std::vector&lt; <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a949750223d54b78924563c4646d59062">getRegisterTexture</a> () const =0</td></tr>
-<tr class="memdesc:a949750223d54b78924563c4646d59062"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取加载图集  <br /></td></tr>
+<tr class="memitem:aa3f41d349abc9002260a209f6274c501" id="r_aa3f41d349abc9002260a209f6274c501"><td class="memItemLeft">virtual std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa3f41d349abc9002260a209f6274c501">getRegisterTextures</a> () const =0</td></tr>
+<tr class="memdesc:aa3f41d349abc9002260a209f6274c501"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取要注册的纹理ID列表  <br /></td></tr>
 <tr class="memitem:affbb24599d216bf75947bd3410c3ca9f" id="r_affbb24599d216bf75947bd3410c3ca9f"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#affbb24599d216bf75947bd3410c3ca9f">update</a> ()=0</td></tr>
 <tr class="memdesc:affbb24599d216bf75947bd3410c3ca9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <br /></td></tr>
 <tr class="memitem:acff3a62be8f466bb00ab8cd2e3cd69bd" id="r_acff3a62be8f466bb00ab8cd2e3cd69bd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#acff3a62be8f466bb00ab8cd2e3cd69bd">handleInputEvent</a> (const SDL_Event &amp;event)=0</td></tr>
@@ -232,8 +232,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a949750223d54b78924563c4646d59062" name="a949750223d54b78924563c4646d59062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949750223d54b78924563c4646d59062">&#9670;&#160;</a></span>getRegisterTexture()</h2>
+<a id="aa3f41d349abc9002260a209f6274c501" name="aa3f41d349abc9002260a209f6274c501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f41d349abc9002260a209f6274c501">&#9670;&#160;</a></span>getRegisterTextures()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; <a class="el" href="namespacedao.html#a827cc131e40024bc7248f45a5049fddc">TextureID</a> &gt; dao::ifc::IPage::getRegisterTexture </td>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> &gt; dao::ifc::IPage::getRegisterTextures </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -255,10 +255,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>获取加载图集 </p>
+<p>获取要注册的纹理ID列表 </p>
 <p>用于预加载纹理 </p>
 
-<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#ae0db1db567fcdaa8b9a70569e2395e82">dao::ifc::IGeneralPage</a>.</p>
+<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#a90d8134e500070cd111a0571297fcebb">dao::ifc::IGeneralPage</a>.</p>
 
 </div>
 </div>

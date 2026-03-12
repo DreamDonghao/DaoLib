@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['a_0',['A',['../classdao_1_1Triangle.html#af35cbfb164619bb41080021784c032a7a60fbff3360a437bb30fe92416ce127b7',1,'dao::Triangle']]]
+  ['background_0',['Background',['../classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419',1,'dao::Window']]]
 ];

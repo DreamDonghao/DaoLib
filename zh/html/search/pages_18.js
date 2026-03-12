@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['下一步_0',['下一步',['../tutorial.html#autotoc_md76',1,'']]]
+  ['主要特性_0',['主要特性',['../tutorial.html#autotoc_md24',1,'']]]
 ];

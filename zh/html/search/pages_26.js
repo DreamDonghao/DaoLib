@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['安装与构建_0',['安装与构建',['../tutorial.html#autotoc_md26',1,'']]]
+  ['审核与修改_0',['6. 审核与修改',['../join.html#autotoc_md12',1,'']]]
 ];

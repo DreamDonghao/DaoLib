@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['按钮_20simplebutton_0',['按钮 (SimpleButton)',['../tutorial.html#autotoc_md41',1,'']]]
+  ['提交_20pull_20request_0',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
 ];

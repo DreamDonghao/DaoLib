@@ -1,5 +1,0 @@
-<map id="dao::ifc::IButton::getStatus" name="dao::ifc::IButton::getStatus">
-<area shape="rect" id="Node000001" title="获取当前状态" alt="" coords="244,5,377,45"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1SimpleTextureButtonStyle.html#a3558bd62a99f61094c17630a66cd0834" title="写入批处理" alt="" coords="5,5,196,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
-</map>

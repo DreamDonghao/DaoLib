@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertex_0',['Vertex',['../classdao_1_1Vertex.html',1,'dao']]]
+  ['sector_0',['Sector',['../classdao_1_1Sector.html',1,'dao']]],
+  ['switchdeleter_1',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html',1,'dao']]]
 ];

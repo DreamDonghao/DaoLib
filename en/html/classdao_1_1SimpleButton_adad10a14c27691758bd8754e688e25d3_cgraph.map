@@ -1,5 +1,0 @@
-<map id="dao::SimpleButton::handleEvent" name="dao::SimpleButton::handleEvent">
-<area shape="rect" id="Node000001" title="处理鼠标事件" alt="" coords="5,5,156,45"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#a5ba96cb61f0e6cd4d4919c330e6354b2" title="判断点 (x,y) 是否在边界框内" alt="" coords="204,13,461,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,23,190,23,190,28,156,28"/>
-</map>

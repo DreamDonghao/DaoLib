@@ -273,9 +273,10 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00021">21</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>              {</div>
-<div class="line"><span class="lineno">   22</span>        TTF_Quit();</div>
-<div class="line"><span class="lineno">   23</span>        SDL_Quit();</div>
-<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   22</span>        m_windows.clear();  <span class="comment">// 先销毁所有窗口，确保 TTF_CloseFont 在 TTF_Quit 之前调用</span></div>
+<div class="line"><span class="lineno">   23</span>        TTF_Quit();</div>
+<div class="line"><span class="lineno">   24</span>        SDL_Quit();</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,16 +406,16 @@ template&lt;typename Type&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00072">72</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                                                                                             {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height, workState, isSubject, resizable, transparent, onTop,</div>
-<div class="line"><span class="lineno">   75</span>                                                  borderless);</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
-<div class="line"><span class="lineno">   77</span>        m_windowMap[tag] = windowId;</div>
-<div class="line"><span class="lineno">   78</span>        m_windows[windowId] = std::move(nowWindow);</div>
-<div class="line"><span class="lineno">   79</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00071">71</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height, workState, isSubject, resizable, transparent, onTop,</div>
+<div class="line"><span class="lineno">   74</span>                                                  borderless);</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
+<div class="line"><span class="lineno">   76</span>        m_windowMap[tag] = windowId;</div>
+<div class="line"><span class="lineno">   77</span>        m_windows[windowId] = std::move(nowWindow);</div>
+<div class="line"><span class="lineno">   78</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00008">type.hpp:8</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -436,8 +437,8 @@ template&lt;typename Type&gt; </div>
 
 <p>关闭退出应用程序 </p>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00070">70</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>{ m_running = <span class="keyword">false</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00069">69</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{ m_running = <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -618,11 +619,10 @@ template&lt;typename Type&gt; </div>
 
 <p>启动应用程序主循环 </p>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00027">27</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>                  {</div>
-<div class="line"><span class="lineno">   28</span>        m_running = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">while</span> (m_running) {</div>
-<div class="line"><span class="lineno">   30</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;*****&quot;</span> &lt;&lt; m_running &lt;&lt; std::endl;</div>
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00028">28</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                  {</div>
+<div class="line"><span class="lineno">   29</span>        m_running = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">while</span> (m_running) {</div>
 <div class="line"><span class="lineno">   31</span>            m_frameLimiter.wait();</div>
 <div class="line"><span class="lineno">   32</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
 <div class="line"><span class="lineno">   33</span>                <span class="keywordflow">if</span> (window-&gt;workState() != <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>) {</div>
@@ -635,32 +635,31 @@ template&lt;typename Type&gt; </div>
 <div class="line"><span class="lineno">   40</span>                <span class="comment">// 处理窗口关闭按钮（左上角）点击事件</span></div>
 <div class="line"><span class="lineno">   41</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
 <div class="line"><span class="lineno">   42</span>                    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   43</span>                    std::cout &lt;&lt; wid &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   44</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   45</span>                        it-&gt;second-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
-<div class="line"><span class="lineno">   46</span>                    }</div>
-<div class="line"><span class="lineno">   47</span>                }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
-<div class="line"><span class="lineno">   50</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
-<div class="line"><span class="lineno">   51</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   52</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
-<div class="line"><span class="lineno">   53</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
-<div class="line"><span class="lineno">   54</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
-<div class="line"><span class="lineno">   55</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
-<div class="line"><span class="lineno">   56</span>                }</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
-<div class="line"><span class="lineno">   59</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   60</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   61</span>                    }</div>
-<div class="line"><span class="lineno">   62</span>                }</div>
-<div class="line"><span class="lineno">   63</span>            }</div>
-<div class="line"><span class="lineno">   64</span>        }</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   66</span>            window-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   43</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   44</span>                        it-&gt;second-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
+<div class="line"><span class="lineno">   45</span>                    }</div>
+<div class="line"><span class="lineno">   46</span>                }</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
+<div class="line"><span class="lineno">   49</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
+<div class="line"><span class="lineno">   50</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
+<div class="line"><span class="lineno">   51</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
+<div class="line"><span class="lineno">   52</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
+<div class="line"><span class="lineno">   53</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
+<div class="line"><span class="lineno">   54</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
+<div class="line"><span class="lineno">   55</span>                }</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
+<div class="line"><span class="lineno">   58</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   59</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   60</span>                    }</div>
+<div class="line"><span class="lineno">   61</span>                }</div>
+<div class="line"><span class="lineno">   62</span>            }</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   65</span>            window-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
 <div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00025">Window.hpp:25</a></div></div>
 </div><!-- fragment -->
 </div>

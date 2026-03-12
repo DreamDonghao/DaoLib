@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['framelimiter_2ehpp_0',['FrameLimiter.hpp',['../FrameLimiter_8hpp.html',1,'']]]
+  ['ellipse_2ehpp_0',['Ellipse.hpp',['../Ellipse_8hpp.html',1,'']]]
 ];
