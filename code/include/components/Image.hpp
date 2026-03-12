@@ -1,16 +1,17 @@
 #pragma once
-#include <core/tool/type.hpp>
 #include <core/render/BatchRenderer.hpp>
 #include <core/render/primitives/Vertex.hpp>
+#include <core/render/IDrawable.hpp>
+#include <core/render/primitives/AtlasRegion.hpp>
 
 namespace dao {
-    class Image {
+    class Image : public ifc::IDrawable {
     public:
-        Image(const f32 x, const f32 y, const f32 width, const f32 height, const TextureID textureID)
+        Image(const f32 x, const f32 y, const f32 width, const f32 height, const i32 textureID)
             : Image(x, y, width, height, getAtlasRegion(textureID)) {
         };
 
-        void writeToBatch(BatchRenderer &bathRender) const {
+        void writeToBatch(BatchRenderer &bathRender) const override {
             const auto vertices = bathRender.allocateVertices(m_atlasId, 6);
             vertices[0] = {{m_x, m_y}, {1.0f, 1.0f, 1.0f, 1.0f}, {m_left, m_top}};
             vertices[1] = {{m_x + m_width, m_y}, {1.0f, 1.0f, 1.0f, 1.0f}, {m_right, m_top}};

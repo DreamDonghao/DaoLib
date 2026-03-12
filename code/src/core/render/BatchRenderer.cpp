@@ -1,10 +1,12 @@
+#include <filesystem>
 #include <core/render/BatchRenderer.hpp>
 #include <core/render/primitives/AtlasRegion.hpp>
 #include <SDL3_image/SDL_image.h>
+
 namespace dao {
     BatchRenderer::BatchRenderer(
-        const std::string_view fontPath, const f32 glyphSize, const i32 atlasSize)
-        : m_glyphAtlas(fontPath, glyphSize, atlasSize) {
+        const i32 verticesCount, const std::string_view fontPath, const f32 glyphSize, const i32 atlasSize)
+        : m_glyphAtlas(fontPath, glyphSize, atlasSize), m_vertices(verticesCount) {
     }
 
     BatchRenderer::~BatchRenderer() {
@@ -14,7 +16,6 @@ namespace dao {
                 SDL_DestroyTexture(atlas);
             }
         }
-
         if (m_renderer) {
             SDL_DestroyRenderer(m_renderer);
         }
@@ -26,19 +27,22 @@ namespace dao {
             return;
         }
         m_renderer = renderer;
+        SDL_SetRenderDrawBlendMode(m_renderer, SDL_BLENDMODE_BLEND);
         SDL_SetRenderVSync(m_renderer, 0);
 
         SDL_Texture *tex = SDL_CreateTexture(
-            m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1
+            m_renderer, SDL_PIXELFORMAT_RGBA32, SDL_TEXTUREACCESS_STATIC, 1, 1
         );
         constexpr Uint32 whitePixel = 0xFFFFFFFF;
         SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
         m_atlas[0] = tex;
+        SDL_SetTextureBlendMode(m_atlas[0], SDL_BLENDMODE_BLEND);
 
         m_atlas[1] = SDL_CreateTextureFromSurface(
             m_renderer, &m_glyphAtlas.getAtlasSurface()
         );
         m_atlas.resize(m_atlas.size(), nullptr);
+        SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
     }
 
     void BatchRenderer::clear() {
@@ -55,6 +59,7 @@ namespace dao {
         if (m_atlas[atlasId] == nullptr) {
             const char *atlasPath = atlasRegion.atlasPath;
             m_atlas[atlasId] = IMG_LoadTexture(m_renderer, atlasPath);
+            SDL_SetTextureBlendMode(m_atlas[atlasId], SDL_BLENDMODE_BLEND);
             if (m_atlas[atlasId] == nullptr) {
                 DAO_ERROR_LOG("纹理图集加载失败:" + std::string(atlasPath));
             }
@@ -77,7 +82,14 @@ namespace dao {
         SDL_RenderPresent(m_renderer);
     }
 
-    SDL_Vertex * BatchRenderer::allocateVertices(const i32 atlasID, const i32 count) {
+    void BatchRenderer::loadGlyph(const utf32char charCode) {
+        if (m_glyphAtlas.tryRegisterGlyph(charCode)) {
+            m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &m_glyphAtlas.getAtlasSurface());
+            SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
+        }
+    }
+
+    SDL_Vertex *BatchRenderer::allocateVertices(const i32 atlasID, const i32 count) {
         if (m_endAtlasId != atlasID || m_batches.empty()) {
             m_batches.push_back({atlasID, 0});
         }

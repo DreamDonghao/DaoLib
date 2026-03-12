@@ -1,7 +1,6 @@
 #pragma once
-#include <core/render/Texture.hpp>
 union SDL_Event;
-
+#include <core/tool/type.hpp>
 namespace dao {
     class BatchRenderer;
     class WindowController;
@@ -24,7 +23,7 @@ namespace dao {
 
             /// @brief 获取加载图集
             /// @details 用于预加载纹理
-            [[nodiscard]] virtual std::vector<TextureID> getRegisterTexture() const = 0;
+            [[nodiscard]] virtual std::vector<i32> getRegisterTexture() const = 0;
 
             /// @brief 更新
             virtual void update() = 0;

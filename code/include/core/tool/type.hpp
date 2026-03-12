@@ -16,7 +16,7 @@ namespace dao {
 
     using utf32char = char32_t;
     using utf32str = std::u32string;
-    using utf32string_view = std::u32string_view;
+    using utf32str_view = std::u32string_view;
 
     template<typename K, typename V>
     using hash_map = std::unordered_map<K, V>;

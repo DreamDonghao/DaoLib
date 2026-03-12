@@ -119,7 +119,7 @@ namespace dao {
         i32 m_height;                                               ///< 窗口高度
         SDL_WindowFlags m_windowFlags = 0;                          ///< 窗口属性标记
         AppController m_appController;                              ///< 应用控制器
-        BatchRenderer m_batchRenderer{"./assets/ttf/zh-cn.ttf"};    ///< 批处理渲染器
+        BatchRenderer m_batchRenderer{1000000,"./assets/ttf/zh-cn.ttf"};    ///< 批处理渲染器
         Context *m_context{nullptr};                                ///< 上下文
 
         /// @brief 执行窗口控制器的命令

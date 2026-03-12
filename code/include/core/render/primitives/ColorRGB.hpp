@@ -1,7 +1,7 @@
 #pragma once
 #include <core/tool/better_stl.hpp>
 #include <array>
-
+#include <SDL3/SDL_pixels.h>
 namespace dao {
     /// @brief RGB值归一化查找表
     /// @details 将0-255的整型RGB值预先转换为0.0-1.0的浮点数，用于提高渲染性能。
@@ -152,7 +152,7 @@ namespace dao {
             return ColorRGBA{r, g, b, a};
         }
 
-        explicit constexpr operator SDL_FColor() const noexcept {
+         constexpr  SDL_FColor getSDLFColor() const noexcept {
             return {rgbNorm[m_r], rgbNorm[m_g], rgbNorm[m_b], m_a};
         }
 

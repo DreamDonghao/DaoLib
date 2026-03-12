@@ -13,18 +13,13 @@ namespace dao {
         };
 
     public:
-        /// @brief 构造函数（无字体）
-        /// @details 创建批处理渲染器，仅初始化矩形索引缓冲
-        explicit BatchRenderer(const size_t) {
-        }
-
         /// @brief 构造函数（带字体）
         /// @details 创建批处理渲染器，初始化矩形索引缓冲并加载字形图集
+        /// @param verticesCount 顶点池默认最大顶点数
         /// @param fontPath 字体文件路径
         /// @param glyphSize 字形大小（像素）
         /// @param atlasSize 字形图集尺寸（正方形边长）
-        explicit BatchRenderer(std::string_view fontPath, f32 glyphSize = 24,
-                               i32 atlasSize = 1024);
+        explicit BatchRenderer(i32 verticesCount, std::string_view fontPath, f32 glyphSize = 32, i32 atlasSize = 1024);
 
         /// @brief 析构函数
         /// @details 清理所有纹理资源和渲染器
@@ -55,18 +50,19 @@ namespace dao {
         /// @return 字形图集的常量引用
         [[nodiscard]] const GlyphAtlas &getGlyphAtlas() const { return m_glyphAtlas; }
 
+        void loadGlyph(utf32char charCode);
+
         /// @brief 分配指定数量的顶点空间
         /// @param atlasID 用于渲染的图集 ID
         /// @param count 需要分配的顶点数量
         /// @return 指向分配空间的指针
         /// @note 调用方需确保 count 不会超出剩余容量
-        SDL_Vertex *allocateVertices(const i32 atlasID, const i32 count);
-
+        SDL_Vertex *allocateVertices(i32 atlasID, i32 count);
     private:
         SDL_Renderer *m_renderer{nullptr}; ///< SDL渲染器指针
         GlyphAtlas m_glyphAtlas;           ///< 字形图集
         std::vector<SDL_Texture *> m_atlas{2, nullptr};
-        std::vector<SDL_Vertex> m_vertices{1000000};
+        std::vector<SDL_Vertex> m_vertices;
         std::vector<Batch> m_batches;
         i32 m_index{0};
         i32 m_endAtlasId{0};

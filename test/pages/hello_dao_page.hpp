@@ -1,24 +1,14 @@
 #pragma once
-#include <component/image.hpp>
-#include <daoui.hpp>
-#include <texture_id.hpp>
-#include <utility>
-
-struct Data {
-    int val = 0;
-};
-
+#include <interface/IGeneralPage.hpp>
 
 class HelloDaoPage : public dao::ifc::IGeneralPage {
 
-
-
 public:
-    HelloDaoPage() : IGeneralPage("helloDaoPage") {};
+    HelloDaoPage() : dao::ifc::IGeneralPage("helloDaoPage") {};
 
     ~HelloDaoPage() override = default;
 
-    [[nodiscard]] std::vector<dao::TextureID> getRegisterTexture() const override;
+    [[nodiscard]] std::vector<dao::i32> getRegisterTexture() const override;
 
     void open() override;
 
