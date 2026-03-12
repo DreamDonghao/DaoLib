@@ -1,12 +1,12 @@
 if(NOT CMAKE_PROJECT_NAME)
     cmake_minimum_required(VERSION 3.31)
-    project(test LANGUAGES CXX )
+    project(test LANGUAGES CXX)
+    # 独立构建时查找已安装的 dao
+    find_package(dao REQUIRED PATHS "../build/install")
 endif()
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-find_package(dao REQUIRED PATHS "../build/install")
 
 add_executable(${PROJECT_NAME}
         assets/textures/config/atlas_region.cpp
@@ -22,11 +22,13 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         pages
         tray
 )
-#find_package(Boost REQUIRED COMPONENTS asio)
-#target_link_libraries(${PROJECT_NAME} PRIVATE Boost::asio)
 
-# 链接 dao
-target_link_libraries(${PROJECT_NAME} PRIVATE dao::dao)
+# 链接 dao：作为子项目直接链接目标，独立构建时使用导入目标
+if(TARGET dao)
+    target_link_libraries(${PROJECT_NAME} PRIVATE dao)
+else()
+    target_link_libraries(${PROJECT_NAME} PRIVATE dao::dao)
+endif()
 
 # 先把所有需要的目录全部建好
 add_custom_command(

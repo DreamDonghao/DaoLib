@@ -1,7 +1,8 @@
 #pragma once
-#include <core/tool/type.hpp>
-#include <utility>
 #include <numbers>
+#include <utility>
+
+#include <core/tool/type.hpp>
 
 namespace dao {
     /// @brief 圆周率常量（单精度浮点数）

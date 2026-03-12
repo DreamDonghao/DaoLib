@@ -61,7 +61,7 @@ namespace dao {
 
     void Window::registerPageTexture() {
         for (const auto &page: m_pages | std::views::values) {
-            for (auto textureId: page->getRegisterTexture()) {
+            for (auto textureId: page->getRegisterTextures()) {
                 m_batchRenderer.loadAtlas(textureId);
             }
         }
@@ -96,7 +96,6 @@ namespace dao {
                 hide();
                 m_closeAction();
                 break;
-                ;
             default:
                 break;
         }

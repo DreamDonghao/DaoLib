@@ -21,7 +21,14 @@ namespace dao {
         };
 
     public:
-        GlyphAtlas(GlyphAtlas &glyphAtlas) = delete;
+        /// @brief 禁用拷贝构造
+        GlyphAtlas(const GlyphAtlas &) = delete;
+        /// @brief 禁用移动构造
+        GlyphAtlas(GlyphAtlas &&) = delete;
+        /// @brief 禁用拷贝赋值
+        GlyphAtlas &operator=(const GlyphAtlas &) = delete;
+        /// @brief 禁用移动赋值
+        GlyphAtlas &operator=(GlyphAtlas &&) = delete;
 
         ~GlyphAtlas();
 

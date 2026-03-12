@@ -17,7 +17,7 @@ long long getTimeInterval() {
     return interval;
 }
 
-std::vector<i32> HelloDaoPage::getRegisterTexture() const {
+std::vector<i32> HelloDaoPage::getRegisterTextures() const {
     return {};
 }
 

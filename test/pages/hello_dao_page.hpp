@@ -8,7 +8,7 @@ public:
 
     ~HelloDaoPage() override = default;
 
-    [[nodiscard]] std::vector<dao::i32> getRegisterTexture() const override;
+    [[nodiscard]] std::vector<dao::i32> getRegisterTextures() const override;
 
     void open() override;
 

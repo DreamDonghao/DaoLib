@@ -34,7 +34,7 @@ namespace dao {
         }
 
         /// @brief 设置颜色
-        void setColor(const ColorRGBA color) {
+        void setColor(const ColorRGBA &color) {
             for (auto &vertex: m_vertices) {
                 vertex.setColor(color);
             }

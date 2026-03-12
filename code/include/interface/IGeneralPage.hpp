@@ -20,8 +20,8 @@ namespace dao {
 
             void close() override = 0;
 
-            /// @brief 获取加载图集
-            [[nodiscard]] std::vector<i32> getRegisterTexture() const override = 0;
+            /// @brief 获取要注册的纹理ID列表
+            [[nodiscard]] std::vector<i32> getRegisterTextures() const override = 0;
 
             /// @brief 更新
             void update() override = 0;

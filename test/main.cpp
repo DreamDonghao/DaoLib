@@ -1,4 +1,4 @@
-#include <core/frame/app.hpp>
+#include <core/frame/App.hpp>
 #include "hello_dao_page.hpp"
 #include "page_a/page_a.hpp"
 #include "tray/AppTray.hpp"

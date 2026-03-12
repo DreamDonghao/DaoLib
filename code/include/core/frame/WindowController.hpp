@@ -1,7 +1,9 @@
 #pragma once
 #include <any>
 #include <string>
-#include "core/tool/better_stl.hpp"
+#include <vector>
+
+#include <core/tool/better_stl.hpp>
 
 namespace dao {
     class Window;
@@ -12,7 +14,7 @@ namespace dao {
         setClickThrough, ///< 设置点击是否穿透
         setPosition,     ///< 设置窗口位置
         movePosition,    ///< 移动窗口位置
-        setSize,         ////<设置窗口大小
+        setSize,         ///< 设置窗口大小
     };
 
     /// @brief 窗口级命令

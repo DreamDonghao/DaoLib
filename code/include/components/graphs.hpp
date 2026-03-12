@@ -1,0 +1,11 @@
+#pragma once
+#include <components/graphs/Arc.hpp>
+#include <components/graphs/Circle.hpp>
+#include <components/graphs/Ellipse.hpp>
+#include <components/graphs/Line.hpp>
+#include <components/graphs/Polygon.hpp>
+#include <components/graphs/Rectangle.hpp>
+#include <components/graphs/Ring.hpp>
+#include <components/graphs/RoundedRectangle.hpp>
+#include <components/graphs/Sector.hpp>
+#include <components/graphs/Triangle.hpp>

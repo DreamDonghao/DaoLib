@@ -41,11 +41,13 @@ namespace dao {
         }
 
         /// @brief 获取顶点 x 坐标
+        /// @param index 顶点索引 (0, 1, 2)
         [[nodiscard]] f32 vertexX(const i32 index) const {
             return m_vertices[index].x();
         }
 
         /// @brief 获取顶点 y 坐标
+        /// @param index 顶点索引 (0, 1, 2)
         [[nodiscard]] f32 vertexY(const i32 index) const {
             return m_vertices[index].y();
         }
@@ -66,7 +68,7 @@ namespace dao {
             auto vertices = batchRenderer.allocateVertices(0, 3);
             *vertices++ = m_vertices[0].getSDLVertex();
             *vertices++ = m_vertices[1].getSDLVertex();
-            *vertices++ = m_vertices[2].getSDLVertex();
+            *vertices = m_vertices[2].getSDLVertex();
         }
 
     private:

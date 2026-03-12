@@ -35,7 +35,7 @@ namespace test {
     Ring ring(400, 250, 25, 45, ColRing);
     RoundedRectangle roundedRect(480, 210, 100, 80, 15, ColRounded);
 
-    std::vector<i32> PageA::getRegisterTexture() const {
+    std::vector<i32> PageA::getRegisterTextures() const {
         return {};
     }
 

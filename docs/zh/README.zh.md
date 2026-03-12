@@ -1,12 +1,12 @@
 # DaoLib
 
-[中文](README.zh.md) | [English](README.md)
+[中文](README.zh.md) | [English](../en/README.en.md)
 
 一个跨平台的 C++ GUI 通用开发框架，可用于开发桌面应用、工具软件以及 2D 游戏等可视化程序。
 
 ---
 
-📘 文档与教程：  
+📘 文档与教程：
 https://dreamdonghao.github.io/DaoLib/zh/html
 
 你可以通过该文档了解 DaoLib 的使用方式、设计理念，并参与项目开发。
