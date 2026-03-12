@@ -1,6 +1,5 @@
 #pragma once
-#include <core/tool/better_stl.hpp>
-
+#include <core/tool/type.hpp>
 namespace dao {
     ///@brief 边界框
     ///@details 用来表示一个矩形范围区域左上右下边界的坐标

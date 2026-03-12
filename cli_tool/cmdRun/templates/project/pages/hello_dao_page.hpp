@@ -5,7 +5,7 @@ using namespace dao;
 
 class HelloDaoPage :public GeneralPage {
     Text text{0, 0, U"你好 Dao", 50, hexToRGBA("#D249FC")};
-    AtlasTexture img{texture::image,10,50,160,200};
+    Texture img{texture::image,10,50,160,200};
 public:
     HelloDaoPage() : GeneralPage("helloDaoPage") {
     };

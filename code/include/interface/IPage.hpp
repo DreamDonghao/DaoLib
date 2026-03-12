@@ -1,7 +1,7 @@
 #pragma once
-#include <core/render/AtlasTexture.hpp>
+#include <core/tool/type.hpp>
+#include <vector>
 union SDL_Event;
-
 namespace dao {
     class BatchRenderer;
     class WindowController;
@@ -22,9 +22,9 @@ namespace dao {
             /// @details 每次关闭页面时执行
             virtual void close() = 0;
 
-            /// @brief 获取加载图集
+            /// @brief 获取要注册的纹理ID列表
             /// @details 用于预加载纹理
-            [[nodiscard]] virtual std::vector<TextureID> getRegisterTexture() const = 0;
+            [[nodiscard]] virtual std::vector<i32> getRegisterTextures() const = 0;
 
             /// @brief 更新
             virtual void update() = 0;

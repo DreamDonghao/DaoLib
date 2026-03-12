@@ -15,7 +15,7 @@ if(MSVC)
 endif()
 
 add_library(dao
-        src/core/render/AtlasTexture.cpp
+        src/core/render/Texture.cpp
         src/core/frame/app.cpp
         src/core/render/BatchRenderer.cpp
         src/core/frame/window.cpp
@@ -24,8 +24,8 @@ add_library(dao
         src/core/frame/WindowController.cpp
         src/core/frame/AppController.cpp
         src/core/frame/context.cpp
-        src/component/button/SimpleButton.cpp
-        src/component/image.cpp
+#        src/component/button/SimpleButton.cpp
+#        src/component/image.cpp
         src/interface/IGeneralPage.cpp
         src/daolib.cpp
         src/core/render/primitives/GlyphAtlas.cpp

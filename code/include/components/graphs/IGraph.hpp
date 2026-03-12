@@ -1,5 +1,5 @@
 #pragma once
-#include <interface/IDrawable.hpp>
+#include <core/render/IDrawable.hpp>
 
 namespace dao::ifc {
     /// @brief 图形接口

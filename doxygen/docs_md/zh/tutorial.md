@@ -319,11 +319,11 @@ std::vector<dao::i32> getRegisterTexture() const override {
 dao::Rectangle rect{x, y, width, height, dao::hexToRGBA("#3498db")};
 ```
 
-#### 纹理 (AtlasTexture)
+#### 纹理 (Texture)
 
 ```cpp
 // 创建纹理实例
-dao::AtlasTexture texture{textureId, x, y, width, height};
+dao::Texture texture{textureId, x, y, width, height};
 ```
 
 ### 5. 渲染批处理 (VertexBatchBuilder)

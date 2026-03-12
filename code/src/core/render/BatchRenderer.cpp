@@ -1,82 +1,23 @@
-#include <ranges>
-#include <span>
+#include <filesystem>
 #include <core/render/BatchRenderer.hpp>
 #include <core/render/primitives/AtlasRegion.hpp>
+#include <SDL3_image/SDL_image.h>
 
 namespace dao {
-    std::vector<int> BatchRenderer::s_quadIndices = {};
-
     BatchRenderer::BatchRenderer(
-        const std::string_view fontPath, const f32 glyphSize,
-        const i32 atlasSize, const size_t quadCount)
-        : m_glyphAtlas(fontPath, glyphSize, atlasSize) {
-        expandQuadIndicesTo(quadCount);
+        const i32 verticesCount, const std::string_view fontPath, const f32 glyphSize, const i32 atlasSize)
+        : m_glyphAtlas(fontPath, glyphSize, atlasSize), m_vertices(verticesCount) {
     }
 
     BatchRenderer::~BatchRenderer() {
         // 销毁所有纹理
-        for (const auto &texture: m_atlasTextures | std::views::values) {
-            if (texture) {
-                SDL_DestroyTexture(texture);
+        for (const auto &atlas: m_atlas) {
+            if (atlas) {
+                SDL_DestroyTexture(atlas);
             }
         }
-        m_atlasTextures.clear();
-
-        if (m_renderer) { SDL_DestroyRenderer(m_renderer); }
-    }
-
-    void BatchRenderer::fillQuadIndices(const size_t startQuad, const size_t endQuad) {
-        for (size_t i = startQuad; i < endQuad; ++i) {
-            const int base = static_cast<int>(i) * 4;
-            s_quadIndices[i * 6 + 0] = base + 0;
-            s_quadIndices[i * 6 + 1] = base + 1;
-            s_quadIndices[i * 6 + 2] = base + 2;
-            s_quadIndices[i * 6 + 3] = base + 2;
-            s_quadIndices[i * 6 + 4] = base + 3;
-            s_quadIndices[i * 6 + 5] = base + 0;
-        }
-    }
-
-    void BatchRenderer::expandQuadIndicesTo(const size_t quadCount) {
-        if (quadCount * 6 > s_quadIndices.size()) {
-            const size_t oldQuadCount = s_quadIndices.size() / 6;
-            s_quadIndices.resize(quadCount * 6);
-            fillQuadIndices(oldQuadCount, quadCount);
-        }
-    }
-
-    void BatchRenderer::resetQuadIndices(const size_t quadCount) {
-        if (quadCount * 6 > s_quadIndices.size()) {
-            const size_t oldQuadCount = s_quadIndices.size() / 6;
-            s_quadIndices.resize(quadCount * 6);
-            fillQuadIndices(oldQuadCount, quadCount);
-        } else {
-            s_quadIndices.resize(quadCount * 6);
-            s_quadIndices.shrink_to_fit();
-        }
-    }
-
-    void BatchRenderer::addToBatch(const AtlasTexture &texture) {
-        const AtlasRegion atlasRegion = getAtlasRegion(texture.getTextureID());
-        if (const i32 atlasId = atlasRegion.atlasId;
-            m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId
-        ) {
-            m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_quadIndices));
-        }
-        m_drawBatches.back().indicesCount += 6;
-        if (m_drawBatches.back().indicesCount > s_quadIndices.size()) {
-            DAO_ERROR_LOG("共用矩形顶点数组索引不足");
-            expandQuadIndicesTo(s_quadIndices.size() * 2);
-        }
-        appendQuadVertices(
-            m_drawBatches.back().vertices,
-            texture.getBoundingBox(), atlasRegion
-        );
-    }
-
-    void BatchRenderer::addToBatch(const std::span<const AtlasTexture> &textures) {
-        for (const auto &texture: textures) {
-            addToBatch(texture);
+        if (m_renderer) {
+            SDL_DestroyRenderer(m_renderer);
         }
     }
 
@@ -86,199 +27,75 @@ namespace dao {
             return;
         }
         m_renderer = renderer;
+        SDL_SetRenderDrawBlendMode(m_renderer, SDL_BLENDMODE_BLEND);
         SDL_SetRenderVSync(m_renderer, 0);
 
         SDL_Texture *tex = SDL_CreateTexture(
-            m_renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, 1, 1
+            m_renderer, SDL_PIXELFORMAT_RGBA32, SDL_TEXTUREACCESS_STATIC, 1, 1
         );
         constexpr Uint32 whitePixel = 0xFFFFFFFF;
         SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
-        m_atlasTextures[0] = tex;
+        m_atlas[0] = tex;
+        SDL_SetTextureBlendMode(m_atlas[0], SDL_BLENDMODE_BLEND);
 
-        m_atlasTextures[1] = SDL_CreateTextureFromSurface(
-            m_renderer, &m_glyphAtlas.getAtlasSurface());
+        m_atlas[1] = SDL_CreateTextureFromSurface(
+            m_renderer, &m_glyphAtlas.getAtlasSurface()
+        );
+        m_atlas.resize(m_atlas.size(), nullptr);
+        SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
     }
 
-    void BatchRenderer::addToBatch(const std::span<const SDL_Vertex> v, const std::span<const i32> indices) {
-        // 如果没有批次或者当前批次不是几何图形批次（atlasId != 0），则创建新的几何图形绘制批次
-        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
-        }
-
-        auto &batch = m_drawBatches.back();
-
-        // 更新索引数量
-        batch.indicesCount += static_cast<int>(indices.size());
-
-        // 计算顶点偏移量，用于调整索引值
-        const auto offset = static_cast<i32>(batch.vertices.size());
-
-        // 添加顶点数据 - 预分配并直接拷贝，避免中间重分配和多次拷贝
-        if (const size_t vCount = v.size(); vCount > 0) {
-            const i64 oldVSize = static_cast<i64>(batch.vertices.size());
-            batch.vertices.resize(oldVSize + vCount);
-            std::ranges::copy(v, batch.vertices.begin() + oldVSize);
-        }
-
-        // 批量添加索引数据并根据偏移量调整索引值 - 直接写入调整后的目标位置，避免先插入再转换的两次遍历
-        auto &current_indices = *batch.indices;
-        if (const size_t idxCount = indices.size(); idxCount > 0) {
-            const i64 oldIdxSize = static_cast<i64>(current_indices.size());
-            current_indices.resize(oldIdxSize + idxCount);
-            std::ranges::transform(indices, current_indices.begin() + oldIdxSize,
-                                   [offset](const i32 idx) { return idx + offset; });
-        }
+    void BatchRenderer::clear() {
+        m_index = 0;
+        m_batches.clear();
     }
 
-    void BatchRenderer::addToBatch(const Triangle &triangle) {
-        // 确保有一个用于几何图元的批次（atlasId = 0）
-        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
-        }
-
-        auto &batch = m_drawBatches.back();
-        const auto offset = static_cast<i32>(batch.vertices.size());
-
-        // 预分配顶点空间，一次性添加所有顶点
-        const i64 oldVertexSize = static_cast<i64>(batch.vertices.size());
-        batch.vertices.resize(oldVertexSize + 3);
-        batch.vertices[oldVertexSize] = static_cast<SDL_Vertex>(triangle.vertex(0));
-        batch.vertices[oldVertexSize + 1] = static_cast<SDL_Vertex>(triangle.vertex(1));
-        batch.vertices[oldVertexSize + 2] = static_cast<SDL_Vertex>(triangle.vertex(2));
-
-        // 预分配索引空间，一次性添加所有索引
-        auto &indices = *batch.indices;
-        const i64 oldIndexSize = static_cast<i64>(indices.size());
-        indices.resize(oldIndexSize + 3);
-        indices[oldIndexSize] = offset;
-        indices[oldIndexSize + 1] = offset + 1;
-        indices[oldIndexSize + 2] = offset + 2;
-
-        // 更新索引计数
-        batch.indicesCount += 3;
-    }
-
-    void BatchRenderer::addToBatch(const std::span<const Triangle> &triangles) {
-        if (triangles.empty()) {
-            return;
-        }
-
-        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<i32>()));
-        }
-
-        auto &batch = m_drawBatches.back();
-        auto &indices = *batch.indices;
-
-        for (const auto &triangle : triangles) {
-            const auto offset = static_cast<i32>(batch.vertices.size());
-
-            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(0)));
-            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(1)));
-            batch.vertices.push_back(static_cast<SDL_Vertex>(triangle.vertex(2)));
-
-            indices.push_back(offset);
-            indices.push_back(offset + 1);
-            indices.push_back(offset + 2);
-
-            batch.indicesCount += 3;
-        }
-    }
-
-    void BatchRenderer::addToBatch(const Text &text) {
-        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 1) {
-            m_drawBatches.emplace_back(1, std::vector<SDL_Vertex>(), makeObserver(&s_quadIndices));
-        }
-        m_drawBatches.back().indicesCount += static_cast<int>(text.getContent().size()) * 6;
-        auto &vertices = m_drawBatches.back().vertices;
-
-        f32 x = text.getX();
-        f32 y = text.getY();
-        const f32 size = text.getFontSize();
-        for (const auto &ch: text.getContent()) {
-            if (ch == U'\n') {
-                y += size;
-                x = text.getX();
-                continue;
-            }
-            if (m_glyphAtlas.registerGlyph(ch)) {
-                SDL_UpdateTexture(
-                    m_atlasTextures[1], nullptr,
-                    m_glyphAtlas.getAtlasSurface().pixels,
-                    m_glyphAtlas.getAtlasSurface().pitch
-                );
-                SDL_SetTextureScaleMode(m_atlasTextures[1], SDL_SCALEMODE_NEAREST);
-                m_glyphAtlas.clearUpdateFlag();
-            }
-            auto b = m_glyphAtlas.getGlyphAtlasRegion(ch);
-            const f32 w = size / b.getHeight() * b.getWidth();
-            vertices.push_back({
-                {x, y},
-                text.getColor(),
-                {b.getLeft(), b.getTop()}
-            });
-            vertices.push_back({
-                {x + w, y}, text.getColor(), {b.getRight(), b.getTop()}
-            });
-            vertices.push_back({
-                {x + w, y + size}, text.getColor(), {b.getRight(), b.getBottom()}
-            });
-            vertices.push_back({
-                {x, y + size}, text.getColor(), {b.getLeft(), b.getBottom()}
-            });
-            x += w;
-        }
-    }
-
-    void BatchRenderer::addToBatch(const std::span<const Text> &texts) {
-        for (const auto &text: texts) {
-            addToBatch(text);
-        }
-    }
-
-    void BatchRenderer::clearDrawBatches(const u64 reserveSize) {
-        m_drawBatches.clear();
-        m_drawBatches.reserve(reserveSize);
-    }
-
-    void BatchRenderer::registerTexture(const i32 &textureId) {
+    void BatchRenderer::loadAtlas(const i32 textureId) {
         const AtlasRegion atlasRegion = getAtlasRegion(textureId);
-        if (const i32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
-            const char *texturePath = atlasRegion.atlasPath;
-            m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
-            if (!m_atlasTextures[atlasId]) {
-                DAO_ERROR_LOG("纹理图集加载失败:" + std::string(texturePath));
+        const i32 atlasId = atlasRegion.atlasId;
+        if (atlasId >= m_atlas.size()) {
+            m_atlas.resize(atlasId + 1, nullptr);
+        }
+        if (m_atlas[atlasId] == nullptr) {
+            const char *atlasPath = atlasRegion.atlasPath;
+            m_atlas[atlasId] = IMG_LoadTexture(m_renderer, atlasPath);
+            SDL_SetTextureBlendMode(m_atlas[atlasId], SDL_BLENDMODE_BLEND);
+            if (m_atlas[atlasId] == nullptr) {
+                DAO_ERROR_LOG("纹理图集加载失败:" + std::string(atlasPath));
             }
-            SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
+            SDL_SetTextureScaleMode(m_atlas[atlasId], SDL_SCALEMODE_NEAREST);
         }
     }
 
     void BatchRenderer::render() {
         SDL_RenderClear(m_renderer);
-        for (const auto &drawBatch: m_drawBatches) {
+        const SDL_Vertex *vertices = m_vertices.data();
+        for (auto [atlasId, size]: m_batches) {
             SDL_RenderGeometry(
-                m_renderer, m_atlasTextures[drawBatch.atlasId],
-                drawBatch.vertices.data(), static_cast<int>(drawBatch.vertices.size()),
-                drawBatch.indices->data(), drawBatch.indicesCount
+                m_renderer, m_atlas[atlasId],
+                vertices, size,
+                nullptr, 0
             );
+            vertices += size;
         }
+
         SDL_RenderPresent(m_renderer);
     }
 
-    void BatchRenderer::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
-                                           const AtlasRegion &atlasRegion) {
-        const f32 winL = pos.getLeft();
-        const f32 winT = pos.getTop();
-        const f32 winR = pos.getRight();
-        const f32 winB = pos.getBottom();
-        const f32 normalized_texL = atlasRegion.normalizedLeft;
-        const f32 normalized_texT = atlasRegion.normalizedTop;
-        const f32 normalized_texR = atlasRegion.normalizedRight;
-        const f32 normalized_texB = atlasRegion.normalizedBottom;
-        vertices.push_back({{winL, winT}, {1, 1, 1, 1}, {normalized_texL, normalized_texT}});
-        vertices.push_back({{winR, winT}, {1, 1, 1, 1}, {normalized_texR, normalized_texT}});
-        vertices.push_back({{winR, winB}, {1, 1, 1, 1}, {normalized_texR, normalized_texB}});
-        vertices.push_back({{winL, winB}, {1, 1, 1, 1}, {normalized_texL, normalized_texB}});
+    void BatchRenderer::loadGlyph(const utf32char charCode) {
+        if (m_glyphAtlas.tryRegisterGlyph(charCode)) {
+            m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &m_glyphAtlas.getAtlasSurface());
+            SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
+        }
+    }
+
+    SDL_Vertex *BatchRenderer::allocateVertices(const i32 atlasID, const i32 count) {
+        if (m_endAtlasId != atlasID || m_batches.empty()) {
+            m_batches.push_back({atlasID, 0});
+        }
+        SDL_Vertex *const ret = m_vertices.data() + m_index;
+        m_index += count;
+        m_batches.back().size += count;
+        return ret;
     }
 }
-

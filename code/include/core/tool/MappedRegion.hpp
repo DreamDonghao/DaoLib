@@ -1,6 +1,7 @@
 #pragma once
-#include <core/tool/BoundingBox.hpp>
 #include <tuple>
+
+#include <core/tool/BoundingBox.hpp>
 
 namespace dao {
     /// @brief 映射区域
@@ -16,7 +17,7 @@ namespace dao {
         MappedRegion(f32 leftA, f32 topA, f32 rightA, f32 bottomA,
                      f32 leftB, f32 topB, f32 rightB, f32 bottomB);
 
-        [[nodiscard]] std::tuple<BoundingBox, BoundingBox> getBoundingBoxs() const {
+        [[nodiscard]] std::tuple<BoundingBox, BoundingBox> getBoundingBoxes() const {
             return {m_boundingBoxA, m_boundingBoxB};
         }
 

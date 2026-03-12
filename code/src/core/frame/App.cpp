@@ -19,6 +19,7 @@ namespace dao {
     }
 
     App::~App() {
+        m_windows.clear();  // 先销毁所有窗口，确保 TTF_CloseFont 在 TTF_Quit 之前调用
         TTF_Quit();
         SDL_Quit();
     }
@@ -27,7 +28,6 @@ namespace dao {
     void App::run() {
         m_running = true;
         while (m_running) {
-            std::cout << "*****" << m_running << std::endl;
             m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {
                 if (window->workState() != Window::WorkState::Closed) {
@@ -40,7 +40,6 @@ namespace dao {
                 // 处理窗口关闭按钮（左上角）点击事件
                 if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
                     const i32 wid = static_cast<i32>(event.window.windowID);
-                    std::cout << wid << std::endl;
                     if (auto it = m_windows.find(wid); it != m_windows.end()) {
                         it->second->convertWorkState(Window::WorkState::Closed);
                     }

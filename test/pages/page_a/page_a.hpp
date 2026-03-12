@@ -1,15 +1,15 @@
 #pragma once
-#include <daoui.hpp>
+#include <daolib.hpp>
 
 namespace test {
     class PageA : public dao::ifc::IGeneralPage {
     public:
-        PageA() : IGeneralPage("setPage") {
+        PageA() : IGeneralPage("graph_test") {
         };
 
         ~PageA() override = default;
 
-        [[nodiscard]] std::vector<dao::TextureID> getRegisterTexture() const override;
+        [[nodiscard]] std::vector<dao::i32> getRegisterTextures() const override;
 
         void open() override;
 
@@ -18,5 +18,8 @@ namespace test {
         void update() override;
 
         void handleInputEvent(const SDL_Event &event) override;
+
+    private:
+        float m_time = 0.0f;
     };
 }
