@@ -24,12 +24,20 @@ add_library(dao
         src/core/frame/WindowController.cpp
         src/core/frame/AppController.cpp
         src/core/frame/context.cpp
-#        src/component/button/SimpleButton.cpp
-#        src/component/image.cpp
         src/interface/IGeneralPage.cpp
         src/daolib.cpp
         src/core/render/primitives/GlyphAtlas.cpp
+        src/web/http/HttpTypes.cpp
+        src/web/http/HttpClient.cpp
+        src/web/http/HttpsClient.cpp
+        src/web/http/Headers.cpp
 )
+
+target_precompile_headers(dao PRIVATE
+        <httplib.h>
+)
+
+set(CMAKE_UNITY_BUILD ON)
 
 set_target_properties(dao PROPERTIES
         DEBUG_POSTFIX "_d"
@@ -48,7 +56,12 @@ find_package(SDL3 CONFIG REQUIRED)
 find_package(SDL3_image CONFIG REQUIRED)
 find_package(SDL3_ttf CONFIG REQUIRED)
 find_package(utf8cpp CONFIG REQUIRED)
-
+find_package(httplib CONFIG REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
+find_package(OpenSSL REQUIRED)
+set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+# 启用 httplib 的 OpenSSL 支持
+target_compile_definitions(dao PUBLIC CPPHTTPLIB_OPENSSL_SUPPORT)
 target_link_libraries(dao
         PUBLIC
         SDL3::SDL3
@@ -56,6 +69,10 @@ target_link_libraries(dao
         SDL3_ttf::SDL3_ttf
         utf8::cpp
         utf8cpp::utf8cpp
+        OpenSSL::SSL
+        nlohmann_json::nlohmann_json
+        httplib::httplib
+        OpenSSL::Crypto
 )
 
 install(TARGETS dao

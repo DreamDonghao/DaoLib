@@ -1,8 +1,7 @@
-#include <core/frame/app.hpp>
+#include <core/frame/App.hpp>
 #include <hello_dao_page/hello_dao_page.hpp>
 
 int main(int argc, char *argv[]) {
-    using namespace example;
     /// 创建一个应用
     dao::App app(60);
 

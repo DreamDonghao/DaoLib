@@ -2,8 +2,33 @@
 #include "hello_dao_page.hpp"
 #include "page_a/page_a.hpp"
 #include "tray/AppTray.hpp"
+#include <web/http/HttpsClient.hpp>
 
 int main(int argc, char *argv[]) {
+    dao::web::HttpsClient client("api.deepseek.com", 443);
+
+    const dao::web::Headers headers = {
+        {"Content-Type", "application/json"},
+        {"Authorization", "Bearer sk-b9f3ee3a3ddd45ebb31d4a918c828217"}
+    };
+
+    const dao::json body = {
+        {"model", "deepseek-chat"},
+        {"messages", dao::json::array({
+            {{"role", "system"}, {"content", "You are a helpful assistant."}},
+            {{"role", "user"}, {"content", "你好!"}}
+        })},
+        {"stream", false}
+    };
+
+    if (const auto resp = client.post("/chat/completions", headers, body.dump()); resp.success) {
+        std::cout << resp.body << std::endl;
+    } else {
+        std::cout << "Error: " << resp.error << std::endl;
+    }
+
+    return 0;
+
     dao::App app{120, true};
 
     app.getContext().emplace<dao::App>(app);

@@ -2,132 +2,180 @@
 
 [中文](../zh/README.zh.md) | [English](README.en.md)
 
-A cross-platform C++ GUI development framework for building desktop applications, utility software, 2D games, and other visual programs.
+A cross-platform C++ application development framework for building desktop applications, utility software, and 2D visualization programs.
 
 ---
 
-📘 Documentation and Tutorials:
-https://dreamdonghao.github.io/DaoLib/en/html
+## Features
 
-Through this documentation, you can learn how to use DaoLib, understand its design philosophy, and participate in project development.
-
----
-
-## Project Introduction
-
-DaoLib is a cross-platform GUI library built with C++, aiming to provide a lightweight, high-performance application development solution with a low learning curve.
-
-The framework is built on SDL3, supports hardware acceleration, and all rendering is accomplished through vertex batching. When used appropriately, it delivers excellent performance, making it suitable not only for desktop application development but also for 2D games or other real-time visualization projects.
-
-DaoLib is not positioned as a full-fledged game engine, nor does it provide a vast array of pre-built controls like Qt. Currently, it offers the following core capabilities:
-
-- Texture management
-- Geometric shape rendering
-- Basic interactive components
-- Page and window structure support
-
-The design philosophy is: provide only the essential underlying capabilities, allowing developers greater freedom to build their own UI or systems.
-
-With basic C++ experience, you can get started in a relatively short time. Commonly used components are under continuous development.
-
-Whether you're a beginner or an experienced developer, you are welcome to participate in the development and improvement of DaoLib for practice, learning, and building projects.
+- **Graphics Rendering** - Hardware-accelerated rendering based on SDL3 with vertex batching
+- **Window Management** - Multi-window support with foreground/background/closed state switching
+- **Geometric Shapes** - Built-in common 2D shape components
+- **HTTP Client** - Synchronous/asynchronous HTTP/HTTPS requests
+- **JSON Support** - nlohmann/json integration
 
 ---
 
-## Usage Instructions
+## Dependencies
 
-Before you begin, ensure that **CMake** and **vcpkg** are installed on your system and accessible from the command line.
+| Library | Version | Purpose |
+|---|---|---|
+| SDL3 | >= 3.4.0 | Window & Rendering |
+| SDL3_image | >= 3.4.0 | Image Loading |
+| SDL3_ttf | >= 3.2.2 | Font Rendering |
+| cpp-httplib | >= 0.32.0 | HTTP Client |
+| nlohmann-json | >= 3.12.0 | JSON Processing |
+| OpenSSL | >= 3.6.1 | HTTPS Support |
+| utfcpp | >= 4.0.6 | UTF-8 Processing |
 
-### 1. Download and Preparation
+---
 
-Download the compressed package for your platform from the project's Releases page and extract it to a **stable, infrequently moved** directory.
+## Project Structure
 
-The **`dao`** executable in the package is the project's command-line tool. All subsequent project builds and resource processing will depend on it.
-It is recommended to add this directory to your system's PATH environment variable for convenient use from any location.
+```
+code/
+├── include/
+│   ├── core/              # Core Module
+│   │   ├── frame/         # Application Framework (App, Window, Tray, Context)
+│   │   ├── render/        # Renderers (BatchRenderer, GlyphAtlas)
+│   │   └── tool/          # Utilities (Point, BoundingBox, Log, etc.)
+│   ├── components/        # UI Components
+│   │   ├── graphs/        # Shapes (Rectangle, Circle, Line, etc.)
+│   │   ├── Image.hpp      # Image Component
+│   │   └── Text.hpp       # Text Component
+│   ├── interface/         # Interfaces (IPage, IButton, etc.)
+│   └── web/               # Network Module
+│       └── http/          # HTTP Client
+└── src/                   # Implementation Files
+```
 
-------
+---
 
-### 2. Installing dao
+## Quick Start
 
-Execute:
+### Requirements
+
+- C++23 Compiler
+- CMake >= 3.31
+- vcpkg Package Manager
+
+### Build
 
 ```bash
-dao install [buildType] [vcpkgCmakePath]
+# Install dependencies
+vcpkg install
+
+# Configure project
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=[vcpkg path]/scripts/buildsystems/vcpkg.cmake
+
+# Build
+cmake --build build
 ```
 
-Parameter explanation:
+### Basic Example
 
-- `[buildType]`: Build type
-  Options:
-    - `All`
-    - `Debug`
-    - `Release`
-    - `MinSizeRel`
-    - `RelWithDebInfo`
-- `[vcpkgCmakePath]`: Path to `vcpkg.cmake`, for example:
+```cpp
+#include <daolib.hpp>
 
-```bash
-dao install All ~/vcpkg/scripts/buildsystems/vcpkg.cmake
+class MyPage : public dao::ifc::IGeneralPage {
+public:
+    void init() override {
+        // Add shape component
+        addComponent<dao::comp::Rectangle>(100, 100, 200, 150);
+    }
+
+    void update() override {
+        // Frame update logic
+    }
+};
+
+int main() {
+    dao::App app{60};  // 60 FPS
+
+    app.createWindow(800, 600, "MyApp",
+                     dao::Window::WorkState::Foreground,
+                     true)  // Main window
+        .addPage(std::make_unique<MyPage>());
+
+    app.run();
+    return 0;
+}
 ```
 
-Successful completion of the command indicates a successful installation.
+---
 
-------
+## Module Description
 
-### 3. Creating a Project
+### Core Module (core)
 
-Create a new project using the following command:
+#### Application Framework (frame)
 
-```bash
-dao create project [projectName]
+| Class | Description |
+|---|---|
+| `App` | Application manager for windows, tray, main loop |
+| `Window` | Window with foreground/background/closed states |
+| `Tray` | System tray |
+| `Context` | Global context for cross-component data sharing |
+
+#### Rendering (render)
+
+| Class | Description |
+|---|---|
+| `BatchRenderer` | Batch renderer for textures and fonts |
+| `GlyphAtlas` | Glyph atlas for font texture management |
+
+### Components Module (components)
+
+#### Geometric Shapes (graphs)
+
+| Component | Description |
+|---|---|
+| `Rectangle` | Rectangle |
+| `Circle` | Circle |
+| `Ellipse` | Ellipse |
+| `Line` | Line |
+| `Arc` | Arc |
+| `Sector` | Sector |
+| `Ring` | Ring |
+| `RoundedRectangle` | Rounded Rectangle |
+| `Triangle` | Triangle |
+| `Polygon` | Polygon |
+
+### Network Module (web)
+
+#### HTTP Client
+
+```cpp
+#include <web/http/HttpClient.hpp>
+#include <web/http/HttpsClient.hpp>
+
+// HTTP Request
+dao::web::HttpClient http("example.com", 80);
+auto resp = http.get("/api/data");
+
+// HTTPS Request
+dao::web::HttpsClient https("api.example.com", 443);
+dao::web::Headers headers = {
+    {"Content-Type", "application/json"},
+    {"Authorization", "Bearer token"}
+};
+auto resp = https.post("/api", headers, R"({"key":"value"})");
+
+// Async Request
+auto id = https.getAsync("/api/data");
+if (https.isReady(id)) {
+    auto result = https.getResponse(id);
+}
 ```
 
-Example:
+---
 
-```bash
-dao create project hello_dao
-```
+## Contributing
 
-The generated project structure is as follows:
+Issues and Pull Requests are welcome.
 
-```
-hello_dao
-│   CMakeLists.txt
-│   main.cpp
-│   vcpkg.json
-│
-├───assets
-│   ├───textures
-│   │   ├───atlas
-│   │   ├───config
-│   │   ├───inc
-│   │   └───input_images
-│   └───ttf
-│
-└───pages
-        hello_dao_page.cpp
-        hello_dao_page.hpp
-```
+---
 
-------
+## License
 
-### 4. Packaging Image Resources
-
-If you need to use image resources:
-
-1. Place the images into the `assets/textures/input_images` directory.
-2. Execute the following command in the project's root directory:
-
-```bash
-dao texture pack
-```
-
-This command will automatically complete the atlas packaging and generate the related files.
-
-------
-
-### 5. More Documentation
-
-For complete project documentation and advanced usage, please visit:
-
-https://dreamdonghao.github.io/DaoLib/en/html
+MIT License

@@ -20,31 +20,25 @@ long long getTimeInterval() {
 std::vector<i32> HelloDaoPage::getRegisterTextures() const {
     return {};
 }
-
+i32 id;
 void HelloDaoPage::open() {
+    id = client.postAsync("/post",R"({"你好":"1"})");
 }
 
 void HelloDaoPage::close() {
 }
 
-Circle circle(100,100,100);
-Polygon<4> polygon(
-    Vertex(0, 0, Red),
-    Vertex(100, 0, Red),
-    Vertex(100, 100, Red),
-    Vertex(0, 100, Red)
-);
-dao::Text text(100,100,100,ColorRGBA(10,200,100,0.02),U"你好");
 void HelloDaoPage::update() {
     clearBatch();
-    circle.rotate(200,200,0.1);
-    addToBatch(circle,text);
-    for (int i=0;i<100;i++) {
-        addToBatch(polygon,text);
+    std::string st;
+    if (client.isReady(id)) {
+        st = client.getResponse(id)->body;
     }
+    Text text{0, 0, 100, Yellow, utf8ToUtf32(st)};
+    addToBatch(text);
+    addToBatch();
 }
 
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
-
 }
