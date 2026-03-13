@@ -78,14 +78,29 @@ cmake --build build
 #include <daolib.hpp>
 
 class MyPage : public dao::ifc::IGeneralPage {
+    dao::Circle circle{100, 100, 40};
+
 public:
-    void init() override {
-        // Add shape component
-        addComponent<dao::comp::Rectangle>(100, 100, 200, 150);
+    MyPage() : IGeneralPage("MyPage") {
+    };
+
+    ~MyPage() override = default;
+
+    [[nodiscard]] std::vector<dao::i32> getRegisterTextures() const override {
+        return {};
+    }
+
+    void open() override {
+    }
+
+    void close() override {
     }
 
     void update() override {
-        // Frame update logic
+        addToBatch(circle);
+    }
+
+    void handleInputEvent(const SDL_Event &event) override {
     }
 };
 
@@ -94,7 +109,7 @@ int main() {
 
     app.createWindow(800, 600, "MyApp",
                      dao::Window::WorkState::Foreground,
-                     true)  // Main window
+                     true)  // 主体窗口 / Main window
         .addPage(std::make_unique<MyPage>());
 
     app.run();
