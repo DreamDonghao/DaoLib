@@ -1,0 +1,5 @@
+<map id="dao::web::HttpsClient::fromURL" name="dao::web::HttpsClient::fromURL">
+<area shape="rect" id="Node000001" title="从URL构造客户端" alt="" coords="5,5,168,45"/>
+<area shape="rect" id="Node000002" href="$namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4" title="解析URL，提取主机名、端口和路径" alt="" coords="216,13,371,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
+</map>

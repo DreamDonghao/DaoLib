@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/web/http/HttpTypes.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('HttpTypes_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">HttpTypes.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="HttpTypes_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">core</span><span class="preprocessor">/</span><span class="preprocessor">tool</span><span class="preprocessor">/</span><span class="preprocessor">type</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespacedao.html">dao</a>::<a class="code hl_namespace" href="namespacedao_1_1web.html">web</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">/// @brief URL解析结果</span></div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1ParsedURL.html">    6</a></span>    <span class="keyword">struct</span> <a class="code hl_struct" href="structdao_1_1web_1_1ParsedURL.html">ParsedURL</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1ParsedURL.html#acead85e1c7bade339e08e64a830d37f0">    7</a></span>        std::string <a class="code hl_variable" href="structdao_1_1web_1_1ParsedURL.html#acead85e1c7bade339e08e64a830d37f0">host</a>;       <span class="comment">///&lt; 主机名</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1ParsedURL.html#a88f2fbef669c634013865a635900e0a5">    8</a></span>        <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="code hl_variable" href="structdao_1_1web_1_1ParsedURL.html#a88f2fbef669c634013865a635900e0a5">port</a> = 80;          <span class="comment">///&lt; 端口号</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1ParsedURL.html#a634116d8575d103a959e81e5e478b13d">    9</a></span>        std::string <a class="code hl_variable" href="structdao_1_1web_1_1ParsedURL.html#a634116d8575d103a959e81e5e478b13d">path</a> = <span class="stringliteral">&quot;/&quot;</span>; <span class="comment">///&lt; 请求路径</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    };</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">/// @brief 解析URL，提取主机名、端口和路径</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">/// @param url URL字符串，支持带或不带http/https前缀</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">/// @return 解析后的URL结构体</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_struct" href="structdao_1_1web_1_1ParsedURL.html">ParsedURL</a> <a class="code hl_function" href="namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4">parseHost</a>(<span class="keyword">const</span> std::string &amp;url);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">/// @brief 请求ID类型</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">   18</a></span>    <span class="keyword">using</span> <a class="code hl_typedef" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> = <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">/// @brief HTTP/HTTPS响应结构体</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1HttpResponse.html">   21</a></span>    <span class="keyword">struct</span> <a class="code hl_struct" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1HttpResponse.html#a2b3ed74c66b87033df0fe62aa55cb07e">   22</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structdao_1_1web_1_1HttpResponse.html#a2b3ed74c66b87033df0fe62aa55cb07e">status</a> = 0;       <span class="comment">///&lt; HTTP状态码</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1HttpResponse.html#a1d91d67cc3a07b18e5645a64ca626c97">   23</a></span>        std::string <a class="code hl_variable" href="structdao_1_1web_1_1HttpResponse.html#a1d91d67cc3a07b18e5645a64ca626c97">body</a>;     <span class="comment">///&lt; 响应体</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1HttpResponse.html#a15d1f4931934f2d03d3f8b28e9125bdd">   24</a></span>        std::string <a class="code hl_variable" href="structdao_1_1web_1_1HttpResponse.html#a15d1f4931934f2d03d3f8b28e9125bdd">error</a>;    <span class="comment">///&lt; 错误信息</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structdao_1_1web_1_1HttpResponse.html#aa46027a83e0cf6b969ae9fbf1e8ab7f6">   25</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="structdao_1_1web_1_1HttpResponse.html#aa46027a83e0cf6b969ae9fbf1e8ab7f6">success</a> = <span class="keyword">false</span>; <span class="comment">///&lt; 请求是否成功（status == 200）</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="ttc" id="aclassdao_1_1web_1_1Headers_html"><div class="ttname"><a href="classdao_1_1web_1_1Headers.html">dao::web::Headers</a></div><div class="ttdoc">HTTP请求头</div><div class="ttdef"><b>定义</b> <a href="Headers_8hpp_source.html#l00015">Headers.hpp:15</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html">dao::web::HttpClient::Impl</a></div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00018">HttpClient.cpp:18</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a426c89031a6c083bbe3a7224c09a6310"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a426c89031a6c083bbe3a7224c09a6310">dao::web::HttpClient::Impl::nextId</a></div><div class="ttdeci">std::atomic&lt; RequestId &gt; nextId</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00029">HttpClient.cpp:29</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a4805efaf28b07d75a8898fd81f4f65c3"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a4805efaf28b07d75a8898fd81f4f65c3">dao::web::HttpClient::Impl::port</a></div><div class="ttdeci">int port</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00028">HttpClient.cpp:28</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a7027467ad6663c15ed95390d384b7c7d"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a7027467ad6663c15ed95390d384b7c7d">dao::web::HttpClient::Impl::host</a></div><div class="ttdeci">std::string host</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00027">HttpClient.cpp:27</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a736562c5754ee146dc72f87270fa5acd"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a736562c5754ee146dc72f87270fa5acd">dao::web::HttpClient::Impl::futures</a></div><div class="ttdeci">std::unordered_map&lt; RequestId, std::shared_future&lt; HttpResponse &gt; &gt; futures</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00030">HttpClient.cpp:30</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a84d6616c92adcdc8e86ee1ca84fc66a0"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a84d6616c92adcdc8e86ee1ca84fc66a0">dao::web::HttpClient::Impl::client</a></div><div class="ttdeci">httplib::Client client</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00026">HttpClient.cpp:26</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_1_1Impl_html_a90a0e66c25d61ad7d0e8b770075ec1dd"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient_1_1Impl.html#a90a0e66c25d61ad7d0e8b770075ec1dd">dao::web::HttpClient::Impl::Impl</a></div><div class="ttdeci">Impl(const std::string &amp;host, const int port)</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00020">HttpClient.cpp:20</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html">dao::web::HttpClient</a></div><div class="ttdoc">HTTP客户端</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8hpp_source.html#l00010">HttpClient.hpp:10</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a042a80ec403774fd6accfc20db9dc513"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a042a80ec403774fd6accfc20db9dc513">dao::web::HttpClient::isReady</a></div><div class="ttdeci">bool isReady(RequestId id) const</div><div class="ttdoc">检查异步请求是否完成</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00131">HttpClient.cpp:131</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a0ae96f4d020a0e57913219da10ecb1ec"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a0ae96f4d020a0e57913219da10ecb1ec">dao::web::HttpClient::post</a></div><div class="ttdeci">HttpResponse post(const std::string &amp;path, const Headers &amp;headers, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</div><div class="ttdoc">发送带请求头的POST请求（同步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00085">HttpClient.cpp:85</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a1632ab844b21db3dafae5fd89f6b177c"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a1632ab844b21db3dafae5fd89f6b177c">dao::web::HttpClient::cancelRequest</a></div><div class="ttdeci">void cancelRequest(RequestId id) const</div><div class="ttdoc">取消异步请求</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00160">HttpClient.cpp:160</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a175ec3c4f0fbe65349d01e46e79fe6ad"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a175ec3c4f0fbe65349d01e46e79fe6ad">dao::web::HttpClient::HttpClient</a></div><div class="ttdeci">HttpClient(HttpClient &amp;&amp;) noexcept</div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a290366866f852d36f686749a46d9df53"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a290366866f852d36f686749a46d9df53">dao::web::HttpClient::waitResponse</a></div><div class="ttdeci">HttpResponse waitResponse(RequestId id) const</div><div class="ttdoc">等待异步请求响应（阻塞）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00150">HttpClient.cpp:150</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a2c2997c90629f08816c44f428d57a616"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a2c2997c90629f08816c44f428d57a616">dao::web::HttpClient::HttpClient</a></div><div class="ttdeci">HttpClient(const HttpClient &amp;)=delete</div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a3737d1f77480a8dae57be4549b39d8fb"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a3737d1f77480a8dae57be4549b39d8fb">dao::web::HttpClient::get</a></div><div class="ttdeci">HttpResponse get(const std::string &amp;path) const</div><div class="ttdoc">发送GET请求（同步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00046">HttpClient.cpp:46</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a44ddeb24b0dab948162a7800e0310e0d"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a44ddeb24b0dab948162a7800e0310e0d">dao::web::HttpClient::getPort</a></div><div class="ttdeci">int getPort() const</div><div class="ttdoc">获取端口号</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00173">HttpClient.cpp:173</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a55c72b22139f32bc0dd48ff19b9aef73"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a55c72b22139f32bc0dd48ff19b9aef73">dao::web::HttpClient::getAsync</a></div><div class="ttdeci">RequestId getAsync(const std::string &amp;path) const</div><div class="ttdoc">发送GET请求（异步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00105">HttpClient.cpp:105</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a67d302a0c2659a3743b1906dffdb29c7"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a67d302a0c2659a3743b1906dffdb29c7">dao::web::HttpClient::getResponse</a></div><div class="ttdeci">std::optional&lt; HttpResponse &gt; getResponse(RequestId id) const</div><div class="ttdoc">获取异步请求响应（非阻塞）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00139">HttpClient.cpp:139</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a7822c55fb5e89270dcceed2ff7cd23f9"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a7822c55fb5e89270dcceed2ff7cd23f9">dao::web::HttpClient::getHost</a></div><div class="ttdeci">const std::string &amp; getHost() const</div><div class="ttdoc">获取主机名</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00169">HttpClient.cpp:169</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a98a6eb48ed91351b2a303312ded7f486"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a98a6eb48ed91351b2a303312ded7f486">dao::web::HttpClient::setTimeout</a></div><div class="ttdeci">void setTimeout(int connection_sec, int read_sec) const</div><div class="ttdoc">设置超时时间</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00164">HttpClient.cpp:164</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_a9fa128756b714fde9a213915b7011fd5"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#a9fa128756b714fde9a213915b7011fd5">dao::web::HttpClient::post</a></div><div class="ttdeci">HttpResponse post(const std::string &amp;path, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</div><div class="ttdoc">发送POST请求（同步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00065">HttpClient.cpp:65</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_aa8148405ca7c98c80d3204c48bf84f14"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#aa8148405ca7c98c80d3204c48bf84f14">dao::web::HttpClient::HttpClient</a></div><div class="ttdeci">HttpClient(const std::string &amp;host, int port=80)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00033">HttpClient.cpp:33</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_ac2d00cdff78d5f2fcaf3924d6487709c"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#ac2d00cdff78d5f2fcaf3924d6487709c">dao::web::HttpClient::operator=</a></div><div class="ttdeci">HttpClient &amp; operator=(HttpClient &amp;&amp;) noexcept</div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_acbda7a7e07fda5a4ebd66eaafe41256e"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#acbda7a7e07fda5a4ebd66eaafe41256e">dao::web::HttpClient::fromURL</a></div><div class="ttdeci">static HttpClient fromURL(const std::string &amp;url)</div><div class="ttdoc">从URL构造客户端</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00041">HttpClient.cpp:41</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_ad7b114d8e2d719772c10e83dd3750e55"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#ad7b114d8e2d719772c10e83dd3750e55">dao::web::HttpClient::~HttpClient</a></div><div class="ttdeci">~HttpClient()</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_ade8b313be63ac43263004f49238af020"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#ade8b313be63ac43263004f49238af020">dao::web::HttpClient::postAsync</a></div><div class="ttdeci">RequestId postAsync(const std::string &amp;path, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</div><div class="ttdoc">发送POST请求（异步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00113">HttpClient.cpp:113</a></div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_ae0f72dfd81fa9d6b44570501b45e6f5d"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#ae0f72dfd81fa9d6b44570501b45e6f5d">dao::web::HttpClient::operator=</a></div><div class="ttdeci">HttpClient &amp; operator=(const HttpClient &amp;)=delete</div></div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpClient_html_aec50bb1b7a98d5ead2acc10b84b11b59"><div class="ttname"><a href="classdao_1_1web_1_1HttpClient.html#aec50bb1b7a98d5ead2acc10b84b11b59">dao::web::HttpClient::postAsync</a></div><div class="ttdeci">RequestId postAsync(const std::string &amp;path, const Headers &amp;headers, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</div><div class="ttdoc">发送带请求头的POST请求（异步）</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00122">HttpClient.cpp:122</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html"><div class="ttname"><a href="namespacedao_1_1web.html">dao::web</a></div><div class="ttdef"><b>定义</b> <a href="Headers_8cpp_source.html#l00003">Headers.cpp:3</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html_a49c83f95d6dec8a7a83be257bee9addc"><div class="ttname"><a href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">dao::web::RequestId</a></div><div class="ttdeci">i32 RequestId</div><div class="ttdoc">请求ID类型</div><div class="ttdef"><b>定义</b> <a href="#l00018">HttpTypes.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html_ab0221f1077eb3a6b657fe29eebca21f4"><div class="ttname"><a href="namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4">dao::web::parseHost</a></div><div class="ttdeci">ParsedURL parseHost(const std::string &amp;url)</div><div class="ttdoc">解析URL，提取主机名、端口和路径</div><div class="ttdef"><b>定义</b> <a href="HttpTypes_8cpp_source.html#l00004">HttpTypes.cpp:4</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html_aeb7562cd56b6d7f743a6fa4fe068ffc0"><div class="ttname"><a href="namespacedao_1_1web.html#aeb7562cd56b6d7f743a6fa4fe068ffc0">dao::web::toHttplibHeaders</a></div><div class="ttdeci">httplib::Headers toHttplibHeaders(const Headers &amp;headers)</div><div class="ttdoc">将 Headers 转换为 httplib::Headers</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00010">HttpClient.cpp:10</a></div></div>
+<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>定义</b> <a href="App_8cpp_source.html#l00005">App.cpp:5</a></div></div>
+<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00009">type.hpp:9</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1HttpResponse_html"><div class="ttname"><a href="structdao_1_1web_1_1HttpResponse.html">dao::web::HttpResponse</a></div><div class="ttdoc">HTTP/HTTPS响应结构体</div><div class="ttdef"><b>定义</b> <a href="#l00021">HttpTypes.hpp:21</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1HttpResponse_html_a15d1f4931934f2d03d3f8b28e9125bdd"><div class="ttname"><a href="structdao_1_1web_1_1HttpResponse.html#a15d1f4931934f2d03d3f8b28e9125bdd">dao::web::HttpResponse::error</a></div><div class="ttdeci">std::string error</div><div class="ttdoc">错误信息</div><div class="ttdef"><b>定义</b> <a href="#l00024">HttpTypes.hpp:24</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1HttpResponse_html_a1d91d67cc3a07b18e5645a64ca626c97"><div class="ttname"><a href="structdao_1_1web_1_1HttpResponse.html#a1d91d67cc3a07b18e5645a64ca626c97">dao::web::HttpResponse::body</a></div><div class="ttdeci">std::string body</div><div class="ttdoc">响应体</div><div class="ttdef"><b>定义</b> <a href="#l00023">HttpTypes.hpp:23</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1HttpResponse_html_a2b3ed74c66b87033df0fe62aa55cb07e"><div class="ttname"><a href="structdao_1_1web_1_1HttpResponse.html#a2b3ed74c66b87033df0fe62aa55cb07e">dao::web::HttpResponse::status</a></div><div class="ttdeci">int status</div><div class="ttdoc">HTTP状态码</div><div class="ttdef"><b>定义</b> <a href="#l00022">HttpTypes.hpp:22</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1HttpResponse_html_aa46027a83e0cf6b969ae9fbf1e8ab7f6"><div class="ttname"><a href="structdao_1_1web_1_1HttpResponse.html#aa46027a83e0cf6b969ae9fbf1e8ab7f6">dao::web::HttpResponse::success</a></div><div class="ttdeci">bool success</div><div class="ttdoc">请求是否成功（status == 200）</div><div class="ttdef"><b>定义</b> <a href="#l00025">HttpTypes.hpp:25</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1ParsedURL_html"><div class="ttname"><a href="structdao_1_1web_1_1ParsedURL.html">dao::web::ParsedURL</a></div><div class="ttdoc">URL解析结果</div><div class="ttdef"><b>定义</b> <a href="#l00006">HttpTypes.hpp:6</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1ParsedURL_html_a634116d8575d103a959e81e5e478b13d"><div class="ttname"><a href="structdao_1_1web_1_1ParsedURL.html#a634116d8575d103a959e81e5e478b13d">dao::web::ParsedURL::path</a></div><div class="ttdeci">std::string path</div><div class="ttdoc">请求路径</div><div class="ttdef"><b>定义</b> <a href="#l00009">HttpTypes.hpp:9</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1ParsedURL_html_a88f2fbef669c634013865a635900e0a5"><div class="ttname"><a href="structdao_1_1web_1_1ParsedURL.html#a88f2fbef669c634013865a635900e0a5">dao::web::ParsedURL::port</a></div><div class="ttdeci">i32 port</div><div class="ttdoc">端口号</div><div class="ttdef"><b>定义</b> <a href="#l00008">HttpTypes.hpp:8</a></div></div>
+<div class="ttc" id="astructdao_1_1web_1_1ParsedURL_html_acead85e1c7bade339e08e64a830d37f0"><div class="ttname"><a href="structdao_1_1web_1_1ParsedURL.html#acead85e1c7bade339e08e64a830d37f0">dao::web::ParsedURL::host</a></div><div class="ttdeci">std::string host</div><div class="ttdoc">主机名</div><div class="ttdef"><b>定义</b> <a href="#l00007">HttpTypes.hpp:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<script src="style.js"></script>

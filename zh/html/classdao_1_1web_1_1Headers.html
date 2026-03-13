@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: dao::web::Headers类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdao_1_1web_1_1Headers.html','','classdao_1_1web_1_1Headers-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dao::web::Headers类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTP请求头  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Headers_8hpp_source.html">Headers.hpp</a>&gt;</code></p>
+<div class="dynheader">
+dao::web::Headers 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1web_1_1Headers__coll__graph.png" border="0" usemap="#adao_1_1web_1_1Headers_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="adao_1_1web_1_1Headers_coll__map" id="adao_1_1web_1_1Headers_coll__map">
+<area shape="rect" title="HTTP请求头" alt="" coords="5,5,140,271"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1980a64787d3585f6ca28e12a6d5bf64" id="r_a1980a64787d3585f6ca28e12a6d5bf64"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1980a64787d3585f6ca28e12a6d5bf64">Headers</a> ()=default</td></tr>
+<tr class="memitem:a1d2f6fd55796b2a03d045b3c48c65670" id="r_a1d2f6fd55796b2a03d045b3c48c65670"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1d2f6fd55796b2a03d045b3c48c65670">Headers</a> (std::initializer_list&lt; std::pair&lt; std::string, std::string &gt; &gt; init)</td></tr>
+<tr class="memitem:a9ce043604c0d8412a23bebc3a4a9985e" id="r_a9ce043604c0d8412a23bebc3a4a9985e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9ce043604c0d8412a23bebc3a4a9985e">add</a> (const std::string &amp;key, const std::string &amp;value)</td></tr>
+<tr class="memitem:a1c69945a6783288207c364d8fb7e719c" id="r_a1c69945a6783288207c364d8fb7e719c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1c69945a6783288207c364d8fb7e719c">set</a> (const std::string &amp;key, const std::string &amp;value)</td></tr>
+<tr class="memitem:a5c4e6efe865a8b98878bd868280fde75" id="r_a5c4e6efe865a8b98878bd868280fde75"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a5c4e6efe865a8b98878bd868280fde75">get</a> (const std::string &amp;key) const</td></tr>
+<tr class="memitem:abd6fccd88b3fa2c20bcde30a842cfe0a" id="r_abd6fccd88b3fa2c20bcde30a842cfe0a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd6fccd88b3fa2c20bcde30a842cfe0a">remove</a> (const std::string &amp;key)</td></tr>
+<tr class="memitem:a73808edcaf6e6a60e747c7f3b041435d" id="r_a73808edcaf6e6a60e747c7f3b041435d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73808edcaf6e6a60e747c7f3b041435d">clear</a> ()</td></tr>
+<tr class="memitem:ae3534d24b575eb72dac72b808c38a4cf" id="r_ae3534d24b575eb72dac72b808c38a4cf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae3534d24b575eb72dac72b808c38a4cf">empty</a> () const</td></tr>
+<tr class="memitem:a98ef3efb1e0c67fdfe765b85094de927" id="r_a98ef3efb1e0c67fdfe765b85094de927"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a98ef3efb1e0c67fdfe765b85094de927">size</a> () const</td></tr>
+<tr class="memitem:a96ff6ea5761ca57dc245c9a5fbef477a" id="r_a96ff6ea5761ca57dc245c9a5fbef477a"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a96ff6ea5761ca57dc245c9a5fbef477a">begin</a> () const</td></tr>
+<tr class="memitem:a85f76d955781a012a18ddccb0a497ab6" id="r_a85f76d955781a012a18ddccb0a497ab6"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a85f76d955781a012a18ddccb0a497ab6">end</a> () const</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>HTTP请求头 </p>
+<p>支持初始化列表构造 </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a1980a64787d3585f6ca28e12a6d5bf64">Headers</a> headers = {</div>
+<div class="line">    {<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;application/json&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;Authorization&quot;</span>, <span class="stringliteral">&quot;Bearer token&quot;</span>}</div>
+<div class="line">};</div>
+<div class="ttc" id="aclassdao_1_1web_1_1Headers_html_a1980a64787d3585f6ca28e12a6d5bf64"><div class="ttname"><a href="#a1980a64787d3585f6ca28e12a6d5bf64">dao::web::Headers::Headers</a></div><div class="ttdeci">Headers()=default</div></div>
+</div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="Headers_8hpp_source.html">Headers.hpp</a> 第 <a class="el" href="Headers_8hpp_source.html#l00015">15</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a1980a64787d3585f6ca28e12a6d5bf64" name="a1980a64787d3585f6ca28e12a6d5bf64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1980a64787d3585f6ca28e12a6d5bf64">&#9670;&#160;</a></span>Headers() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::Headers::Headers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d2f6fd55796b2a03d045b3c48c65670" name="a1d2f6fd55796b2a03d045b3c48c65670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2f6fd55796b2a03d045b3c48c65670">&#9670;&#160;</a></span>Headers() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::Headers::Headers </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; std::string, std::string &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>init</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00004">4</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>                                                                            {</div>
+<div class="line"><span class="lineno">    5</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[key, value] : init) {</div>
+<div class="line"><span class="lineno">    6</span>            m_headers.emplace(key, value);</div>
+<div class="line"><span class="lineno">    7</span>        }</div>
+<div class="line"><span class="lineno">    8</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a9ce043604c0d8412a23bebc3a4a9985e" name="a9ce043604c0d8412a23bebc3a4a9985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce043604c0d8412a23bebc3a4a9985e">&#9670;&#160;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::Headers::add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00010">10</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                                  {</div>
+<div class="line"><span class="lineno">   11</span>        m_headers.emplace(key, value);</div>
+<div class="line"><span class="lineno">   12</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a96ff6ea5761ca57dc245c9a5fbef477a" name="a96ff6ea5761ca57dc245c9a5fbef477a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ff6ea5761ca57dc245c9a5fbef477a">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto dao::web::Headers::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8hpp_source.html">Headers.hpp</a> 第 <a class="el" href="Headers_8hpp_source.html#l00028">28</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{ <span class="keywordflow">return</span> m_headers.begin(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73808edcaf6e6a60e747c7f3b041435d" name="a73808edcaf6e6a60e747c7f3b041435d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73808edcaf6e6a60e747c7f3b041435d">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::Headers::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00028">28</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                        {</div>
+<div class="line"><span class="lineno">   29</span>        m_headers.clear();</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae3534d24b575eb72dac72b808c38a4cf" name="ae3534d24b575eb72dac72b808c38a4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3534d24b575eb72dac72b808c38a4cf">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dao::web::Headers::empty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00032">32</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                              {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> m_headers.empty();</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85f76d955781a012a18ddccb0a497ab6" name="a85f76d955781a012a18ddccb0a497ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f76d955781a012a18ddccb0a497ab6">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto dao::web::Headers::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8hpp_source.html">Headers.hpp</a> 第 <a class="el" href="Headers_8hpp_source.html#l00029">29</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> m_headers.end(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5c4e6efe865a8b98878bd868280fde75" name="a5c4e6efe865a8b98878bd868280fde75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4e6efe865a8b98878bd868280fde75">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dao::web::Headers::get </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00019">19</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                     {</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keyword">const</span> <span class="keyword">auto</span> it = m_headers.find(key);</div>
+<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">return</span> (it != m_headers.end()) ? it-&gt;second : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   22</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd6fccd88b3fa2c20bcde30a842cfe0a" name="abd6fccd88b3fa2c20bcde30a842cfe0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6fccd88b3fa2c20bcde30a842cfe0a">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::Headers::remove </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00024">24</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                             {</div>
+<div class="line"><span class="lineno">   25</span>        m_headers.erase(key);</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1c69945a6783288207c364d8fb7e719c" name="a1c69945a6783288207c364d8fb7e719c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c69945a6783288207c364d8fb7e719c">&#9670;&#160;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::Headers::set </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00014">14</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                                                  {</div>
+<div class="line"><span class="lineno">   15</span>        m_headers.erase(key);</div>
+<div class="line"><span class="lineno">   16</span>        m_headers.emplace(key, value);</div>
+<div class="line"><span class="lineno">   17</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98ef3efb1e0c67fdfe765b85094de927" name="a98ef3efb1e0c67fdfe765b85094de927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ef3efb1e0c67fdfe765b85094de927">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t dao::web::Headers::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Headers_8cpp_source.html">Headers.cpp</a> 第 <a class="el" href="Headers_8cpp_source.html#l00036">36</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                               {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> m_headers.size();</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>code/include/web/http/<a class="el" href="Headers_8hpp_source.html">Headers.hpp</a></li>
+<li>code/src/web/http/<a class="el" href="Headers_8cpp_source.html">Headers.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

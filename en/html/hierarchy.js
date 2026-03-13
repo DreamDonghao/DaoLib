@@ -10,6 +10,10 @@ var hierarchy =
     [ "dao::Context", "classdao_1_1Context.html", null ],
     [ "dao::FrameLimiter", "classdao_1_1FrameLimiter.html", null ],
     [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
+    [ "dao::web::Headers", "classdao_1_1web_1_1Headers.html", null ],
+    [ "dao::web::HttpClient", "classdao_1_1web_1_1HttpClient.html", null ],
+    [ "dao::web::HttpResponse", "structdao_1_1web_1_1HttpResponse.html", null ],
+    [ "dao::web::HttpsClient", "classdao_1_1web_1_1HttpsClient.html", null ],
     [ "dao::ifc::IButton", "classdao_1_1ifc_1_1IButton.html", null ],
     [ "dao::ifc::IDrawable", "classdao_1_1ifc_1_1IDrawable.html", [
       [ "dao::Image", "classdao_1_1Image.html", null ],
@@ -27,10 +31,13 @@ var hierarchy =
         [ "dao::Triangle", "classdao_1_1Triangle.html", null ]
       ] ]
     ] ],
+    [ "dao::web::HttpClient::Impl", "classdao_1_1web_1_1HttpClient_1_1Impl.html", null ],
+    [ "dao::web::HttpsClient::Impl", "classdao_1_1web_1_1HttpsClient_1_1Impl.html", null ],
     [ "dao::ifc::IPage", "classdao_1_1ifc_1_1IPage.html", [
       [ "dao::ifc::IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html", null ]
     ] ],
     [ "dao::MappedRegion", "classdao_1_1MappedRegion.html", null ],
+    [ "dao::web::ParsedURL", "structdao_1_1web_1_1ParsedURL.html", null ],
     [ "dao::Point", "classdao_1_1Point.html", null ],
     [ "dao::RingVector&lt; Type &gt;", "classdao_1_1RingVector.html", null ],
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],

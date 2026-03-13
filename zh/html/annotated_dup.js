@@ -9,6 +9,13 @@ var annotated_dup =
         [ "IButton", "classdao_1_1ifc_1_1IButton.html", "classdao_1_1ifc_1_1IButton" ],
         [ "IButtonStyle", "classdao_1_1ifc_1_1IButtonStyle.html", "classdao_1_1ifc_1_1IButtonStyle" ]
       ] ],
+      [ "web", "namespacedao_1_1web.html", [
+        [ "Headers", "classdao_1_1web_1_1Headers.html", "classdao_1_1web_1_1Headers" ],
+        [ "HttpClient", "classdao_1_1web_1_1HttpClient.html", "classdao_1_1web_1_1HttpClient" ],
+        [ "HttpsClient", "classdao_1_1web_1_1HttpsClient.html", "classdao_1_1web_1_1HttpsClient" ],
+        [ "ParsedURL", "structdao_1_1web_1_1ParsedURL.html", "structdao_1_1web_1_1ParsedURL" ],
+        [ "HttpResponse", "structdao_1_1web_1_1HttpResponse.html", "structdao_1_1web_1_1HttpResponse" ]
+      ] ],
       [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
       [ "AppCommand", "structdao_1_1AppCommand.html", "structdao_1_1AppCommand" ],
       [ "AppController", "classdao_1_1AppController.html", "classdao_1_1AppController" ],

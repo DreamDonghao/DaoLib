@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['m_5fwindowcontroller_0',['m_windowController',['../classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8',1,'dao::ifc::IGeneralPage']]]
+  ['data_0',['data',['../structdao_1_1AppCommand.html#a731ccdd5f379bcc1ee01d8dfd11df21f',1,'dao::AppCommand::data'],['../structdao_1_1WindowCommand.html#a2984d556994fe450ac350f120e82cd66',1,'dao::WindowCommand::data']]]
 ];

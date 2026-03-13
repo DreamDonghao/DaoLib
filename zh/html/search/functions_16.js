@@ -3,12 +3,14 @@ var searchData=
   ['_7eapp_0',['~App',['../classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8',1,'dao::App']]],
   ['_7ebatchrenderer_1',['~BatchRenderer',['../classdao_1_1BatchRenderer.html#aacc6cec67f35d35b256228c3b2e78ae7',1,'dao::BatchRenderer']]],
   ['_7eglyphatlas_2',['~GlyphAtlas',['../classdao_1_1GlyphAtlas.html#a2c107901ededcd60f40f2061295b727a',1,'dao::GlyphAtlas']]],
-  ['_7eibutton_3',['~IButton',['../classdao_1_1ifc_1_1IButton.html#a79f1642b711e933bffac6a75ae7b5cae',1,'dao::ifc::IButton']]],
-  ['_7eibuttonstyle_4',['~IButtonStyle',['../classdao_1_1ifc_1_1IButtonStyle.html#a26caca5b71ebce32252b4603b5eacd08',1,'dao::ifc::IButtonStyle']]],
-  ['_7eidrawable_5',['~IDrawable',['../classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea',1,'dao::ifc::IDrawable']]],
-  ['_7eigeneralpage_6',['~IGeneralPage',['../classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82',1,'dao::ifc::IGeneralPage']]],
-  ['_7eigraph_7',['~IGraph',['../classdao_1_1ifc_1_1IGraph.html#a80cdaf67867aaf5f9d809e49732c838f',1,'dao::ifc::IGraph']]],
-  ['_7eipage_8',['~IPage',['../classdao_1_1ifc_1_1IPage.html#a7cf93058e0e29461319c3d3786c6d0c1',1,'dao::ifc::IPage']]],
-  ['_7etray_9',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
-  ['_7ewindow_10',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['_7ehttpclient_3',['~HttpClient',['../classdao_1_1web_1_1HttpClient.html#ad7b114d8e2d719772c10e83dd3750e55',1,'dao::web::HttpClient']]],
+  ['_7ehttpsclient_4',['~HttpsClient',['../classdao_1_1web_1_1HttpsClient.html#a573124f8d6aff4e37ea18cb029091a27',1,'dao::web::HttpsClient']]],
+  ['_7eibutton_5',['~IButton',['../classdao_1_1ifc_1_1IButton.html#a79f1642b711e933bffac6a75ae7b5cae',1,'dao::ifc::IButton']]],
+  ['_7eibuttonstyle_6',['~IButtonStyle',['../classdao_1_1ifc_1_1IButtonStyle.html#a26caca5b71ebce32252b4603b5eacd08',1,'dao::ifc::IButtonStyle']]],
+  ['_7eidrawable_7',['~IDrawable',['../classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea',1,'dao::ifc::IDrawable']]],
+  ['_7eigeneralpage_8',['~IGeneralPage',['../classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82',1,'dao::ifc::IGeneralPage']]],
+  ['_7eigraph_9',['~IGraph',['../classdao_1_1ifc_1_1IGraph.html#a80cdaf67867aaf5f9d809e49732c838f',1,'dao::ifc::IGraph']]],
+  ['_7eipage_10',['~IPage',['../classdao_1_1ifc_1_1IPage.html#a7cf93058e0e29461319c3d3786c6d0c1',1,'dao::ifc::IPage']]],
+  ['_7etray_11',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
+  ['_7ewindow_12',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
 ];

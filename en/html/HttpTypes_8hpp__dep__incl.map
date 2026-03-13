@@ -1,0 +1,13 @@
+<map id="code/include/web/http/HttpTypes.hpp" name="code/include/web/http/HttpTypes.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,5,449,45"/>
+<area shape="rect" id="Node000002" href="$HttpClient_8hpp.html" title=" " alt="" coords="76,93,241,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,53,205,96,203,91,307,48"/>
+<area shape="rect" id="Node000004" href="$HttpsClient_8hpp.html" title=" " alt="" coords="284,93,449,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="369,59,369,93,364,93,364,59"/>
+<area shape="rect" id="Node000006" href="$HttpTypes_8cpp.html" title=" " alt="" coords="474,101,707,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="430,48,562,98,560,103,428,53"/>
+<area shape="rect" id="Node000003" href="$HttpClient_8cpp.html" title=" " alt="" coords="5,181,240,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,147,130,182,126,180,142,145"/>
+<area shape="rect" id="Node000005" href="$HttpsClient_8cpp.html" title=" " alt="" coords="265,181,506,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="377,146,385,180,380,182,372,147"/>
+</map>

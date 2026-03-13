@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trayfunc_0',['TrayFunc',['../namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc',1,'dao']]]
+  ['json_0',['json',['../namespacedao.html#ae863a51e37dd157d31b5dd511bf6a4de',1,'dao']]]
 ];

@@ -1,0 +1,13 @@
+<map id="code/include/web/http/HttpTypes.hpp" name="code/include/web/http/HttpTypes.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="100,5,265,45"/>
+<area shape="rect" id="Node000002" href="$type_8hpp.html" title=" " alt="" coords="113,93,253,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,46,185,79,180,79,180,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,72,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,121,76,163,73,158,158,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,167,155,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,121,145,158,141,154,171,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="179,167,303,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="194,117,225,155,221,158,190,121"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="328,167,475,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="219,116,354,160,352,165,217,121"/>
+</map>

@@ -1,6 +1,7 @@
 var namespacedao =
 [
     [ "ifc", "namespacedao_1_1ifc.html", "namespacedao_1_1ifc" ],
+    [ "web", "namespacedao_1_1web.html", "namespacedao_1_1web" ],
     [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
     [ "AppCommand", "structdao_1_1AppCommand.html", "structdao_1_1AppCommand" ],
     [ "AppController", "classdao_1_1AppController.html", "classdao_1_1AppController" ],
@@ -41,6 +42,7 @@ var namespacedao =
     [ "i32", "namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb", null ],
     [ "i64", "namespacedao.html#a3d5044c31e25746e391c0094a4e9bd38", null ],
     [ "i8", "namespacedao.html#af676202b66b524e62ea731223ea00126", null ],
+    [ "json", "namespacedao.html#ae863a51e37dd157d31b5dd511bf6a4de", null ],
     [ "TrayFunc", "namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc", null ],
     [ "u16", "namespacedao.html#a68005dc114d91689af54bd55a8a941ce", null ],
     [ "u32", "namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6", null ],

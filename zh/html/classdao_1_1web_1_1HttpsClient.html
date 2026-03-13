@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: dao::web::HttpsClient类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdao_1_1web_1_1HttpsClient.html','','classdao_1_1web_1_1HttpsClient-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dao::web::HttpsClient类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTPS客户端  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="HttpsClient_8hpp_source.html">HttpsClient.hpp</a>&gt;</code></p>
+<div class="dynheader">
+dao::web::HttpsClient 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1web_1_1HttpsClient__coll__graph.png" border="0" usemap="#adao_1_1web_1_1HttpsClient_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="adao_1_1web_1_1HttpsClient_coll__map" id="adao_1_1web_1_1HttpsClient_coll__map">
+<area shape="rect" title="HTTPS客户端" alt="" coords="5,5,183,291"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:Impl" id="r_Impl"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1web_1_1HttpsClient_1_1Impl.html">Impl</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a922ec62f676aaddfe0858315581a1738" id="r_a922ec62f676aaddfe0858315581a1738"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> (const std::string &amp;host, int port=443)</td></tr>
+<tr class="memdesc:a922ec62f676aaddfe0858315581a1738"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="memitem:a573124f8d6aff4e37ea18cb029091a27" id="r_a573124f8d6aff4e37ea18cb029091a27"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a573124f8d6aff4e37ea18cb029091a27">~HttpsClient</a> ()</td></tr>
+<tr class="memdesc:a573124f8d6aff4e37ea18cb029091a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="memitem:ab2c10f012e298827c263a277eca761da" id="r_ab2c10f012e298827c263a277eca761da"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab2c10f012e298827c263a277eca761da">HttpsClient</a> (const HttpsClient &amp;)=delete</td></tr>
+<tr class="memitem:afdc9c5d00b89a5f03c4288c874cc761f" id="r_afdc9c5d00b89a5f03c4288c874cc761f"><td class="memItemLeft"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afdc9c5d00b89a5f03c4288c874cc761f">operator=</a> (const <a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;)=delete</td></tr>
+<tr class="memitem:a4b7605d153558e3a907b584b1a619dbf" id="r_a4b7605d153558e3a907b584b1a619dbf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4b7605d153558e3a907b584b1a619dbf">HttpsClient</a> (HttpsClient &amp;&amp;) noexcept</td></tr>
+<tr class="memitem:a2258078da9f52d6829c75be8c45052ba" id="r_a2258078da9f52d6829c75be8c45052ba"><td class="memItemLeft"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2258078da9f52d6829c75be8c45052ba">operator=</a> (<a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;&amp;) noexcept</td></tr>
+<tr class="memitem:a35a7b49e0ded58a0604021f9580026b2" id="r_a35a7b49e0ded58a0604021f9580026b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35a7b49e0ded58a0604021f9580026b2">setCaCertPath</a> (const std::string &amp;ca_cert_path) const</td></tr>
+<tr class="memdesc:a35a7b49e0ded58a0604021f9580026b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置CA证书路径  <br /></td></tr>
+<tr class="memitem:a625b09580d6bef3821408d9c0802f80d" id="r_a625b09580d6bef3821408d9c0802f80d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a625b09580d6bef3821408d9c0802f80d">enableSSLVerification</a> (bool enable) const</td></tr>
+<tr class="memdesc:a625b09580d6bef3821408d9c0802f80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用或禁用SSL证书验证  <br /></td></tr>
+<tr class="memitem:a89f6957b0932b481cb4a29b0353ab5d1" id="r_a89f6957b0932b481cb4a29b0353ab5d1"><td class="memItemLeft"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a>&#160;</td><td class="memItemRight"><a class="el" href="#a89f6957b0932b481cb4a29b0353ab5d1">get</a> (const std::string &amp;path) const</td></tr>
+<tr class="memdesc:a89f6957b0932b481cb4a29b0353ab5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送GET请求（同步）  <br /></td></tr>
+<tr class="memitem:aa95fe55a8a7dc5cc19f044e240dccb23" id="r_aa95fe55a8a7dc5cc19f044e240dccb23"><td class="memItemLeft"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa95fe55a8a7dc5cc19f044e240dccb23">post</a> (const std::string &amp;path, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</td></tr>
+<tr class="memdesc:aa95fe55a8a7dc5cc19f044e240dccb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送POST请求（同步）  <br /></td></tr>
+<tr class="memitem:a52bae6f1f777a01c467ed6cfd0992e88" id="r_a52bae6f1f777a01c467ed6cfd0992e88"><td class="memItemLeft"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a>&#160;</td><td class="memItemRight"><a class="el" href="#a52bae6f1f777a01c467ed6cfd0992e88">post</a> (const std::string &amp;path, const <a class="el" href="classdao_1_1web_1_1Headers.html">Headers</a> &amp;headers, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</td></tr>
+<tr class="memdesc:a52bae6f1f777a01c467ed6cfd0992e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送带请求头的POST请求（同步）  <br /></td></tr>
+<tr class="memitem:a8979ede9dbddf7092d7ac5f8c53bf724" id="r_a8979ede9dbddf7092d7ac5f8c53bf724"><td class="memItemLeft"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8979ede9dbddf7092d7ac5f8c53bf724">getAsync</a> (const std::string &amp;path) const</td></tr>
+<tr class="memdesc:a8979ede9dbddf7092d7ac5f8c53bf724"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送GET请求（异步）  <br /></td></tr>
+<tr class="memitem:a76ffa7003ef0c09d4d9dd366f39180ce" id="r_a76ffa7003ef0c09d4d9dd366f39180ce"><td class="memItemLeft"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a>&#160;</td><td class="memItemRight"><a class="el" href="#a76ffa7003ef0c09d4d9dd366f39180ce">postAsync</a> (const std::string &amp;path, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</td></tr>
+<tr class="memdesc:a76ffa7003ef0c09d4d9dd366f39180ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送POST请求（异步）  <br /></td></tr>
+<tr class="memitem:ac89a29254878d02ca11b58b07485ee8a" id="r_ac89a29254878d02ca11b58b07485ee8a"><td class="memItemLeft"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac89a29254878d02ca11b58b07485ee8a">postAsync</a> (const std::string &amp;path, const <a class="el" href="classdao_1_1web_1_1Headers.html">Headers</a> &amp;headers, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</td></tr>
+<tr class="memdesc:ac89a29254878d02ca11b58b07485ee8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送带请求头的POST请求（异步）  <br /></td></tr>
+<tr class="memitem:a6edbb9cca4555c9c5f488691b524f3db" id="r_a6edbb9cca4555c9c5f488691b524f3db"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6edbb9cca4555c9c5f488691b524f3db">isReady</a> (<a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> id) const</td></tr>
+<tr class="memdesc:a6edbb9cca4555c9c5f488691b524f3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查异步请求是否完成  <br /></td></tr>
+<tr class="memitem:a900456c28f59cf38a9011f86121c7b50" id="r_a900456c28f59cf38a9011f86121c7b50"><td class="memItemLeft">std::optional&lt; <a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a900456c28f59cf38a9011f86121c7b50">getResponse</a> (<a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> id) const</td></tr>
+<tr class="memdesc:a900456c28f59cf38a9011f86121c7b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取异步请求响应（非阻塞）  <br /></td></tr>
+<tr class="memitem:ac6549dcab24aca8992d45c69b417eb36" id="r_ac6549dcab24aca8992d45c69b417eb36"><td class="memItemLeft"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac6549dcab24aca8992d45c69b417eb36">waitResponse</a> (<a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> id) const</td></tr>
+<tr class="memdesc:ac6549dcab24aca8992d45c69b417eb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待异步请求响应（阻塞）  <br /></td></tr>
+<tr class="memitem:a7a5de15e0ce38c766777f23cc103fd10" id="r_a7a5de15e0ce38c766777f23cc103fd10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a5de15e0ce38c766777f23cc103fd10">cancelRequest</a> (<a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> id) const</td></tr>
+<tr class="memdesc:a7a5de15e0ce38c766777f23cc103fd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消异步请求  <br /></td></tr>
+<tr class="memitem:a1d49beafdeb3895ca21a920ed1878ebd" id="r_a1d49beafdeb3895ca21a920ed1878ebd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1d49beafdeb3895ca21a920ed1878ebd">setTimeout</a> (int connection_sec, int read_sec) const</td></tr>
+<tr class="memdesc:a1d49beafdeb3895ca21a920ed1878ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置超时时间  <br /></td></tr>
+<tr class="memitem:ae0424e30e89e65f6619ab32b91234518" id="r_ae0424e30e89e65f6619ab32b91234518"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae0424e30e89e65f6619ab32b91234518">getHost</a> () const</td></tr>
+<tr class="memdesc:ae0424e30e89e65f6619ab32b91234518"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取主机名  <br /></td></tr>
+<tr class="memitem:a1b7d6bcbbb5d5cdd2cb31296a152c290" id="r_a1b7d6bcbbb5d5cdd2cb31296a152c290"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1b7d6bcbbb5d5cdd2cb31296a152c290">getPort</a> () const</td></tr>
+<tr class="memdesc:a1b7d6bcbbb5d5cdd2cb31296a152c290"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取端口号  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4413ed8827de5344b142ca29b28712d0" id="r_a4413ed8827de5344b142ca29b28712d0"><td class="memItemLeft">static <a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4413ed8827de5344b142ca29b28712d0">fromURL</a> (const std::string &amp;url)</td></tr>
+<tr class="memdesc:a4413ed8827de5344b142ca29b28712d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">从URL构造客户端  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>HTTPS客户端 </p>
+<p>用于发送HTTPS请求，支持同步和异步请求 </p><dl class="section note"><dt>注解</dt><dd>默认关闭SSL证书验证，生产环境应调用setCaCertPath()设置CA证书 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8hpp_source.html">HttpsClient.hpp</a> 第 <a class="el" href="HttpsClient_8hpp_source.html#l00011">11</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a922ec62f676aaddfe0858315581a1738" name="a922ec62f676aaddfe0858315581a1738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922ec62f676aaddfe0858315581a1738">&#9670;&#160;</a></span>HttpsClient() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::HttpsClient::HttpsClient </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>host</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">443</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>主机名 </td></tr>
+    <tr><td class="paramname">port</td><td>端口号，默认为443 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00034">34</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>        : m_impl(std::make_unique&lt;Impl&gt;(host, port)) {}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_cgraph.png" border="0" usemap="#aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_cgraph" id="aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_cgraph">
+<area shape="rect" title="构造函数" alt="" coords="5,29,168,69"/>
+<area shape="poly" title=" " alt="" coords="55,29,54,20,59,11,70,5,87,3,106,6,117,13,114,17,104,11,87,8,71,10,62,14,59,21,61,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_icgraph.png" border="0" usemap="#aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_icgraph" id="aclassdao_1_1web_1_1HttpsClient_a922ec62f676aaddfe0858315581a1738_icgraph">
+<area shape="rect" title="构造函数" alt="" coords="5,29,168,69"/>
+<area shape="poly" title=" " alt="" coords="114,17,104,11,87,8,71,10,62,14,59,21,61,28,55,29,54,20,59,11,70,5,87,3,106,6,117,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a573124f8d6aff4e37ea18cb029091a27" name="a573124f8d6aff4e37ea18cb029091a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573124f8d6aff4e37ea18cb029091a27">&#9670;&#160;</a></span>~HttpsClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::HttpsClient::~HttpsClient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<a id="ab2c10f012e298827c263a277eca761da" name="ab2c10f012e298827c263a277eca761da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c10f012e298827c263a277eca761da">&#9670;&#160;</a></span>HttpsClient() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::HttpsClient::HttpsClient </td>
+          <td>(</td>
+          <td class="paramtype">const HttpsClient &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b7605d153558e3a907b584b1a619dbf" name="a4b7605d153558e3a907b584b1a619dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7605d153558e3a907b584b1a619dbf">&#9670;&#160;</a></span>HttpsClient() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::web::HttpsClient::HttpsClient </td>
+          <td>(</td>
+          <td class="paramtype">HttpsClient &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a7a5de15e0ce38c766777f23cc103fd10" name="a7a5de15e0ce38c766777f23cc103fd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5de15e0ce38c766777f23cc103fd10">&#9670;&#160;</a></span>cancelRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::HttpsClient::cancelRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消异步请求 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00171">171</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                            {</div>
+<div class="line"><span class="lineno">  172</span>        m_impl-&gt;futures.erase(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  173</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a625b09580d6bef3821408d9c0802f80d" name="a625b09580d6bef3821408d9c0802f80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625b09580d6bef3821408d9c0802f80d">&#9670;&#160;</a></span>enableSSLVerification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::HttpsClient::enableSSLVerification </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用或禁用SSL证书验证 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00053">53</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                                   {</div>
+<div class="line"><span class="lineno">   54</span>        m_impl-&gt;client.enable_server_certificate_verification(enable);</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4413ed8827de5344b142ca29b28712d0" name="a4413ed8827de5344b142ca29b28712d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4413ed8827de5344b142ca29b28712d0">&#9670;&#160;</a></span>fromURL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> dao::web::HttpsClient::fromURL </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>url</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从URL构造客户端 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00042">42</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                         {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keyword">const</span> <span class="keyword">auto</span> parsed = <a class="code hl_function" href="namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4">parseHost</a>(url);</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> port = (parsed.port == 80) ? 443 : parsed.port;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a>(parsed.host, port);</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpsClient_html_a922ec62f676aaddfe0858315581a1738"><div class="ttname"><a href="#a922ec62f676aaddfe0858315581a1738">dao::web::HttpsClient::HttpsClient</a></div><div class="ttdeci">HttpsClient(const std::string &amp;host, int port=443)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> <a href="HttpsClient_8cpp_source.html#l00034">HttpsClient.cpp:34</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html_ab0221f1077eb3a6b657fe29eebca21f4"><div class="ttname"><a href="namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4">dao::web::parseHost</a></div><div class="ttdeci">ParsedURL parseHost(const std::string &amp;url)</div><div class="ttdoc">解析URL，提取主机名、端口和路径</div><div class="ttdef"><b>定义</b> <a href="HttpTypes_8cpp_source.html#l00004">HttpTypes.cpp:4</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1web_1_1HttpsClient_a4413ed8827de5344b142ca29b28712d0_cgraph.png" border="0" usemap="#aclassdao_1_1web_1_1HttpsClient_a4413ed8827de5344b142ca29b28712d0_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1web_1_1HttpsClient_a4413ed8827de5344b142ca29b28712d0_cgraph" id="aclassdao_1_1web_1_1HttpsClient_a4413ed8827de5344b142ca29b28712d0_cgraph">
+<area shape="rect" title="从URL构造客户端" alt="" coords="5,5,168,45"/>
+<area shape="rect" href="namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4" title="解析URL，提取主机名、端口和路径" alt="" coords="216,13,371,38"/>
+<area shape="poly" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89f6957b0932b481cb4a29b0353ab5d1" name="a89f6957b0932b481cb4a29b0353ab5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f6957b0932b481cb4a29b0353ab5d1">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> dao::web::HttpsClient::get </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送GET请求（同步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00057">57</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                                             {</div>
+<div class="line"><span class="lineno">   58</span>        HttpResponse resp;</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">if</span> (<span class="keyword">auto</span> res = m_impl-&gt;client.Get(path)) {</div>
+<div class="line"><span class="lineno">   61</span>                resp.status = res-&gt;status;</div>
+<div class="line"><span class="lineno">   62</span>                resp.body = std::move(res-&gt;body);</div>
+<div class="line"><span class="lineno">   63</span>                resp.success = (res-&gt;status == 200);</div>
+<div class="line"><span class="lineno">   64</span>                <span class="keywordflow">if</span> (res-&gt;status != 200) {</div>
+<div class="line"><span class="lineno">   65</span>                    resp.error = <span class="stringliteral">&quot;HTTP Error: &quot;</span> + std::to_string(res-&gt;status);</div>
+<div class="line"><span class="lineno">   66</span>                }</div>
+<div class="line"><span class="lineno">   67</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   68</span>                resp.error = <span class="stringliteral">&quot;Request failed: &quot;</span> + httplib::to_string(res.error());</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">   71</span>            resp.error = std::string(<span class="stringliteral">&quot;Exception: &quot;</span>) + e.what();</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> resp;</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8979ede9dbddf7092d7ac5f8c53bf724" name="a8979ede9dbddf7092d7ac5f8c53bf724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8979ede9dbddf7092d7ac5f8c53bf724">&#9670;&#160;</a></span>getAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> dao::web::HttpsClient::getAsync </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送GET请求（异步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00116">116</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>                                                               {</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> <span class="keywordtype">id</span> = ++m_impl-&gt;nextId;</div>
+<div class="line"><span class="lineno">  118</span>        m_impl-&gt;futures[id] = std::async(std::launch::async, [<span class="keyword">this</span>, path]() {</div>
+<div class="line"><span class="lineno">  119</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#a89f6957b0932b481cb4a29b0353ab5d1">get</a>(path);</div>
+<div class="line"><span class="lineno">  120</span>        }).share();</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpsClient_html_a89f6957b0932b481cb4a29b0353ab5d1"><div class="ttname"><a href="#a89f6957b0932b481cb4a29b0353ab5d1">dao::web::HttpsClient::get</a></div><div class="ttdeci">HttpResponse get(const std::string &amp;path) const</div><div class="ttdoc">发送GET请求（同步）</div><div class="ttdef"><b>定义</b> <a href="HttpsClient_8cpp_source.html#l00057">HttpsClient.cpp:57</a></div></div>
+<div class="ttc" id="anamespacedao_1_1web_html_a49c83f95d6dec8a7a83be257bee9addc"><div class="ttname"><a href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">dao::web::RequestId</a></div><div class="ttdeci">i32 RequestId</div><div class="ttdoc">请求ID类型</div><div class="ttdef"><b>定义</b> <a href="HttpTypes_8hpp_source.html#l00018">HttpTypes.hpp:18</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae0424e30e89e65f6619ab32b91234518" name="ae0424e30e89e65f6619ab32b91234518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0424e30e89e65f6619ab32b91234518">&#9670;&#160;</a></span>getHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; dao::web::HttpsClient::getHost </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取主机名 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00180">180</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  180</span>                                                {</div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">return</span> m_impl-&gt;host;</div>
+<div class="line"><span class="lineno">  182</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1b7d6bcbbb5d5cdd2cb31296a152c290" name="a1b7d6bcbbb5d5cdd2cb31296a152c290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b7d6bcbbb5d5cdd2cb31296a152c290">&#9670;&#160;</a></span>getPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dao::web::HttpsClient::getPort </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取端口号 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00184">184</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  184</span>                                   {</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">return</span> m_impl-&gt;port;</div>
+<div class="line"><span class="lineno">  186</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a900456c28f59cf38a9011f86121c7b50" name="a900456c28f59cf38a9011f86121c7b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900456c28f59cf38a9011f86121c7b50">&#9670;&#160;</a></span>getResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> &gt; dao::web::HttpsClient::getResponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取异步请求响应（非阻塞） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00150">150</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>                                                                               {</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keyword">const</span> <span class="keyword">auto</span> it = m_impl-&gt;futures.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (it == m_impl-&gt;futures.end() || !it-&gt;second.valid()) {</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (it-&gt;second.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {</div>
+<div class="line"><span class="lineno">  156</span>            <span class="keywordflow">return</span> it-&gt;second.get();</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6edbb9cca4555c9c5f488691b524f3db" name="a6edbb9cca4555c9c5f488691b524f3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6edbb9cca4555c9c5f488691b524f3db">&#9670;&#160;</a></span>isReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dao::web::HttpsClient::isReady </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查异步请求是否完成 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00142">142</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>                                                      {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keyword">const</span> <span class="keyword">auto</span> it = m_impl-&gt;futures.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (it == m_impl-&gt;futures.end() || !it-&gt;second.valid()) {</div>
+<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  146</span>        }</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> it-&gt;second.wait_for(std::chrono::seconds(0)) == std::future_status::ready;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afdc9c5d00b89a5f03c4288c874cc761f" name="afdc9c5d00b89a5f03c4288c874cc761f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc9c5d00b89a5f03c4288c874cc761f">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp; dao::web::HttpsClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2258078da9f52d6829c75be8c45052ba" name="a2258078da9f52d6829c75be8c45052ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2258078da9f52d6829c75be8c45052ba">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp; dao::web::HttpsClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a922ec62f676aaddfe0858315581a1738">HttpsClient</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52bae6f1f777a01c467ed6cfd0992e88" name="a52bae6f1f777a01c467ed6cfd0992e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bae6f1f777a01c467ed6cfd0992e88">&#9670;&#160;</a></span>post() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> dao::web::HttpsClient::post </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1web_1_1Headers.html">Headers</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>headers</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>content_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;application/json&quot;</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送带请求头的POST请求（同步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00096">96</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                                                                {</div>
+<div class="line"><span class="lineno">   98</span>        HttpResponse resp;</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">if</span> (<span class="keyword">auto</span> res = m_impl-&gt;client.Post(path, <a class="code hl_function" href="namespacedao_1_1web.html#aeb7562cd56b6d7f743a6fa4fe068ffc0">toHttplibHeaders</a>(headers), body, content_type)) {</div>
+<div class="line"><span class="lineno">  101</span>                resp.status = res-&gt;status;</div>
+<div class="line"><span class="lineno">  102</span>                resp.body = std::move(res-&gt;body);</div>
+<div class="line"><span class="lineno">  103</span>                resp.success = (res-&gt;status == 200);</div>
+<div class="line"><span class="lineno">  104</span>                <span class="keywordflow">if</span> (res-&gt;status != 200) {</div>
+<div class="line"><span class="lineno">  105</span>                    resp.error = <span class="stringliteral">&quot;HTTP Error: &quot;</span> + std::to_string(res-&gt;status);</div>
+<div class="line"><span class="lineno">  106</span>                }</div>
+<div class="line"><span class="lineno">  107</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  108</span>                resp.error = <span class="stringliteral">&quot;Request failed: &quot;</span> + httplib::to_string(res.error());</div>
+<div class="line"><span class="lineno">  109</span>            }</div>
+<div class="line"><span class="lineno">  110</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">  111</span>            resp.error = std::string(<span class="stringliteral">&quot;Exception: &quot;</span>) + e.what();</div>
+<div class="line"><span class="lineno">  112</span>        }</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> resp;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="ttc" id="anamespacedao_1_1web_html_aeb7562cd56b6d7f743a6fa4fe068ffc0"><div class="ttname"><a href="namespacedao_1_1web.html#aeb7562cd56b6d7f743a6fa4fe068ffc0">dao::web::toHttplibHeaders</a></div><div class="ttdeci">httplib::Headers toHttplibHeaders(const Headers &amp;headers)</div><div class="ttdoc">将 Headers 转换为 httplib::Headers</div><div class="ttdef"><b>定义</b> <a href="HttpClient_8cpp_source.html#l00010">HttpClient.cpp:10</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa95fe55a8a7dc5cc19f044e240dccb23" name="aa95fe55a8a7dc5cc19f044e240dccb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95fe55a8a7dc5cc19f044e240dccb23">&#9670;&#160;</a></span>post() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> dao::web::HttpsClient::post </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>content_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;application/json&quot;</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送POST请求（同步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00076">76</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                                         {</div>
+<div class="line"><span class="lineno">   78</span>        HttpResponse resp;</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (<span class="keyword">auto</span> res = m_impl-&gt;client.Post(path, body, content_type)) {</div>
+<div class="line"><span class="lineno">   81</span>                resp.status = res-&gt;status;</div>
+<div class="line"><span class="lineno">   82</span>                resp.body = std::move(res-&gt;body);</div>
+<div class="line"><span class="lineno">   83</span>                resp.success = (res-&gt;status == 200);</div>
+<div class="line"><span class="lineno">   84</span>                <span class="keywordflow">if</span> (res-&gt;status != 200) {</div>
+<div class="line"><span class="lineno">   85</span>                    resp.error = <span class="stringliteral">&quot;HTTP Error: &quot;</span> + std::to_string(res-&gt;status);</div>
+<div class="line"><span class="lineno">   86</span>                }</div>
+<div class="line"><span class="lineno">   87</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   88</span>                resp.error = <span class="stringliteral">&quot;Request failed: &quot;</span> + httplib::to_string(res.error());</div>
+<div class="line"><span class="lineno">   89</span>            }</div>
+<div class="line"><span class="lineno">   90</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">   91</span>            resp.error = std::string(<span class="stringliteral">&quot;Exception: &quot;</span>) + e.what();</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> resp;</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac89a29254878d02ca11b58b07485ee8a" name="ac89a29254878d02ca11b58b07485ee8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89a29254878d02ca11b58b07485ee8a">&#9670;&#160;</a></span>postAsync() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> dao::web::HttpsClient::postAsync </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1web_1_1Headers.html">Headers</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>headers</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>content_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;application/json&quot;</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送带请求头的POST请求（异步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00133">133</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                                                                                                  {</div>
+<div class="line"><span class="lineno">  135</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> <span class="keywordtype">id</span> = ++m_impl-&gt;nextId;</div>
+<div class="line"><span class="lineno">  136</span>        m_impl-&gt;futures[id] = std::async(std::launch::async, [<span class="keyword">this</span>, path, headers, body, content_type]() {</div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#aa95fe55a8a7dc5cc19f044e240dccb23">post</a>(path, headers, body, content_type);</div>
+<div class="line"><span class="lineno">  138</span>        }).share();</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
+<div class="ttc" id="aclassdao_1_1web_1_1HttpsClient_html_aa95fe55a8a7dc5cc19f044e240dccb23"><div class="ttname"><a href="#aa95fe55a8a7dc5cc19f044e240dccb23">dao::web::HttpsClient::post</a></div><div class="ttdeci">HttpResponse post(const std::string &amp;path, const std::string &amp;body, const std::string &amp;content_type=&quot;application/json&quot;) const</div><div class="ttdoc">发送POST请求（同步）</div><div class="ttdef"><b>定义</b> <a href="HttpsClient_8cpp_source.html#l00076">HttpsClient.cpp:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a76ffa7003ef0c09d4d9dd366f39180ce" name="a76ffa7003ef0c09d4d9dd366f39180ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ffa7003ef0c09d4d9dd366f39180ce">&#9670;&#160;</a></span>postAsync() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> dao::web::HttpsClient::postAsync </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>content_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;application/json&quot;</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送POST请求（异步） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00124">124</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  125</span>                                                                           {</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a> <span class="keywordtype">id</span> = ++m_impl-&gt;nextId;</div>
+<div class="line"><span class="lineno">  127</span>        m_impl-&gt;futures[id] = std::async(std::launch::async, [<span class="keyword">this</span>, path, body, content_type]() {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#aa95fe55a8a7dc5cc19f044e240dccb23">post</a>(path, body, content_type);</div>
+<div class="line"><span class="lineno">  129</span>        }).share();</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35a7b49e0ded58a0604021f9580026b2" name="a35a7b49e0ded58a0604021f9580026b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a7b49e0ded58a0604021f9580026b2">&#9670;&#160;</a></span>setCaCertPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::HttpsClient::setCaCertPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>ca_cert_path</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置CA证书路径 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00048">48</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                       {</div>
+<div class="line"><span class="lineno">   49</span>        m_impl-&gt;client.set_ca_cert_path(ca_cert_path);</div>
+<div class="line"><span class="lineno">   50</span>        m_impl-&gt;client.enable_server_certificate_verification(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1d49beafdeb3895ca21a920ed1878ebd" name="a1d49beafdeb3895ca21a920ed1878ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d49beafdeb3895ca21a920ed1878ebd">&#9670;&#160;</a></span>setTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::web::HttpsClient::setTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>connection_sec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>read_sec</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置超时时间 </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00175">175</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>                                                                                   {</div>
+<div class="line"><span class="lineno">  176</span>        m_impl-&gt;client.set_connection_timeout(connection_sec, 0);</div>
+<div class="line"><span class="lineno">  177</span>        m_impl-&gt;client.set_read_timeout(read_sec, 0);</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac6549dcab24aca8992d45c69b417eb36" name="ac6549dcab24aca8992d45c69b417eb36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6549dcab24aca8992d45c69b417eb36">&#9670;&#160;</a></span>waitResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdao_1_1web_1_1HttpResponse.html">HttpResponse</a> dao::web::HttpsClient::waitResponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedao_1_1web.html#a49c83f95d6dec8a7a83be257bee9addc">RequestId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等待异步请求响应（阻塞） </p>
+
+<p class="definition">在文件 <a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a> 第 <a class="el" href="HttpsClient_8cpp_source.html#l00161">161</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>                                                                   {</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keyword">const</span> <span class="keyword">auto</span> it = m_impl-&gt;futures.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (it == m_impl-&gt;futures.end() || !it-&gt;second.valid()) {</div>
+<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> HttpResponse{.error = <span class="stringliteral">&quot;Invalid request ID&quot;</span>};</div>
+<div class="line"><span class="lineno">  165</span>        }</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keyword">auto</span> result = it-&gt;second.get();</div>
+<div class="line"><span class="lineno">  167</span>        m_impl-&gt;futures.erase(it);</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>code/include/web/http/<a class="el" href="HttpsClient_8hpp_source.html">HttpsClient.hpp</a></li>
+<li>code/src/web/http/<a class="el" href="HttpsClient_8cpp_source.html">HttpsClient.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

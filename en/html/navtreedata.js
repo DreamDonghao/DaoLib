@@ -72,9 +72,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AppController_8cpp.html",
-"classdao_1_1ColorRGBA.html#a6bc91fdf21708235653f56c7fbb0df54",
-"classdao_1_1Sector.html#aeff9a8d300b3d68dd787793e3254c63d",
-"classdao_1_1ifc_1_1IPage.html#a8ddd0d5822d40bb9624c2609c6f3127b"
+"classdao_1_1Circle.html#acdd3eca6dfd3dc0f227076906da214f7",
+"classdao_1_1Sector.html",
+"classdao_1_1ifc_1_1IGraph.html#aed506de7b1e048a031caa70c8ccaa53e",
+"graphs_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

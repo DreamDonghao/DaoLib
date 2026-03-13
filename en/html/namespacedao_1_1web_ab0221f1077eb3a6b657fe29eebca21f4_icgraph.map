@@ -1,0 +1,7 @@
+<map id="dao::web::parseHost" name="dao::web::parseHost">
+<area shape="rect" id="Node000001" title="解析URL，提取主机名、端口和路径" alt="" coords="216,45,371,70"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient.html#acbda7a7e07fda5a4ebd66eaafe41256e" title="从URL构造客户端" alt="" coords="9,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,46,164,40,165,35,202,41"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1web_1_1HttpsClient.html#a4413ed8827de5344b142ca29b28712d0" title="从URL构造客户端" alt="" coords="5,69,168,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,74,168,79,168,74,202,69"/>
+</map>

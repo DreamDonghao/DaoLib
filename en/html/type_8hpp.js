@@ -7,6 +7,7 @@ var type_8hpp =
     [ "dao::i32", "namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb", null ],
     [ "dao::i64", "namespacedao.html#a3d5044c31e25746e391c0094a4e9bd38", null ],
     [ "dao::i8", "namespacedao.html#af676202b66b524e62ea731223ea00126", null ],
+    [ "dao::json", "namespacedao.html#ae863a51e37dd157d31b5dd511bf6a4de", null ],
     [ "dao::u16", "namespacedao.html#a68005dc114d91689af54bd55a8a941ce", null ],
     [ "dao::u32", "namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6", null ],
     [ "dao::u64", "namespacedao.html#afbe96c048a0e11859b8bc952fca64c5c", null ],

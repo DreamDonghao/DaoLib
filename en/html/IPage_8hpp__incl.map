@@ -1,13 +1,15 @@
 <map id="code/include/interface/IPage.hpp" name="code/include/interface/IPage.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="105,5,271,45"/>
-<area shape="rect" id="Node000002" href="$type_8hpp.html" title=" " alt="" coords="55,93,195,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,47,145,84,141,81,171,44"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="219,93,282,119"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="205,44,235,81,231,84,201,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="162,5,329,45"/>
+<area shape="rect" id="Node000002" href="$type_8hpp.html" title=" " alt="" coords="113,93,253,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,47,203,84,199,81,228,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="277,93,339,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="263,44,292,81,288,84,258,47"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,167,72,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,121,65,160,62,156,110,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,121,76,163,73,158,158,116"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="96,167,155,192"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="128,119,128,153,123,153,123,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,121,145,158,141,154,171,117"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="179,167,303,192"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="145,116,212,157,209,162,143,121"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="194,117,225,155,221,158,190,121"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="328,167,475,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="219,116,354,160,352,165,217,121"/>
 </map>
