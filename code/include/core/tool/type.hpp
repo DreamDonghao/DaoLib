@@ -2,6 +2,7 @@
 #include <cstdint>
 #include <string>
 #include <unordered_map>
+#include <nlohmann/json.hpp>
 namespace dao {
     using i8 = int8_t;
     using i16 = int16_t;
@@ -17,6 +18,8 @@ namespace dao {
     using utf32char = char32_t;
     using utf32str = std::u32string;
     using utf32str_view = std::u32string_view;
+
+    using json = nlohmann::json;
 
     template<typename K, typename V>
     using hash_map = std::unordered_map<K, V>;
