@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
     const dao::web::Headers headers = {
         {"Content-Type", "application/json"},
-        {"Authorization", "Bearer sk-b9f3ee3a3ddd45ebb31d4a918c828217"}
+        {"Authorization", "Bearer sk-b9f3ee3a3ddd45ebb31d4a918c828217"}// key已删除
     };
 
     const dao::json body = {
@@ -34,10 +34,10 @@ int main(int argc, char *argv[]) {
     app.getContext().emplace<dao::App>(app);
 
     app.createWindow(1000, 1000, "2", dao::Window::WorkState::Foreground, true, false)
-            .addPage(std::make_unique<test::PageA>());
+            。addPage(std::make_unique<test::PageA>());
     /// 创建窗口
     app.createWindow(1300, 1300, "设置", dao::Window::WorkState::Foreground, true, true, true, false)
-            .addPage(std::make_unique<HelloDaoPage>());
+            。addPage(std::make_unique<HelloDaoPage>());
 
     /// 创建托盘
     app.createTray<AppTray>("./assets/textures/atlas/icon.png", "托盘").createTrayMenu();
