@@ -35,17 +35,13 @@ namespace dao {
             /// @brief 获取窗口控制器
             virtual WindowController &getWindowController() = 0;
 
-            /// @brief 获取全局上下文
-            virtual void setContext(Context *context) = 0;
-
-            /// @brief 设置渲染批处理器
-            virtual void setVertexBatch(BatchRenderer *batchRenderer) = 0;
-
             /// @brief 获取页面标题
             [[nodiscard]] virtual const std::string &getTitle() const = 0;
 
             /// @brief 设置全局环境上下文
             [[nodiscard]] virtual Context &getContext() const = 0;
+
+            virtual void init(BatchRenderer *vertexBatch,Context *context) = 0;
         };
     }
 }

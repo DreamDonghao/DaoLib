@@ -27,6 +27,9 @@ namespace dao {
 
     void App::run() {
         m_running = true;
+        for (const auto &window : m_windows | std::views::values) {
+            window->switchPage(window->getNowPageTitle());
+        }
         while (m_running) {
             m_frameLimiter.wait();
             for (const auto &window: m_windows | std::views::values) {

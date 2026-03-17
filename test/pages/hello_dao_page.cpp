@@ -22,7 +22,7 @@ std::vector<i32> HelloDaoPage::getRegisterTextures() const {
 }
 i32 id;
 void HelloDaoPage::open() {
-    id = client.postAsync("/post",R"({"你好":"1"})");
+    id = client.postAsync("/post",R"({"你好":"1"})","json");
 }
 
 void HelloDaoPage::close() {

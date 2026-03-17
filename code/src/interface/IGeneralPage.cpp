@@ -16,10 +16,6 @@ void dao::ifc::IGeneralPage::clearBatch() const {
     m_vertexBatch->clear();
 }
 
-void dao::ifc::IGeneralPage::setContext(Context *context) {
-    m_context = context;
-}
-
 dao::Context &dao::ifc::IGeneralPage::getContext() const {
     if (!m_context) {
         DAO_ERROR_LOG("m_context指针为空");

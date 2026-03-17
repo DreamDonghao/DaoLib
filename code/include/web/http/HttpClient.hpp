@@ -33,37 +33,37 @@ namespace dao::web {
         HttpClient &operator=(HttpClient &&) noexcept;
 
         /// @brief 发送GET请求（同步）
-        HttpResponse get(const std::string &path) const;
+        [[nodiscard]] HttpResponse get(const std::string &path) const;
 
         /// @brief 发送POST请求（同步）
-        HttpResponse post(const std::string &path, const std::string &body,
-                          const std::string &content_type = "application/json") const;
+        [[nodiscard]] HttpResponse post(const std::string &path, const std::string &body,
+                                        const std::string &content_type = "application/json") const;
 
         /// @brief 发送带请求头的POST请求（同步）
-        HttpResponse post(const std::string &path, const Headers &headers,
-                          const std::string &body,
-                          const std::string &content_type = "application/json") const;
+        [[nodiscard]] HttpResponse post(const std::string &path, const Headers &headers,
+                                        const std::string &body,
+                                        const std::string &content_type = "application/json") const;
 
         /// @brief 发送GET请求（异步）
-        RequestId getAsync(const std::string &path) const;
+        [[nodiscard]] RequestId getAsync(const std::string &path) const;
 
         /// @brief 发送POST请求（异步）
-        RequestId postAsync(const std::string &path, const std::string &body,
-                            const std::string &content_type = "application/json") const;
+        [[nodiscard]] RequestId postAsync(const std::string &path, const std::string &body,
+                                          const std::string &content_type = "application/json") const;
 
         /// @brief 发送带请求头的POST请求（异步）
-        RequestId postAsync(const std::string &path, const Headers &headers,
-                            const std::string &body,
-                            const std::string &content_type = "application/json") const;
+        [[nodiscard]] RequestId postAsync(const std::string &path, const Headers &headers,
+                                          const std::string &body,
+                                          const std::string &content_type = "application/json") const;
 
         /// @brief 检查异步请求是否完成
         [[nodiscard]] bool isReady(RequestId id) const;
 
         /// @brief 获取异步请求响应（非阻塞）
-        std::optional<HttpResponse> getResponse(RequestId id) const;
+        [[nodiscard]] std::optional<HttpResponse> getResponse(RequestId id) const;
 
         /// @brief 等待异步请求响应（阻塞）
-        HttpResponse waitResponse(RequestId id) const;
+        [[nodiscard]] HttpResponse waitResponse(RequestId id) const;
 
         /// @brief 取消异步请求
         void cancelRequest(RequestId id) const;

@@ -3,13 +3,13 @@
 #include <core/frame/WindowController.hpp>
 #include <ranges>
 #include <utility>
-
+#include <core/frame/IPage.hpp>
 #include "core/frame/App.hpp"
 
 namespace dao {
     Window::Window(const i32 width, const i32 height, const WorkState workState, const bool isSubject,
-                   const bool resizable, const bool transparent, const bool onTop, const bool borderless) :
-        m_workState(workState), m_width(width), m_height(height) {
+                   const bool resizable, const bool transparent, const bool onTop,
+                   const bool borderless) : m_workState(workState), m_width(width), m_height(height) {
         if (m_workState == WorkState::Background || m_workState == WorkState::Closed) {
             m_windowFlags |= SDL_WINDOW_HIDDEN;
         }
@@ -51,17 +51,14 @@ namespace dao {
             setTitle(m_nowPageTitle);
         }
         m_pages[title] = std::move(page);
-        m_pages[title]->setContext(m_context);
-        m_pages[title]->setVertexBatch(&m_batchRenderer);
+        m_pages[title]->init(&m_batchRenderer, m_context);
         registerPageTexture();
-        m_pages[title]->open();
-
         return *this;
     }
 
     void Window::registerPageTexture() {
         for (const auto &page: m_pages | std::views::values) {
-            for (auto textureId: page->getRegisterTextures()) {
+            for (const auto textureId: page->getRegisterTextures()) {
                 m_batchRenderer.loadAtlas(textureId);
             }
         }
@@ -110,6 +107,10 @@ namespace dao {
         m_nowPageTitle = std::move(title);
         setTitle(m_nowPageTitle);
         m_pages[m_nowPageTitle]->open();
+    }
+
+    const std::string& Window::getNowPageTitle() const {
+        return m_nowPageTitle;
     }
 
     void Window::setPosition(const i32 x, const i32 y) const { SDL_SetWindowPosition(m_window, x, y); }
@@ -178,7 +179,10 @@ void Window::setClickThrough(bool enable) {
 void Window::setClickThrough(bool enable) {
     SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
     NSWindow *nsWindow =
-            (__bridge NSWindow *) SDL_GetPointerProperty(props, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
+            (__bridge
+    NSWindow *
+    )
+    SDL_GetPointerProperty(props, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
     if (!nsWindow)
         return;
     [nsWindow setIgnoresMouseEvents:enable];

@@ -4,10 +4,13 @@
 #include <core/frame/Context.hpp>
 #include <core/render/BatchRenderer.hpp>
 #include <functional>
-#include <interface/IPage.hpp>
 #include <string>
 
 namespace dao {
+    namespace ifc {
+        class IPage;
+    }
+
     /// @brief 窗口
     class Window {
         struct TextureDeleter {
@@ -83,6 +86,9 @@ namespace dao {
 
         /// @brief 切换页面
         void switchPage(std::string title);
+
+        /// @brief 获取当前现实页面标题
+        const std::string& getNowPageTitle() const;
 
         /// @brief 设置位置
         void setPosition(i32 x, i32 y) const;

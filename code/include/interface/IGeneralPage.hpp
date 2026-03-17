@@ -1,5 +1,5 @@
 #pragma once
-#include <interface/IPage.hpp>
+#include <core/frame/IPage.hpp>
 #include <core/render/BatchRenderer.hpp>
 #include <core/frame/WindowController.hpp>
 
@@ -40,9 +40,8 @@ namespace dao {
                 (args.writeToBatch(*m_vertexBatch), ...);
             }
 
-            void setContext(Context *context) override;
-
-            void setVertexBatch(BatchRenderer *vertexBatch) override {
+            void init(BatchRenderer *vertexBatch,Context *context)override {
+                m_context = context;
                 m_vertexBatch = vertexBatch;
             }
 
