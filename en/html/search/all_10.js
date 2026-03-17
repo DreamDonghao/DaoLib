@@ -20,7 +20,7 @@ var searchData=
   ['impl_17',['Impl',['../classdao_1_1web_1_1HttpClient_1_1Impl.html',1,'dao::web::HttpClient::Impl'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html',1,'dao::web::HttpsClient::Impl'],['../classdao_1_1web_1_1HttpClient_1_1Impl.html#a90a0e66c25d61ad7d0e8b770075ec1dd',1,'dao::web::HttpClient::Impl::Impl()'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html#a4c32406b15ca54efe7ee91d989f08309',1,'dao::web::HttpsClient::Impl::Impl()']]],
   ['in_20daolib_20development_18',['Participate in DaoLib Development',['../join.html',1,'']]],
   ['in_20the_20opening_20of_20daolib_19',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot; title=&quot;Participate in DaoLib Development&quot;&gt;Participate in the opening of DaoLib&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
-  ['init_20',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer']]],
+  ['init_20',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer::init()'],['../classdao_1_1ifc_1_1IPage.html#a89a6969741b2df8c6b58558ffce1b1ee',1,'dao::ifc::IPage::init()'],['../classdao_1_1ifc_1_1IGeneralPage.html#a1d07814d6ca3b68fbe558377f605d1fd',1,'dao::ifc::IGeneralPage::init()']]],
   ['interval_21',['interval',['../classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979',1,'dao::TickTimer']]],
   ['ipage_22',['IPage',['../classdao_1_1ifc_1_1IPage.html',1,'dao::ifc']]],
   ['ipage_2ehpp_23',['IPage.hpp',['../IPage_8hpp.html',1,'']]],

@@ -11,9 +11,8 @@ var classdao_1_1ifc_1_1IGeneralPage =
     [ "getTitle", "classdao_1_1ifc_1_1IGeneralPage.html#a3d9837c76c53f11c0f8f2b4b051775d9", null ],
     [ "getWindowController", "classdao_1_1ifc_1_1IGeneralPage.html#a0316550779063ca85c3c59150dfe8b70", null ],
     [ "handleInputEvent", "classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c", null ],
+    [ "init", "classdao_1_1ifc_1_1IGeneralPage.html#a1d07814d6ca3b68fbe558377f605d1fd", null ],
     [ "open", "classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368", null ],
-    [ "setContext", "classdao_1_1ifc_1_1IGeneralPage.html#aefdc984c6635a4b6c36959b78e08bbc1", null ],
-    [ "setVertexBatch", "classdao_1_1ifc_1_1IGeneralPage.html#ab240866f12ef7bced2a369c871293f80", null ],
     [ "update", "classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714", null ],
     [ "m_windowController", "classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8", null ]
 ];

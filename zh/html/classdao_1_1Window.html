@@ -141,6 +141,8 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a98c43811ce3cbc6fbe93688ddafb228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 SDL_window 指针  <br /></td></tr>
 <tr class="memitem:a8821f99dc73fa664ef6dbaaafabd4dbe" id="r_a8821f99dc73fa664ef6dbaaafabd4dbe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8821f99dc73fa664ef6dbaaafabd4dbe">switchPage</a> (std::string title)</td></tr>
 <tr class="memdesc:a8821f99dc73fa664ef6dbaaafabd4dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换页面  <br /></td></tr>
+<tr class="memitem:ac33263b55f5a1b530db981b15f028a20" id="r_ac33263b55f5a1b530db981b15f028a20"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac33263b55f5a1b530db981b15f028a20">getNowPageTitle</a> () const</td></tr>
+<tr class="memdesc:ac33263b55f5a1b530db981b15f028a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前现实页面标题  <br /></td></tr>
 <tr class="memitem:a908a73535d29d58cb41e2ac46a35689e" id="r_a908a73535d29d58cb41e2ac46a35689e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a908a73535d29d58cb41e2ac46a35689e">setPosition</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> x, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> y) const</td></tr>
 <tr class="memdesc:a908a73535d29d58cb41e2ac46a35689e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置位置  <br /></td></tr>
 <tr class="memitem:abd4677dadbb2df5c579953224348b4a3" id="r_abd4677dadbb2df5c579953224348b4a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd4677dadbb2df5c579953224348b4a3">movePosition</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> x, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> y) const</td></tr>
@@ -159,7 +161,7 @@ Public 成员函数</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>窗口 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00012">12</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00015">15</a> 行定义.</p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">成员枚举类型说明</h2>
 <a id="ae166d0fdbdde0f3e99bc4cec1fdb722c" name="ae166d0fdbdde0f3e99bc4cec1fdb722c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">&#9670;&#160;</a></span>WorkState</h2>
@@ -191,12 +193,12 @@ Public 成员函数</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00022">22</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                             {</div>
-<div class="line"><span class="lineno">   23</span>            Foreground, <span class="comment">///&lt; 前台运行</span></div>
-<div class="line"><span class="lineno">   24</span>            Background, <span class="comment">///&lt; 后台运行</span></div>
-<div class="line"><span class="lineno">   25</span>            Closed      <span class="comment">///&lt; 窗口关闭</span></div>
-<div class="line"><span class="lineno">   26</span>        };</div>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                             {</div>
+<div class="line"><span class="lineno">   26</span>            Foreground, <span class="comment">///&lt; 前台运行</span></div>
+<div class="line"><span class="lineno">   27</span>            Background, <span class="comment">///&lt; 后台运行</span></div>
+<div class="line"><span class="lineno">   28</span>            Closed      <span class="comment">///&lt; 窗口关闭</span></div>
+<div class="line"><span class="lineno">   29</span>        };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,8 +266,7 @@ Public 成员函数</h2></td></tr>
 </dl>
 
 <p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00010">10</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                                                                          :</div>
-<div class="line"><span class="lineno">   12</span>        m_workState(<a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>), m_width(width), m_height(height) {</div>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                          : m_workState(<a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>), m_width(width), m_height(height) {</div>
 <div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (m_workState == <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">WorkState::Background</a> || m_workState == <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">WorkState::Closed</a>) {</div>
 <div class="line"><span class="lineno">   14</span>            m_windowFlags |= SDL_WINDOW_HIDDEN;</div>
 <div class="line"><span class="lineno">   15</span>        }</div>
@@ -291,9 +292,9 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   35</span>            };</div>
 <div class="line"><span class="lineno">   36</span>        }</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a804cb3b8a2f0b45189c40186f206bae3"><div class="ttname"><a href="#a804cb3b8a2f0b45189c40186f206bae3">dao::Window::workState</a></div><div class="ttdeci">WorkState workState() const</div><div class="ttdoc">获取窗口状态</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00071">Window.hpp:71</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00025">Window.hpp:25</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">dao::Window::WorkState::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdoc">后台运行</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00024">Window.hpp:24</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_a804cb3b8a2f0b45189c40186f206bae3"><div class="ttname"><a href="#a804cb3b8a2f0b45189c40186f206bae3">dao::Window::workState</a></div><div class="ttdeci">WorkState workState() const</div><div class="ttdoc">获取窗口状态</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00074">Window.hpp:74</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00028">Window.hpp:28</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">dao::Window::WorkState::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdoc">后台运行</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00027">Window.hpp:27</a></div></div>
 <div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00009">type.hpp:9</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -356,15 +357,12 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   51</span>            <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
 <div class="line"><span class="lineno">   52</span>        }</div>
 <div class="line"><span class="lineno">   53</span>        m_pages[title] = std::move(page);</div>
-<div class="line"><span class="lineno">   54</span>        m_pages[title]-&gt;setContext(m_context);</div>
-<div class="line"><span class="lineno">   55</span>        m_pages[title]-&gt;setVertexBatch(&amp;m_batchRenderer);</div>
-<div class="line"><span class="lineno">   56</span>        <a class="code hl_function" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a>();</div>
-<div class="line"><span class="lineno">   57</span>        m_pages[title]-&gt;open();</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   60</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00127">Window.cpp:127</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00062">Window.cpp:62</a></div></div>
+<div class="line"><span class="lineno">   54</span>        m_pages[title]-&gt;init(&amp;m_batchRenderer, m_context);</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_function" href="#af506f7804932b2a731eff22be71a79e6">registerPageTexture</a>();</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a4141bfcdcbd8d86fd07be7ee96f4a837"><div class="ttname"><a href="#a4141bfcdcbd8d86fd07be7ee96f4a837">dao::Window::setTitle</a></div><div class="ttdeci">void setTitle(const std::string &amp;title) const</div><div class="ttdoc">设置标题</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00128">Window.cpp:128</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_af506f7804932b2a731eff22be71a79e6"><div class="ttname"><a href="#af506f7804932b2a731eff22be71a79e6">dao::Window::registerPageTexture</a></div><div class="ttdeci">void registerPageTexture()</div><div class="ttdoc">根据当前窗口拥有的页面加载未加载的图集</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00059">Window.cpp:59</a></div></div>
 <div class="ttc" id="anamespacedao_html_a24e91b1ba23935657b9b4fefae8f56e8"><div class="ttname"><a href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">dao::detectionError</a></div><div class="ttdeci">void detectionError(const bool pass, const std::string_view &amp;message)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00022">better_stl.hpp:22</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
@@ -408,27 +406,27 @@ Closed 窗口关闭：不运行的窗口<br  />
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00086">86</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                           {</div>
-<div class="line"><span class="lineno">   87</span>        m_workState = <a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>;</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">switch</span> (m_workState) {</div>
-<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">WorkState::Foreground</a>:</div>
-<div class="line"><span class="lineno">   90</span>                <a class="code hl_function" href="#a5da0453643006a0248af568895ee8c39">show</a>();</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00083">83</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                           {</div>
+<div class="line"><span class="lineno">   84</span>        m_workState = <a class="code hl_function" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>;</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">switch</span> (m_workState) {</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">WorkState::Foreground</a>:</div>
+<div class="line"><span class="lineno">   87</span>                <a class="code hl_function" href="#a5da0453643006a0248af568895ee8c39">show</a>();</div>
+<div class="line"><span class="lineno">   88</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">WorkState::Background</a>:</div>
+<div class="line"><span class="lineno">   90</span>                <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
 <div class="line"><span class="lineno">   91</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">WorkState::Background</a>:</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">WorkState::Closed</a>:</div>
 <div class="line"><span class="lineno">   93</span>                <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
-<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">WorkState::Closed</a>:</div>
-<div class="line"><span class="lineno">   96</span>                <a class="code hl_function" href="#a15682d38f6a4f26df5dac389cfeab905">hide</a>();</div>
-<div class="line"><span class="lineno">   97</span>                m_closeAction();</div>
-<div class="line"><span class="lineno">   98</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  100</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  101</span>        }</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
-<div class="ttc" id="aclassdao_1_1Window_html_a15682d38f6a4f26df5dac389cfeab905"><div class="ttname"><a href="#a15682d38f6a4f26df5dac389cfeab905">dao::Window::hide</a></div><div class="ttdeci">void hide() const</div><div class="ttdoc">隐藏窗口</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00082">Window.cpp:82</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_a5da0453643006a0248af568895ee8c39"><div class="ttname"><a href="#a5da0453643006a0248af568895ee8c39">dao::Window::show</a></div><div class="ttdeci">void show() const</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00084">Window.cpp:84</a></div></div>
-<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">dao::Window::WorkState::Foreground</a></div><div class="ttdeci">@ Foreground</div><div class="ttdoc">前台运行</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00023">Window.hpp:23</a></div></div>
+<div class="line"><span class="lineno">   94</span>                m_closeAction();</div>
+<div class="line"><span class="lineno">   95</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   98</span>        }</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_a15682d38f6a4f26df5dac389cfeab905"><div class="ttname"><a href="#a15682d38f6a4f26df5dac389cfeab905">dao::Window::hide</a></div><div class="ttdeci">void hide() const</div><div class="ttdoc">隐藏窗口</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00079">Window.cpp:79</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_a5da0453643006a0248af568895ee8c39"><div class="ttname"><a href="#a5da0453643006a0248af568895ee8c39">dao::Window::show</a></div><div class="ttdeci">void show() const</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>定义</b> <a href="Window_8cpp_source.html#l00081">Window.cpp:81</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f"><div class="ttname"><a href="#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">dao::Window::WorkState::Foreground</a></div><div class="ttdeci">@ Foreground</div><div class="ttdoc">前台运行</div><div class="ttdef"><b>定义</b> <a href="Window_8hpp_source.html#l00026">Window.hpp:26</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -470,8 +468,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 <p>获取应用控制器 </p>
 <dl class="section return"><dt>返回</dt><dd>应用控制器引用 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00106">106</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> m_appController; }</div>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00112">112</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <span class="keywordflow">return</span> m_appController; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -500,8 +498,32 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>获取 id </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00049">49</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> m_id; }</div>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00052">52</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{ <span class="keywordflow">return</span> m_id; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac33263b55f5a1b530db981b15f028a20" name="ac33263b55f5a1b530db981b15f028a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33263b55f5a1b530db981b15f028a20">&#9670;&#160;</a></span>getNowPageTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; dao::Window::getNowPageTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前现实页面标题 </p>
+
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00112">112</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>                                                   {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> m_nowPageTitle;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -530,8 +552,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>获取 SDL_window 指针 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00082">82</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> m_window; }</div>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00085">85</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <span class="keywordflow">return</span> m_window; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -552,12 +574,12 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>处理消息 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00076">76</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                        {</div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (event.type == SDL_EVENT_QUIT) {</div>
-<div class="line"><span class="lineno">   78</span>        }</div>
-<div class="line"><span class="lineno">   79</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00073">73</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>                                                        {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (event.type == SDL_EVENT_QUIT) {</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>        m_pages[m_nowPageTitle]-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -578,8 +600,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>隐藏窗口 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00082">82</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{ SDL_HideWindow(m_window); }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00079">79</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{ SDL_HideWindow(m_window); }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -621,12 +643,12 @@ Closed 窗口关闭：不运行的窗口<br  />
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00117">117</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                            {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordtype">int</span> wx, wy;</div>
-<div class="line"><span class="lineno">  119</span>        SDL_GetWindowPosition(m_window, &amp;wx, &amp;wy);</div>
-<div class="line"><span class="lineno">  120</span>        SDL_SetWindowPosition(m_window, wx + x, wy + y);</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00118">118</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                            {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordtype">int</span> wx, wy;</div>
+<div class="line"><span class="lineno">  120</span>        SDL_GetWindowPosition(m_window, &amp;wx, &amp;wy);</div>
+<div class="line"><span class="lineno">  121</span>        SDL_SetWindowPosition(m_window, wx + x, wy + y);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -647,14 +669,14 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>根据当前窗口拥有的页面加载未加载的图集 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00062">62</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                     {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;page: m_pages | std::views::values) {</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> textureId: page-&gt;getRegisterTextures()) {</div>
-<div class="line"><span class="lineno">   65</span>                m_batchRenderer.loadAtlas(textureId);</div>
-<div class="line"><span class="lineno">   66</span>            }</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00059">59</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                                     {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;page: m_pages | std::views::values) {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> textureId: page-&gt;getRegisterTextures()) {</div>
+<div class="line"><span class="lineno">   62</span>                m_batchRenderer.loadAtlas(textureId);</div>
+<div class="line"><span class="lineno">   63</span>            }</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -710,8 +732,8 @@ Closed 窗口关闭：不运行的窗口<br  />
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00131">131</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  131</span>{ m_context = context; }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00132">132</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{ m_context = context; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -736,8 +758,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>设置位置 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00115">115</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>{ SDL_SetWindowPosition(m_window, x, y); }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00116">116</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{ SDL_SetWindowPosition(m_window, x, y); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -762,10 +784,10 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>设置大小 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00123">123</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                                {</div>
-<div class="line"><span class="lineno">  124</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00124">124</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>                                                                {</div>
+<div class="line"><span class="lineno">  125</span>        SDL_SetWindowSize(m_window, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(height));</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -786,8 +808,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>设置标题 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00127">127</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{ SDL_SetWindowTitle(m_window, title.c_str()); }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00128">128</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ SDL_SetWindowTitle(m_window, title.c_str()); }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -820,8 +842,8 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>显示窗口 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00084">84</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{ SDL_ShowWindow(m_window); }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00081">81</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{ SDL_ShowWindow(m_window); }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -852,14 +874,14 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>切换页面 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00107">107</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>                                           {</div>
-<div class="line"><span class="lineno">  108</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title), std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
-<div class="line"><span class="lineno">  109</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
-<div class="line"><span class="lineno">  110</span>        m_nowPageTitle = std::move(title);</div>
-<div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
-<div class="line"><span class="lineno">  112</span>        m_pages[m_nowPageTitle]-&gt;open();</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00104">104</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>                                           {</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8">detectionError</a>(m_pages.contains(title), std::string(<span class="stringliteral">&quot;不存在的页面&quot;</span>) + m_nowPageTitle + <span class="stringliteral">&quot;-&gt;&quot;</span> + title);</div>
+<div class="line"><span class="lineno">  106</span>        m_pages[m_nowPageTitle]-&gt;close();</div>
+<div class="line"><span class="lineno">  107</span>        m_nowPageTitle = std::move(title);</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_function" href="#a4141bfcdcbd8d86fd07be7ee96f4a837">setTitle</a>(m_nowPageTitle);</div>
+<div class="line"><span class="lineno">  109</span>        m_pages[m_nowPageTitle]-&gt;open();</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -890,12 +912,12 @@ Closed 窗口关闭：不运行的窗口<br  />
 
 <p>更新一帧 </p>
 
-<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00070">70</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                        {</div>
-<div class="line"><span class="lineno">   71</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
-<div class="line"><span class="lineno">   72</span>        m_batchRenderer.render();</div>
-<div class="line"><span class="lineno">   73</span>        executeCommand();</div>
-<div class="line"><span class="lineno">   74</span>    }</div>
+<p class="definition">在文件 <a class="el" href="Window_8cpp_source.html">Window.cpp</a> 第 <a class="el" href="Window_8cpp_source.html#l00067">67</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                        {</div>
+<div class="line"><span class="lineno">   68</span>        m_pages[m_nowPageTitle]-&gt;update();</div>
+<div class="line"><span class="lineno">   69</span>        m_batchRenderer.render();</div>
+<div class="line"><span class="lineno">   70</span>        executeCommand();</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -933,8 +955,8 @@ Background 后台运行 <br  />
 Closed 关闭<br  />
  </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00071">71</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <span class="keywordflow">return</span> m_workState; }</div>
+<p class="definition">在文件 <a class="el" href="Window_8hpp_source.html">Window.hpp</a> 第 <a class="el" href="Window_8hpp_source.html#l00074">74</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> m_workState; }</div>
 </div><!-- fragment -->
 </div>
 </div>

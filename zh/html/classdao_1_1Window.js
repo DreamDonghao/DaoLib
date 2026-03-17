@@ -11,6 +11,7 @@ var classdao_1_1Window =
     [ "convertWorkState", "classdao_1_1Window.html#ad65855b81763b99608b9a26739174fdb", null ],
     [ "getAppController", "classdao_1_1Window.html#a68532c20c275b5e6c57a0f7bb838793f", null ],
     [ "getId", "classdao_1_1Window.html#af747f33b5f86ff4807027f7b200c90a4", null ],
+    [ "getNowPageTitle", "classdao_1_1Window.html#ac33263b55f5a1b530db981b15f028a20", null ],
     [ "getSDLWindow", "classdao_1_1Window.html#a98c43811ce3cbc6fbe93688ddafb228b", null ],
     [ "handleInputEvent", "classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed", null ],
     [ "hide", "classdao_1_1Window.html#a15682d38f6a4f26df5dac389cfeab905", null ],

@@ -75,7 +75,7 @@ var NAVTREEINDEX =
 "classdao_1_1Circle.html#acdd3eca6dfd3dc0f227076906da214f7",
 "classdao_1_1Sector.html",
 "classdao_1_1ifc_1_1IGraph.html#aed506de7b1e048a031caa70c8ccaa53e",
-"graphs_8hpp_source.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

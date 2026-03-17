@@ -18,7 +18,7 @@ var searchData=
   ['image_15',['Image',['../tutorial.html#autotoc_md44',1,'图片 (Image)'],['../classdao_1_1Image.html',1,'dao::Image'],['../classdao_1_1Image.html#a49d491df0ff0ee91ce59b210c8805e46',1,'dao::Image::Image()']]],
   ['image_2ehpp_16',['Image.hpp',['../Image_8hpp.html',1,'']]],
   ['impl_17',['Impl',['../classdao_1_1web_1_1HttpClient_1_1Impl.html',1,'dao::web::HttpClient::Impl'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html',1,'dao::web::HttpsClient::Impl'],['../classdao_1_1web_1_1HttpClient_1_1Impl.html#a90a0e66c25d61ad7d0e8b770075ec1dd',1,'dao::web::HttpClient::Impl::Impl()'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html#a4c32406b15ca54efe7ee91d989f08309',1,'dao::web::HttpsClient::Impl::Impl()']]],
-  ['init_18',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer']]],
+  ['init_18',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer::init()'],['../classdao_1_1ifc_1_1IPage.html#a89a6969741b2df8c6b58558ffce1b1ee',1,'dao::ifc::IPage::init()'],['../classdao_1_1ifc_1_1IGeneralPage.html#a1d07814d6ca3b68fbe558377f605d1fd',1,'dao::ifc::IGeneralPage::init()']]],
   ['inputbox_19',['输入框 (InputBox)',['../tutorial.html#autotoc_md42',1,'']]],
   ['interval_20',['interval',['../classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979',1,'dao::TickTimer']]],
   ['ipage_21',['IPage',['../classdao_1_1ifc_1_1IPage.html',1,'dao::ifc']]],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"graphs_8hpp_source.html":[5,0,0,0,0,1],
-"hierarchy.html":[4,2],
 "index.html":[],
 "join.html":[0],
 "join.html#autotoc_md0":[0,0],
