@@ -7,6 +7,7 @@ var classdao_1_1Window =
     ] ],
     [ "Window", "classdao_1_1Window.html#ae2c38877e63bcc6580b958273cc5d5a3", null ],
     [ "~Window", "classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3", null ],
+    [ "addPage", "classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df", null ],
     [ "addPage", "classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354", null ],
     [ "convertWorkState", "classdao_1_1Window.html#ad65855b81763b99608b9a26739174fdb", null ],
     [ "getAppController", "classdao_1_1Window.html#a68532c20c275b5e6c57a0f7bb838793f", null ],

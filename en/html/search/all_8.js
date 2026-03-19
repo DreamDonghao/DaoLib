@@ -4,7 +4,7 @@ var searchData=
   ['a_20feature_20branch_1',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
   ['a_20pull_20request_2',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
   ['add_3',['add',['../classdao_1_1web_1_1Headers.html#a9ce043604c0d8412a23bebc3a4a9985e',1,'dao::web::Headers']]],
-  ['addpage_4',['addPage',['../classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354',1,'dao::Window']]],
+  ['addpage_4',['addPage',['../classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df',1,'dao::Window::addPage(Args &amp;&amp;... args)'],['../classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354',1,'dao::Window::addPage(std::unique_ptr&lt; ifc::IPage &gt; &amp;&amp;page)']]],
   ['addrow_5',['addRow',['../classdao_1_1db_1_1Result.html#aaca3404cbde45e657f96f9d8d1072f78',1,'dao::db::Result']]],
   ['addtobatch_6',['addToBatch',['../classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c',1,'dao::ifc::IGeneralPage']]],
   ['allocatevertices_7',['allocateVertices',['../classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49',1,'dao::BatchRenderer']]],

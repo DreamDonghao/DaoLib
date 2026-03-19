@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classdao_1_1web_1_1HttpsClient.html#a7a5de15e0ce38c766777f23cc103fd10":[5,0,0,2,2,5],
+"classdao_1_1web_1_1HttpsClient.html#a7a5de15e0ce38c766777f23cc103fd10":[7,0,0,1,2,5],
 "classdao_1_1web_1_1HttpsClient.html#a8979ede9dbddf7092d7ac5f8c53bf724":[5,0,0,2,2,9],
 "classdao_1_1web_1_1HttpsClient.html#a8979ede9dbddf7092d7ac5f8c53bf724":[7,0,0,1,2,9],
 "classdao_1_1web_1_1HttpsClient.html#a89f6957b0932b481cb4a29b0353ab5d1":[5,0,0,2,2,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "structdao_1_1AppCommand.html":[7,0,0,4],
 "structdao_1_1AppCommand.html#a731ccdd5f379bcc1ee01d8dfd11df21f":[5,0,0,5,0],
 "structdao_1_1AppCommand.html#a731ccdd5f379bcc1ee01d8dfd11df21f":[7,0,0,4,0],
-"structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422":[5,0,0,5,1],
-"structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422":[7,0,0,4,1],
-"structdao_1_1AtlasRegion.html":[5,0,0,18]
+"structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422":[5,0,0,5,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"structdao_1_1AtlasRegion.html":[3,0,0,18],
+"structdao_1_1AtlasRegion.html":[5,0,0,17],
 "structdao_1_1AtlasRegion.html#a27e78e939e95cdce6f73c22acc3521f2":[3,0,0,18,4],
 "structdao_1_1AtlasRegion.html#a27e78e939e95cdce6f73c22acc3521f2":[5,0,0,17,4],
 "structdao_1_1AtlasRegion.html#a3d42c9bac90d5980e64b14aa91a3e055":[3,0,0,18,3],
