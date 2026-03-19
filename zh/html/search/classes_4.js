@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['framelimiter_0',['FrameLimiter',['../classdao_1_1FrameLimiter.html',1,'dao']]]
+  ['ellipse_0',['Ellipse',['../classdao_1_1Ellipse.html',1,'dao']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ellipse_0',['Ellipse',['../classdao_1_1Ellipse.html',1,'dao']]]
+  ['dataval_0',['DataVal',['../classdao_1_1db_1_1DataVal.html',1,'dao::db']]]
 ];

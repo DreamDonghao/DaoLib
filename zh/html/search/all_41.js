@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['独立构建_20daolib_0',['独立构建 DaoLib',['../tutorial.html#autotoc_md30',1,'']]]
+  ['渲染批处理_20vertexbatchbuilder_0',['5. 渲染批处理 (VertexBatchBuilder)',['../tutorial.html#autotoc_md47',1,'']]]
 ];

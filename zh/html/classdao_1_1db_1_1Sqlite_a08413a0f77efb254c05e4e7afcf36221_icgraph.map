@@ -1,0 +1,5 @@
+<map id="dao::db::Sqlite::isOpen" name="dao::db::Sqlite::isOpen">
+<area shape="rect" id="Node000001" title="检查数据库是否已打开" alt="" coords="264,5,432,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1db_1_1Sqlite.html#af18a72b180fbabc5b3fe3c72ab74491b" title="隐式转换为 bool，用于检查数据库状态" alt="" coords="5,5,216,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,21,216,21,216,15,250,15"/>
+</map>

@@ -2,9 +2,10 @@ var searchData=
 [
   ['ellipse_0',['Ellipse',['../classdao_1_1Ellipse.html#a70362fe0a92db5e10606fc5c0233cba1',1,'dao::Ellipse']]],
   ['emplace_1',['emplace',['../classdao_1_1Context.html#a2fbe73117eb0d648f3413abfe95745cd',1,'dao::Context']]],
-  ['empty_2',['empty',['../classdao_1_1web_1_1Headers.html#ae3534d24b575eb72dac72b808c38a4cf',1,'dao::web::Headers']]],
+  ['empty_2',['empty',['../classdao_1_1web_1_1Headers.html#ae3534d24b575eb72dac72b808c38a4cf',1,'dao::web::Headers::empty()'],['../classdao_1_1db_1_1Result.html#a7fce9abd03a796df5fb8843f04b9b933',1,'dao::db::Result::empty()']]],
   ['enablesslverification_3',['enableSSLVerification',['../classdao_1_1web_1_1HttpsClient.html#a625b09580d6bef3821408d9c0802f80d',1,'dao::web::HttpsClient']]],
-  ['end_4',['end',['../classdao_1_1web_1_1Headers.html#a85f76d955781a012a18ddccb0a497ab6',1,'dao::web::Headers']]],
-  ['executecommand_5',['executeCommand',['../classdao_1_1AppController.html#a9daf3dd62acaf544e5c554a17041839f',1,'dao::AppController::executeCommand()'],['../classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648',1,'dao::WindowController::executeCommand()']]],
-  ['exit_6',['exit',['../classdao_1_1App.html#a5325b3e9e97c260b67df0014dc67b698',1,'dao::App']]]
+  ['end_4',['end',['../classdao_1_1web_1_1Headers.html#a85f76d955781a012a18ddccb0a497ab6',1,'dao::web::Headers::end()'],['../classdao_1_1db_1_1Result.html#a5dc848204f4351cb8d1be1d46490eedd',1,'dao::db::Result::end()'],['../classdao_1_1db_1_1Result.html#ab0b47a2cf364ad6c629116b5281cd0cb',1,'dao::db::Result::end() const']]],
+  ['exec_5',['exec',['../classdao_1_1db_1_1Sqlite.html#a229469b1e8257ad3a3ba98f74b9dde3d',1,'dao::db::Sqlite']]],
+  ['executecommand_6',['executeCommand',['../classdao_1_1AppController.html#a9daf3dd62acaf544e5c554a17041839f',1,'dao::AppController::executeCommand()'],['../classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648',1,'dao::WindowController::executeCommand()']]],
+  ['exit_7',['exit',['../classdao_1_1App.html#a5325b3e9e97c260b67df0014dc67b698',1,'dao::App']]]
 ];

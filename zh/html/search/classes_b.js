@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['rectangle_0',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao']]],
-  ['ring_1',['Ring',['../classdao_1_1Ring.html',1,'dao']]],
-  ['ringvector_2',['RingVector',['../classdao_1_1RingVector.html',1,'dao']]],
-  ['roundedrectangle_3',['RoundedRectangle',['../classdao_1_1RoundedRectangle.html',1,'dao']]]
+  ['parsedurl_0',['ParsedURL',['../structdao_1_1web_1_1ParsedURL.html',1,'dao::web']]],
+  ['point_1',['Point',['../classdao_1_1Point.html',1,'dao']]],
+  ['polygon_2',['Polygon',['../classdao_1_1Polygon.html',1,'dao']]]
 ];

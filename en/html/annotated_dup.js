@@ -16,6 +16,12 @@ var annotated_dup =
         [ "ParsedURL", "structdao_1_1web_1_1ParsedURL.html", "structdao_1_1web_1_1ParsedURL" ],
         [ "HttpResponse", "structdao_1_1web_1_1HttpResponse.html", "structdao_1_1web_1_1HttpResponse" ]
       ] ],
+      [ "db", "namespacedao_1_1db.html", [
+        [ "DataVal", "classdao_1_1db_1_1DataVal.html", "classdao_1_1db_1_1DataVal" ],
+        [ "Row", "classdao_1_1db_1_1Row.html", "classdao_1_1db_1_1Row" ],
+        [ "Result", "classdao_1_1db_1_1Result.html", "classdao_1_1db_1_1Result" ],
+        [ "Sqlite", "classdao_1_1db_1_1Sqlite.html", "classdao_1_1db_1_1Sqlite" ]
+      ] ],
       [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
       [ "AppCommand", "structdao_1_1AppCommand.html", "structdao_1_1AppCommand" ],
       [ "AppController", "classdao_1_1AppController.html", "classdao_1_1AppController" ],
@@ -23,6 +29,7 @@ var annotated_dup =
       [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
       [ "Context", "classdao_1_1Context.html", "classdao_1_1Context" ],
       [ "FrameLimiter", "classdao_1_1FrameLimiter.html", "classdao_1_1FrameLimiter" ],
+      [ "Log", "classdao_1_1Log.html", "classdao_1_1Log" ],
       [ "BatchRenderer", "classdao_1_1BatchRenderer.html", "classdao_1_1BatchRenderer" ],
       [ "WindowCommand", "structdao_1_1WindowCommand.html", "structdao_1_1WindowCommand" ],
       [ "WindowController", "classdao_1_1WindowController.html", "classdao_1_1WindowController" ],
@@ -31,6 +38,7 @@ var annotated_dup =
       [ "BoundingBox", "classdao_1_1BoundingBox.html", "classdao_1_1BoundingBox" ],
       [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
       [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
+      [ "InputBox", "classdao_1_1InputBox.html", "classdao_1_1InputBox" ],
       [ "Arc", "classdao_1_1Arc.html", "classdao_1_1Arc" ],
       [ "Circle", "classdao_1_1Circle.html", "classdao_1_1Circle" ],
       [ "Ellipse", "classdao_1_1Ellipse.html", "classdao_1_1Ellipse" ],

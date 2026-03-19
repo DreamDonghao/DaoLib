@@ -100,7 +100,7 @@ Collaboration diagram for dao::Text:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Text__coll__graph.png" border="0" usemap="#adao_1_1Text_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Text_coll__map" id="adao_1_1Text_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,128,91"/>
+<area shape="rect" title=" " alt="" coords="5,5,128,131"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -108,6 +108,8 @@ Collaboration diagram for dao::Text:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d1e332c8a4709ced1e82ebeb6eeb91c" id="r_a1d1e332c8a4709ced1e82ebeb6eeb91c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1d1e332c8a4709ced1e82ebeb6eeb91c">Text</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> x, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> y, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> height, const <a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a> &amp;color, <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> str)</td></tr>
 <tr class="memitem:adb42edc6b53ee3b1f748ef077fa595fe" id="r_adb42edc6b53ee3b1f748ef077fa595fe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb42edc6b53ee3b1f748ef077fa595fe">writeToBatch</a> (<a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;bathRender) const</td></tr>
+<tr class="memitem:a35131757ec73b809b036a16f89e40574" id="r_a35131757ec73b809b036a16f89e40574"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35131757ec73b809b036a16f89e40574">setContent</a> (<a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> content)</td></tr>
+<tr class="memitem:ac8c1d3718f3357d0217dcbce4ac272a9" id="r_ac8c1d3718f3357d0217dcbce4ac272a9"><td class="memItemLeft">const <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac8c1d3718f3357d0217dcbce4ac272a9">getContent</a> () const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -156,7 +158,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00010">10</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>            : m_x(x), m_y(y), m_glyphHeight(height),m_color(color.getSDLFColor()), m_str(std::move(str)) {</div>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>            : m_x(x), m_y(y), m_glyphHeight(height), m_color(color.getSDLFColor()), m_str(std::move(str)) {</div>
 <div class="line"><span class="lineno">   12</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -180,6 +182,66 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ac8c1d3718f3357d0217dcbce4ac272a9" name="ac8c1d3718f3357d0217dcbce4ac272a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c1d3718f3357d0217dcbce4ac272a9">&#9670;&#160;</a></span>getContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a> &amp; dao::Text::getContent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00062">62</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                           {</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> m_str;</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35131757ec73b809b036a16f89e40574" name="a35131757ec73b809b036a16f89e40574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35131757ec73b809b036a16f89e40574">&#9670;&#160;</a></span>setContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::Text::setContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021">utf32str</a></td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00058">58</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                          {</div>
+<div class="line"><span class="lineno">   59</span>            m_str = std::move(content);</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="adb42edc6b53ee3b1f748ef077fa595fe" name="adb42edc6b53ee3b1f748ef077fa595fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb42edc6b53ee3b1f748ef077fa595fe">&#9670;&#160;</a></span>writeToBatch()</h2>
 
@@ -223,12 +285,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   30</span>                <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> width = m_glyphHeight / glyphRegion.getHeight() * glyphRegion.getWidth();</div>
 <div class="line"><span class="lineno">   31</span>                vertices[0] = {</div>
 <div class="line"><span class="lineno">   32</span>                    {x, y},</div>
-<div class="line"><span class="lineno">   33</span>                   m_color,</div>
+<div class="line"><span class="lineno">   33</span>                    m_color,</div>
 <div class="line"><span class="lineno">   34</span>                    {glyphRegion.getLeft(), glyphRegion.getTop()}</div>
 <div class="line"><span class="lineno">   35</span>                };</div>
 <div class="line"><span class="lineno">   36</span>                vertices[1] = {</div>
 <div class="line"><span class="lineno">   37</span>                    {x + width, y},</div>
-<div class="line"><span class="lineno">   38</span>                   m_color,</div>
+<div class="line"><span class="lineno">   38</span>                    m_color,</div>
 <div class="line"><span class="lineno">   39</span>                    {glyphRegion.getRight(), glyphRegion.getTop()}</div>
 <div class="line"><span class="lineno">   40</span>                };</div>
 <div class="line"><span class="lineno">   41</span>                vertices[2] = {</div>

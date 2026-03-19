@@ -1,7 +1,35 @@
 var namespacedao =
 [
     [ "ifc", "namespacedao_1_1ifc.html", "namespacedao_1_1ifc" ],
+    [ "fmt_color", "namespacedao_1_1fmt__color.html", [
+      [ "bg_blue", "namespacedao_1_1fmt__color.html#ad78b084b01601092563db1cbf67d621c", null ],
+      [ "bg_green", "namespacedao_1_1fmt__color.html#ac0b6ccd4aec25d9ad4dc4866cca904b0", null ],
+      [ "bg_red", "namespacedao_1_1fmt__color.html#a37d32f801dd09b1d1aba9a6e47a3a9d1", null ],
+      [ "bg_yellow", "namespacedao_1_1fmt__color.html#a4d646a64c6c99fb24a3f5be6ed31e1e1", null ],
+      [ "black", "namespacedao_1_1fmt__color.html#a9adb01d577fea8efc5ab473e7e78f107", null ],
+      [ "blue", "namespacedao_1_1fmt__color.html#acee7066172533aa5088bff2ed427cec9", null ],
+      [ "bold", "namespacedao_1_1fmt__color.html#a52deae5fd5cb2a1724fc57adbc6f7ab6", null ],
+      [ "bright_blue", "namespacedao_1_1fmt__color.html#aa9e7d6a27634ea51f59b4bcc6c567433", null ],
+      [ "bright_cyan", "namespacedao_1_1fmt__color.html#abeef76df1842e40cc430633b9f967885", null ],
+      [ "bright_green", "namespacedao_1_1fmt__color.html#ac35189efd0a2575312f4e4209a55cf29", null ],
+      [ "bright_magenta", "namespacedao_1_1fmt__color.html#ad5347dec519b2556de4e15f88240fa8c", null ],
+      [ "bright_red", "namespacedao_1_1fmt__color.html#a28208750b80d1a2786771cce650eef32", null ],
+      [ "bright_white", "namespacedao_1_1fmt__color.html#a0965f9b1192cabc1adf0cd2df58af534", null ],
+      [ "bright_yellow", "namespacedao_1_1fmt__color.html#af70d93c2f7f214287c31e0ffd5aa61df", null ],
+      [ "cyan", "namespacedao_1_1fmt__color.html#aed42c1d5a735c5dd64ee24fd36cc2093", null ],
+      [ "dim", "namespacedao_1_1fmt__color.html#a01b140b0aaf2b0b5aeb5e9c40bd14bbb", null ],
+      [ "gray", "namespacedao_1_1fmt__color.html#a3710991a7d67efe0efe288873cddcf06", null ],
+      [ "green", "namespacedao_1_1fmt__color.html#adfb20901f5db06bed77d012e1c0c0b48", null ],
+      [ "italic", "namespacedao_1_1fmt__color.html#ae0a2aa5a9a76784b21ada049f9420a7f", null ],
+      [ "magenta", "namespacedao_1_1fmt__color.html#ace2e4d563749d5a1aec65f0395d64fe8", null ],
+      [ "red", "namespacedao_1_1fmt__color.html#a6d810475de7d826a5371e13c1cbe05aa", null ],
+      [ "reset", "namespacedao_1_1fmt__color.html#a5cc719b7af6fecc7940f778aa8069928", null ],
+      [ "underline", "namespacedao_1_1fmt__color.html#a2ace7189773b4c6f29ef84f98bad8ff2", null ],
+      [ "white", "namespacedao_1_1fmt__color.html#a75f7fc359840bc182107158947d808f4", null ],
+      [ "yellow", "namespacedao_1_1fmt__color.html#a67d8344f58dbb57a9f6fadbe1646e5ad", null ]
+    ] ],
     [ "web", "namespacedao_1_1web.html", "namespacedao_1_1web" ],
+    [ "db", "namespacedao_1_1db.html", "namespacedao_1_1db" ],
     [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
     [ "AppCommand", "structdao_1_1AppCommand.html", "structdao_1_1AppCommand" ],
     [ "AppController", "classdao_1_1AppController.html", "classdao_1_1AppController" ],
@@ -9,6 +37,7 @@ var namespacedao =
     [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
     [ "Context", "classdao_1_1Context.html", "classdao_1_1Context" ],
     [ "FrameLimiter", "classdao_1_1FrameLimiter.html", "classdao_1_1FrameLimiter" ],
+    [ "Log", "classdao_1_1Log.html", "classdao_1_1Log" ],
     [ "BatchRenderer", "classdao_1_1BatchRenderer.html", "classdao_1_1BatchRenderer" ],
     [ "WindowCommand", "structdao_1_1WindowCommand.html", "structdao_1_1WindowCommand" ],
     [ "WindowController", "classdao_1_1WindowController.html", "classdao_1_1WindowController" ],
@@ -17,6 +46,7 @@ var namespacedao =
     [ "BoundingBox", "classdao_1_1BoundingBox.html", "classdao_1_1BoundingBox" ],
     [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
     [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
+    [ "InputBox", "classdao_1_1InputBox.html", "classdao_1_1InputBox" ],
     [ "Arc", "classdao_1_1Arc.html", "classdao_1_1Arc" ],
     [ "Circle", "classdao_1_1Circle.html", "classdao_1_1Circle" ],
     [ "Ellipse", "classdao_1_1Ellipse.html", "classdao_1_1Ellipse" ],
@@ -59,6 +89,19 @@ var namespacedao =
       [ "Normal", "namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "Hover", "namespacedao.html#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc", null ],
       [ "Pressed", "namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040", null ]
+    ] ],
+    [ "InputStatus", "namespacedao.html#ae7d5292a7122742f97a26215da2d033b", [
+      [ "Disabled", "namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241", null ],
+      [ "Normal", "namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0", null ],
+      [ "Input", "namespacedao.html#ae7d5292a7122742f97a26215da2d033ba324118a6721dd6b8a9b9f4e327df2bf5", null ]
+    ] ],
+    [ "LogLevel", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6f", [
+      [ "TRACE", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa2d3e4144aa384b18849ab9a8abad74d6", null ],
+      [ "DEBUG", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fadc30ec20708ef7b0f641ef78b7880a15", null ],
+      [ "INFO", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa551b723eafd6a31d444fcb2f5920fbd3", null ],
+      [ "WARN", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa32bd8a1db2275458673903bdb84cb277", null ],
+      [ "ERROR", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fabb1ca97ec761fc37101737ba0aa2e7c5", null ],
+      [ "FATAL", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa19da7170bea36556dde582519795f3fc", null ]
     ] ],
     [ "WindowCommandType", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67", [
       [ "switchPage", "namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4", null ],

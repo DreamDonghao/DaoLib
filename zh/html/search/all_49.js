@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['系统要求_0',['系统要求',['../tutorial.html#autotoc_md27',1,'']]]
+  ['管理依赖_0',['使用 vcpkg 管理依赖',['../tutorial.html#autotoc_md28',1,'']]]
 ];

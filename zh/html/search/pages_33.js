@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['构建问题_0',['构建问题',['../tutorial.html#autotoc_md73',1,'']]]
+  ['文本_20text_0',['文本 (Text)',['../tutorial.html#autotoc_md43',1,'']]]
 ];

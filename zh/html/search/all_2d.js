@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['多窗口管理_0',['多窗口管理',['../tutorial.html#autotoc_md56',1,'']]]
+  ['图片_20image_0',['图片 (Image)',['../tutorial.html#autotoc_md44',1,'']]]
 ];

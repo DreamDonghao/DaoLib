@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['布局？_0',['Q1: 如何调试 UI 布局？',['../tutorial.html#autotoc_md67',1,'']]]
+  ['审核与修改_0',['6. 审核与修改',['../join.html#autotoc_md12',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['编写代码并提交_0',['4. 编写代码并提交',['../join.html#autotoc_md8',1,'']]]
+  ['纹理管理_0',['纹理管理',['../tutorial.html#autotoc_md57',1,'']]],
+  ['纹理_20texture_1',['纹理 (Texture)',['../tutorial.html#autotoc_md46',1,'']]]
 ];

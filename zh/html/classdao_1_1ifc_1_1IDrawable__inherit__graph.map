@@ -1,29 +1,31 @@
 <map id="dao::ifc::IDrawable" name="dao::ifc::IDrawable">
-<area shape="rect" id="Node000001" title="可绘制对象接口" alt="" coords="562,5,698,91"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Image.html" title=" " alt="" coords="407,159,530,244"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,102,515,161,511,157,574,98"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1ifc_1_1IButtonStyle.html" title="按钮样式接口" alt="" coords="555,149,705,254"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="633,104,633,148,627,148,627,104"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1ifc_1_1IGraph.html" title="图形接口" alt="" coords="730,139,853,264"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="686,98,731,140,728,144,682,102"/>
-<area shape="rect" id="Node000005" href="$classdao_1_1Arc.html" title="圆弧图形组件" alt="" coords="5,322,129,567"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="719,266,717,267,663,280,592,285,424,283,339,282,260,285,192,295,165,303,142,314,130,324,127,319,139,310,163,298,191,289,259,279,339,276,425,277,592,279,662,274,716,261,717,261"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1Circle.html" title="圆形图形组件" alt="" coords="153,342,277,547"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="719,266,718,267,655,286,598,291,545,287,496,279,447,273,398,273,347,285,290,314,260,344,256,340,287,310,345,280,398,268,448,267,497,274,546,281,598,285,654,280,716,261,717,261"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1Ellipse.html" title="椭圆图形组件" alt="" coords="301,342,425,547"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="719,266,718,266,677,281,639,286,572,283,540,281,508,284,475,294,438,314,409,344,405,340,435,310,473,289,507,278,540,276,572,278,639,281,675,276,716,262,717,261"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1Line.html" title="线段图形组件" alt="" coords="449,342,573,547"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="720,265,718,266,681,281,649,287,619,294,586,314,560,343,556,340,583,310,617,289,648,282,679,276,715,262,717,261"/>
-<area shape="rect" id="Node000009" href="$classdao_1_1Polygon.html" title="多边形图形组件" alt="" coords="597,382,799,507"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="765,278,724,383,719,381,760,276"/>
-<area shape="rect" id="Node000010" href="$classdao_1_1Rectangle.html" title="矩形图形组件" alt="" coords="823,312,946,577"/>
-<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="822,275,836,311,831,313,817,277"/>
-<area shape="rect" id="Node000011" href="$classdao_1_1Ring.html" title="圆环图形组件" alt="" coords="970,332,1109,557"/>
-<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="866,239,914,271,960,310,977,330,973,334,956,314,911,275,863,243"/>
-<area shape="rect" id="Node000012" href="$classdao_1_1RoundedRectangle.html" title="圆角矩形图形组件" alt="" coords="1133,332,1301,557"/>
-<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="867,211,926,225,992,245,1060,273,1122,310,1145,330,1142,334,1119,314,1057,277,990,250,924,230,866,217"/>
-<area shape="rect" id="Node000013" href="$classdao_1_1Sector.html" title="扇形图形组件" alt="" coords="1325,332,1449,557"/>
-<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="866,208,980,223,1111,245,1232,274,1280,291,1314,310,1336,330,1332,334,1311,314,1277,296,1230,279,1110,250,979,228,866,213"/>
-<area shape="rect" id="Node000014" href="$classdao_1_1Triangle.html" title="三角形图形组件" alt="" coords="1474,342,1597,547"/>
-<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="867,204,1012,215,1187,235,1273,249,1351,266,1416,286,1464,310,1493,340,1490,343,1460,314,1414,291,1350,271,1272,255,1186,241,1011,221,866,209"/>
+<area shape="rect" id="Node000001" title="可绘制对象接口" alt="" coords="475,5,611,91"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Image.html" title=" " alt="" coords="238,189,361,274"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="464,85,418,110,374,141,350,164,329,190,325,187,346,161,371,137,415,106,462,81"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1InputBox.html" title="输入框组件" alt="" coords="385,139,531,324"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="520,104,504,139,499,137,516,102"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ifc_1_1IButtonStyle.html" title="按钮样式接口" alt="" coords="555,179,705,284"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="571,102,608,177,603,180,567,104"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1ifc_1_1IGraph.html" title="图形接口" alt="" coords="730,169,853,294"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="625,80,673,105,718,137,749,166,745,170,715,141,670,110,623,85"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1Arc.html" title="圆弧图形组件" alt="" coords="5,382,129,627"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="745,307,718,326,693,336,664,343,594,350,426,347,340,345,260,346,192,355,165,363,142,374,130,384,127,379,139,370,163,358,191,350,260,341,340,339,427,342,594,344,663,338,692,331,715,322,741,302"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Circle.html" title="圆形图形组件" alt="" coords="153,402,277,607"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="744,306,718,326,687,341,657,351,601,358,549,354,499,345,450,337,399,335,347,346,319,357,290,374,260,404,256,400,287,370,317,353,345,341,399,330,450,332,500,340,550,349,601,353,656,345,685,336,715,322,741,302"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1Ellipse.html" title="椭圆图形组件" alt="" coords="301,402,425,607"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="744,306,718,326,678,344,642,351,607,351,574,347,542,344,509,345,475,354,438,374,409,404,405,400,435,370,473,349,508,340,542,339,575,342,607,345,641,345,677,339,715,322,740,302"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1Line.html" title="线段图形组件" alt="" coords="449,402,573,607"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="741,306,718,326,682,344,650,349,619,355,603,362,586,374,560,403,556,400,583,370,601,357,617,350,649,344,680,339,715,322,738,302"/>
+<area shape="rect" id="Node000010" href="$classdao_1_1Polygon.html" title="多边形图形组件" alt="" coords="597,442,799,567"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="768,308,722,443,717,441,763,306"/>
+<area shape="rect" id="Node000011" href="$classdao_1_1Rectangle.html" title="矩形图形组件" alt="" coords="823,372,946,637"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="819,306,842,371,837,373,814,308"/>
+<area shape="rect" id="Node000012" href="$classdao_1_1Ring.html" title="圆环图形组件" alt="" coords="970,392,1109,617"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="865,283,914,324,960,370,976,390,972,394,956,374,910,328,862,287"/>
+<area shape="rect" id="Node000013" href="$classdao_1_1RoundedRectangle.html" title="圆角矩形图形组件" alt="" coords="1133,392,1301,617"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="867,249,926,268,992,294,1060,328,1122,370,1144,390,1140,394,1119,374,1057,333,990,299,924,273,865,254"/>
+<area shape="rect" id="Node000014" href="$classdao_1_1Sector.html" title="扇形图形组件" alt="" coords="1325,392,1449,617"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="867,232,964,242,1081,265,1142,283,1203,306,1261,334,1314,370,1335,390,1331,394,1311,374,1258,339,1201,311,1141,288,1080,270,963,247,866,238"/>
+<area shape="rect" id="Node000015" href="$classdao_1_1Triangle.html" title="三角形图形组件" alt="" coords="1474,402,1597,607"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="867,238,1012,256,1187,284,1273,302,1352,322,1417,345,1464,370,1493,399,1489,403,1460,374,1415,350,1350,327,1272,307,1186,289,1011,261,866,243"/>
 </map>

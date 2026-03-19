@@ -1,5 +1,39 @@
 var Log_8hpp =
 [
+    [ "dao::Log", "classdao_1_1Log.html", "classdao_1_1Log" ],
+    [ "dao::LogLevel", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6f", [
+      [ "dao::LogLevel::TRACE", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa2d3e4144aa384b18849ab9a8abad74d6", null ],
+      [ "dao::LogLevel::DEBUG", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fadc30ec20708ef7b0f641ef78b7880a15", null ],
+      [ "dao::LogLevel::INFO", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa551b723eafd6a31d444fcb2f5920fbd3", null ],
+      [ "dao::LogLevel::WARN", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa32bd8a1db2275458673903bdb84cb277", null ],
+      [ "dao::LogLevel::ERROR", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fabb1ca97ec761fc37101737ba0aa2e7c5", null ],
+      [ "dao::LogLevel::FATAL", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa19da7170bea36556dde582519795f3fc", null ]
+    ] ],
     [ "dao::currentDateTime", "namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994", null ],
-    [ "dao::DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ]
+    [ "dao::DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ],
+    [ "dao::fmt_color::bg_blue", "namespacedao_1_1fmt__color.html#ad78b084b01601092563db1cbf67d621c", null ],
+    [ "dao::fmt_color::bg_green", "namespacedao_1_1fmt__color.html#ac0b6ccd4aec25d9ad4dc4866cca904b0", null ],
+    [ "dao::fmt_color::bg_red", "namespacedao_1_1fmt__color.html#a37d32f801dd09b1d1aba9a6e47a3a9d1", null ],
+    [ "dao::fmt_color::bg_yellow", "namespacedao_1_1fmt__color.html#a4d646a64c6c99fb24a3f5be6ed31e1e1", null ],
+    [ "dao::fmt_color::black", "namespacedao_1_1fmt__color.html#a9adb01d577fea8efc5ab473e7e78f107", null ],
+    [ "dao::fmt_color::blue", "namespacedao_1_1fmt__color.html#acee7066172533aa5088bff2ed427cec9", null ],
+    [ "dao::fmt_color::bold", "namespacedao_1_1fmt__color.html#a52deae5fd5cb2a1724fc57adbc6f7ab6", null ],
+    [ "dao::fmt_color::bright_blue", "namespacedao_1_1fmt__color.html#aa9e7d6a27634ea51f59b4bcc6c567433", null ],
+    [ "dao::fmt_color::bright_cyan", "namespacedao_1_1fmt__color.html#abeef76df1842e40cc430633b9f967885", null ],
+    [ "dao::fmt_color::bright_green", "namespacedao_1_1fmt__color.html#ac35189efd0a2575312f4e4209a55cf29", null ],
+    [ "dao::fmt_color::bright_magenta", "namespacedao_1_1fmt__color.html#ad5347dec519b2556de4e15f88240fa8c", null ],
+    [ "dao::fmt_color::bright_red", "namespacedao_1_1fmt__color.html#a28208750b80d1a2786771cce650eef32", null ],
+    [ "dao::fmt_color::bright_white", "namespacedao_1_1fmt__color.html#a0965f9b1192cabc1adf0cd2df58af534", null ],
+    [ "dao::fmt_color::bright_yellow", "namespacedao_1_1fmt__color.html#af70d93c2f7f214287c31e0ffd5aa61df", null ],
+    [ "dao::fmt_color::cyan", "namespacedao_1_1fmt__color.html#aed42c1d5a735c5dd64ee24fd36cc2093", null ],
+    [ "dao::fmt_color::dim", "namespacedao_1_1fmt__color.html#a01b140b0aaf2b0b5aeb5e9c40bd14bbb", null ],
+    [ "dao::fmt_color::gray", "namespacedao_1_1fmt__color.html#a3710991a7d67efe0efe288873cddcf06", null ],
+    [ "dao::fmt_color::green", "namespacedao_1_1fmt__color.html#adfb20901f5db06bed77d012e1c0c0b48", null ],
+    [ "dao::fmt_color::italic", "namespacedao_1_1fmt__color.html#ae0a2aa5a9a76784b21ada049f9420a7f", null ],
+    [ "dao::fmt_color::magenta", "namespacedao_1_1fmt__color.html#ace2e4d563749d5a1aec65f0395d64fe8", null ],
+    [ "dao::fmt_color::red", "namespacedao_1_1fmt__color.html#a6d810475de7d826a5371e13c1cbe05aa", null ],
+    [ "dao::fmt_color::reset", "namespacedao_1_1fmt__color.html#a5cc719b7af6fecc7940f778aa8069928", null ],
+    [ "dao::fmt_color::underline", "namespacedao_1_1fmt__color.html#a2ace7189773b4c6f29ef84f98bad8ff2", null ],
+    [ "dao::fmt_color::white", "namespacedao_1_1fmt__color.html#a75f7fc359840bc182107158947d808f4", null ],
+    [ "dao::fmt_color::yellow", "namespacedao_1_1fmt__color.html#a67d8344f58dbb57a9f6fadbe1646e5ad", null ]
 ];

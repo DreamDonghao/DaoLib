@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mode_0',['Mode',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04',1,'dao::SwitchDeleter']]]
+  ['inputstatus_0',['InputStatus',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033b',1,'dao']]]
 ];

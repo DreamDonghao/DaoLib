@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['handleevent_0',['handleEvent',['../classdao_1_1ifc_1_1IButton.html#ad92979a118cc042f6b6fbc74cbdc0792',1,'dao::ifc::IButton']]],
+  ['handleevent_0',['handleEvent',['../classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406',1,'dao::InputBox::handleEvent()'],['../classdao_1_1ifc_1_1IButton.html#ad92979a118cc042f6b6fbc74cbdc0792',1,'dao::ifc::IButton::handleEvent()']]],
   ['handleinputevent_1',['handleInputEvent',['../classdao_1_1Window.html#a0c90ad9e111c5495e556f06d16dfb7ed',1,'dao::Window::handleInputEvent()'],['../classdao_1_1ifc_1_1IPage.html#acff3a62be8f466bb00ab8cd2e3cd69bd',1,'dao::ifc::IPage::handleInputEvent()'],['../classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c',1,'dao::ifc::IGeneralPage::handleInputEvent()']]],
-  ['has_2',['has',['../classdao_1_1Context.html#a87d390436bef8ce84f2b6ee3a7f580aa',1,'dao::Context']]],
+  ['has_2',['has',['../classdao_1_1Context.html#a87d390436bef8ce84f2b6ee3a7f580aa',1,'dao::Context::has()'],['../classdao_1_1db_1_1Row.html#a1e6fbe1e234d50839347b979a603dadc',1,'dao::db::Row::has()']]],
   ['hash_5fmap_3',['hash_map',['../namespacedao.html#a0ad639e9f8555dbf881042e9de05d81f',1,'dao']]],
   ['headers_4',['Headers',['../classdao_1_1web_1_1Headers.html',1,'dao::web::Headers'],['../classdao_1_1web_1_1Headers.html#a1980a64787d3585f6ca28e12a6d5bf64',1,'dao::web::Headers::Headers()=default'],['../classdao_1_1web_1_1Headers.html#a1d2f6fd55796b2a03d045b3c48c65670',1,'dao::web::Headers::Headers(std::initializer_list&lt; std::pair&lt; std::string, std::string &gt; &gt; init)']]],
   ['headers_2ecpp_5',['Headers.cpp',['../Headers_8cpp.html',1,'']]],

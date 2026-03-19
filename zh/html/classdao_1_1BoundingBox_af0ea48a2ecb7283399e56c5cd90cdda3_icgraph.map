@@ -1,5 +1,8 @@
 <map id="dao::BoundingBox::BoundingBox" name="dao::BoundingBox::BoundingBox">
-<area shape="rect" id="Node000001" title="构造函数" alt="" coords="212,13,447,38"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1MappedRegion.html#a59b269ee103dca66be498ed31bc874c5" title=" " alt="" coords="5,5,164,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,28,164,28,164,23,199,23"/>
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="232,59,467,84"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3" title="构造函数" alt="" coords="5,29,184,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,60,184,55,185,50,226,54"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1MappedRegion.html#a59b269ee103dca66be498ed31bc874c5" title=" " alt="" coords="15,79,174,119"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="221,88,174,93,174,88,220,83"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="140,20,137,15,129,12,95,8,67,10,53,15,50,20,58,27,54,31,45,21,49,11,66,5,95,3,130,7,141,11,144,17"/>
 </map>

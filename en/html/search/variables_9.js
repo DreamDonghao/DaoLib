@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['path_0',['path',['../structdao_1_1web_1_1ParsedURL.html#a634116d8575d103a959e81e5e478b13d',1,'dao::web::ParsedURL']]],
-  ['port_1',['port',['../classdao_1_1web_1_1HttpClient_1_1Impl.html#a4805efaf28b07d75a8898fd81f4f65c3',1,'dao::web::HttpClient::Impl::port'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html#aac64529a0432e55118a96cecd3c5be2d',1,'dao::web::HttpsClient::Impl::port'],['../structdao_1_1web_1_1ParsedURL.html#a88f2fbef669c634013865a635900e0a5',1,'dao::web::ParsedURL::port']]]
+  ['m_5fwindowcontroller_0',['m_windowController',['../classdao_1_1ifc_1_1IGeneralPage.html#ae5e92b2e534b05a8594e5a5548427ca8',1,'dao::ifc::IGeneralPage']]],
+  ['magenta_1',['magenta',['../namespacedao_1_1fmt__color.html#ace2e4d563749d5a1aec65f0395d64fe8',1,'dao::fmt_color']]]
 ];

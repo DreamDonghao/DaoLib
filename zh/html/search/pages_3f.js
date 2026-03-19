@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['纹理管理_0',['纹理管理',['../tutorial.html#autotoc_md57',1,'']]],
-  ['纹理_20texture_1',['纹理 (Texture)',['../tutorial.html#autotoc_md46',1,'']]]
+  ['管理依赖_0',['使用 vcpkg 管理依赖',['../tutorial.html#autotoc_md28',1,'']]]
 ];
