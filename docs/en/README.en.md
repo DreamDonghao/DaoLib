@@ -11,7 +11,10 @@ A cross-platform C++ application development framework for building desktop appl
 - **Graphics Rendering** - Hardware-accelerated rendering based on SDL3 with vertex batching
 - **Window Management** - Multi-window support with foreground/background/closed state switching
 - **Geometric Shapes** - Built-in common 2D shape components
+- **Input Controls** - Text input box with Chinese input support
 - **HTTP Client** - Synchronous/asynchronous HTTP/HTTPS requests
+- **Database Support** - SQLite wrapper with simplified API
+- **Logging System** - Multi-level colored logging
 - **JSON Support** - nlohmann/json integration
 
 ---
@@ -27,6 +30,7 @@ A cross-platform C++ application development framework for building desktop appl
 | nlohmann-json | >= 3.12.0 | JSON Processing |
 | OpenSSL | >= 3.6.1 | HTTPS Support |
 | utfcpp | >= 4.0.6 | UTF-8 Processing |
+| SQLiteCpp | >= 3.3.2 | Database |
 
 ---
 
@@ -41,8 +45,11 @@ code/
 │   │   └── tool/          # Utilities (Point, BoundingBox, Log, etc.)
 │   ├── components/        # UI Components
 │   │   ├── graphs/        # Shapes (Rectangle, Circle, Line, etc.)
+│   │   ├── controls/      # Controls (InputBox)
 │   │   ├── Image.hpp      # Image Component
 │   │   └── Text.hpp       # Text Component
+│   ├── database/          # Database Module
+│   │   └── sqlite/        # SQLite Wrapper
 │   ├── interface/         # Interfaces (IPage, IButton, etc.)
 │   └── web/               # Network Module
 │       └── http/          # HTTP Client
@@ -155,6 +162,54 @@ int main() {
 | `RoundedRectangle` | Rounded Rectangle |
 | `Triangle` | Triangle |
 | `Polygon` | Polygon |
+
+#### Controls (controls)
+
+| Component | Description |
+|---|---|
+| `InputBox` | Text input box with Chinese input support |
+
+### Database Module (database)
+
+```cpp
+#include <database/sqlite/Sqlite.hpp>
+
+dao::db::Sqlite db("test.db");
+
+// Insert
+db.exec("INSERT INTO users (name, age) VALUES ({}, {})", "John", 25);
+
+// Query
+auto result = db.select("SELECT * FROM users WHERE age > {}", 18);
+for (const auto& row : result) {
+    std::cout << row.asString("name") << ": " << row.asInt32("age") << "\n";
+}
+
+// Transaction
+db.beginTransaction();
+db.exec("INSERT INTO users (name) VALUES ({})", "Jane");
+db.commit();
+```
+
+### Logging System (Log)
+
+```cpp
+#include <core/tool/Log.hpp>
+
+// Enable colored output
+dao::Log::openStyleOutPut();
+
+// Multi-level logging
+dao::Log{dao::LogLevel::TRACE}("Finest granularity debug info");
+dao::Log{dao::LogLevel::DEBUG}("Debug information");
+dao::Log{dao::LogLevel::INFO}("General information");
+dao::Log{dao::LogLevel::WARN}("Warning message");
+dao::Log{dao::LogLevel::ERROR}("Error message");
+dao::Log{dao::LogLevel::FATAL}("Fatal error");
+
+// fmt-style formatting
+dao::Log{dao::LogLevel::INFO}.fmt("User {} logged in, ID: {}", username, userId);
+```
 
 ### Network Module (web)
 
