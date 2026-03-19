@@ -41,6 +41,11 @@ namespace dao {
 
         ~Window();
 
+        template<typename PageType, typename... Args>
+        Window &addPage(Args &&... args) {
+            return addPage(std::make_unique<PageType>(std::forward<Args>(args)...));
+        }
+
         /// @brief 添加页面
         /// @param page 要添加页面的unique_ptr指针
         Window &addPage(std::unique_ptr<ifc::IPage> &&page);
@@ -88,7 +93,7 @@ namespace dao {
         void switchPage(std::string title);
 
         /// @brief 获取当前现实页面标题
-        const std::string& getNowPageTitle() const;
+        const std::string &getNowPageTitle() const;
 
         /// @brief 设置位置
         void setPosition(i32 x, i32 y) const;
@@ -116,21 +121,24 @@ namespace dao {
         void setContext(Context *context);
 
     private:
-        i32 m_id{-1};                                               ///< ID
-        WorkState m_workState;                                      ///< 窗口工作状态
-        SDL_Window *m_window{nullptr};                              ///< SDL_Window 指针
-        std::string m_nowPageTitle;                                 ///< 当前页面的标题
-        hash_map<std::string, std::unique_ptr<ifc::IPage>> m_pages; ///< 窗口拥有的页面
-        i32 m_width;                                                ///< 窗口宽度
-        i32 m_height;                                               ///< 窗口高度
-        SDL_WindowFlags m_windowFlags = 0;                          ///< 窗口属性标记
-        AppController m_appController;                              ///< 应用控制器
-        BatchRenderer m_batchRenderer{1000000,"./assets/ttf/zh-cn.ttf"};    ///< 批处理渲染器
-        Context *m_context{nullptr};                                ///< 上下文
+        i32 m_id{-1};                                                     ///< ID
+        WorkState m_workState;                                            ///< 窗口工作状态
+        SDL_Window *m_window{nullptr};                                    ///< SDL_Window 指针
+        std::string m_nowPageTitle;                                       ///< 当前页面的标题
+        hash_map<std::string, std::unique_ptr<ifc::IPage> > m_pages;      ///< 窗口拥有的页面
+        i32 m_width;                                                      ///< 窗口宽度
+        i32 m_height;                                                     ///< 窗口高度
+        SDL_WindowFlags m_windowFlags = 0;                                ///< 窗口属性标记
+        AppController m_appController;                                    ///< 应用控制器
+        BatchRenderer m_batchRenderer{1000000, "./assets/ttf/zh-cn.ttf"}; ///< 批处理渲染器
+        Context *m_context{nullptr};                                      ///< 上下文
 
         /// @brief 执行窗口控制器的命令
         void executeCommand();
 
-        std::function<void()> m_closeAction{[] {}}; ///< 窗口关闭时执行的操作
+        std::function<void()> m_closeAction{
+            [] {
+            }
+        }; ///< 窗口关闭时执行的操作
     };
 } // namespace dao
