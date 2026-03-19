@@ -13,7 +13,10 @@ A cross-platform C++ application development framework for building desktop appl
 - **图形渲染 / Graphics Rendering** - 基于 SDL3 的硬件加速渲染，采用顶点批处理技术 / Hardware-accelerated rendering based on SDL3 with vertex batching
 - **窗口管理 / Window Management** - 多窗口支持，前台/后台/关闭状态切换 / Multi-window support with foreground/background/closed state switching
 - **几何图形 / Geometric Shapes** - 内置常用 2D 图形组件 / Built-in common 2D shape components
+- **输入控件 / Input Controls** - 文本输入框，支持中文输入 / Text input box with Chinese input support
 - **HTTP 客户端 / HTTP Client** - 同步/异步 HTTP/HTTPS 请求 / Synchronous/asynchronous HTTP/HTTPS requests
+- **数据库支持 / Database Support** - SQLite 封装，简化 API / SQLite wrapper with simplified API
+- **日志系统 / Logging System** - 多级别彩色日志输出 / Multi-level colored logging
 - **JSON 支持 / JSON Support** - nlohmann/json 集成 / nlohmann/json integration
 
 ---
@@ -29,6 +32,7 @@ A cross-platform C++ application development framework for building desktop appl
 | nlohmann-json | >= 3.12.0 | JSON 处理 / JSON Processing |
 | OpenSSL | >= 3.6.1 | HTTPS 支持 / HTTPS Support |
 | utfcpp | >= 4.0.6 | UTF-8 处理 / UTF-8 Processing |
+| SQLiteCpp | >= 3.3.2 | 数据库 / Database |
 
 ---
 
@@ -43,8 +47,11 @@ code/
 │   │   └── tool/          # 工具类 / Utilities (Point, BoundingBox, Log, etc.)
 │   ├── components/        # UI 组件 / UI Components
 │   │   ├── graphs/        # 几何图形 / Shapes (Rectangle, Circle, Line, etc.)
+│   │   ├── controls/      # 控件 / Controls (InputBox)
 │   │   ├── Image.hpp      # 图像组件 / Image Component
 │   │   └── Text.hpp       # 文本组件 / Text Component
+│   ├── database/          # 数据库模块 / Database Module
+│   │   └── sqlite/        # SQLite 封装 / SQLite Wrapper
 │   ├── interface/         # 接口定义 / Interfaces (IPage, IButton, etc.)
 │   └── web/               # 网络模块 / Network Module
 │       └── http/          # HTTP 客户端 / HTTP Client
@@ -157,6 +164,54 @@ int main() {
 | `RoundedRectangle` | 圆角矩形 / Rounded Rectangle |
 | `Triangle` | 三角形 / Triangle |
 | `Polygon` | 多边形 / Polygon |
+
+#### 控件 (controls) / Controls
+
+| 组件 / Component | 说明 / Description |
+|---|---|
+| `InputBox` | 文本输入框，支持中文输入 / Text input box with Chinese input support |
+
+### 数据库模块 (database) / Database Module
+
+```cpp
+#include <database/sqlite/Sqlite.hpp>
+
+dao::db::Sqlite db("test.db");
+
+// 插入
+db.exec("INSERT INTO users (name, age) VALUES ({}, {})", "张三", 25);
+
+// 查询
+auto result = db.select("SELECT * FROM users WHERE age > {}", 18);
+for (const auto& row : result) {
+    std::cout << row.asString("name") << ": " << row.asInt32("age") << "\n";
+}
+
+// 事务
+db.beginTransaction();
+db.exec("INSERT INTO users (name) VALUES ({})", "李四");
+db.commit();
+```
+
+### 日志系统 (Log) / Logging System
+
+```cpp
+#include <core/tool/Log.hpp>
+
+// 开启彩色输出
+dao::Log::openStyleOutPut();
+
+// 多级别日志
+dao::Log{dao::LogLevel::TRACE}("最细粒度的调试信息");
+dao::Log{dao::LogLevel::DEBUG}("调试信息");
+dao::Log{dao::LogLevel::INFO}("常规信息");
+dao::Log{dao::LogLevel::WARN}("警告信息");
+dao::Log{dao::LogLevel::ERROR}("错误信息");
+dao::Log{dao::LogLevel::FATAL}("致命错误");
+
+// fmt 风格格式化
+dao::Log{dao::LogLevel::INFO}.fmt("用户 {} 登录成功，ID: {}", username, userId);
+```
 
 ### 网络模块 (web) / Network Module
 

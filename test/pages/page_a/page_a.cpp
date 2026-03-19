@@ -50,7 +50,8 @@ namespace test {
         m_time += 0.02f;
 
         clearBatch();
-
+        Rectangle rect1{0, 0, 100, 100};
+        addToBatch(rect1);
         // Circle - 平移动画
         circle.setPosition(100 + std::sin(m_time) * 30, 100);
 

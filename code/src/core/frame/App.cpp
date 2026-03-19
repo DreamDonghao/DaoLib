@@ -55,6 +55,8 @@ namespace dao {
                     wid = static_cast<i32>(event.key.windowID);
                 } else if (event.type >= SDL_EVENT_MOUSE_MOTION && event.type <= SDL_EVENT_MOUSE_WHEEL) {
                     wid = static_cast<i32>(event.button.windowID);
+                } else if (event.type == SDL_EVENT_TEXT_INPUT || event.type == SDL_EVENT_TEXT_EDITING) {
+                    wid = static_cast<i32>(event.text.windowID);
                 }
 
                 if (wid != 0) {

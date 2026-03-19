@@ -11,22 +11,26 @@
 - **图形渲染** - 基于 SDL3 的硬件加速渲染，采用顶点批处理技术
 - **窗口管理** - 多窗口支持，前台/后台/关闭状态切换
 - **几何图形** - 内置常用 2D 图形组件
+- **输入控件** - 文本输入框，支持中文输入
 - **HTTP 客户端** - 同步/异步 HTTP/HTTPS 请求
+- **数据库支持** - SQLite 封装，简化 API
+- **日志系统** - 多级别彩色日志输出
 - **JSON 支持** - nlohmann/json 集成
 
 ---
 
 ## 依赖
 
-| 库 | 版本 | 用途          |
-|---|---|-------------|
-| SDL3 | >= 3.4.0 | 窗口与渲染       |
-| SDL3_image | >= 3.4.0 | 图像加载        |
-| SDL3_ttf | >= 3.2.2 | 字体渲染        |
-| cpp-httplib | >= 0.32.0 | HTTP 客户端    |
-| nlohmann-json | >= 3.12.0 | JSON 处理     |
-| OpenSSL | >= 3.6.1 | HTTPganS 支持 |
-| utfcpp | >= 4.0.6 | UTF-8 处理    |
+| 库 | 版本 | 用途 |
+|---|---|---|
+| SDL3 | >= 3.4.0 | 窗口与渲染 |
+| SDL3_image | >= 3.4.0 | 图像加载 |
+| SDL3_ttf | >= 3.2.2 | 字体渲染 |
+| cpp-httplib | >= 0.32.0 | HTTP 客户端 |
+| nlohmann-json | >= 3.12.0 | JSON 处理 |
+| OpenSSL | >= 3.6.1 | HTTPS 支持 |
+| utfcpp | >= 4.0.6 | UTF-8 处理 |
+| SQLiteCpp | >= 3.3.2 | 数据库 |
 
 ---
 
@@ -41,8 +45,11 @@ code/
 │   │   └── tool/          # 工具类（Point, BoundingBox, Log 等）
 │   ├── components/        # UI 组件
 │   │   ├── graphs/        # 几何图形（Rectangle, Circle, Line 等）
+│   │   ├── controls/      # 控件（InputBox）
 │   │   ├── Image.hpp      # 图像组件
 │   │   └── Text.hpp       # 文本组件
+│   ├── database/          # 数据库模块
+│   │   └── sqlite/        # SQLite 封装
 │   ├── interface/         # 接口定义（IPage, IButton 等）
 │   └── web/               # 网络模块
 │       └── http/          # HTTP 客户端
@@ -155,6 +162,54 @@ int main() {
 | `RoundedRectangle` | 圆角矩形 |
 | `Triangle` | 三角形 |
 | `Polygon` | 多边形 |
+
+#### 控件 (controls)
+
+| 组件 | 说明 |
+|---|---|
+| `InputBox` | 文本输入框，支持中文输入 |
+
+### 数据库模块 (database)
+
+```cpp
+#include <database/sqlite/Sqlite.hpp>
+
+dao::db::Sqlite db("test.db");
+
+// 插入
+db.exec("INSERT INTO users (name, age) VALUES ({}, {})", "张三", 25);
+
+// 查询
+auto result = db.select("SELECT * FROM users WHERE age > {}", 18);
+for (const auto& row : result) {
+    std::cout << row.asString("name") << ": " << row.asInt32("age") << "\n";
+}
+
+// 事务
+db.beginTransaction();
+db.exec("INSERT INTO users (name) VALUES ({})", "李四");
+db.commit();
+```
+
+### 日志系统 (Log)
+
+```cpp
+#include <core/tool/Log.hpp>
+
+// 开启彩色输出
+dao::Log::openStyleOutPut();
+
+// 多级别日志
+dao::Log{dao::LogLevel::TRACE}("最细粒度的调试信息");
+dao::Log{dao::LogLevel::DEBUG}("调试信息");
+dao::Log{dao::LogLevel::INFO}("常规信息");
+dao::Log{dao::LogLevel::WARN}("警告信息");
+dao::Log{dao::LogLevel::ERROR}("错误信息");
+dao::Log{dao::LogLevel::FATAL}("致命错误");
+
+// fmt 风格格式化
+dao::Log{dao::LogLevel::INFO}.fmt("用户 {} 登录成功，ID: {}", username, userId);
+```
 
 ### 网络模块 (web)
 

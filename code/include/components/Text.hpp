@@ -7,8 +7,8 @@
 namespace dao {
     class Text {
     public:
-        explicit Text(const f32 x, const f32 y, const f32 height,const ColorRGBA &color, utf32str str)
-            : m_x(x), m_y(y), m_glyphHeight(height),m_color(color.getSDLFColor()), m_str(std::move(str)) {
+        explicit Text(const f32 x, const f32 y, const f32 height, const ColorRGBA &color, utf32str str)
+            : m_x(x), m_y(y), m_glyphHeight(height), m_color(color.getSDLFColor()), m_str(std::move(str)) {
         }
 
         void writeToBatch(BatchRenderer &bathRender) const {
@@ -30,12 +30,12 @@ namespace dao {
                 const f32 width = m_glyphHeight / glyphRegion.getHeight() * glyphRegion.getWidth();
                 vertices[0] = {
                     {x, y},
-                   m_color,
+                    m_color,
                     {glyphRegion.getLeft(), glyphRegion.getTop()}
                 };
                 vertices[1] = {
                     {x + width, y},
-                   m_color,
+                    m_color,
                     {glyphRegion.getRight(), glyphRegion.getTop()}
                 };
                 vertices[2] = {
@@ -53,6 +53,14 @@ namespace dao {
                 vertices += 6;
                 x += width;
             }
+        }
+
+        void setContent(utf32str content) {
+            m_str = std::move(content);
+        }
+
+        const utf32str &getContent() const {
+            return m_str;
         }
 
     private:

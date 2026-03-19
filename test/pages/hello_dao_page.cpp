@@ -20,25 +20,31 @@ long long getTimeInterval() {
 std::vector<i32> HelloDaoPage::getRegisterTextures() const {
     return {};
 }
+
 i32 id;
+
 void HelloDaoPage::open() {
-    id = client.postAsync("/post",R"({"你好":"1"})","json");
+    id = client.postAsync("/post", R"({"你好":"1"})", "json");
 }
 
 void HelloDaoPage::close() {
 }
 
+Rectangle rect{0, 0, 100, 100};
 void HelloDaoPage::update() {
     clearBatch();
     std::string st;
     if (client.isReady(id)) {
         st = client.getResponse(id)->body;
     }
-    Text text{0, 0, 100, Yellow, utf8ToUtf32(st)};
-    addToBatch(text);
-    addToBatch();
+    // Text text{0, 0, 100, Yellow, utf8ToUtf32(st)};
+    // addToBatch(text,rect);
+    addToBatch(inputBox);
+    Rectangle rect1{0, 0, 100, 100};
+    addToBatch(rect1);
 }
 
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
+    inputBox.handleEvent(event);
 }

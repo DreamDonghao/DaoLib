@@ -62,6 +62,9 @@ find_package(OpenSSL REQUIRED)
 set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
 # 启用 httplib 的 OpenSSL 支持
 target_compile_definitions(dao PUBLIC CPPHTTPLIB_OPENSSL_SUPPORT)
+
+find_package(SQLiteCpp REQUIRED)
+
 target_link_libraries(dao
         PUBLIC
         SDL3::SDL3
@@ -73,6 +76,7 @@ target_link_libraries(dao
         nlohmann_json::nlohmann_json
         httplib::httplib
         OpenSSL::Crypto
+        SQLiteCpp
 )
 
 install(TARGETS dao

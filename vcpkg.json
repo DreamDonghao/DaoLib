@@ -34,6 +34,10 @@
     {
       "name": "openssl",
       "version>=": "3.6.1#2"
+    },
+    {
+      "name": "sqlitecpp",
+      "version>=": "3.3.3"
     }
   ],
   "overrides": []
