@@ -33,9 +33,8 @@ void HelloDaoPage::close() {
 Rectangle rect{0, 0, 100, 100};
 void HelloDaoPage::update() {
     clearBatch();
-    std::string st;
     if (client.isReady(id)) {
-        st = client.getResponse(id)->body;
+        std::string st = client.getResponse(id)->body;
     }
     // Text text{0, 0, 100, Yellow, utf8ToUtf32(st)};
     // addToBatch(text,rect);
