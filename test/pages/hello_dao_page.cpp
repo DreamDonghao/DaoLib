@@ -1,7 +1,5 @@
 #include "hello_dao_page.hpp"
 #include <components/graphs/Circle.hpp>
-#include <components/graphs/Polygon.hpp>
-#include <components/Text.hpp>
 using namespace dao;
 
 long long getTimeInterval() {
@@ -21,29 +19,33 @@ std::vector<i32> HelloDaoPage::getRegisterTextures() const {
     return {};
 }
 
-i32 id;
 
 void HelloDaoPage::open() {
-    id = client.postAsync("/post", R"({"你好":"1"})", "json");
+    client.setTimeout(100, 100);
 }
 
 void HelloDaoPage::close() {
 }
 
-Rectangle rect{0, 0, 100, 100};
+
 void HelloDaoPage::update() {
-    clearBatch();
-    if (client.isReady(id)) {
-        std::string st = client.getResponse(id)->body;
+    if (client.isReady(reqId)) {
+        if (const auto resp = client.takeResponse(reqId); resp) {
+            dao::Log{dao::LogLevel::INFO}("resp.body", resp.value().body);
+            dao::json bodyJson = dao::json::parse(resp.value().body);
+            textbox.setContent(dao::utf8ToUtf32(bodyJson["choices"][0]["message"]["content"].get<std::string>()));
+        } else {
+            std::cout << "Error: " << resp.value().error << resp.value().body << std::endl;
+        }
     }
-    // Text text{0, 0, 100, Yellow, utf8ToUtf32(st)};
-    // addToBatch(text,rect);
-    addToBatch(inputBox);
-    Rectangle rect1{0, 0, 100, 100};
-    addToBatch(rect1);
+
+
+    clearBatch();
+    addToBatch(inputBox, button, textbox);
 }
 
 
 void HelloDaoPage::handleInputEvent(const SDL_Event &event) {
     inputBox.handleEvent(event);
+    button.handleEvent(event);
 }

@@ -142,7 +142,7 @@ namespace dao::web {
     bool HttpsClient::isReady(const RequestId id) const {
         const auto it = m_impl->futures.find(id);
         if (it == m_impl->futures.end() || !it->second.valid()) {
-            return true;
+            return false;
         }
         return it->second.wait_for(std::chrono::seconds(0)) == std::future_status::ready;
     }
@@ -158,14 +158,25 @@ namespace dao::web {
         return std::nullopt;
     }
 
+    std::optional<HttpResponse> HttpsClient::takeResponse(const RequestId id) const {
+        const auto it = m_impl->futures.find(id);
+        if (it == m_impl->futures.end() || !it->second.valid()) {
+            return std::nullopt;
+        }
+        if (it->second.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
+            auto result = it->second.get();
+            m_impl->futures.erase(it);
+            return result;
+        }
+        return std::nullopt;
+    }
+
     HttpResponse HttpsClient::waitResponse(const RequestId id) const {
         const auto it = m_impl->futures.find(id);
         if (it == m_impl->futures.end() || !it->second.valid()) {
             return HttpResponse{.error = "Invalid request ID"};
         }
-        auto result = it->second.get();
-        m_impl->futures.erase(it);
-        return result;
+        return it->second.get();
     }
 
     void HttpsClient::cancelRequest(const RequestId id) const {

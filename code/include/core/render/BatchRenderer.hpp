@@ -58,6 +58,7 @@ namespace dao {
         /// @return 指向分配空间的指针
         /// @note 调用方需确保 count 不会超出剩余容量
         SDL_Vertex *allocateVertices(i32 atlasID, i32 count);
+
     private:
         SDL_Renderer *m_renderer{nullptr}; ///< SDL渲染器指针
         GlyphAtlas m_glyphAtlas;           ///< 字形图集

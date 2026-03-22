@@ -16,8 +16,8 @@ namespace dao {
         /// @param width 宽度
         /// @param height 高度
         /// @param color 填充颜色
-        Rectangle(const f32 x, const f32 y, const f32 width, const f32 height,
-                  const ColorRGBA &color = White)
+        explicit Rectangle(const f32 x = 0.0f, const f32 y = 0.0f, const f32 width = 0.0f, const f32 height = 0.0f,
+                           const ColorRGBA &color = White)
             : m_x(x), m_y(y), m_width(width), m_height(height) {
             updateVertices(color);
         }
@@ -97,10 +97,10 @@ namespace dao {
         /// @brief 更新顶点
         void updateVertices(const ColorRGBA &color) {
             m_vertices.resize(4);
-            m_vertices[0] = Vertex(m_x, m_y, color);                         // 左上
-            m_vertices[1] = Vertex(m_x + m_width, m_y, color);               // 右上
-            m_vertices[2] = Vertex(m_x, m_y + m_height, color);              // 左下
-            m_vertices[3] = Vertex(m_x + m_width, m_y + m_height, color);    // 右下
+            m_vertices[0] = Vertex(m_x, m_y, color);                      // 左上
+            m_vertices[1] = Vertex(m_x + m_width, m_y, color);            // 右上
+            m_vertices[2] = Vertex(m_x, m_y + m_height, color);           // 左下
+            m_vertices[3] = Vertex(m_x + m_width, m_y + m_height, color); // 右下
         }
     };
 }

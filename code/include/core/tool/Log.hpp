@@ -31,6 +31,7 @@ namespace dao {
                 << "函数[Function]: " << loc.function_name() << "\n\n";
     }
 
+    /// @brief 日志级别
     enum class LogLevel {
         TRACE, ///< 最细粒度的调试信息，记录程序的每一步执行
         DEBUG, ///< 调试信息，帮助理解程序运行状态
@@ -91,19 +92,28 @@ namespace dao {
             if (m_styleOutPut) {
                 std::print("{}[{:5}]{}", Color(level), Name(level), fmt_color::reset);
                 std::print(" {}{}{} ", fmt_color::gray, currentDateTime(), fmt_color::reset);
-                std::println("");
-                std::println("{}{}{}", fmt_color::dim,
-                             std::format(" ├─ at {}:{} ({})", loc.file_name(), loc.line(), loc.function_name()),
-                             fmt_color::reset);
-                std::print(" {}└─ MSG:{} ", fmt_color::dim, fmt_color::reset);
+                if (level != LogLevel::INFO) {
+                    std::println("");
+                    std::println("{}{}{}", fmt_color::dim,
+                                 std::format(" ├─ at {}:{} ({})", loc.file_name(), loc.line(), loc.function_name()),
+                                 fmt_color::reset);
+                    std::print(" {}└─ MSG:{} ", fmt_color::dim, fmt_color::reset);
+                } else {
+                    std::print(" ");
+                }
                 (std::print("{}{}{}", Color(level), std::forward<Args>(args), fmt_color::reset), ...);
             } else {
                 std::print("[{:5}]", Name(level));
                 std::print(" {} ", currentDateTime());
-                std::println("");
-                std::println(
-                    "{}", std::format("  └─ at {}:{}\n ({})", loc.file_name(), loc.line(), loc.function_name()));
-                (std::print("└─{}", std::forward<Args>(args)), ...);
+                if (level != LogLevel::INFO) {
+                    std::println("");
+                    std::println(
+                        "{}", std::format("  └─ at {}:{}\n ({})", loc.file_name(), loc.line(), loc.function_name()));
+                    std::print("└─");
+                } else {
+                    std::print(" ");
+                }
+                (std::print("{}", std::forward<Args>(args)), ...);
             }
             std::println();
         }
@@ -113,24 +123,33 @@ namespace dao {
         /// @param fmt 格式字符串，使用 {} 占位符
         /// @param args 参数值
         template<typename... Args>
-        void fmt(std::format_string<Args...> fmt, Args&&... args) const {
+        void fmt(std::format_string<Args...> fmt, Args &&... args) const {
             const std::string msg = std::format(fmt, std::forward<Args>(args)...);
             if (m_styleOutPut) {
                 std::print("{}[{:5}]{}", Color(level), Name(level), fmt_color::reset);
                 std::print(" {}{}{} ", fmt_color::gray, currentDateTime(), fmt_color::reset);
-                std::println("");
-                std::println("{}{}{}", fmt_color::dim,
-                             std::format(" ├─ at {}:{} ({})", loc.file_name(), loc.line(), loc.function_name()),
-                             fmt_color::reset);
-                std::print(" {}└─ MSG:{} ", fmt_color::dim, fmt_color::reset);
+                if (level != LogLevel::INFO) {
+                    std::println("");
+                    std::println("{}{}{}", fmt_color::dim,
+                                 std::format(" ├─ at {}:{} ({})", loc.file_name(), loc.line(), loc.function_name()),
+                                 fmt_color::reset);
+                    std::print(" {}└─ MSG:{} ", fmt_color::dim, fmt_color::reset);
+                } else {
+                    std::print(" ");
+                }
                 std::print("{}{}{}", Color(level), msg, fmt_color::reset);
             } else {
                 std::print("[{:5}]", Name(level));
                 std::print(" {} ", currentDateTime());
-                std::println("");
-                std::println(
-                    "{}", std::format("  └─ at {}:{}\n ({})", loc.file_name(), loc.line(), loc.function_name()));
-                std::print("└─{}", msg);
+                if (level != LogLevel::INFO) {
+                    std::println("");
+                    std::println(
+                        "{}", std::format("  └─ at {}:{}\n ({})", loc.file_name(), loc.line(), loc.function_name()));
+                    std::print("└─");
+                } else {
+                    std::print(" ");
+                }
+                std::print("{}", msg);
             }
             std::println();
         }

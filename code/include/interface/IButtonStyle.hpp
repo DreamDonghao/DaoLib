@@ -1,5 +1,5 @@
 #pragma once
-#include <interface/IButton.hpp>
+#include <../components/controls/IButton.hpp>
 #include <interface/IDrawable.hpp>
 
 namespace dao::ifc {
