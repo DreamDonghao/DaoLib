@@ -15,7 +15,7 @@ class HelloDaoPage : public dao::ifc::IGeneralPage {
         500, 400, 200, 200, [this] {
             const dao::web::Headers headers = {
                 {"Content-Type", "application/json"},
-                {"Authorization", "Bearer sk-5566b22b1cfd4bc2bdc55f88c29ff5ba"}
+                {"Authorization", "Bearer sk-5566b22b1cfd4bc2bdc55f88c29ff5ba"}// 已删除
             };
 
             const dao::json body = {
@@ -33,7 +33,7 @@ class HelloDaoPage : public dao::ifc::IGeneralPage {
         }
     };
 
-public:
+公共:
     HelloDaoPage() : IGeneralPage("helloDaoPage") {
     };
 
