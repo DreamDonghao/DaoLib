@@ -48,6 +48,7 @@ namespace dao {
     void BatchRenderer::clear() {
         m_index = 0;
         m_batches.clear();
+        //m_endAtlasId = 0;
     }
 
     void BatchRenderer::loadAtlas(const i32 textureId) {
@@ -92,6 +93,7 @@ namespace dao {
     SDL_Vertex *BatchRenderer::allocateVertices(const i32 atlasID, const i32 count) {
         if (m_endAtlasId != atlasID || m_batches.empty()) {
             m_batches.push_back({atlasID, 0});
+            m_endAtlasId = atlasID;
         }
         SDL_Vertex *const ret = m_vertices.data() + m_index;
         m_index += count;

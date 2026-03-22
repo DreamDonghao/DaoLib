@@ -3,7 +3,6 @@
 #include <utf8cpp/utf8/unchecked.h>
 #include <core/tool/BoundingBox.hpp>
 #include <core/render/IDrawable.hpp>
-
 #include "utf8cpp/utf8/checked.h"
 #include "components/Text.hpp"
 #include "components/graphs/Rectangle.hpp"
@@ -32,7 +31,7 @@ namespace dao {
         InputBox(const f32 x, const f32 y, const f32 w, const f32 h,
                  const InputStatus status = InputStatus::Normal)
             : m_status(status), m_boundingBox(x, y, x + w, y + h),
-              m_text(x, y, h, Yellow, U""),
+              m_text(x, y, h, Yellow),
               m_rectangle(x, y, w, h, Red) {
         }
 
