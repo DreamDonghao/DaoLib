@@ -1,0 +1,7 @@
+<map id="dao::BoundingBox::getTop" name="dao::BoundingBox::getTop">
+<area shape="rect" id="Node000001" title="获取上边界坐标" alt="" coords="252,31,443,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1TextBox.html#a6f081a840a1b78315660121e88933453" title="设置尺寸" alt="" coords="24,5,185,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,35,185,29,186,24,239,29"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1TextBox.html#acbb1e7b149950357375d04d42a76fb12" title="写入批处理渲染器" alt="" coords="5,55,204,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,57,205,60,204,55,238,51"/>
+</map>

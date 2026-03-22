@@ -22,5 +22,6 @@ var classdao_1_1web_1_1HttpsClient =
     [ "postAsync", "classdao_1_1web_1_1HttpsClient.html#a76ffa7003ef0c09d4d9dd366f39180ce", null ],
     [ "setCaCertPath", "classdao_1_1web_1_1HttpsClient.html#a35a7b49e0ded58a0604021f9580026b2", null ],
     [ "setTimeout", "classdao_1_1web_1_1HttpsClient.html#a1d49beafdeb3895ca21a920ed1878ebd", null ],
+    [ "takeResponse", "classdao_1_1web_1_1HttpsClient.html#aaf458d9d12a0a9e545b572b955545140", null ],
     [ "waitResponse", "classdao_1_1web_1_1HttpsClient.html#ac6549dcab24aca8992d45c69b417eb36", null ]
 ];

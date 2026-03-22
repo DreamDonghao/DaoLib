@@ -1,0 +1,5 @@
+<map id="dao::TextBox" name="dao::TextBox">
+<area shape="rect" id="Node000001" title="文本框组件" alt="" coords="5,139,163,464"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IDrawable.html" title="可绘制对象接口" alt="" coords="16,5,152,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,104,87,139,81,139,81,104"/>
+</map>

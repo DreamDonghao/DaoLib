@@ -126,18 +126,19 @@ var NAVTREE =
     ] ],
     [ "文件", "files.html", [
       [ "文件列表", "files.html", "files_dup" ]
-    ] ]
+    ] ],
+    [ "示例", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "AppController_8cpp.html",
-"classdao_1_1Circle.html#a7917ae83283f80204356e3f1c739fb85",
-"classdao_1_1RingVector.html#a08827cd0c873cb3c7b0c644f464aec80",
-"classdao_1_1db_1_1Result.html#a9ac28d754de5a01c337bc30304ab9716",
-"classdao_1_1web_1_1HttpsClient.html#a7a5de15e0ce38c766777f23cc103fd10",
-"structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422"
+"classdao_1_1Button.html#a0a80fed19db02336b9ca8f6b64b6c80f",
+"classdao_1_1Rectangle.html#aa14b21537202e5ed165731f6d32f12dd",
+"classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe",
+"classdao_1_1web_1_1HttpClient.html#a0ae96f4d020a0e57913219da10ecb1ec",
+"namespacedao.html#a857575a514cdaa71d6d58a5b6496748a"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

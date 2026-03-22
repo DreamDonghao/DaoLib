@@ -4,9 +4,9 @@ var annotated_dup =
       [ "ifc", "namespacedao_1_1ifc.html", [
         [ "IPage", "classdao_1_1ifc_1_1IPage.html", "classdao_1_1ifc_1_1IPage" ],
         [ "IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html", "classdao_1_1ifc_1_1IGeneralPage" ],
+        [ "IButton", "classdao_1_1ifc_1_1IButton.html", "classdao_1_1ifc_1_1IButton" ],
         [ "IGraph", "classdao_1_1ifc_1_1IGraph.html", "classdao_1_1ifc_1_1IGraph" ],
         [ "IDrawable", "classdao_1_1ifc_1_1IDrawable.html", "classdao_1_1ifc_1_1IDrawable" ],
-        [ "IButton", "classdao_1_1ifc_1_1IButton.html", "classdao_1_1ifc_1_1IButton" ],
         [ "IButtonStyle", "classdao_1_1ifc_1_1IButtonStyle.html", "classdao_1_1ifc_1_1IButtonStyle" ]
       ] ],
       [ "web", "namespacedao_1_1web.html", [
@@ -39,6 +39,7 @@ var annotated_dup =
       [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
       [ "MappedRegion", "classdao_1_1MappedRegion.html", "classdao_1_1MappedRegion" ],
       [ "InputBox", "classdao_1_1InputBox.html", "classdao_1_1InputBox" ],
+      [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
       [ "Arc", "classdao_1_1Arc.html", "classdao_1_1Arc" ],
       [ "Circle", "classdao_1_1Circle.html", "classdao_1_1Circle" ],
       [ "Ellipse", "classdao_1_1Ellipse.html", "classdao_1_1Ellipse" ],
@@ -51,6 +52,7 @@ var annotated_dup =
       [ "Triangle", "classdao_1_1Triangle.html", "classdao_1_1Triangle" ],
       [ "Image", "classdao_1_1Image.html", "classdao_1_1Image" ],
       [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ],
+      [ "TextBox", "classdao_1_1TextBox.html", "classdao_1_1TextBox" ],
       [ "ColorRGBA", "classdao_1_1ColorRGBA.html", "classdao_1_1ColorRGBA" ],
       [ "Vertex", "classdao_1_1Vertex.html", "classdao_1_1Vertex" ],
       [ "Point", "classdao_1_1Point.html", "classdao_1_1Point" ],

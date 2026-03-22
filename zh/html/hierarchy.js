@@ -15,10 +15,13 @@ var hierarchy =
     [ "dao::web::HttpClient", "classdao_1_1web_1_1HttpClient.html", null ],
     [ "dao::web::HttpResponse", "structdao_1_1web_1_1HttpResponse.html", null ],
     [ "dao::web::HttpsClient", "classdao_1_1web_1_1HttpsClient.html", null ],
-    [ "dao::ifc::IButton", "classdao_1_1ifc_1_1IButton.html", null ],
+    [ "dao::ifc::IButton", "classdao_1_1ifc_1_1IButton.html", [
+      [ "dao::Button", "classdao_1_1Button.html", null ]
+    ] ],
     [ "dao::ifc::IDrawable", "classdao_1_1ifc_1_1IDrawable.html", [
       [ "dao::Image", "classdao_1_1Image.html", null ],
       [ "dao::InputBox", "classdao_1_1InputBox.html", null ],
+      [ "dao::TextBox", "classdao_1_1TextBox.html", null ],
       [ "dao::ifc::IButtonStyle", "classdao_1_1ifc_1_1IButtonStyle.html", null ],
       [ "dao::ifc::IGraph", "classdao_1_1ifc_1_1IGraph.html", [
         [ "dao::Arc", "classdao_1_1Arc.html", null ],

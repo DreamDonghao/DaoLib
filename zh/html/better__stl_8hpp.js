@@ -7,5 +7,6 @@ var better__stl_8hpp =
     [ "dao::randomInt", "namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711", null ],
     [ "dao::ratio", "namespacedao.html#af0e428264a3d67735ed1bbfa2c4f8073", null ],
     [ "dao::sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ],
+    [ "dao::utf32ToUtf8", "namespacedao.html#ac0d7db6b8226dcc008422ce1622d54e1", null ],
     [ "dao::utf8ToUtf32", "namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c", null ]
 ];

@@ -6,7 +6,7 @@ var searchData=
   ['init_3',['init',['../classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7',1,'dao::BatchRenderer::init()'],['../classdao_1_1ifc_1_1IPage.html#a89a6969741b2df8c6b58558ffce1b1ee',1,'dao::ifc::IPage::init()'],['../classdao_1_1ifc_1_1IGeneralPage.html#a1d07814d6ca3b68fbe558377f605d1fd',1,'dao::ifc::IGeneralPage::init()']]],
   ['inputbox_4',['InputBox',['../classdao_1_1InputBox.html#a6a58a59f721d6ea5fe5ad5f58d26bef3',1,'dao::InputBox']]],
   ['interval_5',['interval',['../classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979',1,'dao::TickTimer']]],
-  ['isenable_6',['isEnable',['../classdao_1_1ifc_1_1IButton.html#a62700cd6c7be73c9a591c891b32ca54e',1,'dao::ifc::IButton']]],
+  ['isenable_6',['isEnable',['../classdao_1_1ifc_1_1IButton.html#a62700cd6c7be73c9a591c891b32ca54e',1,'dao::ifc::IButton::isEnable()'],['../classdao_1_1Button.html#ada33c8cc9a0bcb28cdd5b38ee39c61aa',1,'dao::Button::isEnable()']]],
   ['isinboundingbox_7',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a5ba96cb61f0e6cd4d4919c330e6354b2',1,'dao::BoundingBox']]],
   ['isintersects_8',['isIntersects',['../classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b',1,'dao::BoundingBox']]],
   ['isloaded_9',['isLoaded',['../classdao_1_1GlyphAtlas.html#a7c2ff714715df4f19b4b77899efddf00',1,'dao::GlyphAtlas']]],

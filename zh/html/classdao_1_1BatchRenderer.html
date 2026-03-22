@@ -280,16 +280,17 @@ Public 成员函数</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>指向分配空间的指针 </dd></dl>
 <dl class="section note"><dt>注解</dt><dd>调用方需确保 count 不会超出剩余容量 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00092">92</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>                                                                                  {</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (m_endAtlasId != atlasID || m_batches.empty()) {</div>
-<div class="line"><span class="lineno">   94</span>            m_batches.push_back({atlasID, 0});</div>
-<div class="line"><span class="lineno">   95</span>        }</div>
-<div class="line"><span class="lineno">   96</span>        SDL_Vertex *<span class="keyword">const</span> ret = m_vertices.data() + m_index;</div>
-<div class="line"><span class="lineno">   97</span>        m_index += count;</div>
-<div class="line"><span class="lineno">   98</span>        m_batches.back().size += count;</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
+<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00093">93</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>                                                                                  {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">if</span> (m_endAtlasId != atlasID || m_batches.empty()) {</div>
+<div class="line"><span class="lineno">   95</span>            m_batches.push_back({atlasID, 0});</div>
+<div class="line"><span class="lineno">   96</span>            m_endAtlasId = atlasID;</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+<div class="line"><span class="lineno">   98</span>        SDL_Vertex *<span class="keyword">const</span> ret = m_vertices.data() + m_index;</div>
+<div class="line"><span class="lineno">   99</span>        m_index += count;</div>
+<div class="line"><span class="lineno">  100</span>        m_batches.back().size += count;</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,7 +316,8 @@ Public 成员函数</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                              {</div>
 <div class="line"><span class="lineno">   49</span>        m_index = 0;</div>
 <div class="line"><span class="lineno">   50</span>        m_batches.clear();</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   51</span>        <span class="comment">//m_endAtlasId = 0;</span></div>
+<div class="line"><span class="lineno">   52</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -362,11 +364,13 @@ Public 成员函数</h2></td></tr>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1BatchRenderer_a8884bbf31f9e4b0408a5d0415b9a0867_icgraph.png" border="0" usemap="#aclassdao_1_1BatchRenderer_a8884bbf31f9e4b0408a5d0415b9a0867_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1BatchRenderer_a8884bbf31f9e4b0408a5d0415b9a0867_icgraph" id="aclassdao_1_1BatchRenderer_a8884bbf31f9e4b0408a5d0415b9a0867_icgraph">
-<area shape="rect" title="获取字形图集" alt="" coords="227,35,377,75"/>
-<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd" title=" " alt="" coords="9,5,175,45"/>
-<area shape="poly" title=" " alt="" coords="213,45,175,40,176,34,213,40"/>
-<area shape="rect" href="classdao_1_1Text.html#adb42edc6b53ee3b1f748ef077fa595fe" title=" " alt="" coords="5,70,179,95"/>
-<area shape="poly" title=" " alt="" coords="214,69,179,74,178,68,213,64"/>
+<area shape="rect" title="获取字形图集" alt="" coords="252,63,403,103"/>
+<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd" title=" " alt="" coords="21,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="238,62,182,48,184,43,239,57"/>
+<area shape="rect" href="classdao_1_1Text.html#a5304a3baccfa3fc320fa2391f664d9fa" title="写入批处理渲染器" alt="" coords="18,70,191,95"/>
+<area shape="poly" title=" " alt="" coords="238,85,191,85,191,80,238,80"/>
+<area shape="rect" href="classdao_1_1TextBox.html#acbb1e7b149950357375d04d42a76fb12" title="写入批处理渲染器" alt="" coords="5,119,204,145"/>
+<area shape="poly" title=" " alt="" coords="239,105,163,122,162,117,238,100"/>
 </map>
 </div>
 
@@ -446,23 +450,23 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00053">53</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                     {</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950">getAtlasRegion</a>(textureId);</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atlasId = atlasRegion.atlasId;</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">if</span> (atlasId &gt;= m_atlas.size()) {</div>
-<div class="line"><span class="lineno">   57</span>            m_atlas.resize(atlasId + 1, <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (m_atlas[atlasId] == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *atlasPath = atlasRegion.atlasPath;</div>
-<div class="line"><span class="lineno">   61</span>            m_atlas[atlasId] = IMG_LoadTexture(m_renderer, atlasPath);</div>
-<div class="line"><span class="lineno">   62</span>            SDL_SetTextureBlendMode(m_atlas[atlasId], SDL_BLENDMODE_BLEND);</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">if</span> (m_atlas[atlasId] == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   64</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;纹理图集加载失败:&quot;</span> + std::string(atlasPath));</div>
-<div class="line"><span class="lineno">   65</span>            }</div>
-<div class="line"><span class="lineno">   66</span>            SDL_SetTextureScaleMode(m_atlas[atlasId], SDL_SCALEMODE_NEAREST);</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
+<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00054">54</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                     {</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950">getAtlasRegion</a>(textureId);</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> atlasId = atlasRegion.atlasId;</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (atlasId &gt;= m_atlas.size()) {</div>
+<div class="line"><span class="lineno">   58</span>            m_atlas.resize(atlasId + 1, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (m_atlas[atlasId] == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *atlasPath = atlasRegion.atlasPath;</div>
+<div class="line"><span class="lineno">   62</span>            m_atlas[atlasId] = IMG_LoadTexture(m_renderer, atlasPath);</div>
+<div class="line"><span class="lineno">   63</span>            SDL_SetTextureBlendMode(m_atlas[atlasId], SDL_BLENDMODE_BLEND);</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">if</span> (m_atlas[atlasId] == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   65</span>                <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;纹理图集加载失败:&quot;</span> + std::string(atlasPath));</div>
+<div class="line"><span class="lineno">   66</span>            }</div>
+<div class="line"><span class="lineno">   67</span>            SDL_SetTextureScaleMode(m_atlas[atlasId], SDL_SCALEMODE_NEAREST);</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>定义</b> <a href="type_8hpp_source.html#l00009">type.hpp:9</a></div></div>
 <div class="ttc" id="anamespacedao_html_ad96690207b9d82980d7a5d689b83a950"><div class="ttname"><a href="namespacedao.html#ad96690207b9d82980d7a5d689b83a950">dao::getAtlasRegion</a></div><div class="ttdeci">const AtlasRegion &amp; getAtlasRegion(const i32 textureId) noexcept</div><div class="ttdoc">通过纹理ID获取对应的图集区域数据</div><div class="ttdef"><b>定义</b> <a href="AtlasRegion_8hpp_source.html#l00025">AtlasRegion.hpp:25</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -493,13 +497,13 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00085">85</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                          {</div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (m_glyphAtlas.tryRegisterGlyph(charCode)) {</div>
-<div class="line"><span class="lineno">   87</span>            m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &amp;m_glyphAtlas.getAtlasSurface());</div>
-<div class="line"><span class="lineno">   88</span>            SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);</div>
-<div class="line"><span class="lineno">   89</span>        }</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
+<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00086">86</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                          {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (m_glyphAtlas.tryRegisterGlyph(charCode)) {</div>
+<div class="line"><span class="lineno">   88</span>            m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &amp;m_glyphAtlas.getAtlasSurface());</div>
+<div class="line"><span class="lineno">   89</span>            SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);</div>
+<div class="line"><span class="lineno">   90</span>        }</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -521,21 +525,21 @@ Public 成员函数</h2></td></tr>
 <p>执行渲染 </p>
 <p>清空屏幕，按纹理图集分组渲染所有批处理数据，最后呈现到屏幕 </p>
 
-<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00070">70</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                               {</div>
-<div class="line"><span class="lineno">   71</span>        SDL_RenderClear(m_renderer);</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keyword">const</span> SDL_Vertex *vertices = m_vertices.data();</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> [atlasId, size]: m_batches) {</div>
-<div class="line"><span class="lineno">   74</span>            SDL_RenderGeometry(</div>
-<div class="line"><span class="lineno">   75</span>                m_renderer, m_atlas[atlasId],</div>
-<div class="line"><span class="lineno">   76</span>                vertices, size,</div>
-<div class="line"><span class="lineno">   77</span>                <span class="keyword">nullptr</span>, 0</div>
-<div class="line"><span class="lineno">   78</span>            );</div>
-<div class="line"><span class="lineno">   79</span>            vertices += size;</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>        SDL_RenderPresent(m_renderer);</div>
-<div class="line"><span class="lineno">   83</span>    }</div>
+<p class="definition">在文件 <a class="el" href="BatchRenderer_8cpp_source.html">BatchRenderer.cpp</a> 第 <a class="el" href="BatchRenderer_8cpp_source.html#l00071">71</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                               {</div>
+<div class="line"><span class="lineno">   72</span>        SDL_RenderClear(m_renderer);</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">const</span> SDL_Vertex *vertices = m_vertices.data();</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> [atlasId, size]: m_batches) {</div>
+<div class="line"><span class="lineno">   75</span>            SDL_RenderGeometry(</div>
+<div class="line"><span class="lineno">   76</span>                m_renderer, m_atlas[atlasId],</div>
+<div class="line"><span class="lineno">   77</span>                vertices, size,</div>
+<div class="line"><span class="lineno">   78</span>                <span class="keyword">nullptr</span>, 0</div>
+<div class="line"><span class="lineno">   79</span>            );</div>
+<div class="line"><span class="lineno">   80</span>            vertices += size;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>        SDL_RenderPresent(m_renderer);</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

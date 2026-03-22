@@ -18,6 +18,6 @@ var searchData=
   ['debug_15',['DEBUG',['../namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fadc30ec20708ef7b0f641ef78b7880a15',1,'dao']]],
   ['detectionerror_16',['detectionError',['../namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8',1,'dao']]],
   ['dim_17',['dim',['../namespacedao_1_1fmt__color.html#a01b140b0aaf2b0b5aeb5e9c40bd14bbb',1,'dao::fmt_color']]],
-  ['disabled_18',['Disabled',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled'],['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled']]],
+  ['disabled_18',['Disabled',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled'],['../namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled']]],
   ['drawable_20组件_19',['自定义 Drawable 组件',['../tutorial.html#autotoc_md58',1,'']]]
 ];
