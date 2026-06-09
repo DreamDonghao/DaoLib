@@ -33,7 +33,7 @@ class HelloDaoPage : public dao::ifc::IGeneralPage {
         }
     };
 
-公共:
+public:
     HelloDaoPage() : IGeneralPage("helloDaoPage") {
     };
 

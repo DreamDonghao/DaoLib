@@ -14,6 +14,10 @@ if(MSVC)
     set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
 endif()
 
+if(APPLE)
+    enable_language(OBJCXX)
+endif()
+
 add_library(dao
         src/core/render/Texture.cpp
         src/core/frame/app.cpp
@@ -32,6 +36,9 @@ add_library(dao
         src/web/http/HttpsClient.cpp
         src/web/http/Headers.cpp
 )
+if(APPLE)
+    target_sources(dao PRIVATE src/core/frame/window_macos_helper.mm)
+endif()
 
 target_precompile_headers(dao PRIVATE
         <httplib.h>

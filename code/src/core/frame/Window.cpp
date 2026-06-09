@@ -161,7 +161,7 @@ void dao::Window::setClickThrough(const bool enable) const {
 #include <X11/Xlib.h>
 #include <X11/extensions/shape.h>
 
-void Window::setClickThrough(bool enable) {
+void dao::Window::setClickThrough(bool enable) const {
     SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
     Display *display = (Display *) SDL_GetPointerProperty(props, SDL_PROP_WINDOW_X11_DISPLAY_POINTER, NULL);
     Window xwindow = (Window) SDL_GetNumberProperty(props, SDL_PROP_WINDOW_X11_WINDOW_NUMBER, 0);
@@ -175,16 +175,13 @@ void Window::setClickThrough(bool enable) {
     XFlush(display);
 }
 #elifdef __APPLE__
-#import <Cocoa/Cocoa.h>
-void Window::setClickThrough(bool enable) {
+extern "C" void dao_window_set_click_through(void *nsWindowPtr, bool enable);
+
+void dao::Window::setClickThrough(bool enable) const {
     SDL_PropertiesID props = SDL_GetWindowProperties(m_window);
-    NSWindow *nsWindow =
-            (__bridge
-    NSWindow *
-    )
-    SDL_GetPointerProperty(props, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
+    void *nsWindow = SDL_GetPointerProperty(props, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
     if (!nsWindow)
         return;
-    [nsWindow setIgnoresMouseEvents:enable];
+    dao_window_set_click_through(nsWindow, enable);
 }
 #endif

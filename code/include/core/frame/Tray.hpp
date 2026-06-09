@@ -7,7 +7,7 @@
 namespace dao {
     class Context;
 
-    using TrayFunc = std::move_only_function<void(SDL_TrayEntry *entry)>;
+    using TrayFunc = std::function<void(SDL_TrayEntry *entry)>;
 
     /// @brief 托盘回调函数适配器
     /// @details 将 SDL 的 C 风格回调转换为 C++ 函数对象调用

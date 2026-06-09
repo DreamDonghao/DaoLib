@@ -5,6 +5,7 @@
 #include <iostream>
 #include <format>
 #include <string_view>
+#include <ctime>
 
 #ifdef ERROR
 #undef ERROR
@@ -12,14 +13,14 @@
 
 namespace dao {
     inline std::string currentDateTime() {
-        using namespace std::chrono;
-
-        const auto now = system_clock::now();
-        const zoned_time china_time{"Asia/Shanghai", now};
-        const auto sec = floor<seconds>(china_time.get_local_time());
-        const auto ms = duration_cast<milliseconds>(china_time.get_local_time() - sec).count();
-
-        return std::format("{:%Y-%m-%d %H:%M:%S}.{:03}", sec, ms);
+        const auto now = std::chrono::system_clock::now();
+        const auto now_time_t = std::chrono::system_clock::to_time_t(now);
+        const auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+            now.time_since_epoch()) % 1000;
+        const std::tm *local_tm = std::localtime(&now_time_t);
+        return std::format("{:04}-{:02}-{:02} {:02}:{:02}:{:02}.{:03}",
+            local_tm->tm_year + 1900, local_tm->tm_mon + 1, local_tm->tm_mday,
+            local_tm->tm_hour, local_tm->tm_min, local_tm->tm_sec, ms.count());
     }
 
     inline void DAO_ERROR_LOG(const std::string &msg,

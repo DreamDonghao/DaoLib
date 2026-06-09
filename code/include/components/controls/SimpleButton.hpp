@@ -31,7 +31,7 @@ namespace dao {
         /// @param onClick 点击回调函数
         /// @param buttonStatus 按钮初始状态，默认为Normal
         Button(f32 x, f32 y, f32 width, f32 height,
-               std::move_only_function<void()> onClick,
+               std::function<void()> onClick,
                ButtonStatus buttonStatus = ButtonStatus::Normal)
             : m_boundingBox(x, y, x + width, y + height),
               m_status(buttonStatus), m_onClick(std::move(onClick)), m_rectangle(x, y, width, height,Green) {
@@ -129,7 +129,7 @@ namespace dao {
     private:
         BoundingBox m_boundingBox{};                   ///< 按钮边界框
         ButtonStatus m_status{ButtonStatus::Disabled}; ///< 按钮当前状态
-        std::move_only_function<void()> m_onClick;     ///< 点击回调函数
+        std::function<void()> m_onClick;     ///< 点击回调函数
 
         mutable Rectangle m_rectangle;
     };
