@@ -2,7 +2,7 @@ var searchData=
 [
   ['r_0',['r',['../classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99',1,'dao::ColorRGBA']]],
   ['randomint_1',['randomInt',['../namespacedao.html#a2b9c156f3ca595ce3ac2d360b9805711',1,'dao']]],
-  ['ratio_2',['ratio',['../namespacedao.html#af0e428264a3d67735ed1bbfa2c4f8073',1,'dao']]],
+  ['ratio_2',['ratio',['../namespacedao.html#afd14b9005e324762dd1f107bf4e1c498',1,'dao']]],
   ['raw_3',['raw',['../classdao_1_1db_1_1Sqlite.html#ae78f2b11f76078b95e99ca308f329dc5',1,'dao::db::Sqlite::raw()'],['../classdao_1_1db_1_1Sqlite.html#a93b3735f8336e0014e00aa1c37984d28',1,'dao::db::Sqlite::raw() const']]],
   ['rectangle_4',['Rectangle',['../classdao_1_1Rectangle.html#aa14b21537202e5ed165731f6d32f12dd',1,'dao::Rectangle']]],
   ['red_5',['Red',['../namespacedao.html#ad58b542e66a384745d6edfe12b40f2e6',1,'dao']]],

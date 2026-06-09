@@ -17,7 +17,7 @@ var searchData=
   ['transparent_14',['Transparent',['../namespacedao.html#aab9a2796c48dad2a0033ad574dc1a195',1,'dao']]],
   ['tray_15',['Tray',['../classdao_1_1Tray.html',1,'dao::Tray'],['../classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8',1,'dao::Tray::Tray()']]],
   ['tray_2ehpp_16',['Tray.hpp',['../Tray_8hpp.html',1,'']]],
-  ['trayfunc_17',['TrayFunc',['../namespacedao.html#a67ff9152aa01a22dc1d0ea41705f14bc',1,'dao']]],
+  ['trayfunc_17',['TrayFunc',['../namespacedao.html#a952b22c2e8b21428b4dd517c13001aba',1,'dao']]],
   ['triangle_18',['Triangle',['../classdao_1_1Triangle.html',1,'dao::Triangle'],['../classdao_1_1Triangle.html#a8473dd1801ba9f668bc83c94d08ec678',1,'dao::Triangle::Triangle()']]],
   ['triangle_2ehpp_19',['Triangle.hpp',['../Triangle_8hpp.html',1,'']]],
   ['tryregisterglyph_20',['tryRegisterGlyph',['../classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50',1,'dao::GlyphAtlas']]],

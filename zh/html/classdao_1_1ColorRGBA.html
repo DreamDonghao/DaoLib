@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>DaoUI: dao::ColorRGBA类 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -17,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -36,22 +40,45 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.17.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
 });
 </script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -64,7 +91,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('classdao_1_1ColorRGBA.html','','classdao_1_1ColorRGBA-members'); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classdao_1_1ColorRGBA.html','','classdao_1_1ColorRGBA-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -109,21 +136,21 @@ dao::ColorRGBA 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a01c24fdf79e7ec9e166fed6a131d1c07" id="r_a01c24fdf79e7ec9e166fed6a131d1c07"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#a01c24fdf79e7ec9e166fed6a131d1c07">ColorRGBA</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a0514035326561bc9d8688ebff102ca99">r</a>=0, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a939ff68e385a78c8c8dd2fd057dcd294">g</a>=0, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a1289890c6e7247cb6bc7597a84ea6be8">b</a>=0, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#ab64644a0ada0dfce4dacd0e3660dd3f0">a</a>=1.0f) noexcept</td></tr>
+<tr class="memitem:a01c24fdf79e7ec9e166fed6a131d1c07" id="r_a01c24fdf79e7ec9e166fed6a131d1c07"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#a01c24fdf79e7ec9e166fed6a131d1c07">ColorRGBA</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> r=0, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> g=0, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> b=0, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> a=1.0f) noexcept</td></tr>
 <tr class="memdesc:a01c24fdf79e7ec9e166fed6a131d1c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数（RGBA分量）  <br /></td></tr>
 <tr class="memitem:a85c829f7eeb0a94ffbb6669f57fa5703" id="r_a85c829f7eeb0a94ffbb6669f57fa5703"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a85c829f7eeb0a94ffbb6669f57fa5703">ColorRGBA</a> (const std::string_view hex)</td></tr>
 <tr class="memdesc:a85c829f7eeb0a94ffbb6669f57fa5703"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数（十六进制字符串）  <br /></td></tr>
-<tr class="memitem:ad322c53c5713f82dd5a7ba109d9e7b01" id="r_ad322c53c5713f82dd5a7ba109d9e7b01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad322c53c5713f82dd5a7ba109d9e7b01">set</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a0514035326561bc9d8688ebff102ca99">r</a>, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a939ff68e385a78c8c8dd2fd057dcd294">g</a>, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a1289890c6e7247cb6bc7597a84ea6be8">b</a>, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#ab64644a0ada0dfce4dacd0e3660dd3f0">a</a>=1.0f) noexcept</td></tr>
+<tr class="memitem:ad322c53c5713f82dd5a7ba109d9e7b01" id="r_ad322c53c5713f82dd5a7ba109d9e7b01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad322c53c5713f82dd5a7ba109d9e7b01">set</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> r, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> g, const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> b, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> a=1.0f) noexcept</td></tr>
 <tr class="memdesc:ad322c53c5713f82dd5a7ba109d9e7b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置所有颜色分量  <br /></td></tr>
 <tr class="memitem:a6bc91fdf21708235653f56c7fbb0df54" id="r_a6bc91fdf21708235653f56c7fbb0df54"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6bc91fdf21708235653f56c7fbb0df54">set</a> (const std::string_view hex)</td></tr>
 <tr class="memdesc:a6bc91fdf21708235653f56c7fbb0df54"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过十六进制字符串设置颜色  <br /></td></tr>
-<tr class="memitem:ad0e13687a474ebdaaf02c62b904e4f68" id="r_ad0e13687a474ebdaaf02c62b904e4f68"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0e13687a474ebdaaf02c62b904e4f68">setR</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a0514035326561bc9d8688ebff102ca99">r</a>) noexcept</td></tr>
+<tr class="memitem:ad0e13687a474ebdaaf02c62b904e4f68" id="r_ad0e13687a474ebdaaf02c62b904e4f68"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0e13687a474ebdaaf02c62b904e4f68">setR</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> r) noexcept</td></tr>
 <tr class="memdesc:ad0e13687a474ebdaaf02c62b904e4f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置红色通道值  <br /></td></tr>
-<tr class="memitem:aee894e18c442761a9ef5beb48cf27a4b" id="r_aee894e18c442761a9ef5beb48cf27a4b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aee894e18c442761a9ef5beb48cf27a4b">setG</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a939ff68e385a78c8c8dd2fd057dcd294">g</a>) noexcept</td></tr>
+<tr class="memitem:aee894e18c442761a9ef5beb48cf27a4b" id="r_aee894e18c442761a9ef5beb48cf27a4b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aee894e18c442761a9ef5beb48cf27a4b">setG</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> g) noexcept</td></tr>
 <tr class="memdesc:aee894e18c442761a9ef5beb48cf27a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绿色通道值  <br /></td></tr>
-<tr class="memitem:ab5e795bd0b22871c69da8b0dcc4a813a" id="r_ab5e795bd0b22871c69da8b0dcc4a813a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5e795bd0b22871c69da8b0dcc4a813a">setB</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> <a class="el" href="#a1289890c6e7247cb6bc7597a84ea6be8">b</a>) noexcept</td></tr>
+<tr class="memitem:ab5e795bd0b22871c69da8b0dcc4a813a" id="r_ab5e795bd0b22871c69da8b0dcc4a813a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5e795bd0b22871c69da8b0dcc4a813a">setB</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> b) noexcept</td></tr>
 <tr class="memdesc:ab5e795bd0b22871c69da8b0dcc4a813a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蓝色通道值  <br /></td></tr>
-<tr class="memitem:ad60ea485d4f64acc032f3206658fc7a2" id="r_ad60ea485d4f64acc032f3206658fc7a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad60ea485d4f64acc032f3206658fc7a2">setA</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> <a class="el" href="#ab64644a0ada0dfce4dacd0e3660dd3f0">a</a>) noexcept</td></tr>
+<tr class="memitem:ad60ea485d4f64acc032f3206658fc7a2" id="r_ad60ea485d4f64acc032f3206658fc7a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad60ea485d4f64acc032f3206658fc7a2">setA</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> a) noexcept</td></tr>
 <tr class="memdesc:ad60ea485d4f64acc032f3206658fc7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置透明度值  <br /></td></tr>
 <tr class="memitem:a0514035326561bc9d8688ebff102ca99" id="r_a0514035326561bc9d8688ebff102ca99"><td class="memItemLeft">constexpr <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0514035326561bc9d8688ebff102ca99">r</a> () const noexcept</td></tr>
 <tr class="memdesc:a0514035326561bc9d8688ebff102ca99"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取红色通道值  <br /></td></tr>
@@ -194,10 +221,10 @@ Public 成员函数</h2></td></tr>
 <p>构造函数（RGBA分量） </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值">r</a></td><td>红色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值">g</a></td><td>绿色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值">b</a></td><td>蓝色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值">a</a></td><td>透明度值 (0.0-1.0)，默认为不透明(1.0) </td></tr>
+    <tr><td class="paramname">r</td><td>红色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">g</td><td>绿色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">b</td><td>蓝色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">a</td><td>透明度值 (0.0-1.0)，默认为不透明(1.0) </td></tr>
   </table>
   </dd>
 </dl>
@@ -701,10 +728,10 @@ Public 成员函数</h2></td></tr>
 <p>设置所有颜色分量 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值">r</a></td><td>红色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值">g</a></td><td>绿色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值">b</a></td><td>蓝色通道值 (0-255) </td></tr>
-    <tr><td class="paramname"><a class="el" href="#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值">a</a></td><td>透明度值 (0.0-1.0)，默认为不透明(1.0) </td></tr>
+    <tr><td class="paramname">r</td><td>红色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">g</td><td>绿色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">b</td><td>蓝色通道值 (0-255) </td></tr>
+    <tr><td class="paramname">a</td><td>透明度值 (0.0-1.0)，默认为不透明(1.0) </td></tr>
   </table>
   </dd>
 </dl>

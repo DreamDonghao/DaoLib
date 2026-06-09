@@ -138,9 +138,9 @@ var NAVTREEINDEX =
 "classdao_1_1Rectangle.html#aa14b21537202e5ed165731f6d32f12dd",
 "classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe",
 "classdao_1_1web_1_1HttpClient.html#a0ae96f4d020a0e57913219da10ecb1ec",
-"namespacedao.html#a857575a514cdaa71d6d58a5b6496748a"
+"namespacedao.html#a86cbf5a06915625b80cdad61d21c555b"
 ];
 
-var SYNCONMSG = '点击 关闭 面板同步';
-var SYNCOFFMSG = '点击 开启 面板同步';
-var LISTOFALLMEMBERS = '所有成员列表';
+const SYNCONMSG = '点击 关闭 面板同步';
+const SYNCOFFMSG = '点击 开启 面板同步';
+const LISTOFALLMEMBERS = '所有成员列表';

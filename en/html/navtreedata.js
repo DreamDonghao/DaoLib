@@ -78,9 +78,9 @@ var NAVTREEINDEX =
 "classdao_1_1Rectangle.html#aa14b21537202e5ed165731f6d32f12dd",
 "classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe",
 "classdao_1_1web_1_1HttpClient.html#a0ae96f4d020a0e57913219da10ecb1ec",
-"namespacedao.html#a86cbf5a06915625b80cdad61d21c555b"
+"namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

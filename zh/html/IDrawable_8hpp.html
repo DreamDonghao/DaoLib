@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>DaoUI: code/include/core/render/IDrawable.hpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -17,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -36,22 +40,45 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.17.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
 });
 </script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -64,7 +91,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('IDrawable_8hpp.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('IDrawable_8hpp.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -99,56 +126,58 @@ IDrawable.hpp 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="IDrawable_8hpp__incl.png" border="0" usemap="#acode_2include_2core_2render_2IDrawable_8hpp" loading="lazy" alt=""/></div>
 <map name="acode_2include_2core_2render_2IDrawable_8hpp" id="acode_2include_2core_2render_2IDrawable_8hpp">
-<area shape="rect" title=" " alt="" coords="405,5,587,45"/>
-<area shape="rect" href="BatchRenderer_8hpp.html" title=" " alt="" coords="385,93,607,119"/>
-<area shape="poly" title=" " alt="" coords="499,46,499,79,493,79,493,46"/>
-<area shape="rect" title=" " alt="" coords="296,174,440,199"/>
-<area shape="poly" title=" " alt="" coords="479,121,400,169,397,164,476,117"/>
-<area shape="rect" title=" " alt="" coords="465,174,527,199"/>
-<area shape="poly" title=" " alt="" coords="499,119,499,160,493,160,493,119"/>
-<area shape="rect" href="GlyphAtlas_8hpp.html" title=" " alt="" coords="551,167,718,207"/>
-<area shape="poly" title=" " alt="" coords="518,117,591,158,588,162,515,121"/>
-<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="277,255,451,280"/>
-<area shape="poly" title=" " alt="" coords="571,209,417,253,416,248,569,204"/>
-<area shape="rect" title=" " alt="" coords="475,255,626,280"/>
-<area shape="poly" title=" " alt="" coords="616,209,575,247,571,243,613,205"/>
-<area shape="rect" title=" " alt="" coords="651,255,789,280"/>
-<area shape="poly" title=" " alt="" coords="657,205,699,243,695,247,654,209"/>
-<area shape="rect" href="BoundingBox_8hpp.html" title=" " alt="" coords="813,255,1011,280"/>
-<area shape="poly" title=" " alt="" coords="702,204,859,248,857,253,700,209"/>
-<area shape="rect" title=" " alt="" coords="84,328,169,353"/>
-<area shape="poly" title=" " alt="" coords="327,283,179,327,177,321,325,277"/>
+<area shape="rect" title=" " alt="" coords="447,5,630,45"/>
+<area shape="rect" href="BatchRenderer_8hpp.html" title=" " alt="" coords="427,93,650,119"/>
+<area shape="poly" title=" " alt="" coords="541,46,541,79,536,79,536,46"/>
+<area shape="rect" title=" " alt="" coords="339,174,483,199"/>
+<area shape="poly" title=" " alt="" coords="521,121,443,169,440,164,518,117"/>
+<area shape="rect" title=" " alt="" coords="507,174,570,199"/>
+<area shape="poly" title=" " alt="" coords="541,119,541,160,536,160,536,119"/>
+<area shape="rect" href="GlyphAtlas_8hpp.html" title=" " alt="" coords="594,167,761,207"/>
+<area shape="poly" title=" " alt="" coords="560,117,634,158,631,162,558,121"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="320,255,493,280"/>
+<area shape="poly" title=" " alt="" coords="613,209,460,253,458,248,612,204"/>
+<area shape="rect" title=" " alt="" coords="518,255,669,280"/>
+<area shape="poly" title=" " alt="" coords="659,209,618,247,614,243,655,205"/>
+<area shape="rect" title=" " alt="" coords="693,255,832,280"/>
+<area shape="poly" title=" " alt="" coords="700,205,742,243,738,247,696,209"/>
+<area shape="rect" href="BoundingBox_8hpp.html" title=" " alt="" coords="856,255,1053,280"/>
+<area shape="poly" title=" " alt="" coords="744,204,902,248,900,253,743,209"/>
+<area shape="rect" title=" " alt="" coords="127,328,212,353"/>
+<area shape="poly" title=" " alt="" coords="369,283,222,327,220,321,368,277"/>
 <area shape="rect" title=" " alt="" coords="5,401,72,427"/>
-<area shape="poly" title=" " alt="" coords="339,283,233,330,182,356,81,399,79,394,180,351,231,326,336,278"/>
-<area shape="rect" href="Log_8hpp.html" title=" " alt="" coords="245,328,379,353"/>
-<area shape="poly" title=" " alt="" coords="358,282,331,318,326,315,353,279"/>
-<area shape="rect" title=" " alt="" coords="535,401,615,427"/>
-<area shape="poly" title=" " alt="" coords="375,279,403,314,444,351,486,376,528,394,526,399,483,380,441,355,399,317,370,282"/>
-<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="786,328,926,353"/>
-<area shape="poly" title=" " alt="" coords="443,277,773,325,772,330,443,283"/>
-<area shape="rect" title=" " alt="" coords="455,328,532,353"/>
-<area shape="poly" title=" " alt="" coords="386,278,461,319,459,323,384,282"/>
-<area shape="rect" title=" " alt="" coords="556,328,628,353"/>
-<area shape="poly" title=" " alt="" coords="401,277,543,321,542,327,400,283"/>
-<area shape="poly" title=" " alt="" coords="269,356,86,403,84,398,267,351"/>
+<area shape="poly" title=" " alt="" coords="381,283,276,330,225,356,152,382,86,402,84,397,151,377,223,351,274,326,379,278"/>
+<area shape="rect" href="Log_8hpp.html" title=" " alt="" coords="287,328,422,353"/>
+<area shape="poly" title=" " alt="" coords="400,282,373,318,369,315,396,279"/>
+<area shape="rect" title=" " alt="" coords="617,401,697,427"/>
+<area shape="poly" title=" " alt="" coords="417,279,445,314,465,334,487,351,537,373,605,395,603,400,535,378,484,356,461,338,441,318,412,282"/>
+<area shape="rect" href="type_8hpp.html" title=" " alt="" coords="829,328,969,353"/>
+<area shape="poly" title=" " alt="" coords="486,277,815,325,814,330,485,283"/>
+<area shape="rect" title=" " alt="" coords="497,328,575,353"/>
+<area shape="poly" title=" " alt="" coords="429,278,504,319,501,323,426,282"/>
+<area shape="rect" title=" " alt="" coords="599,328,671,353"/>
+<area shape="poly" title=" " alt="" coords="444,277,586,321,585,327,443,283"/>
+<area shape="poly" title=" " alt="" coords="301,356,86,404,85,398,300,351"/>
 <area shape="rect" title=" " alt="" coords="97,401,221,427"/>
-<area shape="poly" title=" " alt="" coords="288,356,197,398,195,393,286,351"/>
+<area shape="poly" title=" " alt="" coords="324,356,204,399,203,394,322,351"/>
 <area shape="rect" title=" " alt="" coords="245,401,297,427"/>
-<area shape="poly" title=" " alt="" coords="307,355,287,391,282,388,303,352"/>
-<area shape="poly" title=" " alt="" coords="355,351,522,396,520,401,354,356"/>
+<area shape="poly" title=" " alt="" coords="343,355,297,394,293,390,339,351"/>
+<area shape="poly" title=" " alt="" coords="404,351,605,398,603,403,403,356"/>
 <area shape="rect" title=" " alt="" coords="321,401,388,427"/>
-<area shape="poly" title=" " alt="" coords="321,352,343,388,339,391,317,355"/>
+<area shape="poly" title=" " alt="" coords="357,354,357,388,352,388,352,354"/>
 <area shape="rect" title=" " alt="" coords="413,401,510,427"/>
-<area shape="poly" title=" " alt="" coords="337,351,426,393,423,398,335,356"/>
-<area shape="rect" title=" " alt="" coords="688,401,755,427"/>
-<area shape="poly" title=" " alt="" coords="836,356,757,397,754,392,833,351"/>
-<area shape="rect" title=" " alt="" coords="779,401,837,427"/>
-<area shape="poly" title=" " alt="" coords="850,355,826,392,821,389,846,352"/>
-<area shape="rect" title=" " alt="" coords="862,401,986,427"/>
-<area shape="poly" title=" " alt="" coords="869,352,905,389,901,393,865,356"/>
-<area shape="rect" title=" " alt="" coords="1011,401,1157,427"/>
-<area shape="poly" title=" " alt="" coords="893,351,1035,395,1033,400,892,356"/>
-<area shape="poly" title=" " alt="" coords="905,282,876,319,871,316,901,279"/>
+<area shape="poly" title=" " alt="" coords="373,351,434,391,431,396,370,356"/>
+<area shape="rect" title=" " alt="" coords="535,401,593,427"/>
+<area shape="poly" title=" " alt="" coords="389,351,522,396,521,401,387,356"/>
+<area shape="rect" title=" " alt="" coords="751,401,817,427"/>
+<area shape="poly" title=" " alt="" coords="882,356,816,396,813,392,879,351"/>
+<area shape="rect" title=" " alt="" coords="841,401,900,427"/>
+<area shape="poly" title=" " alt="" coords="897,355,883,390,878,388,892,353"/>
+<area shape="rect" title=" " alt="" coords="925,401,1049,427"/>
+<area shape="poly" title=" " alt="" coords="914,351,963,390,960,395,911,355"/>
+<area shape="rect" title=" " alt="" coords="1073,401,1220,427"/>
+<area shape="poly" title=" " alt="" coords="939,351,1094,395,1093,400,938,356"/>
+<area shape="poly" title=" " alt="" coords="948,282,918,319,914,316,943,279"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">

@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>DaoUI: dao::Window类 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -17,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -36,22 +40,45 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.17.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
 });
 </script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -64,7 +91,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('classdao_1_1Window.html','','classdao_1_1Window-members'); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classdao_1_1Window.html','','classdao_1_1Window-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -117,7 +144,7 @@ Public 类型</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ae2c38877e63bcc6580b958273cc5d5a3" id="r_ae2c38877e63bcc6580b958273cc5d5a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> <a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
+<tr class="memitem:ae2c38877e63bcc6580b958273cc5d5a3" id="r_ae2c38877e63bcc6580b958273cc5d5a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, <a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> workState, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
 <tr class="memitem:a8d53dfb54f139ee857eae1afee44afb3" id="r_a8d53dfb54f139ee857eae1afee44afb3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8d53dfb54f139ee857eae1afee44afb3">~Window</a> ()</td></tr>
 <tr class="memitem:a67a4da4ad39f44d385f13de1856460df" id="r_a67a4da4ad39f44d385f13de1856460df"><td class="memTemplParams" colspan="2">template&lt;typename PageType, typename... Args&gt; </td></tr>
 <tr class="memitem:a67a4da4ad39f44d385f13de1856460df template"><td class="memItemLeft"><a class="el" href="#ae2c38877e63bcc6580b958273cc5d5a3">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a67a4da4ad39f44d385f13de1856460df">addPage</a> (Args &amp;&amp;... args)</td></tr>
@@ -137,7 +164,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a5da0453643006a0248af568895ee8c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示窗口  <br /></td></tr>
 <tr class="memitem:a804cb3b8a2f0b45189c40186f206bae3" id="r_a804cb3b8a2f0b45189c40186f206bae3"><td class="memItemLeft"><a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a>&#160;</td><td class="memItemRight"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a> () const</td></tr>
 <tr class="memdesc:a804cb3b8a2f0b45189c40186f206bae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口状态  <br /></td></tr>
-<tr class="memitem:ad65855b81763b99608b9a26739174fdb" id="r_ad65855b81763b99608b9a26739174fdb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad65855b81763b99608b9a26739174fdb">convertWorkState</a> (<a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> <a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3">workState</a>)</td></tr>
+<tr class="memitem:ad65855b81763b99608b9a26739174fdb" id="r_ad65855b81763b99608b9a26739174fdb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad65855b81763b99608b9a26739174fdb">convertWorkState</a> (<a class="el" href="#ae166d0fdbdde0f3e99bc4cec1fdb722c">WorkState</a> workState)</td></tr>
 <tr class="memdesc:ad65855b81763b99608b9a26739174fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换窗口工作状态  <br /></td></tr>
 <tr class="memitem:a98c43811ce3cbc6fbe93688ddafb228b" id="r_a98c43811ce3cbc6fbe93688ddafb228b"><td class="memItemLeft">const SDL_Window *&#160;</td><td class="memItemRight"><a class="el" href="#a98c43811ce3cbc6fbe93688ddafb228b">getSDLWindow</a> () const</td></tr>
 <tr class="memdesc:a98c43811ce3cbc6fbe93688ddafb228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 SDL_window 指针  <br /></td></tr>
@@ -257,7 +284,7 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">width</td><td>窗口默认宽度 </td></tr>
     <tr><td class="paramname">height</td><td>窗口默认高度 </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态">workState</a></td><td>窗口默认工作状态 （前台运行，后台运行，关闭） </td></tr>
+    <tr><td class="paramname">workState</td><td>窗口默认工作状态 （前台运行，后台运行，关闭） </td></tr>
     <tr><td class="paramname">isSubject</td><td>为应用主体窗口 </td></tr>
     <tr><td class="paramname">resizable</td><td>可重新设置大小 </td></tr>
     <tr><td class="paramname">transparent</td><td>支持透明 </td></tr>
@@ -436,7 +463,7 @@ Background 后台运行：隐藏运行的窗口，可实现后台任务<br  />
 Closed 窗口关闭：不运行的窗口<br  />
 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态">workState</a></td><td>窗口工作状态 </td></tr>
+    <tr><td class="paramname">workState</td><td>窗口工作状态 </td></tr>
   </table>
   </dd>
 </dl>
