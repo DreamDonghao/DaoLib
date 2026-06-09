@@ -53,6 +53,10 @@ namespace dao {
                 return m_vertexBatch->getGlyphAtlas().getGlyphAspectRatio(charCode);
             }
 
+            const GlyphAtlas &getGlyphAtlas() const {
+                return m_vertexBatch->getGlyphAtlas();
+            }
+
         private:
             std::string m_title;
             BatchRenderer *m_vertexBatch = nullptr;

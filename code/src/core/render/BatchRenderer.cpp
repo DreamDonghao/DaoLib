@@ -62,7 +62,7 @@ namespace dao {
             m_atlas[atlasId] = IMG_LoadTexture(m_renderer, atlasPath);
             SDL_SetTextureBlendMode(m_atlas[atlasId], SDL_BLENDMODE_BLEND);
             if (m_atlas[atlasId] == nullptr) {
-                DAO_ERROR_LOG("纹理图集加载失败:" + std::string(atlasPath));
+                Log{LogLevel::ERROR}.fmt("纹理图集加载失败:{}",std::string(atlasPath));
             }
             SDL_SetTextureScaleMode(m_atlas[atlasId], SDL_SCALEMODE_NEAREST);
         }

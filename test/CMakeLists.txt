@@ -6,6 +6,8 @@ add_executable(test
         main.cpp
         pages/hello_dao_page.cpp
         pages/page_a/page_a.cpp
+        pages/pet/pet.cpp
+        pages/SettingsPage/SettingPage.hpp
         tray/AppTray.cpp
 )
 
@@ -14,7 +16,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         pages
         tray
 )
-
+find_package(OpenSSL REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE dao)
 
 # 先把所有需要的目录全部建好

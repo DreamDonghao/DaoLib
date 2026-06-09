@@ -121,6 +121,21 @@ namespace dao {
             return m_str;
         }
 
+        /// @brief 设置输入文本
+        void setText(const utf32str &str) { m_str = str; }
+
+        /// @brief 设置位置
+        void setPosition(const f32 x, const f32 y) {
+            const f32 w = m_boundingBox.getWidth();
+            const f32 h = m_boundingBox.getHeight();
+            m_boundingBox = BoundingBox(x, y, x + w, y + h);
+            m_text.setPosition(x, y);
+            m_rectangle.setPosition(x, y);
+        }
+
+        /// @brief 清空内容
+        void clear() { m_str.clear(); cursorPos = 0; }
+
         void writeToBatch(BatchRenderer &batchRenderer) const override {
             m_text.setContent(m_str);
             m_rectangle.writeToBatch(batchRenderer);
