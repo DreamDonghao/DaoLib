@@ -102,14 +102,17 @@ namespace dao {
     void Window::executeCommand() { m_pages[m_nowPageTitle]->getWindowController().executeCommand(*this); }
 
     void Window::switchPage(std::string title) {
-        detectionError(m_pages.contains(title), std::string("不存在的页面") + m_nowPageTitle + "->" + title);
+        if (m_pages.contains(title) == 0) {
+            Log{LogLevel::ERROR}.fmt("不存在的页面{}->{}", m_nowPageTitle, title);
+        }
+
         m_pages[m_nowPageTitle]->close();
         m_nowPageTitle = std::move(title);
         setTitle(m_nowPageTitle);
         m_pages[m_nowPageTitle]->open();
     }
 
-    const std::string& Window::getNowPageTitle() const {
+    const std::string &Window::getNowPageTitle() const {
         return m_nowPageTitle;
     }
 

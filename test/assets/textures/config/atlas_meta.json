@@ -9,5 +9,346 @@
       "top": 0
     }
   },
-  "sequence_frames": {}
+  "sequence_frames": {
+    "sf_number": [
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 50,
+        "right": 150,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 152,
+        "right": 252,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 254,
+        "right": 354,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 356,
+        "right": 456,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 458,
+        "right": 558,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 560,
+        "right": 660,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 662,
+        "right": 762,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 764,
+        "right": 864,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 866,
+        "right": 966,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 100,
+        "left": 968,
+        "right": 1068,
+        "top": 0
+      }
+    ],
+    "sf_test": [
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 328,
+        "left": 1070,
+        "right": 1370,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 328,
+        "left": 1372,
+        "right": 1672,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 328,
+        "left": 1674,
+        "right": 1974,
+        "top": 0
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 0,
+        "right": 300,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 302,
+        "right": 602,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 604,
+        "right": 904,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 906,
+        "right": 1206,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 1208,
+        "right": 1508,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 658,
+        "left": 1510,
+        "right": 1810,
+        "top": 330
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 0,
+        "right": 300,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 302,
+        "right": 602,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 604,
+        "right": 904,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 906,
+        "right": 1206,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 1208,
+        "right": 1508,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 988,
+        "left": 1510,
+        "right": 1810,
+        "top": 660
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 0,
+        "right": 300,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 302,
+        "right": 602,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 604,
+        "right": 904,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 906,
+        "right": 1206,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 1208,
+        "right": 1508,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1318,
+        "left": 1510,
+        "right": 1810,
+        "top": 990
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 0,
+        "right": 300,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 302,
+        "right": 602,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 604,
+        "right": 904,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 906,
+        "right": 1206,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 1208,
+        "right": 1508,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1648,
+        "left": 1510,
+        "right": 1810,
+        "top": 1320
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1978,
+        "left": 0,
+        "right": 300,
+        "top": 1650
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1978,
+        "left": 302,
+        "right": 602,
+        "top": 1650
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1978,
+        "left": 604,
+        "right": 904,
+        "top": 1650
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1978,
+        "left": 906,
+        "right": 1206,
+        "top": 1650
+      },
+      {
+        "atlas_file": "atlas_0002.png",
+        "atlas_id": 2,
+        "bottom": 1978,
+        "left": 1208,
+        "right": 1508,
+        "top": 1650
+      }
+    ]
+  }
 }

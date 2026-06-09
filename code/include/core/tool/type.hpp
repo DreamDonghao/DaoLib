@@ -19,8 +19,6 @@ namespace dao {
     using utf32str = std::u32string;
     using utf32str_view = std::u32string_view;
 
-    using json = nlohmann::json;
-
     template<typename K, typename V>
     using hash_map = std::unordered_map<K, V>;
 }

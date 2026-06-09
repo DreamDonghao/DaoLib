@@ -1,5 +1,6 @@
 #include <AppTray.hpp>
 
 void AppTray::createTrayMenu() {
-    button("样例", example);
+    button("设置", settings);
+    button("退出", quit);
 }

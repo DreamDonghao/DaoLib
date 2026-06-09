@@ -1,10 +1,8 @@
 #include <core/frame/App.hpp>
-#include "hello_dao_page.hpp"
-#include "page_a/page_a.hpp"
 #include "tray/AppTray.hpp"
-#include <web/http/HttpsClient.hpp>
-
 #include <database/sqlite/Sqlite.hpp>
+#include "pages/SettingsPage/SettingPage.hpp"
+#include "pet/Pet.hpp"
 
 int main(int argc, char *argv[]) {
     dao::Log::openStyleOutPut();
@@ -30,11 +28,19 @@ int main(int argc, char *argv[]) {
 
     app.getContext().emplace<dao::App>(app);
 
-    app.createWindow(1000, 1000, "2", dao::Window::WorkState::Foreground, true, false)
-            .addPage<test::PageA>();
-    /// 创建窗口
-    app.createWindow(1300, 1300, "设置", dao::Window::WorkState::Foreground, true, true, true, false)
-            .addPage(std::make_unique<HelloDaoPage>());
+    // app.createWindow(1000, 1000, "2", dao::Window::WorkState::Foreground, true, false)
+    //         .addPage<test::PageA>();
+    // /// 创建窗口
+    // app.createWindow(1300, 1300, "设置", dao::Window::WorkState::Foreground, true, true, true, false)
+    //         .addPage<HelloDaoPage>();
+
+    app.createWindow(100, 130, "pet", dao::Window::WorkState::Foreground,
+                     false, false, true, true, true)
+            .addPage<test::Pet>();
+
+    app.createWindow(600, 400, "SettingsPage", dao::Window::WorkState::Closed,
+                     false, true, false, false, false)
+            .addPage<test::SettingsPage>();
 
     /// 创建托盘
     app.createTray<AppTray>("./assets/textures/atlas/icon.png", "托盘").createTrayMenu();

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.31)
-if(NOT CMAKE_PROJECT_NAME)
+if (NOT CMAKE_PROJECT_NAME)
     cmake_minimum_required(VERSION 3.31)
     project(dao LANGUAGES CXX VERSION 0.0.1)
-endif()
+endif ()
 
 set(PROJECT_VERSION "0.0.1")
 
@@ -10,9 +10,9 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-if(MSVC)
+if (MSVC)
     set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
-endif()
+endif ()
 
 if(APPLE)
     enable_language(OBJCXX)
@@ -66,12 +66,10 @@ find_package(utf8cpp CONFIG REQUIRED)
 find_package(httplib CONFIG REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(OpenSSL REQUIRED)
+find_package(SQLiteCpp REQUIRED)
 set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
 # 启用 httplib 的 OpenSSL 支持
 target_compile_definitions(dao PUBLIC CPPHTTPLIB_OPENSSL_SUPPORT)
-
-find_package(SQLiteCpp REQUIRED)
-
 target_link_libraries(dao
         PUBLIC
         SDL3::SDL3
@@ -111,10 +109,15 @@ file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/daoConfig.cmake.in"
 include(CMakeFindDependencyMacro)
 
 # 列出所有 PUBLIC 依赖
-find_dependency(SDL3)
-find_dependency(SDL3_image)
-find_dependency(SDL3_ttf)
-find_dependency(utf8cpp)
+find_package(SDL3)
+find_package(SDL3_image)
+find_package(SDL3_ttf)
+find_package(utf8cpp)
+find_package(httplib)
+find_package(nlohmann_json)
+find_package(OpenSSL)
+find_package(SQLiteCpp)
+
 
 include("${CMAKE_CURRENT_LIST_DIR}/daoTargets.cmake")
 

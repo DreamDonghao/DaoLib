@@ -46,7 +46,7 @@ namespace dao {
         void setPosition(i32 x, i32 y);
 
         /// @brief 设置窗口大小
-        void setSize(i32 x, i32 y);
+        void setSize(i32 width, i32 height);
 
     private:
         std::vector<WindowCommand> m_windowCommands;

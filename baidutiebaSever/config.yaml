@@ -1,0 +1,26 @@
+# B站视频定时推送配置
+
+# B站相关配置
+bilibili:
+  # 分区ID (0为全站热门)
+  region_id: 0
+  # 获取视频数量
+  count: 10
+
+# 目标服务器配置
+server:
+  # 目标服务器URL
+  url: "http://your-server.com/api/video/recommend"
+  # HTTP方法 (POST/GET)
+  method: "POST"
+  # 请求超时时间(秒)
+  timeout: 30
+
+# 定时任务配置
+schedule:
+  # cron表达式 (默认每天9点推送)
+  # 示例:
+  # "0 9 * * *"    - 每天9:00
+  # "0 */2 * * *"  - 每2小时
+  # "0 9,12,18 * * *" - 每天9点、12点、18点
+  cron: "0 9 * * *"

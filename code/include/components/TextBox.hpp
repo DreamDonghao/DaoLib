@@ -153,6 +153,21 @@ namespace dao {
         /// @brief 获取文本对齐模式
         [[nodiscard]] bool textAlignToEnd() const { return m_alignToEnd; }
 
+        /// @brief 根据内容自动设置高度
+        /// @param atlas 字形图集
+        void adjustHeightToContent(const GlyphAtlas &atlas) {
+            const f32 height = calculateTextHeight(atlas);
+            m_bounds = BoundingBox(m_bounds.getLeft(), m_bounds.getTop(),
+                                   m_bounds.getRight(), m_bounds.getTop() + height);
+        }
+
+        /// @brief 获取内容高度
+        /// @param atlas 字形图集
+        /// @return 内容所需高度
+        [[nodiscard]] f32 getContentHeight(const GlyphAtlas &atlas) const {
+            return calculateTextHeight(atlas);
+        }
+
     private:
         BoundingBox m_bounds;
         f32 m_lineHeight;

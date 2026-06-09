@@ -122,6 +122,14 @@ namespace dao {
             return m_boundingBox;
         }
 
+        /// @brief 设置位置
+        void setPosition(const f32 x, const f32 y) {
+            const f32 w = m_boundingBox.getWidth();
+            const f32 h = m_boundingBox.getHeight();
+            m_boundingBox = BoundingBox(x, y, x + w, y + h);
+            m_rectangle.setPosition(x, y);
+        }
+
         void writeToBatch(BatchRenderer &batchRenderer) const {
             m_rectangle.writeToBatch(batchRenderer);
         }

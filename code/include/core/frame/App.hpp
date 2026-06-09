@@ -78,6 +78,23 @@ namespace dao {
             m_windows[m_windowMap[windowTag]]->show();
         }
 
+        /// @brief 转换窗口工作状态
+        /// @details 参数可选：\n
+        /// Foreground 前台运行：正常打开的窗口（包括最小化）\n
+        /// Background 后台运行：隐藏运行的窗口，可实现后台任务\n
+        /// Closed 窗口关闭：不运行的窗口\n
+        /// @param windowTag 窗口标签
+        /// @param workState 窗口工作状态
+        /// @param loc 调用位置，用于日志输出，默认为当前调用位置
+        void convertWindowWorkState(const std::string_view windowTag, const Window::WorkState workState,
+            const std::source_location &loc = std::source_location::current()) {
+            if (!m_windowMap.contains(windowTag)) {
+                Log{LogLevel::ERROR,loc}.fmt("不存在的窗口: {}", windowTag);
+                return;
+            }
+            m_windows[m_windowMap[windowTag]]->convertWorkState(workState);
+        }
+
         /// @brief 隐藏指定标签的窗口
         /// @param windowTag 窗口标签
         void hideWindow(const std::string_view windowTag) {
