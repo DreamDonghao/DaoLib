@@ -11,7 +11,7 @@ USE_MDFILE_AS_MAINPAGE = doxygen/docs_md/en/main_page.md
 #-----------------------------------------------------------
 # 需要扫描的内容
 #-----------------------------------------------------------
-INPUT                  = code doxygen/docs_md/en               # 源代码所在的根目录（相对于Doxyfile位置）
+INPUT                  = libCode doxygen/docs_md/en               # 源代码所在的根目录（相对于Doxyfile位置）
 FILE_PATTERNS          = *.md *.h *.hpp *.cpp      # 要解析的文件类型模式（支持通配符）
 RECURSIVE              = YES                  # 是否递归搜索INPUT目录下的子目录
 EXCLUDE                = thirdparty external  # 排除的目录或文件列表（不生成文档）
@@ -63,7 +63,6 @@ WARN_IF_DOC_ERROR      = YES                  # 是否为文档错误生成警�
 #-----------------------------------------------------------
 # HTML 配置
 #-----------------------------------------------------------
-HTML_TIMESTAMP         = YES                   # 是否在HTML页面底部添加时间戳
+
 ENABLE_PREPROCESSING = YES                    # 启用C/C++预处理
 MACRO_EXPANSION = YES                         # 展开宏定义（有助于文档化使用宏的代码）
-CLANG_ASSISTED_PARSING = YES                  # 使用Clang库辅助解析（提供更准确的C++解析，需要Clang）

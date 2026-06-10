@@ -2,7 +2,8 @@
 
 # Development Process
 
-Welcome to contributing to the development of DaoLib. This project uses a protected main branch. All changes must be completed via Pull Requests. Please follow the process below:
+Welcome to contributing to the development of DaoLib. This project uses a protected main branch. All changes must be
+completed via Pull Requests. Please follow the process below:
 
 ---
 
@@ -56,7 +57,8 @@ The PR will automatically trigger the review process.
 
 ## 6. Review and Revision
 
-Maintainers will review the PR. If adjustments are needed, please continue to commit on the same branch—the PR will update automatically.
+Maintainers will review the PR. If adjustments are needed, please continue to commit on the same branch—the PR will
+update automatically.
 
 ---
 
@@ -76,8 +78,10 @@ If you have any questions, you may raise them in the Issue section for feedback 
 
 # Project Dependencies
 
-The following are the tested versions that can successfully build the project. You may try other versions at your own discretion.
+The following are the tested versions that can successfully build the project. You may try other versions at your own
+discretion.
 
 - C++ 23
 - CMake 3.31
-- vcpkg :sdl3 3.2.26 sdl3-image 3.2.4[png] <!--For details on third-party libraries, please refer to the vcpkg.json file-->
+- vcpkg :sdl3 3.2.26 sdl3-image
+  3.2.4[png] <!--For details on third-party libraries, please refer to the vcpkg.json file-->

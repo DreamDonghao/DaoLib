@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
     auto &app = dao::App::getApp();
 
     /// 创建一个窗口并添加一个页面
-    app.createWindow(300, 300,true)
+    app.createWindow(300, 300, true)
             .addPage(std::make_unique<HelloDaoPage>());
 
     app.run();

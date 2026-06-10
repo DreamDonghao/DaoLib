@@ -1,803 +1,923 @@
-@page tutorial DaoLib 从零基础到精通教程
+@page tutorial DaoLib 入门教程
 
-# DaoLib 从零基础到精通教程
+[TOC]
 
-## 简介
+# DaoLib 从零到精通
 
-DaoLib 是一个基于 SDL3 的现代 C++ 用户界面库，旨在提供简单、高效、可扩展的 UI 开发体验。它采用 C++23 标准，支持跨平台开发，提供了完整的应用管理、窗口系统、页面组件、渲染批处理和状态管理等功能。
+## 1. 简介 {#intro}
 
-### 主要特性
+DaoLib 是一个基于 SDL3 的跨平台 C++ GUI 开发框架，使用 C++23 标准，支持 Windows、macOS、Linux。它提供了完整的应用管理、窗口系统、页面组件、几何图形渲染、HTTP 客户端、SQLite 数据库等功能。
 
-- **跨平台支持**：基于 SDL3，支持 Windows、macOS、Linux
-- **现代 C++**：使用 C++23 标准，提供类型安全的 API
-- **组件化设计**：内置按钮、输入框、图片、文本等常用 UI 组件
-- **页面管理系统**：灵活的页面切换和管理机制
-- **高效渲染**：基于顶点批处理的渲染系统，支持纹理图集
-- **状态管理**：统一的上下文管理器，支持状态和服务的依赖注入
-- **可扩展性**：易于自定义组件和页面
-- **托盘支持**：系统托盘图标和菜单
+**核心特性：**
+
+| 特性 | 说明 |
+|------|------|
+| 跨平台 | 基于 SDL3，一套代码多平台运行 |
+| 现代 C++ | C++23，Concept 约束模板，编译期计算 |
+| 页面管理 | 多页面切换，生命周期清晰 |
+| 几何图形 | 9 种内置图形组件，支持平移旋转 |
+| 批处理渲染 | 零散图元自动合并为批次，减少 GPU 调用 |
+| HTTP 客户端 | 同步/异步请求，自动线程池，主线程回调投递 |
+| SQLite | 类型安全查询，自动列名映射 |
+| 系统托盘 | 托盘图标 + 自定义菜单 |
 
 ---
 
-## 安装与构建
+## 2. 环境搭建 {#setup}
 
-### 系统要求
+### 2.1 系统要求
 
-- C++23 兼容的编译器（如 GCC 13+, Clang 16+, MSVC 2022 17.8+）
-- CMake 3.31 或更高版本
-- SDL3、SDL3_image、SDL3_ttf 库
-- utf8cpp 库
+- **编译器**：GCC 13+ / Clang 16+ / MSVC 2022 17.8+
+- **CMake**：3.31+
+- **依赖**：SDL3、SDL3_image、SDL3_ttf、utf8cpp、SQLiteCpp、nlohmann/json、cpp-httplib
 
-### 使用 vcpkg 管理依赖
+### 2.2 安装依赖
 
-DaoLib 使用 vcpkg 管理依赖。确保已安装 [vcpkg](https://vcpkg.io/) 并配置好集成。
+DaoLib 使用 vcpkg 管理依赖：
 
 ```bash
-# 安装依赖
-vcpkg install sdl3 sdl3-image[png] sdl3-ttf utf8cpp
+git clone https://github.com/microsoft/vcpkg.git ~/.vcpkg-clion/vcpkg
+~/.vcpkg-clion/vcpkg/bootstrap-vcpkg.sh
 ```
 
-### 集成到 CMake 项目
+项目根目录的 `vcpkg.json` 已声明所有依赖，配合 CMake 工具链自动安装。
 
-将 DaoLib 作为子模块或直接复制到你的项目中，然后在 `CMakeLists.txt` 中添加：
+### 2.3 构建 DaoLib
+
+```bash
+# 构建 Debug + Release（增量）
+./build-install.sh
+
+# 仅构建 Release
+./build-install.sh Release
+
+# 清理后重建
+./build-install.sh Release 1
+```
+
+产物输出到 `install/Debug/` 和 `install/Release/`。
+
+### 2.4 在项目中使用 DaoLib
 
 ```cmake
-# 添加 DaoLib 子目录
-add_subdirectory(path/to/dao)
+cmake -S . -B build \
+  -DCMAKE_PREFIX_PATH="/path/to/DaoLib/install/Release"
 
-# 链接 DaoLib 库
-target_link_libraries(your_target PRIVATE dao::dao)
-```
-
-### 独立构建 DaoLib
-
-```bash
-# 克隆仓库
-git clone https://github.com/your-username/DaoLib.git
-cd DaoLib
-
-# 配置和构建
-cmake -B build -DCMAKE_TOOLCHAIN_FILE=[path/to/vcpkg]/scripts/buildsystems/vcpkg.cmake
-cmake --build build --config Release
+# CMakeLists.txt
+find_package(dao REQUIRED)
+target_link_libraries(myapp PRIVATE dao::dao)
 ```
 
 ---
 
-## 快速开始
+## 3. 快速开始 {#quickstart}
 
-### 最小应用示例
-
-创建一个简单的窗口应用：
+### 3.1 最小应用
 
 ```cpp
-#include <daoLib.hpp>
+#include <core/frame/App.hpp>
 
 int main() {
-    // 创建应用实例，60 FPS，启用点击穿透
-    dao::App app{60, true};
-
-    // 创建窗口（宽1300，高1300，标签"main"，显示，非主体，可调整大小，透明）
-    auto& window = app.createWindow(1300, 1300, "main", false, false, true, true);
-
-    // 运行应用
+    dao::App app{60};                              // 60 FPS
+    app.createWindow(800, 600, "main",             // 800×600，标签 "main"
+                     dao::Window::WorkState::Foreground);
     app.run();
-
-    return 0;
 }
 ```
 
-### 第一个完整应用
+这段代码创建一个 800×600 的空白窗口并以 60 FPS 运行。
 
-让我们创建一个包含页面和基本组件的完整应用：
+### 3.2 Hello World — 第一个带页面的应用
 
 ```cpp
-#include <daoLib.hpp>
+#include <core/frame/App.hpp>
+#include <interface/IGeneralPage.hpp>
+#include <components/Text.hpp>
 
-// 自定义页面类
-class MyPage : public dao::GeneralPage {
-    dao::SimpleButton button{100, 100, 200, 50, [] {
-        std::cout << "按钮被点击!" << std::endl;
-    }};
-
-    dao::Text text{100, 200, 24, dao::hexToRGBA("#000000"), U"你好 DaoLib!"};
+class HelloPage : public dao::ifc::IGeneralPage {
+    dao::Text m_text{100, 100, 32, dao::hexToRGBA("#333333"), U"你好，DaoLib！"};
 
 public:
-    MyPage() : GeneralPage("myPage") {}
+    HelloPage() : IGeneralPage("hello") {}
 
-    // 注册页面需要的纹理
-    std::vector<dao::i32> getRegisterTexture() const override {
-        return {}; // 本例不需要纹理
-    }
-
-    void init() override {
-        // 页面初始化代码
-    }
-
-    void close() override {
-        // 页面关闭代码
-    }
+    std::vector<dao::i32> getRegisterTextures() const override { return {}; }
+    void open() override {}
+    void close() override {}
 
     void update() override {
-        // 每帧更新，添加组件到批处理
-        addToBatch(button, text);
+        addToBatch(m_text);   // 将文本加入渲染批次
     }
 
-    void handleInputEvent(const SDL_Event& event) override {
-        // 处理输入事件
-        button.handleEvent(event);
-    }
+    void handleInputEvent(const SDL_Event &event) override {}
 };
 
 int main() {
+    dao::GlyphAtlas::setTtfPath("./assets/ttf/zh-cn.ttf");  // 设置字体
+
     dao::App app{60};
-
-    // 创建窗口并添加页面
-    app.createWindow(800, 600, "main")
-        .addPage(std::make_unique<MyPage>());
-
+    app.createWindow(800, 600, "main",
+                     dao::Window::WorkState::Foreground)
+        .addPage<HelloPage>();
     app.run();
-    return 0;
 }
 ```
 
+关键点：
+- 继承 `dao::ifc::IGeneralPage`，构造函数传入页面标题
+- `getRegisterTextures()` 返回页面需要的纹理 ID 列表
+- `update()` 每帧调用，用 `addToBatch()` 将组件送入渲染
+- `handleInputEvent()` 处理 SDL 事件（鼠标、键盘等）
+- `dao::GlyphAtlas::setTtfPath()` 必须在创建窗口前调用
+
 ---
 
-## 核心概念
+## 4. 核心概念 {#core-concepts}
 
-### 1. 应用 (App)
+### 4.1 App — 应用程序入口 {#app}
 
-`dao::App` 是 DaoLib 应用的入口点，负责管理整个应用程序的生命周期。
+`dao::App` 管理整个应用的生命周期。每个应用只有一个 App 实例。
 
-**主要功能：**
-- 创建和管理窗口
-- 管理应用级上下文
-- 控制主事件循环
-- 帧率限制
+@ref app "→ App 参考文档"
 
-**常用方法：**
 ```cpp
-// 创建应用
-dao::App app{fps, clickThrough};
+// 构造函数：帧率（默认60）、失焦点击是否穿透（默认false）
+dao::App app{60, false};
 
-// 创建窗口
-auto& window = app.createWindow(width, height, tag, hidden, isSubject,
-                                resizable, transparent, onTop, borderless);
+// 创建窗口（详见 §4.2）
+Window &win = app.createWindow(800, 600, "main", Window::WorkState::Foreground,
+                                true /*isSubject*/, true /*resizable*/);
 
-// 获取上下文
-auto& context = app.getContext();
+// 创建托盘
+app.createTray<MyTray>();
 
-// 运行应用
+// 显示/隐藏指定标签的窗口
+app.showWindow("settings");
+app.hideWindow("settings");
+
+// 启动主循环（阻塞直到 exit()）
 app.run();
 
-// 关闭应用
-app.close();
+// 退出应用
+app.exit();
+
+// 获取全局上下文
+Context &ctx = app.getContext();
 ```
 
-### 2. 窗口 (Window)
+### 4.2 Window — 窗口管理 {#window}
 
-`dao::Window` 表示一个应用程序窗口，可以包含多个页面。
+`dao::Window` 代表一个应用窗口，可以包含多个页面。
 
-**窗口创建选项：**
-- `width`, `height`: 窗口尺寸
-- `tag`: 窗口标识（用于查找）
-- `hidden`: 是否隐藏
-- `isSubject`: 是否为主体窗口
-- `resizable`: 是否可调整大小
-- `transparent`: 是否支持透明
-- `onTop`: 是否置顶
-- `borderless`: 是否无边框
+@ref window "→ Window 参考文档"
 
-**窗口管理：**
+```cpp
+Window &createWindow(
+    i32 width, i32 height,           // 窗口尺寸
+    std::string_view tag,            // 唯一标识（用于查找）
+    Window::WorkState workState,     // 初始工作状态
+    bool isSubject = false,          // 是否为主体窗口（关闭时退出应用）
+    bool resizable = false,          // 是否可调整大小
+    bool transparent = false,        // 是否支持透明
+    bool onTop = false,              // 是否置顶
+    bool borderless = false          // 是否无边框
+);
+```
+
+**WorkState 枚举：**
+
+| 值 | 含义 |
+|----|------|
+| `Foreground` | 前台运行（正常显示） |
+| `Background` | 后台运行（隐藏但仍在更新） |
+| `Closed` | 窗口关闭 |
+
+**窗口操作：**
+
 ```cpp
 // 添加页面
-window.addPage(std::make_unique<MyPage>());
+window.addPage<MyPage>();                 // 模板版本（推荐）
+window.addPage(std::make_unique<MyPage>()); // unique_ptr 版本
 
 // 切换页面
 window.switchPage("pageTitle");
 
-// 显示/隐藏窗口
+// 控制窗口
 window.show();
 window.hide();
-
-// 设置窗口属性
-window.setPosition(x, y);
-window.setSize(width, height);
+window.setPosition(100, 100);
+window.setSize(1024, 768);
 window.setTitle("新标题");
+window.setClickThrough(true);  // 鼠标事件穿透
+
+// 转换工作状态
+window.convertWorkState(Window::WorkState::Background);
 ```
 
-### 3. 页面 (Page)
+### 4.3 IGeneralPage — 页面接口 {#page}
 
-页面是 UI 内容的容器，继承自 `dao::Page` 或 `dao::GeneralPage`。
+页面是 UI 内容的容器。所有自定义页面都应继承 `dao::ifc::IGeneralPage`。
 
-**页面生命周期方法：**
-- `init()`: 页面打开时调用
-- `close()`: 页面关闭时调用
-- `update()`: 每帧调用，用于更新 UI
-- `handleInputEvent()`: 处理输入事件
-- `getRegisterTexture()`: 返回页面需要的纹理 ID 列表
+@ref page "→ IGeneralPage 参考文档"
 
-**使用 GeneralPage：**
 ```cpp
-class MyPage : public dao::GeneralPage {
+class MyPage : public dao::ifc::IGeneralPage {
 public:
-    MyPage() : GeneralPage("pageTitle") {}
+    MyPage() : IGeneralPage("页面标题") {}
 
-    // 必须实现的方法
-    void init() override { /* ... */ }
+    // 返回页面需要的纹理 ID 列表（页面打开前调用）
+    std::vector<dao::i32> getRegisterTextures() const override {
+        return {TEXTURE_ID_1, TEXTURE_ID_2};
+    }
+
+    // 页面打开时调用（初始化资源）
+    void open() override { /* ... */ }
+
+    // 页面关闭时调用（释放资源）
     void close() override { /* ... */ }
-    void update() override { /* ... */ }
-    void handleInputEvent(const SDL_Event& event) override { /* ... */ }
-    std::vector<dao::i32> getRegisterTexture() const override { /* ... */ }
 
-    // 辅助方法
-    void updateLogic() {
-        // 更新逻辑
+    // 每帧调用（更新逻辑 + 渲染）
+    void update() override {
+        addToBatch(component1, component2, text);
     }
 
-    void renderUI() {
-        // 渲染 UI 组件
-        addToBatch(component1, component2, component3);
+    // 处理输入事件（鼠标、键盘等）
+    void handleInputEvent(const SDL_Event &event) override {
+        button.handleEvent(event);
     }
 };
 ```
 
-### 4. 组件 (Components)
+**页面生命周期：**
 
-DaoLib 提供了多种内置 UI 组件。
-
-#### 按钮 (SimpleButton)
-
-```cpp
-// 创建按钮
-dao::SimpleButton button{
-    x, y, width, height,          // 位置和尺寸
-    [] {                           // 点击回调
-        std::cout << "按钮点击" << std::endl;
-    },
-    dao::ButtonStatus::Normal     // 初始状态
-};
-
-// 处理事件
-button.handleEvent(event);
-
-// 检查状态
-if (button.isEnable()) {
-    // 按钮可用
-}
-
-// 设置状态
-button.setStatus(dao::ButtonStatus::Disabled);
+```
+创建页面 → getRegisterTextures() → open() → [update() × N] → close() → 销毁
+                ↑                                        ↑
+           纹理预加载                              每帧：逻辑+渲染+输入
 ```
 
-#### 输入框 (InputBox)
+**addToBatch() — 将组件送入渲染：**
 
 ```cpp
-// 创建输入框
-dao::InputBox inputBox{x, y, width, height, dao::InputStatus::Normal};
-
-// 处理事件
-inputBox.handleEvent(event);
-
-// 获取输入内容
-std::u32string text = inputBox.getText();
-int cursorPos = inputBox.getCursorPos();
-```
-
-#### 文本 (Text)
-
-```cpp
-// 创建文本
-dao::Text text{
-    x, y,                         // 位置
-    fontSize,                     // 字体大小
-    dao::hexToRGBA("#FF0000"),    // 颜色
-    U"文本内容"                   // UTF-32 字符串
-};
-
-// 修改文本属性
-text.setContent(U"新内容");
-text.setColor(dao::hexToRGBA("#00FF00"));
-text.setFontSize(48.0f);
-```
-
-#### 图片 (Image)
-
-```cpp
-// 创建图片（需要预加载纹理）
-dao::Image image{x, y, width, height, textureId};
-
-// 纹理 ID 需要在页面中注册
-std::vector<dao::i32> getRegisterTexture() const override {
-    return {textureId};
-}
-```
-
-#### 矩形 (Rectangle)
-
-```cpp
-// 创建矩形
-dao::Rectangle rect{x, y, width, height, dao::hexToRGBA("#3498db")};
-```
-
-#### 纹理 (Texture)
-
-```cpp
-// 创建纹理实例
-dao::Texture texture{textureId, x, y, width, height};
-```
-
-### 5. 渲染批处理 (VertexBatchBuilder)
-
-`VertexBatchBuilder` 负责高效的批处理渲染。
-
-**基本用法：**
-```cpp
-// 在页面中
+// 可变参数模板，接受任意数量的可批处理对象
 void update() override {
-    // 清空上一帧的批处理
-    // addToBatch 内部会自动调用 clearDrawBatches()
-
-    // 添加组件到批处理
-    addToBatch(button, text, image, rect);
-}
-
-// 自定义 Drawable 对象
-class CustomDrawable : public dao::Drawable {
-    void writeToBatch(dao::VertexBatchBuilder& builder) const override {
-        // 自定义渲染逻辑
-        builder.addToBatch(someTexture);
-    }
-};
-```
-
-### 6. 上下文管理器 (Context)
-
-`Context` 提供统一的状态和服务管理。
-
-**状态管理（存储数据）：**
-```cpp
-// 定义状态类型
-struct UserData {
-    std::string name;
-    int score;
-};
-
-// 注册状态
-context.emplaceState<UserData>("张三", 100);
-
-// 获取状态
-auto& userData = context.getState<UserData>();
-userData.score += 10;
-
-// 检查状态是否存在
-if (context.hasState<UserData>()) {
-    // ...
+    addToBatch(circle, rect, text, button, line);
+    // 展开为: circle.writeToBatch(batch), rect.writeToBatch(batch), ...
 }
 ```
 
-**服务管理（共享功能）：**
+**获取窗口控制器：**
+
 ```cpp
-// 定义服务类型
-class DatabaseService {
-public:
-    void connect() { /* ... */ }
-    void query() { /* ... */ }
-};
+WindowController &wc = getWindowController();
+// 可用于切换页面等操作
+```
 
-// 注册服务
-context.emplaceService<DatabaseService>();
+### 4.4 Context — 上下文管理器 {#context}
 
-// 获取服务
-auto& db = context.service<DatabaseService>();
-db.connect();
+`Context` 提供类型安全的依赖注入，任意对象通过类型存取。
 
-// 注册应用指针（常用模式）
-context.emplaceService<dao::App*>(&app);
+@ref context "→ Context 参考文档"
+
+```cpp
+// 存储引用（不持有所有权）
+App &app = ...;
+context.emplace<App>(app);
+
+// 创建新对象（持有所有权）
+context.emplace<PlayerData>("Alice", 100);
+
+// 获取对象
+auto *data = context.get<PlayerData>();
+if (data) { data->score += 10; }
+
+// 检查是否存在
+if (context.has<PlayerData>()) { /* ... */ }
+```
+
+典型用法：在 App 创建后将自身注入 Context，页面中通过 `getContext()` 获取。
+
+### 4.5 FrameLimiter — 帧率控制 {#framelimiter}
+
+`FrameLimiter` 在 App 内部自动使用，确保稳定的目标帧率。采用"睡眠+自旋"混合等待策略，先 sleep 大部分时间，最后 2ms 自旋等待以达到精确的帧间隔。
+
+```cpp
+// App 内部
+FrameLimiter limiter{60};  // 60 FPS
+// 每帧结束时调用
+limiter.wait();            // 阻塞至下一帧
+limiter.setFPS(120);       // 动态修改帧率
 ```
 
 ---
 
-## 完整示例解析
+## 5. 几何图形 {#graphs}
 
-### 示例 1：计数器应用
+DaoLib 提供 9 种内置几何图形组件，全部实现 `dao::ifc::IGraph` 接口。
+
+@ref graphs "→ 图形组件参考文档"
+
+### 5.1 IGraph 接口
 
 ```cpp
-#include <daoLib.hpp>
-
-// 计数器状态
-struct CounterState {
-    int count = 0;
+class IGraph : public IDrawable {
+    virtual void translate(f32 dx, f32 dy) = 0;           // 平移
+    virtual void rotate(f32 cx, f32 cy, f32 theta) = 0;   // 旋转
+    void writeToBatch(BatchRenderer &) const override = 0; // 渲染
 };
-
-class CounterPage : public dao::GeneralPage {
-    dao::SimpleButton incrementBtn{100, 100, 200, 50, [this] {
-        // 增加计数
-        getContext().getState<CounterState>().count++;
-    }};
-
-    dao::SimpleButton decrementBtn{100, 200, 200, 50, [this] {
-        // 减少计数
-        getContext().getState<CounterState>().count--;
-    }};
-
-    dao::Text countText{100, 300, 32, dao::hexToRGBA("#000000")};
-
-public:
-    CounterPage() : GeneralPage("counter") {}
-
-    std::vector<dao::i32> getRegisterTexture() const override {
-        return {};
-    }
-
-    void init() override {
-        // 初始化计数器状态
-        if (!getContext().hasState<CounterState>()) {
-            getContext().emplaceState<CounterState>();
-        }
-    }
-
-    void update() override {
-        // 更新计数显示
-        int count = getContext().getState<CounterState>().count;
-        countText.setContent(std::to_wstring(count));
-
-        // 渲染组件
-        addToBatch(incrementBtn, decrementBtn, countText);
-    }
-
-    void handleInputEvent(const SDL_Event& event) override {
-        incrementBtn.handleEvent(event);
-        decrementBtn.handleEvent(event);
-    }
-};
-
-int main() {
-    dao::App app{60};
-
-    // 创建窗口和页面
-    app.createWindow(400, 500, "counter")
-        .addPage(std::make_unique<CounterPage>());
-
-    app.run();
-    return 0;
-}
 ```
 
-### 示例 2：用户登录界面
+### 5.2 图形速览
+
+| 图形 | 构造参数 | 说明 |
+|------|---------|------|
+| [Circle](#graph-circle) | `(cx, cy, radius, color, segments)` | 圆形，triangle-fan 渲染 |
+| [Ellipse](#graph-ellipse) | `(cx, cy, rx, ry, color, segments)` | 椭圆 |
+| [Rectangle](#graph-rectangle) | `(x, y, w, h, color)` | 矩形，2 三角形 |
+| [Triangle](#graph-triangle) | `(x1,y1, x2,y2, x3,y3, color)` | 三角形 |
+| [Line](#graph-line) | `(x1,y1, x2,y2, thickness, color)` | 线段，垂直扩展成四边形 |
+| [Arc](#graph-arc) | `(cx,cy, r, startA, endA, thickness, color, seg)` | 圆弧 |
+| [Sector](#graph-sector) | `(cx,cy, r, startA, endA, color, seg)` | 扇形 |
+| [Ring](#graph-ring) | `(cx,cy, innerR, outerR, color, seg)` | 圆环 |
+| [RoundedRectangle](#graph-roundedrect) | `(x,y, w,h, cornerR, color, cornerSeg)` | 圆角矩形 |
+| [Polygon\<N\>](#graph-polygon) | `(Vertex... args)` (模板) | N 边形（编译期定点数） |
+
+### 5.3 Circle 示例 {#graph-circle}
 
 ```cpp
-#include <daoLib.hpp>
-#include <string>
+dao::Circle circle{400, 300, 100, dao::hexToRGBA("#e74c3c"), 64};
+circle.setRadius(80);          // 修改半径（自动重建顶点）
+circle.setPosition(200, 200);  // 移动圆心
+circle.setColor(dao::Blue);    // 修改颜色
+circle.translate(50, 0);       // 平移
+circle.rotate(400, 300, 0.5f); // 绕 (400,300) 旋转 0.5 弧度
+```
 
-struct UserCredentials {
-    std::u32string username;
-    std::u32string password;
+### 5.4 其他图形示例
+
+```cpp
+// 椭圆
+dao::Ellipse ellipse{400, 300, 120, 80, dao::hexToRGBA("#3498db")};
+ellipse.setRadius(150, 60);
+
+// 矩形
+dao::Rectangle rect{100, 100, 200, 150, dao::hexToRGBA("#2ecc71")};
+rect.setSize(300, 200);
+
+// 线段
+dao::Line line{100, 100, 400, 300, 3.0f, dao::hexToRGBA("#9b59b6")};
+
+// 圆弧（从 0 到 π 的半圆弧）
+dao::Arc arc{400, 300, 100, 0, 3.14159f, 4.0f, dao::hexToRGBA("#e67e22")};
+
+// 扇形（90° 扇形）
+dao::Sector sector{400, 300, 100, 0, 1.5708f, dao::hexToRGBA("#1abc9c")};
+
+// 圆环
+dao::Ring ring{400, 300, 60, 100, dao::hexToRGBA("#f39c12")};
+
+// 圆角矩形
+dao::RoundedRectangle rr{100, 100, 200, 150, 20, dao::hexToRGBA("#34495e")};
+rr.setCornerRadius(30);
+
+// 五边形（模板，编译期定点数）
+dao::Polygon<5> pentagon{
+    dao::Vertex{400, 200, dao::Red},
+    dao::Vertex{500, 270, dao::Red},
+    dao::Vertex{460, 370, dao::Red},
+    dao::Vertex{340, 370, dao::Red},
+    dao::Vertex{300, 270, dao::Red}
 };
+```
 
-class LoginPage : public dao::GeneralPage {
-    dao::InputBox usernameBox{100, 100, 300, 40};
-    dao::InputBox passwordBox{100, 200, 300, 40};
+### 5.5 在页面中使用图形
 
-    dao::SimpleButton loginBtn{100, 300, 150, 50, [this] {
-        auto& creds = getContext().getState<UserCredentials>();
-        creds.username = usernameBox.getText();
-        creds.password = passwordBox.getText();
-
-        // 这里添加登录验证逻辑
-        std::cout << "登录尝试: "
-                  << utf8::utf32to8(creds.username) << std::endl;
-    }};
-
-    dao::Text title{100, 50, 24, dao::hexToRGBA("#2c3e50"), U"用户登录"};
-    dao::Text userLabel{50, 110, 18, dao::hexToRGBA("#34495e"), U"用户名:"};
-    dao::Text passLabel{50, 210, 18, dao::hexToRGBA("#34495e"), U"密码:"};
+```cpp
+class GraphDemoPage : public dao::ifc::IGeneralPage {
+    dao::Circle m_circle{400, 300, 80, dao::hexToRGBA("#e74c3c")};
+    dao::Rectangle m_rect{100, 100, 200, 150, dao::hexToRGBA("#3498db")};
+    dao::f32 m_time = 0;
 
 public:
-    LoginPage() : GeneralPage("login") {}
+    GraphDemoPage() : IGeneralPage("graph_demo") {}
 
-    std::vector<dao::i32> getRegisterTexture() const override {
-        return {};
-    }
-
-    void init() override {
-        if (!getContext().hasState<UserCredentials>()) {
-            getContext().emplaceState<UserCredentials>();
-        }
-    }
+    std::vector<dao::i32> getRegisterTextures() const override { return {}; }
+    void open() override {}
+    void close() override {}
 
     void update() override {
-        addToBatch(usernameBox, passwordBox, loginBtn,
-                   title, userLabel, passLabel);
+        m_time += 0.016f;
+        // 动态修改圆形半径：呼吸效果
+        m_circle.setRadius(80 + std::sin(m_time * 2) * 20);
+        // 矩形旋转
+        m_rect.rotate(200, 175, m_time * 0.5f);
+
+        addToBatch(m_circle, m_rect);
     }
 
-    void handleInputEvent(const SDL_Event& event) override {
-        usernameBox.handleEvent(event);
-        passwordBox.handleEvent(event);
-        loginBtn.handleEvent(event);
-    }
+    void handleInputEvent(const SDL_Event &event) override {}
 };
-
-int main() {
-    dao::App app{60};
-
-    app.createWindow(500, 400, "login")
-        .addPage(std::make_unique<LoginPage>());
-
-    app.run();
-    return 0;
-}
 ```
 
 ---
 
-## 高级功能
+## 6. 文本渲染 {#text}
 
-### 托盘系统
+### 6.1 Text — 简单文本 {#text-component}
 
-DaoLib 支持系统托盘图标和菜单。
+`dao::Text` 在指定位置渲染 UTF-32 文本，不处理自动换行和区域裁剪。
 
-**创建自定义托盘：**
+@ref text-component "→ Text 参考文档"
+
 ```cpp
-#include <core/frame/tray.hpp>
+dao::Text text{100, 100, 24,                    // x, y, 行高
+               dao::hexToRGBA("#333333"),        // 颜色
+               U"你好，世界！"};                  // UTF-32 文本
 
-class MyTray : public dao::Tray {
+text.setContent(U"新内容");
+text.setPosition(200, 200);
+text.setLineHeight(32);
+text.setColor(dao::hexToRGBA("#e74c3c"));
+```
+
+**设置字体：**
+
+```cpp
+// 在创建任何窗口之前设置
+dao::GlyphAtlas::setTtfPath("./assets/ttf/zh-cn.ttf");
+```
+
+### 6.2 TextBox — 文本框 {#textbox-component}
+
+`TextBox` 在指定矩形区域内渲染文本，支持自动换行和区域裁剪。
+
+@ref textbox-component "→ TextBox 参考文档"
+
+```cpp
+dao::TextBox box{50, 50, 500, 300,    // x, y, width, height
+                 24,                    // 行高
+                 dao::White};           // 颜色
+
+box.setContent(U"这是一段很长的文本，超出宽度将自动换行...");
+box.setWordWrap(true);          // 开启自动换行（默认）
+box.setTextAlignToEnd(true);    // 末尾优先显示（聊天记录风格）
+box.setPosition(100, 100);
+box.setSize(400, 200);
+```
+
+---
+
+## 7. 按钮与输入 {#controls}
+
+### 7.1 Button {#button}
+
+@ref button "→ Button 参考文档"
+
+```cpp
+dao::Button btn{100, 100, 200, 50, [] {
+    std::cout << "按钮被点击！" << std::endl;
+}};
+
+// 状态管理
+btn.setStatus(dao::ButtonStatus::Disabled);  // 禁用按钮
+if (btn.isEnable()) { /* ... */ }
+auto status = btn.getStatus();
+```
+
+**按钮状态：** `Normal` → `Hover` → `Pressed` → `Normal`
+
+**在页面中处理事件：**
+
+```cpp
+void handleInputEvent(const SDL_Event &event) override {
+    m_button.handleEvent(event);
+}
+```
+
+### 7.2 自定义按钮样式
+
+实现 `dao::ifc::IButton` 接口可创建自定义按钮。参考 `libCode/include/components/controls/IButton.hpp`。
+
+---
+
+## 8. 颜色系统 {#colors}
+
+@ref colors "→ 颜色系统参考文档"
+
+```cpp
+// 预定义颜色常量
+dao::ColorRGBA c1 = dao::Red;
+dao::ColorRGBA c2 = dao::Blue;
+dao::ColorRGBA c3 = dao::Transparent;
+
+// 十六进制构造
+dao::ColorRGBA c4{"#e74c3c"};
+dao::ColorRGBA c5{"#3498db80"};  // 带 Alpha
+
+// 等效写法
+auto c6 = dao::hexToRGBA("#2ecc71");
+
+// 分量操作
+c1.setR(128);
+c1.setA(0.5f);
+int r = c1.r();
+float a = c1.a();
+```
+
+---
+
+## 9. HTTP 客户端 {#http}
+
+DaoLib 提供完整的 HTTP/HTTPS 客户端，支持同步和异步请求，内部线程池管理。
+
+@ref http "→ HTTP 模块参考文档"
+
+### 9.1 同步请求
+
+```cpp
+#include <web/http/HttpClient.hpp>
+using namespace dao::web;
+
+// 从 URL 构造（自动识别 HTTP/HTTPS）
+auto client = HttpClient::fromURL("https://api.example.com");
+
+// GET 请求（阻塞当前线程）
+HttpResponse resp = client.get("/users");
+if (resp.success) {
+    std::cout << "状态: " << resp.status << "\n";
+    std::cout << "响应: " << resp.body << "\n";
+} else {
+    std::cout << "错误: " << resp.error << "\n";
+}
+```
+
+### 9.2 异步请求（回调式）
+
+```cpp
+// 异步 GET — 回调在线程池中执行
+client.get("/api/data", [this](HttpResponse resp) {
+    if (resp.success) {
+        // 注意：此回调在线程池线程，不能直接操作 UI
+        m_receivedData = std::move(resp.body);
+    }
+});
+```
+
+### 9.3 主线程回调投递
+
+异步回调默认在线程池线程执行，不能操作 SDL UI。通过 `setMainThreadCallbackHandler` 将回调投递到主线程：
+
+```cpp
+// 设置主线程投递器（通常在页面 open() 中）
+client.setMainThreadCallbackHandler([this](std::function<void()> task) {
+    std::lock_guard lock(m_taskMutex);
+    m_pendingTasks.push_back(std::move(task));
+});
+
+// 发起异步请求
+client.get("/api/status", [](HttpResponse resp) {
+    // 此回调会在主线程的 update() 中执行
+});
+
+// 在 update() 中执行投递的任务
+void update() override {
+    std::vector<std::function<void()>> tasks;
+    {
+        std::lock_guard lock(m_taskMutex);
+        tasks.swap(m_pendingTasks);
+    }
+    for (auto &task : tasks) task();
+    // ... 渲染逻辑
+}
+```
+
+### 9.4 HttpPoller — 定时轮询 {#http-poller}
+
+`HttpPoller` 封装定时轮询逻辑，在 `update()` 中每帧调用 `tick()`：
+
+```cpp
+#include <web/http/HttpPoller.hpp>
+
+class MonitorPage : public dao::ifc::IGeneralPage {
+    dao::web::HttpClient m_client{"192.168.1.1", 50000};
+    dao::web::HttpPoller m_poller{
+        m_client,
+        dao::web::HttpRequest{.path = "/api/status"},
+        std::chrono::seconds(5)
+    };
+
 public:
-    MyTray(const std::string_view iconPath, const std::string_view tooltip)
-        : Tray(iconPath, tooltip) {}
+    void update() override {
+        m_poller.tick();
+        while (m_poller.hasResponse()) {
+            auto resp = m_poller.takeResponse();
+            // 处理响应...
+        }
+        addToBatch(/* ... */);
+    }
+};
+```
+
+### 9.5 HTTP 请求配置
+
+```cpp
+// 自定义请求头
+Headers headers = {
+    {"Authorization", "Bearer token123"},
+    {"X-Custom", "value"}
+};
+
+// POST 请求（异步）
+client.post("/api/submit", headers, R"({"key":"value"})",
+    [](HttpResponse resp) { /* ... */ },
+    "application/json");
+
+// 使用 HttpRequest 发送通用请求
+HttpRequest req{
+    .method = HttpMethod::Post,
+    .path = "/api/data",
+    .headers = headers,
+    .body = R"({"name":"test"})",
+    .content_type = "application/json",
+    .connect_timeout_sec = 5,
+    .read_timeout_sec = 30
+};
+client.request(req, [](HttpResponse resp) { /* ... */ });
+```
+
+### 9.6 SSL 配置
+
+```cpp
+auto client = HttpClient::https("api.example.com", 443);
+client.setCaCertPath("/path/to/ca-bundle.crt");
+client.enableSSLVerification(true);
+```
+
+---
+
+## 10. SQLite 数据库 {#database}
+
+DaoLib 封装了 SQLiteCpp，提供类型安全、自动列名映射的查询接口。
+
+@ref database "→ 数据库模块参考文档"
+
+### 10.1 基本操作
+
+```cpp
+#include <database/sqlite/Sqlite.hpp>
+using namespace dao::db;
+
+// 打开/创建数据库
+Sqlite db{"app.db", true /*createIfNotExist*/, false /*readOnly*/};
+
+if (!db) {
+    // 数据库打开失败
+    return;
+}
+
+// 创建表
+db.exec("CREATE TABLE IF NOT EXISTS users ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "name TEXT NOT NULL, "
+        "score INTEGER DEFAULT 0)");
+
+// 插入数据（{} 作为参数占位符）
+db.exec("INSERT INTO users (name, score) VALUES ({}, {})",
+        "Alice", 100);
+
+db.exec("INSERT INTO users (name, score) VALUES ({}, {})",
+        "Bob", 200);
+
+// 获取最后插入的 ID
+i64 lastId = db.lastInsertRowId();
+```
+
+### 10.2 查询
+
+```cpp
+// SELECT 查询 — 自动映射列名
+Result result = db.select("SELECT id, name, score FROM users WHERE score > {}", 50);
+
+for (const auto &row : result) {
+    i64 id = row.asInt64("id");
+    std::string name = row.asString("name");
+    i32 score = row.asInt32("score");
+    bool hasEmail = row.has("email");  // 检查列是否存在
+}
+```
+
+### 10.3 事务
+
+```cpp
+db.beginTransaction();
+db.exec("UPDATE users SET score = score + 10 WHERE id = {}", 1);
+db.exec("UPDATE users SET score = score - 10 WHERE id = {}", 2);
+db.commit();  // 或 db.rollback();
+```
+
+---
+
+## 11. 系统托盘 {#tray}
+
+@ref tray "→ Tray 参考文档"
+
+```cpp
+#include <core/frame/Tray.hpp>
+
+class AppTray : public dao::Tray {
+public:
+    AppTray() : Tray("icon.png", "我的应用") {}
 
     void createTrayMenu() override {
-        // 添加菜单项
-        button("打开设置", [this](SDL_TrayEntry* entry) {
-            getContext().service<dao::App*>()->showWindow("settings");
+        button("显示主窗口", [this](SDL_TrayEntry *) {
+            getContext().get<dao::App>()->showWindow("main");
         });
 
-        button("退出", [this](SDL_TrayEntry* entry) {
-            getContext().service<dao::App*>()->close();
+        button("退出", [this](SDL_TrayEntry *) {
+            getContext().get<dao::App>()->exit();
         });
     }
 };
 
-// 在主函数中使用
-int main() {
-    dao::App app{60};
-
-    // 创建托盘
-    app.createTray<MyTray>("icon.png", "我的应用")
-        .createTrayMenu();
-
-    // ... 其他代码
-}
+// 在 main() 中创建
+app.createTray<AppTray>();
 ```
 
-### 多窗口管理
+---
+
+## 12. 日志系统 {#logging}
+
+@ref logging "→ 日志系统参考文档"
+
+### 12.1 Log 类
 
 ```cpp
-int main() {
-    dao::App app{60};
+#include <core/tool/Log.hpp>
 
-    // 创建主窗口
-    auto& mainWindow = app.createWindow(800, 600, "main", false, true);
-    mainWindow.addPage(std::make_unique<MainPage>());
+// 启用彩色输出
+dao::Log::openStyleOutPut();
 
-    // 创建设置窗口（初始隐藏）
-    auto& settingsWindow = app.createWindow(400, 300, "settings", true);
-    settingsWindow.addPage(std::make_unique<SettingsPage>());
+// 各级别日志
+dao::Log{dao::LogLevel::TRACE}("进入函数 foo()");
+dao::Log{dao::LogLevel::DEBUG}("变量值: x={}", 42);
+dao::Log{dao::LogLevel::INFO}("服务器启动成功");
+dao::Log{dao::LogLevel::WARN}("内存使用率: {}%", 85);
+dao::Log{dao::LogLevel::ERROR}("连接失败: {}", errMsg);
 
-    // 在需要时显示设置窗口
-    // app.showWindow("settings");
-
-    app.run();
-    return 0;
-}
+// fmt 格式化
+dao::Log{dao::LogLevel::INFO}.fmt("用户 {} 登录，IP: {}", username, ip);
 ```
 
-### 纹理管理
+### 12.2 DAO_ERROR_LOG 宏
 
-**纹理预加载：**
 ```cpp
-class MyPage : public dao::GeneralPage {
-    static constexpr dao::i32 BUTTON_TEXTURE = 1;
-    static constexpr dao::i32 BACKGROUND_TEXTURE = 2;
+DAO_ERROR_LOG("纹理加载失败: " + filePath);
+// 自动附加 文件名、行号、函数名
+```
+
+---
+
+## 13. 完整示例 — 天气查询应用 {#complete-example}
+
+下面是一个综合运用图形、HTTP、文本的完整示例。
+
+```cpp
+#include <core/frame/App.hpp>
+#include <interface/IGeneralPage.hpp>
+#include <web/http/HttpClient.hpp>
+#include <components/Text.hpp>
+#include <components/graphs/RoundedRectangle.hpp>
+#include <components/controls/SimpleButton.hpp>
+#include <core/tool/Log.hpp>
+#include <mutex>
+#include <vector>
+
+class WeatherPage : public dao::ifc::IGeneralPage {
+    // HTTP 客户端
+    dao::web::HttpClient m_http{"api.open-meteo.com", 80};
+
+    // 主线程任务队列
+    std::mutex m_taskMutex;
+    std::vector<std::function<void()>> m_pendingTasks;
+
+    // UI 组件
+    dao::RoundedRectangle m_bg{0, 0, 800, 600, 0, dao::hexToRGBA("#1a1a2e")};
+    dao::Text m_title{300, 30, 36, dao::hexToRGBA("#e94560"), U"天气查询"};
+    dao::Text m_result{50, 150, 24, dao::hexToRGBA("#eee")};
+    dao::Button m_fetchBtn{300, 500, 200, 50, [this] { fetchWeather(); }};
+    dao::Text m_btnLabel{320, 510, 20, dao::hexToRGBA("#333"), U"获取天气"};
+
+    bool m_loading = false;
+
+    void fetchWeather() {
+        if (m_loading) return;
+        m_loading = true;
+
+        m_http.get("/v1/forecast?latitude=39.9&longitude=116.4&current=temperature_2m",
+                   [this](dao::web::HttpResponse resp) {
+            std::lock_guard lock(m_taskMutex);
+            m_pendingTasks.push_back([this, resp = std::move(resp)] {
+                m_loading = false;
+                if (resp.success) {
+                    m_result.setContent(
+                        dao::utf8::utf8to32("北京当前温度: " + resp.body));
+                } else {
+                    m_result.setContent(U"请求失败");
+                }
+            });
+        });
+    }
 
 public:
-    std::vector<dao::i32> getRegisterTexture() const override {
-        return {BUTTON_TEXTURE, BACKGROUND_TEXTURE};
+    WeatherPage() : IGeneralPage("weather") {
+        // 注册主线程回调投递
+        m_http.setMainThreadCallbackHandler([this](std::function<void()> task) {
+            std::lock_guard lock(m_taskMutex);
+            m_pendingTasks.push_back(std::move(task));
+        });
     }
+
+    std::vector<dao::i32> getRegisterTextures() const override { return {}; }
+    void open() override { dao::Log::openStyleOutPut(); }
+    void close() override {}
 
     void update() override {
-        // 使用纹理
-        dao::Image bg{0, 0, 800, 600, BACKGROUND_TEXTURE};
-        dao::Image btn{100, 100, 200, 100, BUTTON_TEXTURE};
-
-        addToBatch(bg, btn);
-    }
-};
-```
-
-### 自定义 Drawable 组件
-
-创建可重用的自定义 UI 组件：
-
-```cpp
-class ProgressBar : public dao::Drawable {
-    dao::f32 x, y, width, height;
-    dao::f32 progress; // 0.0 到 1.0
-    dao::ColorRGBA color;
-
-public:
-    ProgressBar(dao::f32 x, dao::f32 y, dao::f32 width, dao::f32 height,
-                dao::f32 progress, dao::ColorRGBA color)
-        : x(x), y(y), width(width), height(height),
-          progress(progress), color(color) {}
-
-    void writeToBatch(dao::VertexBatchBuilder& builder) const override {
-        // 绘制背景
-        dao::Rectangle bg{x, y, width, height, dao::hexToRGBA("#ecf0f1")};
-        builder.addToBatch(bg);
-
-        // 绘制进度条
-        dao::Rectangle bar{x, y, width * progress, height, color};
-        builder.addToBatch(bar);
-
-        // 绘制边框
-        dao::Rectangle border{x, y, width, height, dao::hexToRGBA("#7f8c8d"), false};
-        builder.addToBatch(border);
-    }
-
-    void setProgress(dao::f32 newProgress) {
-        progress = std::clamp(newProgress, 0.0f, 1.0f);
-    }
-};
-
-// 在页面中使用
-ProgressBar progressBar{100, 100, 300, 20, 0.75f, dao::hexToRGBA("#3498db")};
-
-void update() override {
-    progressBar.setProgress(currentProgress);
-    addToBatch(progressBar);
-}
-```
-
----
-
-## 最佳实践
-
-### 1. 资源管理
-
-- **纹理预加载**：在 `getRegisterTexture()` 中声明所有需要的纹理
-- **字体管理**：使用 `VertexBatchBuilder` 的字形图集
-- **内存管理**：合理使用 `unique_ptr` 和 `shared_ptr`
-
-### 2. 性能优化
-
-- **批处理渲染**：使用 `addToBatch()` 集中渲染
-- **避免每帧创建对象**：在页面生命周期中重用组件
-- **合理使用事件处理**：只处理必要的事件
-
-### 3. 代码组织
-
-- **页面分离**：每个功能模块使用独立页面
-- **组件封装**：将相关 UI 元素封装为自定义 Drawable
-- **状态集中管理**：使用 Context 统一管理应用状态
-
-### 4. 错误处理
-
-```cpp
-// 检查纹理是否加载
-try {
-    auto& texture = getTexture(textureId);
-} catch (const std::exception& e) {
-    std::cerr << "纹理加载失败: " << e.what() << std::endl;
-}
-
-// 检查状态是否存在
-if (getContext().hasState<MyState>()) {
-    // 安全访问状态
-    auto& state = getContext().getState<MyState>();
-}
-```
-
----
-
-## 常见问题
-
-### Q1: 如何调试 UI 布局？
-
-使用 `BoundingBox` 辅助调试：
-
-```cpp
-// 在组件周围绘制调试边框
-dao::Rectangle debugRect{x, y, width, height, dao::hexToRGBA("#FF0000"), false};
-addToBatch(debugRect);
-```
-
-### Q2: 如何实现页面切换？
-
-```cpp
-// 在页面中切换其他页面
-getWindowController().switchTo("otherPage");
-
-// 或使用窗口的切换方法
-getWindow().switchPage("otherPageTitle");
-```
-
-### Q3: 如何处理中文输入？
-
-DaoLib 内置支持 UTF-32 字符串，确保使用正确的字符串字面量：
-
-```cpp
-// 使用 UTF-32 字符串字面量 (C++11)
-dao::Text text{100, 100, 24, dao::hexToRGBA("#000000"), U"中文文本"};
-
-// 转换 std::string 到 UTF-32
-std::string utf8Str = "中文";
-std::u32string utf32Str = utf8::utf8to32(utf8Str);
-```
-
-### Q4: 如何自定义组件样式？
-
-创建自定义按钮样式：
-
-```cpp
-class MyButtonStyle : public dao::ButtonStyle {
-public:
-    void apply(dao::Button& button, dao::ButtonStatus status) override {
-        switch (status) {
-            case dao::ButtonStatus::Normal:
-                button.setBackgroundColor(dao::hexToRGBA("#3498db"));
-                break;
-            case dao::ButtonStatus::Hovered:
-                button.setBackgroundColor(dao::hexToRGBA("#2980b9"));
-                break;
-            case dao::ButtonStatus::Pressed:
-                button.setBackgroundColor(dao::hexToRGBA("#1c6ea4"));
-                break;
-            case dao::ButtonStatus::Disabled:
-                button.setBackgroundColor(dao::hexToRGBA("#bdc3c7"));
-                break;
+        // 执行主线程任务
+        std::vector<std::function<void()>> tasks;
+        {
+            std::lock_guard lock(m_taskMutex);
+            tasks.swap(m_pendingTasks);
         }
+        for (auto &task : tasks) task();
+
+        addToBatch(m_bg, m_title, m_result, m_fetchBtn, m_btnLabel);
+    }
+
+    void handleInputEvent(const SDL_Event &event) override {
+        m_fetchBtn.handleEvent(event);
     }
 };
+
+int main() {
+    dao::GlyphAtlas::setTtfPath("./assets/ttf/zh-cn.ttf");
+
+    dao::App app{60};
+    app.createWindow(800, 600, "main",
+                     dao::Window::WorkState::Foreground)
+        .addPage<WeatherPage>();
+    app.run();
+}
 ```
 
 ---
 
-## 故障排除
+## 14. 最佳实践 {#best-practices}
 
-### 构建问题
-
-1. **CMake 找不到 SDL3**：
-   ```bash
-   # 确保 vcpkg 工具链正确配置
-   cmake -B build -DCMAKE_TOOLCHAIN_FILE=[vcpkg根目录]/scripts/buildsystems/vcpkg.cmake
-   ```
-
-2. **C++23 特性不支持**：
-   - 更新编译器版本
-   - 检查 CMake 中的 `CMAKE_CXX_STANDARD` 设置
-
-### 运行时问题
-
-1. **窗口不显示**：
-   - 检查窗口创建参数（特别是 `hidden` 参数）
-   - 确保调用了 `app.run()`
-
-2. **纹理不显示**：
-   - 在 `getRegisterTexture()` 中正确注册纹理 ID
-   - 检查纹理路径和格式
-
-3. **输入事件不响应**：
-   - 在 `handleInputEvent()` 中正确转发事件到组件
-   - 检查事件类型和处理逻辑
+1. **纹理预加载**：在 `getRegisterTextures()` 中声明所有纹理 ID，框架自动加载
+2. **组件重用**：将组件声明为页面成员变量，避免每帧创建/销毁
+3. **主线程安全**：异步 HTTP 回调通过 `setMainThreadCallbackHandler` 投递到主线程
+4. **资源清理**：在 `close()` 中释放页面持有的外部资源
+5. **字体设置**：`GlyphAtlas::setTtfPath()` 必须在创建窗口前调用
+6. **Context 使用**：通过 Context 共享跨页面的数据，避免全局变量
 
 ---
 
-## 下一步
+## 15. 常见问题 {#faq}
 
-- 查看 [API 文档](@ref daoLib.hpp) 获取详细类参考
-- 参考测试示例了解更多用法
-- 参与 DaoLib 开发，提交 Issue 和 Pull Request
+**Q: 窗口不显示？**
+检查 `workState` 是否为 `Foreground`，以及是否调用了 `app.run()`。
+
+**Q: 文本显示为方块？**
+确认字体路径正确，且在创建窗口前调用 `GlyphAtlas::setTtfPath()`。
+
+**Q: 按钮不响应点击？**
+确认在 `handleInputEvent()` 中调用了 `button.handleEvent(event)`。
+
+**Q: 图形修改属性后不更新？**
+DaoLib 图形的 setter 都会自动调用 `updateVertices()` 重建顶点，无需手动刷新。
+
+**Q: HTTP 请求卡住？**
+检查超时设置，同步请求会阻塞当前线程，建议使用异步请求。
+
+**Q: 如何调试 UI 布局？**
+在图形周围画矩形边框辅助定位：
+```cpp
+dao::Rectangle debugRect{x, y, w, h, dao::hexToRGBA("#FF000066"), false};
+```
 
 ---
 
-*本教程基于 DaoLib 版本 0.0.1，最后更新于 2026年3月3日。*
+## 16. 模块参考索引 {#ref-index}
+
+| 模块 | 参考文档 | 说明 |
+|------|---------|------|
+| 应用框架 | @ref core | App / Window / Context / FrameLimiter / Tray |
+| 几何图形 | @ref graphs | Circle / Ellipse / Rectangle / Triangle / Line / Arc / Sector / Ring / RoundedRectangle / Polygon |
+| UI 组件 | @ref components | Text / TextBox / Button |
+| 渲染系统 | @ref render | BatchRenderer / ColorRGBA / Vertex |
+| HTTP | @ref http | HttpClient / HttpPoller / HttpTypes / Headers |
+| 数据库 | @ref database | Sqlite / Row / Result |
+| 工具 | @ref tools | Log / BoundingBox / 类型别名 |
+
+---
+
+*本教程基于 DaoLib，最后更新于 2026年6月。*

@@ -1,21 +1,28 @@
 {
-  "name" : "app-sdl3",
-  "version-string" : "0.1.0",
-  "builtin-baseline" : "e5a1490e1409d175932ef6014519e9ae149ddb7c",
-  "dependencies" : [ {
-    "name" : "sdl3",
-    "version>=" : "3.4.0"
-  }, {
-    "name" : "sdl3-image",
-    "version>=" : "3.4.0",
-    "default-features" : false,
-    "features" : [ "png" ]
-  }, {
-    "name" : "sdl3-ttf",
-    "version>=" : "3.2.2"
-  }, {
-    "name" : "utfcpp",
-    "version>=" : "4.0.6"
-  } ],
-  "overrides" : [ ]
+  "name": "app-sdl3",
+  "version-string": "0.1.0",
+  "builtin-baseline": "e5a1490e1409d175932ef6014519e9ae149ddb7c",
+  "dependencies": [
+    {
+      "name": "sdl3",
+      "version>=": "3.4.0"
+    },
+    {
+      "name": "sdl3-image",
+      "version>=": "3.4.0",
+      "default-features": false,
+      "features": [
+        "png"
+      ]
+    },
+    {
+      "name": "sdl3-ttf",
+      "version>=": "3.2.2"
+    },
+    {
+      "name": "utfcpp",
+      "version>=": "4.0.6"
+    }
+  ],
+  "overrides": []
 }
