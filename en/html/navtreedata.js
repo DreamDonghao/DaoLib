@@ -38,8 +38,13 @@ var NAVTREE =
       ] ],
       [ "Project Dependencies", "join.html#autotoc_md18", null ]
     ] ],
-    [ "developed using DaoLib", "use.html", null ],
-    [ "Bug List", "bug.html", null ],
+    [ "Develop with DaoLib", "use.html", [
+      [ "Develop with DaoLib", "use.html#autotoc_md22", [
+        [ "Tutorial", "use.html#autotoc_md23", null ],
+        [ "Module Reference (Chinese)", "use.html#autotoc_md24", null ],
+        [ "Quick Start", "use.html#autotoc_md25", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -66,19 +71,18 @@ var NAVTREE =
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
-    ] ],
-    [ "Examples", "examples.html", "examples" ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "AppController_8cpp.html",
-"classdao_1_1Button.html#a0a80fed19db02336b9ca8f6b64b6c80f",
-"classdao_1_1Rectangle.html#aa14b21537202e5ed165731f6d32f12dd",
-"classdao_1_1Window.html#a8821f99dc73fa664ef6dbaaafabd4dbe",
-"classdao_1_1web_1_1HttpClient.html#a0ae96f4d020a0e57913219da10ecb1ec",
-"namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c"
+"classdao_1_1BoundingBox.html#a8f9d30f473c18358c729590c168c0be2",
+"classdao_1_1MappedRegion.html#ac8446307ef0b3a7ef581bfb0917351cc",
+"classdao_1_1Triangle.html#aff6d75adde783fa772bb4f4921391a86",
+"classdao_1_1ifc_1_1IGeneralPage.html#ae78fd60af98520ae9d1c141a223b02e2",
+"join.html#autotoc_md0"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

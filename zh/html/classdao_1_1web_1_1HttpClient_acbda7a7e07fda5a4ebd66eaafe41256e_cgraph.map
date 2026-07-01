@@ -1,5 +1,8 @@
 <map id="dao::web::HttpClient::fromURL" name="dao::web::HttpClient::fromURL">
-<area shape="rect" id="Node000001" title="从URL构造客户端" alt="" coords="5,5,160,45"/>
-<area shape="rect" id="Node000002" href="$namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4" title="解析URL，提取主机名、端口和路径" alt="" coords="208,13,363,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+<area shape="rect" id="Node000001" title="从 URL 构造，根据 scheme 自动选择 HTTP/HTTPS" alt="" coords="5,35,160,75"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="44,35,42,25,48,16,62,10,83,8,106,11,119,18,117,23,105,16,83,13,63,15,52,20,47,26,50,34"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient.html#aa8148405ca7c98c80d3204c48bf84f14" title="直接构造" alt="" coords="208,5,363,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="160,41,194,36,195,41,161,46"/>
+<area shape="rect" id="Node000003" href="$namespacedao_1_1web.html#ab0221f1077eb3a6b657fe29eebca21f4" title="解析 URL，提取主机名、端口、路径和协议" alt="" coords="208,70,363,95"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="161,63,195,67,194,73,160,68"/>
 </map>

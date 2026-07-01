@@ -1,0 +1,5 @@
+<map id="dao::Tray::button" name="dao::Tray::button">
+<area shape="rect" id="Node000001" title="添加托盘菜单按钮（引用版本）" alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d" title="托盘回调函数适配器" alt="" coords="184,5,292,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+</map>

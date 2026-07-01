@@ -1,0 +1,13 @@
+<map id="dao::ratio" name="dao::ratio">
+<area shape="rect" id="Node000001" title="结果为浮点数的除法" alt="" coords="516,45,600,70"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8" title="获取字形的宽高比" alt="" coords="276,5,468,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="502,51,468,45,469,39,503,45"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e" title="加载字形" alt="" coords="281,69,463,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="503,69,464,76,463,71,502,64"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea" title=" " alt="" coords="33,5,200,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,28,200,28,200,23,262,23"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1GlyphAtlas.html#a81129592c241243a145647d4b4e9851e" title="批量加载字形" alt="" coords="5,69,228,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="267,92,228,92,228,87,267,87"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title=" " alt="" coords="14,133,219,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="279,115,198,136,196,131,277,110"/>
+</map>

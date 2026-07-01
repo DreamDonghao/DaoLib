@@ -1,0 +1,5 @@
+<map id="dao::Polygon::writeToBatch" name="dao::Polygon::writeToBatch">
+<area shape="rect" id="Node000001" title="将图形写入批处理渲染器" alt="" coords="5,13,204,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49" title="分配指定数量的顶点空间" alt="" coords="252,5,403,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,23,238,23,238,28,204,28"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dao::web::HttpClient::setMainThreadCallbackHandler" name="dao::web::HttpClient::setMainThreadCallbackHandler">
+<area shape="rect" id="Node000001" title="设置后，所有异步回调自动通过此 handler 投递到主线程" alt="" coords="208,5,443,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient.html#ac2d00cdff78d5f2fcaf3924d6487709c" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>

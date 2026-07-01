@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['组件_0',['自定义 Drawable 组件',['../tutorial.html#autotoc_md58',1,'']]],
-  ['组件_20components_1',['4. 组件 (Components)',['../tutorial.html#autotoc_md40',1,'']]]
+  ['快速开始_0',['快速开始',['../use.html#autotoc_md249',1,'快速开始'],['../tutorial.html#quickstart',1,'3. 快速开始']]]
 ];

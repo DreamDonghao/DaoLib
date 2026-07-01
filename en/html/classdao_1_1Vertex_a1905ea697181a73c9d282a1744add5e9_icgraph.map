@@ -1,0 +1,9 @@
+<map id="dao::Vertex::color" name="dao::Vertex::color">
+<area shape="rect" id="Node000001" title="获取颜色" alt="" coords="212,55,348,80"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Vertex.html#a9ff8cc62f3c46252ecddc979ac81bc84" title=" " alt="" coords="23,5,147,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,54,135,33,136,28,217,49"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Vertex.html#a20ac5b5cf36f34b58e1f000a50851096" title=" " alt="" coords="5,55,164,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,70,164,70,164,65,198,65"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Vertex.html#aafbe63962bed9d1b689a20d51d78a22b" title=" " alt="" coords="11,104,158,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,86,136,107,135,101,215,81"/>
+</map>

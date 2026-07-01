@@ -1,0 +1,12 @@
+<map id="dao::Button::Button" name="dao::Button::Button">
+<area shape="rect" id="Node000001" title="默认构造函数" alt="" coords="224,80,372,105"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="335,70,324,62,298,59,276,61,265,65,262,71,268,78,264,82,257,72,261,62,275,56,298,53,327,57,338,66"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Button.html#acad664cb882db16eb7ece0faff7be2d8" title="移动构造函数" alt="" coords="17,5,165,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="255,77,175,45,139,33,141,28,177,39,257,72"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Button.html#a0a80fed19db02336b9ca8f6b64b6c80f" title="禁止拷贝构造" alt="" coords="17,55,165,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="210,85,165,79,165,74,211,79"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Button.html#a7e47c128adb282f1068b73e88e736131" title="移动赋值运算符" alt="" coords="5,104,176,129"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="211,105,176,109,176,104,210,100"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Button.html#abeb9a77b972017722367779dc84b1edf" title="禁止拷贝赋值" alt="" coords="5,153,176,179"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="255,113,177,143,138,156,136,151,175,138,253,108"/>
+</map>

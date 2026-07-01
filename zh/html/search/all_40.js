@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['核心概念_0',['核心概念',['../tutorial.html#autotoc_md36',1,'']]]
+  ['定时轮询器_0',['HttpPoller — 定时轮询器',['../tutorial.html#http-poller',1,'']]]
 ];

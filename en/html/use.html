@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DaoUI: developed using DaoLib</title>
+<title>DaoUI: Develop with DaoLib</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -117,12 +117,83 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('use.html','','
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">developed using DaoLib </div></div>
+  <div class="headertitle"><div class="title">Develop with DaoLib </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The function is currently under development ..... </p>
-</div></div><!-- contents -->
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+Develop with DaoLib</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+Tutorial</h2>
+<p>→ DaoLib Tutorial (Chinese) — from setup to complete application.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+Module Reference (Chinese)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Module  </th><th class="markdownTableHeadNone">Link  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Core  </td><td class="markdownTableBodyNone">core  </td><td class="markdownTableBodyNone">App / Window / Context / FrameLimiter / Tray  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Graphs  </td><td class="markdownTableBodyNone">graphs  </td><td class="markdownTableBodyNone">9 graph components, IGraph interface  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Components  </td><td class="markdownTableBodyNone">components  </td><td class="markdownTableBodyNone">Text / TextBox / Button  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Render  </td><td class="markdownTableBodyNone">render  </td><td class="markdownTableBodyNone">BatchRenderer / ColorRGBA / Vertex  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">HTTP  </td><td class="markdownTableBodyNone">http  </td><td class="markdownTableBodyNone">HttpClient / HttpPoller / HttpTypes / Headers  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Database  </td><td class="markdownTableBodyNone">database  </td><td class="markdownTableBodyNone">Sqlite / Row / Result  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Tools  </td><td class="markdownTableBodyNone">tools  </td><td class="markdownTableBodyNone">Log / BoundingBox / Type aliases  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+Quick Start</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="App_8hpp.html">core/frame/App.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="IGeneralPage_8hpp.html">interface/IGeneralPage.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="Text_8hpp.html">components/Text.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>HelloPage : <span class="keyword">public</span> <a class="code hl_class" href="classdao_1_1ifc_1_1IGeneralPage.html">dao::ifc::IGeneralPage</a> {</div>
+<div class="line">    <a class="code hl_class" href="classdao_1_1Text.html">dao::Text</a> m_text{100, 100, 32, dao::hexToRGBA(<span class="stringliteral">&quot;#333&quot;</span>), U<span class="stringliteral">&quot;Hello DaoLib!&quot;</span>};</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    HelloPage() : IGeneralPage(<span class="stringliteral">&quot;hello&quot;</span>) {}</div>
+<div class="line">    std::vector&lt;dao::i32&gt; <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a90d8134e500070cd111a0571297fcebb">getRegisterTextures</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> {}; }</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368">open</a>()<span class="keyword"> override </span>{}</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999">close</a>()<span class="keyword"> override </span>{}</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714">update</a>()<span class="keyword"> override </span>{ <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c">addToBatch</a>(m_text); }</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">handleInputEvent</a>(<span class="keyword">const</span> SDL_Event &amp;)<span class="keyword"> override </span>{}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    dao::GlyphAtlas::setTtfPath(<span class="stringliteral">&quot;./assets/ttf/zh-cn.ttf&quot;</span>);</div>
+<div class="line">    <a class="code hl_class" href="classdao_1_1App.html">dao::App</a> app{60};</div>
+<div class="line">    app.<a class="code hl_function" href="classdao_1_1App.html#a652e22a7a65185638d9e299e625cbd89">createWindow</a>(800, 600, <span class="stringliteral">&quot;main&quot;</span>, <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">dao::Window::WorkState::Foreground</a>)</div>
+<div class="line">        .<a class="code hl_function" href="classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df">addPage</a>&lt;HelloPage&gt;();</div>
+<div class="line">    app.<a class="code hl_function" href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">run</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aApp_8hpp_html"><div class="ttname"><a href="App_8hpp.html">App.hpp</a></div></div>
+<div class="ttc" id="aIGeneralPage_8hpp_html"><div class="ttname"><a href="IGeneralPage_8hpp.html">IGeneralPage.hpp</a></div></div>
+<div class="ttc" id="aText_8hpp_html"><div class="ttname"><a href="Text_8hpp.html">Text.hpp</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html"><div class="ttname"><a href="classdao_1_1App.html">dao::App</a></div><div class="ttdoc">应用管理类</div><div class="ttdef"><b>Definition</b> <a href="App_8hpp_source.html#l00010">App.hpp:10</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a4b5486e80b896ce8140f1f844b403422"><div class="ttname"><a href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">dao::App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">启动应用程序主循环</div><div class="ttdef"><b>Definition</b> <a href="App_8cpp_source.html#l00025">App.cpp:25</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a652e22a7a65185638d9e299e625cbd89"><div class="ttname"><a href="classdao_1_1App.html#a652e22a7a65185638d9e299e625cbd89">dao::App::createWindow</a></div><div class="ttdeci">Window &amp; createWindow(i32 width, i32 height, std::string_view tag, Window::WorkState workState, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>Definition</b> <a href="App_8cpp_source.html#l00075">App.cpp:75</a></div></div>
+<div class="ttc" id="aclassdao_1_1Text_html"><div class="ttname"><a href="classdao_1_1Text.html">dao::Text</a></div><div class="ttdoc">文本渲染组件</div><div class="ttdef"><b>Definition</b> <a href="Text_8hpp_source.html#l00013">Text.hpp:13</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_a67a4da4ad39f44d385f13de1856460df"><div class="ttname"><a href="classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df">dao::Window::addPage</a></div><div class="ttdeci">Window &amp; addPage(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00045">Window.hpp:45</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f"><div class="ttname"><a href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca45bd1d5b32931106efbf1a82fe6a732f">dao::Window::WorkState::Foreground</a></div><div class="ttdeci">@ Foreground</div><div class="ttdoc">前台运行</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00026">Window.hpp:26</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html">dao::ifc::IGeneralPage</a></div><div class="ttdoc">通用页面接口</div><div class="ttdef"><b>Definition</b> <a href="IGeneralPage_8hpp_source.html#l00013">IGeneralPage.hpp:13</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a518a9c220d67a9d0f5b8c1e3b8c0218c"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">dao::ifc::IGeneralPage::handleInputEvent</a></div><div class="ttdeci">void handleInputEvent(const SDL_Event &amp;event) override=0</div><div class="ttdoc">处理消息</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a6c10e2097f44df159ddf8606f0037f5c"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a6c10e2097f44df159ddf8606f0037f5c">dao::ifc::IGeneralPage::addToBatch</a></div><div class="ttdeci">void addToBatch(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="IGeneralPage_8hpp_source.html#l00039">IGeneralPage.hpp:39</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_a90d8134e500070cd111a0571297fcebb"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#a90d8134e500070cd111a0571297fcebb">dao::ifc::IGeneralPage::getRegisterTextures</a></div><div class="ttdeci">std::vector&lt; i32 &gt; getRegisterTextures() const override=0</div><div class="ttdoc">获取要注册的纹理ID列表</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_ad87ca6774d182cb9257638b08ba29368"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#ad87ca6774d182cb9257638b08ba29368">dao::ifc::IGeneralPage::open</a></div><div class="ttdeci">void open() override=0</div><div class="ttdoc">初始化页面</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_addd9e6a9b0cf92b15c821abdf17ff999"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999">dao::ifc::IGeneralPage::close</a></div><div class="ttdeci">void close() override=0</div><div class="ttdoc">关闭页面</div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IGeneralPage_html_af835f295dbb1b45f002d170b67d8d714"><div class="ttname"><a href="classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714">dao::ifc::IGeneralPage::update</a></div><div class="ttdeci">void update() override=0</div><div class="ttdoc">更新</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <script src="style.js"></script>

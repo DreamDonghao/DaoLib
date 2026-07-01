@@ -5,13 +5,15 @@ var searchData=
   ['_7ebutton_2',['~Button',['../classdao_1_1Button.html#ad63fa854143ebf7a4e441e64b955d1f8',1,'dao::Button']]],
   ['_7eglyphatlas_3',['~GlyphAtlas',['../classdao_1_1GlyphAtlas.html#a2c107901ededcd60f40f2061295b727a',1,'dao::GlyphAtlas']]],
   ['_7ehttpclient_4',['~HttpClient',['../classdao_1_1web_1_1HttpClient.html#ad7b114d8e2d719772c10e83dd3750e55',1,'dao::web::HttpClient']]],
-  ['_7ehttpsclient_5',['~HttpsClient',['../classdao_1_1web_1_1HttpsClient.html#a573124f8d6aff4e37ea18cb029091a27',1,'dao::web::HttpsClient']]],
+  ['_7ehttppoller_5',['~HttpPoller',['../classdao_1_1web_1_1HttpPoller.html#af7607aed4df4a3a5dcfbb9f5567c5018',1,'dao::web::HttpPoller']]],
   ['_7eibutton_6',['~IButton',['../classdao_1_1ifc_1_1IButton.html#a79f1642b711e933bffac6a75ae7b5cae',1,'dao::ifc::IButton']]],
   ['_7eibuttonstyle_7',['~IButtonStyle',['../classdao_1_1ifc_1_1IButtonStyle.html#a26caca5b71ebce32252b4603b5eacd08',1,'dao::ifc::IButtonStyle']]],
   ['_7eidrawable_8',['~IDrawable',['../classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea',1,'dao::ifc::IDrawable']]],
   ['_7eigeneralpage_9',['~IGeneralPage',['../classdao_1_1ifc_1_1IGeneralPage.html#acf5066c113f8dbfd40dd7647a530ef82',1,'dao::ifc::IGeneralPage']]],
   ['_7eigraph_10',['~IGraph',['../classdao_1_1ifc_1_1IGraph.html#a80cdaf67867aaf5f9d809e49732c838f',1,'dao::ifc::IGraph']]],
   ['_7eipage_11',['~IPage',['../classdao_1_1ifc_1_1IPage.html#a7cf93058e0e29461319c3d3786c6d0c1',1,'dao::ifc::IPage']]],
-  ['_7etray_12',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
-  ['_7ewindow_13',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['_7ethreadpool_12',['~ThreadPool',['../classdao_1_1web_1_1ThreadPool.html#ab8a2b7282cfef622ac9584d76255d9b3',1,'dao::web::ThreadPool']]],
+  ['_7etray_13',['~Tray',['../classdao_1_1Tray.html#ac0c19b631aa3843b7b32e544ea089cc6',1,'dao::Tray']]],
+  ['_7evoidpage_14',['~VoidPage',['../classdao_1_1VoidPage.html#ac6104103ee75147c4b66dd3adcecee8a',1,'dao::VoidPage']]],
+  ['_7ewindow_15',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
 ];

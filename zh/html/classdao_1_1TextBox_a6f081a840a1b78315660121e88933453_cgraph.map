@@ -1,9 +1,0 @@
-<map id="dao::TextBox::setSize" name="dao::TextBox::setSize">
-<area shape="rect" id="Node000001" title="设置尺寸" alt="" coords="5,55,167,80"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#af0ea48a2ecb7283399e56c5cd90cdda3" title="构造函数" alt="" coords="215,5,449,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,52,254,31,255,36,151,57"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1BoundingBox.html#a705ef13bcb21e253230bee595d826ee2" title="获取左边界坐标" alt="" coords="235,55,429,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,65,222,65,222,70,167,70"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1BoundingBox.html#a0ebecb14841b7a605c616adbd688b195" title="获取上边界坐标" alt="" coords="237,104,427,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,77,255,99,254,104,149,83"/>
-</map>

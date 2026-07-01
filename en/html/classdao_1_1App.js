@@ -4,7 +4,7 @@ var classdao_1_1App =
     [ "App", "classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e", null ],
     [ "App", "classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad", null ],
     [ "~App", "classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8", null ],
-    [ "createTray", "classdao_1_1App.html#a0d54948b998aa74ccca2a5b63e6fb88a", null ],
+    [ "createTray", "classdao_1_1App.html#a41ea61261f4a936087ae00261cdcd412", null ],
     [ "createWindow", "classdao_1_1App.html#a652e22a7a65185638d9e299e625cbd89", null ],
     [ "exit", "classdao_1_1App.html#a5325b3e9e97c260b67df0014dc67b698", null ],
     [ "getContext", "classdao_1_1App.html#a5ab82fd0b55c46c5237ebd860a2cd30b", null ],

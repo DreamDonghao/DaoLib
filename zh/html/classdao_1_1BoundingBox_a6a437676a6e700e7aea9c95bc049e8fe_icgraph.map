@@ -1,7 +1,0 @@
-<map id="dao::BoundingBox::getHeight" name="dao::BoundingBox::getHeight">
-<area shape="rect" id="Node000001" title="获取高度" alt="" coords="252,31,464,56"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1TextBox.html#a63c78cb66fd3740691f62e69c21214da" title="设置位置" alt="" coords="11,5,198,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,34,198,30,198,25,239,29"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1TextBox.html#acbb1e7b149950357375d04d42a76fb12" title="写入批处理渲染器" alt="" coords="5,55,204,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,57,204,61,204,55,238,52"/>
-</map>

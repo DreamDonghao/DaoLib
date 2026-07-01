@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['资源管理_0',['1. 资源管理',['../tutorial.html#autotoc_md61',1,'']]]
+  ['按钮与输入_0',['7. 按钮与输入',['../tutorial.html#controls',1,'']]],
+  ['按钮_1',['Button — 按钮',['../tutorial.html#button',1,'']]]
 ];

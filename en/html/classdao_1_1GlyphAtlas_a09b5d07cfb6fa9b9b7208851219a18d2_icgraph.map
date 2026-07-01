@@ -1,0 +1,15 @@
+<map id="dao::GlyphAtlas::getGlyphAtlas" name="dao::GlyphAtlas::getGlyphAtlas">
+<area shape="rect" id="Node000001" title=" " alt="" coords="428,119,620,159"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e" title=" " alt="" coords="186,5,370,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="486,113,437,78,379,46,343,33,345,28,381,41,440,73,489,109"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea" title=" " alt="" coords="195,55,361,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="433,118,355,98,356,93,434,113"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="203,119,353,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="414,142,354,142,354,137,414,137"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,184,380,209"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="425,165,334,187,333,181,424,160"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,233,365,259"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="482,169,435,197,381,223,342,236,341,231,379,218,432,193,480,165"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8" title="析构函数" alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,21,129,21,129,15,172,15"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="dao::Black" name="dao::Black">
+<area shape="rect" id="Node000001" title="黑色 #000000" alt="" coords="169,31,260,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#a861f0b0a7c4320d6f1133f68e59e5b49" title="多行构造（指定区域高度）" alt="" coords="5,5,121,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,36,121,30,122,25,156,31"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#addf431737c73655f996765cdd26b48ec" title="单行构造（高度 = 行高）" alt="" coords="5,55,121,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,55,122,61,121,55,155,50"/>
+</map>

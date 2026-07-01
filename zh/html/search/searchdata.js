@@ -1,15 +1,15 @@
 var indexSectionsWithContent =
 {
-  0: "12345678abcdefghijlmnopqrstuvwxy~上下主从仓代使克列创参合图多如安完审布常应开快性托按提故文最构核渲独的矩示窗第简管系纹组编自行资输运错集页项高",
+  0: "123456789abcdefghijlmnoprstuvwxy~—三上主事从仓使信克入其典几创单参合同图圆在基多天头字存安完宏定审客容对工帧常应开异彩快扇执批按接提支数整文方日最构枚查核检椭模比浮添渲状环的矩示窗第简类系纯线组编自获行请超边配静页顶项预颜",
   1: "abcdefghilmprstvw",
   2: "d",
   3: "abcdefghijlmprstuvw",
   4: "abcdefghilmnoprstuvwxy~",
   5: "abcdefghimnprstuwy",
-  6: "cfhijrtu",
-  7: "abilmw",
-  8: "bcdefhimnopstw",
-  9: "12345678abcdfijpqrstuvw上下主从仓代使克列创参合图多如安完审布常应开快性托按提故文最构核渲独的矩示窗第简管系纹组编自行资输运错集页项高",
+  6: "cfhijtu",
+  7: "abhilmtw",
+  8: "bcdefghilmnoprstw",
+  9: "123456789abcdefghijlprstuvw—三上主事从仓使信克入其典几创单参合同图圆在基多天头字存安完宏定审客容对工帧常应开异彩快扇执批按接提支数整文方日最构枚查核检椭模比浮添渲状环的矩示窗第简类系纯线组编自获行请超边配静页顶项预颜",
   10: "b"
 };
 
@@ -30,16 +30,16 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "全部",
-  1: "类",
-  2: "命名空间",
-  3: "文件",
-  4: "函数",
-  5: "变量",
-  6: "类型定义",
-  7: "枚举",
-  8: "枚举值",
-  9: "页",
-  10: "概念"
+  0: "All",
+  1: "Classes",
+  2: "Namespaces",
+  3: "Files",
+  4: "Functions",
+  5: "Variables",
+  6: "Typedefs",
+  7: "Enumerations",
+  8: "Enumerator",
+  9: "Pages",
+  10: "Concepts"
 };
 

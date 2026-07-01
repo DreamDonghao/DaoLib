@@ -1,0 +1,8 @@
+<map id="dao::GlyphAtlas::cleanup" name="dao::GlyphAtlas::cleanup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,189,55"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="237,22,429,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,39,224,39,224,45,190,45"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1GlyphAtlas.html#a237c430f181e83af326be2454b3595b7" title="禁用拷贝构造" alt="" coords="477,29,681,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,39,464,39,464,45,429,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="540,31,531,21,535,11,552,5,579,3,614,7,624,11,628,17,623,20,620,15,613,12,579,8,553,10,539,15,536,20,543,27"/>
+</map>

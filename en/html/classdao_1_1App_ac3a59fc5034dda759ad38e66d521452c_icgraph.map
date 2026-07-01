@@ -1,0 +1,11 @@
+<map id="dao::App::App" name="dao::App::App">
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="207,80,319,105"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="26,5,138,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,76,158,44,126,33,128,28,160,40,227,71"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="26,55,138,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,86,138,78,139,73,193,80"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="5,104,159,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,104,160,109,159,104,193,99"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="5,153,159,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="225,114,160,143,125,156,123,151,158,138,222,109"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['多窗口管理_0',['多窗口管理',['../tutorial.html#autotoc_md56',1,'']]]
+  ['克隆仓库_0',['2. 克隆仓库',['../join.html#autotoc_md4',1,'']]]
 ];

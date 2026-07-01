@@ -1,0 +1,13 @@
+<map id="dao::ColorRGBA::operator==" name="dao::ColorRGBA::operator==">
+<area shape="rect" id="Node000001" title="相等比较操作符" alt="" coords="5,80,216,105"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="264,80,468,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,90,251,90,251,95,216,95"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ColorRGBA.html#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值" alt="" coords="516,5,657,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,77,535,33,536,38,406,82"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ColorRGBA.html#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值" alt="" coords="516,55,657,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="468,78,502,74,502,80,468,84"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1ColorRGBA.html#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值" alt="" coords="516,104,657,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="468,101,502,105,502,110,468,106"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值" alt="" coords="517,153,656,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="406,103,535,146,534,151,404,108"/>
+</map>

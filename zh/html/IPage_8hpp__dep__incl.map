@@ -1,13 +1,15 @@
-<map id="code/include/core/frame/IPage.hpp" name="code/include/core/frame/IPage.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,364,45"/>
-<area shape="rect" id="Node000002" href="$IGeneralPage_8hpp.html" title=" " alt="" coords="101,93,267,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,57,206,95,202,91,243,53"/>
-<area shape="rect" id="Node000006" href="$Window_8cpp.html" title=" " alt="" coords="291,93,442,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="307,53,348,91,344,95,303,57"/>
-<area shape="rect" id="Node000003" href="$daolib_8hpp.html" title=" " alt="" coords="5,189,181,214"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,145,108,190,104,186,152,141"/>
-<area shape="rect" id="Node000005" href="$IGeneralPage_8cpp.html" title=" " alt="" coords="205,181,344,221"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="216,141,256,179,253,183,212,145"/>
-<area shape="rect" id="Node000004" href="$daolib_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="20,269,167,295"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,228,96,269,91,269,91,228"/>
+<map id="libCode/include/core/frame/IPage.hpp" name="libCode/include/core/frame/IPage.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="357,5,511,45"/>
+<area shape="rect" id="Node000002" href="$IGeneralPage_8hpp.html" title=" " alt="" coords="242,93,426,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,56,358,95,354,91,400,52"/>
+<area shape="rect" id="Node000007" href="$Window_8cpp.html" title=" " alt="" coords="451,93,620,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="469,52,515,91,511,95,465,56"/>
+<area shape="rect" id="Node000003" href="$VoidPage_8hpp.html" title=" " alt="" coords="5,181,212,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,141,159,184,157,179,271,136"/>
+<area shape="rect" id="Node000004" href="$daolib_8hpp.html" title=" " alt="" coords="237,189,431,214"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="337,147,337,188,331,188,331,147"/>
+<area shape="rect" id="Node000006" href="$IGeneralPage_8cpp.html" title=" " alt="" coords="456,181,612,221"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="392,136,491,179,489,184,389,141"/>
+<area shape="rect" id="Node000005" href="$daolib_8cpp.html" title="用于编译没有包含进源文件的头文件" alt="" coords="251,269,417,295"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="337,228,337,269,331,269,331,228"/>
 </map>

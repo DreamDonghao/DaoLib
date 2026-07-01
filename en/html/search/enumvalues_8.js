@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_0',['Normal',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal'],['../namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal']]]
+  ['left_0',['Left',['../namespacedao.html#a594315690ecb55f0f5f5ab520460d062a945d5e233cf7d6240f6b783b36a374ff',1,'dao']]]
 ];

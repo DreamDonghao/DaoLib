@@ -1,0 +1,18 @@
+<map id="dao::callback" name="dao::callback">
+<area shape="rect" id="Node000001" title="托盘回调函数适配器" alt="" coords="440,155,548,180"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Tray.html#a3391fbbfae90c1cab622bada59f42b2e" title="添加托盘菜单按钮（右值引用版本）" alt="" coords="235,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,144,442,93,418,67,391,44,364,32,367,27,393,40,422,63,446,90,482,141"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Tray.html#a058921ddbe925245d411257467e0887a" title="添加托盘菜单按钮（引用版本）" alt="" coords="235,55,365,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="468,148,433,119,391,94,362,83,363,78,393,89,436,115,471,143"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1web_1_1HttpClient.html#aa18e24974cc3c4c75c5e779cd992a7e3" title="发送 GET 请求（异步，回调在线程池线程执行）" alt="" coords="208,104,392,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="431,154,349,132,350,127,432,149"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1web_1_1HttpClient.html#ac2d00cdff78d5f2fcaf3924d6487709c" title=" " alt="" coords="5,209,160,249"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="427,172,323,180,209,195,145,211,144,206,207,190,323,174,426,167"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1web_1_1HttpClient.html#a087f851c11ccf73b6ad0d8485ca3ae73" title="发送带自定义请求头的 POST 请求（异步）" alt="" coords="223,205,377,245"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="438,186,369,207,367,202,436,181"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1web_1_1HttpClient.html#ad9eea1747badfcb8efd1db0255345006" title="发送 POST 请求（异步）" alt="" coords="223,269,377,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="473,193,438,226,393,259,369,271,367,266,391,254,434,222,470,189"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1web_1_1HttpClient.html#ae744d553f0bf8e3b8e0e62f6c6d1dce3" title="发送通用请求（异步）" alt="" coords="223,333,377,373"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="485,194,450,258,425,292,394,323,374,335,372,330,390,319,421,289,446,255,480,191"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="213,267,155,251,157,246,214,262"/>
+</map>

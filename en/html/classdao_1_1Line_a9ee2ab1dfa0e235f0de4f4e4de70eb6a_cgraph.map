@@ -1,0 +1,5 @@
+<map id="dao::Line::writeToBatch" name="dao::Line::writeToBatch">
+<area shape="rect" id="Node000001" title="将图形写入批处理渲染器" alt="" coords="5,13,179,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49" title="分配指定数量的顶点空间" alt="" coords="227,5,377,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,213,23,213,28,179,28"/>
+</map>

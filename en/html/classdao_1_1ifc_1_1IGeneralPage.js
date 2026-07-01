@@ -6,7 +6,7 @@ var classdao_1_1ifc_1_1IGeneralPage =
     [ "clearBatch", "classdao_1_1ifc_1_1IGeneralPage.html#ae78fd60af98520ae9d1c141a223b02e2", null ],
     [ "close", "classdao_1_1ifc_1_1IGeneralPage.html#addd9e6a9b0cf92b15c821abdf17ff999", null ],
     [ "getContext", "classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e", null ],
-    [ "getGlyphAspectRatio", "classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd", null ],
+    [ "getGlyphAspectRatio", "classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea", null ],
     [ "getRegisterTextures", "classdao_1_1ifc_1_1IGeneralPage.html#a90d8134e500070cd111a0571297fcebb", null ],
     [ "getTitle", "classdao_1_1ifc_1_1IGeneralPage.html#a3d9837c76c53f11c0f8f2b4b051775d9", null ],
     [ "getWindowController", "classdao_1_1ifc_1_1IGeneralPage.html#a0316550779063ca85c3c59150dfe8b70", null ],

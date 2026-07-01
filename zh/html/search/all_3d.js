@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['文本_20text_0',['文本 (Text)',['../tutorial.html#autotoc_md43',1,'']]]
+  ['安装依赖_0',['2.2 安装依赖',['../tutorial.html#autotoc_md211',1,'']]]
 ];

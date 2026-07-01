@@ -1,0 +1,7 @@
+<map id="dao::Point::setPoint" name="dao::Point::setPoint">
+<area shape="rect" id="Node000001" title="设置点的坐标" alt="" coords="5,31,153,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Point.html#a7035c254a762f20965fac943e5ae0d24" title="获取点的 X 坐标" alt="" coords="201,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,30,187,25,188,30,154,35"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Point.html#a4e3b734a4516ecae515bed00c7caeb39" title="获取点的 Y 坐标" alt="" coords="201,55,304,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,51,188,56,187,61,153,56"/>
+</map>

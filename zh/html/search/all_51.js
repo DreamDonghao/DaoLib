@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['输入框_20inputbox_0',['输入框 (InputBox)',['../tutorial.html#autotoc_md42',1,'']]]
+  ['接口_0',['5.1 IGraph 接口',['../tutorial.html#autotoc_md219',1,'']]]
 ];

@@ -1,5 +1,9 @@
 <map id="dao::db::Sqlite::select" name="dao::db::Sqlite::select">
-<area shape="rect" id="Node000001" title="执行查询语句（SELECT）" alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000001" title="执行查询语句（SELECT）" alt="" coords="5,31,168,56"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1db_1_1Result.html#aaca3404cbde45e657f96f9d8d1072f78" title=" " alt="" coords="216,5,395,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,15,203,15,203,21,168,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,31,202,27,203,33,169,37"/>
+<area shape="rect" id="Node000003" href="$namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="251,55,359,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,50,237,57,237,63,168,55"/>
+<area shape="rect" id="Node000004" href="$namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="443,55,607,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="360,65,429,65,429,70,360,70"/>
 </map>

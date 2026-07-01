@@ -1,0 +1,20 @@
+<map id="dao::ColorRGBA::ColorRGBA" name="dao::ColorRGBA::ColorRGBA">
+<area shape="rect" id="Node000001" title="构造函数（十六进制字符串）" alt="" coords="5,124,209,149"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="513,149,717,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,139,500,154,499,159,210,144"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1ColorRGBA.html#ab097f5daa2d6ef03bc27196453ebc285" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="257,99,465,124"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="209,124,243,120,244,126,210,129"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ColorRGBA.html#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值" alt="" coords="765,143,907,168"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="717,156,751,155,752,161,717,162"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ColorRGBA.html#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值" alt="" coords="765,5,907,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="632,147,689,104,764,53,796,35,799,39,767,58,692,108,635,151"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1ColorRGBA.html#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值" alt="" coords="765,68,907,93"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="650,147,787,96,789,101,652,152"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值" alt="" coords="767,192,905,217"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="682,172,757,187,756,192,681,177"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="427,122,538,144,537,149,426,127"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="466,114,718,135,752,140,751,145,717,141,465,120"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="404,96,513,67,638,44,751,26,752,32,639,49,514,73,405,101"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="455,96,513,90,638,83,751,79,752,84,639,88,514,95,455,101"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="383,122,440,155,476,172,514,185,575,197,638,204,753,207,753,212,638,210,575,203,513,190,474,177,438,160,380,126"/>
+</map>

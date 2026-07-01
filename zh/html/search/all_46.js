@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['窗口_20window_0',['2. 窗口 (Window)',['../tutorial.html#autotoc_md38',1,'']]]
+  ['帧率限制器_0',['FrameLimiter — 帧率限制器',['../tutorial.html#framelimiter',1,'']]]
 ];

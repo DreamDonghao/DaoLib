@@ -10,7 +10,7 @@ var Log_8hpp =
       [ "dao::LogLevel::FATAL", "namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa19da7170bea36556dde582519795f3fc", null ]
     ] ],
     [ "dao::currentDateTime", "namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994", null ],
-    [ "dao::DAO_ERROR_LOG", "namespacedao.html#a4500c150025393f890f407b5eab5b5e5", null ],
+    [ "dao::ErrorLog", "namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d", null ],
     [ "dao::fmt_color::bg_blue", "namespacedao_1_1fmt__color.html#ad78b084b01601092563db1cbf67d621c", null ],
     [ "dao::fmt_color::bg_green", "namespacedao_1_1fmt__color.html#ac0b6ccd4aec25d9ad4dc4866cca904b0", null ],
     [ "dao::fmt_color::bg_red", "namespacedao_1_1fmt__color.html#a37d32f801dd09b1d1aba9a6e47a3a9d1", null ],

@@ -1,0 +1,5 @@
+<map id="dao::web::HttpClient::get" name="dao::web::HttpClient::get">
+<area shape="rect" id="Node000001" title="发送 GET 请求（同步，阻塞当前线程）" alt="" coords="208,13,392,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient.html#ac2d00cdff78d5f2fcaf3924d6487709c" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>

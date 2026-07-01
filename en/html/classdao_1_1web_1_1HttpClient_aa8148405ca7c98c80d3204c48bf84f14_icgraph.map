@@ -1,4 +1,18 @@
 <map id="dao::web::HttpClient::HttpClient" name="dao::web::HttpClient::HttpClient">
-<area shape="rect" id="Node000001" title="构造函数" alt="" coords="5,29,160,69"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="108,17,99,11,83,8,68,10,60,14,57,21,59,28,53,29,52,20,56,11,67,5,83,3,101,6,111,13"/>
+<area shape="rect" id="Node000001" title="直接构造" alt="" coords="208,221,363,261"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient.html#acbda7a7e07fda5a4ebd66eaafe41256e" title="从 URL 构造，根据 scheme 自动选择 HTTP/HTTPS" alt="" coords="5,29,160,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,211,220,147,191,113,158,83,140,72,142,67,162,79,195,110,225,144,268,208"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1web_1_1HttpClient.html#a2c2997c90629f08816c44f428d57a616" title="禁止拷贝" alt="" coords="5,93,160,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="250,214,207,180,159,148,136,136,138,131,161,143,211,176,253,210"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1web_1_1HttpClient.html#a175ec3c4f0fbe65349d01e46e79fe6ad" title="允许移动" alt="" coords="5,157,160,197"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="207,220,146,200,147,195,209,215"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1web_1_1HttpClient.html#a717e2a42c5efdeed41c4a0fa0057daac" title="显式构造 HTTPS 客户端" alt="" coords="5,221,160,261"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="194,244,161,244,161,239,194,239"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1web_1_1HttpClient.html#ae0f72dfd81fa9d6b44570501b45e6f5d" title=" " alt="" coords="5,285,160,325"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="209,268,147,288,146,283,207,263"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1web_1_1HttpClient.html#ac2d00cdff78d5f2fcaf3924d6487709c" title=" " alt="" coords="5,349,160,389"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="253,273,211,307,161,340,138,352,136,347,159,335,207,302,250,268"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1web_1_1HttpClient.html#ad7b114d8e2d719772c10e83dd3750e55" title=" " alt="" coords="5,413,160,453"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="268,275,225,339,195,373,162,403,142,415,140,411,158,399,191,369,220,336,264,272"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="117,18,105,11,83,8,63,10,52,15,47,21,50,28,44,30,42,20,48,11,62,5,83,3,106,6,119,13"/>
 </map>

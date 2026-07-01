@@ -18,9 +18,11 @@ var annotated_dup =
       [ "web", "namespacedao_1_1web.html", [
         [ "Headers", "classdao_1_1web_1_1Headers.html", "classdao_1_1web_1_1Headers" ],
         [ "HttpClient", "classdao_1_1web_1_1HttpClient.html", "classdao_1_1web_1_1HttpClient" ],
+        [ "HttpPoller", "classdao_1_1web_1_1HttpPoller.html", "classdao_1_1web_1_1HttpPoller" ],
+        [ "HttpRequest", "structdao_1_1web_1_1HttpRequest.html", "structdao_1_1web_1_1HttpRequest" ],
         [ "HttpResponse", "structdao_1_1web_1_1HttpResponse.html", "structdao_1_1web_1_1HttpResponse" ],
-        [ "HttpsClient", "classdao_1_1web_1_1HttpsClient.html", "classdao_1_1web_1_1HttpsClient" ],
-        [ "ParsedURL", "structdao_1_1web_1_1ParsedURL.html", "structdao_1_1web_1_1ParsedURL" ]
+        [ "ParsedURL", "structdao_1_1web_1_1ParsedURL.html", "structdao_1_1web_1_1ParsedURL" ],
+        [ "ThreadPool", "classdao_1_1web_1_1ThreadPool.html", "classdao_1_1web_1_1ThreadPool" ]
       ] ],
       [ "App", "classdao_1_1App.html", "classdao_1_1App" ],
       [ "AppCommand", "structdao_1_1AppCommand.html", "structdao_1_1AppCommand" ],
@@ -44,17 +46,18 @@ var annotated_dup =
       [ "Point", "classdao_1_1Point.html", "classdao_1_1Point" ],
       [ "Polygon", "classdao_1_1Polygon.html", "classdao_1_1Polygon" ],
       [ "Rectangle", "classdao_1_1Rectangle.html", "classdao_1_1Rectangle" ],
+      [ "RectTextBox", "classdao_1_1RectTextBox.html", "classdao_1_1RectTextBox" ],
       [ "Ring", "classdao_1_1Ring.html", "classdao_1_1Ring" ],
       [ "RingVector", "classdao_1_1RingVector.html", "classdao_1_1RingVector" ],
       [ "RoundedRectangle", "classdao_1_1RoundedRectangle.html", "classdao_1_1RoundedRectangle" ],
       [ "Sector", "classdao_1_1Sector.html", "classdao_1_1Sector" ],
       [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
       [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ],
-      [ "TextBox", "classdao_1_1TextBox.html", "classdao_1_1TextBox" ],
       [ "TickTimer", "classdao_1_1TickTimer.html", "classdao_1_1TickTimer" ],
       [ "Tray", "classdao_1_1Tray.html", "classdao_1_1Tray" ],
       [ "Triangle", "classdao_1_1Triangle.html", "classdao_1_1Triangle" ],
       [ "Vertex", "classdao_1_1Vertex.html", "classdao_1_1Vertex" ],
+      [ "VoidPage", "classdao_1_1VoidPage.html", "classdao_1_1VoidPage" ],
       [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
       [ "WindowCommand", "structdao_1_1WindowCommand.html", "structdao_1_1WindowCommand" ],
       [ "WindowController", "classdao_1_1WindowController.html", "classdao_1_1WindowController" ]

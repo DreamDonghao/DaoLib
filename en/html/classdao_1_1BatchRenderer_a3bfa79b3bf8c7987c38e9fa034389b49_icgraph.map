@@ -1,0 +1,29 @@
+<map id="dao::BatchRenderer::allocateVertices" name="dao::BatchRenderer::allocateVertices">
+<area shape="rect" id="Node000001" title="分配指定数量的顶点空间" alt="" coords="264,294,415,334"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Arc.html#ad563f6130daf5747b3e3fa02c9360220" title="将图形写入批处理渲染器" alt="" coords="27,5,194,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,281,318,228,296,164,262,99,240,69,214,44,193,32,196,27,218,40,244,66,267,96,301,162,323,227,335,280"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Circle.html#ada7a4fdbb52264f267503aa993694d2e" title="将图形写入批处理渲染器" alt="" coords="19,55,202,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="327,281,312,238,289,187,256,136,237,113,214,94,195,83,198,78,218,89,240,109,261,133,293,184,317,236,332,279"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Ellipse.html#a968a166c172d7ce7b7b421135bd37886" title="将图形写入批处理渲染器" alt="" coords="16,104,205,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,283,304,249,280,211,250,174,215,143,193,132,195,127,217,138,254,170,285,208,309,246,326,280"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Image.html#a546cda629137dc32c6e9c512a6b4d4f8" title="写入批处理" alt="" coords="17,153,204,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="314,285,271,236,244,212,215,192,189,181,191,176,217,188,248,208,275,232,318,281"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="9,203,213,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="298,288,259,264,215,242,180,231,182,225,217,237,261,259,301,284"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Line.html#a9ee2ab1dfa0e235f0de4f4e4de70eb6a" title="将图形写入批处理渲染器" alt="" coords="24,252,197,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="250,298,169,280,171,275,251,292"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1Polygon.html#abf1e81192ce56232042bf6d8b6c8fcbe" title="将图形写入批处理渲染器" alt="" coords="11,301,210,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="250,317,210,317,210,311,250,311"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1Rectangle.html#a0bde295d3d491477f98064b807e43fcf" title="将图形写入批处理渲染器" alt="" coords="5,351,216,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="251,336,171,353,169,348,250,330"/>
+<area shape="rect" id="Node000010" href="$classdao_1_1Ring.html#a03949a7ee655958609db9e8da7dcf517" title="将图形写入批处理渲染器" alt="" coords="23,400,198,425"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="300,344,261,368,217,390,178,402,176,397,215,385,258,363,297,339"/>
+<area shape="rect" id="Node000011" href="$classdao_1_1RoundedRectangle.html#af2cb7f4e8b3746c356bf05f98c8b9ad5" title="将图形写入批处理渲染器" alt="" coords="23,450,199,490"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="316,347,274,394,247,418,217,439,191,452,188,447,215,434,243,414,270,390,312,343"/>
+<area shape="rect" id="Node000012" href="$classdao_1_1Sector.html#af2ba609a9938bc8acb96b3974079f972" title="将图形写入批处理渲染器" alt="" coords="17,515,204,540"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="328,348,311,385,287,427,256,469,218,504,193,517,191,512,214,500,252,465,283,424,307,382,323,346"/>
+<area shape="rect" id="Node000013" href="$classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="24,564,197,589"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="333,348,319,395,295,450,262,506,241,531,218,553,195,566,193,562,214,549,238,528,258,503,291,448,314,393,328,347"/>
+<area shape="rect" id="Node000014" href="$classdao_1_1Triangle.html#aff6d75adde783fa772bb4f4921391a86" title="将图形写入批处理渲染器" alt="" coords="12,613,209,639"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="336,348,325,404,303,473,287,508,268,543,245,575,218,603,197,616,194,611,214,599,241,571,264,540,283,506,298,471,319,403,331,347"/>
+</map>

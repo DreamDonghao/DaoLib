@@ -1,6 +1,5 @@
 <map id="dao::InputBox::InputBox" name="dao::InputBox::InputBox">
-<area shape="rect" id="Node000001" title="构造函数" alt="" coords="5,29,184,55"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="54,31,45,21,49,11,66,5,95,3,130,7,141,11,144,17,140,20,137,15,129,12,95,8,67,10,53,15,50,20,58,27"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#af0ea48a2ecb7283399e56c5cd90cdda3" title="构造函数" alt="" coords="232,29,467,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,39,218,39,218,45,184,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,184,31"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#af991d9d33ff407cf227390c77e1a339e" title="黄色 FFFF00" alt="" coords="232,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,15,219,15,219,21,184,21"/>
 </map>

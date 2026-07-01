@@ -1,0 +1,5 @@
+<map id="dao::BoundingBox::isIntersects" name="dao::BoundingBox::isIntersects">
+<area shape="rect" id="Node000001" title="判断两个边界框是否有重合部分" alt="" coords="5,5,228,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54" title=" " alt="" coords="276,5,511,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,15,262,15,262,21,228,21"/>
+</map>

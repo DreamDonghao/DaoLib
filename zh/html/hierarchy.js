@@ -13,15 +13,17 @@ var hierarchy =
     [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
     [ "dao::web::Headers", "classdao_1_1web_1_1Headers.html", null ],
     [ "dao::web::HttpClient", "classdao_1_1web_1_1HttpClient.html", null ],
+    [ "dao::web::HttpPoller", "classdao_1_1web_1_1HttpPoller.html", null ],
+    [ "dao::web::HttpRequest", "structdao_1_1web_1_1HttpRequest.html", null ],
     [ "dao::web::HttpResponse", "structdao_1_1web_1_1HttpResponse.html", null ],
-    [ "dao::web::HttpsClient", "classdao_1_1web_1_1HttpsClient.html", null ],
     [ "dao::ifc::IButton", "classdao_1_1ifc_1_1IButton.html", [
       [ "dao::Button", "classdao_1_1Button.html", null ]
     ] ],
     [ "dao::ifc::IDrawable", "classdao_1_1ifc_1_1IDrawable.html", [
       [ "dao::Image", "classdao_1_1Image.html", null ],
       [ "dao::InputBox", "classdao_1_1InputBox.html", null ],
-      [ "dao::TextBox", "classdao_1_1TextBox.html", null ],
+      [ "dao::RectTextBox", "classdao_1_1RectTextBox.html", null ],
+      [ "dao::Text", "classdao_1_1Text.html", null ],
       [ "dao::ifc::IButtonStyle", "classdao_1_1ifc_1_1IButtonStyle.html", null ],
       [ "dao::ifc::IGraph", "classdao_1_1ifc_1_1IGraph.html", [
         [ "dao::Arc", "classdao_1_1Arc.html", null ],
@@ -37,9 +39,10 @@ var hierarchy =
       ] ]
     ] ],
     [ "dao::web::HttpClient::Impl", "classdao_1_1web_1_1HttpClient_1_1Impl.html", null ],
-    [ "dao::web::HttpsClient::Impl", "classdao_1_1web_1_1HttpsClient_1_1Impl.html", null ],
     [ "dao::ifc::IPage", "classdao_1_1ifc_1_1IPage.html", [
-      [ "dao::ifc::IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html", null ]
+      [ "dao::ifc::IGeneralPage", "classdao_1_1ifc_1_1IGeneralPage.html", [
+        [ "dao::VoidPage", "classdao_1_1VoidPage.html", null ]
+      ] ]
     ] ],
     [ "dao::Log", "classdao_1_1Log.html", null ],
     [ "dao::MappedRegion", "classdao_1_1MappedRegion.html", null ],
@@ -50,7 +53,7 @@ var hierarchy =
     [ "dao::db::Row", "classdao_1_1db_1_1Row.html", null ],
     [ "dao::db::Sqlite", "classdao_1_1db_1_1Sqlite.html", null ],
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],
-    [ "dao::Text", "classdao_1_1Text.html", null ],
+    [ "dao::web::ThreadPool", "classdao_1_1web_1_1ThreadPool.html", null ],
     [ "dao::TickTimer", "classdao_1_1TickTimer.html", null ],
     [ "dao::Tray", "classdao_1_1Tray.html", null ],
     [ "dao::Vertex", "classdao_1_1Vertex.html", null ],

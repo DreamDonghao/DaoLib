@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['下一步_0',['下一步',['../tutorial.html#autotoc_md76',1,'']]]
+  ['三角形_0',['Triangle — 三角形',['../ilinebr_01_0dianchor_02_xE5_x9B_xBE_xE5_xBD_xA2_xE7_xBB_x84_xE4_xBB_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0ggraphs_03_03_01graphs.html#graph-triangle',1,'']]]
 ];

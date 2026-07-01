@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['矩形_20rectangle_0',['矩形 (Rectangle)',['../tutorial.html#autotoc_md45',1,'']]]
+  ['定时轮询器_0',['HttpPoller — 定时轮询器',['../tutorial.html#http-poller',1,'']]]
 ];

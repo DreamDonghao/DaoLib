@@ -1,9 +1,0 @@
-<map id="dao::BatchRenderer::getGlyphAtlas" name="dao::BatchRenderer::getGlyphAtlas">
-<area shape="rect" id="Node000001" title="获取字形图集" alt="" coords="252,63,403,103"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IGeneralPage.html#a6928832c3f7502ffb6d16bb133214afd" title=" " alt="" coords="21,5,188,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,62,182,48,184,43,239,57"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#a5304a3baccfa3fc320fa2391f664d9fa" title="写入批处理渲染器" alt="" coords="18,70,191,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,85,191,85,191,80,238,80"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1TextBox.html#acbb1e7b149950357375d04d42a76fb12" title="写入批处理渲染器" alt="" coords="5,119,204,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="239,105,163,122,162,117,238,100"/>
-</map>

@@ -1,0 +1,5 @@
+<map id="dao::Point::setX" name="dao::Point::setX">
+<area shape="rect" id="Node000001" title="设置点的 X 坐标" alt="" coords="5,5,129,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Point.html#a7035c254a762f20965fac943e5ae0d24" title="获取点的 X 坐标" alt="" coords="177,5,280,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,15,164,15,164,21,130,21"/>
+</map>

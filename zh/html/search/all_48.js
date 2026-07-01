@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['简介_0',['简介',['../tutorial.html#autotoc_md23',1,'']]]
+  ['应用程序入口_0',['App — 应用程序入口',['../tutorial.html#app',1,'']]]
 ];

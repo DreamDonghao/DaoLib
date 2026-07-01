@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['文本_20text_0',['文本 (Text)',['../tutorial.html#autotoc_md43',1,'']]]
+  ['天气查询应用_0',['13. 完整示例 — 天气查询应用',['../tutorial.html#complete-example',1,'']]]
 ];

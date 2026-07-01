@@ -1,0 +1,11 @@
+<map id="dao::Text::y" name="dao::Text::y">
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,80,324,105"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Text.html#a69cdcb5543044ae2170e2cb9105d8138" title=" " alt="" coords="11,5,173,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,76,178,44,145,33,146,28,180,40,243,71"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Text.html#a861f0b0a7c4320d6f1133f68e59e5b49" title="多行构造（指定区域高度）" alt="" coords="34,55,150,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,87,150,78,150,73,213,81"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Text.html#addf431737c73655f996765cdd26b48ec" title="单行构造（高度 = 行高）" alt="" coords="34,104,150,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,103,150,112,150,106,213,98"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="5,153,179,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,114,180,143,143,156,141,151,178,138,238,110"/>
+</map>

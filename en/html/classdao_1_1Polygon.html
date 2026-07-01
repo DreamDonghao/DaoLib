@@ -154,6 +154,7 @@ Collaboration diagram for dao::Polygon&lt; VertexNum &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31b57386b2ac1884883578547d2799dc" id="r_a31b57386b2ac1884883578547d2799dc"><td class="memTemplParams" colspan="2">template&lt;std::same_as&lt; <a class="el" href="classdao_1_1Vertex.html">Vertex</a> &gt;... Args&gt; </td></tr>
 <tr class="memitem:a31b57386b2ac1884883578547d2799dc template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a31b57386b2ac1884883578547d2799dc">Polygon</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a31b57386b2ac1884883578547d2799dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
 <tr class="memitem:a2e5c92f323aa6a1ac8b1ef6d1355ac95" id="r_a2e5c92f323aa6a1ac8b1ef6d1355ac95"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2e5c92f323aa6a1ac8b1ef6d1355ac95">translate</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> dx, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> dy) override</td></tr>
 <tr class="memdesc:a2e5c92f323aa6a1ac8b1ef6d1355ac95"><td class="mdescLeft">&#160;</td><td class="mdescRight">平移图形  <br /></td></tr>
 <tr class="memitem:a99c844f63dc3fa061eedf169271ac40b" id="r_a99c844f63dc3fa061eedf169271ac40b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a99c844f63dc3fa061eedf169271ac40b">rotate</a> (const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> cx, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> cy, const <a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a> theta) override</td></tr>
@@ -169,9 +170,9 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> VertexNum&gt;<br />
 class dao::Polygon&lt; VertexNum &gt;</div><p>多边形图形组件 </p>
-<p>由多个顶点定义的多边形，使用三角形扇形方式渲染 </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>由多个顶点定义的多边形，以第一个顶点为共同顶点的三角形扇形方式渲染 </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">VertexNum</td><td>顶点数量 </td></tr>
+    <tr><td class="paramname">VertexNum</td><td>顶点数量（编译期常量，必须大于 2） </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,11 +206,25 @@ template&lt;std::same_as&lt; <a class="el" href="classdao_1_1Vertex.html">Vertex
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00015">15</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>            : m_vertices{<a class="code hl_class" href="classdao_1_1Polygon.html">std::forward&lt;Args&gt;</a>(<a class="code hl_class" href="classdao_1_1Polygon.html">args</a>)...} {</div>
-<div class="line"><span class="lineno">   17</span>            <span class="keyword">static_assert</span>(<a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a> &gt; 2, <span class="stringliteral">&quot;多边形必须至少有 3 个顶点。&quot;</span>);</div>
-<div class="line"><span class="lineno">   18</span>            <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(args) == <a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a>, <span class="stringliteral">&quot;顶点数量不匹配&quot;</span>);</div>
-<div class="line"><span class="lineno">   19</span>        }</div>
+<p>构造函数 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>顶点参数包，类型必须为 <a class="el" href="classdao_1_1Vertex.html" title="几何图形顶点">Vertex</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>顶点列表，数量必须与 VertexNum 一致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00018">18</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>            : m_vertices{<a class="code hl_class" href="classdao_1_1Polygon.html">std::forward &lt; Args &gt;</a> (<a class="code hl_class" href="classdao_1_1Polygon.html">args</a>)...} {</div>
+<div class="line"><span class="lineno">   20</span>            <span class="keyword">static_assert</span>(<a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a> &gt; 2, <span class="stringliteral">&quot;多边形必须至少有 3 个顶点。&quot;</span>);</div>
+<div class="line"><span class="lineno">   21</span>            <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(args) == <a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a>, <span class="stringliteral">&quot;顶点数量不匹配&quot;</span>);</div>
+<div class="line"><span class="lineno">   22</span>        }</div>
 <div class="ttc" id="aclassdao_1_1Polygon_html"><div class="ttname"><a href="classdao_1_1Polygon.html">dao::Polygon</a></div><div class="ttdoc">多边形图形组件</div><div class="ttdef"><b>Definition</b> <a href="Polygon_8hpp_source.html#l00012">Polygon.hpp:12</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -261,13 +276,13 @@ template&lt;<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272
 
 <p>Implements <a class="el" href="classdao_1_1ifc_1_1IGraph.html#a91dd4881b4f4d1f5d8bab459ba915edc">dao::ifc::IGraph</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00027">27</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                                          {</div>
-<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>: m_vertices) {</div>
-<div class="line"><span class="lineno">   29</span>                <a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>.<a class="code hl_function" href="#a99c844f63dc3fa061eedf169271ac40b">rotate</a>(<a class="code hl_class" href="classdao_1_1Polygon.html">cx</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">cy</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">theta</a>);</div>
-<div class="line"><span class="lineno">   30</span>            }</div>
-<div class="line"><span class="lineno">   31</span>        }</div>
-<div class="ttc" id="aclassdao_1_1Polygon_html_a99c844f63dc3fa061eedf169271ac40b"><div class="ttname"><a href="#a99c844f63dc3fa061eedf169271ac40b">dao::Polygon::rotate</a></div><div class="ttdeci">void rotate(const f32 cx, const f32 cy, const f32 theta) override</div><div class="ttdoc">旋转图形</div><div class="ttdef"><b>Definition</b> <a href="Polygon_8hpp_source.html#l00027">Polygon.hpp:27</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00037">37</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                          {</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>: m_vertices) {</div>
+<div class="line"><span class="lineno">   39</span>                <a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>.<a class="code hl_function" href="#a99c844f63dc3fa061eedf169271ac40b">rotate</a>(<a class="code hl_class" href="classdao_1_1Polygon.html">cx</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">cy</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">theta</a>);</div>
+<div class="line"><span class="lineno">   40</span>            }</div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="ttc" id="aclassdao_1_1Polygon_html_a99c844f63dc3fa061eedf169271ac40b"><div class="ttname"><a href="#a99c844f63dc3fa061eedf169271ac40b">dao::Polygon::rotate</a></div><div class="ttdeci">void rotate(const f32 cx, const f32 cy, const f32 theta) override</div><div class="ttdoc">旋转图形</div><div class="ttdef"><b>Definition</b> <a href="Polygon_8hpp_source.html#l00037">Polygon.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,13 +326,13 @@ template&lt;<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272
 
 <p>Implements <a class="el" href="classdao_1_1ifc_1_1IGraph.html#a5240adeabad999d2e41570fe35089b6d">dao::ifc::IGraph</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00021">21</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                            {</div>
-<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>: m_vertices) {</div>
-<div class="line"><span class="lineno">   23</span>                <a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>.<a class="code hl_function" href="#a2e5c92f323aa6a1ac8b1ef6d1355ac95">translate</a>(<a class="code hl_class" href="classdao_1_1Polygon.html">dx</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">dy</a>);</div>
-<div class="line"><span class="lineno">   24</span>            }</div>
-<div class="line"><span class="lineno">   25</span>        }</div>
-<div class="ttc" id="aclassdao_1_1Polygon_html_a2e5c92f323aa6a1ac8b1ef6d1355ac95"><div class="ttname"><a href="#a2e5c92f323aa6a1ac8b1ef6d1355ac95">dao::Polygon::translate</a></div><div class="ttdeci">void translate(const f32 dx, const f32 dy) override</div><div class="ttdoc">平移图形</div><div class="ttdef"><b>Definition</b> <a href="Polygon_8hpp_source.html#l00021">Polygon.hpp:21</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00027">27</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                            {</div>
+<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>: m_vertices) {</div>
+<div class="line"><span class="lineno">   29</span>                <a class="code hl_class" href="classdao_1_1Polygon.html">vertex</a>.<a class="code hl_function" href="#a2e5c92f323aa6a1ac8b1ef6d1355ac95">translate</a>(<a class="code hl_class" href="classdao_1_1Polygon.html">dx</a>, <a class="code hl_class" href="classdao_1_1Polygon.html">dy</a>);</div>
+<div class="line"><span class="lineno">   30</span>            }</div>
+<div class="line"><span class="lineno">   31</span>        }</div>
+<div class="ttc" id="aclassdao_1_1Polygon_html_a2e5c92f323aa6a1ac8b1ef6d1355ac95"><div class="ttname"><a href="#a2e5c92f323aa6a1ac8b1ef6d1355ac95">dao::Polygon::translate</a></div><div class="ttdeci">void translate(const f32 dx, const f32 dy) override</div><div class="ttdoc">平移图形</div><div class="ttdef"><b>Definition</b> <a href="Polygon_8hpp_source.html#l00027">Polygon.hpp:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,20 +371,30 @@ template&lt;<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272
 
 <p>Implements <a class="el" href="classdao_1_1ifc_1_1IGraph.html#aed506de7b1e048a031caa70c8ccaa53e">dao::ifc::IGraph</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00033">33</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                                       {</div>
-<div class="line"><span class="lineno">   34</span>            <span class="keyword">auto</span> <a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a> = <a class="code hl_class" href="classdao_1_1Polygon.html">batchRenderer</a>.allocateVertices(0, (m_vertices.size() - 2) * 3);</div>
-<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Polygon.html">i32</a> <a class="code hl_class" href="classdao_1_1Polygon.html">i</a> = 1; <a class="code hl_class" href="classdao_1_1Polygon.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a> - 1; ++<a class="code hl_class" href="classdao_1_1Polygon.html">i</a>) {</div>
-<div class="line"><span class="lineno">   36</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[0].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
-<div class="line"><span class="lineno">   37</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[<a class="code hl_class" href="classdao_1_1Polygon.html">i</a>].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
-<div class="line"><span class="lineno">   38</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[<a class="code hl_class" href="classdao_1_1Polygon.html">i</a> + 1].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
-<div class="line"><span class="lineno">   39</span>            }</div>
-<div class="line"><span class="lineno">   40</span>        }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="Polygon_8hpp_source.html#l00045">45</a> of file <a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                                       {</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keyword">auto</span> <a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a> = <a class="code hl_class" href="classdao_1_1Polygon.html">batchRenderer</a>.allocateVertices(0, (m_vertices.size() - 2) * 3);</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">for</span> (<a class="code hl_class" href="classdao_1_1Polygon.html">i32</a> <a class="code hl_class" href="classdao_1_1Polygon.html">i</a> = 1; <a class="code hl_class" href="classdao_1_1Polygon.html">i</a> &lt; <a class="code hl_class" href="classdao_1_1Polygon.html">VertexNum</a> - 1; ++<a class="code hl_class" href="classdao_1_1Polygon.html">i</a>) {</div>
+<div class="line"><span class="lineno">   48</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[0].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
+<div class="line"><span class="lineno">   49</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[<a class="code hl_class" href="classdao_1_1Polygon.html">i</a>].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
+<div class="line"><span class="lineno">   50</span>                *(<a class="code hl_class" href="classdao_1_1Polygon.html">vertices</a>++) = m_vertices[<a class="code hl_class" href="classdao_1_1Polygon.html">i</a> + 1].<a class="code hl_class" href="classdao_1_1Polygon.html">getSDLVertex</a>();</div>
+<div class="line"><span class="lineno">   51</span>            }</div>
+<div class="line"><span class="lineno">   52</span>        }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Polygon_abf1e81192ce56232042bf6d8b6c8fcbe_cgraph.png" border="0" usemap="#aclassdao_1_1Polygon_abf1e81192ce56232042bf6d8b6c8fcbe_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Polygon_abf1e81192ce56232042bf6d8b6c8fcbe_cgraph" id="aclassdao_1_1Polygon_abf1e81192ce56232042bf6d8b6c8fcbe_cgraph">
+<area shape="rect" title="将图形写入批处理渲染器" alt="" coords="5,13,204,38"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49" title="分配指定数量的顶点空间" alt="" coords="252,5,403,45"/>
+<area shape="poly" title=" " alt="" coords="204,23,238,23,238,28,204,28"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/components/graphs/<a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a></li>
+<li>libCode/include/components/graphs/<a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

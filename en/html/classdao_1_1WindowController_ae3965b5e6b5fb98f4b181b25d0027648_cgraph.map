@@ -1,0 +1,17 @@
+<map id="dao::WindowController::executeCommand" name="dao::WindowController::executeCommand">
+<area shape="rect" id="Node000001" title="执行命令" alt="" coords="5,97,176,137"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#abd4677dadbb2df5c579953224348b4a3" title="移动窗口位置" alt="" coords="232,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,94,167,66,223,40,247,32,248,37,225,44,170,71,123,99"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#aee09499f8b02c51e3589c654930c7fb5" title="设置点击是否穿透" alt="" coords="224,55,443,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,97,257,80,258,85,177,102"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Window.html#a908a73535d29d58cb41e2ac46a35689e" title="设置位置" alt="" coords="241,104,426,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,114,227,114,227,119,176,119"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Window.html#a94ae947984f73f8709af15280cbb0ba4" title="设置大小" alt="" coords="253,153,413,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="177,131,258,148,257,153,176,137"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换页面" alt="" coords="240,203,427,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="124,134,170,162,225,188,253,197,251,202,223,192,168,167,121,139"/>
+<area shape="rect" id="Node000007" href="$namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8" title=" " alt="" coords="499,177,645,203"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="427,203,485,197,485,202,427,208"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1Window.html#ac6b85f4d116e18f380d043ea365921af" title="设置标题" alt="" coords="491,227,653,252"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="427,222,477,227,476,232,427,227"/>
+</map>

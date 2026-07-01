@@ -1,0 +1,5 @@
+<map id="dao::web::HttpClient::Impl::withClient" name="dao::web::HttpClient::Impl::withClient">
+<area shape="rect" id="Node000001" title="在 variant 上执行操作，visit 展开 unique_ptr 后透传引用给 f" alt="" coords="208,5,363,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient_1_1Impl.html#ac5b581d865b6dd95d479058c7a10928d" title="同步执行 HTTP 请求，按 HttpMethod 分发到 httplib 对应方法" alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,161,28,161,23,194,23"/>
+</map>

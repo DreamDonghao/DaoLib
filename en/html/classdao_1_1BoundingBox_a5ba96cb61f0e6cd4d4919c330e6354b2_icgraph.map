@@ -1,7 +1,0 @@
-<map id="dao::BoundingBox::isInBoundingBox" name="dao::BoundingBox::isInBoundingBox">
-<area shape="rect" id="Node000001" title="判断点 (x,y) 是否在边界框内" alt="" coords="255,31,512,56"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Button.html#a1ea9cd567a8f343b39f7839166855342" title="处理鼠标事件" alt="" coords="13,5,199,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,33,199,29,200,24,241,28"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1InputBox.html#ad0bc0068c55bafb1ece54db487e42406" title="处理鼠标和键盘事件" alt="" coords="5,55,207,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,58,207,61,207,56,241,53"/>
-</map>

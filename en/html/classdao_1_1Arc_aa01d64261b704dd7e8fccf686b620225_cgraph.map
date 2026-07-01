@@ -1,0 +1,5 @@
+<map id="dao::Arc::rotate" name="dao::Arc::rotate">
+<area shape="rect" id="Node000001" title="旋转图形" alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#af0b37fb0cac809003fdbf33a937709b5" title="旋转向量，将点绕指定中心点旋转指定角度" alt="" coords="176,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
+</map>

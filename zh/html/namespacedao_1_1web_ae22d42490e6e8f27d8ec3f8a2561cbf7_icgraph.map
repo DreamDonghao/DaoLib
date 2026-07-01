@@ -1,0 +1,5 @@
+<map id="dao::web::toHttplibHeaders" name="dao::web::toHttplibHeaders">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,13,408,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1web_1_1HttpClient_1_1Impl.html#ac5b581d865b6dd95d479058c7a10928d" title="同步执行 HTTP 请求，按 HttpMethod 分发到 httplib 对应方法" alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>

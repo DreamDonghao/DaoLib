@@ -1,0 +1,5 @@
+<map id="dao::TickTimer::setInterval" name="dao::TickTimer::setInterval">
+<area shape="rect" id="Node000001" title="修改触发间隔" alt="" coords="5,5,203,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1TickTimer.html#a162b6e8707c21a8deddb180f01f35979" title="获取当前间隔" alt="" coords="251,5,428,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+</map>

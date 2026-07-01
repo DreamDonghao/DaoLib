@@ -1,5 +1,6 @@
 <map id="dao::Image::Image" name="dao::Image::Image">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,149,31"/>
-<area shape="rect" id="Node000002" href="$namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="197,5,351,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,15,183,15,183,21,150,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,149,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="45,31,38,21,42,11,55,5,77,3,104,6,115,15,112,19,102,11,77,8,57,10,46,15,44,20,49,28"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#ad96690207b9d82980d7a5d689b83a950" title="通过纹理ID获取对应的图集区域数据" alt="" coords="197,29,351,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,39,183,39,183,45,150,45"/>
 </map>

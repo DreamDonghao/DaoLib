@@ -1,0 +1,21 @@
+<map id="dao::ColorRGBA::b" name="dao::ColorRGBA::b">
+<area shape="rect" id="Node000001" title="获取蓝色通道值" alt="" coords="768,119,909,144"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="516,93,720,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="754,124,720,120,720,115,755,119"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ColorRGBA.html#ab097f5daa2d6ef03bc27196453ebc285" title="将十六进制颜色字符串转换为ColorRGBA对象" alt="" coords="259,5,467,31"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="799,115,719,83,588,52,466,32,467,27,590,47,721,78,801,110"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1ColorRGBA.html#ad322c53c5713f82dd5a7ba109d9e7b01" title="设置所有颜色分量" alt="" coords="541,143,695,168"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="755,143,695,150,695,144,754,138"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1ColorRGBA.html#ab5e795bd0b22871c69da8b0dcc4a813a" title="设置蓝色通道值" alt="" coords="537,192,699,217"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="799,152,721,183,681,194,679,189,719,178,797,147"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ColorRGBA.html#a85c829f7eeb0a94ffbb6669f57fa5703" title="构造函数（十六进制字符串）" alt="" coords="5,31,209,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,95,209,58,210,53,503,89"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="571,91,467,53,407,33,409,28,469,47,573,86"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1ColorRGBA.html#a8afb1e6e1b40c9a1c3ceac731a9eef26" title="不等比较操作符" alt="" coords="261,107,465,132"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="502,115,465,117,465,111,502,109"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1ColorRGBA.html#a33db2c8e9676189131b3d82fcf2c00e4" title="相等比较操作符" alt="" coords="257,156,468,181"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="552,125,517,134,469,147,422,159,421,153,467,142,515,129,551,120"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1ColorRGBA.html#a6bc91fdf21708235653f56c7fbb0df54" title="通过十六进制字符串设置颜色" alt="" coords="286,205,439,231"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="530,126,518,133,502,148,494,164,486,181,470,196,441,209,439,205,466,192,482,177,490,162,498,145,514,129,528,122"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="246,32,210,36,209,31,245,27"/>
+</map>

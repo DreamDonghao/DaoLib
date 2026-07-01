@@ -1,0 +1,9 @@
+<map id="dao::Point::x" name="dao::Point::x">
+<area shape="rect" id="Node000001" title="获取点的 X 坐标" alt="" coords="201,55,304,80"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Point.html#a868560df06d4a355327e84f9fe2d2bd0" title="使用指定坐标构造点对象" alt="" coords="15,5,143,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,53,124,33,126,28,195,48"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Point.html#a62d14400cbe1c17f02fccca9ad981b93" title="设置点的坐标" alt="" coords="5,55,153,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,70,153,70,153,65,188,65"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Point.html#af65ad6a0d79998c58e4aea73c7b2ae44" title="设置点的 X 坐标" alt="" coords="17,104,141,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,86,126,106,124,101,194,81"/>
+</map>

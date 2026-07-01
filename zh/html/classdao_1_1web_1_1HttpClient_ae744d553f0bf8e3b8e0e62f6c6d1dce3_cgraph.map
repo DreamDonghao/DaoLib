@@ -1,0 +1,5 @@
+<map id="dao::web::HttpClient::request" name="dao::web::HttpClient::request">
+<area shape="rect" id="Node000001" title="发送通用请求（异步）" alt="" coords="5,5,160,45"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#a5cbc9f994c2e5d21237029b8b92a364d" title="托盘回调函数适配器" alt="" coords="208,13,316,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+</map>

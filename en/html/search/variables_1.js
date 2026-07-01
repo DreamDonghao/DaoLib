@@ -6,7 +6,7 @@ var searchData=
   ['bg_5fyellow_3',['bg_yellow',['../namespacedao_1_1fmt__color.html#a4d646a64c6c99fb24a3f5be6ed31e1e1',1,'dao::fmt_color']]],
   ['black_4',['black',['../namespacedao_1_1fmt__color.html#a9adb01d577fea8efc5ab473e7e78f107',1,'dao::fmt_color']]],
   ['blue_5',['blue',['../namespacedao_1_1fmt__color.html#acee7066172533aa5088bff2ed427cec9',1,'dao::fmt_color']]],
-  ['body_6',['body',['../structdao_1_1web_1_1HttpResponse.html#a1d91d67cc3a07b18e5645a64ca626c97',1,'dao::web::HttpResponse']]],
+  ['body_6',['body',['../structdao_1_1web_1_1HttpResponse.html#a1d91d67cc3a07b18e5645a64ca626c97',1,'dao::web::HttpResponse::body'],['../structdao_1_1web_1_1HttpRequest.html#ade29bd3499e4fee4617c2c47f2619e0f',1,'dao::web::HttpRequest::body']]],
   ['bold_7',['bold',['../namespacedao_1_1fmt__color.html#a52deae5fd5cb2a1724fc57adbc6f7ab6',1,'dao::fmt_color']]],
   ['bright_5fblue_8',['bright_blue',['../namespacedao_1_1fmt__color.html#aa9e7d6a27634ea51f59b4bcc6c567433',1,'dao::fmt_color']]],
   ['bright_5fcyan_9',['bright_cyan',['../namespacedao_1_1fmt__color.html#abeef76df1842e40cc430633b9f967885',1,'dao::fmt_color']]],

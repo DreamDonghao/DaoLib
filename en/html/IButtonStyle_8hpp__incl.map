@@ -1,5 +1,5 @@
-<map id="code/include/interface/IButtonStyle.hpp" name="code/include/interface/IButtonStyle.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="106,5,273,45"/>
+<map id="libCode/include/interface/IButtonStyle.hpp" name="libCode/include/interface/IButtonStyle.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,281,45"/>
 <area shape="rect" id="Node000002" href="$IButton_8hpp.html" title=" " alt="" coords="5,93,176,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,48,124,86,121,82,166,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="200,101,379,126"/>

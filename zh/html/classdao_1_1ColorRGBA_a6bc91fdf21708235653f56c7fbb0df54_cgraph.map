@@ -1,0 +1,13 @@
+<map id="dao::ColorRGBA::set" name="dao::ColorRGBA::set">
+<area shape="rect" id="Node000001" title="通过十六进制字符串设置颜色" alt="" coords="5,80,159,105"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1ColorRGBA.html#a01c24fdf79e7ec9e166fed6a131d1c07" title="构造函数（RGBA分量）" alt="" coords="207,80,411,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,90,193,90,193,95,159,95"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1ColorRGBA.html#ab64644a0ada0dfce4dacd0e3660dd3f0" title="获取透明度值" alt="" coords="459,5,600,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,77,477,33,479,38,348,82"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1ColorRGBA.html#a1289890c6e7247cb6bc7597a84ea6be8" title="获取蓝色通道值" alt="" coords="459,55,600,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="410,78,445,74,445,80,411,84"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1ColorRGBA.html#a939ff68e385a78c8c8dd2fd057dcd294" title="获取绿色通道值" alt="" coords="459,104,600,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="411,101,445,105,445,110,410,106"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1ColorRGBA.html#a0514035326561bc9d8688ebff102ca99" title="获取红色通道值" alt="" coords="460,153,599,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="349,103,478,146,476,151,347,108"/>
+</map>

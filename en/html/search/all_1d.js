@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['x_0',['x',['../classdao_1_1Rectangle.html#a4aee8de063f6073c76ed05e24e45603c',1,'dao::Rectangle::x()'],['../classdao_1_1Text.html#ad46a989f33c6cd24faafe0f285d83d0c',1,'dao::Text::x()'],['../classdao_1_1Vertex.html#abb33c5e607ee9dfd2ead15c055da2795',1,'dao::Vertex::x()'],['../classdao_1_1Point.html#a7035c254a762f20965fac943e5ae0d24',1,'dao::Point::x()']]]
+  ['wait_0',['wait',['../classdao_1_1FrameLimiter.html#a8aa8563286f327130680004ce50e4e06',1,'dao::FrameLimiter']]],
+  ['warn_1',['WARN',['../namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fa32bd8a1db2275458673903bdb84cb277',1,'dao']]],
+  ['white_2',['White',['../namespacedao.html#abdeff89559f45d72636a6430f476703b',1,'dao']]],
+  ['white_3',['white',['../namespacedao_1_1fmt__color.html#a75f7fc359840bc182107158947d808f4',1,'dao::fmt_color']]],
+  ['width_4',['width',['../classdao_1_1Rectangle.html#adbf599bce390f8a063967cdb13922612',1,'dao::Rectangle::width()'],['../classdao_1_1Text.html#aee5a7c5ccfad92f7e4775753b691b44c',1,'dao::Text::width()']]],
+  ['window_5',['Window',['../classdao_1_1Window.html',1,'dao::Window'],['../classdao_1_1Window.html#ae2c38877e63bcc6580b958273cc5d5a3',1,'dao::Window::Window()']]],
+  ['window_2ecpp_6',['Window.cpp',['../Window_8cpp.html',1,'']]],
+  ['window_2ehpp_7',['Window.hpp',['../Window_8hpp.html',1,'']]],
+  ['windowcommand_8',['WindowCommand',['../structdao_1_1WindowCommand.html',1,'dao']]],
+  ['windowcommandtype_9',['WindowCommandType',['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67',1,'dao']]],
+  ['windowcontroller_10',['WindowController',['../classdao_1_1WindowController.html',1,'dao::WindowController'],['../classdao_1_1WindowController.html#a037ca4a7d5873eb3d184611bfbecd4da',1,'dao::WindowController::WindowController()=default'],['../classdao_1_1WindowController.html#a96520d1f16df5125cfa33d7c2ce97aba',1,'dao::WindowController::WindowController(const WindowController &amp;)=delete']]],
+  ['windowcontroller_2ecpp_11',['WindowController.cpp',['../WindowController_8cpp.html',1,'']]],
+  ['windowcontroller_2ehpp_12',['WindowController.hpp',['../WindowController_8hpp.html',1,'']]],
+  ['with_20daolib_13',['with DaoLib',['../use.html',1,'Develop with DaoLib'],['../use.html#autotoc_md22',1,'Develop with DaoLib']]],
+  ['withclient_14',['withClient',['../classdao_1_1web_1_1HttpClient_1_1Impl.html#aec4fb7c84e88feff970e86085136a6e3',1,'dao::web::HttpClient::Impl']]],
+  ['wordwrap_15',['wordWrap',['../classdao_1_1Text.html#a92c5bfe3e2a0d68abe1fa790d3de88df',1,'dao::Text']]],
+  ['workstate_16',['WorkState',['../classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722c',1,'dao::Window']]],
+  ['workstate_17',['workState',['../classdao_1_1Window.html#a804cb3b8a2f0b45189c40186f206bae3',1,'dao::Window']]],
+  ['write_20code_20and_20commit_18',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
+  ['writetobatch_19',['writeToBatch',['../classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6',1,'dao::InputBox::writeToBatch()'],['../classdao_1_1Button.html#a6de01ab6088f37698195521a1ef0f9d2',1,'dao::Button::writeToBatch()'],['../classdao_1_1Arc.html#ad563f6130daf5747b3e3fa02c9360220',1,'dao::Arc::writeToBatch()'],['../classdao_1_1Circle.html#ada7a4fdbb52264f267503aa993694d2e',1,'dao::Circle::writeToBatch()'],['../classdao_1_1Ellipse.html#a968a166c172d7ce7b7b421135bd37886',1,'dao::Ellipse::writeToBatch()'],['../classdao_1_1ifc_1_1IGraph.html#aed506de7b1e048a031caa70c8ccaa53e',1,'dao::ifc::IGraph::writeToBatch()'],['../classdao_1_1Line.html#a9ee2ab1dfa0e235f0de4f4e4de70eb6a',1,'dao::Line::writeToBatch()'],['../classdao_1_1Polygon.html#abf1e81192ce56232042bf6d8b6c8fcbe',1,'dao::Polygon::writeToBatch()'],['../classdao_1_1Rectangle.html#a0bde295d3d491477f98064b807e43fcf',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1Ring.html#a03949a7ee655958609db9e8da7dcf517',1,'dao::Ring::writeToBatch()'],['../classdao_1_1RoundedRectangle.html#af2cb7f4e8b3746c356bf05f98c8b9ad5',1,'dao::RoundedRectangle::writeToBatch()'],['../classdao_1_1Sector.html#af2ba609a9938bc8acb96b3974079f972',1,'dao::Sector::writeToBatch()'],['../classdao_1_1Triangle.html#aff6d75adde783fa772bb4f4921391a86',1,'dao::Triangle::writeToBatch()'],['../classdao_1_1Image.html#a546cda629137dc32c6e9c512a6b4d4f8',1,'dao::Image::writeToBatch()'],['../classdao_1_1RectTextBox.html#acaa8459ed4fc00274fb6b2b863b89ed4',1,'dao::RectTextBox::writeToBatch()'],['../classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b',1,'dao::Text::writeToBatch()'],['../classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f',1,'dao::ifc::IDrawable::writeToBatch()'],['../classdao_1_1ifc_1_1IButtonStyle.html#a8f4094de7aad700bea67445062af7394',1,'dao::ifc::IButtonStyle::writeToBatch()']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['使用_20daolib_20开发自己的应用_0',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;使用 DaoLib 开发&quot;&gt;使用 DaoLib 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
-  ['使用_20daolib_20开发_1',['使用 DaoLib 开发',['../use.html',1,'']]],
-  ['使用_20vcpkg_20管理依赖_2',['使用 vcpkg 管理依赖',['../tutorial.html#autotoc_md28',1,'']]]
+  ['上下文管理器_0',['Context — 上下文管理器',['../tutorial.html#context',1,'']]],
+  ['上下文访问_1',['上下文访问',['../ilinebr_01_0dianchor_02_xE6_xA0_xB8_xE5_xBF_x83_xE6_xA1_x86_xE6_x9E_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0gcore_03_03_01core.html#autotoc_md78',1,'']]]
 ];

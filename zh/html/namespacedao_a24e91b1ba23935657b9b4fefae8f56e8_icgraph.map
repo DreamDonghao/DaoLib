@@ -1,0 +1,9 @@
+<map id="dao::detectionError" name="dao::detectionError">
+<area shape="rect" id="Node000001" title=" " alt="" coords="459,31,605,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="233,5,401,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,36,401,31,402,25,445,30"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换页面" alt="" coords="224,55,411,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="445,56,411,60,411,54,445,50"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648" title="执行命令" alt="" coords="5,47,176,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,70,176,70,176,65,210,65"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dao::Circle::translate" name="dao::Circle::translate">
+<area shape="rect" id="Node000001" title="平移图形" alt="" coords="224,5,381,31"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Circle.html#a5eb9e7e7e88b0957af26232daff39947" title="设置圆心位置" alt="" coords="5,5,176,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,21,176,21,176,15,211,15"/>
+</map>

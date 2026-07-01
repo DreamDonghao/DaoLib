@@ -23,16 +23,17 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"首页",url:"index.html"},
-{text:"相关页面",url:"pages.html"},
-{text:"命名空间",url:"namespaces.html",children:[
-{text:"命名空间列表",url:"namespaces.html"},
-{text:"命名空间成员",url:"namespacemembers.html",children:[
-{text:"全部",url:"namespacemembers.html",children:[
+{text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"},
+{text:"Namespace Members",url:"namespacemembers.html",children:[
+{text:"All",url:"namespacemembers.html",children:[
 {text:"a",url:"namespacemembers.html#index_a"},
 {text:"b",url:"namespacemembers.html#index_b"},
 {text:"c",url:"namespacemembers.html#index_c"},
 {text:"d",url:"namespacemembers.html#index_d"},
+{text:"e",url:"namespacemembers.html#index_e"},
 {text:"f",url:"namespacemembers.html#index_f"},
 {text:"g",url:"namespacemembers.html#index_g"},
 {text:"h",url:"namespacemembers.html#index_h"},
@@ -48,17 +49,17 @@ var menudata={children:[
 {text:"u",url:"namespacemembers.html#index_u"},
 {text:"w",url:"namespacemembers.html#index_w"},
 {text:"y",url:"namespacemembers.html#index_y"}]},
-{text:"函数",url:"namespacemembers_func.html"},
-{text:"变量",url:"namespacemembers_vars.html"},
-{text:"类型定义",url:"namespacemembers_type.html"},
-{text:"枚举",url:"namespacemembers_enum.html"}]}]},
-{text:"概念",url:"concepts.html"},
-{text:"类",url:"annotated.html",children:[
-{text:"类列表",url:"annotated.html"},
-{text:"类索引",url:"classes.html"},
-{text:"类继承关系",url:"inherits.html"},
-{text:"类成员",url:"functions.html",children:[
-{text:"全部",url:"functions.html",children:[
+{text:"Functions",url:"namespacemembers_func.html"},
+{text:"Variables",url:"namespacemembers_vars.html"},
+{text:"Typedefs",url:"namespacemembers_type.html"},
+{text:"Enumerations",url:"namespacemembers_enum.html"}]}]},
+{text:"Concepts",url:"concepts.html"},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"},
+{text:"Class Hierarchy",url:"inherits.html"},
+{text:"Class Members",url:"functions.html",children:[
+{text:"All",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},
 {text:"b",url:"functions_b.html#index_b"},
 {text:"c",url:"functions_c.html#index_c"},
@@ -82,7 +83,7 @@ var menudata={children:[
 {text:"x",url:"functions_x.html#index_x"},
 {text:"y",url:"functions_y.html#index_y"},
 {text:"~",url:"functions_~.html#index__7E"}]},
-{text:"函数",url:"functions_func.html",children:[
+{text:"Functions",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
 {text:"b",url:"functions_func_b.html#index_b"},
 {text:"c",url:"functions_func_c.html#index_c"},
@@ -106,10 +107,22 @@ var menudata={children:[
 {text:"x",url:"functions_func_x.html#index_x"},
 {text:"y",url:"functions_func_y.html#index_y"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
-{text:"变量",url:"functions_vars.html"},
-{text:"类型定义",url:"functions_type.html"},
-{text:"枚举",url:"functions_enum.html"},
-{text:"枚举值",url:"functions_eval.html"}]}]},
-{text:"文件",url:"files.html",children:[
-{text:"文件列表",url:"files.html"}]},
-{text:"示例",url:"examples.html"}]}
+{text:"Variables",url:"functions_vars.html",children:[
+{text:"a",url:"functions_vars.html#index_a"},
+{text:"b",url:"functions_vars.html#index_b"},
+{text:"c",url:"functions_vars.html#index_c"},
+{text:"d",url:"functions_vars.html#index_d"},
+{text:"e",url:"functions_vars.html#index_e"},
+{text:"h",url:"functions_vars.html#index_h"},
+{text:"i",url:"functions_vars.html#index_i"},
+{text:"m",url:"functions_vars.html#index_m"},
+{text:"n",url:"functions_vars.html#index_n"},
+{text:"p",url:"functions_vars.html#index_p"},
+{text:"r",url:"functions_vars.html#index_r"},
+{text:"s",url:"functions_vars.html#index_s"},
+{text:"t",url:"functions_vars.html#index_t"}]},
+{text:"Typedefs",url:"functions_type.html"},
+{text:"Enumerations",url:"functions_enum.html"},
+{text:"Enumerator",url:"functions_eval.html"}]}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"}]}]}

@@ -1,8 +1,17 @@
 var searchData=
 [
-  ['val_0',['val',['../classdao_1_1RingVector.html#a691c03f498a1aae3e8ec5e3106f1e854',1,'dao::RingVector::val()'],['../classdao_1_1RingVector.html#af50d442a2cbeb1d77386119799bc0c88',1,'dao::RingVector::val() const']]],
-  ['vertex_1',['Vertex',['../classdao_1_1Vertex.html',1,'dao::Vertex'],['../classdao_1_1Vertex.html#aafbe63962bed9d1b689a20d51d78a22b',1,'dao::Vertex::Vertex()']]],
-  ['vertex_2ehpp_2',['Vertex.hpp',['../Vertex_8hpp.html',1,'']]],
-  ['vertexx_3',['vertexX',['../classdao_1_1Triangle.html#ab04aa59a64eb0898cefb130ed64a36c8',1,'dao::Triangle']]],
-  ['vertexy_4',['vertexY',['../classdao_1_1Triangle.html#a3230754b132f77ae28a0e2f983d0c88c',1,'dao::Triangle']]]
+  ['u16_0',['u16',['../namespacedao.html#a68005dc114d91689af54bd55a8a941ce',1,'dao']]],
+  ['u32_1',['u32',['../namespacedao.html#a462c18f321a06a71fb3175d5d96b1bc6',1,'dao']]],
+  ['u64_2',['u64',['../namespacedao.html#afbe96c048a0e11859b8bc952fca64c5c',1,'dao']]],
+  ['u8_3',['u8',['../namespacedao.html#ab0cd81a977f02d099bca941a483e57ba',1,'dao']]],
+  ['underline_4',['underline',['../namespacedao_1_1fmt__color.html#a2ace7189773b4c6f29ef84f98bad8ff2',1,'dao::fmt_color']]],
+  ['update_5',['update',['../classdao_1_1VoidPage.html#a6b8602d7ca67958291a13e64d4b9a034',1,'dao::VoidPage::update()'],['../classdao_1_1ifc_1_1IPage.html#affbb24599d216bf75947bd3410c3ca9f',1,'dao::ifc::IPage::update()'],['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1ifc_1_1IGeneralPage.html#af835f295dbb1b45f002d170b67d8d714',1,'dao::ifc::IGeneralPage::update()']]],
+  ['use_20develop_20your_20own_20application_20using_20daolib_6',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;Develop with DaoLib&quot;&gt;Develop your own application using DaoLib&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['use_2emd_7',['use.md',['../use_8md.html',1,'']]],
+  ['using_20daolib_8',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot; title=&quot;Develop with DaoLib&quot;&gt;Develop your own application using DaoLib&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['utf32char_9',['utf32char',['../namespacedao.html#addc09e7009536ce405ecc985ece7673c',1,'dao']]],
+  ['utf32str_10',['utf32str',['../namespacedao.html#aaa2e507e6d0fd4d95a3769ce0319c021',1,'dao']]],
+  ['utf32str_5fview_11',['utf32str_view',['../namespacedao.html#a5ab6c427560c26a9f29178932a37bbf9',1,'dao']]],
+  ['utf32toutf8_12',['utf32ToUtf8',['../namespacedao.html#ac0d7db6b8226dcc008422ce1622d54e1',1,'dao']]],
+  ['utf8toutf32_13',['utf8ToUtf32',['../namespacedao.html#a8f3bbed6b827d56d324a434c2acd967c',1,'dao']]]
 ];

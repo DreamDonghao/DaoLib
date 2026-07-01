@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['页面_20page_0',['3. 页面 (Page)',['../tutorial.html#autotoc_md39',1,'']]]
+  ['接口_0',['5.1 IGraph 接口',['../tutorial.html#autotoc_md219',1,'']]]
 ];

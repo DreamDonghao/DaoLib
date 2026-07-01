@@ -1,0 +1,10 @@
+<map id="dao::InputBox::writeToBatch" name="dao::InputBox::writeToBatch">
+<area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,45,209,70"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49" title="分配指定数量的顶点空间" alt="" coords="278,5,429,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,42,264,34,264,40,206,47"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="257,69,449,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,67,244,72,244,78,205,73"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1GlyphAtlas.html#a237c430f181e83af326be2454b3595b7" title="禁用拷贝构造" alt="" coords="497,77,701,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="449,87,484,87,484,92,449,92"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="560,78,551,68,555,58,572,52,599,50,634,54,644,59,648,64,643,67,640,63,633,59,599,55,573,57,559,62,556,68,563,75"/>
+</map>

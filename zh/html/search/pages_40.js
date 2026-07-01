@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['系统要求_0',['系统要求',['../tutorial.html#autotoc_md27',1,'']]]
+  ['帧率限制器_0',['FrameLimiter — 帧率限制器',['../tutorial.html#framelimiter',1,'']]]
 ];

@@ -183,28 +183,10 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="FrameLimiter_8hpp_source.html#l00014">14</a> of file <a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>            : m_frame_duration(std::chrono::nanoseconds(1&#39;000&#39;000&#39;000 / target_fps)), <span class="comment">// 计算每帧持续时间（纳秒）</span></div>
 <div class="line"><span class="lineno">   16</span>              m_last_frame_time(std::chrono::steady_clock::now()),                    <span class="comment">// 记录上一帧的时间点</span></div>
-<div class="line"><span class="lineno">   17</span>              m_spin_threshold(std::chrono::milliseconds(2)) {</div>
+<div class="line"><span class="lineno">   17</span>              m_spin_threshold(std::chrono::milliseconds(0)) {</div>
 <div class="line"><span class="lineno">   18</span>            <span class="comment">// 自旋等待阈值（2毫秒）</span></div>
 <div class="line"><span class="lineno">   19</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph" id="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_cgraph">
-<area shape="rect" title="构造函数" alt="" coords="5,29,155,69"/>
-<area shape="poly" title=" " alt="" coords="52,29,50,20,54,11,65,5,80,3,98,6,107,13,104,17,96,11,80,8,66,10,58,14,55,21,57,28"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph.png" border="0" usemap="#aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph" id="aclassdao_1_1FrameLimiter_ae7ff8948e2799362adfec6977073e595_icgraph">
-<area shape="rect" title="构造函数" alt="" coords="5,29,155,69"/>
-<area shape="poly" title=" " alt="" coords="104,17,96,11,80,8,66,10,58,14,55,21,57,28,52,29,50,20,54,11,65,5,80,3,98,6,107,13"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -298,7 +280,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>code/include/core/frame/<a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a></li>
+<li>libCode/include/core/frame/<a class="el" href="FrameLimiter_8hpp_source.html">FrameLimiter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,16 @@
+<map id="dao::Text::writeToBatch" name="dao::Text::writeToBatch">
+<area shape="rect" id="Node000001" title="写入批处理" alt="" coords="5,141,179,166"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49" title="分配指定数量的顶点空间" alt="" coords="247,5,398,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,138,157,98,225,55,240,48,242,53,228,60,160,103,110,143"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="227,69,419,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,138,236,110,238,116,140,143"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1BatchRenderer.html#a8fe8dbf71996a24062c79c8046a196aa" title=" " alt="" coords="247,133,398,173"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="179,151,234,151,234,156,179,156"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1Text.html#ad46a989f33c6cd24faafe0f285d83d0c" title=" " alt="" coords="274,198,371,223"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="145,163,262,193,260,198,143,169"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Text.html#acf2872aeb7012d902ceadfdfc91f541e" title=" " alt="" coords="274,247,371,273"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="112,164,163,198,228,232,261,244,260,249,226,237,160,202,109,168"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1GlyphAtlas.html#a237c430f181e83af326be2454b3595b7" title="禁用拷贝构造" alt="" coords="467,77,671,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,87,453,87,453,92,419,92"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="529,78,520,68,525,58,541,52,569,50,603,54,613,59,617,64,612,67,610,63,602,59,569,55,542,57,528,62,526,68,533,75"/>
+</map>

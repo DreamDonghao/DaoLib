@@ -1,0 +1,9 @@
+<map id="dao::Rectangle::setPosition" name="dao::Rectangle::setPosition">
+<area shape="rect" id="Node000001" title="设置位置（左上角）" alt="" coords="5,55,204,80"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html#a728f5930b52fadcc43aba8444224de56" title="平移图形" alt="" coords="252,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,52,268,31,269,36,168,57"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Rectangle.html#a4aee8de063f6073c76ed05e24e45603c" title="获取左上角 x 坐标" alt="" coords="277,55,412,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,65,264,65,264,70,204,70"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Rectangle.html#aa5fccd4ca6f6b6e69fcf86777e2ea1f6" title="获取左上角 y 坐标" alt="" coords="277,104,412,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,77,269,99,268,104,167,83"/>
+</map>

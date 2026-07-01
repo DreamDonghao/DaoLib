@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['图片_20image_0',['图片 (Image)',['../tutorial.html#autotoc_md44',1,'']]]
+  ['典型模式_0',['典型模式',['../ilinebr_01_0dianchor_02_xE6_xA0_xB8_xE5_xBF_x83_xE6_xA1_x86_xE6_x9E_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0gcore_03_03_01core.html#autotoc_md68',1,'']]]
 ];

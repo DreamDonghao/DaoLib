@@ -2535,10 +2535,3 @@ details[open]>summary::before {
         display: inline-block;
         transform: rotate(0deg);
 }
-
-html {
---timestamp: '2026年 六月 9日 星期二 14:11:00';
-}
-span.timestamp { content: ' '; }
-span.timestamp:before { content: var(--timestamp); }
-

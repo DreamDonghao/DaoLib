@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_0',['LogLevel',['../namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6f',1,'dao']]]
+  ['inputstatus_0',['InputStatus',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033b',1,'dao']]]
 ];

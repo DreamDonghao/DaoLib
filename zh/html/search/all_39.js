@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['托盘系统_0',['托盘系统',['../tutorial.html#autotoc_md55',1,'']]]
+  ['天气查询应用_0',['13. 完整示例 — 天气查询应用',['../tutorial.html#complete-example',1,'']]]
 ];

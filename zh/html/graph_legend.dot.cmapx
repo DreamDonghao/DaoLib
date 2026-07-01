@@ -1,4 +1,4 @@
-<map id="图例" name="图例">
+<map id="Graph Legend" name="Graph Legend">
 <area shape="rect" id="Node000009" title=" " alt="" coords="340,181,420,207"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="5,93,99,119"/>
 <area shape="poly" id="edge1" title=" " alt="" coords="110,120,341,180,339,185,108,125"/>

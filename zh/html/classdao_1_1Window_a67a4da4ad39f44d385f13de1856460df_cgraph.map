@@ -1,0 +1,8 @@
+<map id="dao::Window::addPage" name="dao::Window::addPage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,173,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,31,47,21,51,11,65,5,89,3,119,6,131,15,128,20,117,11,89,8,67,10,55,15,52,20,59,28"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#ae2c38877e63bcc6580b958273cc5d5a3" title=" " alt="" coords="221,29,387,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="174,39,208,39,208,45,174,45"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态" alt="" coords="435,29,613,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="387,39,421,39,421,45,387,45"/>
+</map>

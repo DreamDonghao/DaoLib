@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['项目依赖_0',['项目依赖',['../join.html#autotoc_md18',1,'']]],
-  ['项目_1',['集成到 CMake 项目',['../tutorial.html#autotoc_md29',1,'']]]
+  ['提交_20pull_20request_0',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]]
 ];

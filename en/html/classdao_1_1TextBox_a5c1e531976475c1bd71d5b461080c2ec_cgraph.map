@@ -1,6 +1,0 @@
-<map id="dao::TextBox::TextBox" name="dao::TextBox::TextBox">
-<area shape="rect" id="Node000001" title="构造函数" alt="" coords="5,29,172,55"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,31,40,21,44,11,61,5,89,3,124,7,134,11,137,17,133,20,130,15,122,12,89,8,62,10,48,15,45,20,52,27"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BoundingBox.html#af0ea48a2ecb7283399e56c5cd90cdda3" title="构造函数" alt="" coords="220,29,455,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,39,206,39,206,45,172,45"/>
-</map>

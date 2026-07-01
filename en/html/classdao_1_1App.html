@@ -150,9 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0a6f1b302cded708edfbb51cf7dce8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
 <tr class="memitem:a652e22a7a65185638d9e299e625cbd89" id="r_a652e22a7a65185638d9e299e625cbd89"><td class="memItemLeft"><a class="el" href="classdao_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a652e22a7a65185638d9e299e625cbd89">createWindow</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> width, <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> height, std::string_view tag, <a class="el" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722c">Window::WorkState</a> workState, bool isSubject=false, bool resizable=false, bool transparent=false, bool onTop=false, bool borderless=false)</td></tr>
 <tr class="memdesc:a652e22a7a65185638d9e299e625cbd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建窗口  <br /></td></tr>
-<tr class="memitem:a0d54948b998aa74ccca2a5b63e6fb88a" id="r_a0d54948b998aa74ccca2a5b63e6fb88a"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
-<tr class="memitem:a0d54948b998aa74ccca2a5b63e6fb88a template"><td class="memItemLeft"><a class="el" href="classdao_1_1Tray.html">Tray</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0d54948b998aa74ccca2a5b63e6fb88a">createTray</a> (const std::string_view iconPath, const std::string_view tooltip)</td></tr>
-<tr class="memdesc:a0d54948b998aa74ccca2a5b63e6fb88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建托盘  <br /></td></tr>
+<tr class="memitem:a41ea61261f4a936087ae00261cdcd412" id="r_a41ea61261f4a936087ae00261cdcd412"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
+<tr class="memitem:a41ea61261f4a936087ae00261cdcd412 template"><td class="memItemLeft"><a class="el" href="classdao_1_1Tray.html">Tray</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a41ea61261f4a936087ae00261cdcd412">createTray</a> ()</td></tr>
+<tr class="memdesc:a41ea61261f4a936087ae00261cdcd412"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建托盘  <br /></td></tr>
 <tr class="memitem:ac3b36e1297c14b39c0a100a8f3a2b5af" id="r_ac3b36e1297c14b39c0a100a8f3a2b5af"><td class="memItemLeft"><a class="el" href="classdao_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac3b36e1297c14b39c0a100a8f3a2b5af">getWindow</a> (const <a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId)</td></tr>
 <tr class="memdesc:ac3b36e1297c14b39c0a100a8f3a2b5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据窗口ID获取窗口对象  <br /></td></tr>
 <tr class="memitem:a4b5486e80b896ce8140f1f844b403422" id="r_a4b5486e80b896ce8140f1f844b403422"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4b5486e80b896ce8140f1f844b403422">run</a> ()</td></tr>
@@ -211,20 +211,45 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00006">6</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    6</span>                                                   : m_frameLimiter(fps) {</div>
 <div class="line"><span class="lineno">    7</span>        <span class="keywordflow">if</span> (!SDL_Init(SDL_INIT_VIDEO)) {</div>
-<div class="line"><span class="lineno">    8</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">    8</span>            <a class="code hl_function" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d">ErrorLog</a>(std::string(<span class="stringliteral">&quot;初始化 SDL 失败 &quot;</span>) + SDL_GetError());</div>
 <div class="line"><span class="lineno">    9</span>        }</div>
 <div class="line"><span class="lineno">   10</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI, <span class="stringliteral">&quot;1&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   11</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_Hint 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">   11</span>            <a class="code hl_function" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d">ErrorLog</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_Hint 失败 &quot;</span>) + SDL_GetError());</div>
 <div class="line"><span class="lineno">   12</span>        }</div>
-<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (!TTF_Init()) {</div>
-<div class="line"><span class="lineno">   14</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(std::string(<span class="stringliteral">&quot;初始化 SDL_TTF 失败 &quot;</span>) + SDL_GetError());</div>
+<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, clickThrough ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   14</span>            <a class="code hl_function" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d">ErrorLog</a>(<span class="stringliteral">&quot;失焦点击生效设置失败&quot;</span>);</div>
 <div class="line"><span class="lineno">   15</span>        }</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (!SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, clickThrough ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   17</span>            <a class="code hl_function" href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">DAO_ERROR_LOG</a>(<span class="stringliteral">&quot;失焦点击生效设置失败&quot;</span>);</div>
-<div class="line"><span class="lineno">   18</span>        }</div>
-<div class="line"><span class="lineno">   19</span>    }</div>
-<div class="ttc" id="anamespacedao_html_a4500c150025393f890f407b5eab5b5e5"><div class="ttname"><a href="namespacedao.html#a4500c150025393f890f407b5eab5b5e5">dao::DAO_ERROR_LOG</a></div><div class="ttdeci">void DAO_ERROR_LOG(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>Definition</b> <a href="Log_8hpp_source.html#l00026">Log.hpp:26</a></div></div>
-</div><!-- fragment -->
+<div class="line"><span class="lineno">   16</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a81a0f55a3fe942cdb8d8051c161cff0d"><div class="ttname"><a href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d">dao::ErrorLog</a></div><div class="ttdeci">void ErrorLog(const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</div><div class="ttdef"><b>Definition</b> <a href="Log_8hpp_source.html#l00025">Log.hpp:25</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_cgraph.png" border="0" usemap="#aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_cgraph" id="aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_cgraph">
+<area shape="rect" title="构造函数" alt="" coords="5,5,117,31"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="165,5,273,31"/>
+<area shape="poly" title=" " alt="" coords="117,15,152,15,152,21,117,21"/>
+<area shape="rect" href="namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="321,5,485,31"/>
+<area shape="poly" title=" " alt="" coords="274,15,307,15,307,21,274,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_icgraph.png" border="0" usemap="#aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_icgraph" id="aclassdao_1_1App_ac3a59fc5034dda759ad38e66d521452c_icgraph">
+<area shape="rect" title="构造函数" alt="" coords="207,80,319,105"/>
+<area shape="rect" href="classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="26,5,138,31"/>
+<area shape="poly" title=" " alt="" coords="225,76,158,44,126,33,128,28,160,40,227,71"/>
+<area shape="rect" href="classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="26,55,138,80"/>
+<area shape="poly" title=" " alt="" coords="193,86,138,78,139,73,193,80"/>
+<area shape="rect" href="classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="5,104,159,129"/>
+<area shape="poly" title=" " alt="" coords="194,104,160,109,159,104,193,99"/>
+<area shape="rect" href="classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="5,153,159,179"/>
+<area shape="poly" title=" " alt="" coords="225,114,160,143,125,156,123,151,158,138,222,109"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="abc08039a68ede5cb7ad857ba60a5127e" name="abc08039a68ede5cb7ad857ba60a5127e"></a>
@@ -251,6 +276,20 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>禁止拷贝构造 </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_abc08039a68ede5cb7ad857ba60a5127e_cgraph.png" border="0" usemap="#aclassdao_1_1App_abc08039a68ede5cb7ad857ba60a5127e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_abc08039a68ede5cb7ad857ba60a5127e_cgraph" id="aclassdao_1_1App_abc08039a68ede5cb7ad857ba60a5127e_cgraph">
+<area shape="rect" title="禁止拷贝构造" alt="" coords="5,5,117,31"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="165,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="118,15,152,15,152,21,118,21"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="325,5,433,31"/>
+<area shape="poly" title=" " alt="" coords="277,15,312,15,312,21,277,21"/>
+<area shape="rect" href="namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="481,5,645,31"/>
+<area shape="poly" title=" " alt="" coords="434,15,467,15,467,21,434,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -278,6 +317,20 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>禁止移动构造 </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_aa2f99ef6dc73c154e87132b8c1ae3aad_cgraph.png" border="0" usemap="#aclassdao_1_1App_aa2f99ef6dc73c154e87132b8c1ae3aad_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_aa2f99ef6dc73c154e87132b8c1ae3aad_cgraph" id="aclassdao_1_1App_aa2f99ef6dc73c154e87132b8c1ae3aad_cgraph">
+<area shape="rect" title="禁止移动构造" alt="" coords="5,5,117,31"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="165,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="118,15,152,15,152,21,118,21"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="325,5,433,31"/>
+<area shape="poly" title=" " alt="" coords="277,15,312,15,312,21,277,21"/>
+<area shape="rect" href="namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="481,5,645,31"/>
+<area shape="poly" title=" " alt="" coords="434,15,467,15,467,21,434,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -298,18 +351,34 @@ Public Member Functions</h2></td></tr>
 
 <p>析构函数 </p>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00021">21</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>              {</div>
-<div class="line"><span class="lineno">   22</span>        m_windows.clear();  <span class="comment">// 先销毁所有窗口，确保 TTF_CloseFont 在 TTF_Quit 之前调用</span></div>
-<div class="line"><span class="lineno">   23</span>        TTF_Quit();</div>
-<div class="line"><span class="lineno">   24</span>        SDL_Quit();</div>
-<div class="line"><span class="lineno">   25</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00018">18</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>              {</div>
+<div class="line"><span class="lineno">   19</span>        m_windows.clear();</div>
+<div class="line"><span class="lineno">   20</span>        <a class="code hl_function" href="classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e">GlyphAtlas::cleanup</a>();</div>
+<div class="line"><span class="lineno">   21</span>        SDL_Quit();</div>
+<div class="line"><span class="lineno">   22</span>    }</div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a0c6bb93e9fd997ddf2b0bfdea291222e"><div class="ttname"><a href="classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e">dao::GlyphAtlas::cleanup</a></div><div class="ttdeci">static void cleanup()</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00025">GlyphAtlas.cpp:25</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_a0a6f1b302cded708edfbb51cf7dce8d8_cgraph.png" border="0" usemap="#aclassdao_1_1App_a0a6f1b302cded708edfbb51cf7dce8d8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_a0a6f1b302cded708edfbb51cf7dce8d8_cgraph" id="aclassdao_1_1App_a0a6f1b302cded708edfbb51cf7dce8d8_cgraph">
+<area shape="rect" title="析构函数" alt="" coords="5,29,128,55"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e" title=" " alt="" coords="176,29,360,55"/>
+<area shape="poly" title=" " alt="" coords="128,39,162,39,162,45,128,45"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="408,22,600,62"/>
+<area shape="poly" title=" " alt="" coords="360,39,394,39,394,45,360,45"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a237c430f181e83af326be2454b3595b7" title="禁用拷贝构造" alt="" coords="648,29,852,55"/>
+<area shape="poly" title=" " alt="" coords="600,39,634,39,634,45,600,45"/>
+<area shape="poly" title=" " alt="" coords="710,31,702,21,706,11,723,5,750,3,785,7,795,11,798,17,794,20,791,15,783,12,750,8,724,10,710,15,707,20,714,27"/>
+</map>
+</div>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a0d54948b998aa74ccca2a5b63e6fb88a" name="a0d54948b998aa74ccca2a5b63e6fb88a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d54948b998aa74ccca2a5b63e6fb88a">&#9670;&#160;</a></span>createTray()</h2>
+<a id="a41ea61261f4a936087ae00261cdcd412" name="a41ea61261f4a936087ae00261cdcd412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ea61261f4a936087ae00261cdcd412">&#9670;&#160;</a></span>createTray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,12 +391,8 @@ template&lt;typename Type&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdao_1_1Tray.html">Tray</a> &amp; dao::App::createTray </td>
           <td>(</td>
-          <td class="paramtype">const std::string_view</td>          <td class="paramname"><span class="paramname"><em>iconPath</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::string_view</td>          <td class="paramname"><span class="paramname"><em>tooltip</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -344,21 +409,15 @@ template&lt;typename Type&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iconPath</td><td>托盘图标路径 </td></tr>
-    <tr><td class="paramname">tooltip</td><td>托盘提示文本 </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>托盘对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00054">54</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                                      {</div>
-<div class="line"><span class="lineno">   55</span>            m_tray = std::make_unique&lt;Type&gt;(iconPath, tooltip);</div>
-<div class="line"><span class="lineno">   56</span>            m_tray-&gt;setContext(m_context);</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">return</span> *m_tray;</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00052">52</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                           {</div>
+<div class="line"><span class="lineno">   53</span>            m_tray = std::make_unique&lt;Type&gt;();</div>
+<div class="line"><span class="lineno">   54</span>            m_tray-&gt;setContext(m_context);</div>
+<div class="line"><span class="lineno">   55</span>            m_tray-&gt;createTrayMenu();</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">return</span> *m_tray;</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,17 +492,17 @@ template&lt;typename Type&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00076">76</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                                                                             {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height, workState, isSubject, resizable, transparent, onTop,</div>
-<div class="line"><span class="lineno">   79</span>                                                  borderless);</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
-<div class="line"><span class="lineno">   81</span>        m_windowMap[tag] = windowId;</div>
-<div class="line"><span class="lineno">   82</span>        m_windows[windowId] = std::move(nowWindow);</div>
-<div class="line"><span class="lineno">   83</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
-<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00009">type.hpp:9</a></div></div>
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00075">75</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height, workState, isSubject, resizable, transparent, onTop,</div>
+<div class="line"><span class="lineno">   78</span>                                                  borderless);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> windowId = nowWindow-&gt;getId();</div>
+<div class="line"><span class="lineno">   80</span>        m_windowMap[tag] = windowId;</div>
+<div class="line"><span class="lineno">   81</span>        m_windows[windowId] = std::move(nowWindow);</div>
+<div class="line"><span class="lineno">   82</span>        m_windows[windowId]-&gt;setContext(&amp;m_context);</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a6fd9141b0c69d7cec3baccc710272bbb"><div class="ttname"><a href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">dao::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00010">type.hpp:10</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,9 +523,19 @@ template&lt;typename Type&gt; </div>
 
 <p>关闭退出应用程序 </p>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00074">74</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{ m_running = <span class="keyword">false</span>; }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00073">73</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{ m_running = <span class="keyword">false</span>; }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_a5325b3e9e97c260b67df0014dc67b698_icgraph.png" border="0" usemap="#aclassdao_1_1App_a5325b3e9e97c260b67df0014dc67b698_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_a5325b3e9e97c260b67df0014dc67b698_icgraph" id="aclassdao_1_1App_a5325b3e9e97c260b67df0014dc67b698_icgraph">
+<area shape="rect" title="关闭退出应用程序" alt="" coords="201,13,313,38"/>
+<area shape="rect" href="classdao_1_1AppController.html#a9daf3dd62acaf544e5c554a17041839f" title="执行命令" alt="" coords="5,5,153,45"/>
+<area shape="poly" title=" " alt="" coords="188,28,153,28,153,23,188,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5ab82fd0b55c46c5237ebd860a2cd30b" name="a5ab82fd0b55c46c5237ebd860a2cd30b"></a>
@@ -495,8 +564,8 @@ template&lt;typename Type&gt; </div>
 <p>获取全局上下文 </p>
 <dl class="section return"><dt>Returns</dt><dd>全局上下文对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00073">73</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> m_context; }</div>
+<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00072">72</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <span class="keywordflow">return</span> m_context; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -532,8 +601,8 @@ template&lt;typename Type&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00063">63</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <span class="keywordflow">return</span> *m_windows[windowId]; }</div>
+<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00062">62</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> *m_windows[windowId]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -568,10 +637,10 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00083">83</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                        {</div>
-<div class="line"><span class="lineno">   84</span>            m_windows[m_windowMap[windowTag]]-&gt;hide();</div>
-<div class="line"><span class="lineno">   85</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00082">82</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                        {</div>
+<div class="line"><span class="lineno">   83</span>            m_windows[m_windowMap[windowTag]]-&gt;hide();</div>
+<div class="line"><span class="lineno">   84</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -599,6 +668,20 @@ template&lt;typename Type&gt; </div>
 </div><div class="memdoc">
 
 <p>禁止移动赋值 </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_af092a02aaee9e31bc582a6d94391ffc8_cgraph.png" border="0" usemap="#aclassdao_1_1App_af092a02aaee9e31bc582a6d94391ffc8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_af092a02aaee9e31bc582a6d94391ffc8_cgraph" id="aclassdao_1_1App_af092a02aaee9e31bc582a6d94391ffc8_cgraph">
+<area shape="rect" title="禁止移动赋值" alt="" coords="5,5,159,31"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="207,5,319,31"/>
+<area shape="poly" title=" " alt="" coords="159,15,193,15,193,21,159,21"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="367,5,475,31"/>
+<area shape="poly" title=" " alt="" coords="319,15,353,15,353,21,319,21"/>
+<area shape="rect" href="namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="523,5,687,31"/>
+<area shape="poly" title=" " alt="" coords="475,15,509,15,509,21,475,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -626,6 +709,20 @@ template&lt;typename Type&gt; </div>
 </div><div class="memdoc">
 
 <p>禁止拷贝赋值 </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1App_ad02f1ec3c9d83d27818d76ef9f4720fb_cgraph.png" border="0" usemap="#aclassdao_1_1App_ad02f1ec3c9d83d27818d76ef9f4720fb_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1App_ad02f1ec3c9d83d27818d76ef9f4720fb_cgraph" id="aclassdao_1_1App_ad02f1ec3c9d83d27818d76ef9f4720fb_cgraph">
+<area shape="rect" title="禁止拷贝赋值" alt="" coords="5,5,159,31"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="207,5,319,31"/>
+<area shape="poly" title=" " alt="" coords="159,15,193,15,193,21,159,21"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="367,5,475,31"/>
+<area shape="poly" title=" " alt="" coords="319,15,353,15,353,21,319,21"/>
+<area shape="rect" href="namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="523,5,687,31"/>
+<area shape="poly" title=" " alt="" coords="475,15,509,15,509,21,475,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -646,52 +743,54 @@ template&lt;typename Type&gt; </div>
 
 <p>启动应用程序主循环 </p>
 
-<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00028">28</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                  {</div>
-<div class="line"><span class="lineno">   29</span>        m_running = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window : m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   31</span>            window-&gt;switchPage(window-&gt;getNowPageTitle());</div>
-<div class="line"><span class="lineno">   32</span>        }</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">while</span> (m_running) {</div>
-<div class="line"><span class="lineno">   34</span>            m_frameLimiter.wait();</div>
-<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   36</span>                <span class="keywordflow">if</span> (window-&gt;workState() != <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>) {</div>
-<div class="line"><span class="lineno">   37</span>                    window-&gt;update();</div>
-<div class="line"><span class="lineno">   38</span>                    window-&gt;getAppController().executeCommand(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   39</span>                }</div>
-<div class="line"><span class="lineno">   40</span>            }</div>
-<div class="line"><span class="lineno">   41</span>            SDL_Event event;</div>
-<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
-<div class="line"><span class="lineno">   43</span>                <span class="comment">// 处理窗口关闭按钮（左上角）点击事件</span></div>
-<div class="line"><span class="lineno">   44</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
-<div class="line"><span class="lineno">   45</span>                    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   46</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   47</span>                        it-&gt;second-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
-<div class="line"><span class="lineno">   48</span>                    }</div>
-<div class="line"><span class="lineno">   49</span>                }</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
-<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
-<div class="line"><span class="lineno">   53</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
-<div class="line"><span class="lineno">   54</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
-<div class="line"><span class="lineno">   55</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
-<div class="line"><span class="lineno">   56</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
-<div class="line"><span class="lineno">   57</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
-<div class="line"><span class="lineno">   58</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_TEXT_INPUT || event.type == SDL_EVENT_TEXT_EDITING) {</div>
-<div class="line"><span class="lineno">   59</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.text.windowID);</div>
-<div class="line"><span class="lineno">   60</span>                }</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
-<div class="line"><span class="lineno">   63</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   64</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
-<div class="line"><span class="lineno">   65</span>                    }</div>
-<div class="line"><span class="lineno">   66</span>                }</div>
-<div class="line"><span class="lineno">   67</span>            }</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
-<div class="line"><span class="lineno">   70</span>            window-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="App_8cpp_source.html#l00025">25</a> of file <a class="el" href="App_8cpp_source.html">App.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                  {</div>
+<div class="line"><span class="lineno">   26</span>        m_running = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   27</span>        <span class="comment">// 切换所有窗口活跃页面为当前页面</span></div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   29</span>            window-&gt;switchPage(window-&gt;getNowPageTitle());</div>
+<div class="line"><span class="lineno">   30</span>        }</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">while</span> (m_running) {</div>
+<div class="line"><span class="lineno">   32</span>            m_frameLimiter.wait();</div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   34</span>                <span class="keywordflow">if</span> (window-&gt;workState() != <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>) {</div>
+<div class="line"><span class="lineno">   35</span>                    window-&gt;update();</div>
+<div class="line"><span class="lineno">   36</span>                    window-&gt;getAppController().executeCommand(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   37</span>                    window-&gt;render();</div>
+<div class="line"><span class="lineno">   38</span>                }</div>
+<div class="line"><span class="lineno">   39</span>            }</div>
+<div class="line"><span class="lineno">   40</span>            SDL_Event event;</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
+<div class="line"><span class="lineno">   42</span>                <span class="comment">// 处理窗口关闭按钮（左上角）点击事件</span></div>
+<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
+<div class="line"><span class="lineno">   44</span>                    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
+<div class="line"><span class="lineno">   45</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   46</span>                        it-&gt;second-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
+<div class="line"><span class="lineno">   47</span>                    }</div>
+<div class="line"><span class="lineno">   48</span>                }</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>                <a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> wid = 0;</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_WINDOW_FIRST &amp;&amp; event.type &lt;= SDL_EVENT_WINDOW_LAST) {</div>
+<div class="line"><span class="lineno">   52</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.window.windowID);</div>
+<div class="line"><span class="lineno">   53</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_KEY_DOWN &amp;&amp; event.type &lt;= SDL_EVENT_KEY_UP) {</div>
+<div class="line"><span class="lineno">   54</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.key.windowID);</div>
+<div class="line"><span class="lineno">   55</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type &gt;= SDL_EVENT_MOUSE_MOTION &amp;&amp; event.type &lt;= SDL_EVENT_MOUSE_WHEEL) {</div>
+<div class="line"><span class="lineno">   56</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.button.windowID);</div>
+<div class="line"><span class="lineno">   57</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == SDL_EVENT_TEXT_INPUT || event.type == SDL_EVENT_TEXT_EDITING) {</div>
+<div class="line"><span class="lineno">   58</span>                    wid = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a><span class="keyword">&gt;</span>(<span class="keyword">event</span>.text.windowID);</div>
+<div class="line"><span class="lineno">   59</span>                }</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>                <span class="keywordflow">if</span> (wid != 0) {</div>
+<div class="line"><span class="lineno">   62</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   63</span>                        it-&gt;second-&gt;handleInputEvent(event);</div>
+<div class="line"><span class="lineno">   64</span>                    }</div>
+<div class="line"><span class="lineno">   65</span>                }</div>
+<div class="line"><span class="lineno">   66</span>            }</div>
+<div class="line"><span class="lineno">   67</span>        }</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;window: m_windows | std::views::values) {</div>
+<div class="line"><span class="lineno">   69</span>            window-&gt;convertWorkState(<a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>);</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
 <div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00028">Window.hpp:28</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -727,16 +826,16 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00077">77</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                        {</div>
-<div class="line"><span class="lineno">   78</span>            m_windows[m_windowMap[windowTag]]-&gt;show();</div>
-<div class="line"><span class="lineno">   79</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="App_8hpp_source.html#l00076">76</a> of file <a class="el" href="App_8hpp_source.html">App.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                        {</div>
+<div class="line"><span class="lineno">   77</span>            m_windows[m_windowMap[windowTag]]-&gt;show();</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>code/include/core/frame/<a class="el" href="App_8hpp_source.html">App.hpp</a></li>
-<li>code/src/core/frame/<a class="el" href="App_8cpp_source.html">App.cpp</a></li>
+<li>libCode/include/core/frame/<a class="el" href="App_8hpp_source.html">App.hpp</a></li>
+<li>libCode/src/core/frame/<a class="el" href="App_8cpp_source.html">App.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

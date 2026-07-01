@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['集成到_20cmake_20项目_0',['集成到 CMake 项目',['../tutorial.html#autotoc_md29',1,'']]]
+  ['按钮与输入_0',['7. 按钮与输入',['../tutorial.html#controls',1,'']]],
+  ['按钮_1',['Button — 按钮',['../tutorial.html#button',1,'']]]
 ];

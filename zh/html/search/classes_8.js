@@ -6,7 +6,7 @@ var searchData=
   ['igeneralpage_3',['IGeneralPage',['../classdao_1_1ifc_1_1IGeneralPage.html',1,'dao::ifc']]],
   ['igraph_4',['IGraph',['../classdao_1_1ifc_1_1IGraph.html',1,'dao::ifc']]],
   ['image_5',['Image',['../classdao_1_1Image.html',1,'dao']]],
-  ['impl_6',['Impl',['../classdao_1_1web_1_1HttpClient_1_1Impl.html',1,'dao::web::HttpClient::Impl'],['../classdao_1_1web_1_1HttpsClient_1_1Impl.html',1,'dao::web::HttpsClient::Impl']]],
+  ['impl_6',['Impl',['../classdao_1_1web_1_1HttpClient_1_1Impl.html',1,'dao::web::HttpClient']]],
   ['inputbox_7',['InputBox',['../classdao_1_1InputBox.html',1,'dao']]],
   ['ipage_8',['IPage',['../classdao_1_1ifc_1_1IPage.html',1,'dao::ifc']]]
 ];

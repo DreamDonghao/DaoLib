@@ -1,5 +1,7 @@
-<map id="类继承关系图" name="类继承关系图">
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$classdao_1_1ifc_1_1IPage.html" title="页面接口" alt="" coords="5,5,119,31"/>
 <area shape="rect" id="Node000001" href="$classdao_1_1ifc_1_1IGeneralPage.html" title="通用页面接口" alt="" coords="167,5,331,31"/>
-<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="133,15,166,15,166,21,133,21"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="133,15,166,15,166,21,133,21"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VoidPage.html" title=" " alt="" coords="379,5,492,31"/>
+<area shape="poly" id="edge19_Node000001_Node000002" title=" " alt="" coords="344,15,378,15,378,21,344,21"/>
 </map>

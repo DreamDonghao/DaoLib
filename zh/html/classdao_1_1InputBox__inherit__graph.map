@@ -1,5 +1,5 @@
 <map id="dao::InputBox" name="dao::InputBox">
-<area shape="rect" id="Node000001" title="输入框组件" alt="" coords="5,139,151,324"/>
+<area shape="rect" id="Node000001" title="输入框组件" alt="" coords="5,139,151,464"/>
 <area shape="rect" id="Node000002" href="$classdao_1_1ifc_1_1IDrawable.html" title="可绘制对象接口" alt="" coords="10,5,146,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,104,81,138,75,138,75,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,104,81,139,75,139,75,104"/>
 </map>

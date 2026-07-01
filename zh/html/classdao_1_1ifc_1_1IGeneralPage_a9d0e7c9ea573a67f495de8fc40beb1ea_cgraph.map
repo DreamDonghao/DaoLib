@@ -1,0 +1,12 @@
+<map id="dao::ifc::IGeneralPage::getGlyphAspectRatio" name="dao::ifc::IGeneralPage::getGlyphAspectRatio">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,40,172,80"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a7e37bb5fa78b2455ccb8670e8c8565c8" title="获取字形的宽高比" alt="" coords="220,5,412,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,45,206,39,207,45,173,50"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="220,72,412,112"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,69,207,74,206,79,172,74"/>
+<area shape="rect" id="Node000003" href="$namespacedao.html#afd14b9005e324762dd1f107bf4e1c498" title="结果为浮点数的除法" alt="" coords="520,10,604,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,22,506,21,506,26,412,27"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1GlyphAtlas.html#a237c430f181e83af326be2454b3595b7" title="禁用拷贝构造" alt="" coords="460,83,664,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="412,91,446,91,446,97,412,96"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="522,85,514,75,518,65,535,59,562,57,597,61,607,65,610,71,606,74,603,69,595,66,562,62,536,64,522,69,519,74,526,81"/>
+</map>

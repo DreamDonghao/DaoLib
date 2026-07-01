@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['纹理管理_0',['纹理管理',['../tutorial.html#autotoc_md57',1,'']]],
-  ['纹理_20texture_1',['纹理 (Texture)',['../tutorial.html#autotoc_md46',1,'']]]
+  ['彩色输出_0',['彩色输出',['../ilinebr_01_0dianchor_02_xE5_xB7_xA5_xE5_x85_xB7_xE6_xA8_xA1_xE5_x9D_x97_xE5_x8F_x82_xE8_x80_x83_01_02_0gtools_03_03_01tools.html#autotoc_md194',1,'']]]
 ];
