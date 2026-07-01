@@ -4,6 +4,7 @@
 /out
 /.vs
 /build
+/install
 /doxygen_output
 CMakeSettings.json
 /go_tool/.idea
@@ -14,6 +15,7 @@ CMakeSettings.json
 /releases
 /test/.idea
 /test/cmake-build-debug
+/cmake-build-release
 /old*
 /example/.idea
 /example/cmake-build-debug

@@ -6,12 +6,12 @@ Dao CLI 是一个命令行工具，用于辅助开发 Dao 框架项目。它提�
 
 **命令执行位置说明**
 
-| 命令 | 执行位置 | 说明 |
-|------|---------|------|
-| `dao create project` | 空目录 | 用于初始化新项目 |
-| `dao create page` | 项目根目录 | 创建新页面 |
-| `dao texture pack` | 项目根目录 | 打包纹理图集 |
-| `dao install` | Dao 库源码目录 | 安装 dao 库 |
+| 命令                   | 执行位置      | 说明       |
+|----------------------|-----------|----------|
+| `dao create project` | 空目录       | 用于初始化新项目 |
+| `dao create page`    | 项目根目录     | 创建新页面    |
+| `dao texture pack`   | 项目根目录     | 打包纹理图集   |
+| `dao install`        | Dao 库源码目录 | 安装 dao 库 |
 
 ---
 
@@ -19,12 +19,12 @@ Dao CLI 是一个命令行工具，用于辅助开发 Dao 框架项目。它提�
 
 - [安装](#安装)
 - [命令列表](#命令列表)
-  - [dao create - 创建项目或页面](#dao-create---创建项目或页面)
-    - [dao create project - 创建项目](#dao-create-project---创建项目)
-    - [dao create page - 创建页面](#dao-create-page---创建页面)
-  - [dao texture pack - 打包纹理](#dao-texture-pack---打包纹理)
-  - [dao install - 安装库](#dao-install---安装库)
-  - [dao gif2png - 转换 GIF](#dao-gif2png---转换-gif) *(计划中)*
+    - [dao create - 创建项目或页面](#dao-create---创建项目或页面)
+        - [dao create project - 创建项目](#dao-create-project---创建项目)
+        - [dao create page - 创建页面](#dao-create-page---创建页面)
+    - [dao texture pack - 打包纹理](#dao-texture-pack---打包纹理)
+    - [dao install - 安装库](#dao-install---安装库)
+    - [dao gif2png - 转换 GIF](#dao-gif2png---转换-gif) *(计划中)*
 
 ## 安装
 
@@ -95,8 +95,8 @@ dao create project MyApp
 2. 如果目录非空且包含不允许的文件，命令将失败并提示
 3. 从 embed 模板复制文件到当前目录
 4. 替换占位符：
-   - `{{.ProjectName}}` → 项目名称
-   - `{{.InstallPath}}` → 安装路径
+    - `{{.ProjectName}}` → 项目名称
+    - `{{.InstallPath}}` → 安装路径
 5. 生成项目结构
 
 ##### 生成的项目结构
@@ -171,9 +171,9 @@ dao create page Game::GamePage
 2. 将页面名转换为 snake_case 作为文件名
 3. 在 `pages/` 目录下创建页面文件夹
 4. 生成 .hpp 和 .cpp 文件，包含：
-   - 命名空间声明
-   - 继承自 `dao::GeneralPage`
-   - 必需的虚函数实现
+    - 命名空间声明
+    - 继承自 `dao::GeneralPage`
+    - 必需的虚函数实现
 
 ##### 生成的文件结构
 
@@ -212,21 +212,21 @@ dao texture pack
 #### 工作流程
 
 1. **扫描输入图片**
-   - 从 `assets/textures/input_images/` 目录读取所有 PNG 文件
-   - 区分普通图片和序列帧（以 `sf` 开头的文件夹）
+    - 从 `assets/textures/input_images/` 目录读取所有 PNG 文件
+    - 区分普通图片和序列帧（以 `sf` 开头的文件夹）
 
 2. **生成图集**
-   - 将图片按高度降序排序
-   - 按最优方式排列到 2048x2048 的图集中
-   - 保存图集图片到 `assets/textures/atlas/`
+    - 将图片按高度降序排序
+    - 按最优方式排列到 2048x2048 的图集中
+    - 保存图集图片到 `assets/textures/atlas/`
 
 3. **生成元数据**
-   - 创建 `assets/textures/config/atlas_meta.json`
-   - 包含每个图集帧的位置信息
+    - 创建 `assets/textures/config/atlas_meta.json`
+    - 包含每个图集帧的位置信息
 
 4. **生成 C++ 头文件**
-   - `assets/textures/inc/textures.inc` - 纹理 ID 枚举
-   - `assets/textures/inc/texture_dates.inc` - 纹理数据数组
+    - `assets/textures/inc/textures.inc` - 纹理 ID 枚举
+    - `assets/textures/inc/texture_dates.inc` - 纹理数据数组
 
 #### 目录结构
 
@@ -347,17 +347,20 @@ ls -la
 ```
 
 **项目根目录应该包含**：
+
 - `CMakeLists.txt`
 - `main.cpp`
 - `assets/` 目录
 - `pages/` 目录
 
 **项目创建目录应该为空**（或仅包含配置文件）：
+
 - `.git/` (可选)
 - `.gitignore` (可选)
 - `.vscode/` (可选)
 
 **Dao 源码目录应该包含**：
+
 - `cli_tool/` 目录
 - `code/` 目录
 - `docs/` 目录

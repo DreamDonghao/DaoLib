@@ -8,6 +8,8 @@ namespace dao {
     const AtlasRegion regions[] = {
         {"", 0, 1, 1, 1, 1},
         {"", 0},
+
 #include <texture_dates.inc>
-    };
+};
+
 }

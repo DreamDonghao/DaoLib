@@ -2,7 +2,8 @@
 
 [中文](../zh/README.zh.md) | [English](README.en.md)
 
-A cross-platform C++ application development framework for building desktop applications, utility software, and 2D visualization programs.
+A cross-platform C++ application development framework for building desktop applications, utility software, and 2D
+visualization programs.
 
 ---
 
@@ -21,16 +22,16 @@ A cross-platform C++ application development framework for building desktop appl
 
 ## Dependencies
 
-| Library | Version | Purpose |
-|---|---|---|
-| SDL3 | >= 3.4.0 | Window & Rendering |
-| SDL3_image | >= 3.4.0 | Image Loading |
-| SDL3_ttf | >= 3.2.2 | Font Rendering |
-| cpp-httplib | >= 0.32.0 | HTTP Client |
-| nlohmann-json | >= 3.12.0 | JSON Processing |
-| OpenSSL | >= 3.6.1 | HTTPS Support |
-| utfcpp | >= 4.0.6 | UTF-8 Processing |
-| SQLiteCpp | >= 3.3.2 | Database |
+| Library       | Version   | Purpose            |
+|---------------|-----------|--------------------|
+| SDL3          | >= 3.4.0  | Window & Rendering |
+| SDL3_image    | >= 3.4.0  | Image Loading      |
+| SDL3_ttf      | >= 3.2.2  | Font Rendering     |
+| cpp-httplib   | >= 0.32.0 | HTTP Client        |
+| nlohmann-json | >= 3.12.0 | JSON Processing    |
+| OpenSSL       | >= 3.6.1  | HTTPS Support      |
+| utfcpp        | >= 4.0.6  | UTF-8 Processing   |
+| SQLiteCpp     | >= 3.3.2  | Database           |
 
 ---
 
@@ -132,41 +133,41 @@ int main() {
 
 #### Application Framework (frame)
 
-| Class | Description |
-|---|---|
-| `App` | Application manager for windows, tray, main loop |
-| `Window` | Window with foreground/background/closed states |
-| `Tray` | System tray |
-| `Context` | Global context for cross-component data sharing |
+| Class     | Description                                      |
+|-----------|--------------------------------------------------|
+| `App`     | Application manager for windows, tray, main loop |
+| `Window`  | Window with foreground/background/closed states  |
+| `Tray`    | System tray                                      |
+| `Context` | Global context for cross-component data sharing  |
 
 #### Rendering (render)
 
-| Class | Description |
-|---|---|
-| `BatchRenderer` | Batch renderer for textures and fonts |
-| `GlyphAtlas` | Glyph atlas for font texture management |
+| Class           | Description                             |
+|-----------------|-----------------------------------------|
+| `BatchRenderer` | Batch renderer for textures and fonts   |
+| `GlyphAtlas`    | Glyph atlas for font texture management |
 
 ### Components Module (components)
 
 #### Geometric Shapes (graphs)
 
-| Component | Description |
-|---|---|
-| `Rectangle` | Rectangle |
-| `Circle` | Circle |
-| `Ellipse` | Ellipse |
-| `Line` | Line |
-| `Arc` | Arc |
-| `Sector` | Sector |
-| `Ring` | Ring |
+| Component          | Description       |
+|--------------------|-------------------|
+| `Rectangle`        | Rectangle         |
+| `Circle`           | Circle            |
+| `Ellipse`          | Ellipse           |
+| `Line`             | Line              |
+| `Arc`              | Arc               |
+| `Sector`           | Sector            |
+| `Ring`             | Ring              |
 | `RoundedRectangle` | Rounded Rectangle |
-| `Triangle` | Triangle |
-| `Polygon` | Polygon |
+| `Triangle`         | Triangle          |
+| `Polygon`          | Polygon           |
 
 #### Controls (controls)
 
-| Component | Description |
-|---|---|
+| Component  | Description                               |
+|------------|-------------------------------------------|
 | `InputBox` | Text input box with Chinese input support |
 
 ### Database Module (database)
