@@ -1,8 +1,8 @@
 <map id="dao::Window::Window" name="dao::Window::Window">
 <area shape="rect" id="Node000001" title=" " alt="" coords="221,55,387,80"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df" title=" " alt="" coords="5,29,173,55"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df" title="添加页面" alt="" coords="5,29,173,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,59,173,55,174,49,208,53"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="5,79,173,104"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#a6e14da779e3532b496c5eddce5a631c5" title="添加页面" alt="" coords="5,79,173,104"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="208,81,174,85,173,79,208,75"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="128,20,117,11,89,8,67,10,55,15,52,20,59,28,54,31,47,21,51,11,65,5,89,3,119,6,131,15"/>
 </map>

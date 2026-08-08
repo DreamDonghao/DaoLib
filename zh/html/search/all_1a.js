@@ -31,8 +31,9 @@ var searchData=
   ['triangle_2ecpp_28',['Triangle.cpp',['../Triangle_8cpp.html',1,'']]],
   ['triangle_2ehpp_29',['Triangle.hpp',['../Triangle_8hpp.html',1,'']]],
   ['tryregisterglyph_30',['tryRegisterGlyph',['../classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50',1,'dao::GlyphAtlas']]],
-  ['tutorial_20从零到精通教程_31',['&lt;a class=&quot;el&quot; href=&quot;tutorial.html&quot; title=&quot;DaoLib 入门教程&quot;&gt;从零到精通教程&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
-  ['tutorial_2emd_32',['tutorial.md',['../tutorial_8md.html',1,'']]],
-  ['type_33',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]],
-  ['type_2ehpp_34',['type.hpp',['../type_8hpp.html',1,'']]]
+  ['ttfpath_31',['ttfPath',['../classdao_1_1Config.html#a4c46fa7ae52ba4e12e81d150f4a5c06c',1,'dao::Config']]],
+  ['tutorial_20从零到精通教程_32',['&lt;a class=&quot;el&quot; href=&quot;tutorial.html&quot; title=&quot;DaoLib 入门教程&quot;&gt;从零到精通教程&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
+  ['tutorial_2emd_33',['tutorial.md',['../tutorial_8md.html',1,'']]],
+  ['type_34',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]],
+  ['type_2ehpp_35',['type.hpp',['../type_8hpp.html',1,'']]]
 ];

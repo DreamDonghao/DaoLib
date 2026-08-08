@@ -1,25 +1,39 @@
 <map id="dao::ErrorLog" name="dao::ErrorLog">
-<area shape="rect" id="Node000001" title=" " alt="" coords="419,251,527,276"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="233,80,345,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,239,424,179,399,146,369,119,344,106,346,101,372,114,403,143,429,176,463,237"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="221,129,356,155"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="450,242,415,205,369,170,342,157,344,152,372,165,419,201,454,238"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e" title="设置全局环境上下文" alt="" coords="207,179,371,219"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="421,248,346,222,348,217,423,243"/>
-<area shape="rect" id="Node000009" href="$classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="213,243,364,283"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="405,266,364,266,364,261,405,261"/>
-<area shape="rect" id="Node000010" href="$classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="213,307,364,347"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="423,283,348,310,346,305,421,278"/>
-<area shape="rect" id="Node000011" href="$classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="207,372,370,397"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="454,289,419,326,372,362,344,374,342,370,369,357,415,322,450,285"/>
-<area shape="rect" id="Node000012" href="$classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="231,421,346,447"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="463,290,429,351,403,384,372,412,347,425,345,420,369,408,399,380,424,348,458,287"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="26,5,138,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,77,158,45,124,33,126,28,160,39,245,72"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="26,55,138,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,87,138,77,138,71,220,82"/>
-<area shape="rect" id="Node000005" href="$classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="5,104,159,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="219,103,159,110,159,105,219,98"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="5,153,159,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="227,112,208,119,160,144,129,156,127,151,158,140,206,114,225,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="463,285,571,311"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Window.html#a6e14da779e3532b496c5eddce5a631c5" title="添加页面" alt="" coords="235,39,403,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,273,498,230,480,178,452,124,434,100,413,79,393,66,396,62,416,75,438,96,457,121,485,175,503,229,514,271"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BatchGroup.html#a882b85f2c5251bf2c4dea150d1b22065" title=" " alt="" coords="224,89,415,129"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="503,273,469,208,444,173,413,143,394,131,397,126,416,139,448,170,474,205,508,271"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="263,153,375,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="492,277,456,244,413,211,354,181,356,176,416,206,460,240,496,273"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1BatchRenderer.html#a5d897bbc454c6192d44f6439be617baa" title="构造函数（带字体）" alt="" coords="244,221,395,261"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="458,284,388,263,389,258,460,279"/>
+<area shape="rect" id="Node000014" href="$classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="252,285,387,311"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="449,301,387,301,387,295,449,295"/>
+<area shape="rect" id="Node000015" href="$classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="244,335,395,375"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="460,317,389,338,388,333,458,312"/>
+<area shape="rect" id="Node000016" href="$classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="238,400,401,425"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="497,323,461,358,416,390,385,402,383,397,413,385,458,353,493,319"/>
+<area shape="rect" id="Node000017" href="$classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换工作页面" alt="" coords="226,449,413,475"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="506,325,472,383,446,414,416,440,394,452,392,447,413,436,443,410,467,380,502,322"/>
+<area shape="rect" id="Node000019" href="$classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="262,499,377,524"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="511,325,499,362,480,407,453,451,416,489,398,500,378,507,376,502,396,496,413,485,448,448,475,404,494,360,506,323"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="35,5,147,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,158,222,143,211,130,203,118,197,92,191,67,185,56,174,44,146,29,148,24,178,40,189,52,196,65,203,91,208,116,215,127,226,139,251,153"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="35,55,147,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="249,155,223,143,207,130,198,118,189,105,175,94,146,81,148,76,177,89,193,102,202,115,211,127,225,138,251,150"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="14,104,167,129"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="249,154,150,132,151,127,251,149"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="14,153,167,179"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="250,169,168,169,168,163,250,163"/>
+<area shape="rect" id="Node000010" href="$classdao_1_1BatchRenderer.html#ad186b6baac1841521b02da64fab3c777" title="禁止移动构造" alt="" coords="15,203,166,243"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="230,237,166,232,166,226,230,231"/>
+<area shape="rect" id="Node000011" href="$classdao_1_1BatchRenderer.html#a20b9be1f47d90821523b5d042228f570" title="禁止拷贝构造函数" alt="" coords="15,267,166,307"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="231,261,167,275,166,269,230,256"/>
+<area shape="rect" id="Node000012" href="$classdao_1_1BatchRenderer.html#a66bd73134a914ea44bb72b0a0bc5c2fe" title="禁止移动赋值" alt="" coords="15,331,166,371"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="237,269,225,275,211,286,202,298,192,309,177,322,155,334,152,329,175,317,189,306,198,294,207,282,223,270,234,264"/>
+<area shape="rect" id="Node000013" href="$classdao_1_1BatchRenderer.html#ab731fd7c9f322d316e86dd9202832304" title="禁止拷贝赋值运算符" alt="" coords="15,395,166,435"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="234,268,226,275,214,288,208,301,202,328,197,356,190,371,178,385,162,397,158,393,174,381,185,368,192,355,197,327,203,299,210,285,222,271,230,264"/>
+<area shape="rect" id="Node000018" href="$classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648" title="执行命令" alt="" coords="5,459,176,499"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="212,473,176,476,176,470,212,467"/>
 </map>

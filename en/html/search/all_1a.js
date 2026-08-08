@@ -24,7 +24,8 @@ var searchData=
   ['triangle_2ecpp_21',['Triangle.cpp',['../Triangle_8cpp.html',1,'']]],
   ['triangle_2ehpp_22',['Triangle.hpp',['../Triangle_8hpp.html',1,'']]],
   ['tryregisterglyph_23',['tryRegisterGlyph',['../classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50',1,'dao::GlyphAtlas']]],
-  ['tutorial_24',['Tutorial',['../use.html#autotoc_md23',1,'']]],
-  ['type_25',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]],
-  ['type_2ehpp_26',['type.hpp',['../type_8hpp.html',1,'']]]
+  ['ttfpath_24',['ttfPath',['../classdao_1_1Config.html#a4c46fa7ae52ba4e12e81d150f4a5c06c',1,'dao::Config']]],
+  ['tutorial_25',['Tutorial',['../use.html#autotoc_md23',1,'']]],
+  ['type_26',['type',['../structdao_1_1AppCommand.html#af8574f8e7140cf58fa9ca2530cd7b422',1,'dao::AppCommand::type'],['../structdao_1_1WindowCommand.html#a783f78c086fff4134f2d63862907be3f',1,'dao::WindowCommand::type']]],
+  ['type_2ehpp_27',['type.hpp',['../type_8hpp.html',1,'']]]
 ];

@@ -1,0 +1,9 @@
+<map id="dao::BatchRenderer::operator=" name="dao::BatchRenderer::operator=">
+<area shape="rect" id="Node000001" title="禁止拷贝赋值运算符" alt="" coords="5,5,156,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a5d897bbc454c6192d44f6439be617baa" title="构造函数（带字体）" alt="" coords="204,5,355,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,23,190,23,190,28,156,28"/>
+<area shape="rect" id="Node000003" href="$namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="403,13,511,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,23,389,23,389,28,355,28"/>
+<area shape="rect" id="Node000004" href="$namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="559,13,723,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="511,23,545,23,545,28,511,28"/>
+</map>

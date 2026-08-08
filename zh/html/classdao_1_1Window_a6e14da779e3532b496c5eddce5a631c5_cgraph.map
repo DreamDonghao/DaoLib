@@ -1,0 +1,15 @@
+<map id="dao::Window::addPage" name="dao::Window::addPage">
+<area shape="rect" id="Node000001" title="添加页面" alt="" coords="5,55,173,80"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="250,5,358,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,52,236,31,237,36,146,57"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1Window.html#ac6b85f4d116e18f380d043ea365921af" title="设置窗口标题" alt="" coords="223,55,385,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,65,209,65,209,70,174,70"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1Window.html#ae2c38877e63bcc6580b958273cc5d5a3" title=" " alt="" coords="221,104,387,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,77,235,98,234,103,145,83"/>
+<area shape="rect" id="Node000003" href="$namespacedao.html#a746bc8fde96bdaae84bc29183b0ee994" title=" " alt="" coords="444,5,608,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,15,430,15,430,21,358,21"/>
+<area shape="rect" id="Node000006" href="$namespacedao.html#a947bbca1df57898c577d61455a008f2e" title=" " alt="" coords="435,79,617,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="387,105,421,101,421,106,387,110"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Window.html#a804cb3b8a2f0b45189c40186f206bae3" title="获取窗口状态" alt="" coords="437,128,615,153"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="387,123,423,127,423,132,387,128"/>
+</map>

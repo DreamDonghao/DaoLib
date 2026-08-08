@@ -1,0 +1,11 @@
+<map id="dao::BatchRenderer::BatchRenderer" name="dao::BatchRenderer::BatchRenderer">
+<area shape="rect" id="Node000001" title="构造函数（带字体）" alt="" coords="204,101,355,141"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#ad186b6baac1841521b02da64fab3c777" title="禁止移动构造" alt="" coords="5,5,156,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,97,155,60,129,48,131,43,157,55,231,93"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1BatchRenderer.html#a20b9be1f47d90821523b5d042228f570" title="禁止拷贝构造函数" alt="" coords="5,69,156,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,110,156,104,157,99,191,104"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1BatchRenderer.html#a66bd73134a914ea44bb72b0a0bc5c2fe" title="禁止移动赋值" alt="" coords="5,133,156,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,138,157,144,156,139,190,133"/>
+<area shape="rect" id="Node000005" href="$classdao_1_1BatchRenderer.html#ab731fd7c9f322d316e86dd9202832304" title="禁止拷贝赋值运算符" alt="" coords="5,197,156,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="231,150,157,188,131,200,129,195,155,183,228,145"/>
+</map>

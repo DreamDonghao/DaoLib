@@ -20,9 +20,10 @@ var searchData=
   ['dataval_17',['DataVal',['../classdao_1_1db_1_1DataVal.html',1,'dao::db::DataVal'],['../classdao_1_1db_1_1DataVal.html#a7f6493054d48a96620c6df5149944d8d',1,'dao::db::DataVal::DataVal()=default'],['../classdao_1_1db_1_1DataVal.html#ab0beaa9257bfa229e374a2390a89c1fb',1,'dao::db::DataVal::DataVal(std::string valString)']]],
   ['dataval_20—_20单元格值_18',['DataVal — 单元格值',['../ilinebr_01_0dianchor_02_xE6_x95_xB0_xE6_x8D_xAE_xE5_xBA_x93_xE6_xA8_xA1_xE5_x9D_x97_xE5_x8F_x82_879b070fbf83d6f2a9ed48aa98f52ac3.html#db-dataval',1,'']]],
   ['debug_19',['DEBUG',['../namespacedao.html#a99946a7396c8e59955a00e29e5fa7a6fadc30ec20708ef7b0f641ef78b7880a15',1,'dao']]],
-  ['delete_20',['Delete',['../namespacedao_1_1web.html#a881d0dfaef4a118b07293d512f262b2faf2a6c498fb90ee345d997f888fce3b18',1,'dao::web']]],
-  ['detectionerror_21',['detectionError',['../namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8',1,'dao']]],
-  ['dim_22',['dim',['../namespacedao_1_1fmt__color.html#a01b140b0aaf2b0b5aeb5e9c40bd14bbb',1,'dao::fmt_color']]],
-  ['disabled_23',['Disabled',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled'],['../namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled']]],
-  ['dorequest_24',['doRequest',['../classdao_1_1web_1_1HttpClient_1_1Impl.html#ac5b581d865b6dd95d479058c7a10928d',1,'dao::web::HttpClient::Impl']]]
+  ['defaultdynamicverticescount_20',['defaultDynamicVerticesCount',['../classdao_1_1Config.html#aee209c7dcf5e4a1b332842fc9ef2204f',1,'dao::Config']]],
+  ['delete_21',['Delete',['../namespacedao_1_1web.html#a881d0dfaef4a118b07293d512f262b2faf2a6c498fb90ee345d997f888fce3b18',1,'dao::web']]],
+  ['detectionerror_22',['detectionError',['../namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8',1,'dao']]],
+  ['dim_23',['dim',['../namespacedao_1_1fmt__color.html#a01b140b0aaf2b0b5aeb5e9c40bd14bbb',1,'dao::fmt_color']]],
+  ['disabled_24',['Disabled',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled'],['../namespacedao.html#ae7d5292a7122742f97a26215da2d033bab9f5c797ebbf55adccdd8539a65a0241',1,'dao::Disabled']]],
+  ['dorequest_25',['doRequest',['../classdao_1_1web_1_1HttpClient_1_1Impl.html#ac5b581d865b6dd95d479058c7a10928d',1,'dao::web::HttpClient::Impl']]]
 ];

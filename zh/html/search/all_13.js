@@ -9,7 +9,7 @@ var searchData=
   ['line_2ehpp_6',['Line.hpp',['../Line_8hpp.html',1,'']]],
   ['lineheight_7',['lineHeight',['../classdao_1_1Text.html#ab26ace8abb832191e54642a3c574fba5',1,'dao::Text']]],
   ['loadatlas_8',['loadAtlas',['../classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f',1,'dao::BatchRenderer::loadAtlas()'],['../ilinebr_01_0dianchor_02_xE6_xB8_xB2_xE6_x9F_x93_xE7_xB3_xBB_xE7_xBB_x9F_xE5_x8F_x82_xE8_x80_x83_01_02_0grender_03_03_01render.html#autotoc_md172',1,'loadAtlas']]],
-  ['loadglyph_9',['loadGlyph',['../classdao_1_1BatchRenderer.html#a8fe8dbf71996a24062c79c8046a196aa',1,'dao::BatchRenderer::loadGlyph()'],['../ilinebr_01_0dianchor_02_xE6_xB8_xB2_xE6_x9F_x93_xE7_xB3_xBB_xE7_xBB_x9F_xE5_x8F_x82_xE8_x80_x83_01_02_0grender_03_03_01render.html#autotoc_md175',1,'loadGlyph']]],
+  ['loadglyph_9',['loadGlyph',['../classdao_1_1BatchRenderer.html#a7848cd2f1ac101c7627984d446643265',1,'dao::BatchRenderer::loadGlyph()'],['../ilinebr_01_0dianchor_02_xE6_xB8_xB2_xE6_x9F_x93_xE7_xB3_xBB_xE7_xBB_x9F_xE5_x8F_x82_xE8_x80_x83_01_02_0grender_03_03_01render.html#autotoc_md175',1,'loadGlyph']]],
   ['log_10',['Log',['../classdao_1_1Log.html',1,'dao::Log'],['../classdao_1_1Log.html#a6ce687b62036d5c937ec5e131e78dfc8',1,'dao::Log::Log()']]],
   ['log_20—_20日志系统_11',['Log — 日志系统',['../tutorial.html#logging',1,'']]],
   ['log_20类_12',['12.1 Log 类',['../tutorial.html#autotoc_md239',1,'']]],

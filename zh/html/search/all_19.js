@@ -60,7 +60,7 @@ var searchData=
   ['showwindow_57',['showWindow',['../classdao_1_1App.html#a430fd19759ee48d8e7c00e8364113a11',1,'dao::App']]],
   ['showwindow_20hidewindow_58',['showWindow / hideWindow',['../ilinebr_01_0dianchor_02_xE6_xA0_xB8_xE5_xBF_x83_xE6_xA1_x86_xE6_x9E_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0gcore_03_03_01core.html#autotoc_md51',1,'']]],
   ['simplebutton_2ehpp_59',['SimpleButton.hpp',['../SimpleButton_8hpp.html',1,'']]],
-  ['size_60',['size',['../classdao_1_1db_1_1Result.html#aee0869cd207f5428c87211faad2f1dd4',1,'dao::db::Result::size()'],['../classdao_1_1web_1_1Headers.html#a98ef3efb1e0c67fdfe765b85094de927',1,'dao::web::Headers::size()']]],
+  ['size_60',['size',['../structdao_1_1BatchGroup_1_1Batch.html#ab28908a9ceca98f551d7c5b6c28e97cf',1,'dao::BatchGroup::Batch::size'],['../classdao_1_1db_1_1Result.html#aee0869cd207f5428c87211faad2f1dd4',1,'dao::db::Result::size()'],['../classdao_1_1web_1_1Headers.html#a98ef3efb1e0c67fdfe765b85094de927',1,'dao::web::Headers::size()']]],
   ['sort_61',['sort',['../namespacedao.html#a02af220658c49a0b7ac198977f450e7f',1,'dao']]],
   ['sql_62',['exec — 执行 SQL',['../ilinebr_01_0dianchor_02_xE6_x95_xB0_xE6_x8D_xAE_xE5_xBA_x93_xE6_xA8_xA1_xE5_x9D_x97_xE5_x8F_x82_879b070fbf83d6f2a9ed48aa98f52ac3.html#autotoc_md85',1,'']]],
   ['sqlite_63',['Sqlite',['../classdao_1_1db_1_1Sqlite.html',1,'dao::db::Sqlite'],['../classdao_1_1db_1_1Sqlite.html#a148d32cf66c18d4bd4b95968ed068139',1,'dao::db::Sqlite::Sqlite()']]],
@@ -72,6 +72,5 @@ var searchData=
   ['status_69',['status',['../structdao_1_1web_1_1HttpResponse.html#a2b3ed74c66b87033df0fe62aa55cb07e',1,'dao::web::HttpResponse']]],
   ['success_70',['success',['../structdao_1_1web_1_1HttpResponse.html#aa46027a83e0cf6b969ae9fbf1e8ab7f6',1,'dao::web::HttpResponse']]],
   ['switchdeleter_71',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html',1,'dao::SwitchDeleter&lt; T &gt;'],['../classdao_1_1SwitchDeleter.html#af2039b61545c1250d4364617fcf8bc03',1,'dao::SwitchDeleter::SwitchDeleter()']]],
-  ['switchpage_72',['switchPage',['../classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d',1,'dao::Window::switchPage()'],['../classdao_1_1WindowController.html#af0054f5b3e5758f6cfc872dfdff5f06e',1,'dao::WindowController::switchPage()'],['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4',1,'dao::switchPage'],['../ilinebr_01_0dianchor_02_xE6_xA0_xB8_xE5_xBF_x83_xE6_xA1_x86_xE6_x9E_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0gcore_03_03_01core.html#autotoc_md59',1,'switchPage']]],
-  ['syncglyphatlas_73',['syncGlyphAtlas',['../classdao_1_1BatchRenderer.html#afc7be77de2387af37b893d5ecbec248d',1,'dao::BatchRenderer']]]
+  ['switchpage_72',['switchPage',['../classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d',1,'dao::Window::switchPage()'],['../classdao_1_1WindowController.html#af0054f5b3e5758f6cfc872dfdff5f06e',1,'dao::WindowController::switchPage()'],['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4',1,'dao::switchPage'],['../ilinebr_01_0dianchor_02_xE6_xA0_xB8_xE5_xBF_x83_xE6_xA1_x86_xE6_x9E_xB6_xE5_x8F_x82_xE8_x80_x83_01_02_0gcore_03_03_01core.html#autotoc_md59',1,'switchPage']]]
 ];

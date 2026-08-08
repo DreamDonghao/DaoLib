@@ -1,24 +1,22 @@
 <map id="dao::GlyphAtlas::GlyphAtlas" name="dao::GlyphAtlas::GlyphAtlas">
-<area shape="rect" id="Node000001" title="禁用拷贝构造" alt="" coords="680,209,884,235"/>
-<area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="827,200,824,195,816,192,782,188,755,190,741,195,738,200,745,207,741,211,733,201,737,191,754,185,782,183,817,187,827,191,831,197"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="434,119,626,159"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,207,631,174,594,162,596,157,633,169,732,202"/>
-<area shape="rect" id="Node000009" href="$classdao_1_1GlyphAtlas.html#a3a2c287150d3d25001ee5896e3bd6055" title="禁用移动构造" alt="" coords="428,184,632,209"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="666,213,632,210,633,204,667,208"/>
-<area shape="rect" id="Node000010" href="$classdao_1_1GlyphAtlas.html#a9e41b8b7702cf3802ebcefeaffe2b693" title="禁用拷贝赋值" alt="" coords="431,233,629,259"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="667,236,630,239,629,234,666,230"/>
-<area shape="rect" id="Node000011" href="$classdao_1_1GlyphAtlas.html#aa0b1d2707ced6524902745042155c9f3" title="禁用移动赋值" alt="" coords="431,283,629,308"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="733,242,633,274,589,285,588,280,631,269,731,237"/>
+<area shape="rect" id="Node000001" title="禁用拷贝构造" alt="" coords="680,173,884,199"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="827,164,824,159,816,156,782,152,755,154,741,159,738,164,745,171,741,175,733,165,737,155,754,149,782,147,817,151,827,155,831,161"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="434,83,626,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,171,631,138,594,126,596,121,633,133,732,166"/>
+<area shape="rect" id="Node000008" href="$classdao_1_1GlyphAtlas.html#a3a2c287150d3d25001ee5896e3bd6055" title="禁用移动构造" alt="" coords="428,148,632,173"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="666,177,632,174,633,168,667,172"/>
+<area shape="rect" id="Node000009" href="$classdao_1_1GlyphAtlas.html#a9e41b8b7702cf3802ebcefeaffe2b693" title="禁用拷贝赋值" alt="" coords="431,197,629,223"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="667,200,630,203,629,198,666,194"/>
+<area shape="rect" id="Node000010" href="$classdao_1_1GlyphAtlas.html#aa0b1d2707ced6524902745042155c9f3" title="禁用移动赋值" alt="" coords="431,247,629,272"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="733,206,633,238,589,249,588,244,631,233,731,201"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e" title=" " alt="" coords="186,5,370,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="491,113,439,78,379,46,342,33,344,28,381,41,442,74,494,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="470,81,379,46,335,33,336,28,381,41,472,76"/>
 <area shape="rect" id="Node000005" href="$classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea" title=" " alt="" coords="195,55,361,95"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="437,118,357,98,358,93,438,113"/>
-<area shape="rect" id="Node000006" href="$classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="203,119,353,159"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="420,142,353,142,353,137,420,137"/>
-<area shape="rect" id="Node000007" href="$classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,184,380,209"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="429,165,335,187,334,181,428,160"/>
-<area shape="rect" id="Node000008" href="$classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,233,365,259"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="441,167,430,174,415,185,406,198,397,211,381,223,352,236,350,231,379,218,393,207,402,195,411,182,426,169,438,163"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="420,94,361,87,362,82,420,88"/>
+<area shape="rect" id="Node000006" href="$classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,120,380,145"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="420,119,381,123,380,118,420,113"/>
+<area shape="rect" id="Node000007" href="$classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,169,365,195"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="450,130,429,138,381,159,338,172,337,167,379,154,427,133,448,125"/>
 <area shape="rect" id="Node000004" href="$classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8" title="析构函数" alt="" coords="5,5,128,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="172,21,129,21,129,15,172,15"/>
 </map>

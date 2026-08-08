@@ -121,23 +121,21 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('IDrawable_8hpp
 </div><!--header-->
 <div class="contents">
 <a href="IDrawable_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;<a class="code" href="BatchRenderer_8hpp.html">core/render/BatchRenderer.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedao_1_1ifc.html">dao::ifc</a> {<span class="comment"></span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">    /// @brief 可绘制对象接口</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html">    6</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classdao_1_1ifc_1_1IDrawable.html">IDrawable</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea">    8</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea">~IDrawable</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">        /// @brief 写入批处理</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f">   11</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f">writeToBatch</a>(<a class="code hl_class" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;batchRenderer) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    };</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedao_1_1ifc.html">dao::ifc</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    /// @brief 可绘制对象接口</span></div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html">    5</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classdao_1_1ifc_1_1IDrawable.html">IDrawable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea">    7</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea">~IDrawable</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">        /// @brief 写入批处理</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f">   10</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f">writeToBatch</a>(<a class="code hl_class" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> &amp;batchRenderer) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    };</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-<div class="ttc" id="aBatchRenderer_8hpp_html"><div class="ttname"><a href="BatchRenderer_8hpp.html">BatchRenderer.hpp</a></div></div>
-<div class="ttc" id="aclassdao_1_1BatchRenderer_html"><div class="ttname"><a href="classdao_1_1BatchRenderer.html">dao::BatchRenderer</a></div><div class="ttdoc">批处理渲染器</div><div class="ttdef"><b>Definition</b> <a href="BatchRenderer_8hpp_source.html#l00009">BatchRenderer.hpp:9</a></div></div>
-<div class="ttc" id="aclassdao_1_1ifc_1_1IDrawable_html"><div class="ttname"><a href="classdao_1_1ifc_1_1IDrawable.html">dao::ifc::IDrawable</a></div><div class="ttdoc">可绘制对象接口</div><div class="ttdef"><b>Definition</b> <a href="#l00006">IDrawable.hpp:6</a></div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="ttc" id="aclassdao_1_1BatchRenderer_html"><div class="ttname"><a href="classdao_1_1BatchRenderer.html">dao::BatchRenderer</a></div><div class="ttdoc">批处理渲染器</div><div class="ttdef"><b>Definition</b> <a href="BatchRenderer_8hpp_source.html#l00070">BatchRenderer.hpp:70</a></div></div>
+<div class="ttc" id="aclassdao_1_1ifc_1_1IDrawable_html"><div class="ttname"><a href="classdao_1_1ifc_1_1IDrawable.html">dao::ifc::IDrawable</a></div><div class="ttdoc">可绘制对象接口</div><div class="ttdef"><b>Definition</b> <a href="#l00005">IDrawable.hpp:5</a></div></div>
 <div class="ttc" id="aclassdao_1_1ifc_1_1IDrawable_html_a9fb1b06c3d53651d9103b6147a5110ea"><div class="ttname"><a href="classdao_1_1ifc_1_1IDrawable.html#a9fb1b06c3d53651d9103b6147a5110ea">dao::ifc::IDrawable::~IDrawable</a></div><div class="ttdeci">virtual ~IDrawable()=default</div></div>
 <div class="ttc" id="aclassdao_1_1ifc_1_1IDrawable_html_ad12330f92c39af164099dec680ea631f"><div class="ttname"><a href="classdao_1_1ifc_1_1IDrawable.html#ad12330f92c39af164099dec680ea631f">dao::ifc::IDrawable::writeToBatch</a></div><div class="ttdeci">virtual void writeToBatch(BatchRenderer &amp;batchRenderer) const =0</div><div class="ttdoc">写入批处理</div></div>
 <div class="ttc" id="anamespacedao_1_1ifc_html"><div class="ttname"><a href="namespacedao_1_1ifc.html">dao::ifc</a></div><div class="ttdef"><b>Definition</b> <a href="IButton_8hpp_source.html#l00013">IButton.hpp:13</a></div></div>

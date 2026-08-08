@@ -140,6 +140,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">圆弧图形组件  <a href="classdao_1_1Arc.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AtlasRegion" id="r_AtlasRegion"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdao_1_1AtlasRegion.html">AtlasRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">图集区域数据  <a href="structdao_1_1AtlasRegion.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BatchGroup" id="r_BatchGroup"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BatchGroup.html">BatchGroup</a></td></tr>
 <tr class="memitem:BatchRenderer" id="r_BatchRenderer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">批处理渲染器  <a href="classdao_1_1BatchRenderer.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BoundingBox" id="r_BoundingBox"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a></td></tr>
@@ -150,6 +151,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">圆形图形组件  <a href="classdao_1_1Circle.html#details">More...</a><br /></td></tr>
 <tr class="memitem:ColorRGBA" id="r_ColorRGBA"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1ColorRGBA.html">ColorRGBA</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGBA颜色类  <a href="classdao_1_1ColorRGBA.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Config" id="r_Config"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Config.html">Config</a></td></tr>
 <tr class="memitem:Context" id="r_Context"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Context.html">Context</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">上下文容器类  <a href="classdao_1_1Context.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Ellipse" id="r_Ellipse"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdao_1_1Ellipse.html">Ellipse</a></td></tr>
@@ -313,6 +315,7 @@ requires std::is_arithmetic_v&lt;T&gt;</td></tr>
 <tr class="memitem:a81a0f55a3fe942cdb8d8051c161cff0d" id="r_a81a0f55a3fe942cdb8d8051c161cff0d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a81a0f55a3fe942cdb8d8051c161cff0d">ErrorLog</a> (const std::string &amp;msg, const std::source_location &amp;loc=std::source_location::current())</td></tr>
 <tr class="memitem:af0b37fb0cac809003fdbf33a937709b5" id="r_af0b37fb0cac809003fdbf33a937709b5"><td class="memItemLeft">std::pair&lt; <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a>, <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af0b37fb0cac809003fdbf33a937709b5">rotatePointRad</a> (const <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> px, const <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> py, const <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> cx, const <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> cy, const <a class="el" href="#a97a8fc44aad6375de4f486418d03b30d">f32</a> theta)</td></tr>
 <tr class="memdesc:af0b37fb0cac809003fdbf33a937709b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">旋转向量，将点绕指定中心点旋转指定角度  <br /></td></tr>
+<tr class="memitem:a947bbca1df57898c577d61455a008f2e" id="r_a947bbca1df57898c577d61455a008f2e"><td class="memItemLeft">static SDL_WindowFlags&#160;</td><td class="memItemRight"><a class="el" href="#a947bbca1df57898c577d61455a008f2e">createWindowFlags</a> (const <a class="el" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722c">Window::WorkState</a> workState, const bool resizable, const bool transparent, const bool onTop, const bool borderless)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -999,6 +1002,84 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a947bbca1df57898c577d61455a008f2e" name="a947bbca1df57898c577d61455a008f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947bbca1df57898c577d61455a008f2e">&#9670;&#160;</a></span>createWindowFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_WindowFlags dao::createWindowFlags </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722c">Window::WorkState</a></td>          <td class="paramname"><span class="paramname"><em>workState</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>resizable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>transparent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>onTop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>borderless</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Window_8cpp_source.html#l00009">9</a> of file <a class="el" href="Window_8cpp_source.html">Window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>                               {</div>
+<div class="line"><span class="lineno">   12</span>        SDL_WindowFlags windowFlags = 0;</div>
+<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (workState == <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">Window::WorkState::Background</a> || workState == <a class="code hl_enumvalue" href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">Window::WorkState::Closed</a>) {</div>
+<div class="line"><span class="lineno">   14</span>            windowFlags |= SDL_WINDOW_HIDDEN;</div>
+<div class="line"><span class="lineno">   15</span>        }</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> (resizable)</div>
+<div class="line"><span class="lineno">   17</span>            windowFlags |= SDL_WINDOW_RESIZABLE;</div>
+<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (transparent)</div>
+<div class="line"><span class="lineno">   19</span>            windowFlags |= SDL_WINDOW_TRANSPARENT;</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">if</span> (onTop)</div>
+<div class="line"><span class="lineno">   21</span>            windowFlags |= SDL_WINDOW_ALWAYS_ON_TOP;</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span> (borderless)</div>
+<div class="line"><span class="lineno">   23</span>            windowFlags |= SDL_WINDOW_BORDERLESS;</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">return</span> windowFlags;</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e"><div class="ttname"><a href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722ca03f4a47830f97377a35321051685071e">dao::Window::WorkState::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdoc">窗口关闭</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00019">Window.hpp:19</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html_ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419"><div class="ttname"><a href="classdao_1_1Window.html#ae166d0fdbdde0f3e99bc4cec1fdb722caa9ded1e5ce5d75814730bb4caaf49419">dao::Window::WorkState::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdoc">后台运行</div><div class="ttdef"><b>Definition</b> <a href="Window_8hpp_source.html#l00018">Window.hpp:18</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacedao_a947bbca1df57898c577d61455a008f2e_icgraph.png" border="0" usemap="#anamespacedao_a947bbca1df57898c577d61455a008f2e_icgraph" loading="lazy" alt=""/></div>
+<map name="anamespacedao_a947bbca1df57898c577d61455a008f2e_icgraph" id="anamespacedao_a947bbca1df57898c577d61455a008f2e_icgraph">
+<area shape="rect" title=" " alt="" coords="435,55,617,80"/>
+<area shape="rect" href="classdao_1_1Window.html#ae2c38877e63bcc6580b958273cc5d5a3" title=" " alt="" coords="221,55,387,80"/>
+<area shape="poly" title=" " alt="" coords="421,70,387,70,387,65,421,65"/>
+<area shape="rect" href="classdao_1_1Window.html#a67a4da4ad39f44d385f13de1856460df" title="添加页面" alt="" coords="5,29,173,55"/>
+<area shape="poly" title=" " alt="" coords="208,59,173,55,174,49,208,53"/>
+<area shape="rect" href="classdao_1_1Window.html#a6e14da779e3532b496c5eddce5a631c5" title="添加页面" alt="" coords="5,79,173,104"/>
+<area shape="poly" title=" " alt="" coords="208,81,174,85,173,79,208,75"/>
+<area shape="poly" title=" " alt="" coords="128,20,117,11,89,8,67,10,55,15,52,20,59,28,54,31,47,21,51,11,65,5,89,3,119,6,131,15"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a746bc8fde96bdaae84bc29183b0ee994" name="a746bc8fde96bdaae84bc29183b0ee994"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a746bc8fde96bdaae84bc29183b0ee994">&#9670;&#160;</a></span>currentDateTime()</h2>
 
@@ -1038,38 +1119,52 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedao_a746bc8fde96bdaae84bc29183b0ee994_icgraph.png" border="0" usemap="#anamespacedao_a746bc8fde96bdaae84bc29183b0ee994_icgraph" loading="lazy" alt=""/></div>
 <map name="anamespacedao_a746bc8fde96bdaae84bc29183b0ee994_icgraph" id="anamespacedao_a746bc8fde96bdaae84bc29183b0ee994_icgraph">
-<area shape="rect" title=" " alt="" coords="617,428,781,453"/>
-<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="440,281,548,307"/>
-<area shape="poly" title=" " alt="" coords="668,422,512,309,515,305,671,418"/>
-<area shape="rect" href="classdao_1_1Log.html#add66d56a871488916ddabdd1414239fe" title="fmt 风格格式化输出" alt="" coords="440,428,548,453"/>
-<area shape="poly" title=" " alt="" coords="604,443,548,443,548,438,604,438"/>
-<area shape="rect" href="classdao_1_1Log.html#add64f61cfc47ca8f217334baa9cdb261" title=" " alt="" coords="419,477,569,503"/>
-<area shape="poly" title=" " alt="" coords="633,459,548,480,547,475,632,454"/>
-<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="233,79,345,104"/>
-<area shape="poly" title=" " alt="" coords="480,269,463,235,438,194,407,153,369,118,344,105,346,100,372,113,411,149,443,191,467,232,484,267"/>
-<area shape="rect" href="classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="221,128,356,153"/>
-<area shape="poly" title=" " alt="" coords="474,272,430,219,401,192,369,168,343,156,345,151,372,164,405,188,434,216,478,268"/>
-<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e" title="设置全局环境上下文" alt="" coords="207,178,371,218"/>
-<area shape="poly" title=" " alt="" coords="457,277,370,232,342,220,344,216,372,228,460,272"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="213,242,364,282"/>
-<area shape="poly" title=" " alt="" coords="426,286,364,276,365,271,427,281"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="213,306,364,346"/>
-<area shape="poly" title=" " alt="" coords="427,307,365,317,364,312,426,302"/>
-<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="207,371,370,396"/>
-<area shape="poly" title=" " alt="" coords="461,316,372,360,336,373,334,368,370,356,458,311"/>
-<area shape="rect" href="classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="231,420,346,445"/>
-<area shape="poly" title=" " alt="" coords="476,319,432,365,403,390,372,411,346,422,344,418,369,406,400,386,428,362,472,315"/>
-<area shape="rect" href="classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="26,5,138,31"/>
-<area shape="poly" title=" " alt="" coords="242,76,158,45,124,33,126,28,160,39,244,71"/>
-<area shape="rect" href="classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="26,55,138,80"/>
-<area shape="poly" title=" " alt="" coords="219,86,138,76,138,71,220,81"/>
-<area shape="rect" href="classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="5,104,159,129"/>
-<area shape="poly" title=" " alt="" coords="219,102,159,110,159,105,219,97"/>
-<area shape="rect" href="classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="5,153,159,179"/>
-<area shape="poly" title=" " alt="" coords="227,111,208,118,160,143,126,156,124,151,158,138,206,113,225,106"/>
-<area shape="poly" title=" " alt="" coords="531,418,520,410,494,407,472,409,461,413,458,419,464,426,460,430,453,420,457,410,471,404,494,401,523,405,534,414"/>
-<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#a229469b1e8257ad3a3ba98f74b9dde3d" title="执行 SQL 语句（INSERT, UPDATE, DELETE, CREATE 等）" alt="" coords="212,469,365,495"/>
-<area shape="poly" title=" " alt="" coords="427,457,353,472,352,467,426,452"/>
+<area shape="rect" title=" " alt="" coords="661,483,825,508"/>
+<area shape="rect" href="namespacedao.html#a81a0f55a3fe942cdb8d8051c161cff0d" title=" " alt="" coords="484,315,592,340"/>
+<area shape="poly" title=" " alt="" coords="714,476,553,343,557,338,717,471"/>
+<area shape="rect" href="classdao_1_1Log.html#add66d56a871488916ddabdd1414239fe" title="fmt 风格格式化输出" alt="" coords="484,483,592,508"/>
+<area shape="poly" title=" " alt="" coords="648,498,592,498,592,493,648,493"/>
+<area shape="rect" href="classdao_1_1Log.html#add64f61cfc47ca8f217334baa9cdb261" title=" " alt="" coords="463,532,613,557"/>
+<area shape="poly" title=" " alt="" coords="677,514,592,535,591,529,676,509"/>
+<area shape="rect" href="classdao_1_1Window.html#a6e14da779e3532b496c5eddce5a631c5" title="添加页面" alt="" coords="235,39,403,64"/>
+<area shape="poly" title=" " alt="" coords="529,302,516,254,494,194,460,131,438,103,413,79,392,66,395,62,416,75,442,100,464,128,498,191,521,252,534,301"/>
+<area shape="rect" href="classdao_1_1BatchGroup.html#a882b85f2c5251bf2c4dea150d1b22065" title=" " alt="" coords="224,89,415,129"/>
+<area shape="poly" title=" " alt="" coords="524,303,507,267,483,224,452,180,413,143,394,131,397,127,416,139,456,177,488,221,512,265,529,301"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="263,153,375,179"/>
+<area shape="poly" title=" " alt="" coords="515,306,471,259,413,211,384,194,355,181,357,176,387,189,416,206,475,255,519,302"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a5d897bbc454c6192d44f6439be617baa" title="构造函数（带字体）" alt="" coords="244,221,395,261"/>
+<area shape="poly" title=" " alt="" coords="496,311,414,275,381,263,383,258,416,270,499,306"/>
+<area shape="rect" href="classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="252,285,387,311"/>
+<area shape="poly" title=" " alt="" coords="470,321,387,310,387,304,471,316"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="244,335,395,375"/>
+<area shape="poly" title=" " alt="" coords="471,339,395,348,395,343,470,333"/>
+<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="238,400,401,425"/>
+<area shape="poly" title=" " alt="" coords="503,349,416,390,376,403,374,397,414,385,500,344"/>
+<area shape="rect" href="classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换工作页面" alt="" coords="226,449,413,475"/>
+<area shape="poly" title=" " alt="" coords="519,352,475,397,446,419,416,439,385,452,383,447,413,434,443,415,471,393,515,349"/>
+<area shape="rect" href="classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="262,499,377,524"/>
+<area shape="poly" title=" " alt="" coords="527,354,484,421,453,457,416,488,378,505,376,500,413,484,449,454,480,418,522,351"/>
+<area shape="rect" href="classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="35,5,147,31"/>
+<area shape="poly" title=" " alt="" coords="249,158,222,143,211,130,203,118,197,92,191,67,185,56,174,44,146,29,148,24,178,40,189,52,196,65,203,91,208,116,215,127,226,139,251,153"/>
+<area shape="rect" href="classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="35,55,147,80"/>
+<area shape="poly" title=" " alt="" coords="249,155,223,143,207,130,198,118,189,105,175,94,146,81,148,76,177,89,193,102,202,115,211,127,225,138,251,150"/>
+<area shape="rect" href="classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="14,104,167,129"/>
+<area shape="poly" title=" " alt="" coords="249,154,150,132,151,127,251,149"/>
+<area shape="rect" href="classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="14,153,167,179"/>
+<area shape="poly" title=" " alt="" coords="250,169,168,169,168,163,250,163"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#ad186b6baac1841521b02da64fab3c777" title="禁止移动构造" alt="" coords="15,203,166,243"/>
+<area shape="poly" title=" " alt="" coords="230,237,166,232,166,226,230,231"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a20b9be1f47d90821523b5d042228f570" title="禁止拷贝构造函数" alt="" coords="15,267,166,307"/>
+<area shape="poly" title=" " alt="" coords="231,261,167,275,166,269,230,256"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a66bd73134a914ea44bb72b0a0bc5c2fe" title="禁止移动赋值" alt="" coords="15,331,166,371"/>
+<area shape="poly" title=" " alt="" coords="237,269,225,275,211,286,202,298,192,309,177,322,155,334,152,329,175,317,189,306,198,294,207,282,223,270,234,264"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#ab731fd7c9f322d316e86dd9202832304" title="禁止拷贝赋值运算符" alt="" coords="15,395,166,435"/>
+<area shape="poly" title=" " alt="" coords="234,268,226,275,214,288,208,301,202,328,197,356,190,371,178,385,162,397,158,393,174,381,185,368,192,355,197,327,203,299,210,285,222,271,230,264"/>
+<area shape="rect" href="classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648" title="执行命令" alt="" coords="5,459,176,499"/>
+<area shape="poly" title=" " alt="" coords="212,473,176,476,176,470,212,467"/>
+<area shape="poly" title=" " alt="" coords="575,473,564,465,538,461,516,463,505,468,502,474,508,481,504,484,497,474,501,464,515,458,538,456,567,460,578,469"/>
+<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#a229469b1e8257ad3a3ba98f74b9dde3d" title="执行 SQL 语句（INSERT, UPDATE, DELETE, CREATE 等）" alt="" coords="243,548,396,573"/>
+<area shape="poly" title=" " alt="" coords="485,515,464,522,415,538,371,550,369,545,414,533,462,517,483,510"/>
 </map>
 </div>
 
@@ -1149,21 +1244,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   25</span>            std::cerr &lt;&lt; message &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   26</span>        }</div>
 <div class="line"><span class="lineno">   27</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacedao_a24e91b1ba23935657b9b4fefae8f56e8_icgraph.png" border="0" usemap="#anamespacedao_a24e91b1ba23935657b9b4fefae8f56e8_icgraph" loading="lazy" alt=""/></div>
-<map name="anamespacedao_a24e91b1ba23935657b9b4fefae8f56e8_icgraph" id="anamespacedao_a24e91b1ba23935657b9b4fefae8f56e8_icgraph">
-<area shape="rect" title=" " alt="" coords="459,31,605,56"/>
-<area shape="rect" href="classdao_1_1Window.html#a30b6535d63f2abf742c6c83a6e35d354" title="添加页面" alt="" coords="233,5,401,31"/>
-<area shape="poly" title=" " alt="" coords="445,36,401,31,402,25,445,30"/>
-<area shape="rect" href="classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换页面" alt="" coords="224,55,411,80"/>
-<area shape="poly" title=" " alt="" coords="445,56,411,60,411,54,445,50"/>
-<area shape="rect" href="classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648" title="执行命令" alt="" coords="5,47,176,87"/>
-<area shape="poly" title=" " alt="" coords="210,70,176,70,176,65,210,65"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a81a0f55a3fe942cdb8d8051c161cff0d" name="a81a0f55a3fe942cdb8d8051c161cff0d"></a>
@@ -1216,29 +1297,43 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedao_a81a0f55a3fe942cdb8d8051c161cff0d_icgraph.png" border="0" usemap="#anamespacedao_a81a0f55a3fe942cdb8d8051c161cff0d_icgraph" loading="lazy" alt=""/></div>
 <map name="anamespacedao_a81a0f55a3fe942cdb8d8051c161cff0d_icgraph" id="anamespacedao_a81a0f55a3fe942cdb8d8051c161cff0d_icgraph">
-<area shape="rect" title=" " alt="" coords="419,251,527,276"/>
-<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="233,80,345,105"/>
-<area shape="poly" title=" " alt="" coords="458,239,424,179,399,146,369,119,344,106,346,101,372,114,403,143,429,176,463,237"/>
-<area shape="rect" href="classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="221,129,356,155"/>
-<area shape="poly" title=" " alt="" coords="450,242,415,205,369,170,342,157,344,152,372,165,419,201,454,238"/>
-<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e" title="设置全局环境上下文" alt="" coords="207,179,371,219"/>
-<area shape="poly" title=" " alt="" coords="421,248,346,222,348,217,423,243"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="213,243,364,283"/>
-<area shape="poly" title=" " alt="" coords="405,266,364,266,364,261,405,261"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="213,307,364,347"/>
-<area shape="poly" title=" " alt="" coords="423,283,348,310,346,305,421,278"/>
-<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="207,372,370,397"/>
-<area shape="poly" title=" " alt="" coords="454,289,419,326,372,362,344,374,342,370,369,357,415,322,450,285"/>
-<area shape="rect" href="classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="231,421,346,447"/>
-<area shape="poly" title=" " alt="" coords="463,290,429,351,403,384,372,412,347,425,345,420,369,408,399,380,424,348,458,287"/>
-<area shape="rect" href="classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="26,5,138,31"/>
-<area shape="poly" title=" " alt="" coords="243,77,158,45,124,33,126,28,160,39,245,72"/>
-<area shape="rect" href="classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="26,55,138,80"/>
-<area shape="poly" title=" " alt="" coords="219,87,138,77,138,71,220,82"/>
-<area shape="rect" href="classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="5,104,159,129"/>
-<area shape="poly" title=" " alt="" coords="219,103,159,110,159,105,219,98"/>
-<area shape="rect" href="classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="5,153,159,179"/>
-<area shape="poly" title=" " alt="" coords="227,112,208,119,160,144,129,156,127,151,158,140,206,114,225,107"/>
+<area shape="rect" title=" " alt="" coords="463,285,571,311"/>
+<area shape="rect" href="classdao_1_1Window.html#a6e14da779e3532b496c5eddce5a631c5" title="添加页面" alt="" coords="235,39,403,64"/>
+<area shape="poly" title=" " alt="" coords="508,273,498,230,480,178,452,124,434,100,413,79,393,66,396,62,416,75,438,96,457,121,485,175,503,229,514,271"/>
+<area shape="rect" href="classdao_1_1BatchGroup.html#a882b85f2c5251bf2c4dea150d1b22065" title=" " alt="" coords="224,89,415,129"/>
+<area shape="poly" title=" " alt="" coords="503,273,469,208,444,173,413,143,394,131,397,126,416,139,448,170,474,205,508,271"/>
+<area shape="rect" href="classdao_1_1App.html#ac3a59fc5034dda759ad38e66d521452c" title="构造函数" alt="" coords="263,153,375,179"/>
+<area shape="poly" title=" " alt="" coords="492,277,456,244,413,211,354,181,356,176,416,206,460,240,496,273"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a5d897bbc454c6192d44f6439be617baa" title="构造函数（带字体）" alt="" coords="244,221,395,261"/>
+<area shape="poly" title=" " alt="" coords="458,284,388,263,389,258,460,279"/>
+<area shape="rect" href="classdao_1_1Context.html#aa21d8925ef8416fe4e055d013d3fa9f4" title="获取容器中的对象" alt="" coords="252,285,387,311"/>
+<area shape="poly" title=" " alt="" coords="449,301,387,301,387,295,449,295"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f" title="注册纹理到渲染器" alt="" coords="244,335,395,375"/>
+<area shape="poly" title=" " alt="" coords="460,317,389,338,388,333,458,312"/>
+<area shape="rect" href="classdao_1_1db_1_1Sqlite.html#ad073690d146a360120f1a35f5c4a169e" title="执行查询语句（SELECT）" alt="" coords="238,400,401,425"/>
+<area shape="poly" title=" " alt="" coords="497,323,461,358,416,390,385,402,383,397,413,385,458,353,493,319"/>
+<area shape="rect" href="classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d" title="切换工作页面" alt="" coords="226,449,413,475"/>
+<area shape="poly" title=" " alt="" coords="506,325,472,383,446,414,416,440,394,452,392,447,413,436,443,410,467,380,502,322"/>
+<area shape="rect" href="classdao_1_1Tray.html#a77f5a6aa30146f57d27585dd6be175a8" title=" " alt="" coords="262,499,377,524"/>
+<area shape="poly" title=" " alt="" coords="511,325,499,362,480,407,453,451,416,489,398,500,378,507,376,502,396,496,413,485,448,448,475,404,494,360,506,323"/>
+<area shape="rect" href="classdao_1_1App.html#aa2f99ef6dc73c154e87132b8c1ae3aad" title="禁止移动构造" alt="" coords="35,5,147,31"/>
+<area shape="poly" title=" " alt="" coords="249,158,222,143,211,130,203,118,197,92,191,67,185,56,174,44,146,29,148,24,178,40,189,52,196,65,203,91,208,116,215,127,226,139,251,153"/>
+<area shape="rect" href="classdao_1_1App.html#abc08039a68ede5cb7ad857ba60a5127e" title="禁止拷贝构造" alt="" coords="35,55,147,80"/>
+<area shape="poly" title=" " alt="" coords="249,155,223,143,207,130,198,118,189,105,175,94,146,81,148,76,177,89,193,102,202,115,211,127,225,138,251,150"/>
+<area shape="rect" href="classdao_1_1App.html#af092a02aaee9e31bc582a6d94391ffc8" title="禁止移动赋值" alt="" coords="14,104,167,129"/>
+<area shape="poly" title=" " alt="" coords="249,154,150,132,151,127,251,149"/>
+<area shape="rect" href="classdao_1_1App.html#ad02f1ec3c9d83d27818d76ef9f4720fb" title="禁止拷贝赋值" alt="" coords="14,153,167,179"/>
+<area shape="poly" title=" " alt="" coords="250,169,168,169,168,163,250,163"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#ad186b6baac1841521b02da64fab3c777" title="禁止移动构造" alt="" coords="15,203,166,243"/>
+<area shape="poly" title=" " alt="" coords="230,237,166,232,166,226,230,231"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a20b9be1f47d90821523b5d042228f570" title="禁止拷贝构造函数" alt="" coords="15,267,166,307"/>
+<area shape="poly" title=" " alt="" coords="231,261,167,275,166,269,230,256"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#a66bd73134a914ea44bb72b0a0bc5c2fe" title="禁止移动赋值" alt="" coords="15,331,166,371"/>
+<area shape="poly" title=" " alt="" coords="237,269,225,275,211,286,202,298,192,309,177,322,155,334,152,329,175,317,189,306,198,294,207,282,223,270,234,264"/>
+<area shape="rect" href="classdao_1_1BatchRenderer.html#ab731fd7c9f322d316e86dd9202832304" title="禁止拷贝赋值运算符" alt="" coords="15,395,166,435"/>
+<area shape="poly" title=" " alt="" coords="234,268,226,275,214,288,208,301,202,328,197,356,190,371,178,385,162,397,158,393,174,381,185,368,192,355,197,327,203,299,210,285,222,271,230,264"/>
+<area shape="rect" href="classdao_1_1WindowController.html#ae3965b5e6b5fb98f4b181b25d0027648" title="执行命令" alt="" coords="5,459,176,499"/>
+<area shape="poly" title=" " alt="" coords="212,473,176,476,176,470,212,467"/>
 </map>
 </div>
 
@@ -1277,11 +1372,11 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>对应纹理ID的AtlasRegion常量引用 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>调用者需确保textureId在有效范围内，否则行为未定义 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="AtlasRegion_8hpp_source.html#l00025">25</a> of file <a class="el" href="AtlasRegion_8hpp_source.html">AtlasRegion.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                                           {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="comment">// 注意：未进行边界检查以提高性能，调用者需确保textureId有效</span></div>
-<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2677ebbcecac58d76c5aec8c29a0a65e">regions</a>[textureId];</div>
-<div class="line"><span class="lineno">   28</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="AtlasRegion_8hpp_source.html#l00024">24</a> of file <a class="el" href="AtlasRegion_8hpp_source.html">AtlasRegion.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                                           {</div>
+<div class="line"><span class="lineno">   25</span>        <span class="comment">// 注意：未进行边界检查以提高性能，调用者需确保textureId有效</span></div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2677ebbcecac58d76c5aec8c29a0a65e">regions</a>[textureId];</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a2677ebbcecac58d76c5aec8c29a0a65e"><div class="ttname"><a href="#a2677ebbcecac58d76c5aec8c29a0a65e">dao::regions</a></div><div class="ttdeci">const AtlasRegion regions[]</div><div class="ttdoc">图集区域数据数组</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1567,7 +1662,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="262,28,200,28,200,23,262,23"/>
 <area shape="rect" href="classdao_1_1GlyphAtlas.html#a81129592c241243a145647d4b4e9851e" title="批量加载字形" alt="" coords="5,69,228,109"/>
 <area shape="poly" title=" " alt="" coords="267,92,228,92,228,87,267,87"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title=" " alt="" coords="14,133,219,173"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title="尝试加载字形" alt="" coords="14,133,219,173"/>
 <area shape="poly" title=" " alt="" coords="279,115,198,136,196,131,277,110"/>
 </map>
 </div>
@@ -2081,14 +2176,14 @@ Here is the caller graph for this function:</div>
 <p>RGB值归一化查找表 </p>
 <p>将0-255的整型RGB值预先转换为0.0-1.0的浮点数，用于提高渲染性能。 使用constexpr编译时计算，避免运行时开销。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ColorRGB_8hpp_source.html#l00010">10</a> of file <a class="el" href="ColorRGB_8hpp_source.html">ColorRGB.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                            {</div>
-<div class="line"><span class="lineno">   11</span>        std::array&lt;f32, 256&gt; lut{};</div>
-<div class="line"><span class="lineno">   12</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; lut.size(); ++i) {</div>
-<div class="line"><span class="lineno">   13</span>            lut[i] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(i) / 255.0f;</div>
-<div class="line"><span class="lineno">   14</span>        }</div>
-<div class="line"><span class="lineno">   15</span>        <span class="keywordflow">return</span> lut;</div>
-<div class="line"><span class="lineno">   16</span>    }();</div>
+<p class="definition">Definition at line <a class="el" href="ColorRGB_8hpp_source.html#l00009">9</a> of file <a class="el" href="ColorRGB_8hpp_source.html">ColorRGB.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>                                            {</div>
+<div class="line"><span class="lineno">   10</span>        std::array&lt;f32, 256&gt; lut{};</div>
+<div class="line"><span class="lineno">   11</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; lut.size(); ++i) {</div>
+<div class="line"><span class="lineno">   12</span>            lut[i] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(i) / 255.0f;</div>
+<div class="line"><span class="lineno">   13</span>        }</div>
+<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">return</span> lut;</div>
+<div class="line"><span class="lineno">   15</span>    }();</div>
 </div><!-- fragment -->
 </div>
 </div>

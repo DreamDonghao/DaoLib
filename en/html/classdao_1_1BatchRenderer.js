@@ -1,13 +1,14 @@
 var classdao_1_1BatchRenderer =
 [
-    [ "BatchRenderer", "classdao_1_1BatchRenderer.html#a92a875cc2a7054c1b43c1c3c0c5069d0", null ],
-    [ "~BatchRenderer", "classdao_1_1BatchRenderer.html#aacc6cec67f35d35b256228c3b2e78ae7", null ],
+    [ "BatchRenderer", "classdao_1_1BatchRenderer.html#a5d897bbc454c6192d44f6439be617baa", null ],
     [ "BatchRenderer", "classdao_1_1BatchRenderer.html#a20b9be1f47d90821523b5d042228f570", null ],
+    [ "BatchRenderer", "classdao_1_1BatchRenderer.html#ad186b6baac1841521b02da64fab3c777", null ],
+    [ "~BatchRenderer", "classdao_1_1BatchRenderer.html#aacc6cec67f35d35b256228c3b2e78ae7", null ],
+    [ "allocateBatchGroup", "classdao_1_1BatchRenderer.html#aad96ceae92bd59722b5a39bf99ac6a52", null ],
     [ "allocateVertices", "classdao_1_1BatchRenderer.html#a3bfa79b3bf8c7987c38e9fa034389b49", null ],
-    [ "clear", "classdao_1_1BatchRenderer.html#a059b2827b8e43b2d4437269951496b3a", null ],
-    [ "init", "classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7", null ],
     [ "loadAtlas", "classdao_1_1BatchRenderer.html#a46ace05b39dd11512f8e82275f5c2d5f", null ],
-    [ "loadGlyph", "classdao_1_1BatchRenderer.html#a8fe8dbf71996a24062c79c8046a196aa", null ],
-    [ "render", "classdao_1_1BatchRenderer.html#a33d31c7cc4be3191cd3eefed8fadd0cc", null ],
-    [ "syncGlyphAtlas", "classdao_1_1BatchRenderer.html#afc7be77de2387af37b893d5ecbec248d", null ]
+    [ "loadGlyph", "classdao_1_1BatchRenderer.html#a7848cd2f1ac101c7627984d446643265", null ],
+    [ "operator=", "classdao_1_1BatchRenderer.html#a66bd73134a914ea44bb72b0a0bc5c2fe", null ],
+    [ "operator=", "classdao_1_1BatchRenderer.html#ab731fd7c9f322d316e86dd9202832304", null ],
+    [ "render", "classdao_1_1BatchRenderer.html#a33d31c7cc4be3191cd3eefed8fadd0cc", null ]
 ];

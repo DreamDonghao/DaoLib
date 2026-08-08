@@ -56,7 +56,7 @@ var searchData=
   ['show_53',['show',['../classdao_1_1Window.html#a5da0453643006a0248af568895ee8c39',1,'dao::Window']]],
   ['showwindow_54',['showWindow',['../classdao_1_1App.html#a430fd19759ee48d8e7c00e8364113a11',1,'dao::App']]],
   ['simplebutton_2ehpp_55',['SimpleButton.hpp',['../SimpleButton_8hpp.html',1,'']]],
-  ['size_56',['size',['../classdao_1_1db_1_1Result.html#aee0869cd207f5428c87211faad2f1dd4',1,'dao::db::Result::size()'],['../classdao_1_1web_1_1Headers.html#a98ef3efb1e0c67fdfe765b85094de927',1,'dao::web::Headers::size()']]],
+  ['size_56',['size',['../structdao_1_1BatchGroup_1_1Batch.html#ab28908a9ceca98f551d7c5b6c28e97cf',1,'dao::BatchGroup::Batch::size'],['../classdao_1_1db_1_1Result.html#aee0869cd207f5428c87211faad2f1dd4',1,'dao::db::Result::size()'],['../classdao_1_1web_1_1Headers.html#a98ef3efb1e0c67fdfe765b85094de927',1,'dao::web::Headers::size()']]],
   ['sort_57',['sort',['../namespacedao.html#a02af220658c49a0b7ac198977f450e7f',1,'dao']]],
   ['sqlite_58',['Sqlite',['../classdao_1_1db_1_1Sqlite.html',1,'dao::db::Sqlite'],['../classdao_1_1db_1_1Sqlite.html#a148d32cf66c18d4bd4b95968ed068139',1,'dao::db::Sqlite::Sqlite()']]],
   ['sqlite_2ehpp_59',['Sqlite.hpp',['../Sqlite_8hpp.html',1,'']]],
@@ -65,6 +65,5 @@ var searchData=
   ['submit_20a_20pull_20request_62',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
   ['success_63',['success',['../structdao_1_1web_1_1HttpResponse.html#aa46027a83e0cf6b969ae9fbf1e8ab7f6',1,'dao::web::HttpResponse']]],
   ['switchdeleter_64',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html',1,'dao::SwitchDeleter&lt; T &gt;'],['../classdao_1_1SwitchDeleter.html#af2039b61545c1250d4364617fcf8bc03',1,'dao::SwitchDeleter::SwitchDeleter()']]],
-  ['switchpage_65',['switchPage',['../classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d',1,'dao::Window::switchPage()'],['../classdao_1_1WindowController.html#af0054f5b3e5758f6cfc872dfdff5f06e',1,'dao::WindowController::switchPage()'],['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4',1,'dao::switchPage']]],
-  ['syncglyphatlas_66',['syncGlyphAtlas',['../classdao_1_1BatchRenderer.html#afc7be77de2387af37b893d5ecbec248d',1,'dao::BatchRenderer']]]
+  ['switchpage_65',['switchPage',['../classdao_1_1Window.html#a721cf2fceaa94c6ab91059828914d01d',1,'dao::Window::switchPage()'],['../classdao_1_1WindowController.html#af0054f5b3e5758f6cfc872dfdff5f06e',1,'dao::WindowController::switchPage()'],['../namespacedao.html#a55c8fd75b7572d13bfd5f12e4a8fad67a56a9fd4612e12750073016d9bc7c6cc4',1,'dao::switchPage']]]
 ];

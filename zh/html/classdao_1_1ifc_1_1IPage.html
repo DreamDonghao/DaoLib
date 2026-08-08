@@ -130,11 +130,11 @@ Inheritance diagram for dao::ifc::IPage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ifc_1_1IPage__inherit__graph.png" border="0" usemap="#adao_1_1ifc_1_1IPage_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1ifc_1_1IPage_inherit__map" id="adao_1_1ifc_1_1IPage_inherit__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
-<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html" title="通用页面接口" alt="" coords="5,299,181,624"/>
-<area shape="poly" title=" " alt="" coords="96,265,96,299,91,299,91,265"/>
-<area shape="rect" href="classdao_1_1VoidPage.html" title=" " alt="" coords="9,672,178,857"/>
-<area shape="poly" title=" " alt="" coords="96,637,96,672,91,672,91,637"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,211"/>
+<area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html" title="通用页面接口" alt="" coords="5,259,181,564"/>
+<area shape="poly" title=" " alt="" coords="96,224,96,258,91,258,91,224"/>
+<area shape="rect" href="classdao_1_1VoidPage.html" title=" " alt="" coords="9,612,178,797"/>
+<area shape="poly" title=" " alt="" coords="96,578,96,612,91,612,91,578"/>
 </map>
 </div>
 <div class="dynheader">
@@ -142,7 +142,7 @@ Collaboration diagram for dao::ifc::IPage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1ifc_1_1IPage__coll__graph.png" border="0" usemap="#adao_1_1ifc_1_1IPage_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1ifc_1_1IPage_coll__map" id="adao_1_1ifc_1_1IPage_coll__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,181,251"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,181,211"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -161,11 +161,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acff3a62be8f466bb00ab8cd2e3cd69bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息  <br /></td></tr>
 <tr class="memitem:a73b791f59326c7321eb2329536d29ea5" id="r_a73b791f59326c7321eb2329536d29ea5"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1WindowController.html">WindowController</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a73b791f59326c7321eb2329536d29ea5">getWindowController</a> ()=0</td></tr>
 <tr class="memdesc:a73b791f59326c7321eb2329536d29ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口控制器  <br /></td></tr>
-<tr class="memitem:a8476ce06c868ef3c02cbdd4d1cb324f5" id="r_a8476ce06c868ef3c02cbdd4d1cb324f5"><td class="memItemLeft">virtual const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8476ce06c868ef3c02cbdd4d1cb324f5">getTitle</a> () const =0</td></tr>
-<tr class="memdesc:a8476ce06c868ef3c02cbdd4d1cb324f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
-<tr class="memitem:a7585dc69db59f945d09879b33f0ddf2c" id="r_a7585dc69db59f945d09879b33f0ddf2c"><td class="memItemLeft">virtual <a class="el" href="classdao_1_1Context.html">Context</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7585dc69db59f945d09879b33f0ddf2c">getContext</a> () const =0</td></tr>
-<tr class="memdesc:a7585dc69db59f945d09879b33f0ddf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置全局环境上下文  <br /></td></tr>
-<tr class="memitem:a89a6969741b2df8c6b58558ffce1b1ee" id="r_a89a6969741b2df8c6b58558ffce1b1ee"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a89a6969741b2df8c6b58558ffce1b1ee">init</a> (<a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> *vertexBatch, <a class="el" href="classdao_1_1Context.html">Context</a> *context)=0</td></tr>
+<tr class="memitem:a0eccd9cadc2139d62f2147e7ff7fa416" id="r_a0eccd9cadc2139d62f2147e7ff7fa416"><td class="memItemLeft">virtual const std::string_view &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0eccd9cadc2139d62f2147e7ff7fa416">getTitle</a> () const =0</td></tr>
+<tr class="memdesc:a0eccd9cadc2139d62f2147e7ff7fa416"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面标题  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>页面接口 </p>
@@ -229,35 +226,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7585dc69db59f945d09879b33f0ddf2c" name="a7585dc69db59f945d09879b33f0ddf2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7585dc69db59f945d09879b33f0ddf2c">&#9670;&#160;</a></span>getContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classdao_1_1Context.html">Context</a> &amp; dao::ifc::IPage::getContext </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>设置全局环境上下文 </p>
-
-<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#ade64c48e37494bc65d3987cdbfc4033e">dao::ifc::IGeneralPage</a>.</p>
-
-</div>
-</div>
 <a id="aa3f41d349abc9002260a209f6274c501" name="aa3f41d349abc9002260a209f6274c501"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3f41d349abc9002260a209f6274c501">&#9670;&#160;</a></span>getRegisterTextures()</h2>
 
@@ -288,8 +256,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8476ce06c868ef3c02cbdd4d1cb324f5" name="a8476ce06c868ef3c02cbdd4d1cb324f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8476ce06c868ef3c02cbdd4d1cb324f5">&#9670;&#160;</a></span>getTitle()</h2>
+<a id="a0eccd9cadc2139d62f2147e7ff7fa416" name="a0eccd9cadc2139d62f2147e7ff7fa416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eccd9cadc2139d62f2147e7ff7fa416">&#9670;&#160;</a></span>getTitle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +266,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const std::string &amp; dao::ifc::IPage::getTitle </td>
+          <td class="memname">virtual const std::string_view &amp; dao::ifc::IPage::getTitle </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -313,7 +281,7 @@ Public Member Functions</h2></td></tr>
 
 <p>获取页面标题 </p>
 
-<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#a3d9837c76c53f11c0f8f2b4b051775d9">dao::ifc::IGeneralPage</a>.</p>
+<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#afcdddbf55fc7c00a1a5438be6ab33a9a">dao::ifc::IGeneralPage</a>.</p>
 
 </div>
 </div>
@@ -372,37 +340,6 @@ Public Member Functions</h2></td></tr>
 <p>处理消息 </p>
 
 <p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#a518a9c220d67a9d0f5b8c1e3b8c0218c">dao::ifc::IGeneralPage</a>, and <a class="el" href="classdao_1_1VoidPage.html#a6f2170dbca12e68d4a3a2a469c675c0c">dao::VoidPage</a>.</p>
-
-</div>
-</div>
-<a id="a89a6969741b2df8c6b58558ffce1b1ee" name="a89a6969741b2df8c6b58558ffce1b1ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a6969741b2df8c6b58558ffce1b1ee">&#9670;&#160;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void dao::ifc::IPage::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdao_1_1BatchRenderer.html">BatchRenderer</a> *</td>          <td class="paramname"><span class="paramname"><em>vertexBatch</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classdao_1_1Context.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classdao_1_1ifc_1_1IGeneralPage.html#a1d07814d6ca3b68fbe558377f605d1fd">dao::ifc::IGeneralPage</a>.</p>
 
 </div>
 </div>

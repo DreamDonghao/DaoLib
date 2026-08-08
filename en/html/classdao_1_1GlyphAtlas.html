@@ -130,7 +130,7 @@ Collaboration diagram for dao::GlyphAtlas:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1GlyphAtlas__coll__graph.png" border="0" usemap="#adao_1_1GlyphAtlas_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1GlyphAtlas_coll__map" id="adao_1_1GlyphAtlas_coll__map">
-<area shape="rect" title="字形图集" alt="" coords="5,5,181,351"/>
+<area shape="rect" title="字形图集" alt="" coords="5,5,181,431"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -148,16 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b53078277c4ebf8cc1e0a93a08b991e" id="r_a6b53078277c4ebf8cc1e0a93a08b991e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b53078277c4ebf8cc1e0a93a08b991e">registerGlyph</a> (<a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode)</td></tr>
 <tr class="memdesc:a6b53078277c4ebf8cc1e0a93a08b991e"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载字形  <br /></td></tr>
 <tr class="memitem:a80f9cad17826d5a2f51429a475da3d50" id="r_a80f9cad17826d5a2f51429a475da3d50"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a80f9cad17826d5a2f51429a475da3d50">tryRegisterGlyph</a> (<a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode)</td></tr>
+<tr class="memdesc:a80f9cad17826d5a2f51429a475da3d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试加载字形  <br /></td></tr>
 <tr class="memitem:a81129592c241243a145647d4b4e9851e" id="r_a81129592c241243a145647d4b4e9851e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a81129592c241243a145647d4b4e9851e">batchRegisterGlyph</a> (<a class="el" href="namespacedao.html#a5ab6c427560c26a9f29178932a37bbf9">utf32str_view</a> chars)</td></tr>
 <tr class="memdesc:a81129592c241243a145647d4b4e9851e"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量加载字形  <br /></td></tr>
 <tr class="memitem:a47c32591bd5ffa5b2ca0df3d9f43a1c0" id="r_a47c32591bd5ffa5b2ca0df3d9f43a1c0"><td class="memItemLeft"><a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#a47c32591bd5ffa5b2ca0df3d9f43a1c0">getGlyphAtlasRegion</a> (char32_t charCode) const</td></tr>
 <tr class="memdesc:a47c32591bd5ffa5b2ca0df3d9f43a1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文字在图集中的位置  <br /></td></tr>
-<tr class="memitem:a53575f88607a0295aedb60e09130f005" id="r_a53575f88607a0295aedb60e09130f005"><td class="memItemLeft">SDL_Surface &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a53575f88607a0295aedb60e09130f005">getAtlasSurface</a> () const</td></tr>
-<tr class="memdesc:a53575f88607a0295aedb60e09130f005"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字形图集  <br /></td></tr>
-<tr class="memitem:a2cdee5e502fad6002385b5605e36469d" id="r_a2cdee5e502fad6002385b5605e36469d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2cdee5e502fad6002385b5605e36469d">clearUpdateFlag</a> ()</td></tr>
-<tr class="memdesc:a2cdee5e502fad6002385b5605e36469d"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除添加字形标记  <br /></td></tr>
-<tr class="memitem:aa1c24bd3734f2f8bdc7d1f1c24eedaa8" id="r_aa1c24bd3734f2f8bdc7d1f1c24eedaa8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa1c24bd3734f2f8bdc7d1f1c24eedaa8">isUpdated</a> () const</td></tr>
-<tr class="memdesc:aa1c24bd3734f2f8bdc7d1f1c24eedaa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否有新的字形添加  <br /></td></tr>
 <tr class="memitem:a7e37bb5fa78b2455ccb8670e8c8565c8" id="r_a7e37bb5fa78b2455ccb8670e8c8565c8"><td class="memItemLeft"><a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7e37bb5fa78b2455ccb8670e8c8565c8">getGlyphAspectRatio</a> (<a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) const</td></tr>
 <tr class="memdesc:a7e37bb5fa78b2455ccb8670e8c8565c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字形的宽高比  <br /></td></tr>
 <tr class="memitem:abab0414afca3ca3d0aaa4dea7f3b1ecf" id="r_abab0414afca3ca3d0aaa4dea7f3b1ecf"><td class="memItemLeft"><a class="el" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a>&#160;</td><td class="memItemRight"><a class="el" href="#abab0414afca3ca3d0aaa4dea7f3b1ecf">getGlyphAdvance</a> (<a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) const</td></tr>
@@ -168,6 +163,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a859e3e656bbad068dcdae552d8308bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体磅值  <br /></td></tr>
 <tr class="memitem:a7c2ff714715df4f19b4b77899efddf00" id="r_a7c2ff714715df4f19b4b77899efddf00"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7c2ff714715df4f19b4b77899efddf00">isLoaded</a> (<a class="el" href="namespacedao.html#addc09e7009536ce405ecc985ece7673c">utf32char</a> charCode) const</td></tr>
 <tr class="memdesc:a7c2ff714715df4f19b4b77899efddf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否已经加载该文字  <br /></td></tr>
+<tr class="memitem:a16c3f1bd818714c4fdac17765e3b0a6c" id="r_a16c3f1bd818714c4fdac17765e3b0a6c"><td class="memItemLeft">SDL_Texture *&#160;</td><td class="memItemRight"><a class="el" href="#a16c3f1bd818714c4fdac17765e3b0a6c">getAtlasTexture</a> (<a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a> rendererID, SDL_Renderer *renderer)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -221,26 +217,24 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1GlyphAtlas_a237c430f181e83af326be2454b3595b7_icgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a237c430f181e83af326be2454b3595b7_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1GlyphAtlas_a237c430f181e83af326be2454b3595b7_icgraph" id="aclassdao_1_1GlyphAtlas_a237c430f181e83af326be2454b3595b7_icgraph">
-<area shape="rect" title="禁用拷贝构造" alt="" coords="680,209,884,235"/>
-<area shape="poly" title=" " alt="" coords="827,200,824,195,816,192,782,188,755,190,741,195,738,200,745,207,741,211,733,201,737,191,754,185,782,183,817,187,827,191,831,197"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="434,119,626,159"/>
-<area shape="poly" title=" " alt="" coords="731,207,631,174,594,162,596,157,633,169,732,202"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a3a2c287150d3d25001ee5896e3bd6055" title="禁用移动构造" alt="" coords="428,184,632,209"/>
-<area shape="poly" title=" " alt="" coords="666,213,632,210,633,204,667,208"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a9e41b8b7702cf3802ebcefeaffe2b693" title="禁用拷贝赋值" alt="" coords="431,233,629,259"/>
-<area shape="poly" title=" " alt="" coords="667,236,630,239,629,234,666,230"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#aa0b1d2707ced6524902745042155c9f3" title="禁用移动赋值" alt="" coords="431,283,629,308"/>
-<area shape="poly" title=" " alt="" coords="733,242,633,274,589,285,588,280,631,269,731,237"/>
+<area shape="rect" title="禁用拷贝构造" alt="" coords="680,173,884,199"/>
+<area shape="poly" title=" " alt="" coords="827,164,824,159,816,156,782,152,755,154,741,159,738,164,745,171,741,175,733,165,737,155,754,149,782,147,817,151,827,155,831,161"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a09b5d07cfb6fa9b9b7208851219a18d2" title=" " alt="" coords="434,83,626,123"/>
+<area shape="poly" title=" " alt="" coords="731,171,631,138,594,126,596,121,633,133,732,166"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a3a2c287150d3d25001ee5896e3bd6055" title="禁用移动构造" alt="" coords="428,148,632,173"/>
+<area shape="poly" title=" " alt="" coords="666,177,632,174,633,168,667,172"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a9e41b8b7702cf3802ebcefeaffe2b693" title="禁用拷贝赋值" alt="" coords="431,197,629,223"/>
+<area shape="poly" title=" " alt="" coords="667,200,630,203,629,198,666,194"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#aa0b1d2707ced6524902745042155c9f3" title="禁用移动赋值" alt="" coords="431,247,629,272"/>
+<area shape="poly" title=" " alt="" coords="733,206,633,238,589,249,588,244,631,233,731,201"/>
 <area shape="rect" href="classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e" title=" " alt="" coords="186,5,370,31"/>
-<area shape="poly" title=" " alt="" coords="491,113,439,78,379,46,342,33,344,28,381,41,442,74,494,109"/>
+<area shape="poly" title=" " alt="" coords="470,81,379,46,335,33,336,28,381,41,472,76"/>
 <area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea" title=" " alt="" coords="195,55,361,95"/>
-<area shape="poly" title=" " alt="" coords="437,118,357,98,358,93,438,113"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="203,119,353,159"/>
-<area shape="poly" title=" " alt="" coords="420,142,353,142,353,137,420,137"/>
-<area shape="rect" href="classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,184,380,209"/>
-<area shape="poly" title=" " alt="" coords="429,165,335,187,334,181,428,160"/>
-<area shape="rect" href="classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,233,365,259"/>
-<area shape="poly" title=" " alt="" coords="441,167,430,174,415,185,406,198,397,211,381,223,352,236,350,231,379,218,393,207,402,195,411,182,426,169,438,163"/>
+<area shape="poly" title=" " alt="" coords="420,94,361,87,362,82,420,88"/>
+<area shape="rect" href="classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,120,380,145"/>
+<area shape="poly" title=" " alt="" coords="420,119,381,123,380,118,420,113"/>
+<area shape="rect" href="classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,169,365,195"/>
+<area shape="poly" title=" " alt="" coords="450,130,429,138,381,159,338,172,337,167,379,154,427,133,448,125"/>
 <area shape="rect" href="classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8" title="析构函数" alt="" coords="5,5,128,31"/>
 <area shape="poly" title=" " alt="" coords="172,21,129,21,129,15,172,15"/>
 </map>
@@ -301,13 +295,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00018">18</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                           {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (m_atlas) {</div>
-<div class="line"><span class="lineno">   20</span>        SDL_DestroySurface(m_atlas);</div>
-<div class="line"><span class="lineno">   21</span>        m_atlas = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   22</span>    }</div>
-<div class="line"><span class="lineno">   23</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00029">29</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                           {</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (m_atlasSurface) {</div>
+<div class="line"><span class="lineno">   31</span>        SDL_DestroySurface(m_atlasSurface);</div>
+<div class="line"><span class="lineno">   32</span>        m_atlasSurface = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -330,13 +324,13 @@ Here is the call graph for this function:</div>
 <p>批量加载字形 </p>
 <p>将一批文字的字形编码添加到字形图集中 </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00116">116</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>                                                                {</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;ch: chars) {</div>
-<div class="line"><span class="lineno">  118</span>        <a class="code hl_function" href="#a6b53078277c4ebf8cc1e0a93a08b991e">registerGlyph</a>(ch);</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a6b53078277c4ebf8cc1e0a93a08b991e"><div class="ttname"><a href="#a6b53078277c4ebf8cc1e0a93a08b991e">dao::GlyphAtlas::registerGlyph</a></div><div class="ttdeci">void registerGlyph(utf32char charCode)</div><div class="ttdoc">加载字形</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00059">GlyphAtlas.cpp:59</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00133">133</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>                                                                {</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;ch: chars) {</div>
+<div class="line"><span class="lineno">  135</span>        <a class="code hl_function" href="#a6b53078277c4ebf8cc1e0a93a08b991e">registerGlyph</a>(ch);</div>
+<div class="line"><span class="lineno">  136</span>    }</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a6b53078277c4ebf8cc1e0a93a08b991e"><div class="ttname"><a href="#a6b53078277c4ebf8cc1e0a93a08b991e">dao::GlyphAtlas::registerGlyph</a></div><div class="ttdeci">void registerGlyph(utf32char charCode)</div><div class="ttdoc">加载字形</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00070">GlyphAtlas.cpp:70</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -375,16 +369,16 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00025">25</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                            {</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keyword">auto</span> &amp;self = <a class="code hl_function" href="#a09b5d07cfb6fa9b9b7208851219a18d2">getGlyphAtlas</a>();</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (self.m_font) {</div>
-<div class="line"><span class="lineno">   28</span>        TTF_CloseFont(self.m_font);</div>
-<div class="line"><span class="lineno">   29</span>        self.m_font = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span>    TTF_Quit();</div>
-<div class="line"><span class="lineno">   32</span>}</div>
-<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a09b5d07cfb6fa9b9b7208851219a18d2"><div class="ttname"><a href="#a09b5d07cfb6fa9b9b7208851219a18d2">dao::GlyphAtlas::getGlyphAtlas</a></div><div class="ttdeci">static GlyphAtlas &amp; getGlyphAtlas()</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00034">GlyphAtlas.cpp:34</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00036">36</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                            {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span> &amp;self = <a class="code hl_function" href="#a09b5d07cfb6fa9b9b7208851219a18d2">getGlyphAtlas</a>();</div>
+<div class="line"><span class="lineno">   38</span>        self.m_font) {</div>
+<div class="line"><span class="lineno">   39</span>        TTF_CloseFont(self.m_font);</div>
+<div class="line"><span class="lineno">   40</span>        self.m_font = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>    TTF_Quit();</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a09b5d07cfb6fa9b9b7208851219a18d2"><div class="ttname"><a href="#a09b5d07cfb6fa9b9b7208851219a18d2">dao::GlyphAtlas::getGlyphAtlas</a></div><div class="ttdeci">static GlyphAtlas &amp; getGlyphAtlas()</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00045">GlyphAtlas.cpp:45</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -409,36 +403,6 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a id="a2cdee5e502fad6002385b5605e36469d" name="a2cdee5e502fad6002385b5605e36469d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cdee5e502fad6002385b5605e36469d">&#9670;&#160;</a></span>clearUpdateFlag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dao::GlyphAtlas::clearUpdateFlag </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>清除添加字形标记 </p>
-
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8hpp_source.html#l00060">60</a> of file <a class="el" href="GlyphAtlas_8hpp_source.html">GlyphAtlas.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{ m_isUpdated = <span class="keyword">false</span>; }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a3060c69155482d121a85cf552066afe5" name="a3060c69155482d121a85cf552066afe5"></a>
@@ -491,17 +455,17 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00008">8</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>                                                                                                                         {</div>
-<div class="line"><span class="lineno">    9</span>    s_ttfPath = ttfPath;</div>
-<div class="line"><span class="lineno">   10</span>    s_glyphSize = glyphSize;</div>
-<div class="line"><span class="lineno">   11</span>    s_atlasSize = atlasSize;</div>
-<div class="line"><span class="lineno">   12</span>    s_pixelFont = pixelFont;</div>
-<div class="line"><span class="lineno">   13</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>                                                                                                  {</div>
+<div class="line"><span class="lineno">   10</span>    s_ttfPath = ttfPath;</div>
+<div class="line"><span class="lineno">   11</span>    s_glyphSize = glyphSize;</div>
+<div class="line"><span class="lineno">   12</span>    s_atlasSize = atlasSize;</div>
+<div class="line"><span class="lineno">   13</span>    s_pixelFont = pixelFont;</div>
+<div class="line"><span class="lineno">   14</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a53575f88607a0295aedb60e09130f005" name="a53575f88607a0295aedb60e09130f005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53575f88607a0295aedb60e09130f005">&#9670;&#160;</a></span>getAtlasSurface()</h2>
+<a id="a16c3f1bd818714c4fdac17765e3b0a6c" name="a16c3f1bd818714c4fdac17765e3b0a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c3f1bd818714c4fdac17765e3b0a6c">&#9670;&#160;</a></span>getAtlasTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,10 +474,14 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Surface &amp; dao::GlyphAtlas::getAtlasSurface </td>
+          <td class="memname">SDL_Texture * dao::GlyphAtlas::getAtlasTexture </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#a6fd9141b0c69d7cec3baccc710272bbb">i32</a></td>          <td class="paramname"><span class="paramname"><em>rendererID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>renderer</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -523,20 +491,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>获取字形图集 </p>
-
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00134">134</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>                                                  {</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> *m_atlas;</div>
-<div class="line"><span class="lineno">  136</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00018">18</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                                                        {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (!m_renderers.contains(rendererID)) {</div>
+<div class="line"><span class="lineno">   20</span>        m_renderers[rendererID] = renderer;</div>
+<div class="line"><span class="lineno">   21</span>        <span class="keyword">auto</span> &amp;texture = m_atlasTextures[rendererID];</div>
+<div class="line"><span class="lineno">   22</span>        texture = SDL_CreateTextureFromSurface(renderer, m_atlasSurface);</div>
+<div class="line"><span class="lineno">   23</span>        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);</div>
+<div class="line"><span class="lineno">   24</span>        SDL_SetTextureScaleMode(texture, <a class="code hl_function" href="#a8b212f16b4777d7fccb6c94660a80217">isPixelFont</a>() ? SDL_SCALEMODE_NEAREST : SDL_SCALEMODE_LINEAR);</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> m_atlasTextures[rendererID];</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+<div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a8b212f16b4777d7fccb6c94660a80217"><div class="ttname"><a href="#a8b212f16b4777d7fccb6c94660a80217">dao::GlyphAtlas::isPixelFont</a></div><div class="ttdeci">static bool isPixelFont()</div><div class="ttdef"><b>Definition</b> <a href="GlyphAtlas_8cpp_source.html#l00016">GlyphAtlas.cpp:16</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1GlyphAtlas_a53575f88607a0295aedb60e09130f005_icgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a53575f88607a0295aedb60e09130f005_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1GlyphAtlas_a53575f88607a0295aedb60e09130f005_icgraph" id="aclassdao_1_1GlyphAtlas_a53575f88607a0295aedb60e09130f005_icgraph">
-<area shape="rect" title="获取字形图集" alt="" coords="204,5,391,45"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="5,5,156,45"/>
-<area shape="poly" title=" " alt="" coords="190,28,156,28,156,23,190,23"/>
+<div class="center"><img src="classdao_1_1GlyphAtlas_a16c3f1bd818714c4fdac17765e3b0a6c_cgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a16c3f1bd818714c4fdac17765e3b0a6c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1GlyphAtlas_a16c3f1bd818714c4fdac17765e3b0a6c_cgraph" id="aclassdao_1_1GlyphAtlas_a16c3f1bd818714c4fdac17765e3b0a6c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a8b212f16b4777d7fccb6c94660a80217" title=" " alt="" coords="240,13,443,38"/>
+<area shape="poly" title=" " alt="" coords="192,23,226,23,226,28,192,28"/>
 </map>
 </div>
 
@@ -567,8 +541,8 @@ Here is the caller graph for this function:</div>
 
 <p>获取字体磅值 </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8hpp_source.html#l00075">75</a> of file <a class="el" href="GlyphAtlas_8hpp_source.html">GlyphAtlas.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ <span class="keywordflow">return</span> m_glyphSize; }</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8hpp_source.html#l00066">66</a> of file <a class="el" href="GlyphAtlas_8hpp_source.html">GlyphAtlas.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>{ <span class="keywordflow">return</span> m_glyphSize; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -597,13 +571,13 @@ Here is the caller graph for this function:</div>
 
 <p>获取字形水平 advance（已归一化到图集坐标系） </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00145">145</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  145</span>                                                                    {</div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
-<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> it-&gt;second.advance;</div>
-<div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> m_glyphSize;</div>
-<div class="line"><span class="lineno">  150</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00158">158</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>                                                                    {</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">return</span> it-&gt;second.advance;</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">return</span> m_glyphSize;</div>
+<div class="line"><span class="lineno">  163</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -632,13 +606,13 @@ Here is the caller graph for this function:</div>
 
 <p>获取字形的宽高比 </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00138">138</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>                                                                        {</div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(it-&gt;second.size.x, it-&gt;second.size.y);</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">return</span> 1.0f;</div>
-<div class="line"><span class="lineno">  143</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00151">151</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>                                                                        {</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(it-&gt;second.size.x, it-&gt;second.size.y);</div>
+<div class="line"><span class="lineno">  154</span>    }</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">return</span> 1.0f;</div>
+<div class="line"><span class="lineno">  156</span>}</div>
 <div class="ttc" id="anamespacedao_html_afd14b9005e324762dd1f107bf4e1c498"><div class="ttname"><a href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">dao::ratio</a></div><div class="ttdeci">f32 ratio(T a, T b)</div><div class="ttdoc">结果为浮点数的除法</div><div class="ttdef"><b>Definition</b> <a href="better__stl_8hpp_source.html#l00100">better_stl.hpp:100</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -686,11 +660,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00034">34</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                             {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keyword">static</span> <a class="code hl_function" href="#a237c430f181e83af326be2454b3595b7">GlyphAtlas</a> glyphAtlas;</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> glyphAtlas;</div>
-<div class="line"><span class="lineno">   37</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00045">45</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                            {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keyword">static</span> <a class="code hl_function" href="#a237c430f181e83af326be2454b3595b7">GlyphAtlas</a> glyphAtlas;</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> glyphAtlas;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 <div class="ttc" id="aclassdao_1_1GlyphAtlas_html_a237c430f181e83af326be2454b3595b7"><div class="ttname"><a href="#a237c430f181e83af326be2454b3595b7">dao::GlyphAtlas::GlyphAtlas</a></div><div class="ttdeci">GlyphAtlas(const GlyphAtlas &amp;)=delete</div><div class="ttdoc">禁用拷贝构造</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -708,17 +682,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1GlyphAtlas_a09b5d07cfb6fa9b9b7208851219a18d2_icgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a09b5d07cfb6fa9b9b7208851219a18d2_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1GlyphAtlas_a09b5d07cfb6fa9b9b7208851219a18d2_icgraph" id="aclassdao_1_1GlyphAtlas_a09b5d07cfb6fa9b9b7208851219a18d2_icgraph">
-<area shape="rect" title=" " alt="" coords="428,119,620,159"/>
+<area shape="rect" title=" " alt="" coords="428,85,620,125"/>
 <area shape="rect" href="classdao_1_1GlyphAtlas.html#a0c6bb93e9fd997ddf2b0bfdea291222e" title=" " alt="" coords="186,5,370,31"/>
-<area shape="poly" title=" " alt="" coords="486,113,437,78,379,46,343,33,345,28,381,41,440,73,489,109"/>
+<area shape="poly" title=" " alt="" coords="468,81,379,46,336,33,338,28,381,41,469,76"/>
 <area shape="rect" href="classdao_1_1ifc_1_1IGeneralPage.html#a9d0e7c9ea573a67f495de8fc40beb1ea" title=" " alt="" coords="195,55,361,95"/>
-<area shape="poly" title=" " alt="" coords="433,118,355,98,356,93,434,113"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="203,119,353,159"/>
-<area shape="poly" title=" " alt="" coords="414,142,354,142,354,137,414,137"/>
-<area shape="rect" href="classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,184,380,209"/>
-<area shape="poly" title=" " alt="" coords="425,165,334,187,333,181,424,160"/>
-<area shape="rect" href="classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,233,365,259"/>
-<area shape="poly" title=" " alt="" coords="482,169,435,197,381,223,342,236,341,231,379,218,432,193,480,165"/>
+<area shape="poly" title=" " alt="" coords="414,94,361,88,362,83,415,89"/>
+<area shape="rect" href="classdao_1_1InputBox.html#a13ca0eda840f42c084c7ecdcb278aec6" title="写入批处理" alt="" coords="176,120,380,145"/>
+<area shape="poly" title=" " alt="" coords="415,120,381,124,380,118,414,114"/>
+<area shape="rect" href="classdao_1_1Text.html#ab92dd46caf47d6f85e5340afaad06f5b" title="写入批处理" alt="" coords="191,169,365,195"/>
+<area shape="poly" title=" " alt="" coords="460,132,381,159,335,172,334,167,379,154,458,127"/>
 <area shape="rect" href="classdao_1_1App.html#a0a6f1b302cded708edfbb51cf7dce8d8" title="析构函数" alt="" coords="5,5,128,31"/>
 <area shape="poly" title=" " alt="" coords="172,21,129,21,129,15,172,15"/>
 </map>
@@ -751,18 +723,18 @@ Here is the caller graph for this function:</div>
 
 <p>获取文字在图集中的位置 </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00122">122</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>                                                                                {</div>
-<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;glyph = it-&gt;second;</div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">return</span> {</div>
-<div class="line"><span class="lineno">  126</span>            glyph.pos.x, glyph.pos.y,</div>
-<div class="line"><span class="lineno">  127</span>            glyph.pos.x + glyph.pos.w,</div>
-<div class="line"><span class="lineno">  128</span>            glyph.pos.y + glyph.pos.h,</div>
-<div class="line"><span class="lineno">  129</span>        };</div>
-<div class="line"><span class="lineno">  130</span>    }</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> BoundingBox{};</div>
-<div class="line"><span class="lineno">  132</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00139">139</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                                                                {</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;glyph = it-&gt;second;</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">return</span> {</div>
+<div class="line"><span class="lineno">  143</span>            glyph.pos.x, glyph.pos.y,</div>
+<div class="line"><span class="lineno">  144</span>            glyph.pos.x + glyph.pos.w,</div>
+<div class="line"><span class="lineno">  145</span>            glyph.pos.y + glyph.pos.h,</div>
+<div class="line"><span class="lineno">  146</span>        };</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">return</span> BoundingBox{};</div>
+<div class="line"><span class="lineno">  149</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -791,13 +763,13 @@ Here is the caller graph for this function:</div>
 
 <p>获取字形 bearing.x（已归一化到图集坐标系） </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00152">152</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>                                                                     {</div>
-<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
-<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> it-&gt;second.bearing.x;</div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">return</span> 0.0f;</div>
-<div class="line"><span class="lineno">  157</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00165">165</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>                                                                     {</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> it = m_glyphs.find(charCode); it != m_glyphs.end()) {</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span> it-&gt;second.bearing.x;</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  170</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -826,10 +798,10 @@ Here is the caller graph for this function:</div>
 
 <p>是否已经加载该文字 </p>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00159">159</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>                                                           {</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span> m_glyphs.contains(charCode);</div>
-<div class="line"><span class="lineno">  161</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00172">172</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>                                                           {</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> m_glyphs.contains(charCode);</div>
+<div class="line"><span class="lineno">  174</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -863,46 +835,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1GlyphAtlas_a8b212f16b4777d7fccb6c94660a80217_icgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a8b212f16b4777d7fccb6c94660a80217_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1GlyphAtlas_a8b212f16b4777d7fccb6c94660a80217_icgraph" id="aclassdao_1_1GlyphAtlas_a8b212f16b4777d7fccb6c94660a80217_icgraph">
-<area shape="rect" title=" " alt="" coords="403,45,605,70"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="204,5,355,45"/>
-<area shape="poly" title=" " alt="" coords="400,45,354,39,355,33,401,40"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#afc7be77de2387af37b893d5ecbec248d" title=" " alt="" coords="204,69,355,109"/>
-<area shape="poly" title=" " alt="" coords="401,75,355,81,354,76,400,69"/>
-<area shape="rect" href="classdao_1_1BatchRenderer.html#a33d31c7cc4be3191cd3eefed8fadd0cc" title="执行渲染" alt="" coords="5,69,156,109"/>
-<area shape="poly" title=" " alt="" coords="191,92,156,92,156,87,191,87"/>
+<area shape="rect" title=" " alt="" coords="259,45,461,70"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a16c3f1bd818714c4fdac17765e3b0a6c" title=" " alt="" coords="15,5,201,45"/>
+<area shape="poly" title=" " alt="" coords="246,46,201,40,202,35,247,40"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title="尝试加载字形" alt="" coords="5,69,211,109"/>
+<area shape="poly" title=" " alt="" coords="247,74,211,79,211,74,246,69"/>
 </map>
 </div>
 
-</div>
-</div>
-<a id="aa1c24bd3734f2f8bdc7d1f1c24eedaa8" name="aa1c24bd3734f2f8bdc7d1f1c24eedaa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1c24bd3734f2f8bdc7d1f1c24eedaa8">&#9670;&#160;</a></span>isUpdated()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dao::GlyphAtlas::isUpdated </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取是否有新的字形添加 </p>
-
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8hpp_source.html#l00063">63</a> of file <a class="el" href="GlyphAtlas_8hpp_source.html">GlyphAtlas.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <span class="keywordflow">return</span> m_isUpdated; }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e41b8b7702cf3802ebcefeaffe2b693" name="a9e41b8b7702cf3802ebcefeaffe2b693"></a>
@@ -1004,55 +944,53 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00059">59</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                          {</div>
-<div class="line"><span class="lineno">   60</span>    SDL_Surface *glyphSurface = s_pixelFont</div>
-<div class="line"><span class="lineno">   61</span>        ? TTF_RenderGlyph_Solid(m_font, charCode, SDL_Color{255, 255, 255, 255})</div>
-<div class="line"><span class="lineno">   62</span>        : TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// 图集扩容</span></div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (m_cursor.y + m_cursor.rowHeight + glyphSurface-&gt;h &gt; m_atlasSize) {</div>
-<div class="line"><span class="lineno">   66</span>        const i32 newSize = m_atlasSize * 2;</div>
-<div class="line"><span class="lineno">   67</span>        SDL_Surface *newAtlas = SDL_CreateSurface(newSize, newSize, SDL_PIXELFORMAT_RGBA32);</div>
-<div class="line"><span class="lineno">   68</span>        SDL_FillSurfaceRect(newAtlas, nullptr,</div>
-<div class="line"><span class="lineno">   69</span>                            SDL_MapRGBA(SDL_GetPixelFormatDetails(newAtlas-&gt;format), nullptr, 0, 0, 0, 0));</div>
-<div class="line"><span class="lineno">   70</span>        const SDL_Rect srcRect{0, 0, m_atlasSize, m_atlasSize};</div>
-<div class="line"><span class="lineno">   71</span>        SDL_BlitSurface(m_atlas, &amp;srcRect, newAtlas, &amp;srcRect);</div>
-<div class="line"><span class="lineno">   72</span>        SDL_DestroySurface(m_atlas);</div>
-<div class="line"><span class="lineno">   73</span>        m_atlas = newAtlas;</div>
-<div class="line"><span class="lineno">   74</span>        m_atlasSize = newSize;</div>
-<div class="line"><span class="lineno">   75</span>        m_isUpdated = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface-&gt;h);</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">if</span> (m_cursor.x + glyphSurface-&gt;w &gt; m_atlasSize) {</div>
-<div class="line"><span class="lineno">   81</span>        m_cursor.x = 0;</div>
-<div class="line"><span class="lineno">   82</span>        m_cursor.y += m_cursor.rowHeight;</div>
-<div class="line"><span class="lineno">   83</span>        m_cursor.rowHeight = glyphSurface-&gt;h;</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">const</span> SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface-&gt;w, glyphSurface-&gt;h};</div>
-<div class="line"><span class="lineno">   87</span>    SDL_BlitSurface(glyphSurface, <span class="keyword">nullptr</span>, m_atlas, &amp;dst);</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordtype">int</span> minx, maxx, miny, maxy, advance;</div>
-<div class="line"><span class="lineno">   89</span>    TTF_GetGlyphMetrics(m_font, charCode, &amp;minx, &amp;maxx, &amp;miny, &amp;maxy, &amp;advance);</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    Glyph glyph{};</div>
-<div class="line"><span class="lineno">   92</span>    glyph.size = {<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(glyphSurface-&gt;w), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(glyphSurface-&gt;h)};</div>
-<div class="line"><span class="lineno">   93</span>    glyph.bearing = {<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(minx), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(maxy)};</div>
-<div class="line"><span class="lineno">   94</span>    glyph.advance = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(advance);</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00070">70</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                          {</div>
+<div class="line"><span class="lineno">   71</span>    SDL_Surface *glyphSurface = s_pixelFont</div>
+<div class="line"><span class="lineno">   72</span>                                    ? TTF_RenderGlyph_Solid(m_font, charCode, SDL_Color{255, 255, 255, 255})</div>
+<div class="line"><span class="lineno">   73</span>                                    : TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// 图集扩容</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (m_cursor.y + m_cursor.rowHeight + glyphSurface-&gt;h &gt; m_atlasSize) {</div>
+<div class="line"><span class="lineno">   77</span>        const i32 newSize = m_atlasSize * 2;</div>
+<div class="line"><span class="lineno">   78</span>        SDL_Surface *newAtlas = SDL_CreateSurface(newSize, newSize, SDL_PIXELFORMAT_RGBA32);</div>
+<div class="line"><span class="lineno">   79</span>        SDL_FillSurfaceRect(newAtlas, nullptr,</div>
+<div class="line"><span class="lineno">   80</span>                            SDL_MapRGBA(SDL_GetPixelFormatDetails(newAtlas-&gt;format), nullptr, 0, 0, 0, 0));</div>
+<div class="line"><span class="lineno">   81</span>        const SDL_Rect srcRect{0, 0, m_atlasSize, m_atlasSize};</div>
+<div class="line"><span class="lineno">   82</span>        SDL_BlitSurface(m_atlasSurface, &amp;srcRect, newAtlas, &amp;srcRect);</div>
+<div class="line"><span class="lineno">   83</span>        SDL_DestroySurface(m_atlasSurface);</div>
+<div class="line"><span class="lineno">   84</span>        m_atlasSurface = newAtlas;</div>
+<div class="line"><span class="lineno">   85</span>        m_atlasSize = newSize;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface-&gt;h);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (m_cursor.x + glyphSurface-&gt;w &gt; m_atlasSize) {</div>
+<div class="line"><span class="lineno">   91</span>        m_cursor.x = 0;</div>
+<div class="line"><span class="lineno">   92</span>        m_cursor.y += m_cursor.rowHeight;</div>
+<div class="line"><span class="lineno">   93</span>        m_cursor.rowHeight = glyphSurface-&gt;h;</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
 <div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    glyph.pos = {</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.x, m_atlasSize), <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.y, m_atlasSize),</div>
-<div class="line"><span class="lineno">   98</span>        <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.w, m_atlasSize), <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.h, m_atlasSize)</div>
-<div class="line"><span class="lineno">   99</span>    };</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keyword">const</span> SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface-&gt;w, glyphSurface-&gt;h};</div>
+<div class="line"><span class="lineno">   97</span>    SDL_BlitSurface(glyphSurface, <span class="keyword">nullptr</span>, m_atlasSurface, &amp;dst);</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordtype">int</span> minx, maxx, miny, maxy, advance;</div>
+<div class="line"><span class="lineno">   99</span>    TTF_GetGlyphMetrics(m_font, charCode, &amp;minx, &amp;maxx, &amp;miny, &amp;maxy, &amp;advance);</div>
 <div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    m_glyphs.emplace(charCode, glyph);</div>
-<div class="line"><span class="lineno">  102</span>    m_cursor.x += glyphSurface-&gt;w;</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    SDL_DestroySurface(glyphSurface);</div>
-<div class="line"><span class="lineno">  105</span>    m_isUpdated = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<div class="line"><span class="lineno">  101</span>    Glyph glyph{};</div>
+<div class="line"><span class="lineno">  102</span>    glyph.size = {<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(glyphSurface-&gt;w), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(glyphSurface-&gt;h)};</div>
+<div class="line"><span class="lineno">  103</span>    glyph.bearing = {<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(minx), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(maxy)};</div>
+<div class="line"><span class="lineno">  104</span>    glyph.advance = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">f32</a><span class="keyword">&gt;</span>(advance);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    glyph.pos = {</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.x, m_atlasSize), <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.y, m_atlasSize),</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.w, m_atlasSize), <a class="code hl_function" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498">ratio</a>(dst.h, m_atlasSize)</div>
+<div class="line"><span class="lineno">  109</span>    };</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    m_glyphs.emplace(charCode, glyph);</div>
+<div class="line"><span class="lineno">  112</span>    m_cursor.x += glyphSurface-&gt;w;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    SDL_DestroySurface(glyphSurface);</div>
+<div class="line"><span class="lineno">  115</span>}</div>
 <div class="ttc" id="anamespacedao_html_a97a8fc44aad6375de4f486418d03b30d"><div class="ttname"><a href="namespacedao.html#a97a8fc44aad6375de4f486418d03b30d">dao::f32</a></div><div class="ttdeci">float f32</div><div class="ttdef"><b>Definition</b> <a href="type_8hpp_source.html#l00016">type.hpp:16</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1072,7 +1010,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="加载字形" alt="" coords="276,37,459,77"/>
 <area shape="rect" href="classdao_1_1GlyphAtlas.html#a81129592c241243a145647d4b4e9851e" title="批量加载字形" alt="" coords="5,5,228,45"/>
 <area shape="poly" title=" " alt="" coords="262,47,228,42,228,37,263,41"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title=" " alt="" coords="14,69,219,109"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title="尝试加载字形" alt="" coords="14,69,219,109"/>
 <area shape="poly" title=" " alt="" coords="263,73,220,79,219,74,262,68"/>
 </map>
 </div>
@@ -1093,31 +1031,43 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+
+<p>尝试加载字形 </p>
+<p>将一个文字的字形编码添加到字形图集中 ( </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">charCode</td><td></td></tr>
+    <tr><td class="paramname">charCode</td><td>文字的utf-32编码 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00108">108</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>                                                             {</div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">if</span> (m_glyphs.contains(charCode)) {</div>
-<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  111</span>    }</div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="#a6b53078277c4ebf8cc1e0a93a08b991e">registerGlyph</a>(charCode);</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  114</span>}</div>
+<p class="definition">Definition at line <a class="el" href="GlyphAtlas_8cpp_source.html#l00117">117</a> of file <a class="el" href="GlyphAtlas_8cpp_source.html">GlyphAtlas.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                             {</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (m_glyphs.contains(charCode)) {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="#a6b53078277c4ebf8cc1e0a93a08b991e">registerGlyph</a>(charCode);</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span>:m_renderers|std::ranges::views::keys) {</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keyword">auto</span> &amp;texture = m_atlasTextures[id];</div>
+<div class="line"><span class="lineno">  124</span>        SDL_DestroyTexture(texture);</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;renderer = m_renderers[id];</div>
+<div class="line"><span class="lineno">  126</span>        texture = SDL_CreateTextureFromSurface(renderer, m_atlasSurface);</div>
+<div class="line"><span class="lineno">  127</span>        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);</div>
+<div class="line"><span class="lineno">  128</span>        SDL_SetTextureScaleMode(texture, <a class="code hl_function" href="#a8b212f16b4777d7fccb6c94660a80217">isPixelFont</a>() ? SDL_SCALEMODE_NEAREST : SDL_SCALEMODE_LINEAR);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  131</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1GlyphAtlas_a80f9cad17826d5a2f51429a475da3d50_cgraph.png" border="0" usemap="#aclassdao_1_1GlyphAtlas_a80f9cad17826d5a2f51429a475da3d50_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1GlyphAtlas_a80f9cad17826d5a2f51429a475da3d50_cgraph" id="aclassdao_1_1GlyphAtlas_a80f9cad17826d5a2f51429a475da3d50_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,211,45"/>
-<area shape="rect" href="classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e" title="加载字形" alt="" coords="259,5,441,45"/>
-<area shape="poly" title=" " alt="" coords="211,23,245,23,245,28,211,28"/>
-<area shape="rect" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498" title="结果为浮点数的除法" alt="" coords="489,13,573,38"/>
-<area shape="poly" title=" " alt="" coords="442,23,476,23,476,28,442,28"/>
+<area shape="rect" title="尝试加载字形" alt="" coords="5,27,211,67"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a8b212f16b4777d7fccb6c94660a80217" title=" " alt="" coords="259,5,461,31"/>
+<area shape="poly" title=" " alt="" coords="210,33,245,29,245,34,211,38"/>
+<area shape="rect" href="classdao_1_1GlyphAtlas.html#a6b53078277c4ebf8cc1e0a93a08b991e" title="加载字形" alt="" coords="269,55,451,95"/>
+<area shape="poly" title=" " alt="" coords="211,56,256,61,255,66,210,61"/>
+<area shape="rect" href="namespacedao.html#afd14b9005e324762dd1f107bf4e1c498" title="结果为浮点数的除法" alt="" coords="509,63,593,88"/>
+<area shape="poly" title=" " alt="" coords="452,73,495,73,495,78,452,78"/>
 </map>
 </div>
 

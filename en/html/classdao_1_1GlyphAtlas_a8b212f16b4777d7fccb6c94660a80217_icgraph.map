@@ -1,9 +1,7 @@
 <map id="dao::GlyphAtlas::isPixelFont" name="dao::GlyphAtlas::isPixelFont">
-<area shape="rect" id="Node000001" title=" " alt="" coords="403,45,605,70"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1BatchRenderer.html#a64c2dc6051535b30069f2342c37a03f7" title="初始化渲染器" alt="" coords="204,5,355,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="400,45,354,39,355,33,401,40"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1BatchRenderer.html#afc7be77de2387af37b893d5ecbec248d" title=" " alt="" coords="204,69,355,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="401,75,355,81,354,76,400,69"/>
-<area shape="rect" id="Node000004" href="$classdao_1_1BatchRenderer.html#a33d31c7cc4be3191cd3eefed8fadd0cc" title="执行渲染" alt="" coords="5,69,156,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,92,156,92,156,87,191,87"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,45,461,70"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1GlyphAtlas.html#a16c3f1bd818714c4fdac17765e3b0a6c" title=" " alt="" coords="15,5,201,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,46,201,40,202,35,247,40"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1GlyphAtlas.html#a80f9cad17826d5a2f51429a475da3d50" title="尝试加载字形" alt="" coords="5,69,211,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,74,211,79,211,74,246,69"/>
 </map>
