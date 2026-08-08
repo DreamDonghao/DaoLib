@@ -1,5 +1,4 @@
 #pragma once
-#include <core/tool/better_stl.hpp>
 #include <core/render/primitives/ColorRGB.hpp>
 #include <SDL3/SDL_render.h>
 #include <core/tool/Point.hpp>
@@ -10,7 +9,7 @@ namespace dao {
     public:
         explicit Vertex(const f32 x = 0, const f32 y = 0, const ColorRGBA color = White)
             : m_color(color), m_data{
-                  {x, y}, color.getSDLFColor(), {1.0f, 1.0f}
+                  .position = {.x = x, .y = y}, .color = color.getSDLFColor(), .tex_coord = {.x = 1.0f, .y = 1.0f}
               } {
         }
 
@@ -49,7 +48,7 @@ namespace dao {
 
         /// @brief 到SDL_Vertex的类型转换
         /// @details 纹理坐标用 1*1px 的纯白图片,将 255RGB 数据归一化
-        constexpr SDL_Vertex getSDLVertex() const noexcept {
+        [[nodiscard]] constexpr SDL_Vertex getSDLVertex() const noexcept {
             return m_data;
         }
 

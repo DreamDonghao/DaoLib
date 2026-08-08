@@ -1,5 +1,4 @@
 #pragma once
-#include <core/tool/better_stl.hpp>
 #include <array>
 #include <SDL3/SDL_pixels.h>
 
@@ -141,7 +140,7 @@ namespace dao {
             const f32 a = (len == 8) ? rgbNorm[hexByteToU8(hex.substr(6, 2))] : 1.0f;
 
             // 验证转换结果：检查是否因无效字符导致转换失败（返回0但hex不是"00"）
-            const auto isValidHexByte = [&hex](i32 value, size_t pos1, size_t pos2) {
+            const auto isValidHexByte = [&hex](const i32 value, const size_t pos1, const size_t pos2) {
                 return !(value == 0 && (hex[pos1] != '0' || hex[pos2] != '0'));
             };
 
@@ -153,8 +152,8 @@ namespace dao {
             return ColorRGBA{r, g, b, a};
         }
 
-        constexpr SDL_FColor getSDLFColor() const noexcept {
-            return {rgbNorm[m_r], rgbNorm[m_g], rgbNorm[m_b], m_a};
+        [[nodiscard]] constexpr SDL_FColor getSDLFColor() const noexcept {
+            return {.r = rgbNorm[m_r], .g = rgbNorm[m_g], .b = rgbNorm[m_b], .a = m_a};
         }
 
     private:

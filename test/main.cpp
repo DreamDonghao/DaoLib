@@ -1,10 +1,10 @@
 #include <core/frame/App.hpp>
-#include <TextTestPage/TextTestPage.hpp>
-
 #include "CellularAutomataPage/CellularAutomataPage.hpp"
-
-
+#include "TestStaticDraw.hpp"
+dao::i32 dao::Config::defaultDynamicVerticesCount = 1000000;
+std::string_view dao::Config::ttfPath = "./assets/ttf/xs.ttf";
 int main(int argc, char *argv[]) {
+
     // 像素字体配置：glyphSize = 字体设计像素尺寸（如 12/16/24）
     // pixelFont=true → NEAREST 过滤 + 无抗锯齿渲染
     dao::GlyphAtlas::configure("./assets/ttf/xs.ttf",12, 512, true);

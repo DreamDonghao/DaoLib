@@ -20,3 +20,4 @@ CMakeSettings.json
 /example/.idea
 /example/cmake-build-debug
 /TestHttpServer
+.DS_Store

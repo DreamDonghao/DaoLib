@@ -41,9 +41,9 @@ namespace dao {
         /// @param charCode 文字的utf-32编码
         void registerGlyph(utf32char charCode);
 
-        /// @brief
-        /// @details
-        /// @param charCode
+        /// @brief 尝试加载字形
+        /// @details 将一个文字的字形编码添加到字形图集中 (
+        /// @param charCode 文字的utf-32编码
         bool tryRegisterGlyph(utf32char charCode);
 
         /// @brief 批量加载字形
@@ -52,15 +52,6 @@ namespace dao {
 
         /// @brief 获取文字在图集中的位置
         [[nodiscard]] BoundingBox getGlyphAtlasRegion(char32_t charCode) const;
-
-        /// @brief 获取字形图集
-        [[nodiscard]] SDL_Surface &getAtlasSurface() const;
-
-        /// @brief 清除添加字形标记
-        void clearUpdateFlag() { m_isUpdated = false; }
-
-        /// @brief 获取是否有新的字形添加
-        [[nodiscard]] bool isUpdated() const { return m_isUpdated; }
 
         /// @brief 获取字形的宽高比
         [[nodiscard]] f32 getGlyphAspectRatio(utf32char charCode) const;
@@ -89,6 +80,8 @@ namespace dao {
 
         [[nodiscard]] static bool isPixelFont();
 
+        [[nodiscard]] SDL_Texture *getAtlasTexture(i32 rendererID,SDL_Renderer * renderer);
+
     private:
         static std::string s_ttfPath;
         static f32 s_glyphSize;
@@ -98,11 +91,12 @@ namespace dao {
         f32 m_glyphSize{32};                            ///< 字体磅值
         i32 m_atlasSize{0};                             ///< 字形图集大小
         TTF_Font *m_font{nullptr};                      ///< 字体文件
-        SDL_Surface *m_atlas{nullptr};                  ///< 字形图集
+        SDL_Surface *m_atlasSurface{nullptr};           ///< 字形图集 CPU 资源
+        hash_map<i32,SDL_Renderer *> m_renderers;
+        hash_map<i32,SDL_Texture *> m_atlasTextures;    ///< 渲染器对应的字形图集 GPU 资源
         hash_map<utf32char, Glyph> m_glyphs{};          ///< 字符在图集中的位置
-        Cursor m_cursor{0, 0, 0};
-        bool m_isUpdated{false};
 
+        Cursor m_cursor{0, 0, 0};
         explicit GlyphAtlas();
     };
 }

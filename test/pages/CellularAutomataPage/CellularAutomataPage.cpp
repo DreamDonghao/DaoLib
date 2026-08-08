@@ -1,7 +1,6 @@
 #include "CellularAutomataPage.hpp"
 
 #include "components/RectTextBox.hpp"
-#include "components/Text.hpp"
 #include "components/graphs/Line.hpp"
 #include "components/controls/InputBox.hpp"
 
@@ -36,7 +35,6 @@ namespace test {
     };
 
     void CellularAutomataPage::update() {
-        clearBatch();
         addToBatch(
             rect1, wordBackGround, textBox1, textBox2, textBox3,
             inputBox1, inputBox2, inputBox3,

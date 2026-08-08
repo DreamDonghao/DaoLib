@@ -12,7 +12,7 @@ namespace dao {
         /// @details 提供的一个继承自 IPage 的通用页面接口，实现了一些页面通常应该具备的功能
         class IGeneralPage : public IPage {
         public:
-            explicit IGeneralPage(std::string title);
+            IGeneralPage(BatchRenderer *vertexBatch, Context *context, std::string_view title);
 
             ~IGeneralPage() override = default;
 
@@ -31,22 +31,16 @@ namespace dao {
 
             WindowController &getWindowController() override;
 
-            [[nodiscard]] const std::string &getTitle() const override;
-
-            void clearBatch() const;
+            [[nodiscard]] const std::string_view &getTitle() const override;
 
             template<BatchWritable... Args>
             void addToBatch(Args &&... args) {
-                (args.writeToBatch(*m_vertexBatch), ...);
+                (args.writeToBatch(m_BatchRenderer), ...);
             }
 
-            void init(BatchRenderer *vertexBatch, Context *context) override {
-                m_context = context;
-                m_vertexBatch = vertexBatch;
-            }
+            [[nodiscard]] Context &getContext();
 
-            [[nodiscard]] Context &getContext() const override;
-
+            [[nodiscard]] BatchRenderer & getBatchRenderer();
         protected:
             WindowController m_windowController; ///< 窗口控制器
             [[nodiscard]] static f32 getGlyphAspectRatio(const utf32char charCode) {
@@ -54,9 +48,9 @@ namespace dao {
             }
 
         private:
-            std::string m_title;
-            BatchRenderer *m_vertexBatch = nullptr;
-            Context *m_context = nullptr;
+            std::string_view m_title;
+            BatchRenderer &m_BatchRenderer;
+            Context &m_context;
         };
     }
 }
