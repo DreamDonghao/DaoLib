@@ -3,8 +3,6 @@
 #include <core/frame/AppController.hpp>
 #include <core/frame/Context.hpp>
 #include <core/render/BatchRenderer.hpp>
-#include <functional>
-#include <string>
 
 namespace dao {
     namespace ifc {
@@ -13,13 +11,6 @@ namespace dao {
 
     /// @brief 窗口
     class Window {
-        struct TextureDeleter {
-            void operator()(SDL_Texture *texture) const {
-                if (texture)
-                    SDL_DestroyTexture(texture);
-            }
-        };
-
     public:
         /// @brief 窗口工作状态
         enum class WorkState {
@@ -39,21 +30,21 @@ namespace dao {
         Window(i32 width, i32 height, WorkState workState, bool isSubject = false, bool resizable = false,
                bool transparent = false, bool onTop = false, bool borderless = false);
 
+        /// @brief 析构函数
+        /// @details 销毁 SDL_Window 资源
         ~Window();
 
+        /// @brief 添加页面
         template<typename PageType, typename... Args>
         Window &addPage(Args &&... args) {
-            return addPage(std::make_unique<PageType>(std::forward<Args>(args)...));
+            return addPage(std::make_unique<PageType>(&m_batchRenderer, m_context, std::forward<Args>(args)...));
         }
 
         /// @brief 添加页面
         /// @param page 要添加页面的unique_ptr指针
-        Window &addPage(std::unique_ptr<ifc::IPage> &&page);
+        Window &addPage(std::unique_ptr<ifc::IPage> page);
 
-        /// @brief 根据当前窗口拥有的页面加载未加载的图集
-        void registerPageTexture();
-
-        /// @brief 获取 id
+        /// @brief 获取 窗口id
         [[nodiscard]] i32 getId() const { return m_id; }
 
         /// @brief 更新一帧
@@ -62,6 +53,7 @@ namespace dao {
         /// @brief 处理消息
         void handleInputEvent(const SDL_Event &event);
 
+        /// @brief 渲染
         void render();
 
         /// @brief 隐藏窗口
@@ -91,24 +83,24 @@ namespace dao {
         /// @brief 获取 SDL_window 指针
         [[nodiscard]] const SDL_Window *getSDLWindow() const { return m_window; }
 
-        /// @brief 切换页面
+        /// @brief 切换工作页面
         void switchPage(std::string_view title);
 
-        /// @brief 获取当前现实页面标题
+        /// @brief 获取当前工作页面标题
         [[nodiscard]] std::string_view getNowPageTitle() const;
 
-        /// @brief 设置位置
+        /// @brief 设置窗口位置（左上角）
         void setPosition(i32 x, i32 y) const;
 
         /// @brief 移动窗口位置
-        /// @param x 新的 x 坐标
-        /// @param y 新的 y 坐标
+        /// @param x x 轴的移动量（正为右，负为左）
+        /// @param y y 轴的移动量（正为下，负为上）
         void movePosition(i32 x, i32 y) const;
 
-        /// @brief 设置大小
+        /// @brief 设置窗口大小
         void setSize(i32 width, i32 height) const;
 
-        /// @brief 设置标题
+        /// @brief 设置窗口标题
         void setTitle(std::string_view title) const;
 
         /// @brief 设置点击是否穿透
@@ -123,24 +115,19 @@ namespace dao {
         void setContext(Context *context);
 
     private:
-        i32 m_id{-1};                                                ///< ID
-        WorkState m_workState;                                       ///< 窗口工作状态
-        SDL_Window *m_window{nullptr};                               ///< SDL_Window 指针
-        std::string m_nowPageTitle;                                  ///< 当前页面的标题
-        hash_map<std::string, std::unique_ptr<ifc::IPage> > m_pages; ///< 窗口拥有的页面
-        i32 m_width;                                                 ///< 窗口宽度
-        i32 m_height;                                                ///< 窗口高度
-        SDL_WindowFlags m_windowFlags = 0;                           ///< 窗口属性标记
-        AppController m_appController;                               ///< 应用控制器
-        BatchRenderer m_batchRenderer;                               ///< 批处理渲染器
-        Context *m_context{nullptr};                                 ///< 上下文
+        SDL_Window *m_window{nullptr};                                    ///< SDL_Window 指针
+        i32 m_id{-1};                                                     ///< ID
+        WorkState m_workState;                                            ///< 窗口工作状态
+        std::string_view m_nowPageTitle;                                  ///< 当前页面的标题
+        hash_map<std::string_view, std::unique_ptr<ifc::IPage> > m_pages; ///< 窗口拥有的页面
+        i32 m_width;                                                      ///< 窗口宽度
+        i32 m_height;                                                     ///< 窗口高度
+        AppController m_appController;                                    ///< 应用控制器
+        BatchRenderer m_batchRenderer;                                    ///< 批处理渲染器
+        Context *m_context{nullptr};                                      ///< 上下文
+        bool m_isSubject{false};                                          ///< 是否为应用主体窗口
 
         /// @brief 执行窗口控制器的命令
         void executeCommand();
-
-        std::function<void()> m_closeAction{
-            [] {
-            }
-        }; ///< 窗口关闭时执行的操作
     };
 } // namespace dao

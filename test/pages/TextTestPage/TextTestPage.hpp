@@ -8,7 +8,8 @@ namespace test {
     class TextTestPage : public dao::ifc::IGeneralPage {
         dao::RectTextBox pageName {0, 0, 200, 24,24,dao::Red, dao::White, U"文本测试页面"};
     public:
-        TextTestPage() : IGeneralPage("TextTestPage") {
+        TextTestPage(dao::BatchRenderer *vertexBatch, dao::Context *context, const std::string_view &title)
+           : IGeneralPage(vertexBatch, context, title) {
         }
 
         void open() override {
@@ -21,7 +22,6 @@ namespace test {
         }
 
         void update() override {
-            clearBatch();
             addToBatch(pageName);
         }
 

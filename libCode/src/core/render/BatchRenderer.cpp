@@ -4,27 +4,13 @@
 #include <SDL3_image/SDL_image.h>
 
 namespace dao {
-    BatchRenderer::BatchRenderer(const i32 verticesCount)
-        :m_vertices(verticesCount) {
-    }
-
-    BatchRenderer::~BatchRenderer() {
-        // 销毁所有纹理
-        for (const auto &atlas: m_atlas) {
-            if (atlas) {
-                SDL_DestroyTexture(atlas);
-            }
-        }
-        if (m_renderer) {
-            SDL_DestroyRenderer(m_renderer);
-        }
-    }
-
-    void BatchRenderer::init(SDL_Renderer *renderer) {
+    BatchRenderer::BatchRenderer(const i32 windowID, SDL_Renderer *renderer)
+        : m_dynamicBatchGroup(Config::defaultDynamicVerticesCount) {
         if (renderer == nullptr) {
             ErrorLog("渲染器不存在");
             return;
         }
+        id = windowID;
         // 绑定窗口的渲染器
         m_renderer = renderer;
         SDL_SetRenderDrawBlendMode(m_renderer, SDL_BLENDMODE_BLEND);
@@ -38,19 +24,18 @@ namespace dao {
         SDL_UpdateTexture(tex, nullptr, &whitePixel, 4);
         m_atlas[0] = tex;
         SDL_SetTextureBlendMode(m_atlas[0], SDL_BLENDMODE_BLEND);
-
-        // 添加字形图
-        SDL_Surface &glyphSurface = GlyphAtlas::getGlyphAtlas().getAtlasSurface();
-        m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &glyphSurface);
-        SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
-        SDL_SetTextureScaleMode(m_atlas[1], GlyphAtlas::isPixelFont() ? SDL_SCALEMODE_NEAREST : SDL_SCALEMODE_LINEAR);
-        m_glyphTexW = glyphSurface.w;
-        m_glyphTexH = glyphSurface.h;
     }
 
-    void BatchRenderer::clear() {
-        m_index = 0;
-        m_batches.clear();
+    BatchRenderer::~BatchRenderer() {
+        // 销毁所有纹理
+        for (const auto &atlas: m_atlas) {
+            if (atlas) {
+                SDL_DestroyTexture(atlas);
+            }
+        }
+        if (m_renderer) {
+            SDL_DestroyRenderer(m_renderer);
+        }
     }
 
     void BatchRenderer::loadAtlas(const i32 textureId) {
@@ -70,55 +55,32 @@ namespace dao {
         }
     }
 
-    void BatchRenderer::syncGlyphAtlas() {
-        if (!m_glyphAtlas.isUpdated()) return;
-
-        const SDL_ScaleMode scaleMode = GlyphAtlas::isPixelFont() ? SDL_SCALEMODE_NEAREST : SDL_SCALEMODE_LINEAR;
-
-        SDL_Surface &surface = m_glyphAtlas.getAtlasSurface();
-        if (surface.w != m_glyphTexW || surface.h != m_glyphTexH) {
-            if (m_atlas[1]) SDL_DestroyTexture(m_atlas[1]);
-            m_atlas[1] = SDL_CreateTextureFromSurface(m_renderer, &surface);
-            SDL_SetTextureBlendMode(m_atlas[1], SDL_BLENDMODE_BLEND);
-            SDL_SetTextureScaleMode(m_atlas[1], scaleMode);
-            m_glyphTexW = surface.w;
-            m_glyphTexH = surface.h;
-        } else {
-            SDL_UpdateTexture(m_atlas[1], nullptr, surface.pixels, surface.pitch);
-        }
-        m_glyphAtlas.clearUpdateFlag();
-    }
-
     void BatchRenderer::render() {
-        syncGlyphAtlas();
+        m_atlas[1] = m_glyphAtlas.getAtlasTexture(id, m_renderer);
         SDL_RenderClear(m_renderer);
-        const SDL_Vertex *vertices = m_vertices.data();
-        for (auto [atlasId, size]: m_batches) {
-            SDL_RenderGeometry(
-                m_renderer, m_atlas[atlasId],
-                vertices, size,
-                nullptr, 0
-            );
-            vertices += size;
+        m_dynamicBatchGroup.render(m_renderer, m_atlas);
+        for (auto batchGroup = m_staticBatchGroups.begin(); batchGroup != m_staticBatchGroups.end(); ++batchGroup) {
+            if (batchGroup->isErased()) {
+                batchGroup = m_staticBatchGroups.erase(batchGroup);
+                continue;
+            }
+            batchGroup->render(m_renderer, m_atlas);
         }
+
         SDL_RenderPresent(m_renderer);
+        m_dynamicBatchGroup.clear();
     }
 
-    void BatchRenderer::loadGlyph(const utf32char charCode) {
+    void BatchRenderer::loadGlyph(const utf32char charCode) const {
         m_glyphAtlas.tryRegisterGlyph(charCode);
     }
 
     SDL_Vertex *BatchRenderer::allocateVertices(const i32 atlasID, const i32 count) {
-        if (m_endAtlasId != atlasID || m_batches.empty()) {
-            m_batches.push_back({atlasID, 0});
-            m_endAtlasId = atlasID;
-        }
-        SDL_Vertex *const ret = m_vertices.data() + m_index;
-        if (m_index + count > m_vertices.size()) {
-            m_vertices.resize(m_vertices.size() * 2, SDL_Vertex{});
-        }
-        m_index += count;
-        m_batches.back().size += count;
-        return ret;
+        return m_dynamicBatchGroup.allocateVertices(atlasID, count);
+    }
+
+    BatchGroup &BatchRenderer::allocateBatchGroup(i32 vertexCount) {
+        m_staticBatchGroups.emplace_back(vertexCount);
+        return m_staticBatchGroups.back();
     }
 }

@@ -1,5 +1,4 @@
 #pragma once
-#include <core/render/BatchRenderer.hpp>
 
 namespace dao::ifc {
     /// @brief 可绘制对象接口

@@ -1,5 +1,4 @@
 #pragma once
-
 #include <core/tool/better_stl.hpp>
 
 namespace dao {
